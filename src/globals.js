@@ -1,6 +1,6 @@
 var globalsState = {
   loadedModules: [],
-  shellipelagoVersion: "1.2",
+  shellipelagoVersion: "1.3",
   startInFinalRun: false,
   progressiveRoomMaxRing: 5,
   showEssentialPickupHints: true,
@@ -77,7 +77,7 @@ var globalsState = {
     },
     sword: {
       label: "Sword",
-      count: 2
+      count: 3
     },
     energy: {
       label: "Energy",

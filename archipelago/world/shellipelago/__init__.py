@@ -6,7 +6,7 @@ from .locations import location_table
 from .options import ShellipelagoOptions
 
 
-__version__ = "1.2"
+__version__ = "1.3"
 
 
 starting_item_counts = {

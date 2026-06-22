@@ -10,7 +10,7 @@ Important progressive items include:
 - Progressive Room x5
 - Bombs x3
 - Gun x2
-- Sword x2
+- Sword x3
 - Max HP and Max Rounds upgrades
 
 Each Progressive Room opens the next square ring of rooms, up to ring 5.

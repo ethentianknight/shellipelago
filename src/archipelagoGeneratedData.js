@@ -236,11 +236,11 @@ var archipelagoGeneratedLocationNameToId = {
   "The Start (0,0) Postgame Destructible 30,30 #118": 200117,
   "The Start (0,0) Postgame Destructible 7,24 #119": 200118,
   "The Start (0,0) Postgame Destructible 3,24 #120": 200119,
-  "The Start (0,0) Postgame Destructible 6,27 #121": 200120,
-  "The Start (0,0) Postgame Destructible 2,28 #122": 200121,
+  "The Start (0,0) Destructible 6,27 #121": 200120,
+  "The Start (0,0) Destructible 2,28 #122": 200121,
   "The Start (0,0) Postgame Destructible 5,20 #123": 200122,
   "The Start (0,0) Postgame Destructible 11,28 #124": 200123,
-  "The Start (0,0) Postgame Destructible 6,28 #125": 200124,
+  "The Start (0,0) Destructible 6,28 #125": 200124,
   "The Start (0,0) Postgame Destructible 10,22 #126": 200125,
   "The Start (0,0) Postgame Destructible 25,7 #127": 200126,
   "The Start (0,0) Postgame Destructible 29,9 #128": 200127,
@@ -13809,152 +13809,153 @@ var archipelagoGeneratedLocationNameToId = {
   "Southwest Slimelines (-3,4) Enemy 9,19 #13691": 213690,
   "Southwest Slimelines (-3,4) Enemy 20,14 #13692": 213691,
   "Southern River (-2,4) Chest 16,16 #13693": 213692,
-  "Slime Protectorate (-1,4) Chest 15,17 #13694": 213693,
-  "Slime Protectorate (-1,4) Enemy 11,17 #13695": 213694,
-  "Slime Protectorate (-1,4) Enemy 14,20 #13696": 213695,
-  "Slime Protectorate (-1,4) Enemy 12,22 #13697": 213696,
-  "Slime Protectorate (-1,4) Enemy 18,21 #13698": 213697,
-  "Slime Protectorate (-1,4) Enemy 18,17 #13699": 213698,
-  "Slime Protectorate (-1,4) Enemy 15,22 #13700": 213699,
-  "Slime Protectorate (-1,4) Enemy 5,20 #13701": 213700,
-  "Slime Protectorate (-1,4) Enemy 6,20 #13702": 213701,
-  "Slime Protectorate (-1,4) Enemy 19,24 #13703": 213702,
-  "Slime Protectorate (-1,4) Enemy 11,25 #13704": 213703,
-  "Slime Protectorate (-1,4) Enemy 21,22 #13705": 213704,
-  "Slime Protectorate (-1,4) Enemy 11,14 #13706": 213705,
-  "Slime Protectorate (-1,4) Enemy 18,14 #13707": 213706,
-  "Slime Protectorate (-1,4) Enemy 15,13 #13708": 213707,
-  "Slime Protectorate (-1,4) Enemy 14,9 #13709": 213708,
-  "Unassuming Loot (0,4) Chest 15,15 #13710": 213709,
-  "Unassuming Loot (0,4) Enemy 11,10 #13711": 213710,
-  "Unassuming Loot (0,4) Enemy 10,16 #13712": 213711,
-  "Unassuming Loot (0,4) Enemy 19,20 #13713": 213712,
-  "Unassuming Loot (0,4) Enemy 10,21 #13714": 213713,
-  "Unassuming Loot (0,4) Enemy 21,13 #13715": 213714,
-  "Three Mage Beach (1,4) Chest 14,13 #13716": 213715,
-  "Three Mage Beach (1,4) Enemy 16,3 #13717": 213716,
-  "Three Mage Beach (1,4) Enemy 4,15 #13718": 213717,
-  "Three Mage Beach (1,4) Enemy 27,15 #13719": 213718,
-  "Adventurer's Bane (2,4) Chest 15,15 #13720": 213719,
-  "Adventurer's Bane (2,4) Chest 18,15 #13721": 213720,
-  "Adventurer's Bane (2,4) Enemy 16,15 #13722": 213721,
-  "Adventurer's Bane (2,4) Enemy 17,15 #13723": 213722,
-  "Adventurer's Bane (2,4) Enemy 14,15 #13724": 213723,
-  "Adventurer's Bane (2,4) Enemy 19,15 #13725": 213724,
-  "Adventurer's Bane (2,4) Enemy 16,14 #13726": 213725,
-  "Adventurer's Bane (2,4) Enemy 17,14 #13727": 213726,
-  "Adventurer's Bane (2,4) Enemy 17,16 #13728": 213727,
-  "Adventurer's Bane (2,4) Enemy 16,16 #13729": 213728,
-  "Adventurer's Bane (2,4) Enemy 12,8 #13730": 213729,
-  "Adventurer's Bane (2,4) Enemy 18,7 #13731": 213730,
-  "Adventurer's Bane (2,4) Enemy 23,4 #13732": 213731,
-  "Adventurer's Bane (2,4) Enemy 16,4 #13733": 213732,
-  "Adventurer's Bane (2,4) Enemy 3,4 #13734": 213733,
-  "Adventurer's Bane (2,4) Enemy 11,18 #13735": 213734,
-  "Adventurer's Bane (2,4) Enemy 18,23 #13736": 213735,
-  "Adventurer's Bane (2,4) Enemy 23,26 #13737": 213736,
-  "Adventurer's Bane (2,4) Enemy 23,17 #13738": 213737,
-  "Adventurer's Bane (2,4) Enemy 22,11 #13739": 213738,
-  "Adventurer's Bane (2,4) Enemy 26,10 #13740": 213739,
-  "Adventurer's Bane (2,4) Enemy 8,22 #13741": 213740,
-  "Adventurer's Bane (2,4) Enemy 3,14 #13742": 213741,
-  "Adventurer's Bane (2,4) Enemy 13,20 #13743": 213742,
-  "Adventurer's Bane (2,4) Enemy 7,13 #13744": 213743,
-  "Adventurer's Bane (2,4) Enemy 28,17 #13745": 213744,
-  "Adventurer's Bane (2,4) Enemy 22,21 #13746": 213745,
-  "Adventurer's Bane (2,4) Enemy 17,18 #13747": 213746,
-  "Adventurer's Bane (2,4) Enemy 16,12 #13748": 213747,
-  "Adventurer's Bane (2,4) Enemy 24,14 #13749": 213748,
-  "Adventurer's Bane (2,4) Enemy 8,5 #13750": 213749,
-  "Adventurer's Bane (2,4) Enemy 15,3 #13751": 213750,
-  "Cabal Chest (3,4) Chest 15,15 #13752": 213751,
-  "Cabal Chest (3,4) Enemy 13,12 #13753": 213752,
-  "Cabal Chest (3,4) Enemy 11,15 #13754": 213753,
-  "Cabal Chest (3,4) Enemy 16,19 #13755": 213754,
-  "Cabal Chest (3,4) Enemy 18,15 #13756": 213755,
-  "Cabal Chest (3,4) Enemy 13,19 #13757": 213756,
-  "Cabal Chest (3,4) Enemy 17,13 #13758": 213757,
-  "Cabal Chest (3,4) Enemy 19,17 #13759": 213758,
-  "Cabal Chest (3,4) Enemy 11,13 #13760": 213759,
-  "Cabal Chest (3,4) Enemy 13,15 #13761": 213760,
-  "Bunker (0,5) Chest 16,17 #13762": 213761,
-  "Bunker (0,5) Chest 15,17 #13763": 213762,
-  "Bunker (0,5) Chest 14,17 #13764": 213763,
-  "Bunker (0,5) Postgame Destructible 13,17 #13765": 213764,
-  "Bunker (0,5) Postgame Destructible 13,18 #13766": 213765,
-  "Bunker (0,5) Postgame Destructible 14,18 #13767": 213766,
-  "Bunker (0,5) Destructible 15,18 #13768": 213767,
-  "Bunker (0,5) Postgame Destructible 16,18 #13769": 213768,
-  "Bunker (0,5) Postgame Destructible 17,18 #13770": 213769,
-  "Bunker (0,5) Postgame Destructible 17,17 #13771": 213770,
-  "Bunker (0,5) Destructible 12,17 #13772": 213771,
-  "Bunker (0,5) Destructible 12,18 #13773": 213772,
-  "Bunker (0,5) Postgame Destructible 14,19 #13774": 213773,
-  "Bunker (0,5) Destructible 15,19 #13775": 213774,
-  "Bunker (0,5) Postgame Destructible 16,19 #13776": 213775,
-  "Bunker (0,5) Destructible 14,20 #13777": 213776,
-  "Bunker (0,5) Postgame Destructible 14,21 #13778": 213777,
-  "Bunker (0,5) Destructible 15,21 #13779": 213778,
-  "Bunker (0,5) Postgame Destructible 16,21 #13780": 213779,
-  "Bunker (0,5) Destructible 16,20 #13781": 213780,
-  "Bunker (0,5) Destructible 17,20 #13782": 213781,
-  "Bunker (0,5) Postgame Destructible 17,19 #13783": 213782,
-  "Bunker (0,5) Postgame Destructible 17,21 #13784": 213783,
-  "Bunker (0,5) Destructible 18,19 #13785": 213784,
-  "Bunker (0,5) Postgame Destructible 19,19 #13786": 213785,
-  "Bunker (0,5) Destructible 19,20 #13787": 213786,
-  "Bunker (0,5) Postgame Destructible 19,21 #13788": 213787,
-  "Bunker (0,5) Destructible 18,21 #13789": 213788,
-  "Bunker (0,5) Postgame Destructible 13,19 #13790": 213789,
-  "Bunker (0,5) Destructible 12,19 #13791": 213790,
-  "Bunker (0,5) Enemy 12,20 #13792": 213791,
-  "Bunker (0,5) Destructible 12,21 #13793": 213792,
-  "Bunker (0,5) Destructible 13,20 #13794": 213793,
-  "Bunker (0,5) Postgame Destructible 13,21 #13795": 213794,
-  "Bunker (0,5) Postgame Destructible 11,21 #13796": 213795,
-  "Bunker (0,5) Destructible 11,20 #13797": 213796,
-  "Bunker (0,5) Postgame Destructible 11,19 #13798": 213797,
-  "Bunker (0,5) Postgame Destructible 10,19 #13799": 213798,
-  "Bunker (0,5) Destructible 10,20 #13800": 213799,
-  "Bunker (0,5) Postgame Destructible 10,21 #13801": 213800,
-  "Bunker (0,5) Postgame Destructible 10,22 #13802": 213801,
-  "Bunker (0,5) Postgame Destructible 11,22 #13803": 213802,
-  "Bunker (0,5) Destructible 12,22 #13804": 213803,
-  "Bunker (0,5) Postgame Destructible 13,22 #13805": 213804,
-  "Bunker (0,5) Postgame Destructible 14,22 #13806": 213805,
-  "Bunker (0,5) Destructible 15,22 #13807": 213806,
-  "Bunker (0,5) Postgame Destructible 16,22 #13808": 213807,
-  "Bunker (0,5) Postgame Destructible 17,22 #13809": 213808,
-  "Bunker (0,5) Destructible 18,22 #13810": 213809,
-  "Bunker (0,5) Postgame Destructible 19,22 #13811": 213810,
-  "Bunker (0,5) Postgame Destructible 20,22 #13812": 213811,
-  "Bunker (0,5) Postgame Destructible 20,21 #13813": 213812,
-  "Bunker (0,5) Destructible 20,20 #13814": 213813,
-  "Bunker (0,5) Postgame Destructible 20,19 #13815": 213814,
-  "Bunker (0,5) Destructible 18,17 #13816": 213815,
-  "Bunker (0,5) Destructible 18,18 #13817": 213816,
-  "Bunker (0,5) Enemy 15,20 #13818": 213817,
-  "Bunker (0,5) Enemy 18,20 #13819": 213818,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,9 #13820": 213819,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,9 #13821": 213820,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,9 #13822": 213821,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,8 #13823": 213822,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,8 #13824": 213823,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,8 #13825": 213824,
-  "Mage's Better Shoppe (0,-3) Shop 9,12 #13826": 213825,
-  "Mage's Better Shoppe (0,-3) Shop 10,12 #13827": 213826,
-  "Mage's Better Shoppe (0,-3) Shop 11,12 #13828": 213827,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,10 #13829": 213828,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,10 #13830": 213829,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,10 #13831": 213830,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,13 #13832": 213831,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,13 #13833": 213832,
-  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,13 #13834": 213833,
-  "Mage's Better Shoppe (0,-3) Enemy 10,11 #13835": 213834,
-  "Mage's Better Shoppe (0,-3) Enemy 22,11 #13836": 213835,
-  "Mage's Better Shoppe (0,-3) Enemy 17,16 #13837": 213836,
-  "Mage's Better Shoppe (0,-3) Enemy 23,24 #13838": 213837,
-  "Mage's Better Shoppe (0,-3) Enemy 9,22 #13839": 213838
+  "Southern River (-2,4) Chest 28,14 #13694": 213693,
+  "Slime Protectorate (-1,4) Chest 15,17 #13695": 213694,
+  "Slime Protectorate (-1,4) Enemy 11,17 #13696": 213695,
+  "Slime Protectorate (-1,4) Enemy 14,20 #13697": 213696,
+  "Slime Protectorate (-1,4) Enemy 12,22 #13698": 213697,
+  "Slime Protectorate (-1,4) Enemy 18,21 #13699": 213698,
+  "Slime Protectorate (-1,4) Enemy 18,17 #13700": 213699,
+  "Slime Protectorate (-1,4) Enemy 15,22 #13701": 213700,
+  "Slime Protectorate (-1,4) Enemy 5,20 #13702": 213701,
+  "Slime Protectorate (-1,4) Enemy 6,20 #13703": 213702,
+  "Slime Protectorate (-1,4) Enemy 19,24 #13704": 213703,
+  "Slime Protectorate (-1,4) Enemy 11,25 #13705": 213704,
+  "Slime Protectorate (-1,4) Enemy 21,22 #13706": 213705,
+  "Slime Protectorate (-1,4) Enemy 11,14 #13707": 213706,
+  "Slime Protectorate (-1,4) Enemy 18,14 #13708": 213707,
+  "Slime Protectorate (-1,4) Enemy 15,13 #13709": 213708,
+  "Slime Protectorate (-1,4) Enemy 14,9 #13710": 213709,
+  "Unassuming Loot (0,4) Chest 15,15 #13711": 213710,
+  "Unassuming Loot (0,4) Enemy 11,10 #13712": 213711,
+  "Unassuming Loot (0,4) Enemy 10,16 #13713": 213712,
+  "Unassuming Loot (0,4) Enemy 19,20 #13714": 213713,
+  "Unassuming Loot (0,4) Enemy 10,21 #13715": 213714,
+  "Unassuming Loot (0,4) Enemy 21,13 #13716": 213715,
+  "Three Mage Beach (1,4) Chest 14,13 #13717": 213716,
+  "Three Mage Beach (1,4) Enemy 16,3 #13718": 213717,
+  "Three Mage Beach (1,4) Enemy 4,15 #13719": 213718,
+  "Three Mage Beach (1,4) Enemy 27,15 #13720": 213719,
+  "Adventurer's Bane (2,4) Chest 15,15 #13721": 213720,
+  "Adventurer's Bane (2,4) Chest 18,15 #13722": 213721,
+  "Adventurer's Bane (2,4) Enemy 16,15 #13723": 213722,
+  "Adventurer's Bane (2,4) Enemy 17,15 #13724": 213723,
+  "Adventurer's Bane (2,4) Enemy 14,15 #13725": 213724,
+  "Adventurer's Bane (2,4) Enemy 19,15 #13726": 213725,
+  "Adventurer's Bane (2,4) Enemy 16,14 #13727": 213726,
+  "Adventurer's Bane (2,4) Enemy 17,14 #13728": 213727,
+  "Adventurer's Bane (2,4) Enemy 17,16 #13729": 213728,
+  "Adventurer's Bane (2,4) Enemy 16,16 #13730": 213729,
+  "Adventurer's Bane (2,4) Enemy 12,8 #13731": 213730,
+  "Adventurer's Bane (2,4) Enemy 18,7 #13732": 213731,
+  "Adventurer's Bane (2,4) Enemy 23,4 #13733": 213732,
+  "Adventurer's Bane (2,4) Enemy 16,4 #13734": 213733,
+  "Adventurer's Bane (2,4) Enemy 3,4 #13735": 213734,
+  "Adventurer's Bane (2,4) Enemy 11,18 #13736": 213735,
+  "Adventurer's Bane (2,4) Enemy 18,23 #13737": 213736,
+  "Adventurer's Bane (2,4) Enemy 23,26 #13738": 213737,
+  "Adventurer's Bane (2,4) Enemy 23,17 #13739": 213738,
+  "Adventurer's Bane (2,4) Enemy 22,11 #13740": 213739,
+  "Adventurer's Bane (2,4) Enemy 26,10 #13741": 213740,
+  "Adventurer's Bane (2,4) Enemy 8,22 #13742": 213741,
+  "Adventurer's Bane (2,4) Enemy 3,14 #13743": 213742,
+  "Adventurer's Bane (2,4) Enemy 13,20 #13744": 213743,
+  "Adventurer's Bane (2,4) Enemy 7,13 #13745": 213744,
+  "Adventurer's Bane (2,4) Enemy 28,17 #13746": 213745,
+  "Adventurer's Bane (2,4) Enemy 22,21 #13747": 213746,
+  "Adventurer's Bane (2,4) Enemy 17,18 #13748": 213747,
+  "Adventurer's Bane (2,4) Enemy 16,12 #13749": 213748,
+  "Adventurer's Bane (2,4) Enemy 24,14 #13750": 213749,
+  "Adventurer's Bane (2,4) Enemy 8,5 #13751": 213750,
+  "Adventurer's Bane (2,4) Enemy 15,3 #13752": 213751,
+  "Cabal Chest (3,4) Chest 15,15 #13753": 213752,
+  "Cabal Chest (3,4) Enemy 13,12 #13754": 213753,
+  "Cabal Chest (3,4) Enemy 11,15 #13755": 213754,
+  "Cabal Chest (3,4) Enemy 16,19 #13756": 213755,
+  "Cabal Chest (3,4) Enemy 18,15 #13757": 213756,
+  "Cabal Chest (3,4) Enemy 13,19 #13758": 213757,
+  "Cabal Chest (3,4) Enemy 17,13 #13759": 213758,
+  "Cabal Chest (3,4) Enemy 19,17 #13760": 213759,
+  "Cabal Chest (3,4) Enemy 11,13 #13761": 213760,
+  "Cabal Chest (3,4) Enemy 13,15 #13762": 213761,
+  "Bunker (0,5) Chest 16,17 #13763": 213762,
+  "Bunker (0,5) Chest 15,17 #13764": 213763,
+  "Bunker (0,5) Chest 14,17 #13765": 213764,
+  "Bunker (0,5) Postgame Destructible 13,17 #13766": 213765,
+  "Bunker (0,5) Postgame Destructible 13,18 #13767": 213766,
+  "Bunker (0,5) Postgame Destructible 14,18 #13768": 213767,
+  "Bunker (0,5) Destructible 15,18 #13769": 213768,
+  "Bunker (0,5) Postgame Destructible 16,18 #13770": 213769,
+  "Bunker (0,5) Postgame Destructible 17,18 #13771": 213770,
+  "Bunker (0,5) Postgame Destructible 17,17 #13772": 213771,
+  "Bunker (0,5) Destructible 12,17 #13773": 213772,
+  "Bunker (0,5) Destructible 12,18 #13774": 213773,
+  "Bunker (0,5) Postgame Destructible 14,19 #13775": 213774,
+  "Bunker (0,5) Destructible 15,19 #13776": 213775,
+  "Bunker (0,5) Postgame Destructible 16,19 #13777": 213776,
+  "Bunker (0,5) Destructible 14,20 #13778": 213777,
+  "Bunker (0,5) Postgame Destructible 14,21 #13779": 213778,
+  "Bunker (0,5) Destructible 15,21 #13780": 213779,
+  "Bunker (0,5) Postgame Destructible 16,21 #13781": 213780,
+  "Bunker (0,5) Destructible 16,20 #13782": 213781,
+  "Bunker (0,5) Destructible 17,20 #13783": 213782,
+  "Bunker (0,5) Postgame Destructible 17,19 #13784": 213783,
+  "Bunker (0,5) Postgame Destructible 17,21 #13785": 213784,
+  "Bunker (0,5) Destructible 18,19 #13786": 213785,
+  "Bunker (0,5) Postgame Destructible 19,19 #13787": 213786,
+  "Bunker (0,5) Destructible 19,20 #13788": 213787,
+  "Bunker (0,5) Postgame Destructible 19,21 #13789": 213788,
+  "Bunker (0,5) Destructible 18,21 #13790": 213789,
+  "Bunker (0,5) Postgame Destructible 13,19 #13791": 213790,
+  "Bunker (0,5) Destructible 12,19 #13792": 213791,
+  "Bunker (0,5) Enemy 12,20 #13793": 213792,
+  "Bunker (0,5) Destructible 12,21 #13794": 213793,
+  "Bunker (0,5) Destructible 13,20 #13795": 213794,
+  "Bunker (0,5) Postgame Destructible 13,21 #13796": 213795,
+  "Bunker (0,5) Postgame Destructible 11,21 #13797": 213796,
+  "Bunker (0,5) Destructible 11,20 #13798": 213797,
+  "Bunker (0,5) Postgame Destructible 11,19 #13799": 213798,
+  "Bunker (0,5) Postgame Destructible 10,19 #13800": 213799,
+  "Bunker (0,5) Destructible 10,20 #13801": 213800,
+  "Bunker (0,5) Postgame Destructible 10,21 #13802": 213801,
+  "Bunker (0,5) Postgame Destructible 10,22 #13803": 213802,
+  "Bunker (0,5) Postgame Destructible 11,22 #13804": 213803,
+  "Bunker (0,5) Destructible 12,22 #13805": 213804,
+  "Bunker (0,5) Postgame Destructible 13,22 #13806": 213805,
+  "Bunker (0,5) Postgame Destructible 14,22 #13807": 213806,
+  "Bunker (0,5) Destructible 15,22 #13808": 213807,
+  "Bunker (0,5) Postgame Destructible 16,22 #13809": 213808,
+  "Bunker (0,5) Postgame Destructible 17,22 #13810": 213809,
+  "Bunker (0,5) Destructible 18,22 #13811": 213810,
+  "Bunker (0,5) Postgame Destructible 19,22 #13812": 213811,
+  "Bunker (0,5) Postgame Destructible 20,22 #13813": 213812,
+  "Bunker (0,5) Postgame Destructible 20,21 #13814": 213813,
+  "Bunker (0,5) Destructible 20,20 #13815": 213814,
+  "Bunker (0,5) Postgame Destructible 20,19 #13816": 213815,
+  "Bunker (0,5) Destructible 18,17 #13817": 213816,
+  "Bunker (0,5) Destructible 18,18 #13818": 213817,
+  "Bunker (0,5) Enemy 15,20 #13819": 213818,
+  "Bunker (0,5) Enemy 18,20 #13820": 213819,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,9 #13821": 213820,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,9 #13822": 213821,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,9 #13823": 213822,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,8 #13824": 213823,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,8 #13825": 213824,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,8 #13826": 213825,
+  "Mage's Better Shoppe (0,-3) Shop 9,12 #13827": 213826,
+  "Mage's Better Shoppe (0,-3) Shop 10,12 #13828": 213827,
+  "Mage's Better Shoppe (0,-3) Shop 11,12 #13829": 213828,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,10 #13830": 213829,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,10 #13831": 213830,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,10 #13832": 213831,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 11,13 #13833": 213832,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 10,13 #13834": 213833,
+  "Mage's Better Shoppe (0,-3) Postgame Destructible 9,13 #13835": 213834,
+  "Mage's Better Shoppe (0,-3) Enemy 10,11 #13836": 213835,
+  "Mage's Better Shoppe (0,-3) Enemy 22,11 #13837": 213836,
+  "Mage's Better Shoppe (0,-3) Enemy 17,16 #13838": 213837,
+  "Mage's Better Shoppe (0,-3) Enemy 23,24 #13839": 213838,
+  "Mage's Better Shoppe (0,-3) Enemy 9,22 #13840": 213839
 };
 var archipelagoGeneratedLocationCoordToLocation = {
   "0,0:16,14": {
@@ -14559,13 +14560,13 @@ var archipelagoGeneratedLocationCoordToLocation = {
   },
   "0,0:6,27": {
     "id": 200120,
-    "name": "The Start (0,0) Postgame Destructible 6,27 #121",
-    "category": "postgame_destructible"
+    "name": "The Start (0,0) Destructible 6,27 #121",
+    "category": "easy_destructible"
   },
   "0,0:2,28": {
     "id": 200121,
-    "name": "The Start (0,0) Postgame Destructible 2,28 #122",
-    "category": "postgame_destructible"
+    "name": "The Start (0,0) Destructible 2,28 #122",
+    "category": "easy_destructible"
   },
   "0,0:5,20": {
     "id": 200122,
@@ -14579,8 +14580,8 @@ var archipelagoGeneratedLocationCoordToLocation = {
   },
   "0,0:6,28": {
     "id": 200124,
-    "name": "The Start (0,0) Postgame Destructible 6,28 #125",
-    "category": "postgame_destructible"
+    "name": "The Start (0,0) Destructible 6,28 #125",
+    "category": "easy_destructible"
   },
   "0,0:10,22": {
     "id": 200125,
@@ -82422,734 +82423,739 @@ var archipelagoGeneratedLocationCoordToLocation = {
     "name": "Southern River (-2,4) Chest 16,16 #13693",
     "category": "chest"
   },
-  "-1,4:15,17": {
+  "-2,4:28,14": {
     "id": 213693,
-    "name": "Slime Protectorate (-1,4) Chest 15,17 #13694",
+    "name": "Southern River (-2,4) Chest 28,14 #13694",
+    "category": "chest"
+  },
+  "-1,4:15,17": {
+    "id": 213694,
+    "name": "Slime Protectorate (-1,4) Chest 15,17 #13695",
     "category": "chest"
   },
   "-1,4:11,17": {
-    "id": 213694,
-    "name": "Slime Protectorate (-1,4) Enemy 11,17 #13695",
+    "id": 213695,
+    "name": "Slime Protectorate (-1,4) Enemy 11,17 #13696",
     "category": "enemy"
   },
   "-1,4:14,20": {
-    "id": 213695,
-    "name": "Slime Protectorate (-1,4) Enemy 14,20 #13696",
+    "id": 213696,
+    "name": "Slime Protectorate (-1,4) Enemy 14,20 #13697",
     "category": "enemy"
   },
   "-1,4:12,22": {
-    "id": 213696,
-    "name": "Slime Protectorate (-1,4) Enemy 12,22 #13697",
+    "id": 213697,
+    "name": "Slime Protectorate (-1,4) Enemy 12,22 #13698",
     "category": "enemy"
   },
   "-1,4:18,21": {
-    "id": 213697,
-    "name": "Slime Protectorate (-1,4) Enemy 18,21 #13698",
+    "id": 213698,
+    "name": "Slime Protectorate (-1,4) Enemy 18,21 #13699",
     "category": "enemy"
   },
   "-1,4:18,17": {
-    "id": 213698,
-    "name": "Slime Protectorate (-1,4) Enemy 18,17 #13699",
+    "id": 213699,
+    "name": "Slime Protectorate (-1,4) Enemy 18,17 #13700",
     "category": "enemy"
   },
   "-1,4:15,22": {
-    "id": 213699,
-    "name": "Slime Protectorate (-1,4) Enemy 15,22 #13700",
+    "id": 213700,
+    "name": "Slime Protectorate (-1,4) Enemy 15,22 #13701",
     "category": "enemy"
   },
   "-1,4:5,20": {
-    "id": 213700,
-    "name": "Slime Protectorate (-1,4) Enemy 5,20 #13701",
+    "id": 213701,
+    "name": "Slime Protectorate (-1,4) Enemy 5,20 #13702",
     "category": "enemy"
   },
   "-1,4:6,20": {
-    "id": 213701,
-    "name": "Slime Protectorate (-1,4) Enemy 6,20 #13702",
+    "id": 213702,
+    "name": "Slime Protectorate (-1,4) Enemy 6,20 #13703",
     "category": "enemy"
   },
   "-1,4:19,24": {
-    "id": 213702,
-    "name": "Slime Protectorate (-1,4) Enemy 19,24 #13703",
+    "id": 213703,
+    "name": "Slime Protectorate (-1,4) Enemy 19,24 #13704",
     "category": "enemy"
   },
   "-1,4:11,25": {
-    "id": 213703,
-    "name": "Slime Protectorate (-1,4) Enemy 11,25 #13704",
+    "id": 213704,
+    "name": "Slime Protectorate (-1,4) Enemy 11,25 #13705",
     "category": "enemy"
   },
   "-1,4:21,22": {
-    "id": 213704,
-    "name": "Slime Protectorate (-1,4) Enemy 21,22 #13705",
+    "id": 213705,
+    "name": "Slime Protectorate (-1,4) Enemy 21,22 #13706",
     "category": "enemy"
   },
   "-1,4:11,14": {
-    "id": 213705,
-    "name": "Slime Protectorate (-1,4) Enemy 11,14 #13706",
+    "id": 213706,
+    "name": "Slime Protectorate (-1,4) Enemy 11,14 #13707",
     "category": "enemy"
   },
   "-1,4:18,14": {
-    "id": 213706,
-    "name": "Slime Protectorate (-1,4) Enemy 18,14 #13707",
+    "id": 213707,
+    "name": "Slime Protectorate (-1,4) Enemy 18,14 #13708",
     "category": "enemy"
   },
   "-1,4:15,13": {
-    "id": 213707,
-    "name": "Slime Protectorate (-1,4) Enemy 15,13 #13708",
+    "id": 213708,
+    "name": "Slime Protectorate (-1,4) Enemy 15,13 #13709",
     "category": "enemy"
   },
   "-1,4:14,9": {
-    "id": 213708,
-    "name": "Slime Protectorate (-1,4) Enemy 14,9 #13709",
+    "id": 213709,
+    "name": "Slime Protectorate (-1,4) Enemy 14,9 #13710",
     "category": "enemy"
   },
   "0,4:15,15": {
-    "id": 213709,
-    "name": "Unassuming Loot (0,4) Chest 15,15 #13710",
+    "id": 213710,
+    "name": "Unassuming Loot (0,4) Chest 15,15 #13711",
     "category": "chest"
   },
   "0,4:11,10": {
-    "id": 213710,
-    "name": "Unassuming Loot (0,4) Enemy 11,10 #13711",
+    "id": 213711,
+    "name": "Unassuming Loot (0,4) Enemy 11,10 #13712",
     "category": "enemy"
   },
   "0,4:10,16": {
-    "id": 213711,
-    "name": "Unassuming Loot (0,4) Enemy 10,16 #13712",
+    "id": 213712,
+    "name": "Unassuming Loot (0,4) Enemy 10,16 #13713",
     "category": "enemy"
   },
   "0,4:19,20": {
-    "id": 213712,
-    "name": "Unassuming Loot (0,4) Enemy 19,20 #13713",
+    "id": 213713,
+    "name": "Unassuming Loot (0,4) Enemy 19,20 #13714",
     "category": "enemy"
   },
   "0,4:10,21": {
-    "id": 213713,
-    "name": "Unassuming Loot (0,4) Enemy 10,21 #13714",
+    "id": 213714,
+    "name": "Unassuming Loot (0,4) Enemy 10,21 #13715",
     "category": "enemy"
   },
   "0,4:21,13": {
-    "id": 213714,
-    "name": "Unassuming Loot (0,4) Enemy 21,13 #13715",
+    "id": 213715,
+    "name": "Unassuming Loot (0,4) Enemy 21,13 #13716",
     "category": "enemy"
   },
   "1,4:14,13": {
-    "id": 213715,
-    "name": "Three Mage Beach (1,4) Chest 14,13 #13716",
+    "id": 213716,
+    "name": "Three Mage Beach (1,4) Chest 14,13 #13717",
     "category": "chest"
   },
   "1,4:16,3": {
-    "id": 213716,
-    "name": "Three Mage Beach (1,4) Enemy 16,3 #13717",
+    "id": 213717,
+    "name": "Three Mage Beach (1,4) Enemy 16,3 #13718",
     "category": "enemy"
   },
   "1,4:4,15": {
-    "id": 213717,
-    "name": "Three Mage Beach (1,4) Enemy 4,15 #13718",
+    "id": 213718,
+    "name": "Three Mage Beach (1,4) Enemy 4,15 #13719",
     "category": "enemy"
   },
   "1,4:27,15": {
-    "id": 213718,
-    "name": "Three Mage Beach (1,4) Enemy 27,15 #13719",
+    "id": 213719,
+    "name": "Three Mage Beach (1,4) Enemy 27,15 #13720",
     "category": "enemy"
   },
   "2,4:15,15": {
-    "id": 213719,
-    "name": "Adventurer's Bane (2,4) Chest 15,15 #13720",
+    "id": 213720,
+    "name": "Adventurer's Bane (2,4) Chest 15,15 #13721",
     "category": "chest"
   },
   "2,4:18,15": {
-    "id": 213720,
-    "name": "Adventurer's Bane (2,4) Chest 18,15 #13721",
+    "id": 213721,
+    "name": "Adventurer's Bane (2,4) Chest 18,15 #13722",
     "category": "chest"
   },
   "2,4:16,15": {
-    "id": 213721,
-    "name": "Adventurer's Bane (2,4) Enemy 16,15 #13722",
+    "id": 213722,
+    "name": "Adventurer's Bane (2,4) Enemy 16,15 #13723",
     "category": "enemy"
   },
   "2,4:17,15": {
-    "id": 213722,
-    "name": "Adventurer's Bane (2,4) Enemy 17,15 #13723",
+    "id": 213723,
+    "name": "Adventurer's Bane (2,4) Enemy 17,15 #13724",
     "category": "enemy"
   },
   "2,4:14,15": {
-    "id": 213723,
-    "name": "Adventurer's Bane (2,4) Enemy 14,15 #13724",
+    "id": 213724,
+    "name": "Adventurer's Bane (2,4) Enemy 14,15 #13725",
     "category": "enemy"
   },
   "2,4:19,15": {
-    "id": 213724,
-    "name": "Adventurer's Bane (2,4) Enemy 19,15 #13725",
+    "id": 213725,
+    "name": "Adventurer's Bane (2,4) Enemy 19,15 #13726",
     "category": "enemy"
   },
   "2,4:16,14": {
-    "id": 213725,
-    "name": "Adventurer's Bane (2,4) Enemy 16,14 #13726",
+    "id": 213726,
+    "name": "Adventurer's Bane (2,4) Enemy 16,14 #13727",
     "category": "enemy"
   },
   "2,4:17,14": {
-    "id": 213726,
-    "name": "Adventurer's Bane (2,4) Enemy 17,14 #13727",
+    "id": 213727,
+    "name": "Adventurer's Bane (2,4) Enemy 17,14 #13728",
     "category": "enemy"
   },
   "2,4:17,16": {
-    "id": 213727,
-    "name": "Adventurer's Bane (2,4) Enemy 17,16 #13728",
+    "id": 213728,
+    "name": "Adventurer's Bane (2,4) Enemy 17,16 #13729",
     "category": "enemy"
   },
   "2,4:16,16": {
-    "id": 213728,
-    "name": "Adventurer's Bane (2,4) Enemy 16,16 #13729",
+    "id": 213729,
+    "name": "Adventurer's Bane (2,4) Enemy 16,16 #13730",
     "category": "enemy"
   },
   "2,4:12,8": {
-    "id": 213729,
-    "name": "Adventurer's Bane (2,4) Enemy 12,8 #13730",
+    "id": 213730,
+    "name": "Adventurer's Bane (2,4) Enemy 12,8 #13731",
     "category": "enemy"
   },
   "2,4:18,7": {
-    "id": 213730,
-    "name": "Adventurer's Bane (2,4) Enemy 18,7 #13731",
+    "id": 213731,
+    "name": "Adventurer's Bane (2,4) Enemy 18,7 #13732",
     "category": "enemy"
   },
   "2,4:23,4": {
-    "id": 213731,
-    "name": "Adventurer's Bane (2,4) Enemy 23,4 #13732",
+    "id": 213732,
+    "name": "Adventurer's Bane (2,4) Enemy 23,4 #13733",
     "category": "enemy"
   },
   "2,4:16,4": {
-    "id": 213732,
-    "name": "Adventurer's Bane (2,4) Enemy 16,4 #13733",
+    "id": 213733,
+    "name": "Adventurer's Bane (2,4) Enemy 16,4 #13734",
     "category": "enemy"
   },
   "2,4:3,4": {
-    "id": 213733,
-    "name": "Adventurer's Bane (2,4) Enemy 3,4 #13734",
+    "id": 213734,
+    "name": "Adventurer's Bane (2,4) Enemy 3,4 #13735",
     "category": "enemy"
   },
   "2,4:11,18": {
-    "id": 213734,
-    "name": "Adventurer's Bane (2,4) Enemy 11,18 #13735",
+    "id": 213735,
+    "name": "Adventurer's Bane (2,4) Enemy 11,18 #13736",
     "category": "enemy"
   },
   "2,4:18,23": {
-    "id": 213735,
-    "name": "Adventurer's Bane (2,4) Enemy 18,23 #13736",
+    "id": 213736,
+    "name": "Adventurer's Bane (2,4) Enemy 18,23 #13737",
     "category": "enemy"
   },
   "2,4:23,26": {
-    "id": 213736,
-    "name": "Adventurer's Bane (2,4) Enemy 23,26 #13737",
+    "id": 213737,
+    "name": "Adventurer's Bane (2,4) Enemy 23,26 #13738",
     "category": "enemy"
   },
   "2,4:23,17": {
-    "id": 213737,
-    "name": "Adventurer's Bane (2,4) Enemy 23,17 #13738",
+    "id": 213738,
+    "name": "Adventurer's Bane (2,4) Enemy 23,17 #13739",
     "category": "enemy"
   },
   "2,4:22,11": {
-    "id": 213738,
-    "name": "Adventurer's Bane (2,4) Enemy 22,11 #13739",
+    "id": 213739,
+    "name": "Adventurer's Bane (2,4) Enemy 22,11 #13740",
     "category": "enemy"
   },
   "2,4:26,10": {
-    "id": 213739,
-    "name": "Adventurer's Bane (2,4) Enemy 26,10 #13740",
+    "id": 213740,
+    "name": "Adventurer's Bane (2,4) Enemy 26,10 #13741",
     "category": "enemy"
   },
   "2,4:8,22": {
-    "id": 213740,
-    "name": "Adventurer's Bane (2,4) Enemy 8,22 #13741",
+    "id": 213741,
+    "name": "Adventurer's Bane (2,4) Enemy 8,22 #13742",
     "category": "enemy"
   },
   "2,4:3,14": {
-    "id": 213741,
-    "name": "Adventurer's Bane (2,4) Enemy 3,14 #13742",
+    "id": 213742,
+    "name": "Adventurer's Bane (2,4) Enemy 3,14 #13743",
     "category": "enemy"
   },
   "2,4:13,20": {
-    "id": 213742,
-    "name": "Adventurer's Bane (2,4) Enemy 13,20 #13743",
+    "id": 213743,
+    "name": "Adventurer's Bane (2,4) Enemy 13,20 #13744",
     "category": "enemy"
   },
   "2,4:7,13": {
-    "id": 213743,
-    "name": "Adventurer's Bane (2,4) Enemy 7,13 #13744",
+    "id": 213744,
+    "name": "Adventurer's Bane (2,4) Enemy 7,13 #13745",
     "category": "enemy"
   },
   "2,4:28,17": {
-    "id": 213744,
-    "name": "Adventurer's Bane (2,4) Enemy 28,17 #13745",
+    "id": 213745,
+    "name": "Adventurer's Bane (2,4) Enemy 28,17 #13746",
     "category": "enemy"
   },
   "2,4:22,21": {
-    "id": 213745,
-    "name": "Adventurer's Bane (2,4) Enemy 22,21 #13746",
+    "id": 213746,
+    "name": "Adventurer's Bane (2,4) Enemy 22,21 #13747",
     "category": "enemy"
   },
   "2,4:17,18": {
-    "id": 213746,
-    "name": "Adventurer's Bane (2,4) Enemy 17,18 #13747",
+    "id": 213747,
+    "name": "Adventurer's Bane (2,4) Enemy 17,18 #13748",
     "category": "enemy"
   },
   "2,4:16,12": {
-    "id": 213747,
-    "name": "Adventurer's Bane (2,4) Enemy 16,12 #13748",
+    "id": 213748,
+    "name": "Adventurer's Bane (2,4) Enemy 16,12 #13749",
     "category": "enemy"
   },
   "2,4:24,14": {
-    "id": 213748,
-    "name": "Adventurer's Bane (2,4) Enemy 24,14 #13749",
+    "id": 213749,
+    "name": "Adventurer's Bane (2,4) Enemy 24,14 #13750",
     "category": "enemy"
   },
   "2,4:8,5": {
-    "id": 213749,
-    "name": "Adventurer's Bane (2,4) Enemy 8,5 #13750",
+    "id": 213750,
+    "name": "Adventurer's Bane (2,4) Enemy 8,5 #13751",
     "category": "enemy"
   },
   "2,4:15,3": {
-    "id": 213750,
-    "name": "Adventurer's Bane (2,4) Enemy 15,3 #13751",
+    "id": 213751,
+    "name": "Adventurer's Bane (2,4) Enemy 15,3 #13752",
     "category": "enemy"
   },
   "3,4:15,15": {
-    "id": 213751,
-    "name": "Cabal Chest (3,4) Chest 15,15 #13752",
+    "id": 213752,
+    "name": "Cabal Chest (3,4) Chest 15,15 #13753",
     "category": "chest"
   },
   "3,4:13,12": {
-    "id": 213752,
-    "name": "Cabal Chest (3,4) Enemy 13,12 #13753",
+    "id": 213753,
+    "name": "Cabal Chest (3,4) Enemy 13,12 #13754",
     "category": "enemy"
   },
   "3,4:11,15": {
-    "id": 213753,
-    "name": "Cabal Chest (3,4) Enemy 11,15 #13754",
+    "id": 213754,
+    "name": "Cabal Chest (3,4) Enemy 11,15 #13755",
     "category": "enemy"
   },
   "3,4:16,19": {
-    "id": 213754,
-    "name": "Cabal Chest (3,4) Enemy 16,19 #13755",
+    "id": 213755,
+    "name": "Cabal Chest (3,4) Enemy 16,19 #13756",
     "category": "enemy"
   },
   "3,4:18,15": {
-    "id": 213755,
-    "name": "Cabal Chest (3,4) Enemy 18,15 #13756",
+    "id": 213756,
+    "name": "Cabal Chest (3,4) Enemy 18,15 #13757",
     "category": "enemy"
   },
   "3,4:13,19": {
-    "id": 213756,
-    "name": "Cabal Chest (3,4) Enemy 13,19 #13757",
+    "id": 213757,
+    "name": "Cabal Chest (3,4) Enemy 13,19 #13758",
     "category": "enemy"
   },
   "3,4:17,13": {
-    "id": 213757,
-    "name": "Cabal Chest (3,4) Enemy 17,13 #13758",
+    "id": 213758,
+    "name": "Cabal Chest (3,4) Enemy 17,13 #13759",
     "category": "enemy"
   },
   "3,4:19,17": {
-    "id": 213758,
-    "name": "Cabal Chest (3,4) Enemy 19,17 #13759",
+    "id": 213759,
+    "name": "Cabal Chest (3,4) Enemy 19,17 #13760",
     "category": "enemy"
   },
   "3,4:11,13": {
-    "id": 213759,
-    "name": "Cabal Chest (3,4) Enemy 11,13 #13760",
+    "id": 213760,
+    "name": "Cabal Chest (3,4) Enemy 11,13 #13761",
     "category": "enemy"
   },
   "3,4:13,15": {
-    "id": 213760,
-    "name": "Cabal Chest (3,4) Enemy 13,15 #13761",
+    "id": 213761,
+    "name": "Cabal Chest (3,4) Enemy 13,15 #13762",
     "category": "enemy"
   },
   "0,5:16,17": {
-    "id": 213761,
-    "name": "Bunker (0,5) Chest 16,17 #13762",
+    "id": 213762,
+    "name": "Bunker (0,5) Chest 16,17 #13763",
     "category": "chest"
   },
   "0,5:15,17": {
-    "id": 213762,
-    "name": "Bunker (0,5) Chest 15,17 #13763",
+    "id": 213763,
+    "name": "Bunker (0,5) Chest 15,17 #13764",
     "category": "chest"
   },
   "0,5:14,17": {
-    "id": 213763,
-    "name": "Bunker (0,5) Chest 14,17 #13764",
+    "id": 213764,
+    "name": "Bunker (0,5) Chest 14,17 #13765",
     "category": "chest"
   },
   "0,5:13,17": {
-    "id": 213764,
-    "name": "Bunker (0,5) Postgame Destructible 13,17 #13765",
+    "id": 213765,
+    "name": "Bunker (0,5) Postgame Destructible 13,17 #13766",
     "category": "postgame_destructible"
   },
   "0,5:13,18": {
-    "id": 213765,
-    "name": "Bunker (0,5) Postgame Destructible 13,18 #13766",
+    "id": 213766,
+    "name": "Bunker (0,5) Postgame Destructible 13,18 #13767",
     "category": "postgame_destructible"
   },
   "0,5:14,18": {
-    "id": 213766,
-    "name": "Bunker (0,5) Postgame Destructible 14,18 #13767",
+    "id": 213767,
+    "name": "Bunker (0,5) Postgame Destructible 14,18 #13768",
     "category": "postgame_destructible"
   },
   "0,5:15,18": {
-    "id": 213767,
-    "name": "Bunker (0,5) Destructible 15,18 #13768",
+    "id": 213768,
+    "name": "Bunker (0,5) Destructible 15,18 #13769",
     "category": "easy_destructible"
   },
   "0,5:16,18": {
-    "id": 213768,
-    "name": "Bunker (0,5) Postgame Destructible 16,18 #13769",
+    "id": 213769,
+    "name": "Bunker (0,5) Postgame Destructible 16,18 #13770",
     "category": "postgame_destructible"
   },
   "0,5:17,18": {
-    "id": 213769,
-    "name": "Bunker (0,5) Postgame Destructible 17,18 #13770",
+    "id": 213770,
+    "name": "Bunker (0,5) Postgame Destructible 17,18 #13771",
     "category": "postgame_destructible"
   },
   "0,5:17,17": {
-    "id": 213770,
-    "name": "Bunker (0,5) Postgame Destructible 17,17 #13771",
+    "id": 213771,
+    "name": "Bunker (0,5) Postgame Destructible 17,17 #13772",
     "category": "postgame_destructible"
   },
   "0,5:12,17": {
-    "id": 213771,
-    "name": "Bunker (0,5) Destructible 12,17 #13772",
+    "id": 213772,
+    "name": "Bunker (0,5) Destructible 12,17 #13773",
     "category": "easy_destructible"
   },
   "0,5:12,18": {
-    "id": 213772,
-    "name": "Bunker (0,5) Destructible 12,18 #13773",
+    "id": 213773,
+    "name": "Bunker (0,5) Destructible 12,18 #13774",
     "category": "easy_destructible"
   },
   "0,5:14,19": {
-    "id": 213773,
-    "name": "Bunker (0,5) Postgame Destructible 14,19 #13774",
+    "id": 213774,
+    "name": "Bunker (0,5) Postgame Destructible 14,19 #13775",
     "category": "postgame_destructible"
   },
   "0,5:15,19": {
-    "id": 213774,
-    "name": "Bunker (0,5) Destructible 15,19 #13775",
+    "id": 213775,
+    "name": "Bunker (0,5) Destructible 15,19 #13776",
     "category": "easy_destructible"
   },
   "0,5:16,19": {
-    "id": 213775,
-    "name": "Bunker (0,5) Postgame Destructible 16,19 #13776",
+    "id": 213776,
+    "name": "Bunker (0,5) Postgame Destructible 16,19 #13777",
     "category": "postgame_destructible"
   },
   "0,5:14,20": {
-    "id": 213776,
-    "name": "Bunker (0,5) Destructible 14,20 #13777",
+    "id": 213777,
+    "name": "Bunker (0,5) Destructible 14,20 #13778",
     "category": "easy_destructible"
   },
   "0,5:14,21": {
-    "id": 213777,
-    "name": "Bunker (0,5) Postgame Destructible 14,21 #13778",
+    "id": 213778,
+    "name": "Bunker (0,5) Postgame Destructible 14,21 #13779",
     "category": "postgame_destructible"
   },
   "0,5:15,21": {
-    "id": 213778,
-    "name": "Bunker (0,5) Destructible 15,21 #13779",
+    "id": 213779,
+    "name": "Bunker (0,5) Destructible 15,21 #13780",
     "category": "easy_destructible"
   },
   "0,5:16,21": {
-    "id": 213779,
-    "name": "Bunker (0,5) Postgame Destructible 16,21 #13780",
+    "id": 213780,
+    "name": "Bunker (0,5) Postgame Destructible 16,21 #13781",
     "category": "postgame_destructible"
   },
   "0,5:16,20": {
-    "id": 213780,
-    "name": "Bunker (0,5) Destructible 16,20 #13781",
+    "id": 213781,
+    "name": "Bunker (0,5) Destructible 16,20 #13782",
     "category": "easy_destructible"
   },
   "0,5:17,20": {
-    "id": 213781,
-    "name": "Bunker (0,5) Destructible 17,20 #13782",
+    "id": 213782,
+    "name": "Bunker (0,5) Destructible 17,20 #13783",
     "category": "easy_destructible"
   },
   "0,5:17,19": {
-    "id": 213782,
-    "name": "Bunker (0,5) Postgame Destructible 17,19 #13783",
+    "id": 213783,
+    "name": "Bunker (0,5) Postgame Destructible 17,19 #13784",
     "category": "postgame_destructible"
   },
   "0,5:17,21": {
-    "id": 213783,
-    "name": "Bunker (0,5) Postgame Destructible 17,21 #13784",
+    "id": 213784,
+    "name": "Bunker (0,5) Postgame Destructible 17,21 #13785",
     "category": "postgame_destructible"
   },
   "0,5:18,19": {
-    "id": 213784,
-    "name": "Bunker (0,5) Destructible 18,19 #13785",
+    "id": 213785,
+    "name": "Bunker (0,5) Destructible 18,19 #13786",
     "category": "easy_destructible"
   },
   "0,5:19,19": {
-    "id": 213785,
-    "name": "Bunker (0,5) Postgame Destructible 19,19 #13786",
+    "id": 213786,
+    "name": "Bunker (0,5) Postgame Destructible 19,19 #13787",
     "category": "postgame_destructible"
   },
   "0,5:19,20": {
-    "id": 213786,
-    "name": "Bunker (0,5) Destructible 19,20 #13787",
+    "id": 213787,
+    "name": "Bunker (0,5) Destructible 19,20 #13788",
     "category": "easy_destructible"
   },
   "0,5:19,21": {
-    "id": 213787,
-    "name": "Bunker (0,5) Postgame Destructible 19,21 #13788",
+    "id": 213788,
+    "name": "Bunker (0,5) Postgame Destructible 19,21 #13789",
     "category": "postgame_destructible"
   },
   "0,5:18,21": {
-    "id": 213788,
-    "name": "Bunker (0,5) Destructible 18,21 #13789",
+    "id": 213789,
+    "name": "Bunker (0,5) Destructible 18,21 #13790",
     "category": "easy_destructible"
   },
   "0,5:13,19": {
-    "id": 213789,
-    "name": "Bunker (0,5) Postgame Destructible 13,19 #13790",
+    "id": 213790,
+    "name": "Bunker (0,5) Postgame Destructible 13,19 #13791",
     "category": "postgame_destructible"
   },
   "0,5:12,19": {
-    "id": 213790,
-    "name": "Bunker (0,5) Destructible 12,19 #13791",
+    "id": 213791,
+    "name": "Bunker (0,5) Destructible 12,19 #13792",
     "category": "easy_destructible"
   },
   "0,5:12,20": {
-    "id": 213791,
-    "name": "Bunker (0,5) Enemy 12,20 #13792",
+    "id": 213792,
+    "name": "Bunker (0,5) Enemy 12,20 #13793",
     "category": "enemy"
   },
   "0,5:12,21": {
-    "id": 213792,
-    "name": "Bunker (0,5) Destructible 12,21 #13793",
+    "id": 213793,
+    "name": "Bunker (0,5) Destructible 12,21 #13794",
     "category": "easy_destructible"
   },
   "0,5:13,20": {
-    "id": 213793,
-    "name": "Bunker (0,5) Destructible 13,20 #13794",
+    "id": 213794,
+    "name": "Bunker (0,5) Destructible 13,20 #13795",
     "category": "easy_destructible"
   },
   "0,5:13,21": {
-    "id": 213794,
-    "name": "Bunker (0,5) Postgame Destructible 13,21 #13795",
+    "id": 213795,
+    "name": "Bunker (0,5) Postgame Destructible 13,21 #13796",
     "category": "postgame_destructible"
   },
   "0,5:11,21": {
-    "id": 213795,
-    "name": "Bunker (0,5) Postgame Destructible 11,21 #13796",
+    "id": 213796,
+    "name": "Bunker (0,5) Postgame Destructible 11,21 #13797",
     "category": "postgame_destructible"
   },
   "0,5:11,20": {
-    "id": 213796,
-    "name": "Bunker (0,5) Destructible 11,20 #13797",
+    "id": 213797,
+    "name": "Bunker (0,5) Destructible 11,20 #13798",
     "category": "easy_destructible"
   },
   "0,5:11,19": {
-    "id": 213797,
-    "name": "Bunker (0,5) Postgame Destructible 11,19 #13798",
+    "id": 213798,
+    "name": "Bunker (0,5) Postgame Destructible 11,19 #13799",
     "category": "postgame_destructible"
   },
   "0,5:10,19": {
-    "id": 213798,
-    "name": "Bunker (0,5) Postgame Destructible 10,19 #13799",
+    "id": 213799,
+    "name": "Bunker (0,5) Postgame Destructible 10,19 #13800",
     "category": "postgame_destructible"
   },
   "0,5:10,20": {
-    "id": 213799,
-    "name": "Bunker (0,5) Destructible 10,20 #13800",
+    "id": 213800,
+    "name": "Bunker (0,5) Destructible 10,20 #13801",
     "category": "easy_destructible"
   },
   "0,5:10,21": {
-    "id": 213800,
-    "name": "Bunker (0,5) Postgame Destructible 10,21 #13801",
+    "id": 213801,
+    "name": "Bunker (0,5) Postgame Destructible 10,21 #13802",
     "category": "postgame_destructible"
   },
   "0,5:10,22": {
-    "id": 213801,
-    "name": "Bunker (0,5) Postgame Destructible 10,22 #13802",
+    "id": 213802,
+    "name": "Bunker (0,5) Postgame Destructible 10,22 #13803",
     "category": "postgame_destructible"
   },
   "0,5:11,22": {
-    "id": 213802,
-    "name": "Bunker (0,5) Postgame Destructible 11,22 #13803",
+    "id": 213803,
+    "name": "Bunker (0,5) Postgame Destructible 11,22 #13804",
     "category": "postgame_destructible"
   },
   "0,5:12,22": {
-    "id": 213803,
-    "name": "Bunker (0,5) Destructible 12,22 #13804",
+    "id": 213804,
+    "name": "Bunker (0,5) Destructible 12,22 #13805",
     "category": "easy_destructible"
   },
   "0,5:13,22": {
-    "id": 213804,
-    "name": "Bunker (0,5) Postgame Destructible 13,22 #13805",
+    "id": 213805,
+    "name": "Bunker (0,5) Postgame Destructible 13,22 #13806",
     "category": "postgame_destructible"
   },
   "0,5:14,22": {
-    "id": 213805,
-    "name": "Bunker (0,5) Postgame Destructible 14,22 #13806",
+    "id": 213806,
+    "name": "Bunker (0,5) Postgame Destructible 14,22 #13807",
     "category": "postgame_destructible"
   },
   "0,5:15,22": {
-    "id": 213806,
-    "name": "Bunker (0,5) Destructible 15,22 #13807",
+    "id": 213807,
+    "name": "Bunker (0,5) Destructible 15,22 #13808",
     "category": "easy_destructible"
   },
   "0,5:16,22": {
-    "id": 213807,
-    "name": "Bunker (0,5) Postgame Destructible 16,22 #13808",
+    "id": 213808,
+    "name": "Bunker (0,5) Postgame Destructible 16,22 #13809",
     "category": "postgame_destructible"
   },
   "0,5:17,22": {
-    "id": 213808,
-    "name": "Bunker (0,5) Postgame Destructible 17,22 #13809",
+    "id": 213809,
+    "name": "Bunker (0,5) Postgame Destructible 17,22 #13810",
     "category": "postgame_destructible"
   },
   "0,5:18,22": {
-    "id": 213809,
-    "name": "Bunker (0,5) Destructible 18,22 #13810",
+    "id": 213810,
+    "name": "Bunker (0,5) Destructible 18,22 #13811",
     "category": "easy_destructible"
   },
   "0,5:19,22": {
-    "id": 213810,
-    "name": "Bunker (0,5) Postgame Destructible 19,22 #13811",
+    "id": 213811,
+    "name": "Bunker (0,5) Postgame Destructible 19,22 #13812",
     "category": "postgame_destructible"
   },
   "0,5:20,22": {
-    "id": 213811,
-    "name": "Bunker (0,5) Postgame Destructible 20,22 #13812",
+    "id": 213812,
+    "name": "Bunker (0,5) Postgame Destructible 20,22 #13813",
     "category": "postgame_destructible"
   },
   "0,5:20,21": {
-    "id": 213812,
-    "name": "Bunker (0,5) Postgame Destructible 20,21 #13813",
+    "id": 213813,
+    "name": "Bunker (0,5) Postgame Destructible 20,21 #13814",
     "category": "postgame_destructible"
   },
   "0,5:20,20": {
-    "id": 213813,
-    "name": "Bunker (0,5) Destructible 20,20 #13814",
+    "id": 213814,
+    "name": "Bunker (0,5) Destructible 20,20 #13815",
     "category": "easy_destructible"
   },
   "0,5:20,19": {
-    "id": 213814,
-    "name": "Bunker (0,5) Postgame Destructible 20,19 #13815",
+    "id": 213815,
+    "name": "Bunker (0,5) Postgame Destructible 20,19 #13816",
     "category": "postgame_destructible"
   },
   "0,5:18,17": {
-    "id": 213815,
-    "name": "Bunker (0,5) Destructible 18,17 #13816",
+    "id": 213816,
+    "name": "Bunker (0,5) Destructible 18,17 #13817",
     "category": "easy_destructible"
   },
   "0,5:18,18": {
-    "id": 213816,
-    "name": "Bunker (0,5) Destructible 18,18 #13817",
+    "id": 213817,
+    "name": "Bunker (0,5) Destructible 18,18 #13818",
     "category": "easy_destructible"
   },
   "0,5:15,20": {
-    "id": 213817,
-    "name": "Bunker (0,5) Enemy 15,20 #13818",
+    "id": 213818,
+    "name": "Bunker (0,5) Enemy 15,20 #13819",
     "category": "enemy"
   },
   "0,5:18,20": {
-    "id": 213818,
-    "name": "Bunker (0,5) Enemy 18,20 #13819",
+    "id": 213819,
+    "name": "Bunker (0,5) Enemy 18,20 #13820",
     "category": "enemy"
   },
   "0,-3:9,9": {
-    "id": 213819,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,9 #13820",
+    "id": 213820,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,9 #13821",
     "category": "postgame_destructible"
   },
   "0,-3:10,9": {
-    "id": 213820,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,9 #13821",
+    "id": 213821,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,9 #13822",
     "category": "postgame_destructible"
   },
   "0,-3:11,9": {
-    "id": 213821,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,9 #13822",
+    "id": 213822,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,9 #13823",
     "category": "postgame_destructible"
   },
   "0,-3:9,8": {
-    "id": 213822,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,8 #13823",
+    "id": 213823,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,8 #13824",
     "category": "postgame_destructible"
   },
   "0,-3:10,8": {
-    "id": 213823,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,8 #13824",
+    "id": 213824,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,8 #13825",
     "category": "postgame_destructible"
   },
   "0,-3:11,8": {
-    "id": 213824,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,8 #13825",
+    "id": 213825,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,8 #13826",
     "category": "postgame_destructible"
   },
   "0,-3:9,12": {
-    "id": 213825,
-    "name": "Mage's Better Shoppe (0,-3) Shop 9,12 #13826",
+    "id": 213826,
+    "name": "Mage's Better Shoppe (0,-3) Shop 9,12 #13827",
     "category": "shop"
   },
   "0,-3:10,12": {
-    "id": 213826,
-    "name": "Mage's Better Shoppe (0,-3) Shop 10,12 #13827",
+    "id": 213827,
+    "name": "Mage's Better Shoppe (0,-3) Shop 10,12 #13828",
     "category": "shop"
   },
   "0,-3:11,12": {
-    "id": 213827,
-    "name": "Mage's Better Shoppe (0,-3) Shop 11,12 #13828",
+    "id": 213828,
+    "name": "Mage's Better Shoppe (0,-3) Shop 11,12 #13829",
     "category": "shop"
   },
   "0,-3:9,10": {
-    "id": 213828,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,10 #13829",
+    "id": 213829,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,10 #13830",
     "category": "postgame_destructible"
   },
   "0,-3:10,10": {
-    "id": 213829,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,10 #13830",
+    "id": 213830,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,10 #13831",
     "category": "postgame_destructible"
   },
   "0,-3:11,10": {
-    "id": 213830,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,10 #13831",
+    "id": 213831,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,10 #13832",
     "category": "postgame_destructible"
   },
   "0,-3:11,13": {
-    "id": 213831,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,13 #13832",
+    "id": 213832,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 11,13 #13833",
     "category": "postgame_destructible"
   },
   "0,-3:10,13": {
-    "id": 213832,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,13 #13833",
+    "id": 213833,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 10,13 #13834",
     "category": "postgame_destructible"
   },
   "0,-3:9,13": {
-    "id": 213833,
-    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,13 #13834",
+    "id": 213834,
+    "name": "Mage's Better Shoppe (0,-3) Postgame Destructible 9,13 #13835",
     "category": "postgame_destructible"
   },
   "0,-3:10,11": {
-    "id": 213834,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 10,11 #13835",
+    "id": 213835,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 10,11 #13836",
     "category": "enemy"
   },
   "0,-3:22,11": {
-    "id": 213835,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 22,11 #13836",
+    "id": 213836,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 22,11 #13837",
     "category": "enemy"
   },
   "0,-3:17,16": {
-    "id": 213836,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 17,16 #13837",
+    "id": 213837,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 17,16 #13838",
     "category": "enemy"
   },
   "0,-3:23,24": {
-    "id": 213837,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 23,24 #13838",
+    "id": 213838,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 23,24 #13839",
     "category": "enemy"
   },
   "0,-3:9,22": {
-    "id": 213838,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 9,22 #13839",
+    "id": 213839,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 9,22 #13840",
     "category": "enemy"
   }
 };

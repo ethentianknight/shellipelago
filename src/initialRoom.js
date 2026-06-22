@@ -14,6 +14,7 @@ var initialRoomExplosionImage = null;
 var initialRoomPlayerImages = {};
 var initialRoomTankBodyImage = null;
 var initialRoomTankTurretImage = null;
+var initialRoomRedSwordImage = null;
 var initialRoomEnemyImages = {};
 var initialRoomRuntimeEnemyCanvasImages = {};
 var initialRoomPickupIconImages = {};
@@ -30,6 +31,9 @@ var initialRoomProjectiles = [];
 var initialRoomWizardFireballs = [];
 var initialRoomMeleeAttacks = [];
 var initialRoomNextMeleeAllowedAt = 0;
+var initialRoomScreenShakeUntil = 0;
+var initialRoomScreenShakeStartedAt = 0;
+var initialRoomScreenShakeMagnitude = 0;
 var initialRoomEnemies = [];
 var initialRoomActiveExplosionTiles = {};
 var initialRoomDestroyedDestructableChecks = {};
@@ -444,6 +448,8 @@ var initialRoomBgmFadeDuration = 1000;
 var initialRoomWaterFrameDuration = 500;
 var initialRoomBombFuseDuration = 1200;
 var initialRoomExplosionDuration = 900;
+var initialRoomBombLevelThreeShakeDuration = 280;
+var initialRoomBombLevelThreeShakeMagnitude = 0.16;
 var initialRoomFireDuration = 1800;
 var initialRoomEnemyHurtDuration = 350;
 var initialRoomEnemyDeathDuration = 650;
@@ -811,6 +817,13 @@ function initialRoomUpdateEffectLayerBounds() {
   initialRoomEffectLayer.style.overflow = "hidden";
 }
 
+function initialRoomUpdateRuntimeLayerVisibility() {
+  var initialRoomShouldHideRuntimeLayers = initialRoomIsMapOpen || initialRoomIsStatusOpen || initialRoomIsMessageLogOpen;
+
+  initialRoomEnemyLayer.style.display = initialRoomShouldHideRuntimeLayers ? "none" : "block";
+  initialRoomEffectLayer.style.display = initialRoomShouldHideRuntimeLayers ? "none" : "block";
+}
+
 function initialRoomUpdateMessageCanvasBounds() {
   initialRoomMessageCanvas.style.position = "fixed";
   initialRoomMessageCanvas.style.left = "0";
@@ -1034,6 +1047,34 @@ function initialRoomUpdateView() {
   initialRoomView.cameraY = initialRoomClampCameraAxis(initialRoomPlayer.y, initialRoomView.visibleTilesY, mapManagerData.roomHeight);
   initialRoomView.offsetX = (initialRoomCanvas.width / 2) - (initialRoomView.cameraX * initialRoomView.tileSize);
   initialRoomView.offsetY = (initialRoomCanvas.height / 2) - (initialRoomView.cameraY * initialRoomView.tileSize);
+  initialRoomApplyScreenShakeToView();
+}
+
+function initialRoomApplyScreenShakeToView() {
+  var initialRoomNow = Date.now();
+  var initialRoomProgress = 0;
+  var initialRoomCurrentMagnitude = 0;
+  var initialRoomShakeX = 0;
+  var initialRoomShakeY = 0;
+
+  if (initialRoomNow >= initialRoomScreenShakeUntil || initialRoomScreenShakeMagnitude <= 0) {
+    return;
+  }
+
+  initialRoomProgress = Math.max(0, Math.min(1, (initialRoomNow - initialRoomScreenShakeStartedAt) / Math.max(1, initialRoomScreenShakeUntil - initialRoomScreenShakeStartedAt)));
+  initialRoomCurrentMagnitude = initialRoomScreenShakeMagnitude * (1 - initialRoomProgress) * initialRoomView.tileSize;
+  initialRoomShakeX = Math.sin(initialRoomNow * 0.071) * initialRoomCurrentMagnitude;
+  initialRoomShakeY = Math.cos(initialRoomNow * 0.053) * initialRoomCurrentMagnitude;
+  initialRoomView.offsetX += initialRoomShakeX;
+  initialRoomView.offsetY += initialRoomShakeY;
+}
+
+function initialRoomStartScreenShake(initialRoomDuration, initialRoomMagnitude) {
+  var initialRoomNow = Date.now();
+
+  initialRoomScreenShakeStartedAt = initialRoomNow;
+  initialRoomScreenShakeUntil = initialRoomNow + initialRoomDuration;
+  initialRoomScreenShakeMagnitude = initialRoomMagnitude;
 }
 
 function initialRoomGetVisibleTileCount() {
@@ -3641,7 +3682,7 @@ function initialRoomDrawMeleeAttacks(initialRoomLayer) {
     }
 
     initialRoomAttack.points.forEach(function (initialRoomPoint) {
-      initialRoomDrawMeleeAttackPoint(initialRoomPoint, initialRoomAttack.direction, 0);
+      initialRoomDrawMeleeAttackPoint(initialRoomPoint, initialRoomAttack.direction, 0, initialRoomAttack.level);
     });
   });
 }
@@ -3651,7 +3692,7 @@ function initialRoomDrawMeleeSwing(initialRoomAttack, initialRoomNow) {
   var initialRoomPointIndex = Math.min(initialRoomAttack.points.length - 1, Math.floor(initialRoomProgress * initialRoomAttack.points.length));
   var initialRoomRotationOffset = initialRoomGetSwingRotationOffset(initialRoomPointIndex, initialRoomAttack.points.length);
 
-  initialRoomDrawMeleeAttackPoint(initialRoomAttack.points[initialRoomPointIndex], initialRoomAttack.direction, initialRoomRotationOffset);
+  initialRoomDrawMeleeAttackPoint(initialRoomAttack.points[initialRoomPointIndex], initialRoomAttack.direction, initialRoomRotationOffset, initialRoomAttack.level);
 }
 
 function initialRoomGetSwingRotationOffset(initialRoomPointIndex, initialRoomPointCount) {
@@ -3666,13 +3707,13 @@ function initialRoomGetSwingRotationOffset(initialRoomPointIndex, initialRoomPoi
   return 0;
 }
 
-function initialRoomDrawMeleeAttackPoint(initialRoomPoint, initialRoomDirection, initialRoomRotationOffset) {
+function initialRoomDrawMeleeAttackPoint(initialRoomPoint, initialRoomDirection, initialRoomRotationOffset, initialRoomSwordLevel) {
   var initialRoomCenterX = initialRoomView.offsetX + (initialRoomPoint.x * initialRoomView.tileSize);
   var initialRoomCenterY = initialRoomView.offsetY + (initialRoomPoint.y * initialRoomView.tileSize);
   var initialRoomSize = initialRoomView.tileSize * 0.9;
 
   if (initialRoomGetGraphicsLevel() === 0 || !initialRoomSwordImage) {
-    initialRoomDrawBasicMeleeBar(initialRoomCenterX, initialRoomCenterY, initialRoomSize, initialRoomDirection);
+    initialRoomDrawBasicMeleeBar(initialRoomCenterX, initialRoomCenterY, initialRoomSize, initialRoomDirection, initialRoomSwordLevel);
     return;
   }
 
@@ -3682,15 +3723,83 @@ function initialRoomDrawMeleeAttackPoint(initialRoomPoint, initialRoomDirection,
   if (initialRoomGetGraphicsLevel() === 1) {
     initialRoomContext.filter = "grayscale(1) contrast(1.35)";
   }
-  initialRoomContext.drawImage(initialRoomSwordImage, -initialRoomSize / 2, -initialRoomSize / 2, initialRoomSize, initialRoomSize);
+  initialRoomContext.drawImage(initialRoomGetSwordImage(initialRoomSwordLevel), -initialRoomSize / 2, -initialRoomSize / 2, initialRoomSize, initialRoomSize);
   initialRoomContext.restore();
 }
 
-function initialRoomDrawBasicMeleeBar(initialRoomCenterX, initialRoomCenterY, initialRoomSize, initialRoomDirection) {
+function initialRoomGetSwordImage(initialRoomSwordLevel) {
+  if (initialRoomSwordLevel < 3 || initialRoomGetGraphicsLevel() < 2) {
+    return initialRoomSwordImage;
+  }
+
+  if (!initialRoomRedSwordImage) {
+    initialRoomRedSwordImage = initialRoomCreateRedSwordImage();
+  }
+
+  return initialRoomRedSwordImage || initialRoomSwordImage;
+}
+
+function initialRoomCreateRedSwordImage() {
+  var initialRoomWidth = initialRoomSwordImage.naturalWidth || initialRoomSwordImage.width;
+  var initialRoomHeight = initialRoomSwordImage.naturalHeight || initialRoomSwordImage.height;
+  var initialRoomCanvas = document.createElement("canvas");
+  var initialRoomContext = null;
+  var initialRoomImageData = null;
+  var initialRoomPixels = null;
+  var initialRoomIndex = 0;
+
+  if (!initialRoomWidth || !initialRoomHeight) {
+    return null;
+  }
+
+  initialRoomCanvas.width = initialRoomWidth;
+  initialRoomCanvas.height = initialRoomHeight;
+  initialRoomContext = initialRoomCanvas.getContext("2d", { willReadFrequently: true });
+  initialRoomContext.imageSmoothingEnabled = false;
+
+  try {
+    initialRoomContext.drawImage(initialRoomSwordImage, 0, 0, initialRoomWidth, initialRoomHeight);
+    initialRoomImageData = initialRoomContext.getImageData(0, 0, initialRoomWidth, initialRoomHeight);
+  } catch (initialRoomError) {
+    return null;
+  }
+
+  initialRoomPixels = initialRoomImageData.data;
+
+  while (initialRoomIndex < initialRoomPixels.length) {
+    initialRoomReplaceSwordGreyPixel(initialRoomPixels, initialRoomIndex);
+    initialRoomIndex += 4;
+  }
+
+  initialRoomContext.putImageData(initialRoomImageData, 0, 0);
+  return initialRoomCanvas;
+}
+
+function initialRoomReplaceSwordGreyPixel(initialRoomPixels, initialRoomIndex) {
+  var initialRoomRed = initialRoomPixels[initialRoomIndex];
+  var initialRoomGreen = initialRoomPixels[initialRoomIndex + 1];
+  var initialRoomBlue = initialRoomPixels[initialRoomIndex + 2];
+  var initialRoomAlpha = initialRoomPixels[initialRoomIndex + 3];
+  var initialRoomMax = Math.max(initialRoomRed, initialRoomGreen, initialRoomBlue);
+  var initialRoomMin = Math.min(initialRoomRed, initialRoomGreen, initialRoomBlue);
+  var initialRoomGrey = Math.round((initialRoomRed + initialRoomGreen + initialRoomBlue) / 3);
+  var initialRoomRedScale = 0;
+
+  if (initialRoomAlpha === 0 || initialRoomMax - initialRoomMin > 18 || initialRoomGrey < 64) {
+    return;
+  }
+
+  initialRoomRedScale = Math.max(0, Math.min(1, (initialRoomGrey - 64) / 191));
+  initialRoomPixels[initialRoomIndex] = Math.round(92 + (initialRoomRedScale * 132));
+  initialRoomPixels[initialRoomIndex + 1] = Math.round(6 + (initialRoomRedScale * 34));
+  initialRoomPixels[initialRoomIndex + 2] = Math.round(6 + (initialRoomRedScale * 34));
+}
+
+function initialRoomDrawBasicMeleeBar(initialRoomCenterX, initialRoomCenterY, initialRoomSize, initialRoomDirection, initialRoomSwordLevel) {
   var initialRoomPixelUnit = initialRoomGetPixelUnit();
   var initialRoomBarThickness = Math.max(initialRoomPixelUnit, initialRoomView.tileSize / 12);
 
-  initialRoomContext.fillStyle = "#f7f7f1";
+  initialRoomContext.fillStyle = initialRoomSwordLevel >= 3 && initialRoomGetGraphicsLevel() >= 2 ? "#d92b2b" : "#f7f7f1";
 
   if (initialRoomDirection.x !== 0) {
     initialRoomContext.fillRect(
@@ -4971,7 +5080,7 @@ function initialRoomShowNextQueuedMessage() {
 function initialRoomDrawMessageFeed() {
   initialRoomMessageContext.clearRect(0, 0, initialRoomMessageCanvas.width, initialRoomMessageCanvas.height);
 
-  if (initialRoomIsMessageLogOpen || (initialRoomAreMessagePopupsMuted && !initialRoomIsTextEntryActive) || (!initialRoomCurrentMessage && !initialRoomIsTextEntryActive)) {
+  if (initialRoomIsMapOpen || initialRoomIsStatusOpen || initialRoomIsMessageLogOpen || (initialRoomAreMessagePopupsMuted && !initialRoomIsTextEntryActive) || (!initialRoomCurrentMessage && !initialRoomIsTextEntryActive)) {
     return;
   }
 
@@ -5658,7 +5767,7 @@ function initialRoomGetStatusUseKey(initialRoomItemKey) {
   var initialRoomUseKeys = {
     bomb: "Q",
     fire: "G",
-    gun: "SP",
+    gun: "SP/LMB",
     sword: "F"
   };
 
@@ -5666,19 +5775,21 @@ function initialRoomGetStatusUseKey(initialRoomItemKey) {
 }
 
 function initialRoomDrawStatusUseKey(initialRoomUseKey, initialRoomX, initialRoomY, initialRoomSize, initialRoomPixelUnit) {
-  var initialRoomBadgeWidth = initialRoomUseKey === "SP" ? Math.max(initialRoomPixelUnit * 8, 28) : Math.max(initialRoomPixelUnit * 6, 22);
+  var initialRoomFontSize = Math.max(12, initialRoomPixelUnit * 3);
+  var initialRoomBadgeWidth = 0;
   var initialRoomBadgeHeight = Math.max(initialRoomPixelUnit * 5, 18);
 
   if (!initialRoomUseKey) {
     return;
   }
 
+  initialRoomContext.font = initialRoomFontSize + "px '" + initialRoomFontFamily + "', monospace";
+  initialRoomBadgeWidth = Math.max(initialRoomPixelUnit * 6, Math.ceil(initialRoomContext.measureText(initialRoomUseKey).width + (initialRoomPixelUnit * 4)));
   initialRoomContext.fillStyle = "#050505";
   initialRoomContext.fillRect(initialRoomX, initialRoomY, initialRoomBadgeWidth, initialRoomBadgeHeight);
   initialRoomContext.strokeStyle = "#f7f7f1";
   initialRoomContext.lineWidth = Math.max(1, initialRoomPixelUnit);
   initialRoomContext.strokeRect(initialRoomX, initialRoomY, initialRoomBadgeWidth, initialRoomBadgeHeight);
-  initialRoomContext.font = Math.max(12, initialRoomPixelUnit * 3) + "px '" + initialRoomFontFamily + "', monospace";
   initialRoomContext.textAlign = "center";
   initialRoomContext.textBaseline = "middle";
   initialRoomContext.fillStyle = "#f7f7f1";
@@ -6067,7 +6178,7 @@ function initialRoomCanDestroyMapCheckTile(initialRoomTile) {
   var initialRoomCanDestroy = false;
 
   (initialRoomTile.vulnerable || []).forEach(function (initialRoomVulnerability) {
-    if (initialRoomDoesVulnerabilityMatch(initialRoomVulnerability, "sword", Math.min(2, progressionManagerGetProgressiveValue("sword")))) {
+    if (initialRoomDoesVulnerabilityMatch(initialRoomVulnerability, "sword", Math.min(3, progressionManagerGetProgressiveValue("sword")))) {
       initialRoomCanDestroy = true;
     }
 
@@ -6097,6 +6208,7 @@ function initialRoomDraw() {
   }
 
   initialRoomUpdateView();
+  initialRoomUpdateRuntimeLayerVisibility();
   initialRoomUpdateMessageFeed();
   initialRoomContext.clearRect(0, 0, initialRoomCanvas.width, initialRoomCanvas.height);
   initialRoomContext.fillStyle = "#1c1e23";
@@ -6114,10 +6226,10 @@ function initialRoomDraw() {
   initialRoomDrawDestructibleBursts();
   initialRoomDrawPickupIcon();
   initialRoomDrawHud();
+  initialRoomDrawTopRightMenuIcons();
   initialRoomDrawMapOverlay();
   initialRoomDrawStatusOverlay();
   initialRoomDrawMessageLogOverlay();
-  initialRoomDrawTopRightMenuIcons();
   initialRoomDrawMessageFeed();
 }
 
@@ -8978,7 +9090,7 @@ function initialRoomGetPointToSegmentDistance(initialRoomPointX, initialRoomPoin
 }
 
 function initialRoomMeleeAttack() {
-  var initialRoomSwordLevel = Math.min(2, progressionManagerGetProgressiveValue("sword"));
+  var initialRoomSwordLevel = Math.min(3, progressionManagerGetProgressiveValue("sword"));
   var initialRoomDirection = initialRoomPlayer.facingDirection || { x: 0, y: 1 };
   var initialRoomNow = Date.now();
   var initialRoomPoints = [];
@@ -8997,7 +9109,7 @@ function initialRoomMeleeAttack() {
 
   initialRoomPoints = initialRoomGetMeleeAttackPoints(initialRoomSwordLevel, initialRoomDirection);
   initialRoomDestroySwordVulnerableChecksInMeleeArea(initialRoomSwordLevel, initialRoomDirection);
-  initialRoomDamageEnemiesInMeleeArea(initialRoomSwordLevel, initialRoomDirection, initialRoomSwordLevel * 2, initialRoomNow);
+  initialRoomDamageEnemiesInMeleeArea(initialRoomSwordLevel, initialRoomDirection, initialRoomGetSwordDamage(initialRoomSwordLevel), initialRoomNow);
   initialRoomNextMeleeAllowedAt = initialRoomNow + initialRoomMeleeDuration + initialRoomMeleeRecoveryDuration;
 
   initialRoomMeleeAttacks.push({
@@ -9011,6 +9123,14 @@ function initialRoomMeleeAttack() {
     expiresAt: initialRoomNow + initialRoomMeleeDuration,
     movementLockUntil: initialRoomNow + initialRoomMeleeDuration
   });
+}
+
+function initialRoomGetSwordDamage(initialRoomSwordLevel) {
+  if (initialRoomSwordLevel >= 3) {
+    return 8;
+  }
+
+  return Math.max(1, initialRoomSwordLevel) * 2;
 }
 
 function initialRoomGetMeleeAttackPoints(initialRoomSwordLevel, initialRoomDirection) {
@@ -9213,10 +9333,38 @@ function initialRoomAddExplosionTile(initialRoomTiles, initialRoomTileKeys, init
 function initialRoomCreateBombExplosionObjects(initialRoomBomb, initialRoomNow) {
   initialRoomBomb.explosionTiles = initialRoomCreateExplosionTileObjects(initialRoomBomb);
 
+  if (initialRoomBomb.kind === "bomb" && initialRoomBomb.level >= 3) {
+    initialRoomStartScreenShake(initialRoomBombLevelThreeShakeDuration, initialRoomBombLevelThreeShakeMagnitude);
+    initialRoomKillBuriedSnakesForBomb(initialRoomBomb, initialRoomNow);
+  }
+
   initialRoomBomb.explosionTiles.forEach(function (initialRoomExplosionTile) {
     initialRoomExplosionTile.createdAt = initialRoomNow;
     initialRoomActiveExplosionTiles[mapManagerGetCoordinateKey(initialRoomExplosionTile.x, initialRoomExplosionTile.y)] = initialRoomExplosionTile;
   });
+}
+
+function initialRoomKillBuriedSnakesForBomb(initialRoomBomb, initialRoomNow) {
+  initialRoomEnemies.forEach(function (initialRoomEnemy) {
+    if (!initialRoomIsBuriedSnake(initialRoomEnemy)) {
+      return;
+    }
+
+    if (initialRoomEnemy.hitBombIds[initialRoomBomb.id]) {
+      return;
+    }
+
+    initialRoomEnemy.hitBombIds[initialRoomBomb.id] = true;
+    initialRoomDamageEnemy(initialRoomEnemy, Math.max(initialRoomEnemy.hp, initialRoomBomb.damage || 1), initialRoomNow);
+  });
+}
+
+function initialRoomIsBuriedSnake(initialRoomEnemy) {
+  return Boolean(
+    initialRoomEnemy &&
+    initialRoomEnemy.enemyType === "snake" &&
+    initialRoomEnemy.state === "hidden"
+  );
 }
 
 function initialRoomRemoveBombExplosionObjects(initialRoomBomb) {

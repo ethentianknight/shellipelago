@@ -48,7 +48,7 @@ raw_item_table = json.loads(r'''
     "name": "Sword",
     "classification": "progression",
     "trap": false,
-    "count": 2
+    "count": 3
   },
   {
     "key": "energy",

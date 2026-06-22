@@ -15,7 +15,7 @@ const progressiveItems = {
   progressiveRoom: { name: "Progressive Room", count: 5, classification: "progression" },
   bomb: { name: "Bombs", count: 3, classification: "progression" },
   gun: { name: "Gun", count: 2, classification: "progression" },
-  sword: { name: "Sword", count: 2, classification: "progression" },
+  sword: { name: "Sword", count: 3, classification: "progression" },
   energy: { name: "Energy", count: 9, classification: "filler" },
   hp: { name: "Max HP", count: 30, classification: "filler" },
   rounds: { name: "Max Rounds", count: 40, classification: "progression" },
