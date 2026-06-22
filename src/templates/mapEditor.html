@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shellipelago Map Editor Shard</title>
+</head>
+<body>
+  <template data-shard>
+    <main class="screen screen-map-editor" aria-labelledby="map-editor-title">
+      <section class="screen-panel map-editor-panel">
+        <div class="map-editor-header">
+          <div>
+            <p class="screen-kicker">Debug</p>
+            <h1 id="map-editor-title">Map Editor</h1>
+          </div>
+          <div class="form-actions">
+            <button class="secondary-button" id="map-back" type="button">Back</button>
+            <button class="secondary-button" id="map-check-counts" type="button">Check Counts</button>
+            <button class="secondary-button" id="map-dependency-graph" type="button">Dependency Graph</button>
+            <button class="secondary-button" id="map-download-tileset" type="button">Download tileset.json</button>
+            <button class="primary-button" id="map-download" type="button">Download map.json</button>
+          </div>
+        </div>
+
+        <div class="map-canvas-grid">
+          <div class="map-controls-panel">
+            <div class="map-tool-section">
+              <p class="map-label">Room</p>
+              <div class="map-field-grid">
+                <label>
+                  <span>Size</span>
+                  <input id="map-room-size" type="number" min="8" max="128" step="1" value="32">
+                </label>
+                <label>
+                  <span>Name</span>
+                  <input id="map-room-name" type="text" maxlength="80" value="">
+                </label>
+                <label>
+                  <span>Preview</span>
+                  <select id="map-preview-state">
+                    <option value="base">Base</option>
+                    <option value="monochrome">Monochrome</option>
+                    <option value="color" selected>Color</option>
+                  </select>
+                </label>
+                <label>
+                  <span>BGM</span>
+                  <select id="map-room-bgm"></select>
+                </label>
+                <label class="map-checkbox-field">
+                  <input id="map-final-run-room" type="checkbox">
+                  <span>Final Run</span>
+                </label>
+              </div>
+              <button class="secondary-button map-toolbar-button" id="map-clear-room" type="button">Clear Room</button>
+            </div>
+
+            <div class="map-tool-section">
+              <p class="map-label">Tile</p>
+              <label class="map-full-field">
+                <span>Type</span>
+                <select id="map-selected-tile-type">
+                  <option value="Walkable">Walkable</option>
+                  <option value="Blocker">Blocker</option>
+                  <option value="JumpS">JumpS</option>
+                  <option value="JumpE">JumpE</option>
+                  <option value="JumpW">JumpW</option>
+                  <option value="JumpN">JumpN</option>
+                  <option value="Water">Water</option>
+                  <option value="Lava">Lava</option>
+                  <option value="RoomEntrance">RoomEntrance</option>
+                  <option value="RoomEntranceDestructable">RoomEntranceDestructable</option>
+                  <option value="Door">Door</option>
+                  <option value="Enemy">Enemy</option>
+                  <option value="Chest">Chest</option>
+                  <option value="DestructableCheck">DestructableCheck</option>
+                  <option value="ShopItem">ShopItem</option>
+                </select>
+              </label>
+              <fieldset class="map-vulnerable-field" id="map-vulnerable-types">
+                <legend>Vulnerable</legend>
+                <label><input type="checkbox" value="sword"> sword</label>
+                <label><input type="checkbox" value="fire"> fire</label>
+                <label><input type="checkbox" value="bullet"> bullet</label>
+                <label><input type="checkbox" value="cannon"> cannon</label>
+                <label><input type="checkbox" value="bomb"> bomb</label>
+              </fieldset>
+              <div class="map-inline-actions">
+                <button class="secondary-button map-toolbar-button" id="map-set-border" type="button">Set Border</button>
+                <button class="secondary-button map-toolbar-button" id="map-set-ground" type="button">Set Ground</button>
+              </div>
+              <button class="secondary-button map-toolbar-button" id="map-room-requirements" type="button">Room Requirements</button>
+              <p class="map-room-requirements-summary" id="map-room-requirements-summary">Room requirements: none</p>
+            </div>
+          </div>
+
+          <div class="map-assets-panel">
+            <div class="map-tool-section">
+              <p class="map-label">Items</p>
+              <div class="map-item-palette">
+                <button class="map-item-button" id="map-item-chest" type="button" aria-label="Chest">
+                  <img src="src/img/item/item8BIT_chest.png" alt="">
+                </button>
+                <button class="map-item-button" id="map-item-floppydisk" type="button" aria-label="Edit checks">
+                  <img src="src/img/item/item8BIT_floppydisk.png" alt="">
+                </button>
+                <button class="map-item-button" id="map-item-enemy" type="button" aria-label="Enemy">
+                  <img src="src/img/item/item8BIT_skull.png" alt="">
+                </button>
+                <button class="map-item-button" id="map-item-shop" type="button" aria-label="Shop item">
+                  <img src="src/img/item/item8BIT_coin.png" alt="">
+                </button>
+                <select class="map-enemy-select" id="map-enemy-type" aria-label="Enemy type"></select>
+              </div>
+            </div>
+
+            <div class="map-tool-section map-tileset-section">
+              <div class="map-section-header">
+                <p class="map-label">Tileset</p>
+                <button class="secondary-button icon-button" id="map-eyedropper" type="button" aria-label="Eyedropper">
+                  <img src="src/img/item/item8BIT_mirror.png" alt="">
+                </button>
+              </div>
+              <canvas id="map-tileset-canvas" width="576" height="576"></canvas>
+            </div>
+
+            <div class="map-tool-section map-room-tools-section">
+              <p class="map-label">Selected Room Tiles</p>
+              <div class="map-color-shift">
+                <p class="map-label">Color Shift</p>
+                <div class="map-color-grid-wrap">
+                  <div>
+                    <span class="map-color-grid-label">Source</span>
+                    <div class="map-color-grid" id="map-color-source-grid"></div>
+                  </div>
+                  <div>
+                    <span class="map-color-grid-label">Replacement</span>
+                    <div class="map-color-grid" id="map-color-target-grid"></div>
+                  </div>
+                </div>
+                <div class="map-color-actions">
+                  <button class="secondary-button" id="map-color-clear" type="button">Clear</button>
+                </div>
+                <div class="map-color-list" id="map-color-list"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-room-panel">
+            <canvas id="map-editor-canvas" width="576" height="576"></canvas>
+          </div>
+
+          <div class="map-world-panel">
+            <p class="map-label">World Rooms</p>
+            <canvas id="map-overview-canvas" width="576" height="576"></canvas>
+            <p class="connection-status" id="map-editor-status" role="status"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </template>
+</body>
+</html>

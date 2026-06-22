@@ -1,0 +1,126 @@
+description: Shellipelago local test player file.
+game: Shellipelago
+name: Player
+
+Shellipelago:
+  progression_balancing: 50
+  accessibility: full
+
+  shuffle_essential_items: true
+  essential_items_in_my_world:
+    - Graphics
+    - Progressive Room
+    - Bombs
+    - Gun
+    - Fire
+    - Sword
+    - Pickaxe
+    - Water Walkers
+    - Tank Treads
+    - Tank Chassis
+    - Tank Cannon
+    - SFX
+    - BGM
+    - Energy
+  essential_items_in_other_worlds:
+    - Graphics
+    - Progressive Room
+    - Bombs
+    - Gun
+    - Fire
+    - Sword
+    - Pickaxe
+    - Water Walkers
+    - Tank Treads
+    - Tank Chassis
+    - Tank Cannon
+    - SFX
+    - BGM
+    - Energy
+
+  shuffle_max_resource_upgrades: true
+  max_resource_upgrades_in_my_world:
+    - Max HP
+    - Max Rounds
+  max_resource_upgrades_in_other_worlds:
+    - Max HP
+    - Max Rounds
+
+  add_easy_destructible_checks: false
+  add_endgame_destructible_checks: false
+  enemies_are_checks: false
+  shuffle_shops: true
+  add_hints_to_checks: false
+  show_essential_pickup_hints: true
+  include_hint_locations: true
+  hint_locations:
+    - Enemies
+
+  add_traps_to_pool: false
+  trap_pool_spawn:
+    - Suddenly Snake
+    - Stun Trap
+    - Invisible Trap
+    - Fast Trap
+    - Slow Trap
+    - Reverse Trap
+    - Screen Flip Trap
+    - Zoom Trap
+    - Death Trap
+  trap_pool_in_my_world:
+    - Suddenly Snake
+    - Stun Trap
+    - Invisible Trap
+    - Fast Trap
+    - Slow Trap
+    - Reverse Trap
+    - Screen Flip Trap
+    - Zoom Trap
+    - Death Trap
+  trap_pool_in_other_worlds:
+    - Suddenly Snake
+    - Stun Trap
+    - Invisible Trap
+    - Fast Trap
+    - Slow Trap
+    - Reverse Trap
+    - Screen Flip Trap
+    - Zoom Trap
+    - Death Trap
+
+  other_players_can_find_item_pool_drops: false
+  ring_link: true
+  energy_link: true
+  death_link: false
+  trap_link: true
+  trap_link_spawn:
+    - Suddenly Snake
+    - Stun Trap
+    - Invisible Trap
+    - Fast Trap
+    - Slow Trap
+    - Reverse Trap
+    - Screen Flip Trap
+    - Zoom Trap
+    - Death Trap
+  trap_link_in_my_world:
+    - Suddenly Snake
+    - Stun Trap
+    - Invisible Trap
+    - Fast Trap
+    - Slow Trap
+    - Reverse Trap
+    - Screen Flip Trap
+    - Zoom Trap
+    - Death Trap
+  trap_link_in_other_worlds:
+    - Suddenly Snake
+    - Stun Trap
+    - Invisible Trap
+    - Fast Trap
+    - Slow Trap
+    - Reverse Trap
+    - Screen Flip Trap
+    - Zoom Trap
+    - Death Trap
+  item_link: false

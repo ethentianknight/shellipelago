@@ -1,0 +1,561 @@
+{
+  "tileSize": 16,
+  "defaultType": "Blocker",
+  "tiles": {
+    "0,1": {
+      "type": "Walkable"
+    },
+    "1,1": {
+      "type": "Walkable"
+    },
+    "2,1": {
+      "type": "Walkable"
+    },
+    "0,2": {
+      "type": "Walkable"
+    },
+    "1,2": {
+      "type": "Walkable"
+    },
+    "2,2": {
+      "type": "Walkable"
+    },
+    "0,3": {
+      "type": "Walkable"
+    },
+    "1,3": {
+      "type": "Walkable"
+    },
+    "2,3": {
+      "type": "Walkable"
+    },
+    "3,1": {
+      "type": "Walkable"
+    },
+    "4,1": {
+      "type": "Walkable"
+    },
+    "5,1": {
+      "type": "Walkable"
+    },
+    "3,2": {
+      "type": "Walkable"
+    },
+    "4,2": {
+      "type": "Walkable"
+    },
+    "5,2": {
+      "type": "Walkable"
+    },
+    "3,3": {
+      "type": "Walkable"
+    },
+    "4,3": {
+      "type": "Walkable"
+    },
+    "5,3": {
+      "type": "Walkable"
+    },
+    "5,4": {
+      "type": "RoomEntrance"
+    },
+    "5,5": {
+      "type": "RoomEntrance"
+    },
+    "5,6": {
+      "type": "RoomEntrance"
+    },
+    "0,4": {
+      "type": "Water"
+    },
+    "1,4": {
+      "type": "Water"
+    },
+    "2,4": {
+      "type": "Water"
+    },
+    "3,4": {
+      "type": "Water"
+    },
+    "0,5": {
+      "type": "Water"
+    },
+    "1,5": {
+      "type": "Water"
+    },
+    "2,5": {
+      "type": "Water"
+    },
+    "3,5": {
+      "type": "Water"
+    },
+    "0,6": {
+      "type": "Water"
+    },
+    "1,6": {
+      "type": "Water"
+    },
+    "2,6": {
+      "type": "Water"
+    },
+    "3,6": {
+      "type": "Water"
+    },
+    "0,8": {
+      "type": "Water"
+    },
+    "1,8": {
+      "type": "Water"
+    },
+    "2,8": {
+      "type": "Water"
+    },
+    "3,8": {
+      "type": "Water"
+    },
+    "0,9": {
+      "type": "Water"
+    },
+    "1,9": {
+      "type": "Water"
+    },
+    "2,9": {
+      "type": "Water"
+    },
+    "3,9": {
+      "type": "Water"
+    },
+    "0,10": {
+      "type": "Walkable"
+    },
+    "1,10": {
+      "type": "Walkable"
+    },
+    "2,10": {
+      "type": "Walkable"
+    },
+    "13,4": {
+      "type": "Walkable"
+    },
+    "13,3": {
+      "type": "Walkable"
+    },
+    "14,3": {
+      "type": "Walkable"
+    },
+    "15,3": {
+      "type": "Walkable"
+    },
+    "14,4": {
+      "type": "Walkable"
+    },
+    "15,4": {
+      "type": "Walkable"
+    },
+    "13,5": {
+      "type": "Walkable"
+    },
+    "14,5": {
+      "type": "Walkable"
+    },
+    "15,5": {
+      "type": "Walkable"
+    },
+    "11,4": {
+      "type": "Walkable"
+    },
+    "11,3": {
+      "type": "Walkable"
+    },
+    "12,3": {
+      "type": "Walkable"
+    },
+    "12,4": {
+      "type": "Walkable"
+    },
+    "11,2": {
+      "type": "Walkable"
+    },
+    "11,1": {
+      "type": "Walkable"
+    },
+    "12,1": {
+      "type": "Walkable"
+    },
+    "12,2": {
+      "type": "Walkable"
+    },
+    "12,11": {
+      "type": "JumpS"
+    },
+    "12,10": {
+      "type": "JumpS"
+    },
+    "12,16": {
+      "type": "Walkable"
+    },
+    "12,17": {
+      "type": "Walkable"
+    },
+    "12,15": {
+      "type": "Walkable"
+    },
+    "11,15": {
+      "type": "Walkable"
+    },
+    "4,18": {
+      "type": "Walkable"
+    },
+    "5,18": {
+      "type": "Walkable"
+    },
+    "6,18": {
+      "type": "Door"
+    },
+    "6,15": {
+      "type": "Door"
+    },
+    "5,15": {
+      "type": "Door"
+    },
+    "5,16": {
+      "type": "Door"
+    },
+    "12,18": {
+      "type": "Door"
+    },
+    "14,1": {
+      "type": "Door"
+    },
+    "10,2": {
+      "type": "Walkable"
+    },
+    "10,3": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "sword",
+        "fire",
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "9,2": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "sword",
+        "fire",
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "9,3": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "sword",
+        "fire",
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,6": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,4": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,5": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "11,13": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "bomb",
+        "gun",
+        "sword",
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "2,26": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "7,4": {
+      "type": "Walkable"
+    },
+    "8,4": {
+      "type": "Walkable"
+    },
+    "9,4": {
+      "type": "Walkable"
+    },
+    "6,2": {
+      "type": "Walkable"
+    },
+    "7,2": {
+      "type": "Walkable"
+    },
+    "6,3": {
+      "type": "Walkable"
+    },
+    "7,3": {
+      "type": "Walkable"
+    },
+    "8,3": {
+      "type": "Walkable"
+    },
+    "8,2": {
+      "type": "Walkable"
+    },
+    "6,4": {
+      "type": "Walkable"
+    },
+    "6,6": {
+      "type": "Walkable"
+    },
+    "7,6": {
+      "type": "Walkable"
+    },
+    "8,6": {
+      "type": "Walkable"
+    },
+    "9,6": {
+      "type": "Walkable"
+    },
+    "8,5": {
+      "type": "Walkable"
+    },
+    "9,5": {
+      "type": "Walkable"
+    },
+    "6,5": {
+      "type": "Walkable"
+    },
+    "7,5": {
+      "type": "Walkable"
+    },
+    "0,7": {
+      "type": "Lava"
+    },
+    "10,4": {
+      "type": "Walkable"
+    },
+    "6,7": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,7": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,8": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "5,7": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "5,8": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "6,8": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "7,7": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "8,7": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "9,7": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "7,8": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "8,8": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "9,8": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,9": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "5,9": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "6,9": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,10": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "5,10": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "6,10": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "4,11": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "5,11": {
+      "type": "Door",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "6,11": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "3,10": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "7,14": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "8,14": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "9,14": {
+      "type": "DestructableCheck",
+      "vulnerable": [
+        "tankTreads",
+        "tankCannon"
+      ]
+    },
+    "7,20": {
+      "type": "Walkable"
+    },
+    "7,21": {
+      "type": "Walkable"
+    },
+    "8,21": {
+      "type": "Walkable"
+    },
+    "9,21": {
+      "type": "Walkable"
+    },
+    "9,20": {
+      "type": "Walkable"
+    },
+    "9,19": {
+      "type": "Walkable"
+    },
+    "8,19": {
+      "type": "Walkable"
+    },
+    "7,19": {
+      "type": "Walkable"
+    },
+    "8,20": {
+      "type": "Walkable"
+    }
+  }
+}

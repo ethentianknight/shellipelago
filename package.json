@@ -1,0 +1,16 @@
+{
+  "name": "shellipelago",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-all.js",
+    "build:no-increment": "node scripts/build-all.js --increment=false",
+    "package": "npm run build && node scripts/package-release.js",
+    "package:apworld": "node scripts/package-apworld.js",
+    "package:electron": "node scripts/package-electron.js"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.0.0",
+    "electron": "^42.3.0"
+  }
+}

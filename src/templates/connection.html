@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shellipelago Connection Shard</title>
+</head>
+<body>
+  <template data-shard>
+    <main class="screen screen-connection" aria-labelledby="connection-title">
+      <form class="screen-panel connection-form is-home" id="connection-form">
+        <h1 class="home-title" id="connection-title">Shellipelago</h1>
+        <p class="home-version">v<span data-shellipelago-version></span></p>
+
+        <div class="home-play-grid" aria-label="Play options">
+          <button class="home-play-tile" id="play-online" type="button">Play Online</button>
+          <button class="home-play-tile" id="offline-play" type="button">Play Offline</button>
+        </div>
+
+        <div class="offline-choice-grid" id="offline-choice-grid" hidden>
+          <button class="secondary-button" id="offline-continue" type="button">Continue</button>
+          <button class="secondary-button" id="offline-new-game" type="button">New Game</button>
+        </div>
+
+        <div class="setup-actions home-setup-actions" aria-label="Setup files">
+          <button class="secondary-button" id="download-apworld" type="button">Download .apworld</button>
+          <button class="secondary-button" id="create-yaml" type="button">Create .yaml</button>
+          <button class="secondary-button" id="download-game" type="button">Download Game</button>
+          <button class="secondary-button debug-only" id="open-map-editor" type="button">Map Editor</button>
+        </div>
+
+        <p class="connection-status" id="connection-status" role="status"></p>
+
+        <div class="connection-fields" id="connection-fields" hidden>
+          <label>
+            <span>IP / Host</span>
+            <div class="connection-input-row">
+              <input id="connection-host" name="host" type="password" autocomplete="url" placeholder="archipelago.gg">
+              <label class="connection-hide-toggle"><input id="connection-hide-host" type="checkbox" checked> Hide</label>
+            </div>
+          </label>
+
+          <label>
+            <span>Port</span>
+            <div class="connection-input-row">
+              <input id="connection-port" name="port" type="password" inputmode="numeric" placeholder="38281">
+              <label class="connection-hide-toggle"><input id="connection-hide-port" type="checkbox" checked> Hide</label>
+            </div>
+          </label>
+
+          <label>
+            <span>Slot</span>
+            <input id="connection-slot" name="slot" type="text" autocomplete="username" required>
+          </label>
+
+          <label>
+            <span>Password</span>
+            <div class="connection-input-row">
+              <input id="connection-password" name="password" type="password" autocomplete="current-password">
+              <label class="connection-hide-toggle"><input id="connection-hide-password" type="checkbox" checked> Hide</label>
+            </div>
+          </label>
+
+          <div class="form-actions">
+            <button class="secondary-button" id="connection-back" type="button">Back</button>
+            <button class="primary-button" type="submit">Connect</button>
+          </div>
+          <p class="connection-version">v<span data-shellipelago-version></span></p>
+        </div>
+      </form>
+    </main>
+  </template>
+</body>
+</html>

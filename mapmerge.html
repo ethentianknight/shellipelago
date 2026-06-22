@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shellipelago Map Merge</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, sans-serif;
+      background: #15181e;
+      color: #f7f7f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px;
+    }
+
+    main {
+      display: grid;
+      gap: 24px;
+      margin: 0 auto;
+      max-width: 1400px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .drop-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      min-height: 55vh;
+    }
+
+    .drop-zone {
+      align-items: center;
+      background: #050505;
+      border: 5px dashed #f7f7f1;
+      color: #f7f7f1;
+      cursor: pointer;
+      display: grid;
+      gap: 18px;
+      justify-items: center;
+      min-height: 420px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .drop-zone.is-dragging,
+    .drop-zone:focus-within {
+      background: #252832;
+      outline: 4px solid #ffcf7a;
+    }
+
+    .drop-zone input {
+      display: none;
+    }
+
+    .drop-title {
+      font-size: 34px;
+      font-weight: 800;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .drop-copy {
+      color: #c8c9d1;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .file-name {
+      color: #ffcf7a;
+      font-family: Consolas, monospace;
+      font-size: 18px;
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .actions {
+      align-items: center;
+      display: flex;
+      gap: 18px;
+      justify-content: flex-end;
+    }
+
+    button {
+      background: #050505;
+      border: 4px solid #f7f7f1;
+      color: #f7f7f1;
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: 800;
+      padding: 16px 34px;
+      text-transform: uppercase;
+    }
+
+    button:hover,
+    button:focus-visible {
+      background: #f7f7f1;
+      color: #050505;
+      outline: 0;
+    }
+
+    .status {
+      color: #ffcf7a;
+      font-size: 18px;
+      margin: 0;
+      min-height: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Map Merge</h1>
+      <p>Left map is primary. Right map fills only missing room coordinates.</p>
+    </header>
+
+    <section class="drop-grid">
+      <label class="drop-zone" id="primary-drop">
+        <input id="primary-file" type="file" accept=".json,application/json">
+        <span class="drop-title">Primary Map</span>
+        <span class="drop-copy">Drop the left/base map.json here</span>
+        <span class="file-name" id="primary-name">No file selected</span>
+      </label>
+
+      <label class="drop-zone" id="fill-drop">
+        <input id="fill-file" type="file" accept=".json,application/json">
+        <span class="drop-title">Fill Map</span>
+        <span class="drop-copy">Drop the right/fill map.json here</span>
+        <span class="file-name" id="fill-name">No file selected</span>
+      </label>
+    </section>
+
+    <div class="actions">
+      <p class="status" id="status" role="status"></p>
+      <button id="merge-button" type="button">Go</button>
+    </div>
+  </main>
+
+  <script>
+    var mapMergeFiles = {
+      primary: null,
+      fill: null
+    };
+
+    function mapMergeBindDropZone(mapMergeKey, mapMergeDropId, mapMergeInputId, mapMergeNameId) {
+      var mapMergeDrop = document.getElementById(mapMergeDropId);
+      var mapMergeInput = document.getElementById(mapMergeInputId);
+      var mapMergeName = document.getElementById(mapMergeNameId);
+
+      mapMergeDrop.addEventListener("dragover", function (mapMergeEvent) {
+        mapMergeEvent.preventDefault();
+        mapMergeDrop.classList.add("is-dragging");
+      });
+
+      mapMergeDrop.addEventListener("dragleave", function () {
+        mapMergeDrop.classList.remove("is-dragging");
+      });
+
+      mapMergeDrop.addEventListener("drop", function (mapMergeEvent) {
+        mapMergeEvent.preventDefault();
+        mapMergeDrop.classList.remove("is-dragging");
+        mapMergeSetFile(mapMergeKey, mapMergeEvent.dataTransfer.files[0], mapMergeName);
+      });
+
+      mapMergeInput.addEventListener("change", function () {
+        mapMergeSetFile(mapMergeKey, mapMergeInput.files[0], mapMergeName);
+      });
+    }
+
+    function mapMergeSetFile(mapMergeKey, mapMergeFile, mapMergeName) {
+      if (!mapMergeFile) {
+        return;
+      }
+
+      mapMergeFiles[mapMergeKey] = mapMergeFile;
+      mapMergeName.textContent = mapMergeFile.name;
+      mapMergeSetStatus("");
+    }
+
+    function mapMergeSetStatus(mapMergeMessage) {
+      document.getElementById("status").textContent = mapMergeMessage;
+    }
+
+    function mapMergeReadJson(mapMergeFile) {
+      return mapMergeFile.text().then(function (mapMergeText) {
+        return JSON.parse(mapMergeText);
+      });
+    }
+
+    function mapMergeRoomKey(mapMergeRoom) {
+      return mapMergeRoom.x + "," + mapMergeRoom.y;
+    }
+
+    function mapMergeMaps(mapMergePrimary, mapMergeFill) {
+      var mapMergeMerged = JSON.parse(JSON.stringify(mapMergePrimary));
+      var mapMergeRoomKeys = {};
+      var mapMergeAdded = 0;
+      var mapMergeIgnored = 0;
+
+      if (!Array.isArray(mapMergeMerged.rooms) || !Array.isArray(mapMergeFill.rooms)) {
+        throw new Error("Both files must be map.json files with a rooms array.");
+      }
+
+      mapMergeMerged.rooms.forEach(function (mapMergeRoom) {
+        mapMergeRoomKeys[mapMergeRoomKey(mapMergeRoom)] = true;
+      });
+
+      mapMergeFill.rooms.forEach(function (mapMergeRoom) {
+        var mapMergeKey = mapMergeRoomKey(mapMergeRoom);
+
+        if (mapMergeRoomKeys[mapMergeKey]) {
+          mapMergeIgnored += 1;
+          return;
+        }
+
+        mapMergeMerged.rooms.push(JSON.parse(JSON.stringify(mapMergeRoom)));
+        mapMergeRoomKeys[mapMergeKey] = true;
+        mapMergeAdded += 1;
+      });
+
+      return {
+        map: mapMergeMerged,
+        added: mapMergeAdded,
+        ignored: mapMergeIgnored
+      };
+    }
+
+    function mapMergeDownload(mapMergeMap) {
+      var mapMergeBlob = new Blob([JSON.stringify(mapMergeMap, null, 2) + "\n"], { type: "application/json" });
+      var mapMergeUrl = URL.createObjectURL(mapMergeBlob);
+      var mapMergeLink = document.createElement("a");
+
+      mapMergeLink.href = mapMergeUrl;
+      mapMergeLink.download = "map.merged.json";
+      document.body.appendChild(mapMergeLink);
+      mapMergeLink.click();
+      mapMergeLink.remove();
+      URL.revokeObjectURL(mapMergeUrl);
+    }
+
+    function mapMergeRun() {
+      if (!mapMergeFiles.primary || !mapMergeFiles.fill) {
+        mapMergeSetStatus("Drop both map files first.");
+        return;
+      }
+
+      Promise.all([
+        mapMergeReadJson(mapMergeFiles.primary),
+        mapMergeReadJson(mapMergeFiles.fill)
+      ]).then(function (mapMergeResults) {
+        var mapMergeResult = mapMergeMaps(mapMergeResults[0], mapMergeResults[1]);
+
+        mapMergeDownload(mapMergeResult.map);
+        mapMergeSetStatus("Merged " + mapMergeResult.added + " rooms. Ignored " + mapMergeResult.ignored + " collisions.");
+      }).catch(function (mapMergeError) {
+        mapMergeSetStatus(mapMergeError.message);
+      });
+    }
+
+    mapMergeBindDropZone("primary", "primary-drop", "primary-file", "primary-name");
+    mapMergeBindDropZone("fill", "fill-drop", "fill-file", "fill-name");
+    document.getElementById("merge-button").addEventListener("click", mapMergeRun);
+  </script>
+</body>
+</html>
