@@ -430,20 +430,24 @@ function writeJson(filePath, data) {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + "\n");
 }
 
+function pythonLiteral(data) {
+  return JSON.stringify(data, null, 2)
+    .replace(/\btrue\b/g, "True")
+    .replace(/\bfalse\b/g, "False")
+    .replace(/\bnull\b/g, "None");
+}
+
 function writePythonData(filePath, variableName, data, header) {
   fs.writeFileSync(filePath, [
-    header || "import json",
+    header || "",
     "",
-    `${variableName} = json.loads(r'''`,
-    JSON.stringify(data, null, 2),
-    "''')",
+    `${variableName} = ${pythonLiteral(data)}`,
     "",
   ].join("\n"));
 }
 
 function writeItemsPy(items) {
   const header = [
-    "import json",
     "from BaseClasses import ItemClassification",
     "",
     "classification_table = {",
@@ -475,7 +479,7 @@ function writeItemsPy(items) {
 }
 
 function writeLocationsPy(locations) {
-  writePythonData(path.join(worldPath, "locations.py"), "raw_location_table", locations, "import json");
+  writePythonData(path.join(worldPath, "locations.py"), "raw_location_table", locations, "# Generated from Shellipelago map data. Keep edits in the source map/generator.");
   fs.appendFileSync(path.join(worldPath, "locations.py"), [
     "location_table = {location['name']: location for location in raw_location_table}",
     "",
