@@ -1,6 +1,6 @@
 var globalsState = {
   loadedModules: [],
-  shellipelagoVersion: "1.3",
+  shellipelagoVersion: "1.4",
   startInFinalRun: false,
   progressiveRoomMaxRing: 5,
   showEssentialPickupHints: true,
@@ -273,6 +273,7 @@ var globalsState = {
     slotData: {},
     receivedItems: [],
     linkEvents: {},
+    hintedLocations: {},
     nextItemIndex: 0,
     goalSent: false
   },

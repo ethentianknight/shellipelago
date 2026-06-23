@@ -47,14 +47,10 @@ Shellipelago:
     - Max Rounds
 
   add_easy_destructible_checks: false
-  add_endgame_destructible_checks: false
   enemies_are_checks: false
+  enemies_are_hints: false
   shuffle_shops: true
-  add_hints_to_checks: false
   show_essential_pickup_hints: true
-  include_hint_locations: true
-  hint_locations:
-    - Enemies
 
   add_traps_to_pool: false
   trap_pool_spawn:
@@ -89,38 +85,8 @@ Shellipelago:
     - Death Trap
 
   other_players_can_find_item_pool_drops: false
-  ring_link: true
-  energy_link: true
+  ring_link: false
+  energy_link: false
   death_link: false
-  trap_link: true
-  trap_link_spawn:
-    - Suddenly Snake
-    - Stun Trap
-    - Invisible Trap
-    - Fast Trap
-    - Slow Trap
-    - Reverse Trap
-    - Screen Flip Trap
-    - Zoom Trap
-    - Death Trap
-  trap_link_in_my_world:
-    - Suddenly Snake
-    - Stun Trap
-    - Invisible Trap
-    - Fast Trap
-    - Slow Trap
-    - Reverse Trap
-    - Screen Flip Trap
-    - Zoom Trap
-    - Death Trap
-  trap_link_in_other_worlds:
-    - Suddenly Snake
-    - Stun Trap
-    - Invisible Trap
-    - Fast Trap
-    - Slow Trap
-    - Reverse Trap
-    - Screen Flip Trap
-    - Zoom Trap
-    - Death Trap
+  trap_link: false
   item_link: false

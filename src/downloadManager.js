@@ -107,7 +107,6 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "Shellipelago:",
     "  progression_balancing: " + downloadManagerYamlNumber(downloadManagerOptions.progressionBalancing, 50),
     "  accessibility: full",
-    "  goal: " + (downloadManagerOptions.goal || "complete_final_run"),
     "  shuffle_essential_items: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleEssentialItems),
     "  essential_items_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.essentialLocal),
     "  essential_items_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.essentialNonLocal),
@@ -115,13 +114,10 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  max_resource_upgrades_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.resourceLocal),
     "  max_resource_upgrades_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.resourceNonLocal),
     "  add_easy_destructible_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.addEasyDestructibleChecks),
-    "  add_endgame_destructible_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.addEndgameDestructibleChecks),
     "  enemies_are_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.enemiesAreChecks),
     "  shuffle_shops: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleShops),
-    "  add_hints_to_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.addHintsToChecks),
     "  show_essential_pickup_hints: " + downloadManagerYamlBoolean(downloadManagerOptions.showEssentialPickupHints),
-    "  include_hint_locations: " + downloadManagerYamlBoolean(downloadManagerOptions.includeHintLocations),
-    "  hint_locations:" + downloadManagerYamlList(downloadManagerOptions.hintLocations),
+    "  enemies_are_hints: " + downloadManagerYamlBoolean(downloadManagerOptions.enemiesAreHints),
     "  add_traps_to_pool: " + downloadManagerYamlBoolean(downloadManagerOptions.addTrapsToPool),
     "  trap_pool_spawn:" + downloadManagerYamlList(downloadManagerOptions.trapPoolSpawn),
     "  trap_pool_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.trapPoolLocal),
@@ -131,22 +127,9 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  energy_link: " + downloadManagerYamlBoolean(downloadManagerOptions.energyLink),
     "  death_link: " + downloadManagerYamlBoolean(downloadManagerOptions.deathLink),
     "  trap_link: " + downloadManagerYamlBoolean(downloadManagerOptions.trapLink),
-    "  trap_link_spawn:" + downloadManagerYamlList(downloadManagerOptions.trapLinkSpawn),
-    "  trap_link_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.trapLinkLocal),
-    "  trap_link_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.trapLinkNonLocal),
     "  item_link: " + downloadManagerYamlBoolean(downloadManagerOptions.itemLink),
     ""
   ];
-
-  if (downloadManagerOptions.addEndgameDestructibleChecks) {
-    downloadManagerYamlLines.splice(
-      1,
-      0,
-      "# HOST: This player has chosen to include post-game checks. This will slow down the game significantly and may lock other games behind completion of this one.",
-      "# If you're running a no-release world, you should set add_endgame_destructible_checks to false.",
-      ""
-    );
-  }
 
   return downloadManagerYamlLines.join("\n");
 }

@@ -1,12 +1,13 @@
-from BaseClasses import Item, Location, Region, Tutorial
+from BaseClasses import Item, ItemClassification, Location, Region, Tutorial
 from worlds.AutoWorld import WebWorld, World
 
-from .items import filler_item_names, item_table, trap_item_names
+from .items import filler_item_names, item_table, raw_item_table, trap_item_names
 from .locations import location_table
-from .options import ShellipelagoOptions
+from .options import ESSENTIAL_ITEMS, MAX_RESOURCE_UPGRADES, ShellipelagoOptions
 
 
-__version__ = "1.3"
+__version__ = "1.4"
+victory_location_name = "Final Boss Defeated"
 
 
 starting_item_counts = {
@@ -32,7 +33,7 @@ class ShellipelagoWeb(WebWorld):
             "English",
             "setup_en.md",
             "setup/en",
-            ["Shellipelago Team"],
+            ["ethentianknight"],
         )
     ]
 
@@ -72,6 +73,13 @@ def requirements_met(state, player: int, requirement_rows: list) -> bool:
     )
 
 
+def shellipelago_hint_trigger_key(location_data: dict) -> str:
+    return (
+        f"{location_data['room_x']},{location_data['room_y']}:"
+        f"{location_data['tile_x']},{location_data['tile_y']}"
+    )
+
+
 def has_tank(state, player: int) -> bool:
     return (
         state.has("Tank Treads", player)
@@ -80,11 +88,23 @@ def has_tank(state, player: int) -> bool:
     )
 
 
+def has_final_run_access(state, player: int) -> bool:
+    return has_tank(state, player) and state.has("Progressive Room", player, 5)
+
+
+def item_count(name: str) -> int:
+    for item_data in raw_item_table:
+        if item_data["name"] == name:
+            return item_data.get("count", 1)
+
+    return 1
+
+
 class ShellipelagoWorld(World):
     """A browser game about unlocking movement, checks, and graphics through Archipelago."""
 
     game = "Shellipelago"
-    author = "Shellipelago Team"
+    author = "ethentianknight"
     web = ShellipelagoWeb()
     options_dataclass = ShellipelagoOptions
     options: ShellipelagoOptions
@@ -94,6 +114,7 @@ class ShellipelagoWorld(World):
     location_name_to_id = {
         location_name: location_data["id"] for location_name, location_data in location_table.items()
     }
+    location_name_to_id[victory_location_name] = None
 
     item_name_groups = {
         "Progression": {
@@ -104,7 +125,7 @@ class ShellipelagoWorld(World):
         "Traps": set(trap_item_names),
     }
     location_name_groups = {
-        "Checks": set(location_name_to_id.keys()),
+        "Checks": set(location_table.keys()),
         "Chests": {
             location_name for location_name, location_data in location_table.items()
             if location_data["category"] == "chest"
@@ -119,7 +140,7 @@ class ShellipelagoWorld(World):
         },
         "Destructibles": {
             location_name for location_name, location_data in location_table.items()
-            if location_data["category"] in {"easy_destructible", "postgame_destructible"}
+            if location_data["category"] == "easy_destructible"
         },
     }
 
@@ -127,6 +148,9 @@ class ShellipelagoWorld(World):
         item_data = item_table[name]
 
         return ShellipelagoItem(name, item_data["classification"], item_data["id"], self.player)
+
+    def create_event(self, name: str) -> ShellipelagoItem:
+        return ShellipelagoItem(name, ItemClassification.progression_skip_balancing, None, self.player)
 
     def get_filler_item_name(self) -> str:
         return self.random.choice(filler_item_names)
@@ -140,9 +164,6 @@ class ShellipelagoWorld(World):
 
         if category == "easy_destructible":
             return option_enabled(self.options.add_easy_destructible_checks)
-
-        if category == "postgame_destructible":
-            return option_enabled(self.options.add_endgame_destructible_checks)
 
         if category == "shop":
             if option_enabled(self.options.shuffle_shops):
@@ -248,9 +269,18 @@ class ShellipelagoWorld(World):
         enabled_locations = self.enabled_locations()
         enabled_location_count = len(enabled_locations)
         item_pool = []
+        precollected_item_counts = dict(starting_item_counts)
 
-        for item_name, item_count in starting_item_counts.items():
-            for _ in range(item_count):
+        if not option_enabled(self.options.shuffle_essential_items):
+            for item_name in ESSENTIAL_ITEMS:
+                precollected_item_counts[item_name] = item_count(item_name)
+
+        if not option_enabled(self.options.shuffle_max_resource_upgrades):
+            for item_name in MAX_RESOURCE_UPGRADES:
+                precollected_item_counts[item_name] = item_count(item_name)
+
+        for item_name, item_count_value in precollected_item_counts.items():
+            for _ in range(item_count_value):
                 self.multiworld.push_precollected(self.create_item(item_name))
 
         self.add_progression_items(item_pool, enabled_locations)
@@ -271,14 +301,42 @@ class ShellipelagoWorld(World):
             )
             menu_region.locations.append(location)
 
+        victory_location = ShellipelagoLocation(self.player, victory_location_name, None, menu_region)
+        victory_location.access_rule = lambda state: has_final_run_access(state, self.player)
+        victory_location.place_locked_item(self.create_event("Victory"))
+        menu_region.locations.append(victory_location)
+
         self.multiworld.regions.append(menu_region)
 
     def set_rules(self) -> None:
-        if self.options.goal.current_key == "build_tank":
-            self.multiworld.completion_condition[self.player] = lambda state: has_tank(state, self.player)
-            return
+        self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
 
-        self.multiworld.completion_condition[self.player] = lambda state: has_tank(state, self.player)
+    def hint_trigger_data(self) -> dict:
+        if not option_enabled(self.options.enemies_are_hints):
+            return {}
+
+        hint_targets = []
+        for location_data in self.enabled_locations():
+            if location_data["category"] == "enemy":
+                continue
+
+            location = self.multiworld.get_location(location_data["name"], self.player)
+            item = location.item
+            if item and item.classification & (ItemClassification.progression | ItemClassification.useful):
+                hint_targets.append(location_data["id"])
+
+        hint_triggers = [
+            location_data for location_data in location_table.values()
+            if location_data["category"] == "enemy"
+        ]
+
+        self.random.shuffle(hint_targets)
+        self.random.shuffle(hint_triggers)
+
+        return {
+            shellipelago_hint_trigger_key(location_data): hint_targets[index]
+            for index, location_data in enumerate(hint_triggers[:len(hint_targets)])
+        }
 
     def fill_slot_data(self) -> dict:
         shop_costs = {
@@ -289,8 +347,7 @@ class ShellipelagoWorld(World):
 
         return {
             "show_essential_pickup_hints": option_enabled(self.options.show_essential_pickup_hints),
-            "goal": self.options.goal.current_key,
-            "add_hints_to_checks": option_enabled(self.options.add_hints_to_checks),
+            "hint_triggers": self.hint_trigger_data(),
             "shop_costs": shop_costs,
             "ring_link": option_enabled(self.options.ring_link),
             "energy_link": option_enabled(self.options.energy_link),

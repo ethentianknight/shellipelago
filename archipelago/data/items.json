@@ -163,7 +163,7 @@
     "key": "trapStun",
     "id": 100020,
     "name": "Stun Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -171,7 +171,7 @@
     "key": "trapInvisible",
     "id": 100021,
     "name": "Invisible Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -179,7 +179,7 @@
     "key": "trapFast",
     "id": 100022,
     "name": "Fast Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -187,7 +187,7 @@
     "key": "trapSlow",
     "id": 100023,
     "name": "Slow Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -195,7 +195,7 @@
     "key": "trapReverse",
     "id": 100024,
     "name": "Reverse Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -203,7 +203,7 @@
     "key": "trapScreenFlip",
     "id": 100025,
     "name": "Screen Flip Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -211,7 +211,7 @@
     "key": "trapZoom",
     "id": 100026,
     "name": "Zoom Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -219,7 +219,7 @@
     "key": "trapDeath",
     "id": 100027,
     "name": "Death Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -227,7 +227,7 @@
     "key": "suddenlySnake",
     "id": 100028,
     "name": "Suddenly Snake",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   }

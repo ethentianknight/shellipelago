@@ -40,14 +40,6 @@
                 </span>
               </label>
 
-              <label>
-                <span>Goal</span>
-                <select name="goal">
-                  <option value="complete_final_run" selected>Complete Final Run</option>
-                  <option value="build_tank">Build Tank</option>
-                </select>
-              </label>
-
               <label class="toggle-row">
                 <input name="shuffleEssentialItems" type="checkbox" checked data-controls="essentialLocal essentialNonLocal">
                 <span>Shuffle essential items</span>
@@ -69,6 +61,7 @@
                   <label><input type="checkbox" name="essentialLocal" value="Tank Cannon" checked> Tank Cannon</label>
                   <label><input type="checkbox" name="essentialLocal" value="SFX" checked> SFX</label>
                   <label><input type="checkbox" name="essentialLocal" value="BGM" checked> BGM</label>
+                  <label><input type="checkbox" name="essentialLocal" value="Energy" checked> Energy</label>
                 </fieldset>
 
                 <fieldset>
@@ -86,6 +79,7 @@
                   <label><input type="checkbox" name="essentialNonLocal" value="Tank Cannon" checked> Tank Cannon</label>
                   <label><input type="checkbox" name="essentialNonLocal" value="SFX" checked> SFX</label>
                   <label><input type="checkbox" name="essentialNonLocal" value="BGM" checked> BGM</label>
+                  <label><input type="checkbox" name="essentialNonLocal" value="Energy" checked> Energy</label>
                 </fieldset>
               </div>
             </section>
@@ -112,31 +106,18 @@
 
             <section class="yaml-section yaml-compact-options">
               <label class="toggle-row"><input name="addEasyDestructibleChecks" type="checkbox"> <span>Add checks for easy destructibles</span></label>
-              <label class="toggle-row"><input name="addEndgameDestructibleChecks" type="checkbox"> <span>Add checks for endgame destructibles</span></label>
               <label class="toggle-row"><input name="enemiesAreChecks" type="checkbox"> <span>Enemies are checks</span></label>
+              <label class="toggle-row"><input name="enemiesAreHints" type="checkbox"> <span>Enemies are hints</span></label>
               <label class="toggle-row"><input name="shuffleShops" type="checkbox" checked> <span>Shuffle shops</span></label>
-              <label class="toggle-row"><input name="addHintsToChecks" type="checkbox"> <span>Add hints to checks</span></label>
               <label class="toggle-row"><input name="showEssentialPickupHints" type="checkbox" checked> <span>Show essential pickup hints</span></label>
               <label class="toggle-row"><input name="otherPlayersCanFindItemPoolDrops" type="checkbox"> <span>Other players can find item pool drops</span></label>
               <label class="toggle-row"><input name="ringLink" type="checkbox" checked> <span>Ring Link (Rounds)</span></label>
               <label class="toggle-row"><input name="energyLink" type="checkbox" checked> <span>Energy Link</span></label>
               <label class="toggle-row"><input name="deathLink" type="checkbox"> <span>Death Link</span></label>
-              <label class="toggle-row"><input name="itemLink" type="checkbox"> <span>Item Link</span></label>
+              <label class="toggle-row"><input name="trapLink" type="checkbox" checked> <span>Trap Link</span></label>
+              <label class="toggle-row"><input name="itemLink" type="checkbox" checked> <span>Item Link</span></label>
             </section>
 
-            <section class="yaml-section">
-              <label class="toggle-row">
-                <input name="includeHintLocations" type="checkbox" checked data-controls="hintLocations">
-                <span>Include hint locations</span>
-              </label>
-              <fieldset>
-                <legend>Hint locations</legend>
-                <label><input type="checkbox" name="hintLocations" value="Easy Checks"> Easy checks</label>
-                <label><input type="checkbox" name="hintLocations" value="Chests"> Chests</label>
-                <label><input type="checkbox" name="hintLocations" value="Enemies" checked> Enemies</label>
-                <label><input type="checkbox" name="hintLocations" value="Post Game Checks"> Post game checks</label>
-              </fieldset>
-            </section>
 
             <section class="yaml-section">
           <label class="toggle-row">
@@ -185,52 +166,6 @@
           </div>
             </section>
 
-            <section class="yaml-section">
-          <label class="toggle-row">
-            <input name="trapLink" type="checkbox" checked data-controls="trapLinkSpawn trapLinkLocal trapLinkNonLocal">
-            <span>Trap Link</span>
-          </label>
-          <div class="yaml-two-column">
-            <fieldset>
-              <legend>Can spawn</legend>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Stun Trap" checked> Stun Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Invisible Trap" checked> Invisible Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Fast Trap" checked> Fast Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Slow Trap" checked> Slow Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Reverse Trap" checked> Reverse Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Zoom Trap" checked> Zoom Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Death Trap" checked> Death Trap</label>
-              <label><input type="checkbox" name="trapLinkSpawn" value="Suddenly Snake" checked> Suddenly Snake</label>
-            </fieldset>
-
-            <fieldset>
-              <legend>Can be found in my world</legend>
-              <label><input type="checkbox" name="trapLinkLocal" value="Stun Trap" checked> Stun Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Invisible Trap" checked> Invisible Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Fast Trap" checked> Fast Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Slow Trap" checked> Slow Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Reverse Trap" checked> Reverse Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Zoom Trap" checked> Zoom Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Death Trap" checked> Death Trap</label>
-              <label><input type="checkbox" name="trapLinkLocal" value="Suddenly Snake" checked> Suddenly Snake</label>
-            </fieldset>
-
-            <fieldset>
-              <legend>Can be found in other worlds</legend>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Stun Trap" checked> Stun Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Invisible Trap" checked> Invisible Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Fast Trap" checked> Fast Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Slow Trap" checked> Slow Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Reverse Trap" checked> Reverse Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Zoom Trap" checked> Zoom Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Death Trap" checked> Death Trap</label>
-              <label><input type="checkbox" name="trapLinkNonLocal" value="Suddenly Snake" checked> Suddenly Snake</label>
-            </fieldset>
-          </div>
-            </section>
           </div>
 
           <aside class="yaml-right-column">
@@ -240,10 +175,9 @@
                 <div><dt>Total</dt><dd id="yaml-total-checks">0</dd></div>
                 <div><dt>Chests</dt><dd id="yaml-chest-checks">0</dd></div>
                 <div><dt>Easy destructibles</dt><dd id="yaml-easy-destructible-checks">0</dd></div>
-                <div><dt>Postgame destructibles</dt><dd id="yaml-postgame-checks">0</dd></div>
                 <div><dt>Enemies</dt><dd id="yaml-enemy-checks">0</dd></div>
                 <div><dt>Shops</dt><dd id="yaml-shop-checks">0</dd></div>
-                <div><dt>Hint check count</dt><dd id="yaml-hint-checks">0</dd></div>
+                <div><dt>Hint triggers</dt><dd id="yaml-hint-checks">0</dd></div>
               </dl>
             </section>
           </aside>

@@ -171,21 +171,6 @@ function archipelagoClientSendGoal() {
   return true;
 }
 
-function archipelagoClientMaybeSendBuildTankGoal() {
-  var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
-  var archipelagoClientGoal = archipelagoClientSlotData.goal || archipelagoClientSlotData.Goal;
-
-  if (archipelagoClientGoal !== "build_tank" && archipelagoClientGoal !== "option_build_tank" && Number(archipelagoClientGoal) !== 1) {
-    return false;
-  }
-
-  if (!progressionManagerHasRequirement("tank")) {
-    return false;
-  }
-
-  return archipelagoClientSendGoal();
-}
-
 function archipelagoClientBuildTags() {
   var archipelagoClientTags = ["AP"];
   var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
@@ -588,6 +573,7 @@ function archipelagoClientResetOnlineProgressionForSync() {
   globalsState.archipelago.receivedItems = [];
   globalsState.archipelago.nextItemIndex = 0;
   globalsState.archipelago.linkEvents = {};
+  globalsState.archipelago.hintedLocations = {};
   globalsState.archipelago.goalSent = false;
 
   Object.keys(globalsState.locations).forEach(function (archipelagoClientLocationKey) {
@@ -687,7 +673,6 @@ function archipelagoClientApplyItem(archipelagoClientItem, archipelagoClientItem
     return true;
   });
 
-  archipelagoClientMaybeSendBuildTankGoal();
 }
 
 function archipelagoClientApplyReceivedItems(archipelagoClientPacket) {
@@ -874,6 +859,48 @@ function archipelagoClientHandleBounced(archipelagoClientPacket) {
   if ((archipelagoClientTags.indexOf("TrapLink") !== -1 || archipelagoClientTags.indexOf("ShellipelagoTrapLink") !== -1) && typeof initialRoomReceiveTrapLink === "function") {
     initialRoomReceiveTrapLink(archipelagoClientData.trap);
   }
+}
+
+
+function archipelagoClientSendHintForTrigger(archipelagoClientTriggerKey) {
+  var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
+  var archipelagoClientHintTriggers = archipelagoClientSlotData.hint_triggers || archipelagoClientSlotData.hintTriggers || {};
+  var archipelagoClientLocationId = archipelagoClientHintTriggers[archipelagoClientTriggerKey];
+
+  if (!archipelagoClientLocationId) {
+    return false;
+  }
+
+  return archipelagoClientSendHintForLocationId(archipelagoClientLocationId);
+}
+
+function archipelagoClientSendHintForLocationId(archipelagoClientLocationId) {
+  var archipelagoClientLocationNumber = Number(archipelagoClientLocationId);
+
+  if (!archipelagoClientLocationNumber || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
+    return false;
+  }
+
+  if (globalsState.archipelago.socket.readyState !== WebSocket.OPEN) {
+    return false;
+  }
+
+  if (!globalsState.archipelago.hintedLocations) {
+    globalsState.archipelago.hintedLocations = {};
+  }
+
+  if (globalsState.archipelago.hintedLocations[archipelagoClientLocationNumber]) {
+    return false;
+  }
+
+  globalsState.archipelago.hintedLocations[archipelagoClientLocationNumber] = true;
+  archipelagoClientSend(globalsState.archipelago.socket, {
+    cmd: "CreateHints",
+    locations: [archipelagoClientLocationNumber],
+    player: globalsState.archipelago.slotId || undefined
+  });
+
+  return true;
 }
 
 function archipelagoClientSendLocationCheck(archipelagoClientCheckKey) {

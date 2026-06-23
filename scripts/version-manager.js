@@ -6,6 +6,7 @@ const sourceVersionPath = path.join(rootPath, "src", "version.js");
 const globalsPath = path.join(rootPath, "src", "globals.js");
 const packagePath = path.join(rootPath, "package.json");
 const worldInitPath = path.join(rootPath, "archipelago", "world", "shellipelago", "__init__.py");
+const worldMetadataPath = path.join(rootPath, "archipelago", "world", "shellipelago", "archipelago.json");
 
 function readText(filePath) {
   return fs.readFileSync(filePath, "utf8");
@@ -87,6 +88,10 @@ function writeVersion(version) {
   const packageJson = JSON.parse(readText(packagePath));
   packageJson.version = toSemver(version);
   writeText(packagePath, JSON.stringify(packageJson, null, 2) + "\n");
+
+  const worldMetadata = JSON.parse(readText(worldMetadataPath));
+  worldMetadata.world_version = toSemver(version);
+  writeText(worldMetadataPath, JSON.stringify(worldMetadata, null, 2) + "\n");
 }
 
 function syncVersion() {

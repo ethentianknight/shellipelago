@@ -40,15 +40,15 @@ const fillerItems = {
 };
 
 const trapItems = {
-  trapStun: { name: "Stun Trap", classification: "filler" },
-  trapInvisible: { name: "Invisible Trap", classification: "filler" },
-  trapFast: { name: "Fast Trap", classification: "filler" },
-  trapSlow: { name: "Slow Trap", classification: "filler" },
-  trapReverse: { name: "Reverse Trap", classification: "filler" },
-  trapScreenFlip: { name: "Screen Flip Trap", classification: "filler" },
-  trapZoom: { name: "Zoom Trap", classification: "filler" },
-  trapDeath: { name: "Death Trap", classification: "filler" },
-  suddenlySnake: { name: "Suddenly Snake", classification: "filler" },
+  trapStun: { name: "Stun Trap", classification: "trap" },
+  trapInvisible: { name: "Invisible Trap", classification: "trap" },
+  trapFast: { name: "Fast Trap", classification: "trap" },
+  trapSlow: { name: "Slow Trap", classification: "trap" },
+  trapReverse: { name: "Reverse Trap", classification: "trap" },
+  trapScreenFlip: { name: "Screen Flip Trap", classification: "trap" },
+  trapZoom: { name: "Zoom Trap", classification: "trap" },
+  trapDeath: { name: "Death Trap", classification: "trap" },
+  suddenlySnake: { name: "Suddenly Snake", classification: "trap" },
 };
 
 const dropAliases = {
@@ -187,7 +187,7 @@ function locationCategory(tile) {
   }
 
   if (isDestructible(tile)) {
-    return isPostgameDestructible(tile) ? "postgame_destructible" : "easy_destructible";
+    return "easy_destructible";
   }
 
   return "chest";
@@ -346,7 +346,6 @@ function locationName(room, tile, index) {
   const typeName = {
     chest: "Chest",
     easy_destructible: "Destructible",
-    postgame_destructible: "Postgame Destructible",
     enemy: "Enemy",
     shop: "Shop",
   }[locationCategory(tile)] || "Check";
@@ -385,6 +384,10 @@ function buildLocations(mapData) {
   mapData.rooms.forEach((room) => {
     (room.tiles || []).forEach((tile) => {
       if (!isChest(tile) && !isDestructible(tile) && !isEnemy(tile) && !isShop(tile)) {
+        return;
+      }
+
+      if (isDestructible(tile) && isPostgameDestructible(tile)) {
         return;
       }
 
@@ -447,6 +450,7 @@ function writeItemsPy(items) {
     '    "progression": ItemClassification.progression,',
     '    "useful": ItemClassification.useful,',
     '    "filler": ItemClassification.filler,',
+    '    "trap": ItemClassification.trap,',
     "}",
     "",
   ].join("\n");

@@ -220,7 +220,6 @@ function introScreenBindYamlCreator() {
   var introScreenYamlUpload = introScreenRoot.querySelector("#yaml-upload");
   var introScreenProgressionBalancing = introScreenRoot.querySelector("#yaml-progression-balancing");
   var introScreenProgressionBalancingValue = introScreenRoot.querySelector("#yaml-progression-balancing-value");
-  var introScreenPostGameChecks = introScreenRoot.querySelector("input[name='addEndgameDestructibleChecks']");
 
   introScreenLoadSavedYamlSettings();
 
@@ -247,20 +246,6 @@ function introScreenBindYamlCreator() {
       introScreenSyncYamlControlledFields(introScreenToggle);
     });
   });
-
-  if (introScreenPostGameChecks) {
-    introScreenPostGameChecks.addEventListener("change", function () {
-      if (!introScreenPostGameChecks.checked) {
-        return;
-      }
-
-      introScreenPostGameChecks.checked = false;
-      introScreenConfirmPostGameChecks().then(function (introScreenConfirmed) {
-        introScreenPostGameChecks.checked = introScreenConfirmed;
-        introScreenUpdateYamlCheckCounter();
-      });
-    });
-  }
 
   if (introScreenYamlUpload) {
     introScreenYamlUpload.addEventListener("change", introScreenHandleYamlUpload);
@@ -333,6 +318,11 @@ function introScreenDownloadDefaultYaml() {
   introScreenCurrentOptions = introScreenGetYamlOptions(introScreenForm.elements, introScreenForm.elements.slot.value.trim());
   introScreenForm.reset();
   introScreenDefaultOptions = introScreenGetYamlOptions(introScreenForm.elements, "Player");
+  introScreenDefaultOptions.ringLink = false;
+  introScreenDefaultOptions.energyLink = false;
+  introScreenDefaultOptions.deathLink = false;
+  introScreenDefaultOptions.trapLink = false;
+  introScreenDefaultOptions.itemLink = false;
   introScreenApplyYamlOptionsToForm(introScreenCurrentOptions);
   introScreenUpdateYamlRangeOutput();
   introScreenUpdateYamlCheckCounter();
@@ -470,7 +460,6 @@ function introScreenParseYamlScalar(introScreenValue) {
 function introScreenGetYamlKeyMap() {
   return {
     progression_balancing: "progressionBalancing",
-    goal: "goal",
     shuffle_essential_items: "shuffleEssentialItems",
     essential_items_in_my_world: "essentialLocal",
     essential_items_in_other_worlds: "essentialNonLocal",
@@ -478,13 +467,10 @@ function introScreenGetYamlKeyMap() {
     max_resource_upgrades_in_my_world: "resourceLocal",
     max_resource_upgrades_in_other_worlds: "resourceNonLocal",
     add_easy_destructible_checks: "addEasyDestructibleChecks",
-    add_endgame_destructible_checks: "addEndgameDestructibleChecks",
     enemies_are_checks: "enemiesAreChecks",
     shuffle_shops: "shuffleShops",
-    add_hints_to_checks: "addHintsToChecks",
     show_essential_pickup_hints: "showEssentialPickupHints",
-    include_hint_locations: "includeHintLocations",
-    hint_locations: "hintLocations",
+    enemies_are_hints: "enemiesAreHints",
     add_traps_to_pool: "addTrapsToPool",
     trap_pool_spawn: "trapPoolSpawn",
     trap_pool_in_my_world: "trapPoolLocal",
@@ -494,9 +480,6 @@ function introScreenGetYamlKeyMap() {
     energy_link: "energyLink",
     death_link: "deathLink",
     trap_link: "trapLink",
-    trap_link_spawn: "trapLinkSpawn",
-    trap_link_in_my_world: "trapLinkLocal",
-    trap_link_in_other_worlds: "trapLinkNonLocal",
     item_link: "itemLink"
   };
 }
@@ -583,65 +566,6 @@ function introScreenSetProgressionBalancingValue(introScreenValue) {
   introScreenProgressionBalancingValue.value = String(introScreenNumber);
 }
 
-function introScreenConfirmPostGameChecks() {
-  return new Promise(function (introScreenResolve) {
-    var introScreenBackdrop = document.createElement("div");
-    var introScreenModal = document.createElement("div");
-    var introScreenTitle = document.createElement("h2");
-    var introScreenMessage = document.createElement("p");
-    var introScreenActions = document.createElement("div");
-    var introScreenConfirm = document.createElement("button");
-    var introScreenCancel = document.createElement("button");
-
-    function introScreenClose(introScreenResult) {
-      document.removeEventListener("keydown", introScreenHandleKeydown);
-      introScreenBackdrop.remove();
-      introScreenResolve(introScreenResult);
-    }
-
-    function introScreenHandleKeydown(introScreenEvent) {
-      if (introScreenEvent.key === "Escape") {
-        introScreenClose(false);
-      }
-    }
-
-    introScreenBackdrop.className = "map-check-modal-backdrop";
-    introScreenModal.className = "map-check-modal";
-    introScreenActions.className = "map-check-modal-actions";
-    introScreenConfirm.className = "primary-button";
-    introScreenCancel.className = "secondary-button";
-
-    introScreenTitle.textContent = "Are you sure?";
-    introScreenMessage.textContent = "This is a debug feature and will hold other games hostage.";
-    introScreenConfirm.textContent = "Yes, I am a bad person";
-    introScreenCancel.textContent = "cancel";
-    introScreenConfirm.type = "button";
-    introScreenCancel.type = "button";
-
-    introScreenConfirm.addEventListener("click", function () {
-      introScreenClose(true);
-    });
-    introScreenCancel.addEventListener("click", function () {
-      introScreenClose(false);
-    });
-    introScreenBackdrop.addEventListener("click", function (introScreenEvent) {
-      if (introScreenEvent.target === introScreenBackdrop) {
-        introScreenClose(false);
-      }
-    });
-    document.addEventListener("keydown", introScreenHandleKeydown);
-
-    introScreenActions.appendChild(introScreenCancel);
-    introScreenActions.appendChild(introScreenConfirm);
-    introScreenModal.appendChild(introScreenTitle);
-    introScreenModal.appendChild(introScreenMessage);
-    introScreenModal.appendChild(introScreenActions);
-    introScreenBackdrop.appendChild(introScreenModal);
-    document.body.appendChild(introScreenBackdrop);
-    introScreenCancel.focus();
-  });
-}
-
 function introScreenSubmitYaml(introScreenEvent) {
   var introScreenForm = introScreenEvent.currentTarget;
   var introScreenFields = introScreenForm.elements;
@@ -667,7 +591,6 @@ function introScreenGetYamlOptions(introScreenFields, introScreenSlot) {
   return {
     slot: introScreenSlot,
     progressionBalancing: introScreenFields.progressionBalancing.value,
-    goal: introScreenFields.goal.value,
     shuffleEssentialItems: introScreenFields.shuffleEssentialItems.checked,
     essentialLocal: introScreenGetCheckedValues("essentialLocal"),
     essentialNonLocal: introScreenGetCheckedValues("essentialNonLocal"),
@@ -675,13 +598,10 @@ function introScreenGetYamlOptions(introScreenFields, introScreenSlot) {
     resourceLocal: introScreenGetCheckedValues("resourceLocal"),
     resourceNonLocal: introScreenGetCheckedValues("resourceNonLocal"),
     addEasyDestructibleChecks: introScreenFields.addEasyDestructibleChecks.checked,
-    addEndgameDestructibleChecks: introScreenFields.addEndgameDestructibleChecks.checked,
     enemiesAreChecks: introScreenFields.enemiesAreChecks.checked,
     shuffleShops: introScreenFields.shuffleShops.checked,
-    addHintsToChecks: introScreenFields.addHintsToChecks.checked,
     showEssentialPickupHints: introScreenFields.showEssentialPickupHints.checked,
-    includeHintLocations: introScreenFields.includeHintLocations.checked,
-    hintLocations: introScreenGetCheckedValues("hintLocations"),
+    enemiesAreHints: introScreenFields.enemiesAreHints.checked,
     addTrapsToPool: introScreenFields.addTrapsToPool.checked,
     trapPoolSpawn: introScreenGetCheckedValues("trapPoolSpawn"),
     trapPoolLocal: introScreenGetCheckedValues("trapPoolLocal"),
@@ -691,9 +611,6 @@ function introScreenGetYamlOptions(introScreenFields, introScreenSlot) {
     energyLink: introScreenFields.energyLink.checked,
     deathLink: introScreenFields.deathLink.checked,
     trapLink: introScreenFields.trapLink.checked,
-    trapLinkSpawn: introScreenGetCheckedValues("trapLinkSpawn"),
-    trapLinkLocal: introScreenGetCheckedValues("trapLinkLocal"),
-    trapLinkNonLocal: introScreenGetCheckedValues("trapLinkNonLocal"),
     itemLink: introScreenFields.itemLink.checked
   };
 }
@@ -715,7 +632,6 @@ function introScreenUpdateYamlCheckCounter() {
   introScreenSetYamlCount("yaml-total-checks", introScreenCounts.total);
   introScreenSetYamlCount("yaml-chest-checks", introScreenCounts.chests);
   introScreenSetYamlCount("yaml-easy-destructible-checks", introScreenCounts.easyDestructibles);
-  introScreenSetYamlCount("yaml-postgame-checks", introScreenCounts.postgameDestructibles);
   introScreenSetYamlCount("yaml-enemy-checks", introScreenCounts.enemies);
   introScreenSetYamlCount("yaml-shop-checks", introScreenCounts.shops);
   introScreenSetYamlCount("yaml-hint-checks", introScreenCounts.hints);
@@ -767,7 +683,6 @@ function introScreenCalculateYamlCheckCounts(introScreenOptions) {
   var introScreenCounts = {
     chests: 0,
     easyDestructibles: 0,
-    postgameDestructibles: 0,
     enemies: 0,
     shops: 0,
     hints: 0,
@@ -775,7 +690,6 @@ function introScreenCalculateYamlCheckCounts(introScreenOptions) {
     hintCandidates: {
       chests: 0,
       easyDestructibles: 0,
-      postgameDestructibles: 0,
       enemies: 0
     }
   };
@@ -802,17 +716,13 @@ function introScreenCalculateYamlCheckCounts(introScreenOptions) {
 
       if (introScreenIsYamlDestructibleTile(introScreenTile)) {
         if (introScreenIsYamlPostgameDestructible(introScreenTile)) {
-          introScreenCounts.hintCandidates.postgameDestructibles += 1;
+          return;
+        }
 
-          if (introScreenOptions.addEndgameDestructibleChecks) {
-            introScreenCounts.postgameDestructibles += 1;
-          }
-        } else {
-          introScreenCounts.hintCandidates.easyDestructibles += 1;
+        introScreenCounts.hintCandidates.easyDestructibles += 1;
 
-          if (introScreenOptions.addEasyDestructibleChecks) {
-            introScreenCounts.easyDestructibles += 1;
-          }
+        if (introScreenOptions.addEasyDestructibleChecks) {
+          introScreenCounts.easyDestructibles += 1;
         }
         return;
       }
@@ -826,7 +736,6 @@ function introScreenCalculateYamlCheckCounts(introScreenOptions) {
 
   introScreenCounts.total = introScreenCounts.chests +
     introScreenCounts.easyDestructibles +
-    introScreenCounts.postgameDestructibles +
     introScreenCounts.enemies +
     introScreenCounts.shops;
   introScreenCounts.hints = introScreenCalculateYamlHintCount(introScreenCounts, introScreenOptions);
@@ -835,23 +744,8 @@ function introScreenCalculateYamlCheckCounts(introScreenOptions) {
 
 function introScreenCalculateYamlHintCount(introScreenCounts, introScreenOptions) {
   var introScreenHintCount = 0;
-  var introScreenHintLocations = introScreenOptions.includeHintLocations ? introScreenOptions.hintLocations : [];
-  var introScreenHintCandidates = introScreenCounts.hintCandidates || introScreenCounts;
-
-  if (introScreenHintLocations.indexOf("Chests") >= 0) {
-    introScreenHintCount += introScreenHintCandidates.chests;
-  }
-
-  if (introScreenHintLocations.indexOf("Easy Checks") >= 0) {
-    introScreenHintCount += introScreenHintCandidates.easyDestructibles;
-  }
-
-  if (introScreenHintLocations.indexOf("Enemies") >= 0) {
-    introScreenHintCount += introScreenHintCandidates.enemies;
-  }
-
-  if (introScreenHintLocations.indexOf("Post Game Checks") >= 0) {
-    introScreenHintCount += introScreenHintCandidates.postgameDestructibles;
+  if (introScreenOptions.enemiesAreHints) {
+    introScreenHintCount = (introScreenCounts.hintCandidates || introScreenCounts).enemies || 0;
   }
 
   return introScreenHintCount;
@@ -971,6 +865,7 @@ function introScreenGetYamlDropLabel(introScreenDropKey) {
     tankcannon: "Tank Cannon",
     sfx: "SFX",
     bgm: "BGM",
+    energy: "Energy",
     hp: "Max HP",
     rounds: "Max Rounds",
     trapstun: "Stun Trap",
@@ -1005,7 +900,8 @@ function introScreenIsYamlEssentialDrop(introScreenDropKey) {
     "tankchassis",
     "tankcannon",
     "sfx",
-    "bgm"
+    "bgm",
+    "energy"
   ].indexOf(introScreenDropKey) >= 0;
 }
 

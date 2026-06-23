@@ -7776,11 +7776,30 @@ function initialRoomStartEnemyDeath(initialRoomEnemy, initialRoomNow) {
   initialRoomEnemy.hurtUntil = 0;
 }
 
+
+function initialRoomMaybeSendEnemyHint(initialRoomEnemy) {
+  if (!initialRoomEnemy || typeof archipelagoClientSendHintForTrigger !== "function") {
+    return false;
+  }
+
+  return archipelagoClientSendHintForTrigger(initialRoomGetEnemyHintTriggerKey(initialRoomEnemy));
+}
+
+function initialRoomGetEnemyHintTriggerKey(initialRoomEnemy) {
+  if (!initialRoomCurrentRoom || !initialRoomEnemy) {
+    return "";
+  }
+
+  return initialRoomCurrentRoom.x + "," + initialRoomCurrentRoom.y + ":" + initialRoomEnemy.spawnTileX + "," + initialRoomEnemy.spawnTileY;
+}
+
 function initialRoomHandleEnemyCheck(initialRoomEnemy) {
   var initialRoomCheckKey = initialRoomEnemy.checkKey || "";
   var initialRoomRewardKey = initialRoomEnemy.expectedDrop || "itemPool1";
   var initialRoomRewardWasAlreadyGained = initialRoomIsRewardAlreadyGained(initialRoomRewardKey);
   var initialRoomGeneratedLocation = null;
+
+  initialRoomMaybeSendEnemyHint(initialRoomEnemy);
 
   if (!initialRoomCheckKey) {
     if (globalsState.archipelago.connected) {

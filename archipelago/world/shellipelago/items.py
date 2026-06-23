@@ -5,6 +5,7 @@ classification_table = {
     "progression": ItemClassification.progression,
     "useful": ItemClassification.useful,
     "filler": ItemClassification.filler,
+    "trap": ItemClassification.trap,
 }
 
 
@@ -174,7 +175,7 @@ raw_item_table = json.loads(r'''
     "key": "trapStun",
     "id": 100020,
     "name": "Stun Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -182,7 +183,7 @@ raw_item_table = json.loads(r'''
     "key": "trapInvisible",
     "id": 100021,
     "name": "Invisible Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -190,7 +191,7 @@ raw_item_table = json.loads(r'''
     "key": "trapFast",
     "id": 100022,
     "name": "Fast Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -198,7 +199,7 @@ raw_item_table = json.loads(r'''
     "key": "trapSlow",
     "id": 100023,
     "name": "Slow Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -206,7 +207,7 @@ raw_item_table = json.loads(r'''
     "key": "trapReverse",
     "id": 100024,
     "name": "Reverse Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -214,7 +215,7 @@ raw_item_table = json.loads(r'''
     "key": "trapScreenFlip",
     "id": 100025,
     "name": "Screen Flip Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -222,7 +223,7 @@ raw_item_table = json.loads(r'''
     "key": "trapZoom",
     "id": 100026,
     "name": "Zoom Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -230,7 +231,7 @@ raw_item_table = json.loads(r'''
     "key": "trapDeath",
     "id": 100027,
     "name": "Death Trap",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   },
@@ -238,7 +239,7 @@ raw_item_table = json.loads(r'''
     "key": "suddenlySnake",
     "id": 100028,
     "name": "Suddenly Snake",
-    "classification": "filler",
+    "classification": "trap",
     "trap": true,
     "count": 1
   }
