@@ -4898,10 +4898,6 @@ function initialRoomIsRingLinkEnabled() {
   return initialRoomIsSlotOptionEnabled("ring_link", "ringLink");
 }
 
-function initialRoomIsItemLinkEnabled() {
-  return initialRoomIsSlotOptionEnabled("item_link", "itemLink");
-}
-
 function initialRoomIsTrapLinkEnabled() {
   return initialRoomIsSlotOptionEnabled("trap_link", "trapLink");
 }
@@ -4929,20 +4925,25 @@ function initialRoomBroadcastLinkedPickup(initialRoomRewardKey, initialRoomAmoun
   }
 
   if ((initialRoomRewardKey === "potion" || initialRoomRewardKey === "energyGem") && initialRoomIsEnergyLinkEnabled()) {
-    archipelagoClientSendBounce("EnergyLink", initialRoomPayload);
+    if (typeof initialRoomPlayer !== "undefined") {
+      initialRoomPlayer.energy = Math.max(0, initialRoomPlayer.energy - (Number(initialRoomPayload.amount) || 1));
+    }
+
+    if (typeof archipelagoClientSendEnergyLinkAdd === "function") {
+      archipelagoClientSendEnergyLinkAdd(Number(initialRoomPayload.amount) || 1);
+    }
     return;
   }
 
   if ((initialRoomRewardKey === "moneybag" || initialRoomRewardKey === "roundPouch" || initialRoomRewardKey === "roundsPickup") && initialRoomIsRingLinkEnabled()) {
     initialRoomPayload.amount = initialRoomAmount || 5;
+    if (typeof archipelagoClientConnectionId !== "undefined") {
+      initialRoomPayload.source = archipelagoClientConnectionId;
+    }
     archipelagoClientSendBounce("RingLink", initialRoomPayload);
     return;
   }
 
-  if (initialRoomIsItemLinkEnabled()) {
-    initialRoomPayload.item = initialRoomRewardKey;
-    archipelagoClientSendBounce("ItemLink", initialRoomPayload);
-  }
 }
 
 function initialRoomSpendRounds(initialRoomAmount, initialRoomReason) {
@@ -4980,7 +4981,7 @@ function initialRoomReceiveLinkedPickup(initialRoomRewardKey, initialRoomAmount)
 
   initialRoomWithSuppressedLinkBroadcast(function () {
     if (initialRoomRewardKey === "potion" || initialRoomRewardKey === "energyGem") {
-      if (!initialRoomIsEnergyLinkEnabled() && !initialRoomIsItemLinkEnabled()) {
+      if (!initialRoomIsEnergyLinkEnabled()) {
         return;
       }
 
@@ -4993,7 +4994,7 @@ function initialRoomReceiveLinkedPickup(initialRoomRewardKey, initialRoomAmount)
     if (initialRoomRewardKey === "moneybag" || initialRoomRewardKey === "roundPouch" || initialRoomRewardKey === "roundsPickup") {
       var initialRoomRoundAmount = Number(initialRoomAmount);
 
-      if (!initialRoomIsRingLinkEnabled() && !initialRoomIsItemLinkEnabled()) {
+      if (!initialRoomIsRingLinkEnabled()) {
         return;
       }
 
@@ -5010,21 +5011,124 @@ function initialRoomReceiveLinkedPickup(initialRoomRewardKey, initialRoomAmount)
     }
 
     if (initialRoomRewardKey === "health" || initialRoomRewardKey === "healthPotion" || initialRoomRewardKey === "healthPickup") {
-      if (!initialRoomIsItemLinkEnabled()) {
-        return;
-      }
-
-      initialRoomSyncPlayerResourceMaxes();
-      initialRoomPlayer.hp = Math.min(initialRoomGetEffectiveMaxHp(), initialRoomPlayer.hp + (initialRoomAmount || 1));
-      initialRoomShowPickupIcon("health");
+      return;
     }
   });
 }
 
-function initialRoomBroadcastTrapLink(initialRoomTrapKey, initialRoomEventId) {
-  var initialRoomPayload = { trap: initialRoomTrapKey };
+function initialRoomGetTrapLinkName(initialRoomTrapKey) {
+  var initialRoomTrapDefinition = globalsState.checkDefinitions[initialRoomTrapKey];
 
-  if (initialRoomSuppressLinkBroadcast || !initialRoomIsOnlineModeActive() || !initialRoomIsTrapLinkEnabled()) {
+  if (!initialRoomTrapDefinition || !initialRoomTrapDefinition.trap) {
+    return "";
+  }
+
+  return initialRoomTrapDefinition.label || initialRoomTrapDefinition.name || "";
+}
+
+function initialRoomGetTrapLinkKey(initialRoomTrapName) {
+  var initialRoomTrapAliases = {
+    "Banana Trap": "trapStun",
+    "Banana Peel Trap": "trapStun",
+    "Bonk Trap": "trapStun",
+    "Camera Rotate Trap": "trapScreenFlip",
+    "Chaos Trap": "trapReverse",
+    "Chaos Control Trap": "trapStun",
+    "Clear Image Trap": "trapInvisible",
+    "Confound Trap": "trapReverse",
+    "Confuse Trap": "trapReverse",
+    "Confusion Trap": "trapReverse",
+    "Controller Drift Trap": "trapReverse",
+    "Cutscene Trap": "trapScreenFlip",
+    "Damage Trap": "trapDeath",
+    "Deisometric Trap": "trapScreenFlip",
+    "Double Damage": "trapDeath",
+    "Dry Trap": "trapSlow",
+    "Enemy Ball Trap": "suddenlySnake",
+    "Explosion Trap": "trapDeath",
+    "Exposition Trap": "trapScreenFlip",
+    "Extreme Chaos Mode": "trapReverse",
+    "Fast Trap": "trapFast",
+    "Fish Eye Trap": "trapZoom",
+    "Flip Horizontal Trap": "trapScreenFlip",
+    "Flip Trap": "trapScreenFlip",
+    "Flip Vertical Trap": "trapScreenFlip",
+    "Frost Trap": "trapStun",
+    "Freeze Trap": "trapStun",
+    "Frozen Trap": "trapStun",
+    "Fuzzy Trap": "trapReverse",
+    "Gravity Trap": "trapSlow",
+    "Honey Trap": "trapStun",
+    "Ice Floor Trap": "trapStun",
+    "Ice Trap": "trapStun",
+    "Input Sequence Trap": "trapReverse",
+    "Instant Death Trap": "trapDeath",
+    "Invert Colors Trap": "trapScreenFlip",
+    "Inverted Mouse Trap": "trapReverse",
+    "Literature Trap": "trapScreenFlip",
+    "Math Quiz Trap": "trapStun",
+    "No Guarding": "trapStun",
+    "One Hit KO": "trapDeath",
+    "Paralyze Trap": "trapStun",
+    "Paralysis Trap": "trapStun",
+    "Police Trap": "suddenlySnake",
+    "Poison Trap": "trapDeath",
+    "Reverse Trap": "trapReverse",
+    "Reverse Controls Trap": "trapReverse",
+    "Reversal Trap": "trapReverse",
+    "Screen Flip Trap": "trapScreenFlip",
+    "Shake Trap": "trapStun",
+    "Slow Trap": "trapSlow",
+    "Slowness Trap": "trapSlow",
+    "Snake Trap": "suddenlySnake",
+    "Space Trap": "trapZoom",
+    "Sticky Floor Trap": "trapSlow",
+    "Sticky Hands Trap": "trapSlow",
+    "Stun Trap": "trapStun",
+    "Thwimp Trap": "suddenlySnake",
+    "Time Limit": "trapFast",
+    "Time Warp Trap": "trapFast",
+    "Timer Trap": "trapFast",
+    "Tiny Trap": "trapZoom",
+    "Toxin Trap": "trapDeath",
+    "Whirlpool Trap": "trapSlow",
+    "W I D E Trap": "trapZoom",
+    "Zoom In Trap": "trapZoom",
+    "Zoom Out Trap": "trapZoom"
+  };
+  var initialRoomTrapKey = "";
+
+  if (!initialRoomTrapName) {
+    return "";
+  }
+
+  if (globalsState.checkDefinitions[initialRoomTrapName] && globalsState.checkDefinitions[initialRoomTrapName].trap) {
+    return initialRoomTrapName;
+  }
+
+  if (initialRoomTrapAliases[initialRoomTrapName]) {
+    return initialRoomTrapAliases[initialRoomTrapName];
+  }
+
+  Object.keys(globalsState.checkDefinitions).some(function (initialRoomCheckKey) {
+    var initialRoomCheckDefinition = globalsState.checkDefinitions[initialRoomCheckKey];
+
+    if (initialRoomCheckDefinition && initialRoomCheckDefinition.trap && initialRoomCheckDefinition.label === initialRoomTrapName) {
+      initialRoomTrapKey = initialRoomCheckKey;
+      return true;
+    }
+
+    return false;
+  });
+
+  return initialRoomTrapKey;
+}
+
+function initialRoomBroadcastTrapLink(initialRoomTrapKey, initialRoomEventId) {
+  var initialRoomTrapName = initialRoomGetTrapLinkName(initialRoomTrapKey);
+  var initialRoomPayload = { trap_name: initialRoomTrapName };
+
+  if (!initialRoomTrapName || initialRoomSuppressLinkBroadcast || !initialRoomIsOnlineModeActive() || !initialRoomIsTrapLinkEnabled()) {
     return;
   }
 
@@ -5035,7 +5139,9 @@ function initialRoomBroadcastTrapLink(initialRoomTrapKey, initialRoomEventId) {
   archipelagoClientSendBounce("TrapLink", initialRoomPayload);
 }
 
-function initialRoomReceiveTrapLink(initialRoomTrapKey) {
+function initialRoomReceiveTrapLink(initialRoomTrapName) {
+  var initialRoomTrapKey = initialRoomGetTrapLinkKey(initialRoomTrapName);
+
   if (!initialRoomTrapKey || !initialRoomIsTrapLinkEnabled()) {
     return;
   }
@@ -9097,6 +9203,10 @@ function initialRoomPlaceFire() {
   }
 
   initialRoomPlayer.energy -= 1;
+  if (initialRoomIsEnergyLinkEnabled() && initialRoomIsOnlineModeActive() && typeof archipelagoClientSendEnergyLinkDeplete === "function") {
+    archipelagoClientSendEnergyLinkDeplete(1, "fire:" + initialRoomNow + ":" + Math.random().toString(36).slice(2));
+  }
+
   initialRoomBombs.push({
     id: "fire:" + initialRoomNow + ":" + initialRoomTileX + "," + initialRoomTileY,
     kind: "fire",
@@ -9792,6 +9902,10 @@ function initialRoomToggleMap() {
 }
 
 function initialRoomToggleStatus() {
+  if (!initialRoomIsStatusOpen && !initialRoomCanOpenMapOverlay()) {
+    return false;
+  }
+
   initialRoomIsStatusOpen = !initialRoomIsStatusOpen;
   if (initialRoomIsStatusOpen) {
     initialRoomIsMapOpen = false;
@@ -9800,6 +9914,7 @@ function initialRoomToggleStatus() {
   initialRoomKeys = {};
   initialRoomInputOrder = [];
   initialRoomPlayer.moveDirection = null;
+  return true;
 }
 
 function initialRoomCanOpenMapOverlay() {
@@ -9816,6 +9931,10 @@ function initialRoomIsPlayerActivelyMoving() {
 }
 
 function initialRoomOpenMessageLog() {
+  if (!initialRoomCanOpenMapOverlay()) {
+    return false;
+  }
+
   initialRoomIsMessageLogOpen = true;
   initialRoomMessageLogPulseUntil = 0;
   initialRoomIsMapOpen = false;
@@ -9824,6 +9943,7 @@ function initialRoomOpenMessageLog() {
   initialRoomKeys = {};
   initialRoomInputOrder = [];
   initialRoomPlayer.moveDirection = null;
+  return true;
 }
 
 function initialRoomCloseMessageLog() {
@@ -9908,7 +10028,8 @@ function initialRoomHandleTopRightMenuClick() {
   }
 
   if (initialRoomClickedIcon === "map") {
-    return initialRoomToggleMap();
+    initialRoomToggleMap();
+    return true;
   }
 
   if (initialRoomClickedIcon === "bgm" && initialRoomHasBgmUnlock()) {
@@ -10644,6 +10765,10 @@ function initialRoomTryBuyShopTile(initialRoomTile) {
     }
 
     initialRoomPlayer.energy -= initialRoomOffer.cost;
+    if (initialRoomIsEnergyLinkEnabled() && typeof archipelagoClientSendEnergyLinkDeplete === "function") {
+      archipelagoClientSendEnergyLinkDeplete(initialRoomOffer.cost, "shop:" + initialRoomShopKey + ":" + Date.now());
+    }
+
     if (initialRoomOnlineLocalReward) {
       initialRoomApplyShopReward(initialRoomOnlineLocalReward);
     }

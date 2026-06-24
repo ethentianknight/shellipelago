@@ -519,7 +519,117 @@ function introScreenParseYamlOptions(introScreenYamlText) {
     introScreenOptions[introScreenYamlKeyMap[introScreenKeyMatch[1]]] = introScreenParseYamlScalar(introScreenKeyMatch[2]);
   });
 
+  introScreenApplyStandardLocalityOptions(introScreenOptions);
+
   return introScreenOptions;
+}
+
+function introScreenApplyStandardLocalityOptions(introScreenOptions) {
+  var introScreenLocalItems = introScreenOptions.localItems || [];
+  var introScreenNonLocalItems = introScreenOptions.nonLocalItems || [];
+
+  introScreenApplyStandardLocalityGroup(
+    introScreenOptions,
+    introScreenLocalItems,
+    introScreenNonLocalItems,
+    "essentialLocal",
+    "essentialNonLocal",
+    [
+      "Graphics",
+      "Progressive Room",
+      "Bombs",
+      "Gun",
+      "Fire",
+      "Sword",
+      "Pickaxe",
+      "Water Walkers",
+      "Tank Treads",
+      "Tank Chassis",
+      "Tank Cannon",
+      "SFX",
+      "BGM"
+    ]
+  );
+  introScreenApplyStandardLocalityGroup(
+    introScreenOptions,
+    introScreenLocalItems,
+    introScreenNonLocalItems,
+    "resourceLocal",
+    "resourceNonLocal",
+    ["Max HP", "Max Rounds"]
+  );
+  introScreenApplyStandardLocalityGroup(
+    introScreenOptions,
+    introScreenLocalItems,
+    introScreenNonLocalItems,
+    "trapPoolLocal",
+    "trapPoolNonLocal",
+    [
+      "Stun Trap",
+      "Invisible Trap",
+      "Fast Trap",
+      "Slow Trap",
+      "Reverse Trap",
+      "Screen Flip Trap",
+      "Zoom In Trap",
+      "Instant Death Trap",
+      "Snake Trap"
+    ]
+  );
+
+  delete introScreenOptions.localItems;
+  delete introScreenOptions.nonLocalItems;
+}
+
+function introScreenApplyStandardLocalityGroup(
+  introScreenOptions,
+  introScreenLocalItems,
+  introScreenNonLocalItems,
+  introScreenLocalKey,
+  introScreenNonLocalKey,
+  introScreenItemNames
+) {
+  introScreenOptions[introScreenLocalKey] = introScreenOptions[introScreenLocalKey] || introScreenItemNames.slice();
+  introScreenOptions[introScreenNonLocalKey] = introScreenOptions[introScreenNonLocalKey] || introScreenItemNames.slice();
+
+  introScreenItemNames.forEach(function (introScreenItemName) {
+    var introScreenForcedLocal = introScreenLocalItems.indexOf(introScreenItemName) !== -1;
+    var introScreenForcedNonLocal = introScreenNonLocalItems.indexOf(introScreenItemName) !== -1;
+
+    if (introScreenForcedLocal && !introScreenForcedNonLocal) {
+      introScreenOptions[introScreenLocalKey] = introScreenAddYamlOptionValue(
+        introScreenOptions[introScreenLocalKey],
+        introScreenItemName
+      );
+      introScreenOptions[introScreenNonLocalKey] = introScreenRemoveYamlOptionValue(
+        introScreenOptions[introScreenNonLocalKey],
+        introScreenItemName
+      );
+    } else if (introScreenForcedNonLocal && !introScreenForcedLocal) {
+      introScreenOptions[introScreenLocalKey] = introScreenRemoveYamlOptionValue(
+        introScreenOptions[introScreenLocalKey],
+        introScreenItemName
+      );
+      introScreenOptions[introScreenNonLocalKey] = introScreenAddYamlOptionValue(
+        introScreenOptions[introScreenNonLocalKey],
+        introScreenItemName
+      );
+    }
+  });
+}
+
+function introScreenAddYamlOptionValue(introScreenValues, introScreenValue) {
+  if (introScreenValues.indexOf(introScreenValue) === -1) {
+    introScreenValues.push(introScreenValue);
+  }
+
+  return introScreenValues;
+}
+
+function introScreenRemoveYamlOptionValue(introScreenValues, introScreenValue) {
+  return introScreenValues.filter(function (introScreenExistingValue) {
+    return introScreenExistingValue !== introScreenValue;
+  });
 }
 
 function introScreenParseYamlScalar(introScreenValue) {
@@ -543,12 +653,10 @@ function introScreenParseYamlScalar(introScreenValue) {
 function introScreenGetYamlKeyMap() {
   return {
     progression_balancing: "progressionBalancing",
+    local_items: "localItems",
+    non_local_items: "nonLocalItems",
     shuffle_essential_items: "shuffleEssentialItems",
-    essential_items_in_my_world: "essentialLocal",
-    essential_items_in_other_worlds: "essentialNonLocal",
     shuffle_max_resource_upgrades: "shuffleMaxResourceUpgrades",
-    max_resource_upgrades_in_my_world: "resourceLocal",
-    max_resource_upgrades_in_other_worlds: "resourceNonLocal",
     add_easy_destructible_checks: "addEasyDestructibleChecks",
     enemies_are_checks: "enemiesAreChecks",
     shuffle_shops: "shuffleShops",
@@ -556,14 +664,11 @@ function introScreenGetYamlKeyMap() {
     enemies_are_hints: "enemiesAreHints",
     add_traps_to_pool: "addTrapsToPool",
     trap_pool_spawn: "trapPoolSpawn",
-    trap_pool_in_my_world: "trapPoolLocal",
-    trap_pool_in_other_worlds: "trapPoolNonLocal",
     other_players_can_find_item_pool_drops: "otherPlayersCanFindItemPoolDrops",
     ring_link: "ringLink",
     energy_link: "energyLink",
     death_link: "deathLink",
-    trap_link: "trapLink",
-    item_link: "itemLink"
+    trap_link: "trapLink"
   };
 }
 
@@ -663,11 +768,51 @@ function introScreenSubmitYaml(introScreenEvent) {
     return;
   }
 
+  if (!introScreenValidateYamlLocalityOptions(introScreenStatus)) {
+    return;
+  }
+
   downloadManagerDownloadText(
     introScreenFileName + ".yaml",
     downloadManagerBuildYaml(introScreenGetYamlOptions(introScreenFields, introScreenSlot))
   );
   introScreenStatus.textContent = "YAML created for " + introScreenSlot + ".";
+}
+
+function introScreenValidateYamlLocalityOptions(introScreenStatus) {
+  var introScreenInvalidItem = introScreenFindYamlLocalityItemMissingBothColumns("essentialLocal", "essentialNonLocal") ||
+    introScreenFindYamlLocalityItemMissingBothColumns("resourceLocal", "resourceNonLocal") ||
+    introScreenFindYamlLocalityItemMissingBothColumns("trapPoolLocal", "trapPoolNonLocal");
+
+  if (introScreenInvalidItem) {
+    introScreenStatus.textContent = introScreenInvalidItem + " must be checked in Local Items, Non Local Items, or both.";
+    return false;
+  }
+
+  return true;
+}
+
+function introScreenFindYamlLocalityItemMissingBothColumns(introScreenLocalName, introScreenNonLocalName) {
+  var introScreenValues = {};
+
+  introScreenRoot.querySelectorAll("input[name='" + introScreenLocalName + "'], input[name='" + introScreenNonLocalName + "']").forEach(function (introScreenInput) {
+    introScreenValues[introScreenInput.value] = introScreenValues[introScreenInput.value] || {
+      local: false,
+      nonLocal: false
+    };
+
+    if (introScreenInput.name === introScreenLocalName && introScreenInput.checked) {
+      introScreenValues[introScreenInput.value].local = true;
+    }
+
+    if (introScreenInput.name === introScreenNonLocalName && introScreenInput.checked) {
+      introScreenValues[introScreenInput.value].nonLocal = true;
+    }
+  });
+
+  return Object.keys(introScreenValues).find(function (introScreenValue) {
+    return !introScreenValues[introScreenValue].local && !introScreenValues[introScreenValue].nonLocal;
+  }) || "";
 }
 
 function introScreenGetYamlOptions(introScreenFields, introScreenSlot) {
@@ -891,13 +1036,11 @@ function introScreenShouldCountYamlDrop(introScreenDrop, introScreenOptions) {
   }
 
   if (introScreenDropKey === "hp" || introScreenDropKey === "rounds") {
-    return introScreenOptions.shuffleMaxResourceUpgrades &&
-      (introScreenOptions.resourceLocal.indexOf(introScreenDropLabel) >= 0 || introScreenOptions.resourceNonLocal.indexOf(introScreenDropLabel) >= 0);
+    return introScreenOptions.shuffleMaxResourceUpgrades;
   }
 
   if (introScreenIsYamlEssentialDrop(introScreenDropKey)) {
-    return introScreenOptions.shuffleEssentialItems &&
-      (introScreenOptions.essentialLocal.indexOf(introScreenDropLabel) >= 0 || introScreenOptions.essentialNonLocal.indexOf(introScreenDropLabel) >= 0);
+    return introScreenOptions.shuffleEssentialItems;
   }
 
   return true;
@@ -956,9 +1099,9 @@ function introScreenGetYamlDropLabel(introScreenDropKey) {
     trapslow: "Slow Trap",
     trapreverse: "Reverse Trap",
     trapscreenflip: "Screen Flip Trap",
-    trapzoom: "Zoom Trap",
-    trapdeath: "Death Trap",
-    suddenlysnake: "Suddenly Snake"
+    trapzoom: "Zoom In Trap",
+    trapdeath: "Instant Death Trap",
+    suddenlysnake: "Snake Trap"
   };
 
   return introScreenProgressiveLabels[introScreenDropKey] || introScreenDropKey;

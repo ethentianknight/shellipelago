@@ -97,7 +97,55 @@ function downloadManagerYamlList(downloadManagerItems) {
   }).join("\n");
 }
 
+function downloadManagerAddLocalityItems(downloadManagerLocalityItems, downloadManagerLocal, downloadManagerNonLocal) {
+  var downloadManagerAllItems = {};
+
+  (downloadManagerLocal || []).forEach(function (downloadManagerItem) {
+    downloadManagerAllItems[downloadManagerItem] = true;
+  });
+  (downloadManagerNonLocal || []).forEach(function (downloadManagerItem) {
+    downloadManagerAllItems[downloadManagerItem] = true;
+  });
+
+  Object.keys(downloadManagerAllItems).forEach(function (downloadManagerItem) {
+    var downloadManagerCanBeLocal = (downloadManagerLocal || []).indexOf(downloadManagerItem) !== -1;
+    var downloadManagerCanBeNonLocal = (downloadManagerNonLocal || []).indexOf(downloadManagerItem) !== -1;
+
+    if (downloadManagerCanBeLocal && !downloadManagerCanBeNonLocal) {
+      downloadManagerLocalityItems.localItems.push(downloadManagerItem);
+    } else if (downloadManagerCanBeNonLocal && !downloadManagerCanBeLocal) {
+      downloadManagerLocalityItems.nonLocalItems.push(downloadManagerItem);
+    }
+  });
+}
+
+function downloadManagerBuildLocalityItems(downloadManagerOptions) {
+  var downloadManagerLocalityItems = {
+    localItems: [],
+    nonLocalItems: []
+  };
+
+  downloadManagerAddLocalityItems(
+    downloadManagerLocalityItems,
+    downloadManagerOptions.essentialLocal,
+    downloadManagerOptions.essentialNonLocal
+  );
+  downloadManagerAddLocalityItems(
+    downloadManagerLocalityItems,
+    downloadManagerOptions.resourceLocal,
+    downloadManagerOptions.resourceNonLocal
+  );
+  downloadManagerAddLocalityItems(
+    downloadManagerLocalityItems,
+    downloadManagerOptions.trapPoolLocal,
+    downloadManagerOptions.trapPoolNonLocal
+  );
+
+  return downloadManagerLocalityItems;
+}
+
 function downloadManagerBuildYaml(downloadManagerOptions) {
+  var downloadManagerLocalityItems = downloadManagerBuildLocalityItems(downloadManagerOptions);
   var downloadManagerYamlLines = [
     "# Shellipelago version: " + (globalsState.shellipelagoVersion || "1.1"),
     "description: Shellipelago player file.",
@@ -107,12 +155,10 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "Shellipelago:",
     "  progression_balancing: " + downloadManagerYamlNumber(downloadManagerOptions.progressionBalancing, 50),
     "  accessibility: full",
+    "  local_items:" + downloadManagerYamlList(downloadManagerLocalityItems.localItems),
+    "  non_local_items:" + downloadManagerYamlList(downloadManagerLocalityItems.nonLocalItems),
     "  shuffle_essential_items: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleEssentialItems),
-    "  essential_items_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.essentialLocal),
-    "  essential_items_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.essentialNonLocal),
     "  shuffle_max_resource_upgrades: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleMaxResourceUpgrades),
-    "  max_resource_upgrades_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.resourceLocal),
-    "  max_resource_upgrades_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.resourceNonLocal),
     "  # Adds many locations and can significantly slow down a playthrough.",
     "  add_easy_destructible_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.addEasyDestructibleChecks),
     "  enemies_are_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.enemiesAreChecks),
@@ -121,19 +167,15 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  enemies_are_hints: " + downloadManagerYamlBoolean(downloadManagerOptions.enemiesAreHints),
     "  add_traps_to_pool: " + downloadManagerYamlBoolean(downloadManagerOptions.addTrapsToPool),
     "  trap_pool_spawn:" + downloadManagerYamlList(downloadManagerOptions.trapPoolSpawn),
-    "  trap_pool_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.trapPoolLocal),
-    "  trap_pool_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.trapPoolNonLocal),
     "  other_players_can_find_item_pool_drops: " + downloadManagerYamlBoolean(downloadManagerOptions.otherPlayersCanFindItemPoolDrops),
     "  # Syncs Rounds with rings in other games that have Ring Link enabled.",
     "  ring_link: " + downloadManagerYamlBoolean(downloadManagerOptions.ringLink),
-    "  # Syncs Energy with other clients. Shellipelago energy resets to 0 when the browser game reloads.",
+    "  # Syncs Energy with other clients that have Energy Link enabled.",
     "  energy_link: " + downloadManagerYamlBoolean(downloadManagerOptions.energyLink),
     "  # Sends deaths to other players with Death Link enabled.",
     "  death_link: " + downloadManagerYamlBoolean(downloadManagerOptions.deathLink),
     "  # Sends supported traps to other players with Trap Link enabled.",
     "  trap_link: " + downloadManagerYamlBoolean(downloadManagerOptions.trapLink),
-    "  # Shares supported Shellipelago pickups with players using the same item link name and game.",
-    "  item_link: " + downloadManagerYamlBoolean(downloadManagerOptions.itemLink),
     ""
   ];
 
@@ -144,6 +186,7 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
       "      item_pool:",
       "        - Linkable",
       "      replacement_item: null",
+      "      link_replacement: false",
       "      skip_if_solo: true",
       ""
     ]);

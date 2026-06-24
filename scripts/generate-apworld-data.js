@@ -45,9 +45,9 @@ const trapItems = {
   trapSlow: { name: "Slow Trap", classification: "trap" },
   trapReverse: { name: "Reverse Trap", classification: "trap" },
   trapScreenFlip: { name: "Screen Flip Trap", classification: "trap" },
-  trapZoom: { name: "Zoom Trap", classification: "trap" },
-  trapDeath: { name: "Death Trap", classification: "trap" },
-  suddenlySnake: { name: "Suddenly Snake", classification: "trap" },
+  trapZoom: { name: "Zoom In Trap", classification: "trap" },
+  trapDeath: { name: "Instant Death Trap", classification: "trap" },
+  suddenlySnake: { name: "Snake Trap", classification: "trap" },
 };
 
 const dropAliases = {

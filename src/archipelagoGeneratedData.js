@@ -107,9 +107,9 @@ var archipelagoGeneratedItemIdToNames = {
   "100022": "Slow Trap",
   "100023": "Reverse Trap",
   "100024": "Screen Flip Trap",
-  "100025": "Zoom Trap",
-  "100026": "Death Trap",
-  "100027": "Suddenly Snake"
+  "100025": "Zoom In Trap",
+  "100026": "Instant Death Trap",
+  "100027": "Snake Trap"
 };
 var archipelagoGeneratedLocationNameToId = {
   "The Start (0,0) Chest 16,14 #1": 200000,

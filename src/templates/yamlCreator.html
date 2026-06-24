@@ -44,10 +44,9 @@
                 <input name="shuffleEssentialItems" type="checkbox" checked data-controls="essentialLocal essentialNonLocal">
                 <span>Shuffle essential items</span>
               </label>
-              <p class="yaml-rule-note">Progressive Room 1 is granted at start. All checks require it. Progressive Room 2+ logically requires Graphics 1.</p>
               <div class="yaml-two-column">
                 <fieldset>
-                  <legend>Can be found in my world</legend>
+                  <legend>Local Items</legend>
                   <label><input type="checkbox" name="essentialLocal" value="Graphics" checked> Graphics</label>
                   <label><input type="checkbox" name="essentialLocal" value="Progressive Room" checked> Progressive Room</label>
                   <label><input type="checkbox" name="essentialLocal" value="Bombs" checked> Bombs</label>
@@ -64,7 +63,7 @@
                 </fieldset>
 
                 <fieldset>
-                  <legend>Can be found in other worlds</legend>
+                  <legend>Non Local Items</legend>
                   <label><input type="checkbox" name="essentialNonLocal" value="Graphics" checked> Graphics</label>
                   <label><input type="checkbox" name="essentialNonLocal" value="Progressive Room" checked> Progressive Room</label>
                   <label><input type="checkbox" name="essentialNonLocal" value="Bombs" checked> Bombs</label>
@@ -89,13 +88,13 @@
               </label>
               <div class="yaml-two-column">
                 <fieldset>
-                  <legend>Can be found in my world</legend>
+                  <legend>Local Items</legend>
                   <label><input type="checkbox" name="resourceLocal" value="Max HP" checked> Max HP</label>
                   <label><input type="checkbox" name="resourceLocal" value="Max Rounds" checked> Max Rounds</label>
                 </fieldset>
 
                 <fieldset>
-                  <legend>Can be found in other worlds</legend>
+                  <legend>Non Local Items</legend>
                   <label><input type="checkbox" name="resourceNonLocal" value="Max HP" checked> Max HP</label>
                   <label><input type="checkbox" name="resourceNonLocal" value="Max Rounds" checked> Max Rounds</label>
                 </fieldset>
@@ -104,17 +103,16 @@
 
             <section class="yaml-section yaml-compact-options">
               <label class="toggle-row"><input name="addEasyDestructibleChecks" type="checkbox"> <span>Add checks for easy destructibles</span></label>
-              <p class="yaml-rule-note">Easy destructible checks add many locations and can significantly slow down a playthrough.</p>
               <label class="toggle-row"><input name="enemiesAreChecks" type="checkbox"> <span>Enemies are checks</span></label>
               <label class="toggle-row"><input name="enemiesAreHints" type="checkbox"> <span>Enemies are hints</span></label>
               <label class="toggle-row"><input name="shuffleShops" type="checkbox" checked> <span>Shuffle shops</span></label>
               <label class="toggle-row"><input name="showEssentialPickupHints" type="checkbox" checked> <span>Show essential pickup hints</span></label>
               <label class="toggle-row"><input name="otherPlayersCanFindItemPoolDrops" type="checkbox"> <span>Other players can find item pool drops</span></label>
               <label class="toggle-row" title="Syncs Rounds with rings in other games that have this enabled. As rounds are spent and gained, ring and round counts will fluctuate accordingly for all players with this option enabled."><input name="ringLink" type="checkbox" checked> <span>Ring Link (Rounds)</span></label>
-              <label class="toggle-row" title="Similar to Ring Link, syncs Energy with other clients that have the option toggled. Energy for Shellipelago players is reset to 0 when the game is reloaded."><input name="energyLink" type="checkbox" checked> <span>Energy Link</span></label>
+              <label class="toggle-row" title="Similar to Ring Link, syncs Energy with other clients that have the option toggled."><input name="energyLink" type="checkbox" checked> <span>Energy Link</span></label>
               <label class="toggle-row" title="When a player with Death Link enabled dies, they send the death to other players with Death Link enabled, causing those games to trigger a death or game over."><input name="deathLink" type="checkbox"> <span>Death Link</span></label>
               <label class="toggle-row" title="When a player that has enabled Trap Link receives a trap that can be linked, they send that trap to other players that have Trap Link enabled. If another player's game supports that trap, both players have the effect applied."><input name="trapLink" type="checkbox" checked> <span>Trap Link</span></label>
-              <label class="toggle-row" title="Allows players to link their items into a group with the same item link name and game. The items declared in item_pool get combined and when an item is found for the group, all players in the group receive it. Item links can also have local and non-local items, forcing the items to either be placed within the worlds of the group or in worlds outside the group. If players have a varying amount of a specific item in the link, the lowest amount from the players will be the amount put into the group."><input name="itemLink" type="checkbox" checked> <span>Item Link</span></label>
+              <label class="toggle-row" title="Allows players to link their items into a group with the same item link name and game. The items declared in Item Pool get combined and when an item is found for the group, all players in the group receive it. Item links can also have Local Items and Non Local Items, forcing the items to either be placed within the worlds of the group or in worlds outside the group. If players have a varying amount of a specific item in the link, the lowest amount from the players will be the amount put into the group."><input name="itemLink" type="checkbox"> <span>Item Link</span></label>
             </section>
 
 
@@ -132,35 +130,35 @@
               <label><input type="checkbox" name="trapPoolSpawn" value="Slow Trap" checked> Slow Trap</label>
               <label><input type="checkbox" name="trapPoolSpawn" value="Reverse Trap" checked> Reverse Trap</label>
               <label><input type="checkbox" name="trapPoolSpawn" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Zoom Trap" checked> Zoom Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Death Trap" checked> Death Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Suddenly Snake" checked> Suddenly Snake</label>
+              <label><input type="checkbox" name="trapPoolSpawn" value="Zoom In Trap" checked> Zoom In Trap</label>
+              <label><input type="checkbox" name="trapPoolSpawn" value="Instant Death Trap" checked> Instant Death Trap</label>
+              <label><input type="checkbox" name="trapPoolSpawn" value="Snake Trap" checked> Snake Trap</label>
             </fieldset>
 
             <fieldset>
-              <legend>Can be found in my world</legend>
+              <legend>Local Items</legend>
               <label><input type="checkbox" name="trapPoolLocal" value="Stun Trap" checked> Stun Trap</label>
               <label><input type="checkbox" name="trapPoolLocal" value="Invisible Trap" checked> Invisible Trap</label>
               <label><input type="checkbox" name="trapPoolLocal" value="Fast Trap" checked> Fast Trap</label>
               <label><input type="checkbox" name="trapPoolLocal" value="Slow Trap" checked> Slow Trap</label>
               <label><input type="checkbox" name="trapPoolLocal" value="Reverse Trap" checked> Reverse Trap</label>
               <label><input type="checkbox" name="trapPoolLocal" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Zoom Trap" checked> Zoom Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Death Trap" checked> Death Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Suddenly Snake" checked> Suddenly Snake</label>
+              <label><input type="checkbox" name="trapPoolLocal" value="Zoom In Trap" checked> Zoom In Trap</label>
+              <label><input type="checkbox" name="trapPoolLocal" value="Instant Death Trap" checked> Instant Death Trap</label>
+              <label><input type="checkbox" name="trapPoolLocal" value="Snake Trap" checked> Snake Trap</label>
             </fieldset>
 
             <fieldset>
-              <legend>Can be found in other worlds</legend>
+              <legend>Non Local Items</legend>
               <label><input type="checkbox" name="trapPoolNonLocal" value="Stun Trap" checked> Stun Trap</label>
               <label><input type="checkbox" name="trapPoolNonLocal" value="Invisible Trap" checked> Invisible Trap</label>
               <label><input type="checkbox" name="trapPoolNonLocal" value="Fast Trap" checked> Fast Trap</label>
               <label><input type="checkbox" name="trapPoolNonLocal" value="Slow Trap" checked> Slow Trap</label>
               <label><input type="checkbox" name="trapPoolNonLocal" value="Reverse Trap" checked> Reverse Trap</label>
               <label><input type="checkbox" name="trapPoolNonLocal" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Zoom Trap" checked> Zoom Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Death Trap" checked> Death Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Suddenly Snake" checked> Suddenly Snake</label>
+              <label><input type="checkbox" name="trapPoolNonLocal" value="Zoom In Trap" checked> Zoom In Trap</label>
+              <label><input type="checkbox" name="trapPoolNonLocal" value="Instant Death Trap" checked> Instant Death Trap</label>
+              <label><input type="checkbox" name="trapPoolNonLocal" value="Snake Trap" checked> Snake Trap</label>
             </fieldset>
           </div>
             </section>

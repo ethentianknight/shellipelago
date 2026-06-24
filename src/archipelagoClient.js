@@ -6,6 +6,8 @@ var archipelagoClientVersion = {
   class: "Version"
 };
 var archipelagoClientSessionId = "shellipelago-session-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+var archipelagoClientConnectionId = Date.now() + Math.floor(Math.random() * 1000000);
+var archipelagoClientEnergyLinkValue = 0;
 var archipelagoClientItemIdToCheckKeys = {
   100000: ["graphics"],
   100001: ["freeGrid"],
@@ -153,6 +155,67 @@ function archipelagoClientSendChatMessage(archipelagoClientText) {
   return true;
 }
 
+function archipelagoClientGetEnergyLinkKey() {
+  if (globalsState.archipelago.team === null || globalsState.archipelago.team === undefined) {
+    return "";
+  }
+
+  return "EnergyLink" + globalsState.archipelago.team;
+}
+
+function archipelagoClientSetLocalEnergyFromLink(archipelagoClientValue) {
+  var archipelagoClientEnergyValue = Math.max(0, Number(archipelagoClientValue) || 0);
+
+  archipelagoClientEnergyLinkValue = archipelagoClientEnergyValue;
+  if (typeof initialRoomPlayer !== "undefined") {
+    initialRoomPlayer.energy = archipelagoClientEnergyValue;
+  }
+}
+
+function archipelagoClientSendEnergyLinkAdd(archipelagoClientAmount) {
+  var archipelagoClientEnergyAmount = Math.max(0, Number(archipelagoClientAmount) || 0);
+  var archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
+
+  if (!archipelagoClientEnergyAmount || !archipelagoClientEnergyKey || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
+    return false;
+  }
+
+  archipelagoClientSend(globalsState.archipelago.socket, {
+    cmd: "Set",
+    key: archipelagoClientEnergyKey,
+    default: 0,
+    want_reply: true,
+    operations: [
+      { operation: "add", value: archipelagoClientEnergyAmount }
+    ]
+  });
+
+  return true;
+}
+
+function archipelagoClientSendEnergyLinkDeplete(archipelagoClientAmount, archipelagoClientTag) {
+  var archipelagoClientEnergyAmount = Math.max(0, Number(archipelagoClientAmount) || 0);
+  var archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
+
+  if (!archipelagoClientEnergyAmount || !archipelagoClientEnergyKey || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
+    return false;
+  }
+
+  archipelagoClientSend(globalsState.archipelago.socket, {
+    cmd: "Set",
+    key: archipelagoClientEnergyKey,
+    default: 0,
+    want_reply: true,
+    tag: archipelagoClientTag || ("energy:" + Date.now() + ":" + Math.random().toString(36).slice(2)),
+    operations: [
+      { operation: "add", value: -archipelagoClientEnergyAmount },
+      { operation: "max", value: 0 }
+    ]
+  });
+
+  return true;
+}
+
 function archipelagoClientSendGoal() {
   if (!globalsState.archipelago.connected || !globalsState.archipelago.socket || globalsState.archipelago.goalSent) {
     return false;
@@ -179,16 +242,8 @@ function archipelagoClientBuildTags() {
     archipelagoClientTags.push("DeathLink");
   }
 
-  if (archipelagoClientSlotData.energy_link || archipelagoClientSlotData.energyLink) {
-    archipelagoClientTags.push("EnergyLink");
-  }
-
   if (archipelagoClientSlotData.ring_link || archipelagoClientSlotData.ringLink) {
     archipelagoClientTags.push("RingLink");
-  }
-
-  if (archipelagoClientSlotData.item_link || archipelagoClientSlotData.itemLink) {
-    archipelagoClientTags.push("ItemLink");
   }
 
   if (archipelagoClientSlotData.trap_link || archipelagoClientSlotData.trapLink) {
@@ -763,6 +818,8 @@ function archipelagoClientSendConnect(archipelagoClientSocket, archipelagoClient
 }
 
 function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoClientPacket, archipelagoClientConnectionInfo) {
+  var archipelagoClientEnergyKey = "";
+
   globalsState.archipelago.connected = true;
   globalsState.archipelago.host = archipelagoClientConnectionInfo.host;
   globalsState.archipelago.port = archipelagoClientConnectionInfo.port;
@@ -786,6 +843,21 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
     cmd: "ConnectUpdate",
     tags: archipelagoClientBuildTags()
   });
+
+  if (globalsState.archipelago.slotData.energy_link || globalsState.archipelago.slotData.energyLink) {
+    archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
+    if (archipelagoClientEnergyKey) {
+      archipelagoClientSend(archipelagoClientSocket, {
+        cmd: "SetNotify",
+        keys: [archipelagoClientEnergyKey]
+      });
+      archipelagoClientSend(archipelagoClientSocket, {
+        cmd: "Get",
+        keys: [archipelagoClientEnergyKey]
+      });
+    }
+  }
+
   archipelagoClientRequestDataPackage(archipelagoClientSocket);
   archipelagoClientSend(archipelagoClientSocket, { cmd: "Sync" });
 
@@ -828,6 +900,16 @@ function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClie
       return;
     }
 
+    if (archipelagoClientPacket.cmd === "Retrieved") {
+      archipelagoClientHandleRetrieved(archipelagoClientPacket);
+      return;
+    }
+
+    if (archipelagoClientPacket.cmd === "SetReply") {
+      archipelagoClientHandleSetReply(archipelagoClientPacket);
+      return;
+    }
+
     if (archipelagoClientPacket.cmd === "Print") {
       archipelagoClientQueueServerMessage(archipelagoClientPacket.text || "");
       return;
@@ -837,6 +919,23 @@ function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClie
       archipelagoClientQueueServerMessage(archipelagoClientFormatPrintJson(archipelagoClientPacket.data));
     }
   });
+}
+
+function archipelagoClientHandleRetrieved(archipelagoClientPacket) {
+  var archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
+  var archipelagoClientKeys = archipelagoClientPacket.keys || {};
+
+  if (archipelagoClientEnergyKey && Object.prototype.hasOwnProperty.call(archipelagoClientKeys, archipelagoClientEnergyKey)) {
+    archipelagoClientSetLocalEnergyFromLink(archipelagoClientKeys[archipelagoClientEnergyKey]);
+  }
+}
+
+function archipelagoClientHandleSetReply(archipelagoClientPacket) {
+  var archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
+
+  if (archipelagoClientEnergyKey && archipelagoClientPacket.key === archipelagoClientEnergyKey) {
+    archipelagoClientSetLocalEnergyFromLink(archipelagoClientPacket.value);
+  }
 }
 
 function archipelagoClientHandleBounced(archipelagoClientPacket) {
@@ -860,23 +959,21 @@ function archipelagoClientHandleBounced(archipelagoClientPacket) {
     return;
   }
 
-  if ((archipelagoClientTags.indexOf("EnergyLink") !== -1 || archipelagoClientTags.indexOf("ShellipelagoEnergyLink") !== -1) && typeof initialRoomReceiveLinkedPickup === "function") {
-    initialRoomReceiveLinkedPickup("potion", Number(archipelagoClientData.amount) || 1);
-    return;
-  }
+  if (archipelagoClientTags.indexOf("RingLink") !== -1 && typeof initialRoomReceiveLinkedPickup === "function") {
+    if (archipelagoClientData.source && Number(archipelagoClientData.source) === archipelagoClientConnectionId) {
+      return;
+    }
 
-  if ((archipelagoClientTags.indexOf("RingLink") !== -1 || archipelagoClientTags.indexOf("ShellipelagoRingLink") !== -1) && typeof initialRoomReceiveLinkedPickup === "function") {
     initialRoomReceiveLinkedPickup("moneybag", Number(archipelagoClientData.amount) || 5);
     return;
   }
 
-  if ((archipelagoClientTags.indexOf("ItemLink") !== -1 || archipelagoClientTags.indexOf("ShellipelagoItemLink") !== -1) && typeof initialRoomReceiveLinkedPickup === "function") {
-    initialRoomReceiveLinkedPickup(archipelagoClientData.item, Number(archipelagoClientData.amount) || 1);
-    return;
-  }
+  if (archipelagoClientTags.indexOf("TrapLink") !== -1 && typeof initialRoomReceiveTrapLink === "function") {
+    if (archipelagoClientData.source && archipelagoClientData.source === globalsState.archipelago.slot) {
+      return;
+    }
 
-  if ((archipelagoClientTags.indexOf("TrapLink") !== -1 || archipelagoClientTags.indexOf("ShellipelagoTrapLink") !== -1) && typeof initialRoomReceiveTrapLink === "function") {
-    initialRoomReceiveTrapLink(archipelagoClientData.trap);
+    initialRoomReceiveTrapLink(archipelagoClientData.trap_name || archipelagoClientData.trap);
   }
 }
 

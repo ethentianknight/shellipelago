@@ -155,19 +155,19 @@ var globalsState = {
     },
     trapZoom: {
       id: "trap_zoom",
-      label: "Zoom Trap",
+      label: "Zoom In Trap",
       requires: [],
       trap: true
     },
     trapDeath: {
       id: "trap_death",
-      label: "Death Trap",
+      label: "Instant Death Trap",
       requires: [],
       trap: true
     },
     suddenlySnake: {
       id: "suddenly_snake",
-      label: "Suddenly Snake",
+      label: "Snake Trap",
       requires: [],
       trap: true
     }
@@ -234,17 +234,17 @@ var globalsState = {
     },
     trapZoom: {
       id: 100008,
-      name: "Zoom Trap",
+      name: "Zoom In Trap",
       checked: false
     },
     trapDeath: {
       id: 100009,
-      name: "Death Trap",
+      name: "Instant Death Trap",
       checked: false
     },
     suddenlySnake: {
       id: 100010,
-      name: "Suddenly Snake",
+      name: "Snake Trap",
       checked: false
     }
   },

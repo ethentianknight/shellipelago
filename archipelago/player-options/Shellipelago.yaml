@@ -5,44 +5,12 @@ name: Player
 Shellipelago:
   progression_balancing: 50
   accessibility: full
+  local_items: []
+  non_local_items: []
 
   shuffle_essential_items: true
-  essential_items_in_my_world:
-    - Graphics
-    - Progressive Room
-    - Bombs
-    - Gun
-    - Fire
-    - Sword
-    - Pickaxe
-    - Water Walkers
-    - Tank Treads
-    - Tank Chassis
-    - Tank Cannon
-    - SFX
-    - BGM
-  essential_items_in_other_worlds:
-    - Graphics
-    - Progressive Room
-    - Bombs
-    - Gun
-    - Fire
-    - Sword
-    - Pickaxe
-    - Water Walkers
-    - Tank Treads
-    - Tank Chassis
-    - Tank Cannon
-    - SFX
-    - BGM
 
   shuffle_max_resource_upgrades: true
-  max_resource_upgrades_in_my_world:
-    - Max HP
-    - Max Rounds
-  max_resource_upgrades_in_other_worlds:
-    - Max HP
-    - Max Rounds
 
   # Adds many locations and can significantly slow down a playthrough.
   add_easy_destructible_checks: false
@@ -53,44 +21,22 @@ Shellipelago:
 
   add_traps_to_pool: false
   trap_pool_spawn:
-    - Suddenly Snake
+    - Snake Trap
     - Stun Trap
     - Invisible Trap
     - Fast Trap
     - Slow Trap
     - Reverse Trap
     - Screen Flip Trap
-    - Zoom Trap
-    - Death Trap
-  trap_pool_in_my_world:
-    - Suddenly Snake
-    - Stun Trap
-    - Invisible Trap
-    - Fast Trap
-    - Slow Trap
-    - Reverse Trap
-    - Screen Flip Trap
-    - Zoom Trap
-    - Death Trap
-  trap_pool_in_other_worlds:
-    - Suddenly Snake
-    - Stun Trap
-    - Invisible Trap
-    - Fast Trap
-    - Slow Trap
-    - Reverse Trap
-    - Screen Flip Trap
-    - Zoom Trap
-    - Death Trap
+    - Zoom In Trap
+    - Instant Death Trap
 
   other_players_can_find_item_pool_drops: false
   # Syncs Rounds with rings in other games that have Ring Link enabled.
   ring_link: false
-  # Syncs Energy with other clients. Shellipelago energy resets to 0 when the browser game reloads.
+  # Syncs Energy with other clients that have Energy Link enabled.
   energy_link: false
   # Sends deaths to other players with Death Link enabled.
   death_link: false
   # Sends supported traps to other players with Trap Link enabled.
   trap_link: false
-  # Shares supported Shellipelago pickups with players using the same item link name and game.
-  item_link: false
