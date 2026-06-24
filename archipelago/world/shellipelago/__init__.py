@@ -6,7 +6,7 @@ from .locations import location_table
 from .options import ESSENTIAL_ITEMS, MAX_RESOURCE_UPGRADES, ShellipelagoOptions
 
 
-__version__ = "1.7"
+__version__ = "1.8"
 
 
 class ShellipelagoItem(Item):
@@ -57,6 +57,10 @@ class ShellipelagoWorld(World):
             if item_data["classification_name"] == "progression"
         },
         "Resources": {"Max HP", "Max Rounds"},
+        "Linkable": {
+            item_name for item_name, item_data in item_table.items()
+            if item_data["classification_name"] != "trap" and item_data["key"] != "itemPool"
+        },
         "Traps": set(trap_item_names),
     }
     location_name_groups = {

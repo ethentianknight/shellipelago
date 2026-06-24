@@ -137,6 +137,18 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     ""
   ];
 
+  if (downloadManagerOptions.itemLink) {
+    downloadManagerYamlLines = downloadManagerYamlLines.concat([
+      "  item_links:",
+      "    - name: Shellipelago",
+      "      item_pool:",
+      "        - Linkable",
+      "      replacement_item: null",
+      "      skip_if_solo: true",
+      ""
+    ]);
+  }
+
   return downloadManagerYamlLines.join("\n");
 }
 

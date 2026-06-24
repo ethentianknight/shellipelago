@@ -1,4 +1,4 @@
-var shellipelagoVersion = "1.7";
+var shellipelagoVersion = "1.8";
 
 if (typeof globalsState !== "undefined") {
   globalsState.shellipelagoVersion = shellipelagoVersion;

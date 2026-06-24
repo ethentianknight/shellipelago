@@ -52,4 +52,4 @@ The browser client shows a message and applies the item immediately. Some receiv
 - `energy_link`: Syncs Energy with other clients that have Energy Link enabled. Shellipelago energy is reset to 0 when the browser game is reloaded.
 - `death_link`: Sends deaths to other players with Death Link enabled, causing those games to trigger a death or game over.
 - `trap_link`: Sends supported traps to other players with Trap Link enabled. If another linked game supports the trap effect, that game applies the same trap.
-- `item_link`: Shares supported Shellipelago pickups with players using the same item link name and game.
+- `item_link`: Enables Shellipelago's item-link client behavior. To link generated Archipelago items such as Sword, use an `item_links` group in the YAML.
