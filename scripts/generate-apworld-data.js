@@ -16,7 +16,6 @@ const progressiveItems = {
   bomb: { name: "Bombs", count: 3, classification: "progression" },
   gun: { name: "Gun", count: 2, classification: "progression" },
   sword: { name: "Sword", count: 3, classification: "progression" },
-  energy: { name: "Energy", count: 9, classification: "filler" },
   hp: { name: "Max HP", count: 30, classification: "filler" },
   rounds: { name: "Max Rounds", count: 40, classification: "progression" },
 };
@@ -295,13 +294,35 @@ function addImpliedRequirementRows(rows) {
     addRequirementRow(rows, [{ item: "Max Rounds", amount: 2 }]);
   }
 
-  if (flatRequirements.some((requirement) => requirement.item === "Gun" || requirement.item === "Fire")) {
+  if (flatRequirements.some((requirement) => requirement.item === "Gun")) {
     addRequirementRow(rows, [{ item: "Sword", amount: 1 }]);
   }
 
   if (flatRequirements.some((requirement) => requirement.item === "Pickaxe" || requirement.item === "Bombs" || requirement.item === "Fire")) {
     addRequirementRow(rows, [{ item: "Graphics", amount: 2 }]);
   }
+}
+
+function expandFireEnergyRequirementRows(rows) {
+  const expandedRows = [];
+  const fireSupportItems = ["Sword", "Bombs", "Gun"];
+
+  rows.forEach((row) => {
+    const requiresFire = row.some((requirement) => requirement.item === "Fire");
+    const hasFireSupport = row.some((requirement) => fireSupportItems.includes(requirement.item));
+
+    if (!requiresFire || hasFireSupport) {
+      expandedRows.push(row);
+      return;
+    }
+
+    fireSupportItems.forEach((item) => {
+      expandedRows.push(row.concat([{ item, amount: 1 }]));
+    });
+  });
+
+  rows.length = 0;
+  expandedRows.forEach((row) => addRequirementRow(rows, row));
 }
 
 function locationRequirements(room, tile) {
@@ -337,6 +358,7 @@ function locationRequirements(room, tile) {
     addRequirementRow(rows, vulnerabilityRow);
   }
 
+  expandFireEnergyRequirementRows(rows);
   addImpliedRequirementRows(rows);
   return rows;
 }

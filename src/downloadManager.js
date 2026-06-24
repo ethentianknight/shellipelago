@@ -113,6 +113,7 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  shuffle_max_resource_upgrades: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleMaxResourceUpgrades),
     "  max_resource_upgrades_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.resourceLocal),
     "  max_resource_upgrades_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.resourceNonLocal),
+    "  # Adds many locations and can significantly slow down a playthrough.",
     "  add_easy_destructible_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.addEasyDestructibleChecks),
     "  enemies_are_checks: " + downloadManagerYamlBoolean(downloadManagerOptions.enemiesAreChecks),
     "  shuffle_shops: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleShops),
@@ -123,10 +124,15 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  trap_pool_in_my_world:" + downloadManagerYamlList(downloadManagerOptions.trapPoolLocal),
     "  trap_pool_in_other_worlds:" + downloadManagerYamlList(downloadManagerOptions.trapPoolNonLocal),
     "  other_players_can_find_item_pool_drops: " + downloadManagerYamlBoolean(downloadManagerOptions.otherPlayersCanFindItemPoolDrops),
+    "  # Syncs Rounds with rings in other games that have Ring Link enabled.",
     "  ring_link: " + downloadManagerYamlBoolean(downloadManagerOptions.ringLink),
+    "  # Syncs Energy with other clients. Shellipelago energy resets to 0 when the browser game reloads.",
     "  energy_link: " + downloadManagerYamlBoolean(downloadManagerOptions.energyLink),
+    "  # Sends deaths to other players with Death Link enabled.",
     "  death_link: " + downloadManagerYamlBoolean(downloadManagerOptions.deathLink),
+    "  # Sends supported traps to other players with Trap Link enabled.",
     "  trap_link: " + downloadManagerYamlBoolean(downloadManagerOptions.trapLink),
+    "  # Shares supported Shellipelago pickups with players using the same item link name and game.",
     "  item_link: " + downloadManagerYamlBoolean(downloadManagerOptions.itemLink),
     ""
   ];

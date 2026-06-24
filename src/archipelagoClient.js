@@ -598,7 +598,6 @@ function archipelagoClientResetOnlineProgressionForSync() {
   globalsState.progression.gun = 0;
   globalsState.progression.sword = 0;
   globalsState.progression.waterWalkers = false;
-  globalsState.progression.energy = 0;
   globalsState.progression.hp = 0;
   globalsState.progression.rounds = 0;
   globalsState.progression.freeGrid = false;
@@ -630,21 +629,29 @@ function archipelagoClientApplyItem(archipelagoClientItem, archipelagoClientItem
     }
 
     if (archipelagoClientCheckKey === "healthPotion" && typeof initialRoomApplyShopReward === "function") {
+      initialRoomSyncPlayerResourceMaxes();
+      if (typeof initialRoomPlayer !== "undefined" && initialRoomPlayer.hp >= initialRoomGetEffectiveMaxHp()) {
+        archipelagoClientApplyEnergyGem(archipelagoClientEventId);
+        return true;
+      }
+
       initialRoomApplyShopReward("healthPickup");
       initialRoomBroadcastLinkedPickup("health", 1, archipelagoClientEventId);
       return true;
     }
 
     if (archipelagoClientCheckKey === "energyGem" && typeof initialRoomPlayer !== "undefined") {
-      initialRoomSyncPlayerResourceMaxes();
-      initialRoomPlayer.energy += 1;
-      initialRoomQueueMessage("You found your Energy Gem");
-      initialRoomShowPickupIcon("potion");
-      initialRoomBroadcastLinkedPickup("potion", 1, archipelagoClientEventId);
+      archipelagoClientApplyEnergyGem(archipelagoClientEventId);
       return true;
     }
 
     if (archipelagoClientCheckKey === "roundPouch" && typeof initialRoomApplyShopReward === "function") {
+      initialRoomSyncPlayerResourceMaxes();
+      if (typeof initialRoomPlayer !== "undefined" && initialRoomPlayer.rounds >= initialRoomPlayer.maxRounds) {
+        archipelagoClientApplyEnergyGem(archipelagoClientEventId);
+        return true;
+      }
+
       initialRoomApplyShopReward("roundsPickup");
       initialRoomBroadcastLinkedPickup("moneybag", 5, archipelagoClientEventId);
       return true;
@@ -673,6 +680,18 @@ function archipelagoClientApplyItem(archipelagoClientItem, archipelagoClientItem
     return true;
   });
 
+}
+
+function archipelagoClientApplyEnergyGem(archipelagoClientEventId) {
+  if (typeof initialRoomPlayer === "undefined") {
+    return;
+  }
+
+  initialRoomSyncPlayerResourceMaxes();
+  initialRoomPlayer.energy += 1;
+  initialRoomQueueMessage("You found your Energy Gem");
+  initialRoomShowPickupIcon("potion");
+  initialRoomBroadcastLinkedPickup("potion", 1, archipelagoClientEventId);
 }
 
 function archipelagoClientApplyReceivedItems(archipelagoClientPacket) {

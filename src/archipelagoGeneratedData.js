@@ -15,72 +15,69 @@ var archipelagoGeneratedItemIdToCheckKeys = {
     "sword"
   ],
   "100005": [
-    "energy"
-  ],
-  "100006": [
     "hp"
   ],
-  "100007": [
+  "100006": [
     "rounds"
   ],
-  "100008": [
+  "100007": [
     "fire"
   ],
-  "100009": [
+  "100008": [
     "sfx"
   ],
-  "100010": [
+  "100009": [
     "bgm"
   ],
-  "100011": [
+  "100010": [
     "pickaxe"
   ],
-  "100012": [
+  "100011": [
     "waterWalkers"
   ],
-  "100013": [
+  "100012": [
     "tankTreads"
   ],
-  "100014": [
+  "100013": [
     "tankChassis"
   ],
-  "100015": [
+  "100014": [
     "tankCannon"
   ],
-  "100016": [
+  "100015": [
     "healthPotion"
   ],
-  "100017": [
+  "100016": [
     "energyGem"
   ],
-  "100018": [
+  "100017": [
     "roundPouch"
   ],
-  "100020": [
+  "100019": [
     "trapStun"
   ],
-  "100021": [
+  "100020": [
     "trapInvisible"
   ],
-  "100022": [
+  "100021": [
     "trapFast"
   ],
-  "100023": [
+  "100022": [
     "trapSlow"
   ],
-  "100024": [
+  "100023": [
     "trapReverse"
   ],
-  "100025": [
+  "100024": [
     "trapScreenFlip"
   ],
-  "100026": [
+  "100025": [
     "trapZoom"
   ],
-  "100027": [
+  "100026": [
     "trapDeath"
   ],
-  "100028": [
+  "100027": [
     "suddenlySnake"
   ]
 };
@@ -90,30 +87,29 @@ var archipelagoGeneratedItemIdToNames = {
   "100002": "Bombs",
   "100003": "Gun",
   "100004": "Sword",
-  "100005": "Energy",
-  "100006": "Max HP",
-  "100007": "Max Rounds",
-  "100008": "Fire",
-  "100009": "SFX",
-  "100010": "BGM",
-  "100011": "Pickaxe",
-  "100012": "Water Walkers",
-  "100013": "Tank Treads",
-  "100014": "Tank Chassis",
-  "100015": "Tank Cannon",
-  "100016": "Health Potion",
-  "100017": "Energy Gem",
-  "100018": "Round Pouch",
-  "100019": "Item Pool",
-  "100020": "Stun Trap",
-  "100021": "Invisible Trap",
-  "100022": "Fast Trap",
-  "100023": "Slow Trap",
-  "100024": "Reverse Trap",
-  "100025": "Screen Flip Trap",
-  "100026": "Zoom Trap",
-  "100027": "Death Trap",
-  "100028": "Suddenly Snake"
+  "100005": "Max HP",
+  "100006": "Max Rounds",
+  "100007": "Fire",
+  "100008": "SFX",
+  "100009": "BGM",
+  "100010": "Pickaxe",
+  "100011": "Water Walkers",
+  "100012": "Tank Treads",
+  "100013": "Tank Chassis",
+  "100014": "Tank Cannon",
+  "100015": "Health Potion",
+  "100016": "Energy Gem",
+  "100017": "Round Pouch",
+  "100018": "Item Pool",
+  "100019": "Stun Trap",
+  "100020": "Invisible Trap",
+  "100021": "Fast Trap",
+  "100022": "Slow Trap",
+  "100023": "Reverse Trap",
+  "100024": "Screen Flip Trap",
+  "100025": "Zoom Trap",
+  "100026": "Death Trap",
+  "100027": "Suddenly Snake"
 };
 var archipelagoGeneratedLocationNameToId = {
   "The Start (0,0) Chest 16,14 #1": 200000,

@@ -1,9 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const buildPaths = require("./build-paths");
 
 const rootPath = path.resolve(__dirname, "..");
 const sourcePath = path.join(rootPath, "src");
 const archipelagoPath = path.join(rootPath, "archipelago");
+const legacyAsyncPath = path.join(rootPath, "1.1");
 const templatesPath = path.join(sourcePath, "templates");
 const imagePath = path.join(sourcePath, "img");
 const dataPath = path.join(sourcePath, "data");
@@ -12,7 +14,8 @@ const soundPath = path.join(sourcePath, "sound");
 const vendorPath = path.join(sourcePath, "vendor");
 const creditsPath = path.join(sourcePath, "credits.md");
 const outputPath = path.join(rootPath, "build");
-const outputArchipelagoPath = path.join(outputPath, "archipelago");
+const outputWebPath = path.join(outputPath, buildPaths.webFolderName);
+const outputArchipelagoPath = path.join(outputPath, buildPaths.archipelagoFolderName);
 const apworldPath = path.join(outputArchipelagoPath, "shellipelago.apworld");
 const sourceApworldPath = path.join(sourcePath, "shellipelago.apworld");
 const sourceGameZipPath = path.join(sourcePath, "shellipelago.zip");
@@ -21,7 +24,7 @@ const registryPath = path.join(sourcePath, "registry.js");
 const cssPath = path.join(sourcePath, "main.css");
 const mapPath = path.join(sourcePath, "data", "map.json");
 const tilesetDataPath = path.join(sourcePath, "data", "tileset.json");
-const outputIndexPath = path.join(outputPath, "index.html");
+const outputIndexPath = path.join(outputWebPath, "index.html");
 
 function readText(filePath) {
   return fs.readFileSync(filePath, "utf8");
@@ -181,21 +184,22 @@ if (outputIndex === outputWithTemplates) {
   throw new Error("Could not find src/main.js script tag in index.html");
 }
 
-fs.mkdirSync(outputPath, { recursive: true });
+fs.mkdirSync(outputWebPath, { recursive: true });
 fs.writeFileSync(outputIndexPath, outputIndex, "utf8");
 copyDirectory(archipelagoPath, outputArchipelagoPath);
-copyDirectory(imagePath, path.join(outputPath, "src", "img"));
-copyDirectory(dataPath, path.join(outputPath, "src", "data"));
-copyDirectory(fontPath, path.join(outputPath, "src", "font"));
-copyDirectory(soundPath, path.join(outputPath, "src", "sound"));
-copyDirectory(vendorPath, path.join(outputPath, "src", "vendor"));
+copyDirectory(imagePath, path.join(outputWebPath, "src", "img"));
+copyDirectory(dataPath, path.join(outputWebPath, "src", "data"));
+copyDirectory(fontPath, path.join(outputWebPath, "src", "font"));
+copyDirectory(soundPath, path.join(outputWebPath, "src", "sound"));
+copyDirectory(vendorPath, path.join(outputWebPath, "src", "vendor"));
+copyDirectory(legacyAsyncPath, path.join(outputWebPath, "1.1"));
 
 if (fs.existsSync(sourceApworldPath)) {
-  fs.copyFileSync(sourceApworldPath, path.join(outputPath, "src", "shellipelago.apworld"));
+  fs.copyFileSync(sourceApworldPath, path.join(outputWebPath, "src", "shellipelago.apworld"));
 }
 
 if (fs.existsSync(sourceGameZipPath)) {
-  fs.copyFileSync(sourceGameZipPath, path.join(outputPath, "src", "shellipelago.zip"));
+  fs.copyFileSync(sourceGameZipPath, path.join(outputWebPath, "src", "shellipelago.zip"));
 }
 
 console.log("Built " + path.relative(rootPath, outputIndexPath));

@@ -6,6 +6,8 @@ var introScreenDefaultPort = "38281";
 var introScreenOfflineSaveKey = "shellipelagoOfflineSave";
 var introScreenOfflineSaveVersion = "1.1";
 var introScreenYamlMapLoadPromise = null;
+var introScreenLegacyAsyncHost = "archipelago.gg";
+var introScreenLegacyAsyncPort = "63415";
 
 document.body.appendChild(introScreenRoot);
 
@@ -37,6 +39,31 @@ function introScreenLoadSavedConnection() {
 
 function introScreenSaveConnection(introScreenConnectionInfo) {
   localStorage.setItem(introScreenStorageKey, JSON.stringify(introScreenConnectionInfo));
+}
+
+function introScreenNormalizeHost(introScreenHost) {
+  return String(introScreenHost || "")
+    .trim()
+    .replace(/^wss?:\/\//i, "")
+    .replace(/^https?:\/\//i, "")
+    .replace(/\/.*$/, "")
+    .replace(/:\d+$/, "")
+    .toLowerCase();
+}
+
+function introScreenNormalizePort(introScreenHost, introScreenPort) {
+  var introScreenHostPortMatch = String(introScreenHost || "").trim().match(/:(\d+)(?:\/.*)?$/);
+
+  return String(introScreenHostPortMatch && introScreenHostPortMatch[1] || introScreenPort || "").trim();
+}
+
+function introScreenShouldLoadLegacyAsync(introScreenConnectionInfo) {
+  return introScreenNormalizeHost(introScreenConnectionInfo.host) === introScreenLegacyAsyncHost &&
+    introScreenNormalizePort(introScreenConnectionInfo.host, introScreenConnectionInfo.port) === introScreenLegacyAsyncPort;
+}
+
+function introScreenLoadLegacyAsync() {
+  window.location.href = "1.1/index.html?jam_async=1";
 }
 
 function introScreenShowConnection() {
@@ -220,6 +247,7 @@ function introScreenBindYamlCreator() {
   var introScreenYamlUpload = introScreenRoot.querySelector("#yaml-upload");
   var introScreenProgressionBalancing = introScreenRoot.querySelector("#yaml-progression-balancing");
   var introScreenProgressionBalancingValue = introScreenRoot.querySelector("#yaml-progression-balancing-value");
+  var introScreenDestructibleChecks = introScreenForm && introScreenForm.elements ? introScreenForm.elements.addEasyDestructibleChecks : null;
 
   introScreenLoadSavedYamlSettings();
 
@@ -251,6 +279,10 @@ function introScreenBindYamlCreator() {
     introScreenYamlUpload.addEventListener("change", introScreenHandleYamlUpload);
   }
 
+  if (introScreenDestructibleChecks) {
+    introScreenDestructibleChecks.addEventListener("change", introScreenHandleDestructibleChecksChange);
+  }
+
   introScreenRoot.querySelector("#yaml-download-default").addEventListener("click", introScreenDownloadDefaultYaml);
   introScreenRoot.querySelector("#yaml-reset-default").addEventListener("click", introScreenResetYamlToDefault);
   introScreenForm.addEventListener("input", function () {
@@ -264,6 +296,57 @@ function introScreenBindYamlCreator() {
   introScreenEnsureYamlMapLoaded().then(introScreenUpdateYamlCheckCounter);
   introScreenRoot.querySelector("#yaml-back").addEventListener("click", introScreenShowConnection);
   introScreenForm.addEventListener("submit", introScreenSubmitYaml);
+}
+
+function introScreenHandleDestructibleChecksChange(introScreenEvent) {
+  var introScreenCheckbox = introScreenEvent.currentTarget;
+  var introScreenDialog = introScreenRoot.querySelector("#yaml-destructible-warning");
+  var introScreenConfirm = introScreenRoot.querySelector("#yaml-destructible-confirm");
+  var introScreenCancel = introScreenRoot.querySelector("#yaml-destructible-cancel");
+
+  if (!introScreenCheckbox.checked) {
+    return;
+  }
+
+  if (!introScreenDialog || typeof introScreenDialog.showModal !== "function") {
+    if (!window.confirm("Adding checks for easy destructibles creates many extra locations and can significantly slow down a playthrough.")) {
+      introScreenCheckbox.checked = false;
+      introScreenUpdateYamlCheckCounter();
+      introScreenSaveYamlSettings();
+    }
+    return;
+  }
+
+  function introScreenCloseDestructibleWarning(introScreenShouldKeepEnabled) {
+    introScreenConfirm.removeEventListener("click", introScreenConfirmDestructibleWarning);
+    introScreenCancel.removeEventListener("click", introScreenCancelDestructibleWarning);
+    introScreenDialog.removeEventListener("cancel", introScreenCancelDestructibleWarning);
+
+    if (!introScreenShouldKeepEnabled) {
+      introScreenCheckbox.checked = false;
+    }
+
+    if (introScreenDialog.open) {
+      introScreenDialog.close();
+    }
+
+    introScreenUpdateYamlCheckCounter();
+    introScreenSaveYamlSettings();
+  }
+
+  function introScreenConfirmDestructibleWarning() {
+    introScreenCloseDestructibleWarning(true);
+  }
+
+  function introScreenCancelDestructibleWarning(introScreenCancelEvent) {
+    introScreenCancelEvent.preventDefault();
+    introScreenCloseDestructibleWarning(false);
+  }
+
+  introScreenConfirm.addEventListener("click", introScreenConfirmDestructibleWarning);
+  introScreenCancel.addEventListener("click", introScreenCancelDestructibleWarning);
+  introScreenDialog.addEventListener("cancel", introScreenCancelDestructibleWarning);
+  introScreenDialog.showModal();
 }
 
 function introScreenSyncYamlControlledFields(introScreenToggle) {
@@ -865,7 +948,6 @@ function introScreenGetYamlDropLabel(introScreenDropKey) {
     tankcannon: "Tank Cannon",
     sfx: "SFX",
     bgm: "BGM",
-    energy: "Energy",
     hp: "Max HP",
     rounds: "Max Rounds",
     trapstun: "Stun Trap",
@@ -900,8 +982,7 @@ function introScreenIsYamlEssentialDrop(introScreenDropKey) {
     "tankchassis",
     "tankcannon",
     "sfx",
-    "bgm",
-    "energy"
+    "bgm"
   ].indexOf(introScreenDropKey) >= 0;
 }
 
@@ -944,6 +1025,13 @@ function introScreenSubmitConnection(introScreenEvent) {
 
   introScreenEvent.preventDefault();
   introScreenSaveConnection(introScreenConnectionInfo);
+
+  if (introScreenShouldLoadLegacyAsync(introScreenConnectionInfo)) {
+    introScreenSubmitButton.disabled = true;
+    introScreenLoadLegacyAsync();
+    return;
+  }
+
   introScreenStatus.textContent = "Connecting...";
   introScreenSubmitButton.disabled = true;
 

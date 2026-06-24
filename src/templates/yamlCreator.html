@@ -61,7 +61,6 @@
                   <label><input type="checkbox" name="essentialLocal" value="Tank Cannon" checked> Tank Cannon</label>
                   <label><input type="checkbox" name="essentialLocal" value="SFX" checked> SFX</label>
                   <label><input type="checkbox" name="essentialLocal" value="BGM" checked> BGM</label>
-                  <label><input type="checkbox" name="essentialLocal" value="Energy" checked> Energy</label>
                 </fieldset>
 
                 <fieldset>
@@ -79,7 +78,6 @@
                   <label><input type="checkbox" name="essentialNonLocal" value="Tank Cannon" checked> Tank Cannon</label>
                   <label><input type="checkbox" name="essentialNonLocal" value="SFX" checked> SFX</label>
                   <label><input type="checkbox" name="essentialNonLocal" value="BGM" checked> BGM</label>
-                  <label><input type="checkbox" name="essentialNonLocal" value="Energy" checked> Energy</label>
                 </fieldset>
               </div>
             </section>
@@ -106,16 +104,17 @@
 
             <section class="yaml-section yaml-compact-options">
               <label class="toggle-row"><input name="addEasyDestructibleChecks" type="checkbox"> <span>Add checks for easy destructibles</span></label>
+              <p class="yaml-rule-note">Easy destructible checks add many locations and can significantly slow down a playthrough.</p>
               <label class="toggle-row"><input name="enemiesAreChecks" type="checkbox"> <span>Enemies are checks</span></label>
               <label class="toggle-row"><input name="enemiesAreHints" type="checkbox"> <span>Enemies are hints</span></label>
               <label class="toggle-row"><input name="shuffleShops" type="checkbox" checked> <span>Shuffle shops</span></label>
               <label class="toggle-row"><input name="showEssentialPickupHints" type="checkbox" checked> <span>Show essential pickup hints</span></label>
               <label class="toggle-row"><input name="otherPlayersCanFindItemPoolDrops" type="checkbox"> <span>Other players can find item pool drops</span></label>
-              <label class="toggle-row"><input name="ringLink" type="checkbox" checked> <span>Ring Link (Rounds)</span></label>
-              <label class="toggle-row"><input name="energyLink" type="checkbox" checked> <span>Energy Link</span></label>
-              <label class="toggle-row"><input name="deathLink" type="checkbox"> <span>Death Link</span></label>
-              <label class="toggle-row"><input name="trapLink" type="checkbox" checked> <span>Trap Link</span></label>
-              <label class="toggle-row"><input name="itemLink" type="checkbox" checked> <span>Item Link</span></label>
+              <label class="toggle-row" title="Syncs Rounds with rings in other games that have this enabled. As rounds are spent and gained, ring and round counts will fluctuate accordingly for all players with this option enabled."><input name="ringLink" type="checkbox" checked> <span>Ring Link (Rounds)</span></label>
+              <label class="toggle-row" title="Similar to Ring Link, syncs Energy with other clients that have the option toggled. Energy for Shellipelago players is reset to 0 when the game is reloaded."><input name="energyLink" type="checkbox" checked> <span>Energy Link</span></label>
+              <label class="toggle-row" title="When a player with Death Link enabled dies, they send the death to other players with Death Link enabled, causing those games to trigger a death or game over."><input name="deathLink" type="checkbox"> <span>Death Link</span></label>
+              <label class="toggle-row" title="When a player that has enabled Trap Link receives a trap that can be linked, they send that trap to other players that have Trap Link enabled. If another player's game supports that trap, both players have the effect applied."><input name="trapLink" type="checkbox" checked> <span>Trap Link</span></label>
+              <label class="toggle-row" title="Allows players to link their items into a group with the same item link name and game. The items declared in item_pool get combined and when an item is found for the group, all players in the group receive it. Item links can also have local and non-local items, forcing the items to either be placed within the worlds of the group or in worlds outside the group. If players have a varying amount of a specific item in the link, the lowest amount from the players will be the amount put into the group."><input name="itemLink" type="checkbox" checked> <span>Item Link</span></label>
             </section>
 
 
@@ -190,6 +189,14 @@
           <button class="primary-button" type="submit">Download .yaml</button>
         </div>
       </form>
+      <dialog class="yaml-warning-dialog" id="yaml-destructible-warning">
+        <h2>Easy Destructible Checks</h2>
+        <p>Adding checks for easy destructibles creates many extra locations and can significantly slow down a playthrough.</p>
+        <div class="yaml-warning-actions">
+          <button class="secondary-button" id="yaml-destructible-cancel" type="button">Cancel</button>
+          <button class="primary-button" id="yaml-destructible-confirm" type="button">I understand</button>
+        </div>
+      </dialog>
     </main>
   </template>
 </body>

@@ -21,7 +21,6 @@ Shellipelago:
     - Tank Cannon
     - SFX
     - BGM
-    - Energy
   essential_items_in_other_worlds:
     - Graphics
     - Progressive Room
@@ -36,7 +35,6 @@ Shellipelago:
     - Tank Cannon
     - SFX
     - BGM
-    - Energy
 
   shuffle_max_resource_upgrades: true
   max_resource_upgrades_in_my_world:
@@ -46,6 +44,7 @@ Shellipelago:
     - Max HP
     - Max Rounds
 
+  # Adds many locations and can significantly slow down a playthrough.
   add_easy_destructible_checks: false
   enemies_are_checks: false
   enemies_are_hints: false
@@ -85,8 +84,13 @@ Shellipelago:
     - Death Trap
 
   other_players_can_find_item_pool_drops: false
+  # Syncs Rounds with rings in other games that have Ring Link enabled.
   ring_link: false
+  # Syncs Energy with other clients. Shellipelago energy resets to 0 when the browser game reloads.
   energy_link: false
+  # Sends deaths to other players with Death Link enabled.
   death_link: false
+  # Sends supported traps to other players with Trap Link enabled.
   trap_link: false
+  # Shares supported Shellipelago pickups with players using the same item link name and game.
   item_link: false

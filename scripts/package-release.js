@@ -1,12 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 const childProcess = require("child_process");
+const buildPaths = require("./build-paths");
 
 const rootPath = path.resolve(__dirname, "..");
 const buildPath = path.join(rootPath, "build");
-const outPath = path.join(buildPath, "out");
-const stagingRootPath = path.join(buildPath, "package-staging");
+const outPath = path.join(buildPath, buildPaths.outFolderName);
+const stagingRootPath = path.join(buildPath, buildPaths.stagingFolderName);
 const sourceZipPath = path.join(rootPath, "src", "shellipelago.zip");
+const buildWebPath = path.join(buildPath, buildPaths.webFolderName);
 
 function assertInsideRoot(targetPath) {
   const relativePath = path.relative(rootPath, targetPath);
@@ -57,8 +59,8 @@ function stageAppFiles(stagingPath, options) {
 
 function stageBuiltHtml(stagingPath) {
   fs.mkdirSync(stagingPath, { recursive: true });
-  fs.copyFileSync(path.join(buildPath, "index.html"), path.join(stagingPath, "index.html"));
-  copyDirectory(path.join(buildPath, "src"), path.join(stagingPath, "src"), (sourceEntryPath, entry) => {
+  fs.copyFileSync(path.join(buildWebPath, "index.html"), path.join(stagingPath, "index.html"));
+  copyDirectory(path.join(buildWebPath, "src"), path.join(stagingPath, "src"), (sourceEntryPath, entry) => {
     if (entry.isDirectory()) {
       return false;
     }
@@ -129,7 +131,7 @@ function removeSourceGameZip() {
 }
 
 function copyApworld() {
-  const sourceApworldPath = path.join(buildPath, "archipelago", "shellipelago.apworld");
+  const sourceApworldPath = path.join(buildPath, buildPaths.archipelagoFolderName, "shellipelago.apworld");
   const targetApworldPath = path.join(outPath, "shellipelago.apworld");
 
   if (!fs.existsSync(sourceApworldPath)) {
@@ -140,7 +142,7 @@ function copyApworld() {
 }
 
 function copyFreshGameZipToBuild() {
-  const buildGameZipPath = path.join(buildPath, "src", "shellipelago.zip");
+  const buildGameZipPath = path.join(buildWebPath, "src", "shellipelago.zip");
 
   if (!fs.existsSync(path.dirname(buildGameZipPath))) {
     return;
@@ -152,7 +154,7 @@ function copyFreshGameZipToBuild() {
 function packageRelease() {
   const htmlStagingPath = path.join(stagingRootPath, "html");
   const sourceGameWithDownloadStagingPath = path.join(stagingRootPath, "source-game-with-download");
-  const electronStagingPath = path.join(buildPath, "electron", "Shellipelago-win32-x64");
+  const electronStagingPath = path.join(buildPath, buildPaths.electronFolderName);
 
   assertInsideRoot(outPath);
   assertInsideRoot(stagingRootPath);
@@ -171,6 +173,7 @@ function packageRelease() {
 
   stageAppFiles(sourceGameWithDownloadStagingPath, { skipGameZip: false });
   zipStagingContents(sourceGameWithDownloadStagingPath, path.join(outPath, "Shellipelago.zip"));
+  removeSourceGameZip();
 
   if (!fs.existsSync(electronStagingPath)) {
     throw new Error("Missing Electron package: " + electronStagingPath);

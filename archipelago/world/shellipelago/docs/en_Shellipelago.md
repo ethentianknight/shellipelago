@@ -8,7 +8,7 @@ The [player options page for this game](../player-options) contains all the opti
 
 Shellipelago shuffles the items needed to explore the map, fight enemies, and complete the final run.
 
-The main progression items are Graphics, Progressive Room, Bombs, Gun, Sword, Fire, Pickaxe, Water Walkers, Tank Treads, Tank Chassis, and Tank Cannon. Max HP, Max Rounds, Energy, SFX, and BGM can also be shuffled depending on options.
+The main progression items are Graphics, Progressive Room, Bombs, Gun, Sword, Fire, Pickaxe, Water Walkers, Tank Treads, Tank Chassis, and Tank Cannon. Max HP, Max Rounds, SFX, and BGM can also be shuffled depending on options.
 
 ## What is the goal of Shellipelago?
 
@@ -38,7 +38,7 @@ The browser client shows a message and applies the item immediately. Some receiv
 - `shuffle_max_resource_upgrades`: Shuffles Max HP and Max Rounds upgrades. When off, those upgrades are given at the start.
 - `max_resource_upgrades_in_my_world`: Controls which max resource upgrades may be placed in your world.
 - `max_resource_upgrades_in_other_worlds`: Controls which max resource upgrades may be placed in other players' worlds.
-- `add_easy_destructible_checks`: Adds normal destructible objects as checks.
+- `add_easy_destructible_checks`: Adds normal destructible objects as checks. This adds many locations and can significantly slow down a playthrough.
 - `enemies_are_checks`: Adds defeated enemies as checks.
 - `enemies_are_hints`: Allows selected enemy defeats to create Archipelago hints for useful or progression Shellipelago locations.
 - `shuffle_shops`: Shuffles shop item locations.
@@ -48,8 +48,8 @@ The browser client shows a message and applies the item immediately. Some receiv
 - `trap_pool_in_my_world`: Controls which trap items may be placed in your world.
 - `trap_pool_in_other_worlds`: Controls which trap items may be placed in other players' worlds.
 - `other_players_can_find_item_pool_drops`: Adds item-pool-only drops as checks.
-- `ring_link`: Shares ring pickups with other linked Shellipelago players.
-- `energy_link`: Shares energy pickups with other linked Shellipelago players.
-- `death_link`: Sends and receives DeathLink events.
-- `trap_link`: Sends and receives trap events with other linked Shellipelago players.
-- `item_link`: Shares supported item pickups with other linked Shellipelago players.
+- `ring_link`: Syncs Rounds with rings in other games that have Ring Link enabled.
+- `energy_link`: Syncs Energy with other clients that have Energy Link enabled. Shellipelago energy is reset to 0 when the browser game is reloaded.
+- `death_link`: Sends deaths to other players with Death Link enabled, causing those games to trigger a death or game over.
+- `trap_link`: Sends supported traps to other players with Trap Link enabled. If another linked game supports the trap effect, that game applies the same trap.
+- `item_link`: Shares supported Shellipelago pickups with players using the same item link name and game.

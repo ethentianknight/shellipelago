@@ -132,9 +132,25 @@ function progressionManagerApplyProgressiveResourceGain(progressionManagerProgre
     return;
   }
 
+  if (progressionManagerProgressiveKey === "bomb" || progressionManagerProgressiveKey === "gun") {
+    progressionManagerApplyWeaponRoundCapacityGain(progressionManagerProgressiveKey, progressionManagerIncrease);
+    return;
+  }
+
   if (progressionManagerProgressiveKey === "rounds") {
     initialRoomSyncPlayerResourceMaxes();
     initialRoomPlayer.rounds = Math.min(initialRoomPlayer.maxRounds, initialRoomPlayer.rounds + (progressionManagerIncrease * 2));
+  }
+}
+
+function progressionManagerApplyWeaponRoundCapacityGain(progressionManagerProgressiveKey, progressionManagerIncrease) {
+  var progressionManagerCurrentValue = progressionManagerGetProgressiveValue(progressionManagerProgressiveKey);
+  var progressionManagerPreviousValue = Math.max(0, progressionManagerCurrentValue - progressionManagerIncrease);
+  var progressionManagerRoundIncrease = progressionManagerPreviousValue <= 0 && progressionManagerCurrentValue > 0 ? 5 : 0;
+
+  initialRoomSyncPlayerResourceMaxes();
+  if (progressionManagerRoundIncrease > 0) {
+    initialRoomPlayer.rounds = Math.min(initialRoomPlayer.maxRounds, initialRoomPlayer.rounds + progressionManagerRoundIncrease);
   }
 }
 

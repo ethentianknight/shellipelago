@@ -2,12 +2,13 @@ const fs = require("fs");
 const path = require("path");
 const zlib = require("zlib");
 require("./generate-apworld-data");
+const buildPaths = require("./build-paths");
 
 const rootPath = path.resolve(__dirname, "..");
 const worldName = "shellipelago";
 const worldPath = path.join(rootPath, "archipelago", "world", worldName);
 const sourceApworldPath = path.join(rootPath, "src", "shellipelago.apworld");
-const outputPath = path.join(rootPath, "build", "archipelago");
+const outputPath = path.join(rootPath, "build", buildPaths.archipelagoFolderName);
 const outputFilePath = path.join(outputPath, worldName + ".apworld");
 
 function getCrcTable() {

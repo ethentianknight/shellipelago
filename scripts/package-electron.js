@@ -1,15 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 const electronPackager = require("@electron/packager");
+const buildPaths = require("./build-paths");
 
 const packager = electronPackager.packager || electronPackager.default || electronPackager;
 
 const rootPath = path.resolve(__dirname, "..");
 const buildPath = path.join(rootPath, "build");
-const stagingPath = path.join(buildPath, "electron-app");
-const electronOutputPath = path.join(buildPath, "electron");
-const buildIndexPath = path.join(buildPath, "index.html");
-const buildSrcPath = path.join(buildPath, "src");
+const stagingPath = path.join(buildPath, buildPaths.electronStagingFolderName);
+const electronOutputPath = path.join(buildPath, buildPaths.electronFolderName);
+const buildWebPath = path.join(buildPath, buildPaths.webFolderName);
+const buildIndexPath = path.join(buildWebPath, "index.html");
+const buildSrcPath = path.join(buildWebPath, "src");
 const scriptsPath = path.join(rootPath, "scripts");
 const versionManager = require("./version-manager");
 
@@ -94,7 +96,7 @@ async function packageElectron() {
   } catch (error) {
     if (error && error.code === "EBUSY") {
       console.warn("Skipped Electron packaging because the previous package is locked.");
-      console.warn("Close Shellipelago.exe or any process using build\\electron and rerun npm run package:electron.");
+      console.warn("Close Shellipelago.exe or any process using " + path.relative(rootPath, electronOutputPath) + " and rerun npm run package:electron.");
       return;
     }
 
@@ -111,7 +113,7 @@ async function packageElectron() {
 
   await packager({
     dir: stagingPath,
-    out: electronOutputPath,
+    out: buildPath,
     overwrite: true,
     platform: process.platform,
     arch: process.arch,
@@ -121,6 +123,13 @@ async function packageElectron() {
     prune: true,
     quiet: true
   });
+
+  const defaultPackagerPath = path.join(buildPath, "Shellipelago-" + process.platform + "-" + process.arch);
+
+  if (defaultPackagerPath !== electronOutputPath) {
+    fs.rmSync(electronOutputPath, { recursive: true, force: true });
+    fs.renameSync(defaultPackagerPath, electronOutputPath);
+  }
 
   fs.rmSync(stagingPath, { recursive: true, force: true });
   console.log("Packaged " + path.relative(rootPath, electronOutputPath));
