@@ -6,8 +6,19 @@ var introScreenDefaultPort = "38281";
 var introScreenOfflineSaveKey = "shellipelagoOfflineSave";
 var introScreenOfflineSaveVersion = "1.1";
 var introScreenYamlMapLoadPromise = null;
-var introScreenLegacyAsyncHost = "archipelago.gg";
-var introScreenLegacyAsyncPort = "63415";
+var introScreenLegacyAsyncSeedName = "37554294161459039255";
+var introScreenTrapNames = [
+  "Stun Trap",
+  "Invisible Trap",
+  "Fast Trap",
+  "Slow Trap",
+  "Reverse Trap",
+  "Screen Flip Trap",
+  "Zoom In Trap",
+  "Instant Death Trap",
+  "Snake Trap"
+];
+var introScreenTrapColumns = ["anywhere", "local", "nonLocal", "never"];
 
 document.body.appendChild(introScreenRoot);
 
@@ -39,27 +50,6 @@ function introScreenLoadSavedConnection() {
 
 function introScreenSaveConnection(introScreenConnectionInfo) {
   localStorage.setItem(introScreenStorageKey, JSON.stringify(introScreenConnectionInfo));
-}
-
-function introScreenNormalizeHost(introScreenHost) {
-  return String(introScreenHost || "")
-    .trim()
-    .replace(/^wss?:\/\//i, "")
-    .replace(/^https?:\/\//i, "")
-    .replace(/\/.*$/, "")
-    .replace(/:\d+$/, "")
-    .toLowerCase();
-}
-
-function introScreenNormalizePort(introScreenHost, introScreenPort) {
-  var introScreenHostPortMatch = String(introScreenHost || "").trim().match(/:(\d+)(?:\/.*)?$/);
-
-  return String(introScreenHostPortMatch && introScreenHostPortMatch[1] || introScreenPort || "").trim();
-}
-
-function introScreenShouldLoadLegacyAsync(introScreenConnectionInfo) {
-  return introScreenNormalizeHost(introScreenConnectionInfo.host) === introScreenLegacyAsyncHost &&
-    introScreenNormalizePort(introScreenConnectionInfo.host, introScreenConnectionInfo.port) === introScreenLegacyAsyncPort;
 }
 
 function introScreenLoadLegacyAsync() {
@@ -248,8 +238,7 @@ function introScreenBindYamlCreator() {
   var introScreenProgressionBalancing = introScreenRoot.querySelector("#yaml-progression-balancing");
   var introScreenProgressionBalancingValue = introScreenRoot.querySelector("#yaml-progression-balancing-value");
   var introScreenDestructibleChecks = introScreenForm && introScreenForm.elements ? introScreenForm.elements.addEasyDestructibleChecks : null;
-
-  introScreenLoadSavedYamlSettings();
+  var introScreenEnemyChecks = introScreenForm && introScreenForm.elements ? introScreenForm.elements.enemiesAreChecks : null;
 
   if (introScreenProgressionBalancing && introScreenProgressionBalancingValue) {
     introScreenProgressionBalancing.addEventListener("input", function () {
@@ -279,17 +268,26 @@ function introScreenBindYamlCreator() {
     introScreenYamlUpload.addEventListener("change", introScreenHandleYamlUpload);
   }
 
+  introScreenBindYamlTrapControls();
+  introScreenLoadSavedYamlSettings();
+
   if (introScreenDestructibleChecks) {
     introScreenDestructibleChecks.addEventListener("change", introScreenHandleDestructibleChecksChange);
+  }
+
+  if (introScreenEnemyChecks) {
+    introScreenEnemyChecks.addEventListener("change", introScreenHandleEnemyChecksChange);
   }
 
   introScreenRoot.querySelector("#yaml-download-default").addEventListener("click", introScreenDownloadDefaultYaml);
   introScreenRoot.querySelector("#yaml-reset-default").addEventListener("click", introScreenResetYamlToDefault);
   introScreenForm.addEventListener("input", function () {
+    introScreenSyncYamlTrapState();
     introScreenUpdateYamlCheckCounter();
     introScreenSaveYamlSettings();
   });
   introScreenForm.addEventListener("change", function () {
+    introScreenSyncYamlTrapState();
     introScreenUpdateYamlCheckCounter();
     introScreenSaveYamlSettings();
   });
@@ -299,17 +297,32 @@ function introScreenBindYamlCreator() {
 }
 
 function introScreenHandleDestructibleChecksChange(introScreenEvent) {
-  var introScreenCheckbox = introScreenEvent.currentTarget;
-  var introScreenDialog = introScreenRoot.querySelector("#yaml-destructible-warning");
-  var introScreenConfirm = introScreenRoot.querySelector("#yaml-destructible-confirm");
-  var introScreenCancel = introScreenRoot.querySelector("#yaml-destructible-cancel");
+  introScreenHandleSlowChecksWarning(
+    introScreenEvent.currentTarget,
+    "destructible",
+    "Adding destructible tiles to locations creates many extra checks and can significantly slow down a playthrough."
+  );
+}
+
+function introScreenHandleEnemyChecksChange(introScreenEvent) {
+  introScreenHandleSlowChecksWarning(
+    introScreenEvent.currentTarget,
+    "enemy",
+    "Adding enemies to locations creates many extra checks and can significantly slow down a playthrough."
+  );
+}
+
+function introScreenHandleSlowChecksWarning(introScreenCheckbox, introScreenDialogKind, introScreenFallbackMessage) {
+  var introScreenDialog = introScreenRoot.querySelector("#yaml-" + introScreenDialogKind + "-warning");
+  var introScreenConfirm = introScreenRoot.querySelector("#yaml-" + introScreenDialogKind + "-confirm");
+  var introScreenCancel = introScreenRoot.querySelector("#yaml-" + introScreenDialogKind + "-cancel");
 
   if (!introScreenCheckbox.checked) {
     return;
   }
 
   if (!introScreenDialog || typeof introScreenDialog.showModal !== "function") {
-    if (!window.confirm("Adding checks for easy destructibles creates many extra locations and can significantly slow down a playthrough.")) {
+    if (!window.confirm(introScreenFallbackMessage)) {
       introScreenCheckbox.checked = false;
       introScreenUpdateYamlCheckCounter();
       introScreenSaveYamlSettings();
@@ -317,10 +330,10 @@ function introScreenHandleDestructibleChecksChange(introScreenEvent) {
     return;
   }
 
-  function introScreenCloseDestructibleWarning(introScreenShouldKeepEnabled) {
-    introScreenConfirm.removeEventListener("click", introScreenConfirmDestructibleWarning);
-    introScreenCancel.removeEventListener("click", introScreenCancelDestructibleWarning);
-    introScreenDialog.removeEventListener("cancel", introScreenCancelDestructibleWarning);
+  function introScreenCloseSlowChecksWarning(introScreenShouldKeepEnabled) {
+    introScreenConfirm.removeEventListener("click", introScreenConfirmSlowChecksWarning);
+    introScreenCancel.removeEventListener("click", introScreenCancelSlowChecksWarning);
+    introScreenDialog.removeEventListener("cancel", introScreenCancelSlowChecksWarning);
 
     if (!introScreenShouldKeepEnabled) {
       introScreenCheckbox.checked = false;
@@ -334,18 +347,18 @@ function introScreenHandleDestructibleChecksChange(introScreenEvent) {
     introScreenSaveYamlSettings();
   }
 
-  function introScreenConfirmDestructibleWarning() {
-    introScreenCloseDestructibleWarning(true);
+  function introScreenConfirmSlowChecksWarning() {
+    introScreenCloseSlowChecksWarning(true);
   }
 
-  function introScreenCancelDestructibleWarning(introScreenCancelEvent) {
+  function introScreenCancelSlowChecksWarning(introScreenCancelEvent) {
     introScreenCancelEvent.preventDefault();
-    introScreenCloseDestructibleWarning(false);
+    introScreenCloseSlowChecksWarning(false);
   }
 
-  introScreenConfirm.addEventListener("click", introScreenConfirmDestructibleWarning);
-  introScreenCancel.addEventListener("click", introScreenCancelDestructibleWarning);
-  introScreenDialog.addEventListener("cancel", introScreenCancelDestructibleWarning);
+  introScreenConfirm.addEventListener("click", introScreenConfirmSlowChecksWarning);
+  introScreenCancel.addEventListener("click", introScreenCancelSlowChecksWarning);
+  introScreenDialog.addEventListener("cancel", introScreenCancelSlowChecksWarning);
   introScreenDialog.showModal();
 }
 
@@ -359,6 +372,235 @@ function introScreenSyncYamlControlledFields(introScreenToggle) {
       introScreenInput.disabled = !introScreenToggle.checked;
     });
   });
+}
+
+function introScreenBindYamlTrapControls() {
+  var introScreenTrapColumnsElement = introScreenRoot.querySelector("#yaml-trap-columns");
+  var introScreenTrapFillPercentage = introScreenRoot.querySelector("input[name='trapFillPercentage']");
+  var introScreenTrapFillPercentageValue = introScreenRoot.querySelector("input[name='trapFillPercentageValue']");
+
+  if (!introScreenTrapColumnsElement) {
+    return;
+  }
+
+  introScreenRenderYamlTrapCards(introScreenGetDefaultTrapSettings());
+
+  introScreenTrapColumnsElement.addEventListener("dragover", function (introScreenEvent) {
+    if (introScreenEvent.target && introScreenEvent.target.closest("[data-trap-list]")) {
+      introScreenEvent.preventDefault();
+    }
+  });
+
+  introScreenTrapColumnsElement.addEventListener("drop", function (introScreenEvent) {
+    var introScreenTrapName = introScreenEvent.dataTransfer.getData("text/plain");
+    var introScreenTargetList = introScreenEvent.target && introScreenEvent.target.closest("[data-trap-list]");
+
+    if (!introScreenTrapName || !introScreenTargetList) {
+      return;
+    }
+
+    introScreenEvent.preventDefault();
+    introScreenMoveYamlTrapCard(introScreenTrapName, introScreenTargetList.dataset.trapList);
+  });
+
+  introScreenTrapColumnsElement.addEventListener("click", function (introScreenEvent) {
+    var introScreenAllButton = introScreenEvent.target && introScreenEvent.target.closest("[data-trap-all]");
+
+    if (!introScreenAllButton) {
+      return;
+    }
+
+    introScreenEvent.preventDefault();
+    introScreenMoveAllYamlTrapCards(introScreenAllButton.dataset.trapAll);
+  });
+
+  if (introScreenTrapFillPercentage && introScreenTrapFillPercentageValue) {
+    introScreenTrapFillPercentage.addEventListener("input", function () {
+      introScreenSetTrapFillPercentage(introScreenTrapFillPercentage.value);
+    });
+    introScreenTrapFillPercentageValue.addEventListener("input", function () {
+      if (introScreenTrapFillPercentageValue.value !== "") {
+        introScreenSetTrapFillPercentage(introScreenTrapFillPercentageValue.value);
+      }
+    });
+    introScreenTrapFillPercentageValue.addEventListener("change", function () {
+      introScreenSetTrapFillPercentage(introScreenTrapFillPercentageValue.value);
+    });
+    introScreenSetTrapFillPercentage(introScreenTrapFillPercentage.value);
+  }
+
+  introScreenSyncYamlTrapState();
+}
+
+function introScreenGetDefaultTrapSettings() {
+  var introScreenTrapSettings = {};
+
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    introScreenTrapSettings[introScreenTrapName] = {
+      column: "anywhere",
+      weight: 1
+    };
+  });
+
+  return introScreenTrapSettings;
+}
+
+function introScreenRenderYamlTrapCards(introScreenTrapSettings) {
+  var introScreenSettings = introScreenTrapSettings || introScreenGetDefaultTrapSettings();
+
+  introScreenTrapColumns.forEach(function (introScreenColumnName) {
+    var introScreenList = introScreenRoot.querySelector("[data-trap-list='" + introScreenColumnName + "']");
+
+    if (introScreenList) {
+      introScreenList.innerHTML = "";
+    }
+  });
+
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    var introScreenTrapSetting = introScreenSettings[introScreenTrapName] || { column: "anywhere", weight: 1 };
+    var introScreenColumnName = introScreenTrapColumns.indexOf(introScreenTrapSetting.column) === -1 ? "anywhere" : introScreenTrapSetting.column;
+    var introScreenList = introScreenRoot.querySelector("[data-trap-list='" + introScreenColumnName + "']");
+    var introScreenCard = document.createElement("div");
+    var introScreenName = document.createElement("span");
+    var introScreenWeight = document.createElement("input");
+
+    if (!introScreenList) {
+      return;
+    }
+
+    introScreenCard.className = "yaml-trap-card";
+    introScreenCard.draggable = true;
+    introScreenCard.dataset.trapName = introScreenTrapName;
+    introScreenCard.addEventListener("dragstart", function (introScreenEvent) {
+      introScreenEvent.dataTransfer.setData("text/plain", introScreenTrapName);
+    });
+
+    introScreenName.textContent = introScreenTrapName;
+    introScreenWeight.type = "number";
+    introScreenWeight.min = "0";
+    introScreenWeight.max = "1000";
+    introScreenWeight.value = String(Math.max(0, Number(introScreenTrapSetting.weight) || 0));
+    introScreenWeight.dataset.trapWeight = introScreenTrapName;
+
+    introScreenCard.appendChild(introScreenName);
+    introScreenCard.appendChild(introScreenWeight);
+    introScreenList.appendChild(introScreenCard);
+  });
+
+  introScreenSyncYamlTrapState();
+}
+
+function introScreenMoveYamlTrapCard(introScreenTrapName, introScreenColumnName) {
+  var introScreenCard = introScreenRoot.querySelector(".yaml-trap-card[data-trap-name='" + CSS.escape(introScreenTrapName) + "']");
+  var introScreenTargetList = introScreenRoot.querySelector("[data-trap-list='" + introScreenColumnName + "']");
+
+  if (!introScreenCard || !introScreenTargetList) {
+    return;
+  }
+
+  introScreenTargetList.appendChild(introScreenCard);
+  introScreenSyncYamlTrapState();
+  introScreenSaveYamlSettings();
+}
+
+function introScreenMoveAllYamlTrapCards(introScreenColumnName) {
+  var introScreenTargetList = introScreenRoot.querySelector("[data-trap-list='" + introScreenColumnName + "']");
+
+  if (!introScreenTargetList) {
+    return;
+  }
+
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    var introScreenCard = introScreenRoot.querySelector(".yaml-trap-card[data-trap-name='" + CSS.escape(introScreenTrapName) + "']");
+
+    if (introScreenCard) {
+      introScreenTargetList.appendChild(introScreenCard);
+    }
+  });
+
+  introScreenSyncYamlTrapState();
+  introScreenSaveYamlSettings();
+}
+
+function introScreenSetTrapFillPercentage(introScreenValue) {
+  var introScreenTrapFillPercentage = introScreenRoot.querySelector("input[name='trapFillPercentage']");
+  var introScreenTrapFillPercentageValue = introScreenRoot.querySelector("input[name='trapFillPercentageValue']");
+  var introScreenNumber = Number(introScreenValue);
+
+  if (!Number.isFinite(introScreenNumber)) {
+    introScreenNumber = 25;
+  }
+
+  introScreenNumber = Math.max(0, Math.min(100, Math.floor(introScreenNumber)));
+  if (introScreenTrapFillPercentage) {
+    introScreenTrapFillPercentage.value = String(introScreenNumber);
+  }
+  if (introScreenTrapFillPercentageValue) {
+    introScreenTrapFillPercentageValue.value = String(introScreenNumber);
+  }
+}
+
+function introScreenGetYamlTrapSettings() {
+  var introScreenTrapSettings = {};
+
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    var introScreenCard = introScreenRoot.querySelector(".yaml-trap-card[data-trap-name='" + CSS.escape(introScreenTrapName) + "']");
+    var introScreenList = introScreenCard && introScreenCard.parentNode ? introScreenCard.parentNode.closest("[data-trap-list]") : null;
+    var introScreenWeightInput = introScreenCard ? introScreenCard.querySelector("[data-trap-weight]") : null;
+    var introScreenColumnName = introScreenList ? introScreenList.dataset.trapList : "anywhere";
+    var introScreenWeight = introScreenColumnName === "never" ? 0 : Math.max(0, Math.floor(Number(introScreenWeightInput ? introScreenWeightInput.value : 1) || 0));
+
+    introScreenTrapSettings[introScreenTrapName] = {
+      column: introScreenColumnName,
+      weight: introScreenWeight
+    };
+  });
+
+  return introScreenTrapSettings;
+}
+
+function introScreenGetYamlTrapWeights() {
+  var introScreenTrapWeights = {};
+  var introScreenTrapSettings = introScreenGetYamlTrapSettings();
+
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    introScreenTrapWeights[introScreenTrapName] = introScreenTrapSettings[introScreenTrapName].weight;
+  });
+
+  return introScreenTrapWeights;
+}
+
+function introScreenSyncYamlTrapState() {
+  var introScreenState = introScreenRoot.querySelector("#yaml-trap-state");
+  var introScreenTrapSettings = introScreenGetYamlTrapSettings();
+
+  if (!introScreenState) {
+    return;
+  }
+
+  introScreenState.innerHTML = "";
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    var introScreenTrapSetting = introScreenTrapSettings[introScreenTrapName];
+
+    introScreenAppendHiddenTrapCheckbox("trapPoolSpawn", introScreenTrapName, introScreenTrapSetting.column !== "never");
+    introScreenAppendHiddenTrapCheckbox("trapPoolLocal", introScreenTrapName, introScreenTrapSetting.column === "anywhere" || introScreenTrapSetting.column === "local");
+    introScreenAppendHiddenTrapCheckbox("trapPoolNonLocal", introScreenTrapName, introScreenTrapSetting.column === "anywhere" || introScreenTrapSetting.column === "nonLocal");
+  });
+}
+
+function introScreenAppendHiddenTrapCheckbox(introScreenName, introScreenValue, introScreenChecked) {
+  var introScreenState = introScreenRoot.querySelector("#yaml-trap-state");
+  var introScreenInput = document.createElement("input");
+
+  if (!introScreenState) {
+    return;
+  }
+
+  introScreenInput.type = "checkbox";
+  introScreenInput.name = introScreenName;
+  introScreenInput.value = introScreenValue;
+  introScreenInput.checked = Boolean(introScreenChecked);
+  introScreenState.appendChild(introScreenInput);
 }
 
 function introScreenLoadSavedYamlSettings() {
@@ -400,6 +642,8 @@ function introScreenDownloadDefaultYaml() {
 
   introScreenCurrentOptions = introScreenGetYamlOptions(introScreenForm.elements, introScreenForm.elements.slot.value.trim());
   introScreenForm.reset();
+  introScreenRenderYamlTrapCards(introScreenGetDefaultTrapSettings());
+  introScreenSetTrapFillPercentage(25);
   introScreenDefaultOptions = introScreenGetYamlOptions(introScreenForm.elements, "Player");
   introScreenDefaultOptions.ringLink = false;
   introScreenDefaultOptions.energyLink = false;
@@ -428,6 +672,8 @@ function introScreenResetYamlToDefault() {
 
   localStorage.removeItem(introScreenYamlSettingsStorageKey);
   introScreenForm.reset();
+  introScreenRenderYamlTrapCards(introScreenGetDefaultTrapSettings());
+  introScreenSetTrapFillPercentage(25);
   if (introScreenYamlUpload) {
     introScreenYamlUpload.value = "";
   }
@@ -467,6 +713,7 @@ function introScreenParseYamlOptions(introScreenYamlText) {
   var introScreenOptions = {};
   var introScreenYamlKeyMap = introScreenGetYamlKeyMap();
   var introScreenCurrentListKey = "";
+  var introScreenCurrentMapKey = "";
   var introScreenInShellipelago = false;
 
   introScreenLines.forEach(function (introScreenLine) {
@@ -474,6 +721,7 @@ function introScreenParseYamlOptions(introScreenYamlText) {
     var introScreenTrimmed = introScreenNoComment.trim();
     var introScreenKeyMatch = null;
     var introScreenListMatch = null;
+    var introScreenMapMatch = null;
 
     if (!introScreenTrimmed || introScreenTrimmed.charAt(0) === "#") {
       return;
@@ -487,10 +735,17 @@ function introScreenParseYamlOptions(introScreenYamlText) {
     if (introScreenTrimmed === "Shellipelago:") {
       introScreenInShellipelago = true;
       introScreenCurrentListKey = "";
+      introScreenCurrentMapKey = "";
       return;
     }
 
     if (!introScreenInShellipelago) {
+      return;
+    }
+
+    introScreenMapMatch = introScreenNoComment.match(/^\s{4}(.+?):\s*(.*?)\s*$/);
+    if (introScreenMapMatch && introScreenCurrentMapKey) {
+      introScreenOptions[introScreenCurrentMapKey][introScreenParseYamlScalar(introScreenMapMatch[1])] = introScreenParseYamlScalar(introScreenMapMatch[2]);
       return;
     }
 
@@ -506,13 +761,19 @@ function introScreenParseYamlOptions(introScreenYamlText) {
     }
 
     introScreenCurrentListKey = "";
+    introScreenCurrentMapKey = "";
     if (!introScreenYamlKeyMap[introScreenKeyMatch[1]]) {
       return;
     }
 
     if (!introScreenKeyMatch[2]) {
-      introScreenCurrentListKey = introScreenYamlKeyMap[introScreenKeyMatch[1]];
-      introScreenOptions[introScreenCurrentListKey] = [];
+      if (introScreenYamlKeyMap[introScreenKeyMatch[1]] === "trapWeights") {
+        introScreenCurrentMapKey = "trapWeights";
+        introScreenOptions[introScreenCurrentMapKey] = {};
+      } else {
+        introScreenCurrentListKey = introScreenYamlKeyMap[introScreenKeyMatch[1]];
+        introScreenOptions[introScreenCurrentListKey] = [];
+      }
       return;
     }
 
@@ -663,7 +924,9 @@ function introScreenGetYamlKeyMap() {
     show_essential_pickup_hints: "showEssentialPickupHints",
     enemies_are_hints: "enemiesAreHints",
     add_traps_to_pool: "addTrapsToPool",
+    trap_fill_percentage: "trapFillPercentage",
     trap_pool_spawn: "trapPoolSpawn",
+    trap_weights: "trapWeights",
     other_players_can_find_item_pool_drops: "otherPlayersCanFindItemPoolDrops",
     ring_link: "ringLink",
     energy_link: "energyLink",
@@ -681,16 +944,63 @@ function introScreenApplyYamlOptionsToForm(introScreenOptions) {
   }
 
   Object.keys(introScreenOptions).forEach(function (introScreenOptionKey) {
+    if (introScreenOptionKey === "trapWeights") {
+      return;
+    }
+
     if (Array.isArray(introScreenOptions[introScreenOptionKey])) {
       introScreenSetYamlCheckboxGroup(introScreenOptionKey, introScreenOptions[introScreenOptionKey]);
+      return;
+    }
+
+    if (introScreenOptions[introScreenOptionKey] && typeof introScreenOptions[introScreenOptionKey] === "object") {
       return;
     }
 
     introScreenSetYamlField(introScreenFields, introScreenOptionKey, introScreenOptions[introScreenOptionKey]);
   });
 
+  introScreenApplyYamlTrapOptionsToForm(introScreenOptions);
   introScreenRoot.querySelectorAll("#yaml-form input[data-controls]").forEach(introScreenSyncYamlControlledFields);
   introScreenUpdateYamlRangeOutput();
+}
+
+function introScreenApplyYamlTrapOptionsToForm(introScreenOptions) {
+  var introScreenTrapSettings = introScreenGetDefaultTrapSettings();
+  var introScreenTrapSpawn = Array.isArray(introScreenOptions.trapPoolSpawn) ? introScreenOptions.trapPoolSpawn.map(String) : introScreenTrapNames.slice();
+  var introScreenTrapLocal = Array.isArray(introScreenOptions.trapPoolLocal) ? introScreenOptions.trapPoolLocal.map(String) : introScreenTrapNames.slice();
+  var introScreenTrapNonLocal = Array.isArray(introScreenOptions.trapPoolNonLocal) ? introScreenOptions.trapPoolNonLocal.map(String) : introScreenTrapNames.slice();
+  var introScreenTrapWeights = introScreenOptions.trapWeights && typeof introScreenOptions.trapWeights === "object" ? introScreenOptions.trapWeights : {};
+
+  introScreenTrapNames.forEach(function (introScreenTrapName) {
+    var introScreenSpawns = introScreenTrapSpawn.indexOf(introScreenTrapName) !== -1;
+    var introScreenCanBeLocal = introScreenTrapLocal.indexOf(introScreenTrapName) !== -1;
+    var introScreenCanBeNonLocal = introScreenTrapNonLocal.indexOf(introScreenTrapName) !== -1;
+
+    if (!introScreenSpawns || (!introScreenCanBeLocal && !introScreenCanBeNonLocal)) {
+      introScreenTrapSettings[introScreenTrapName].column = "never";
+    } else if (introScreenCanBeLocal && !introScreenCanBeNonLocal) {
+      introScreenTrapSettings[introScreenTrapName].column = "local";
+    } else if (introScreenCanBeNonLocal && !introScreenCanBeLocal) {
+      introScreenTrapSettings[introScreenTrapName].column = "nonLocal";
+    } else {
+      introScreenTrapSettings[introScreenTrapName].column = "anywhere";
+    }
+
+    if (Object.prototype.hasOwnProperty.call(introScreenTrapWeights, introScreenTrapName)) {
+      introScreenTrapSettings[introScreenTrapName].weight = Number(introScreenTrapWeights[introScreenTrapName]) || 0;
+    }
+
+    if (introScreenTrapSettings[introScreenTrapName].column === "never") {
+      introScreenTrapSettings[introScreenTrapName].weight = 0;
+    }
+  });
+
+  introScreenRenderYamlTrapCards(introScreenTrapSettings);
+
+  if (Object.prototype.hasOwnProperty.call(introScreenOptions, "trapFillPercentage")) {
+    introScreenSetTrapFillPercentage(introScreenOptions.trapFillPercentage);
+  }
 }
 
 function introScreenSetYamlField(introScreenFields, introScreenOptionKey, introScreenValue) {
@@ -730,9 +1040,14 @@ function introScreenSetYamlCheckboxGroup(introScreenName, introScreenValues) {
 function introScreenUpdateYamlRangeOutput() {
   var introScreenProgressionBalancing = introScreenRoot.querySelector("#yaml-progression-balancing");
   var introScreenProgressionBalancingValue = introScreenRoot.querySelector("#yaml-progression-balancing-value");
+  var introScreenTrapFillPercentage = introScreenRoot.querySelector("input[name='trapFillPercentage']");
 
   if (introScreenProgressionBalancing && introScreenProgressionBalancingValue) {
     introScreenSetProgressionBalancingValue(introScreenProgressionBalancing.value);
+  }
+
+  if (introScreenTrapFillPercentage) {
+    introScreenSetTrapFillPercentage(introScreenTrapFillPercentage.value);
   }
 }
 
@@ -781,8 +1096,7 @@ function introScreenSubmitYaml(introScreenEvent) {
 
 function introScreenValidateYamlLocalityOptions(introScreenStatus) {
   var introScreenInvalidItem = introScreenFindYamlLocalityItemMissingBothColumns("essentialLocal", "essentialNonLocal") ||
-    introScreenFindYamlLocalityItemMissingBothColumns("resourceLocal", "resourceNonLocal") ||
-    introScreenFindYamlLocalityItemMissingBothColumns("trapPoolLocal", "trapPoolNonLocal");
+    introScreenFindYamlLocalityItemMissingBothColumns("resourceLocal", "resourceNonLocal");
 
   if (introScreenInvalidItem) {
     introScreenStatus.textContent = introScreenInvalidItem + " must be checked in Local Items, Non Local Items, or both.";
@@ -831,9 +1145,11 @@ function introScreenGetYamlOptions(introScreenFields, introScreenSlot) {
     showEssentialPickupHints: introScreenFields.showEssentialPickupHints.checked,
     enemiesAreHints: introScreenFields.enemiesAreHints.checked,
     addTrapsToPool: introScreenFields.addTrapsToPool.checked,
+    trapFillPercentage: introScreenFields.trapFillPercentage.value,
     trapPoolSpawn: introScreenGetCheckedValues("trapPoolSpawn"),
     trapPoolLocal: introScreenGetCheckedValues("trapPoolLocal"),
     trapPoolNonLocal: introScreenGetCheckedValues("trapPoolNonLocal"),
+    trapWeights: introScreenGetYamlTrapWeights(),
     otherPlayersCanFindItemPoolDrops: introScreenFields.otherPlayersCanFindItemPoolDrops.checked,
     ringLink: introScreenFields.ringLink.checked,
     energyLink: introScreenFields.energyLink.checked,
@@ -1163,23 +1479,24 @@ function introScreenSubmitConnection(introScreenEvent) {
     host: introScreenFields.host.value.trim() || introScreenDefaultHost,
     port: introScreenFields.port.value.trim() || introScreenDefaultPort,
     slot: introScreenFields.slot.value.trim(),
-    password: introScreenFields.password.value
+    password: introScreenFields.password.value,
+    legacyAsyncSeedName: introScreenLegacyAsyncSeedName
   };
 
   introScreenEvent.preventDefault();
   introScreenSaveConnection(introScreenConnectionInfo);
 
-  if (introScreenShouldLoadLegacyAsync(introScreenConnectionInfo)) {
-    introScreenSubmitButton.disabled = true;
-    introScreenLoadLegacyAsync();
-    return;
-  }
-
   introScreenStatus.textContent = "Connecting...";
   introScreenSubmitButton.disabled = true;
 
   archipelagoClientConnect(introScreenConnectionInfo)
-    .then(function () {
+    .then(function (introScreenPacket) {
+      if (introScreenPacket && introScreenPacket.cmd === "LegacyAsyncRedirect") {
+        introScreenStatus.textContent = "Jam Async connection detected, loading v 1.1...";
+        introScreenLoadLegacyAsync();
+        return;
+      }
+
       introScreenRoot.remove();
       initialRoomStart();
     })

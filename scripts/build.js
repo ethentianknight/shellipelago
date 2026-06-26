@@ -141,6 +141,24 @@ function getMapScript() {
   return "<script>\nwindow.shellipelagoMapData = " + JSON.stringify(mapData, null, 2) + ";\n</script>";
 }
 
+function getVersionedMapScript() {
+  const versionedMaps = {};
+
+  if (fs.existsSync(dataPath)) {
+    fs.readdirSync(dataPath, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory() && /^\d+\.\d+$/.test(entry.name))
+      .forEach((entry) => {
+        const versionedMapPath = path.join(dataPath, entry.name, "map.json");
+
+        if (fs.existsSync(versionedMapPath)) {
+          versionedMaps[entry.name] = JSON.parse(readText(versionedMapPath));
+        }
+      });
+  }
+
+  return "<script>\nwindow.shellipelagoVersionedMapData = " + JSON.stringify(versionedMaps, null, 2) + ";\n</script>";
+}
+
 function getTilesetDataScript() {
   const tilesetData = fs.existsSync(tilesetDataPath) ? JSON.parse(readText(tilesetDataPath)) : { tiles: {} };
 
@@ -160,6 +178,7 @@ const templateHtml = getTemplateHtml();
 const templateScript = getTemplateScript();
 const apworldScript = getApworldScript();
 const mapScript = getMapScript();
+const versionedMapScript = getVersionedMapScript();
 const tilesetDataScript = getTilesetDataScript();
 const creditsScript = getCreditsScript();
 const registryModules = getRegistryModules(registrySource);
@@ -174,7 +193,7 @@ const bundledStyle = "<style>\n" + cssSource.trim() + "\n</style>";
 const bundledScript = "<script>\n" + scriptSources.join("\n") + "\n</script>";
 const outputWithStyle = indexSource.replace(/<link\s+rel=["']stylesheet["']\s+href=["']src\/main\.css["']>/, bundledStyle);
 const outputWithTemplates = outputWithStyle.replace(/<body>/, "<body>\n" + templateHtml);
-const outputIndex = outputWithTemplates.replace(/<script\s+src=["']src\/main\.js["']><\/script>/, templateScript + "\n" + apworldScript + "\n" + mapScript + "\n" + tilesetDataScript + "\n" + creditsScript + "\n" + bundledScript);
+const outputIndex = outputWithTemplates.replace(/<script\s+src=["']src\/main\.js["']><\/script>/, templateScript + "\n" + apworldScript + "\n" + mapScript + "\n" + versionedMapScript + "\n" + tilesetDataScript + "\n" + creditsScript + "\n" + bundledScript);
 
 if (outputWithStyle === indexSource) {
   throw new Error("Could not find src/main.css link in index.html");

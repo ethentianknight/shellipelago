@@ -14,12 +14,14 @@ Shellipelago:
 
   # Adds many locations and can significantly slow down a playthrough.
   add_easy_destructible_checks: false
+  # Adds many locations and can significantly slow down a playthrough.
   enemies_are_checks: false
   enemies_are_hints: false
   shuffle_shops: true
   show_essential_pickup_hints: true
 
   add_traps_to_pool: false
+  trap_fill_percentage: 25
   trap_pool_spawn:
     - Snake Trap
     - Stun Trap
@@ -30,6 +32,16 @@ Shellipelago:
     - Screen Flip Trap
     - Zoom In Trap
     - Instant Death Trap
+  trap_weights:
+    Snake Trap: 1
+    Stun Trap: 1
+    Invisible Trap: 1
+    Fast Trap: 1
+    Slow Trap: 1
+    Reverse Trap: 1
+    Screen Flip Trap: 1
+    Zoom In Trap: 1
+    Instant Death Trap: 1
 
   other_players_can_find_item_pool_drops: false
   # Syncs Rounds with rings in other games that have Ring Link enabled.

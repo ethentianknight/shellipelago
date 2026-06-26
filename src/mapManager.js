@@ -14,22 +14,71 @@ var mapManagerData = window.shellipelagoMapData || {
 };
 var mapManagerMainRadius = 5;
 
+function mapManagerNormalizeVersionKey(mapManagerVersion) {
+  var mapManagerMatch = String(mapManagerVersion || "").match(/^(\d+)\.(\d+)/);
+
+  return mapManagerMatch ? mapManagerMatch[1] + "." + mapManagerMatch[2] : "";
+}
+
+function mapManagerGetSlotVersionKey() {
+  if (!globalsState.archipelago || !globalsState.archipelago.connected) {
+    return "";
+  }
+
+  return mapManagerNormalizeVersionKey(globalsState.archipelago.worldVersion || "");
+}
+
+function mapManagerGetVersionedMapData() {
+  var mapManagerSlotVersion = mapManagerGetSlotVersionKey();
+
+  if (
+    mapManagerSlotVersion &&
+    window.shellipelagoVersionedMapData &&
+    window.shellipelagoVersionedMapData[mapManagerSlotVersion]
+  ) {
+    return window.shellipelagoVersionedMapData[mapManagerSlotVersion];
+  }
+
+  return null;
+}
+
 function mapManagerLoadMap() {
+  var mapManagerVersionedMapData = mapManagerGetVersionedMapData();
+
+  if (mapManagerVersionedMapData) {
+    mapManagerData = mapManagerVersionedMapData;
+    mapManagerNormalizeRooms();
+    return Promise.resolve(mapManagerData);
+  }
+
   if (window.shellipelagoMapData || isBuild) {
     mapManagerNormalizeRooms();
     return Promise.resolve(mapManagerData);
   }
 
-  return fetch("src/data/map.json").then(function (mapManagerResponse) {
+  return mapManagerFetchMap().then(function (mapManagerLoadedMap) {
+    mapManagerData = mapManagerLoadedMap;
+    mapManagerNormalizeRooms();
+    return mapManagerData;
+  });
+}
+
+function mapManagerFetchMap() {
+  var mapManagerSlotVersion = mapManagerGetSlotVersionKey();
+  var mapManagerMapPath = mapManagerSlotVersion ? "src/data/" + mapManagerSlotVersion + "/map.json" : "src/data/map.json";
+
+  return fetch(mapManagerMapPath).then(function (mapManagerResponse) {
+    if (!mapManagerResponse.ok && mapManagerMapPath !== "src/data/map.json") {
+      return fetch("src/data/map.json");
+    }
+
+    return mapManagerResponse;
+  }).then(function (mapManagerResponse) {
     if (!mapManagerResponse.ok) {
       throw new Error("Unable to load map.json");
     }
 
     return mapManagerResponse.json();
-  }).then(function (mapManagerLoadedMap) {
-    mapManagerData = mapManagerLoadedMap;
-    mapManagerNormalizeRooms();
-    return mapManagerData;
   });
 }
 

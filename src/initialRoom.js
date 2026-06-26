@@ -273,6 +273,9 @@ var initialRoomIsSfxMuted = false;
 var initialRoomCreditsLoadStarted = false;
 var initialRoomFontFamily = "Perfect DOS VGA 437";
 var initialRoomCurrentRoom = null;
+var initialRoomFinalRunAutofireEnabled = false;
+var initialRoomFinalRunAutofireIntervalId = 0;
+var initialRoomFinalRunAutofireIntervalMs = 200;
 var initialRoomFinalRunState = {
   active: false,
   loading: false,
@@ -1183,6 +1186,7 @@ function initialRoomExitFinalRun() {
     return;
   }
 
+  initialRoomStopFinalRunAutofire();
   initialRoomFinalRunState.active = false;
   if (initialRoomNextBgmAt === Infinity) {
     initialRoomNextBgmAt = 0;
@@ -2464,6 +2468,59 @@ function initialRoomFireFinalRunNozzle() {
   initialRoomFinalRunState.tankNozzleRecoilGroup.position.z = initialRoomTankConfig.nozzle.recoilZ;
   initialRoomSpawnFinalRunMuzzleCloud();
   initialRoomApplyFinalRunShotImpact();
+}
+
+function initialRoomSetFinalRunAutofireEnabled(initialRoomEnabled) {
+  initialRoomFinalRunAutofireEnabled = Boolean(initialRoomEnabled);
+
+  if (!initialRoomFinalRunAutofireEnabled) {
+    initialRoomStopFinalRunAutofire();
+  }
+
+  return initialRoomFinalRunAutofireEnabled;
+}
+
+function initialRoomIsFinalRunAutofireEnabled() {
+  return initialRoomFinalRunAutofireEnabled;
+}
+
+function initialRoomStartFinalRunAutofire() {
+  if (!initialRoomFinalRunAutofireEnabled) {
+    initialRoomFireFinalRunNozzle();
+    return;
+  }
+
+  if (initialRoomFinalRunAutofireIntervalId) {
+    return;
+  }
+
+  initialRoomFireFinalRunNozzle();
+  initialRoomFinalRunAutofireIntervalId = window.setInterval(function () {
+    if (!initialRoomCanFireFinalRunAutofire()) {
+      initialRoomStopFinalRunAutofire();
+      return;
+    }
+
+    initialRoomFireFinalRunNozzle();
+  }, initialRoomFinalRunAutofireIntervalMs);
+}
+
+function initialRoomCanFireFinalRunAutofire() {
+  return Boolean(
+    initialRoomFinalRunState.active &&
+    !initialRoomIsTextEntryActive &&
+    !initialRoomIsMessageLogOpen &&
+    !initialRoomIsGameOver
+  );
+}
+
+function initialRoomStopFinalRunAutofire() {
+  if (!initialRoomFinalRunAutofireIntervalId) {
+    return;
+  }
+
+  window.clearInterval(initialRoomFinalRunAutofireIntervalId);
+  initialRoomFinalRunAutofireIntervalId = 0;
 }
 
 function initialRoomUpdateFinalRunNozzleRecoil(initialRoomNow) {
@@ -4887,6 +4944,10 @@ function initialRoomIsSlotOptionEnabled(initialRoomSnakeKey, initialRoomCamelKey
 }
 
 function initialRoomIsDeathLinkEnabled() {
+  if (typeof archipelagoClientIsDeathLinkEnabled === "function") {
+    return archipelagoClientIsDeathLinkEnabled();
+  }
+
   return initialRoomIsSlotOptionEnabled("death_link", "deathLink");
 }
 
@@ -4899,6 +4960,10 @@ function initialRoomIsRingLinkEnabled() {
 }
 
 function initialRoomIsTrapLinkEnabled() {
+  if (typeof archipelagoClientIsTrapLinkEnabled === "function") {
+    return archipelagoClientIsTrapLinkEnabled();
+  }
+
   return initialRoomIsSlotOptionEnabled("trap_link", "trapLink");
 }
 
@@ -6574,7 +6639,19 @@ function initialRoomIsBlockingTile(initialRoomTileX, initialRoomTileY) {
 }
 
 function initialRoomIsBlockingTileType(initialRoomTile) {
-  if (!initialRoomTile || initialRoomTile.type === "walkable") {
+  if (!initialRoomTile) {
+    return false;
+  }
+
+  if (initialRoomIsDestructableCheckDestroyed(initialRoomTile)) {
+    return false;
+  }
+
+  if (initialRoomIsDestructableCheckTile(initialRoomTile)) {
+    return true;
+  }
+
+  if (initialRoomTile.type === "walkable") {
     return false;
   }
 
@@ -6595,10 +6672,6 @@ function initialRoomIsBlockingTileType(initialRoomTile) {
   }
 
   if (initialRoomIsEnemyTile(initialRoomTile)) {
-    return false;
-  }
-
-  if (initialRoomIsDestructableCheckDestroyed(initialRoomTile)) {
     return false;
   }
 
@@ -6770,15 +6843,23 @@ function initialRoomIsEnemyBlockedTile(initialRoomTileX, initialRoomTileY, initi
 
   var initialRoomTile = initialRoomGetTile(initialRoomTileX, initialRoomTileY);
 
-  if (!initialRoomTile || initialRoomTile.type === "walkable" || initialRoomIsEnemyTile(initialRoomTile)) {
-    return false;
-  }
-
-  if (initialRoomEnemy && initialRoomEnemy.canCrossWater && initialRoomIsWaterTile(initialRoomTile)) {
+  if (!initialRoomTile || initialRoomIsEnemyTile(initialRoomTile)) {
     return false;
   }
 
   if (initialRoomIsDestructableCheckDestroyed(initialRoomTile)) {
+    return false;
+  }
+
+  if (initialRoomIsDestructableCheckTile(initialRoomTile)) {
+    return true;
+  }
+
+  if (initialRoomTile.type === "walkable") {
+    return false;
+  }
+
+  if (initialRoomEnemy && initialRoomEnemy.canCrossWater && initialRoomIsWaterTile(initialRoomTile)) {
     return false;
   }
 
@@ -6987,11 +7068,19 @@ function initialRoomIsTankBlockedTile(initialRoomTileX, initialRoomTileY) {
 
   initialRoomTile = initialRoomGetTile(initialRoomTileX, initialRoomTileY);
 
-  if (!initialRoomTile || initialRoomTile.type === "walkable" || initialRoomIsEnemyTile(initialRoomTile)) {
+  if (!initialRoomTile || initialRoomIsEnemyTile(initialRoomTile)) {
     return false;
   }
 
   if (initialRoomIsBlockerDestroyed(initialRoomTile) || initialRoomIsDestructableCheckDestroyed(initialRoomTile)) {
+    return false;
+  }
+
+  if (initialRoomIsDestructableCheckTile(initialRoomTile)) {
+    return !initialRoomCanTankTreadDestroyDestructableCheck(initialRoomTile);
+  }
+
+  if (initialRoomTile.type === "walkable") {
     return false;
   }
 
@@ -7001,10 +7090,6 @@ function initialRoomIsTankBlockedTile(initialRoomTileX, initialRoomTileY) {
 
   if (initialRoomIsDoorTile(initialRoomTile)) {
     return false;
-  }
-
-  if (initialRoomIsDestructableCheckTile(initialRoomTile)) {
-    return !initialRoomCanTankTreadDestroyDestructableCheck(initialRoomTile);
   }
 
   if (initialRoomIsJumpTile(initialRoomTile)) {
@@ -8021,6 +8106,10 @@ function initialRoomApplyExplosionDamage() {
 }
 
 function initialRoomApplyExplosionDamageToPlayer(initialRoomExplosion) {
+  if (initialRoomExplosion.tileOnly) {
+    return;
+  }
+
   if (initialRoomExplosion.damageType === "fire") {
     return;
   }
@@ -8032,6 +8121,10 @@ function initialRoomApplyExplosionDamageToPlayer(initialRoomExplosion) {
 
 function initialRoomApplyExplosionDamageToEnemies(initialRoomExplosion) {
   var initialRoomNow = Date.now();
+
+  if (initialRoomExplosion.tileOnly) {
+    return;
+  }
 
   initialRoomEnemies.forEach(function (initialRoomEnemy) {
     if (!initialRoomIsEnemyExplosionTargetable(initialRoomEnemy)) {
@@ -8284,8 +8377,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
       }
 
       if (archipelagoClientHasCheckedLocation(initialRoomGeneratedLocation.id)) {
-        initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
-        return true;
+        return initialRoomDestroyLocalOnlyDestructableCheck(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
       }
 
       return false;
@@ -8419,6 +8511,10 @@ function initialRoomGetImagePixelColor(initialRoomImage, initialRoomX, initialRo
 
 function initialRoomApplyExplosionChainToBombs(initialRoomExplosion) {
   var initialRoomNow = Date.now();
+
+  if (initialRoomExplosion.tileOnly) {
+    return;
+  }
 
   initialRoomBombs.forEach(function (initialRoomBomb) {
     if (initialRoomBomb.kind !== "fire" && initialRoomBomb.x === initialRoomExplosion.x && initialRoomBomb.y === initialRoomExplosion.y && !initialRoomBomb.explosionTiles && initialRoomBomb.explodedAt > initialRoomNow) {
@@ -9384,12 +9480,12 @@ function initialRoomIsTankShotImpactTile(initialRoomTile) {
     return !initialRoomIsShopItemHidden(initialRoomTile);
   }
 
-  if (initialRoomTile.type === "check") {
-    return !initialRoomIsCheckTileCollected(initialRoomTile);
-  }
-
   if (initialRoomIsDestructableCheckTile(initialRoomTile)) {
     return true;
+  }
+
+  if (initialRoomTile.type === "check") {
+    return !initialRoomIsCheckTileCollected(initialRoomTile);
   }
 
   return initialRoomIsBlockingTileType(initialRoomTile);
@@ -9653,7 +9749,31 @@ function initialRoomCreateExplosionTileObjects(initialRoomBomb) {
     }
   });
 
+  if (initialRoomBomb.kind === "bomb" && initialRoomBomb.level >= 3) {
+    initialRoomAddAllBombableDestructibleTiles(initialRoomTiles, initialRoomTileKeys);
+  }
+
   return initialRoomMapExplosionTiles(initialRoomTiles, initialRoomBomb);
+}
+
+function initialRoomAddAllBombableDestructibleTiles(initialRoomTiles, initialRoomTileKeys) {
+  var initialRoomTileY = 0;
+
+  while (initialRoomTileY < mapManagerData.roomHeight) {
+    var initialRoomTileX = 0;
+
+    while (initialRoomTileX < mapManagerData.roomWidth) {
+      var initialRoomTile = initialRoomGetTile(initialRoomTileX, initialRoomTileY);
+
+      if (initialRoomCanDestroyDestructableCheck(initialRoomTile, "bomb", 3)) {
+        initialRoomAddExplosionTile(initialRoomTiles, initialRoomTileKeys, initialRoomTileX, initialRoomTileY, true);
+      }
+
+      initialRoomTileX += 1;
+    }
+
+    initialRoomTileY += 1;
+  }
 }
 
 function initialRoomMapExplosionTiles(initialRoomTiles, initialRoomBomb) {
@@ -9670,12 +9790,13 @@ function initialRoomMapExplosionTiles(initialRoomTiles, initialRoomBomb) {
       damage: initialRoomBomb.damage || 3,
       bombLevel: initialRoomBomb.level || 1,
       damageType: initialRoomBomb.kind === "fire" ? "fire" : "bomb",
+      tileOnly: Boolean(initialRoomTile.tileOnly),
       expiresAt: initialRoomBomb.explodedAt + initialRoomGetExplosionDuration(initialRoomBomb)
     };
   });
 }
 
-function initialRoomAddExplosionTile(initialRoomTiles, initialRoomTileKeys, initialRoomTileX, initialRoomTileY) {
+function initialRoomAddExplosionTile(initialRoomTiles, initialRoomTileKeys, initialRoomTileX, initialRoomTileY, initialRoomTileOnly) {
   var initialRoomTileKey = mapManagerGetCoordinateKey(initialRoomTileX, initialRoomTileY);
 
   if (initialRoomTileKeys[initialRoomTileKey]) {
@@ -9685,7 +9806,8 @@ function initialRoomAddExplosionTile(initialRoomTiles, initialRoomTileKeys, init
   initialRoomTileKeys[initialRoomTileKey] = true;
   initialRoomTiles.push({
     x: initialRoomTileX,
-    y: initialRoomTileY
+    y: initialRoomTileY,
+    tileOnly: Boolean(initialRoomTileOnly)
   });
 }
 
@@ -10347,7 +10469,7 @@ window.addEventListener("mousedown", function (initialRoomEvent) {
       return;
     }
 
-    initialRoomFireFinalRunNozzle();
+    initialRoomStartFinalRunAutofire();
     initialRoomEvent.preventDefault();
     return;
   }
@@ -10380,6 +10502,14 @@ window.addEventListener("mousedown", function (initialRoomEvent) {
   }
 
   initialRoomEvent.preventDefault();
+});
+
+window.addEventListener("mouseup", function () {
+  initialRoomStopFinalRunAutofire();
+});
+
+window.addEventListener("blur", function () {
+  initialRoomStopFinalRunAutofire();
 });
 
 window.addEventListener("resize", initialRoomResizeCanvas);

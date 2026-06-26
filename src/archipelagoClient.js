@@ -8,6 +8,7 @@ var archipelagoClientVersion = {
 var archipelagoClientSessionId = "shellipelago-session-" + Date.now() + "-" + Math.random().toString(16).slice(2);
 var archipelagoClientConnectionId = Date.now() + Math.floor(Math.random() * 1000000);
 var archipelagoClientEnergyLinkValue = 0;
+var archipelagoClientEnergyLinkEfficiency = 30;
 var archipelagoClientItemIdToCheckKeys = {
   100000: ["graphics"],
   100001: ["freeGrid"],
@@ -143,6 +144,10 @@ function archipelagoClientSendChatMessage(archipelagoClientText) {
     return false;
   }
 
+  if (archipelagoClientHandleLocalCommand(archipelagoClientText)) {
+    return true;
+  }
+
   if (globalsState.archipelago.socket.readyState !== WebSocket.OPEN) {
     return false;
   }
@@ -155,6 +160,214 @@ function archipelagoClientSendChatMessage(archipelagoClientText) {
   return true;
 }
 
+function archipelagoClientIsSlotDeathLinkEnabled() {
+  var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
+
+  return Boolean(archipelagoClientSlotData.death_link || archipelagoClientSlotData.deathLink);
+}
+
+function archipelagoClientIsSlotTrapLinkEnabled() {
+  var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
+
+  return Boolean(archipelagoClientSlotData.trap_link || archipelagoClientSlotData.trapLink);
+}
+
+function archipelagoClientGetSlotWorldVersion() {
+  var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
+
+  return String(archipelagoClientSlotData.world_version || archipelagoClientSlotData.worldVersion || "1.8").trim();
+}
+
+function archipelagoClientGetClientWorldVersion() {
+  return String(globalsState.shellipelagoVersion || "").trim();
+}
+
+function archipelagoClientNormalizeWorldVersion(archipelagoClientVersionValue) {
+  var archipelagoClientMatch = String(archipelagoClientVersionValue || "").match(/^(\d+)\.(\d+)/);
+
+  return archipelagoClientMatch ? archipelagoClientMatch[1] + "." + archipelagoClientMatch[2] : "";
+}
+
+function archipelagoClientCheckWorldVersion() {
+  var archipelagoClientSlotWorldVersion = archipelagoClientGetSlotWorldVersion();
+  var archipelagoClientClientWorldVersion = archipelagoClientGetClientWorldVersion();
+  var archipelagoClientSlotComparable = archipelagoClientNormalizeWorldVersion(archipelagoClientSlotWorldVersion);
+  var archipelagoClientClientComparable = archipelagoClientNormalizeWorldVersion(archipelagoClientClientWorldVersion);
+
+  globalsState.archipelago.worldVersion = archipelagoClientSlotWorldVersion;
+
+  if (!archipelagoClientSlotDataHasWorldVersion()) {
+    console.warn("Shellipelago APWorld version was not provided in slot data; treating it as 1.8.");
+  }
+
+  if (archipelagoClientSlotComparable && archipelagoClientClientComparable && archipelagoClientSlotComparable !== archipelagoClientClientComparable) {
+    console.warn(
+      "Shellipelago APWorld version " + archipelagoClientSlotWorldVersion +
+      " differs from client version " + archipelagoClientClientWorldVersion + "."
+    );
+  }
+}
+
+function archipelagoClientSlotDataHasWorldVersion() {
+  var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
+
+  return Boolean(archipelagoClientSlotData.world_version || archipelagoClientSlotData.worldVersion);
+}
+
+function archipelagoClientIsDeathLinkEnabled() {
+  if (globalsState.archipelago.deathLinkEnabled !== null && globalsState.archipelago.deathLinkEnabled !== undefined) {
+    return Boolean(globalsState.archipelago.deathLinkEnabled);
+  }
+
+  return archipelagoClientIsSlotDeathLinkEnabled();
+}
+
+function archipelagoClientIsTrapLinkEnabled() {
+  if (globalsState.archipelago.trapLinkEnabled !== null && globalsState.archipelago.trapLinkEnabled !== undefined) {
+    return Boolean(globalsState.archipelago.trapLinkEnabled);
+  }
+
+  return archipelagoClientIsSlotTrapLinkEnabled();
+}
+
+function archipelagoClientSendTagUpdate() {
+  if (!globalsState.archipelago.connected || !globalsState.archipelago.socket || globalsState.archipelago.socket.readyState !== WebSocket.OPEN) {
+    return false;
+  }
+
+  archipelagoClientSend(globalsState.archipelago.socket, {
+    cmd: "ConnectUpdate",
+    tags: archipelagoClientBuildTags()
+  });
+
+  return true;
+}
+
+function archipelagoClientSetDeathLinkEnabled(archipelagoClientEnabled) {
+  globalsState.archipelago.deathLinkEnabled = Boolean(archipelagoClientEnabled);
+
+  if (!archipelagoClientSendTagUpdate()) {
+    return false;
+  }
+
+  archipelagoClientQueueServerMessage("DeathLink " + (globalsState.archipelago.deathLinkEnabled ? "enabled" : "disabled") + ".");
+  return true;
+}
+
+function archipelagoClientToggleDeathLink() {
+  return archipelagoClientSetDeathLinkEnabled(!archipelagoClientIsDeathLinkEnabled());
+}
+
+function archipelagoClientSetTrapLinkEnabled(archipelagoClientEnabled) {
+  globalsState.archipelago.trapLinkEnabled = Boolean(archipelagoClientEnabled);
+
+  if (!archipelagoClientSendTagUpdate()) {
+    return false;
+  }
+
+  archipelagoClientQueueServerMessage("TrapLink " + (globalsState.archipelago.trapLinkEnabled ? "enabled" : "disabled") + ".");
+  return true;
+}
+
+function archipelagoClientToggleTrapLink() {
+  return archipelagoClientSetTrapLinkEnabled(!archipelagoClientIsTrapLinkEnabled());
+}
+
+function archipelagoClientToggleFinalRunAutofire() {
+  var archipelagoClientEnabled = false;
+
+  if (typeof initialRoomSetFinalRunAutofireEnabled !== "function") {
+    archipelagoClientQueueServerMessage("Autofire is not available yet.");
+    return false;
+  }
+
+  archipelagoClientEnabled = !(
+    typeof initialRoomIsFinalRunAutofireEnabled === "function" &&
+    initialRoomIsFinalRunAutofireEnabled()
+  );
+  initialRoomSetFinalRunAutofireEnabled(archipelagoClientEnabled);
+  archipelagoClientQueueServerMessage("Final run autofire " + (archipelagoClientEnabled ? "enabled" : "disabled") + ".");
+  return true;
+}
+
+function archipelagoClientTryNo3dGoal() {
+  var archipelagoClientMissingParts = [];
+
+  if (!globalsState.archipelago.connected) {
+    archipelagoClientQueueServerMessage("!no3d requires an Archipelago connection.");
+    return false;
+  }
+
+  if (!globalsState.progression.tankTreads) {
+    archipelagoClientMissingParts.push("Tank Treads");
+  }
+
+  if (!globalsState.progression.tankChassis) {
+    archipelagoClientMissingParts.push("Tank Chassis");
+  }
+
+  if (!globalsState.progression.tankCannon) {
+    archipelagoClientMissingParts.push("Tank Cannon");
+  }
+
+  if (
+    typeof progressionManagerGetProgressiveValue !== "function" ||
+    progressionManagerGetProgressiveValue("progressiveRoom") < globalsState.progressiveRoomMaxRing
+  ) {
+    archipelagoClientMissingParts.push("Progressive Room " + globalsState.progressiveRoomMaxRing);
+  }
+
+  if (archipelagoClientMissingParts.length > 0) {
+    archipelagoClientQueueServerMessage("!no3d requires the full tank and all progressive rooms. Missing: " + archipelagoClientMissingParts.join(", ") + ".");
+    return false;
+  }
+
+  if (globalsState.archipelago.goalSent) {
+    archipelagoClientQueueServerMessage("Goal was already sent.");
+    return true;
+  }
+
+  if (!archipelagoClientSendGoal()) {
+    archipelagoClientQueueServerMessage("Unable to send goal right now.");
+    return false;
+  }
+
+  archipelagoClientQueueServerMessage("Final run bypass accepted. Goal sent.");
+  return true;
+}
+
+function archipelagoClientHandleLocalCommand(archipelagoClientText) {
+  var archipelagoClientCommand = archipelagoClientStripPlayerPrefix(archipelagoClientText).trim().toLowerCase();
+  var archipelagoClientEfficiencyMatch = archipelagoClientCommand.match(/^!efficiency(?:\s+(.+))?$/);
+
+  if (archipelagoClientCommand === "!deathlink") {
+    archipelagoClientToggleDeathLink();
+    return true;
+  }
+
+  if (archipelagoClientCommand === "!traplink") {
+    archipelagoClientToggleTrapLink();
+    return true;
+  }
+
+  if (archipelagoClientCommand === "!autofire") {
+    archipelagoClientToggleFinalRunAutofire();
+    return true;
+  }
+
+  if (archipelagoClientCommand === "!no3d") {
+    archipelagoClientTryNo3dGoal();
+    return true;
+  }
+
+  if (archipelagoClientEfficiencyMatch) {
+    archipelagoClientSetEnergyLinkEfficiency(archipelagoClientEfficiencyMatch[1]);
+    return true;
+  }
+
+  return false;
+}
+
 function archipelagoClientGetEnergyLinkKey() {
   if (globalsState.archipelago.team === null || globalsState.archipelago.team === undefined) {
     return "";
@@ -163,17 +376,48 @@ function archipelagoClientGetEnergyLinkKey() {
   return "EnergyLink" + globalsState.archipelago.team;
 }
 
+function archipelagoClientConvertEnergyLinkToLocal(archipelagoClientValue) {
+  return Math.floor(Math.max(0, Number(archipelagoClientValue) || 0) / archipelagoClientEnergyLinkEfficiency);
+}
+
+function archipelagoClientConvertLocalEnergyToLink(archipelagoClientAmount) {
+  var archipelagoClientLocalAmount = Math.max(0, Number(archipelagoClientAmount) || 0);
+  var archipelagoClientConvertedAmount = Math.floor(archipelagoClientLocalAmount * archipelagoClientEnergyLinkEfficiency);
+
+  if (archipelagoClientLocalAmount > 0 && archipelagoClientConvertedAmount < 1) {
+    return 1;
+  }
+
+  return archipelagoClientConvertedAmount;
+}
+
+function archipelagoClientSetEnergyLinkEfficiency(archipelagoClientValue) {
+  var archipelagoClientEfficiencyText = String(archipelagoClientValue || "").trim();
+  var archipelagoClientEfficiencyValue = Number(archipelagoClientEfficiencyText);
+
+  if (!/^\d+$/.test(archipelagoClientEfficiencyText) || archipelagoClientEfficiencyValue < 20 || archipelagoClientEfficiencyValue > 50) {
+    archipelagoClientQueueServerMessage("EnergyLink efficiency must be a whole number from 20 to 50.");
+    return false;
+  }
+
+  archipelagoClientEnergyLinkEfficiency = archipelagoClientEfficiencyValue;
+  archipelagoClientSetLocalEnergyFromLink(archipelagoClientEnergyLinkValue);
+  archipelagoClientQueueServerMessage("EnergyLink efficiency set to " + archipelagoClientEnergyLinkEfficiency + ".");
+  return true;
+}
+
 function archipelagoClientSetLocalEnergyFromLink(archipelagoClientValue) {
   var archipelagoClientEnergyValue = Math.max(0, Number(archipelagoClientValue) || 0);
+  var archipelagoClientLocalEnergyValue = archipelagoClientConvertEnergyLinkToLocal(archipelagoClientEnergyValue);
 
   archipelagoClientEnergyLinkValue = archipelagoClientEnergyValue;
   if (typeof initialRoomPlayer !== "undefined") {
-    initialRoomPlayer.energy = archipelagoClientEnergyValue;
+    initialRoomPlayer.energy = archipelagoClientLocalEnergyValue;
   }
 }
 
 function archipelagoClientSendEnergyLinkAdd(archipelagoClientAmount) {
-  var archipelagoClientEnergyAmount = Math.max(0, Number(archipelagoClientAmount) || 0);
+  var archipelagoClientEnergyAmount = archipelagoClientConvertLocalEnergyToLink(archipelagoClientAmount);
   var archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
 
   if (!archipelagoClientEnergyAmount || !archipelagoClientEnergyKey || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
@@ -194,7 +438,7 @@ function archipelagoClientSendEnergyLinkAdd(archipelagoClientAmount) {
 }
 
 function archipelagoClientSendEnergyLinkDeplete(archipelagoClientAmount, archipelagoClientTag) {
-  var archipelagoClientEnergyAmount = Math.max(0, Number(archipelagoClientAmount) || 0);
+  var archipelagoClientEnergyAmount = archipelagoClientConvertLocalEnergyToLink(archipelagoClientAmount);
   var archipelagoClientEnergyKey = archipelagoClientGetEnergyLinkKey();
 
   if (!archipelagoClientEnergyAmount || !archipelagoClientEnergyKey || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
@@ -238,7 +482,7 @@ function archipelagoClientBuildTags() {
   var archipelagoClientTags = ["AP"];
   var archipelagoClientSlotData = globalsState.archipelago.slotData || {};
 
-  if (archipelagoClientSlotData.death_link || archipelagoClientSlotData.deathLink) {
+  if (archipelagoClientIsDeathLinkEnabled()) {
     archipelagoClientTags.push("DeathLink");
   }
 
@@ -246,7 +490,7 @@ function archipelagoClientBuildTags() {
     archipelagoClientTags.push("RingLink");
   }
 
-  if (archipelagoClientSlotData.trap_link || archipelagoClientSlotData.trapLink) {
+  if (archipelagoClientIsTrapLinkEnabled()) {
     archipelagoClientTags.push("TrapLink");
   }
 
@@ -614,13 +858,40 @@ function archipelagoClientGetLocationById(archipelagoClientLocationId) {
   return archipelagoClientFoundLocation;
 }
 
+function archipelagoClientInvalidateMapStatusCache() {
+  if (typeof initialRoomMapStatusCache !== "undefined") {
+    initialRoomMapStatusCache = null;
+  }
+}
+
+function archipelagoClientMarkLocationChecked(archipelagoClientLocationId) {
+  var archipelagoClientTargetId = Number(archipelagoClientLocationId);
+  var archipelagoClientLocation = null;
+
+  if (Number.isNaN(archipelagoClientTargetId)) {
+    return false;
+  }
+
+  archipelagoClientLocation = archipelagoClientGetLocationById(archipelagoClientTargetId);
+  if (archipelagoClientLocation) {
+    archipelagoClientLocation.checked = true;
+  }
+
+  if (globalsState.archipelago.checkedLocations.indexOf(archipelagoClientTargetId) === -1) {
+    globalsState.archipelago.checkedLocations.push(archipelagoClientTargetId);
+  }
+
+  globalsState.archipelago.missingLocations = (globalsState.archipelago.missingLocations || []).filter(function (archipelagoClientMissingLocationId) {
+    return Number(archipelagoClientMissingLocationId) !== archipelagoClientTargetId;
+  });
+
+  archipelagoClientInvalidateMapStatusCache();
+  return true;
+}
+
 function archipelagoClientMarkCheckedLocations(archipelagoClientLocationIds) {
   archipelagoClientLocationIds.forEach(function (archipelagoClientLocationId) {
-    var archipelagoClientLocation = archipelagoClientGetLocationById(archipelagoClientLocationId);
-
-    if (archipelagoClientLocation) {
-      archipelagoClientLocation.checked = true;
-    }
+    archipelagoClientMarkLocationChecked(archipelagoClientLocationId);
   });
 }
 
@@ -837,6 +1108,9 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
   globalsState.archipelago.checkedLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.checked_locations);
   globalsState.archipelago.missingLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.missing_locations);
   globalsState.archipelago.slotData = archipelagoClientPacket.slot_data || {};
+  archipelagoClientCheckWorldVersion();
+  globalsState.archipelago.deathLinkEnabled = archipelagoClientIsSlotDeathLinkEnabled();
+  globalsState.archipelago.trapLinkEnabled = archipelagoClientIsSlotTrapLinkEnabled();
   archipelagoClientResetOnlineProgressionForSync();
   archipelagoClientMarkCheckedLocations(globalsState.archipelago.checkedLocations);
   archipelagoClientSend(archipelagoClientSocket, {
@@ -869,6 +1143,19 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
 function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClientPackets, archipelagoClientConnectionInfo, archipelagoClientResolveReady, archipelagoClientReject) {
   archipelagoClientPackets.forEach(function (archipelagoClientPacket) {
     if (archipelagoClientPacket.cmd === "RoomInfo") {
+      if (
+        archipelagoClientConnectionInfo.legacyAsyncSeedName &&
+        String(archipelagoClientPacket.seed_name || "") === String(archipelagoClientConnectionInfo.legacyAsyncSeedName)
+      ) {
+        console.log("Shellipelago legacy async seed detected:", archipelagoClientPacket.seed_name);
+        archipelagoClientResolveReady({
+          cmd: "LegacyAsyncRedirect",
+          roomInfo: archipelagoClientPacket
+        });
+        archipelagoClientSocket.close();
+        return;
+      }
+
       archipelagoClientSendConnect(archipelagoClientSocket, archipelagoClientConnectionInfo);
       return;
     }
@@ -911,12 +1198,18 @@ function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClie
     }
 
     if (archipelagoClientPacket.cmd === "Print") {
-      archipelagoClientQueueServerMessage(archipelagoClientPacket.text || "");
+      if (!archipelagoClientHandleLocalCommand(archipelagoClientPacket.text || "")) {
+        archipelagoClientQueueServerMessage(archipelagoClientPacket.text || "");
+      }
       return;
     }
 
     if (archipelagoClientPacket.cmd === "PrintJSON") {
-      archipelagoClientQueueServerMessage(archipelagoClientFormatPrintJson(archipelagoClientPacket.data));
+      var archipelagoClientFormattedMessage = archipelagoClientFormatPrintJson(archipelagoClientPacket.data);
+
+      if (!archipelagoClientHandleLocalCommand(archipelagoClientFormattedMessage)) {
+        archipelagoClientQueueServerMessage(archipelagoClientFormattedMessage);
+      }
     }
   });
 }
@@ -1031,8 +1324,7 @@ function archipelagoClientSendLocationCheck(archipelagoClientCheckKey) {
     return false;
   }
 
-  archipelagoClientLocation.checked = true;
-  globalsState.archipelago.checkedLocations.push(Number(archipelagoClientLocation.id));
+  archipelagoClientMarkLocationChecked(archipelagoClientLocation.id);
   archipelagoClientSend(globalsState.archipelago.socket, {
     cmd: "LocationChecks",
     locations: [archipelagoClientLocation.id]
@@ -1063,7 +1355,7 @@ function archipelagoClientSendGeneratedLocationCheck(archipelagoClientLocation) 
     return false;
   }
 
-  globalsState.archipelago.checkedLocations.push(Number(archipelagoClientLocation.id));
+  archipelagoClientMarkLocationChecked(archipelagoClientLocation.id);
   archipelagoClientSend(globalsState.archipelago.socket, {
     cmd: "LocationChecks",
     locations: [archipelagoClientLocation.id]

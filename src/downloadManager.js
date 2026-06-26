@@ -87,6 +87,16 @@ function downloadManagerYamlNumber(downloadManagerValue, downloadManagerDefaultV
   return Math.max(0, Math.min(99, Math.floor(downloadManagerNumber)));
 }
 
+function downloadManagerYamlPercentage(downloadManagerValue, downloadManagerDefaultValue) {
+  var downloadManagerNumber = Number(downloadManagerValue);
+
+  if (!Number.isFinite(downloadManagerNumber)) {
+    return downloadManagerDefaultValue;
+  }
+
+  return Math.max(0, Math.min(100, Math.floor(downloadManagerNumber)));
+}
+
 function downloadManagerYamlList(downloadManagerItems) {
   if (!downloadManagerItems || !downloadManagerItems.length) {
     return " []";
@@ -94,6 +104,18 @@ function downloadManagerYamlList(downloadManagerItems) {
 
   return "\n" + downloadManagerItems.map(function (downloadManagerItem) {
     return "    - " + downloadManagerItem;
+  }).join("\n");
+}
+
+function downloadManagerYamlMapping(downloadManagerItems) {
+  var downloadManagerKeys = Object.keys(downloadManagerItems || {});
+
+  if (!downloadManagerKeys.length) {
+    return " {}";
+  }
+
+  return "\n" + downloadManagerKeys.map(function (downloadManagerKey) {
+    return "    " + downloadManagerKey + ": " + Math.max(0, Math.floor(Number(downloadManagerItems[downloadManagerKey]) || 0));
   }).join("\n");
 }
 
@@ -166,7 +188,9 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  show_essential_pickup_hints: " + downloadManagerYamlBoolean(downloadManagerOptions.showEssentialPickupHints),
     "  enemies_are_hints: " + downloadManagerYamlBoolean(downloadManagerOptions.enemiesAreHints),
     "  add_traps_to_pool: " + downloadManagerYamlBoolean(downloadManagerOptions.addTrapsToPool),
+    "  trap_fill_percentage: " + downloadManagerYamlPercentage(downloadManagerOptions.trapFillPercentage, 25),
     "  trap_pool_spawn:" + downloadManagerYamlList(downloadManagerOptions.trapPoolSpawn),
+    "  trap_weights:" + downloadManagerYamlMapping(downloadManagerOptions.trapWeights),
     "  other_players_can_find_item_pool_drops: " + downloadManagerYamlBoolean(downloadManagerOptions.otherPlayersCanFindItemPoolDrops),
     "  # Syncs Rounds with rings in other games that have Ring Link enabled.",
     "  ring_link: " + downloadManagerYamlBoolean(downloadManagerOptions.ringLink),

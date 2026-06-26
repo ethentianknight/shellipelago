@@ -102,8 +102,8 @@
             </section>
 
             <section class="yaml-section yaml-compact-options">
-              <label class="toggle-row"><input name="addEasyDestructibleChecks" type="checkbox"> <span>Add checks for easy destructibles</span></label>
-              <label class="toggle-row"><input name="enemiesAreChecks" type="checkbox"> <span>Enemies are checks</span></label>
+              <label class="toggle-row"><input name="addEasyDestructibleChecks" type="checkbox"> <span>Add destructible tiles to locations</span></label>
+              <label class="toggle-row"><input name="enemiesAreChecks" type="checkbox"> <span>Add enemies to locations</span></label>
               <label class="toggle-row"><input name="enemiesAreHints" type="checkbox"> <span>Enemies are hints</span></label>
               <label class="toggle-row"><input name="shuffleShops" type="checkbox" checked> <span>Shuffle shops</span></label>
               <label class="toggle-row"><input name="showEssentialPickupHints" type="checkbox" checked> <span>Show essential pickup hints</span></label>
@@ -116,51 +116,41 @@
             </section>
 
 
-            <section class="yaml-section">
-          <label class="toggle-row">
-            <input name="addTrapsToPool" type="checkbox" data-controls="trapPoolSpawn trapPoolLocal trapPoolNonLocal">
-            <span>Add traps to pool</span>
-          </label>
-          <div class="yaml-two-column">
-            <fieldset>
-              <legend>Can spawn</legend>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Stun Trap" checked> Stun Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Invisible Trap" checked> Invisible Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Fast Trap" checked> Fast Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Slow Trap" checked> Slow Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Reverse Trap" checked> Reverse Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Zoom In Trap" checked> Zoom In Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Instant Death Trap" checked> Instant Death Trap</label>
-              <label><input type="checkbox" name="trapPoolSpawn" value="Snake Trap" checked> Snake Trap</label>
-            </fieldset>
-
-            <fieldset>
-              <legend>Local Items</legend>
-              <label><input type="checkbox" name="trapPoolLocal" value="Stun Trap" checked> Stun Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Invisible Trap" checked> Invisible Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Fast Trap" checked> Fast Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Slow Trap" checked> Slow Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Reverse Trap" checked> Reverse Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Zoom In Trap" checked> Zoom In Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Instant Death Trap" checked> Instant Death Trap</label>
-              <label><input type="checkbox" name="trapPoolLocal" value="Snake Trap" checked> Snake Trap</label>
-            </fieldset>
-
-            <fieldset>
-              <legend>Non Local Items</legend>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Stun Trap" checked> Stun Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Invisible Trap" checked> Invisible Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Fast Trap" checked> Fast Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Slow Trap" checked> Slow Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Reverse Trap" checked> Reverse Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Screen Flip Trap" checked> Screen Flip Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Zoom In Trap" checked> Zoom In Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Instant Death Trap" checked> Instant Death Trap</label>
-              <label><input type="checkbox" name="trapPoolNonLocal" value="Snake Trap" checked> Snake Trap</label>
-            </fieldset>
-          </div>
+            <section class="yaml-section yaml-trap-section">
+              <label class="toggle-row">
+                <input name="addTrapsToPool" type="checkbox" data-controls="trapFillPercentage trapFillPercentageValue trapPoolSpawn trapPoolLocal trapPoolNonLocal">
+                <span>Add traps to pool</span>
+              </label>
+              <label class="yaml-progression-row">
+                <span>Trap fill percentage</span>
+                <span class="yaml-progression-controls">
+                  <input name="trapFillPercentage" type="range" min="0" max="100" value="25">
+                  <input class="yaml-range-value" name="trapFillPercentageValue" type="number" min="0" max="100" value="25">
+                </span>
+              </label>
+              <div class="yaml-trap-state" id="yaml-trap-state" hidden></div>
+              <div class="yaml-trap-columns" id="yaml-trap-columns">
+                <section class="yaml-trap-column" data-trap-column="anywhere">
+                  <h3>Anywhere</h3>
+                  <div class="yaml-trap-list" data-trap-list="anywhere"></div>
+                  <button class="secondary-button yaml-trap-all" type="button" data-trap-all="anywhere">All</button>
+                </section>
+                <section class="yaml-trap-column" data-trap-column="local">
+                  <h3>My World</h3>
+                  <div class="yaml-trap-list" data-trap-list="local"></div>
+                  <button class="secondary-button yaml-trap-all" type="button" data-trap-all="local">All</button>
+                </section>
+                <section class="yaml-trap-column" data-trap-column="nonLocal">
+                  <h3>Other Worlds</h3>
+                  <div class="yaml-trap-list" data-trap-list="nonLocal"></div>
+                  <button class="secondary-button yaml-trap-all" type="button" data-trap-all="nonLocal">All</button>
+                </section>
+                <section class="yaml-trap-column" data-trap-column="never">
+                  <h3>Never</h3>
+                  <div class="yaml-trap-list" data-trap-list="never"></div>
+                  <button class="secondary-button yaml-trap-all" type="button" data-trap-all="never">All</button>
+                </section>
+              </div>
             </section>
 
           </div>
@@ -171,7 +161,7 @@
               <dl>
                 <div><dt>Total</dt><dd id="yaml-total-checks">0</dd></div>
                 <div><dt>Chests</dt><dd id="yaml-chest-checks">0</dd></div>
-                <div><dt>Easy destructibles</dt><dd id="yaml-easy-destructible-checks">0</dd></div>
+                <div><dt>Destructible tiles</dt><dd id="yaml-easy-destructible-checks">0</dd></div>
                 <div><dt>Enemies</dt><dd id="yaml-enemy-checks">0</dd></div>
                 <div><dt>Shops</dt><dd id="yaml-shop-checks">0</dd></div>
                 <div><dt>Hint triggers</dt><dd id="yaml-hint-checks">0</dd></div>
@@ -188,11 +178,19 @@
         </div>
       </form>
       <dialog class="yaml-warning-dialog" id="yaml-destructible-warning">
-        <h2>Easy Destructible Checks</h2>
-        <p>Adding checks for easy destructibles creates many extra locations and can significantly slow down a playthrough.</p>
+        <h2>Destructible Tile Locations</h2>
+        <p>Adding destructible tiles to locations creates many extra checks and can significantly slow down a playthrough.</p>
         <div class="yaml-warning-actions">
           <button class="secondary-button" id="yaml-destructible-cancel" type="button">Cancel</button>
           <button class="primary-button" id="yaml-destructible-confirm" type="button">I understand</button>
+        </div>
+      </dialog>
+      <dialog class="yaml-warning-dialog" id="yaml-enemy-warning">
+        <h2>Enemy Locations</h2>
+        <p>Adding enemies to locations creates many extra checks and can significantly slow down a playthrough.</p>
+        <div class="yaml-warning-actions">
+          <button class="secondary-button" id="yaml-enemy-cancel" type="button">Cancel</button>
+          <button class="primary-button" id="yaml-enemy-confirm" type="button">I understand</button>
         </div>
       </dialog>
     </main>

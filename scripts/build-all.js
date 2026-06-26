@@ -31,6 +31,7 @@ const version = incrementVersion ? versionManager.incrementVersion() : versionMa
 
 console.log("Shellipelago version " + version + (incrementVersion ? " (incremented)" : " (unchanged)"));
 
+runBuildStep(process.execPath, ["scripts/snapshot-version-map.js"]);
 runBuildStep(process.execPath, ["scripts/clean-build.js"]);
 runBuildStep(process.execPath, ["scripts/package-apworld.js"]);
 runBuildStep(process.execPath, ["scripts/build.js"]);

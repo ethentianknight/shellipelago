@@ -573,6 +573,73 @@ button {
   margin: 0;
 }
 
+.yaml-trap-columns {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.yaml-trap-column {
+  border: 2px solid #f7f7f1;
+  display: grid;
+  gap: 8px;
+  grid-template-rows: auto minmax(140px, 1fr) auto;
+  min-width: 0;
+  padding: 10px;
+}
+
+.yaml-trap-column h3 {
+  font-size: 15px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.yaml-trap-list {
+  align-content: start;
+  display: grid;
+  gap: 8px;
+  min-height: 140px;
+}
+
+.yaml-trap-card {
+  align-items: center;
+  background: #050607;
+  border: 2px solid #f7f7f1;
+  cursor: grab;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: minmax(0, 1fr) 54px;
+  min-height: 46px;
+  padding: 8px;
+}
+
+.yaml-trap-card:active {
+  cursor: grabbing;
+}
+
+.yaml-trap-card span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.yaml-trap-card input {
+  padding: 5px;
+  text-align: center;
+}
+
+.yaml-trap-column[data-trap-column="never"] .yaml-trap-card {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.yaml-trap-column[data-trap-column="never"] .yaml-trap-card input {
+  display: none;
+}
+
+.yaml-trap-all {
+  min-height: 36px;
+  padding: 6px 8px;
+}
+
 .yaml-warning-dialog {
   background: #191b20;
   border: 1px solid #555d70;
