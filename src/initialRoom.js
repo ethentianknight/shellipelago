@@ -359,6 +359,10 @@ var initialRoomPlayer = {
   targetX: 0,
   targetY: 0
 };
+var initialRoomNetSuppressBroadcast = false;
+var initialRoomNetKilledEnemiesByRoom = {};
+var initialRoomNetDestroyedDestructiblesByRoom = {};
+var initialRoomNetRecoloredPlayerImages = {};
 var initialRoomView = {
   tileSize: 32,
   movementTileSize: 32,
@@ -468,6 +472,8 @@ var initialRoomExplosionDuration = 900;
 var initialRoomBombLevelThreeShakeDuration = 280;
 var initialRoomBombLevelThreeShakeMagnitude = 0.16;
 var initialRoomFireDuration = 1800;
+var initialRoomFireSpreadDelay = 250;
+var initialRoomFireRoundCost = 5;
 var initialRoomEnemyHurtDuration = 350;
 var initialRoomEnemyDeathDuration = 650;
 var initialRoomEnemySwordStunDuration = 500;
@@ -4795,6 +4801,591 @@ function initialRoomDrawPlayerCircle() {
   globalsState.progression.graphicsLevel = initialRoomGraphicsLevel;
 }
 
+function initialRoomDrawNetPlayers() {
+  var initialRoomRemotePlayers = typeof shellipelagoNetGetRemotePlayers === "function" ? shellipelagoNetGetRemotePlayers() : [];
+  var initialRoomLocalSnapshot = initialRoomGetNetSnapshot();
+
+  initialRoomRemotePlayers.forEach(function (initialRoomRemotePlayer) {
+    var initialRoomSnapshot = initialRoomRemotePlayer.snapshot || {};
+
+    if (!initialRoomSnapshot.room || !initialRoomLocalSnapshot || !initialRoomNetSameRoom(initialRoomSnapshot.room, initialRoomLocalSnapshot.room)) {
+      return;
+    }
+
+    initialRoomDrawNetPlayer(initialRoomRemotePlayer);
+  });
+}
+
+function initialRoomDrawNetPlayer(initialRoomRemotePlayer) {
+  var initialRoomSnapshot = initialRoomRemotePlayer.snapshot || {};
+  var initialRoomScreenX = initialRoomView.offsetX + (Number(initialRoomSnapshot.x) * initialRoomView.tileSize);
+  var initialRoomScreenY = initialRoomView.offsetY + (Number(initialRoomSnapshot.y) * initialRoomView.tileSize);
+  var initialRoomSpriteSize = initialRoomView.tileSize;
+  var initialRoomSpriteX = Math.round(initialRoomScreenX - (initialRoomSpriteSize / 2));
+  var initialRoomSpriteY = Math.round(initialRoomScreenY - (initialRoomSpriteSize / 2));
+  var initialRoomFrameInfo = initialRoomGetNetPlayerSpriteFrame(initialRoomSnapshot);
+  var initialRoomColor = initialRoomRemotePlayer.color || "#3487ff";
+  var initialRoomRenderColor = initialRoomGetNetRenderColor(initialRoomColor);
+  var initialRoomGraphicsLevel = initialRoomGetGraphicsLevel();
+  var initialRoomImage = initialRoomFrameInfo.image ? initialRoomGetNetRecoloredImage(initialRoomFrameInfo.image, initialRoomColor) : null;
+
+  initialRoomContext.save();
+  initialRoomContext.globalAlpha = 0.88;
+
+  if (initialRoomSnapshot.tank) {
+    if (initialRoomGraphicsLevel < 2) {
+      initialRoomContext.filter = "grayscale(1)";
+    }
+    initialRoomDrawNetTank(initialRoomScreenX, initialRoomScreenY, initialRoomRenderColor, Number(initialRoomSnapshot.tankAngle) || Math.PI / 2);
+  } else if (initialRoomGraphicsLevel <= 0 || !initialRoomImage) {
+    initialRoomDrawNetPlayerBasic(initialRoomScreenX, initialRoomScreenY, initialRoomRenderColor);
+  } else {
+    if (initialRoomGraphicsLevel === 1) {
+      initialRoomContext.filter = "grayscale(1)";
+    }
+    if (initialRoomFrameInfo.flipX) {
+      initialRoomContext.translate(initialRoomSpriteX + initialRoomSpriteSize, initialRoomSpriteY);
+      initialRoomContext.scale(-1, 1);
+      initialRoomContext.drawImage(initialRoomImage, 0, 0, initialRoomSpriteSize, initialRoomSpriteSize);
+    } else {
+      initialRoomContext.drawImage(initialRoomImage, initialRoomSpriteX, initialRoomSpriteY, initialRoomSpriteSize, initialRoomSpriteSize);
+    }
+  }
+
+  initialRoomContext.restore();
+  initialRoomDrawNetPlayerName(initialRoomRemotePlayer.name, initialRoomScreenX, initialRoomSpriteY, initialRoomRenderColor);
+}
+
+function initialRoomGetNetRenderColor(initialRoomColor) {
+  if (initialRoomGetGraphicsLevel() >= 2) {
+    return initialRoomColor;
+  }
+
+  return "#f7f7f1";
+}
+
+function initialRoomDrawNetPlayerBasic(initialRoomScreenX, initialRoomScreenY, initialRoomColor) {
+  var initialRoomRadius = initialRoomView.tileSize * 0.35;
+  var initialRoomPixelUnit = initialRoomGetPixelUnit();
+  var initialRoomOuterCells = Math.ceil(initialRoomRadius / initialRoomPixelUnit);
+  var initialRoomCellCount = (initialRoomOuterCells * 2) + 1;
+  var initialRoomPlayerSize = initialRoomCellCount * initialRoomPixelUnit;
+  var initialRoomOriginX = Math.round(initialRoomScreenX - (initialRoomPlayerSize / 2));
+  var initialRoomOriginY = Math.round(initialRoomScreenY - (initialRoomPlayerSize / 2));
+
+  initialRoomDrawNetPlayerPixelCircle(initialRoomScreenX, initialRoomScreenY, initialRoomOriginX, initialRoomOriginY, initialRoomCellCount, initialRoomPixelUnit, initialRoomRadius, "#050505");
+  initialRoomDrawNetPlayerPixelCircle(initialRoomScreenX, initialRoomScreenY, initialRoomOriginX, initialRoomOriginY, initialRoomCellCount, initialRoomPixelUnit, Math.max(0, initialRoomRadius - initialRoomPixelUnit), initialRoomColor);
+}
+
+function initialRoomDrawNetPlayerPixelCircle(initialRoomScreenX, initialRoomScreenY, initialRoomOriginX, initialRoomOriginY, initialRoomCellCount, initialRoomPixelUnit, initialRoomRadius, initialRoomColor) {
+  var initialRoomCellY = 0;
+
+  initialRoomContext.fillStyle = initialRoomColor;
+
+  while (initialRoomCellY < initialRoomCellCount) {
+    var initialRoomCellX = 0;
+
+    while (initialRoomCellX < initialRoomCellCount) {
+      var initialRoomCellCenterX = initialRoomOriginX + ((initialRoomCellX + 0.5) * initialRoomPixelUnit) - initialRoomScreenX;
+      var initialRoomCellCenterY = initialRoomOriginY + ((initialRoomCellY + 0.5) * initialRoomPixelUnit) - initialRoomScreenY;
+      var initialRoomDistance = Math.sqrt((initialRoomCellCenterX * initialRoomCellCenterX) + (initialRoomCellCenterY * initialRoomCellCenterY));
+
+      if (initialRoomDistance <= initialRoomRadius) {
+        initialRoomContext.fillRect(
+          initialRoomOriginX + (initialRoomCellX * initialRoomPixelUnit),
+          initialRoomOriginY + (initialRoomCellY * initialRoomPixelUnit),
+          initialRoomPixelUnit,
+          initialRoomPixelUnit
+        );
+      }
+
+      initialRoomCellX += 1;
+    }
+
+    initialRoomCellY += 1;
+  }
+}
+
+function initialRoomDrawNetTank(initialRoomScreenX, initialRoomScreenY, initialRoomColor, initialRoomAngle) {
+  var initialRoomPixelUnit = initialRoomGetPixelUnit();
+  var initialRoomTankWidth = initialRoomView.tileSize * 1.45;
+  var initialRoomTankLength = initialRoomView.tileSize * 2.2;
+
+  initialRoomContext.save();
+  initialRoomContext.translate(initialRoomScreenX, initialRoomScreenY);
+  initialRoomContext.rotate(initialRoomAngle + (Math.PI / 2));
+  initialRoomContext.fillStyle = "#050505";
+  initialRoomContext.fillRect(-initialRoomTankWidth / 2, -initialRoomTankLength / 2, initialRoomTankWidth, initialRoomTankLength);
+  initialRoomContext.fillStyle = initialRoomColor;
+  initialRoomContext.fillRect(-initialRoomTankWidth / 2 + initialRoomPixelUnit * 2, -initialRoomTankLength / 2 + initialRoomPixelUnit * 2, initialRoomTankWidth - initialRoomPixelUnit * 4, initialRoomTankLength - initialRoomPixelUnit * 4);
+  initialRoomContext.fillStyle = "#f7f7f1";
+  initialRoomContext.fillRect(-initialRoomPixelUnit, -initialRoomTankLength / 2 - initialRoomView.tileSize * 0.5, initialRoomPixelUnit * 2, initialRoomView.tileSize);
+  initialRoomContext.restore();
+}
+
+function initialRoomDrawNetPlayerName(initialRoomName, initialRoomScreenX, initialRoomSpriteY, initialRoomColor) {
+  var initialRoomPixelUnit = initialRoomGetPixelUnit();
+  var initialRoomNameY = initialRoomSpriteY - initialRoomPixelUnit;
+  var initialRoomNameX = initialRoomScreenX;
+
+  if (!initialRoomName) {
+    return;
+  }
+
+  initialRoomContext.save();
+  initialRoomContext.font = Math.max(10, initialRoomPixelUnit * 5) + "px '" + initialRoomFontFamily + "', monospace";
+  initialRoomContext.textAlign = "center";
+  initialRoomContext.textBaseline = "bottom";
+  initialRoomContext.lineWidth = Math.max(2, initialRoomPixelUnit);
+  initialRoomContext.strokeStyle = "#050505";
+  initialRoomContext.fillStyle = initialRoomColor;
+  initialRoomNameX = Math.max(initialRoomPixelUnit * 3, Math.min(initialRoomCanvas.width - (initialRoomPixelUnit * 3), initialRoomNameX));
+  initialRoomNameY = Math.max(initialRoomPixelUnit * 8, initialRoomNameY);
+  initialRoomContext.strokeText(initialRoomName, initialRoomNameX, initialRoomNameY);
+  initialRoomContext.fillText(initialRoomName, initialRoomNameX, initialRoomNameY);
+  initialRoomContext.restore();
+}
+
+function initialRoomGetNetPlayerSpriteFrame(initialRoomSnapshot) {
+  var initialRoomDirection = initialRoomSnapshot.facingDirection || { x: 0, y: 1 };
+  var initialRoomDirectionKey = "down";
+  var initialRoomFrameKey = "neutral";
+  var initialRoomDirectionImages = null;
+
+  if (Number(initialRoomDirection.y) < 0) {
+    initialRoomDirectionKey = "up";
+  } else if (Number(initialRoomDirection.x) !== 0) {
+    initialRoomDirectionKey = "side";
+  }
+
+  if (initialRoomSnapshot.moving) {
+    initialRoomFrameKey = Math.floor(Date.now() / initialRoomColorPlayerFrameDuration) % 2 === 0 ? "step1" : "step2";
+  }
+
+  initialRoomDirectionImages = initialRoomPlayerImages[initialRoomDirectionKey] || initialRoomPlayerImages.down || {};
+  return {
+    image: initialRoomDirectionImages[initialRoomFrameKey] || initialRoomDirectionImages.neutral,
+    flipX: initialRoomDirectionKey === "side" && Number(initialRoomDirection.x) < 0
+  };
+}
+
+function initialRoomGetNetRecoloredImage(initialRoomImage, initialRoomColor) {
+  var initialRoomCacheKey = initialRoomImage.src + "|" + initialRoomColor;
+  var initialRoomCanvas = null;
+  var initialRoomContext2d = null;
+  var initialRoomPixels = null;
+  var initialRoomRgb = initialRoomParseCanvasColor(initialRoomColor);
+  var initialRoomIndex = 0;
+
+  if (initialRoomNetRecoloredPlayerImages[initialRoomCacheKey]) {
+    return initialRoomNetRecoloredPlayerImages[initialRoomCacheKey];
+  }
+
+  initialRoomCanvas = document.createElement("canvas");
+  initialRoomCanvas.width = initialRoomImage.naturalWidth || initialRoomImage.width;
+  initialRoomCanvas.height = initialRoomImage.naturalHeight || initialRoomImage.height;
+  initialRoomContext2d = initialRoomCanvas.getContext("2d");
+  initialRoomContext2d.drawImage(initialRoomImage, 0, 0);
+  initialRoomPixels = initialRoomContext2d.getImageData(0, 0, initialRoomCanvas.width, initialRoomCanvas.height);
+
+  while (initialRoomIndex < initialRoomPixels.data.length) {
+    var initialRoomRed = initialRoomPixels.data[initialRoomIndex];
+    var initialRoomGreen = initialRoomPixels.data[initialRoomIndex + 1];
+    var initialRoomBlue = initialRoomPixels.data[initialRoomIndex + 2];
+    var initialRoomAlpha = initialRoomPixels.data[initialRoomIndex + 3];
+    var initialRoomBrightness = initialRoomRed + initialRoomGreen + initialRoomBlue;
+
+    if (initialRoomAlpha > 0 && initialRoomBrightness > 48) {
+      initialRoomPixels.data[initialRoomIndex] = Math.round((initialRoomRed * 0.28) + (initialRoomRgb.r * 0.72));
+      initialRoomPixels.data[initialRoomIndex + 1] = Math.round((initialRoomGreen * 0.28) + (initialRoomRgb.g * 0.72));
+      initialRoomPixels.data[initialRoomIndex + 2] = Math.round((initialRoomBlue * 0.28) + (initialRoomRgb.b * 0.72));
+    }
+
+    initialRoomIndex += 4;
+  }
+
+  initialRoomContext2d.putImageData(initialRoomPixels, 0, 0);
+  initialRoomNetRecoloredPlayerImages[initialRoomCacheKey] = initialRoomCanvas;
+  return initialRoomCanvas;
+}
+
+function initialRoomParseCanvasColor(initialRoomColor) {
+  var initialRoomCanvas = document.createElement("canvas");
+  var initialRoomContext2d = initialRoomCanvas.getContext("2d");
+  var initialRoomMatch = null;
+
+  initialRoomCanvas.width = 1;
+  initialRoomCanvas.height = 1;
+  initialRoomContext2d.fillStyle = initialRoomColor || "#3487ff";
+  initialRoomContext2d.fillRect(0, 0, 1, 1);
+  initialRoomMatch = initialRoomContext2d.getImageData(0, 0, 1, 1).data;
+  return {
+    r: initialRoomMatch[0],
+    g: initialRoomMatch[1],
+    b: initialRoomMatch[2]
+  };
+}
+
+function initialRoomGetNetSnapshot() {
+  if (!initialRoomCurrentRoom || initialRoomIsGameOver) {
+    return null;
+  }
+
+  return {
+    room: initialRoomGetNetRoom(),
+    x: initialRoomPlayer.x,
+    y: initialRoomPlayer.y,
+    tileX: Math.floor(initialRoomPlayer.x),
+    tileY: Math.floor(initialRoomPlayer.y),
+    facingDirection: {
+      x: initialRoomPlayer.facingDirection.x,
+      y: initialRoomPlayer.facingDirection.y
+    },
+    moving: initialRoomIsPlayerMoving(),
+    tank: initialRoomHasTankForm(),
+    tankAngle: initialRoomPlayer.tankAngle
+  };
+}
+
+function initialRoomGetNetRoomState() {
+  var initialRoomRoomKey = initialRoomGetNetRoomKey(initialRoomCurrentRoom);
+
+  if (!initialRoomCurrentRoom || !initialRoomRoomKey) {
+    return null;
+  }
+
+  return {
+    room: initialRoomGetNetRoom(),
+    enemyKeys: Object.keys(initialRoomNetKilledEnemiesByRoom[initialRoomRoomKey] || {}),
+    destructibleKeys: Object.keys(initialRoomNetDestroyedDestructiblesByRoom[initialRoomRoomKey] || {})
+  };
+}
+
+function initialRoomApplyNetEnemyKilled(initialRoomEnemyKey, initialRoomRoom) {
+  var initialRoomEnemy = null;
+
+  if (!initialRoomNetIsCurrentRoom(initialRoomRoom)) {
+    return false;
+  }
+
+  initialRoomEnemy = initialRoomFindNetEnemy(initialRoomEnemyKey);
+  if (!initialRoomEnemy || !initialRoomIsEnemyTargetable(initialRoomEnemy)) {
+    return false;
+  }
+
+  initialRoomNetSuppressBroadcast = true;
+  initialRoomDamageEnemy(initialRoomEnemy, Math.max(999, initialRoomEnemy.hp || 0), Date.now());
+  initialRoomNetSuppressBroadcast = false;
+  return true;
+}
+
+function initialRoomApplyNetDestructibleDestroyed(initialRoomDestructibleKey, initialRoomRoom) {
+  var initialRoomTile = null;
+
+  if (!initialRoomNetIsCurrentRoom(initialRoomRoom)) {
+    return false;
+  }
+
+  initialRoomTile = initialRoomFindNetDestructible(initialRoomDestructibleKey);
+  if (!initialRoomTile || initialRoomIsDestructableCheckDestroyed(initialRoomTile)) {
+    return false;
+  }
+
+  initialRoomNetSuppressBroadcast = true;
+  initialRoomDestroyDestructableCheck(initialRoomTile);
+  initialRoomNetSuppressBroadcast = false;
+  return true;
+}
+
+function initialRoomApplyNetAttack(initialRoomEvent) {
+  var initialRoomAttack = initialRoomEvent && initialRoomEvent.attack ? initialRoomEvent.attack : null;
+
+  if (!initialRoomAttack || !initialRoomNetIsCurrentRoom(initialRoomAttack.room)) {
+    return false;
+  }
+
+  if (initialRoomAttack.kind === "gun") {
+    initialRoomApplyNetProjectileAttack(initialRoomAttack);
+    return true;
+  }
+
+  if (initialRoomAttack.kind === "sword") {
+    initialRoomApplyNetSwordAttack(initialRoomAttack);
+    return true;
+  }
+
+  if (initialRoomAttack.kind === "tank") {
+    initialRoomApplyNetTankAttack(initialRoomAttack);
+    return true;
+  }
+
+  if (initialRoomAttack.kind === "bomb") {
+    initialRoomApplyNetBombAttack(initialRoomAttack);
+    return true;
+  }
+
+  if (initialRoomAttack.kind === "fire") {
+    initialRoomSpawnFire(Number(initialRoomAttack.x), Number(initialRoomAttack.y), false, true);
+    return true;
+  }
+
+  return false;
+}
+
+function initialRoomApplyNetProjectileAttack(initialRoomAttack) {
+  var initialRoomNow = Date.now();
+  var initialRoomDirection = initialRoomNormalizeShotDirection(initialRoomAttack.direction || { x: 0, y: 1 });
+  var initialRoomLevel = Math.max(1, Math.min(2, Number(initialRoomAttack.level) || 1));
+
+  initialRoomProjectiles.push({
+    source: "net",
+    x: Number(initialRoomAttack.x) || 0,
+    y: Number(initialRoomAttack.y) || 0,
+    direction: {
+      x: initialRoomDirection.x,
+      y: initialRoomDirection.y
+    },
+    level: initialRoomLevel,
+    damage: initialRoomLevel,
+    radius: initialRoomLevel >= 2 ? 0.16 : 0.08,
+    speed: initialRoomProjectileSpeed,
+    expiresAt: initialRoomNow + (initialRoomLevel >= 2 ? 1800 : 900)
+  });
+}
+
+function initialRoomApplyNetSwordAttack(initialRoomAttack) {
+  var initialRoomNow = Date.now();
+  var initialRoomDirection = initialRoomNormalizeShotDirection(initialRoomAttack.direction || { x: 0, y: 1 });
+  var initialRoomLevel = Math.max(1, Math.min(3, Number(initialRoomAttack.level) || 1));
+  var initialRoomOrigin = {
+    x: Number(initialRoomAttack.x) || 0,
+    y: Number(initialRoomAttack.y) || 0
+  };
+  var initialRoomPoints = initialRoomGetNetMeleeAttackPoints(initialRoomOrigin, initialRoomLevel, initialRoomDirection);
+
+  initialRoomMeleeAttacks.push({
+    points: initialRoomPoints,
+    direction: {
+      x: initialRoomDirection.x,
+      y: initialRoomDirection.y
+    },
+    level: initialRoomLevel,
+    startedAt: initialRoomNow,
+    expiresAt: initialRoomNow + initialRoomMeleeDuration,
+    movementLockUntil: 0
+  });
+  initialRoomDamageNetMeleeTargets(initialRoomOrigin, initialRoomLevel, initialRoomDirection, initialRoomGetSwordDamage(initialRoomLevel), initialRoomNow);
+}
+
+function initialRoomApplyNetTankAttack(initialRoomAttack) {
+  var initialRoomNow = Date.now();
+  var initialRoomDirection = initialRoomNormalizeShotDirection(initialRoomAttack.direction || { x: 0, y: 1 });
+  var initialRoomShot = {
+    id: "net:" + initialRoomNow + ":" + Math.random().toString(36).slice(2),
+    startX: Number(initialRoomAttack.startX) || Number(initialRoomAttack.x) || 0,
+    startY: Number(initialRoomAttack.startY) || Number(initialRoomAttack.y) || 0,
+    endX: Number(initialRoomAttack.endX) || Number(initialRoomAttack.x) || 0,
+    endY: Number(initialRoomAttack.endY) || Number(initialRoomAttack.y) || 0,
+    direction: initialRoomDirection,
+    normal: {
+      x: -initialRoomDirection.y,
+      y: initialRoomDirection.x
+    },
+    startedAt: initialRoomNow,
+    expiresAt: initialRoomNow + initialRoomTankShotDuration
+  };
+
+  initialRoomTankShots.push(initialRoomShot);
+  if (initialRoomGetPointToSegmentDistance(initialRoomPlayer.x, initialRoomPlayer.y, initialRoomShot.startX, initialRoomShot.startY, initialRoomShot.endX, initialRoomShot.endY) <= initialRoomGetPlayerCollisionRadius() + 0.28) {
+    initialRoomDamagePlayer(3, "netTank");
+  }
+  initialRoomDamageEnemiesInTankShot(initialRoomShot, initialRoomNow);
+}
+
+function initialRoomApplyNetBombAttack(initialRoomAttack) {
+  var initialRoomNow = Date.now();
+  var initialRoomLevel = Math.max(1, Math.min(3, Number(initialRoomAttack.level) || 1));
+  var initialRoomTileX = Math.floor(Number(initialRoomAttack.x) || 0);
+  var initialRoomTileY = Math.floor(Number(initialRoomAttack.y) || 0);
+
+  initialRoomBombs.push({
+    id: "net:" + initialRoomNow + ":" + initialRoomTileX + "," + initialRoomTileY,
+    kind: "bomb",
+    sourceNet: true,
+    x: initialRoomTileX,
+    y: initialRoomTileY,
+    level: initialRoomLevel,
+    radius: initialRoomGetBombRadius(initialRoomLevel),
+    damage: initialRoomGetBombDamage(initialRoomLevel),
+    placedAt: initialRoomNow,
+    explodedAt: initialRoomNow + initialRoomBombFuseDuration
+  });
+}
+
+function initialRoomGetNetMeleeAttackPoints(initialRoomOrigin, initialRoomSwordLevel, initialRoomDirection) {
+  var initialRoomForwardDistance = 0.58;
+  var initialRoomFrontPoint = {
+    x: initialRoomOrigin.x + (initialRoomDirection.x * initialRoomForwardDistance),
+    y: initialRoomOrigin.y + (initialRoomDirection.y * initialRoomForwardDistance)
+  };
+  var initialRoomSide = {
+    x: -initialRoomDirection.y,
+    y: initialRoomDirection.x
+  };
+  var initialRoomSideDistance = 0.82;
+
+  if (initialRoomSwordLevel < 2) {
+    return [initialRoomFrontPoint];
+  }
+
+  return [{
+    x: initialRoomFrontPoint.x + (initialRoomSide.x * initialRoomSideDistance),
+    y: initialRoomFrontPoint.y + (initialRoomSide.y * initialRoomSideDistance)
+  }, initialRoomFrontPoint, {
+    x: initialRoomFrontPoint.x - (initialRoomSide.x * initialRoomSideDistance),
+    y: initialRoomFrontPoint.y - (initialRoomSide.y * initialRoomSideDistance)
+  }];
+}
+
+function initialRoomDamageNetMeleeTargets(initialRoomOrigin, initialRoomSwordLevel, initialRoomDirection, initialRoomDamage, initialRoomNow) {
+  initialRoomEnemies.forEach(function (initialRoomEnemy) {
+    if (initialRoomIsEnemyTargetable(initialRoomEnemy) && initialRoomIsPointInNetMeleeArea(initialRoomEnemy.x, initialRoomEnemy.y, initialRoomEnemy.radius, initialRoomOrigin, initialRoomSwordLevel, initialRoomDirection)) {
+      initialRoomDamageEnemy(initialRoomEnemy, initialRoomDamage, initialRoomNow, initialRoomEnemySwordStunDuration);
+    }
+  });
+
+  if (initialRoomIsPointInNetMeleeArea(initialRoomPlayer.x, initialRoomPlayer.y, initialRoomGetPlayerCollisionRadius(), initialRoomOrigin, initialRoomSwordLevel, initialRoomDirection)) {
+    initialRoomDamagePlayer(initialRoomDamage, "netSword");
+  }
+}
+
+function initialRoomIsPointInNetMeleeArea(initialRoomX, initialRoomY, initialRoomRadius, initialRoomOrigin, initialRoomSwordLevel, initialRoomDirection) {
+  var initialRoomDeltaX = initialRoomX - initialRoomOrigin.x;
+  var initialRoomDeltaY = initialRoomY - initialRoomOrigin.y;
+  var initialRoomForwardDistance = (initialRoomDeltaX * initialRoomDirection.x) + (initialRoomDeltaY * initialRoomDirection.y);
+  var initialRoomSideDistance = Math.abs((initialRoomDeltaX * -initialRoomDirection.y) + (initialRoomDeltaY * initialRoomDirection.x));
+  var initialRoomForwardReach = 1.15 + initialRoomRadius;
+  var initialRoomSideReach = (initialRoomSwordLevel >= 2 ? 1.28 : 0.46) + initialRoomRadius;
+
+  return initialRoomForwardDistance >= -initialRoomRadius &&
+    initialRoomForwardDistance <= initialRoomForwardReach &&
+    initialRoomSideDistance <= initialRoomSideReach;
+}
+
+function initialRoomRecordNetEnemyKilled(initialRoomEnemy) {
+  var initialRoomRoomKey = initialRoomGetNetRoomKey(initialRoomCurrentRoom);
+  var initialRoomEnemyKey = initialRoomGetNetEnemyKey(initialRoomEnemy);
+
+  if (initialRoomNetSuppressBroadcast || !initialRoomRoomKey || !initialRoomEnemyKey) {
+    return;
+  }
+
+  if (!initialRoomNetKilledEnemiesByRoom[initialRoomRoomKey]) {
+    initialRoomNetKilledEnemiesByRoom[initialRoomRoomKey] = {};
+  }
+  initialRoomNetKilledEnemiesByRoom[initialRoomRoomKey][initialRoomEnemyKey] = true;
+
+  if (typeof shellipelagoNetBroadcastEnemyKilled === "function") {
+    shellipelagoNetBroadcastEnemyKilled(initialRoomEnemyKey, initialRoomGetNetRoom());
+  }
+}
+
+function initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed) {
+  var initialRoomRoomKey = initialRoomGetNetRoomKey(initialRoomCurrentRoom);
+
+  if (initialRoomNetSuppressBroadcast || initialRoomWasAlreadyDestroyed || !initialRoomRoomKey || !initialRoomRuntimeKey) {
+    return;
+  }
+
+  if (!initialRoomNetDestroyedDestructiblesByRoom[initialRoomRoomKey]) {
+    initialRoomNetDestroyedDestructiblesByRoom[initialRoomRoomKey] = {};
+  }
+  initialRoomNetDestroyedDestructiblesByRoom[initialRoomRoomKey][initialRoomRuntimeKey] = true;
+
+  if (typeof shellipelagoNetBroadcastDestructibleDestroyed === "function") {
+    shellipelagoNetBroadcastDestructibleDestroyed(initialRoomRuntimeKey, initialRoomGetNetRoom());
+  }
+}
+
+function initialRoomBroadcastNetAttack(initialRoomAttack) {
+  if (initialRoomNetSuppressBroadcast || !initialRoomAttack || typeof shellipelagoNetBroadcastAttack !== "function") {
+    return;
+  }
+
+  shellipelagoNetBroadcastAttack(initialRoomAttack);
+}
+
+function initialRoomBroadcastNetGameOver() {
+  if (initialRoomNetSuppressBroadcast || typeof shellipelagoNetBroadcastGameOver !== "function") {
+    return;
+  }
+
+  shellipelagoNetBroadcastGameOver({
+    room: initialRoomGetNetRoom()
+  });
+}
+
+function initialRoomGetNetEnemyKey(initialRoomEnemy) {
+  if (!initialRoomEnemy) {
+    return "";
+  }
+
+  return initialRoomEnemy.id || [
+    initialRoomEnemy.enemyType,
+    initialRoomEnemy.spawnTileX,
+    initialRoomEnemy.spawnTileY
+  ].join(":");
+}
+
+function initialRoomFindNetEnemy(initialRoomEnemyKey) {
+  var initialRoomMatch = null;
+
+  initialRoomEnemies.forEach(function (initialRoomEnemy) {
+    if (!initialRoomMatch && initialRoomGetNetEnemyKey(initialRoomEnemy) === initialRoomEnemyKey) {
+      initialRoomMatch = initialRoomEnemy;
+    }
+  });
+
+  return initialRoomMatch;
+}
+
+function initialRoomFindNetDestructible(initialRoomDestructibleKey) {
+  var initialRoomMatch = null;
+
+  (initialRoomCurrentRoom.tiles || []).forEach(function (initialRoomTile) {
+    if (!initialRoomMatch && initialRoomIsDestructableCheckTile(initialRoomTile) && initialRoomGetDestructableCheckRuntimeKey(initialRoomTile) === initialRoomDestructibleKey) {
+      initialRoomMatch = initialRoomTile;
+    }
+  });
+
+  return initialRoomMatch;
+}
+
+function initialRoomGetNetRoom() {
+  return {
+    x: initialRoomCurrentRoom ? initialRoomCurrentRoom.x : 0,
+    y: initialRoomCurrentRoom ? initialRoomCurrentRoom.y : 0
+  };
+}
+
+function initialRoomGetNetRoomKey(initialRoomRoom) {
+  if (!initialRoomRoom) {
+    return "";
+  }
+
+  return initialRoomRoom.x + "," + initialRoomRoom.y;
+}
+
+function initialRoomNetIsCurrentRoom(initialRoomRoom) {
+  return initialRoomCurrentRoom && initialRoomNetSameRoom(initialRoomGetNetRoom(), initialRoomRoom);
+}
+
+function initialRoomNetSameRoom(initialRoomFirstRoom, initialRoomSecondRoom) {
+  return initialRoomFirstRoom && initialRoomSecondRoom &&
+    Number(initialRoomFirstRoom.x) === Number(initialRoomSecondRoom.x) &&
+    Number(initialRoomFirstRoom.y) === Number(initialRoomSecondRoom.y);
+}
+
 function initialRoomGetPlayerSpriteFrame() {
   var initialRoomDirectionKey = initialRoomGetPlayerSpriteDirectionKey();
   var initialRoomFrameKey = initialRoomGetPlayerSpriteFrameKey();
@@ -5395,9 +5986,12 @@ function initialRoomDrawWrappedMessageLines(initialRoomDrawContext, initialRoomM
 }
 
 function initialRoomDrawHud() {
+  initialRoomSyncPlayerResourceMaxes();
+
   var initialRoomPixelUnit = initialRoomGetPixelUnit();
   var initialRoomMargin = initialRoomPixelUnit * 4;
-  var initialRoomBarWidth = Math.min(initialRoomCanvas.width * 0.42, initialRoomPixelUnit * 96);
+  var initialRoomMaxBarWidth = Math.min(initialRoomCanvas.width * 0.34, initialRoomPixelUnit * 77);
+  var initialRoomBarWidth = initialRoomGetHudHpBarWidth(initialRoomMaxBarWidth);
   var initialRoomBarHeight = initialRoomPixelUnit * 8;
   var initialRoomLabelWidth = initialRoomPixelUnit * 13;
   var initialRoomHudFontSize = Math.max(28, initialRoomPixelUnit * 7);
@@ -5406,8 +6000,6 @@ function initialRoomDrawHud() {
   var initialRoomReadoutX = initialRoomMargin + initialRoomLabelWidth + initialRoomBarWidth + (initialRoomPixelUnit * 5);
   var initialRoomReadoutY = initialRoomMargin + (initialRoomBarHeight / 2);
   var initialRoomReadoutGap = initialRoomPixelUnit * 34;
-
-  initialRoomSyncPlayerResourceMaxes();
 
   initialRoomContext.save();
   initialRoomContext.font = initialRoomHudFontSize + "px '" + initialRoomFontFamily + "', monospace";
@@ -5422,7 +6014,7 @@ function initialRoomDrawHud() {
   initialRoomContext.fillRect(
     initialRoomMargin + initialRoomLabelWidth + initialRoomPixelUnit,
     initialRoomMargin + initialRoomPixelUnit,
-    Math.max(0, (initialRoomBarWidth - (initialRoomPixelUnit * 2)) * initialRoomHpPercent),
+    Math.max(0, (Math.max(0, initialRoomBarWidth - (initialRoomPixelUnit * 2))) * initialRoomHpPercent),
     initialRoomBarHeight - (initialRoomPixelUnit * 2)
   );
 
@@ -5434,6 +6026,21 @@ function initialRoomDrawHud() {
   }
 
   initialRoomContext.restore();
+}
+
+function initialRoomGetHudHpBarWidth(initialRoomMaxBarWidth) {
+  var initialRoomMaxPickupCount = initialRoomGetProgressiveDefinitionCount("hp");
+  var initialRoomMaxPossibleHp = 1 + initialRoomMaxPickupCount;
+  var initialRoomEffectiveMaxHp = initialRoomGetEffectiveMaxHp();
+  var initialRoomProgress = initialRoomMaxPossibleHp > 0 ? initialRoomEffectiveMaxHp / initialRoomMaxPossibleHp : 1;
+
+  return Math.max(initialRoomGetPixelUnit() * 4, initialRoomMaxBarWidth * Math.max(0, Math.min(1, initialRoomProgress)));
+}
+
+function initialRoomGetProgressiveDefinitionCount(initialRoomProgressiveKey) {
+  var initialRoomDefinition = globalsState.progressiveCheckDefinitions[initialRoomProgressiveKey] || {};
+
+  return Number(initialRoomDefinition.count) || 0;
 }
 
 function initialRoomGetHudHpFillColor() {
@@ -5464,6 +6071,10 @@ function initialRoomGetWeaponGrantedMaxRounds() {
   }
 
   if (progressionManagerGetProgressiveValue("gun") > 0) {
+    initialRoomWeaponRoundBonus += 5;
+  }
+
+  if (globalsState.progression.fire) {
     initialRoomWeaponRoundBonus += 5;
   }
 
@@ -6614,6 +7225,7 @@ function initialRoomDraw() {
   initialRoomDrawProjectiles();
   initialRoomDrawWizardFireballs();
   initialRoomDrawMeleeAttacks("underPlayer");
+  initialRoomDrawNetPlayers();
   initialRoomDrawPlayer();
   initialRoomDrawMeleeAttacks("overPlayer");
   initialRoomDrawTankShots();
@@ -7468,6 +8080,13 @@ function initialRoomAdvanceTileMove(initialRoomMoveAmount) {
     initialRoomPlayer.x = initialRoomPlayer.targetX;
     initialRoomPlayer.y = initialRoomPlayer.targetY;
     initialRoomPlayer.moveDirection = null;
+    initialRoomSendNetPositionAtActionCenter();
+  }
+}
+
+function initialRoomSendNetPositionAtActionCenter() {
+  if (typeof shellipelagoNetSendPosition === "function") {
+    shellipelagoNetSendPosition();
   }
 }
 
@@ -7792,18 +8411,71 @@ function initialRoomCanWizardTeleportTo(initialRoomTileX, initialRoomTileY) {
 }
 
 function initialRoomUpdateSnakeEnemy(initialRoomEnemy, initialRoomDeltaSeconds) {
-  var initialRoomDistanceToPlayer = initialRoomGetDistance(initialRoomEnemy.x, initialRoomEnemy.y, initialRoomPlayer.x, initialRoomPlayer.y);
-  var initialRoomDeltaX = initialRoomPlayer.x - initialRoomEnemy.x;
-  var initialRoomDeltaY = initialRoomPlayer.y - initialRoomEnemy.y;
+  var initialRoomSnakeTarget = initialRoomGetSnakeTarget(initialRoomEnemy);
+  var initialRoomDistanceToPlayer = initialRoomGetDistance(initialRoomEnemy.x, initialRoomEnemy.y, initialRoomSnakeTarget.x, initialRoomSnakeTarget.y);
+  var initialRoomDeltaX = initialRoomSnakeTarget.x - initialRoomEnemy.x;
+  var initialRoomDeltaY = initialRoomSnakeTarget.y - initialRoomEnemy.y;
 
   if (initialRoomEnemy.state === "hidden" && initialRoomDistanceToPlayer <= 1) {
     initialRoomEnemy.state = "chase";
+    initialRoomBroadcastNetSnakeAwakened(initialRoomEnemy);
   }
 
   if (initialRoomEnemy.state === "chase") {
     initialRoomEnemy.facingDirection = initialRoomGetEnemyFacingDirection(initialRoomDeltaX, initialRoomDeltaY);
-    initialRoomMoveEnemyToward(initialRoomEnemy, initialRoomPlayer.x, initialRoomPlayer.y, initialRoomEnemy.chaseSpeed, initialRoomDeltaSeconds);
+    initialRoomMoveEnemyToward(initialRoomEnemy, initialRoomSnakeTarget.x, initialRoomSnakeTarget.y, initialRoomEnemy.chaseSpeed, initialRoomDeltaSeconds);
   }
+}
+
+function initialRoomBroadcastNetSnakeAwakened(initialRoomEnemy) {
+  if (initialRoomNetSuppressBroadcast || !initialRoomEnemy || typeof shellipelagoNetBroadcastSnakeAwakened !== "function") {
+    return;
+  }
+
+  shellipelagoNetBroadcastSnakeAwakened({
+    room: initialRoomGetNetRoom(),
+    enemyKey: initialRoomGetNetEnemyKey(initialRoomEnemy),
+    activatorPlayerId: typeof shellipelagoNetGetLocalPlayerId === "function" ? shellipelagoNetGetLocalPlayerId() : ""
+  });
+}
+
+function initialRoomGetSnakeTarget(initialRoomEnemy) {
+  var initialRoomRemoteTarget = initialRoomGetNetPlayerTarget(initialRoomEnemy.netTargetPlayerId);
+
+  if (initialRoomRemoteTarget) {
+    return initialRoomRemoteTarget;
+  }
+
+  return {
+    x: initialRoomPlayer.x,
+    y: initialRoomPlayer.y
+  };
+}
+
+function initialRoomGetNetPlayerTarget(initialRoomPlayerId) {
+  var initialRoomRemotePlayers = typeof shellipelagoNetGetRemotePlayers === "function" ? shellipelagoNetGetRemotePlayers() : [];
+  var initialRoomLocalSnapshot = initialRoomGetNetSnapshot();
+  var initialRoomRemoteIndex = 0;
+
+  if (!initialRoomPlayerId || !initialRoomLocalSnapshot) {
+    return null;
+  }
+
+  while (initialRoomRemoteIndex < initialRoomRemotePlayers.length) {
+    var initialRoomRemotePlayer = initialRoomRemotePlayers[initialRoomRemoteIndex];
+    var initialRoomSnapshot = initialRoomRemotePlayer && initialRoomRemotePlayer.snapshot ? initialRoomRemotePlayer.snapshot : null;
+
+    if (initialRoomRemotePlayer.id === initialRoomPlayerId && initialRoomSnapshot && initialRoomNetSameRoom(initialRoomSnapshot.room, initialRoomLocalSnapshot.room)) {
+      return {
+        x: Number(initialRoomSnapshot.x) || 0,
+        y: Number(initialRoomSnapshot.y) || 0
+      };
+    }
+
+    initialRoomRemoteIndex += 1;
+  }
+
+  return null;
 }
 
 function initialRoomGetEnemyFacingDirection(initialRoomDeltaX, initialRoomDeltaY) {
@@ -7888,6 +8560,9 @@ function initialRoomUpdateBombs() {
     }
   });
 
+  initialRoomBombs.forEach(function (initialRoomBomb) {
+    initialRoomSpreadFire(initialRoomBomb, initialRoomNow);
+  });
   initialRoomBombs = initialRoomBombs.filter(function (initialRoomBomb) {
     var initialRoomIsActive = initialRoomNow < initialRoomBomb.explodedAt + initialRoomGetExplosionDuration(initialRoomBomb);
 
@@ -8013,6 +8688,11 @@ function initialRoomUpdateProjectile(initialRoomProjectile, initialRoomDeltaSeco
     return false;
   }
 
+  if (initialRoomProjectile.source === "net" && initialRoomGetDistance(initialRoomProjectile.x, initialRoomProjectile.y, initialRoomPlayer.x, initialRoomPlayer.y) <= initialRoomProjectile.radius + initialRoomGetPlayerCollisionRadius()) {
+    initialRoomDamagePlayer(initialRoomProjectile.damage, "netProjectile");
+    return false;
+  }
+
   return !initialRoomTryProjectileHitEnemy(initialRoomProjectile, initialRoomNow);
 }
 
@@ -8110,12 +8790,12 @@ function initialRoomApplyExplosionDamageToPlayer(initialRoomExplosion) {
     return;
   }
 
-  if (initialRoomExplosion.damageType === "fire") {
+  if (initialRoomExplosion.damageType === "fire" && !initialRoomExplosion.sourceNet) {
     return;
   }
 
   if (Math.floor(initialRoomPlayer.x) === initialRoomExplosion.x && Math.floor(initialRoomPlayer.y) === initialRoomExplosion.y) {
-    initialRoomDamagePlayer(initialRoomExplosion.damage, "bomb");
+    initialRoomDamagePlayer(initialRoomExplosion.damage, initialRoomExplosion.damageType === "fire" ? "netFire" : "bomb");
   }
 }
 
@@ -8193,6 +8873,7 @@ function initialRoomStartEnemyDeath(initialRoomEnemy, initialRoomNow) {
     return;
   }
 
+  initialRoomRecordNetEnemyKilled(initialRoomEnemy);
   initialRoomEnemy.state = "dying";
   initialRoomEnemy.deathStartedAt = initialRoomNow;
   initialRoomEnemy.deathUntil = initialRoomNow + initialRoomEnemyDeathDuration;
@@ -8345,6 +9026,7 @@ function initialRoomIsGeneratedArchipelagoLocationActive(initialRoomGeneratedLoc
 
 function initialRoomDestroyLocalOnlyDestructableCheck(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed) {
   initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+  initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
 
   if (!initialRoomWasAlreadyDestroyed) {
     initialRoomHandleOpenedCheck("itemPool1");
@@ -8373,6 +9055,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
 
       if (archipelagoClientSendGeneratedLocationCheck(initialRoomGeneratedLocation)) {
         initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+        initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
         return true;
       }
 
@@ -8384,6 +9067,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
     }
 
     initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+    initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
     if (initialRoomRewardKey && !initialRoomWasAlreadyDestroyed) {
       if (initialRoomRewardWasAlreadyGained) {
         initialRoomHandleOpenedCheck("itemPool2");
@@ -8399,6 +9083,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
   if (globalsState.archipelago.connected) {
     if (archipelagoClientSendLocationCheck(initialRoomCheckKey)) {
       initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+      initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
       return true;
     }
 
@@ -8407,6 +9092,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
 
   if (initialRoomIsLocationChecked(initialRoomCheckKey)) {
     initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+    initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
     initialRoomHandleOpenedCheck("itemPool1");
     initialRoomSaveOfflineProgress();
     return true;
@@ -8414,6 +9100,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
 
   if (initialRoomRewardKey === "empty") {
     initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+    initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
     globalsState.locations[initialRoomCheckKey].checked = true;
     initialRoomSaveOfflineProgress();
     return true;
@@ -8421,6 +9108,7 @@ function initialRoomDestroyDestructableCheck(initialRoomTile) {
 
   if (progressionManagerCollectLocation(initialRoomCheckKey, initialRoomRewardKey)) {
     initialRoomDestroyedDestructableChecks[initialRoomRuntimeKey] = true;
+    initialRoomRecordNetDestructibleDestroyed(initialRoomRuntimeKey, initialRoomWasAlreadyDestroyed);
     initialRoomRecordOfflineReward(initialRoomCheckKey, initialRoomRewardKey);
     initialRoomSaveOfflineProgress();
     initialRoomHandleOpenedCheck(initialRoomRewardKey);
@@ -8560,6 +9248,7 @@ function initialRoomKillPlayer(initialRoomDeathReason) {
 function initialRoomStartGameOver(initialRoomNow) {
   var initialRoomShouldShowLocalGameOver = !initialRoomIsOnlineModeActive() || !initialRoomIsDeathLinkEnabled();
 
+  initialRoomBroadcastNetGameOver();
   initialRoomStopBgm();
   initialRoomStopSnakeLoops();
   initialRoomPlaySfx("gameover");
@@ -8607,6 +9296,10 @@ function initialRoomReloadAfterGameOver() {
   initialRoomCurrentMessageFlipped = false;
   initialRoomMessageQueue = [];
   initialRoomLastUpdateTime = Date.now();
+  if (typeof shellipelagoNetSendCellSync === "function") {
+    shellipelagoNetSendCellSync();
+  }
+  initialRoomSendNetPositionAtActionCenter();
 }
 
 function initialRoomResetFinalRunSceneForFreshEntry() {
@@ -9131,6 +9824,9 @@ function initialRoomUpdate() {
   initialRoomLastUpdateTime = initialRoomNow;
   initialRoomUpdateBgm(initialRoomNow);
   initialRoomUpdateTrapState(initialRoomNow);
+  if (typeof shellipelagoNetUpdate === "function") {
+    shellipelagoNetUpdate();
+  }
 
   if (initialRoomFinalRunState.active) {
     return;
@@ -9282,30 +9978,43 @@ function initialRoomPlaceBomb() {
     placedAt: initialRoomNow,
     explodedAt: initialRoomNow + initialRoomBombFuseDuration
   });
+  initialRoomBroadcastNetAttack({
+    kind: "bomb",
+    room: initialRoomGetNetRoom(),
+    x: initialRoomTileX,
+    y: initialRoomTileY,
+    level: initialRoomBombLevel
+  });
 }
 
 function initialRoomPlaceFire() {
   var initialRoomDirection = initialRoomPlayer.facingDirection || { x: 0, y: 1 };
   var initialRoomTileX = Math.floor(initialRoomPlayer.x + initialRoomDirection.x);
   var initialRoomTileY = Math.floor(initialRoomPlayer.y + initialRoomDirection.y);
-  var initialRoomNow = Date.now();
 
-  if (initialRoomHasTankForm() || !globalsState.progression.fire || initialRoomPlayer.energy < 1) {
+  if (initialRoomHasTankForm() || !globalsState.progression.fire || initialRoomPlayer.rounds < initialRoomFireRoundCost) {
     return;
   }
+
+  if (!initialRoomSpawnFire(initialRoomTileX, initialRoomTileY, true, false)) {
+    return;
+  }
+
+  initialRoomPlayer.rounds = Math.max(0, initialRoomPlayer.rounds - initialRoomFireRoundCost);
+}
+
+function initialRoomSpawnFire(initialRoomTileX, initialRoomTileY, initialRoomCostsRounds, initialRoomSourceNet) {
+  var initialRoomNow = Date.now();
+  var initialRoomFire = null;
 
   if (initialRoomTileX < 0 || initialRoomTileY < 0 || initialRoomTileX >= mapManagerData.roomWidth || initialRoomTileY >= mapManagerData.roomHeight) {
-    return;
+    return false;
   }
 
-  initialRoomPlayer.energy -= 1;
-  if (initialRoomIsEnergyLinkEnabled() && initialRoomIsOnlineModeActive() && typeof archipelagoClientSendEnergyLinkDeplete === "function") {
-    archipelagoClientSendEnergyLinkDeplete(1, "fire:" + initialRoomNow + ":" + Math.random().toString(36).slice(2));
-  }
-
-  initialRoomBombs.push({
-    id: "fire:" + initialRoomNow + ":" + initialRoomTileX + "," + initialRoomTileY,
+  initialRoomFire = {
+    id: "fire:" + initialRoomNow + ":" + initialRoomTileX + "," + initialRoomTileY + ":" + Math.random().toString(36).slice(2),
     kind: "fire",
+    sourceNet: Boolean(initialRoomSourceNet),
     x: initialRoomTileX,
     y: initialRoomTileY,
     level: 1,
@@ -9313,12 +10022,27 @@ function initialRoomPlaceFire() {
     damage: 2,
     placedAt: initialRoomNow,
     explodedAt: initialRoomNow,
-    duration: initialRoomFireDuration
-  });
-  initialRoomCreateBombExplosionObjects(initialRoomBombs[initialRoomBombs.length - 1], initialRoomNow);
-  initialRoomPlaySfx("fire");
-}
+    duration: initialRoomFireDuration,
+    spreadAt: initialRoomNow + initialRoomFireSpreadDelay,
+    spreadComplete: false
+  };
 
+  initialRoomBombs.push(initialRoomFire);
+  initialRoomCreateBombExplosionObjects(initialRoomFire, initialRoomNow);
+
+  if (initialRoomCostsRounds) {
+    initialRoomPlaySfx("fire");
+    initialRoomBroadcastNetAttack({
+      kind: "fire",
+      room: initialRoomGetNetRoom(),
+      x: initialRoomTileX,
+      y: initialRoomTileY,
+      level: 1
+    });
+  }
+
+  return true;
+}
 function initialRoomShoot(initialRoomRequestedDirection) {
   var initialRoomGunLevel = Math.min(2, progressionManagerGetProgressiveValue("gun"));
   var initialRoomProjectileLevel = initialRoomGunLevel;
@@ -9355,6 +10079,17 @@ function initialRoomShoot(initialRoomRequestedDirection) {
     radius: initialRoomProjectileLevel >= 2 ? 0.16 : 0.08,
     speed: initialRoomProjectileSpeed,
     expiresAt: initialRoomNow + (initialRoomProjectileLevel >= 2 ? 1800 : 900)
+  });
+  initialRoomBroadcastNetAttack({
+    kind: "gun",
+    room: initialRoomGetNetRoom(),
+    x: initialRoomPlayer.x + (initialRoomDirection.x * 0.45),
+    y: initialRoomPlayer.y + (initialRoomDirection.y * 0.45),
+    direction: {
+      x: initialRoomDirection.x,
+      y: initialRoomDirection.y
+    },
+    level: initialRoomProjectileLevel
   });
   initialRoomNextProjectileShotAllowedAt = initialRoomNow + initialRoomProjectileShotCooldownMs;
   initialRoomPlaySfx("bullet");
@@ -9410,6 +10145,18 @@ function initialRoomFireTankCannon() {
   initialRoomTankShots.push(initialRoomShot);
   initialRoomDamageEnemiesInTankShot(initialRoomShot, initialRoomNow);
   initialRoomApplyTankShotImpact(initialRoomShot);
+  initialRoomBroadcastNetAttack({
+    kind: "tank",
+    room: initialRoomGetNetRoom(),
+    startX: initialRoomShot.startX,
+    startY: initialRoomShot.startY,
+    endX: initialRoomShot.endX,
+    endY: initialRoomShot.endY,
+    direction: {
+      x: initialRoomDirection.x,
+      y: initialRoomDirection.y
+    }
+  });
   initialRoomNextTankShotAllowedAt = initialRoomNow + initialRoomTankShotCooldown;
   initialRoomPlaySfx("tank");
 }
@@ -9577,6 +10324,17 @@ function initialRoomMeleeAttack() {
     startedAt: initialRoomNow,
     expiresAt: initialRoomNow + initialRoomMeleeDuration,
     movementLockUntil: initialRoomNow + initialRoomMeleeDuration
+  });
+  initialRoomBroadcastNetAttack({
+    kind: "sword",
+    room: initialRoomGetNetRoom(),
+    x: initialRoomPlayer.x,
+    y: initialRoomPlayer.y,
+    direction: {
+      x: initialRoomDirection.x,
+      y: initialRoomDirection.y
+    },
+    level: initialRoomSwordLevel
   });
 }
 
@@ -9790,6 +10548,7 @@ function initialRoomMapExplosionTiles(initialRoomTiles, initialRoomBomb) {
       damage: initialRoomBomb.damage || 3,
       bombLevel: initialRoomBomb.level || 1,
       damageType: initialRoomBomb.kind === "fire" ? "fire" : "bomb",
+      sourceNet: Boolean(initialRoomBomb.sourceNet),
       tileOnly: Boolean(initialRoomTile.tileOnly),
       expiresAt: initialRoomBomb.explodedAt + initialRoomGetExplosionDuration(initialRoomBomb)
     };
@@ -9825,6 +10584,31 @@ function initialRoomCreateBombExplosionObjects(initialRoomBomb, initialRoomNow) 
   });
 }
 
+function initialRoomSpreadFire(initialRoomBomb, initialRoomNow) {
+  var initialRoomDirections = [
+    { x: 0, y: -1 },
+    { x: 1, y: 0 },
+    { x: 0, y: 1 },
+    { x: -1, y: 0 }
+  ];
+
+  if (initialRoomBomb.kind !== "fire" || initialRoomBomb.spreadComplete || initialRoomNow < initialRoomBomb.spreadAt) {
+    return;
+  }
+
+  initialRoomBomb.spreadComplete = true;
+  initialRoomDirections.forEach(function (initialRoomDirection) {
+    var initialRoomTileX = initialRoomBomb.x + initialRoomDirection.x;
+    var initialRoomTileY = initialRoomBomb.y + initialRoomDirection.y;
+    var initialRoomTile = initialRoomGetTile(initialRoomTileX, initialRoomTileY);
+
+    if (!initialRoomCanDestroyDestructableCheck(initialRoomTile, "fire", 1)) {
+      return;
+    }
+
+    initialRoomSpawnFire(initialRoomTileX, initialRoomTileY, false);
+  });
+}
 function initialRoomKillBuriedSnakesForBomb(initialRoomBomb, initialRoomNow) {
   initialRoomEnemies.forEach(function (initialRoomEnemy) {
     if (!initialRoomIsBuriedSnake(initialRoomEnemy)) {
@@ -9958,10 +10742,11 @@ function initialRoomSubmitTextEntry() {
     return;
   }
 
+  if (typeof archipelagoClientSendChatMessage === "function" && archipelagoClientSendChatMessage(initialRoomSubmittedMessage)) {
+    return;
+  }
+
   if (initialRoomIsOnlineModeActive()) {
-    if (typeof archipelagoClientSendChatMessage === "function") {
-      archipelagoClientSendChatMessage(initialRoomSubmittedMessage);
-    }
     return;
   }
 
@@ -10737,11 +11522,13 @@ function initialRoomApplyTrap(initialRoomTrapKey) {
   }
 }
 
-function initialRoomSpawnSuddenlySnake() {
-  var initialRoomTileX = Math.floor(initialRoomPlayer.x);
-  var initialRoomTileY = Math.floor(initialRoomPlayer.y);
+function initialRoomSpawnSuddenlySnake(initialRoomNetSnake) {
+  var initialRoomSnakeX = initialRoomNetSnake ? Number(initialRoomNetSnake.x) : initialRoomPlayer.x;
+  var initialRoomSnakeY = initialRoomNetSnake ? Number(initialRoomNetSnake.y) : initialRoomPlayer.y;
+  var initialRoomTileX = Math.floor(initialRoomSnakeX);
+  var initialRoomTileY = Math.floor(initialRoomSnakeY);
   var initialRoomSnakeTile = {
-    id: "suddenly_snake_" + Date.now() + "_" + Math.floor(Math.random() * 1000000),
+    id: initialRoomNetSnake && initialRoomNetSnake.id ? initialRoomNetSnake.id : "suddenly_snake_" + Date.now() + "_" + Math.floor(Math.random() * 1000000),
     x: initialRoomTileX,
     y: initialRoomTileY,
     type: "enemy",
@@ -10757,13 +11544,90 @@ function initialRoomSpawnSuddenlySnake() {
   var initialRoomSnake = initialRoomCreateBlobEnemy(initialRoomSnakeTile, "snake");
 
   initialRoomSnake.id = initialRoomSnakeTile.id;
-  initialRoomSnake.x = initialRoomPlayer.x;
-  initialRoomSnake.y = initialRoomPlayer.y;
-  initialRoomSnake.homeX = initialRoomPlayer.x;
-  initialRoomSnake.homeY = initialRoomPlayer.y;
+  initialRoomSnake.x = initialRoomSnakeX;
+  initialRoomSnake.y = initialRoomSnakeY;
+  initialRoomSnake.homeX = initialRoomSnakeX;
+  initialRoomSnake.homeY = initialRoomSnakeY;
   initialRoomSnake.state = "chase";
-  initialRoomSnake.facingDirection = initialRoomPlayer.facingDirection || "down";
+  initialRoomSnake.facingDirection = initialRoomNormalizeNetSnakeFacing(initialRoomNetSnake && initialRoomNetSnake.facingDirection ? initialRoomNetSnake.facingDirection : initialRoomPlayer.facingDirection);
+  initialRoomSnake.netTargetPlayerId = initialRoomNetSnake && initialRoomNetSnake.activatorPlayerId ? String(initialRoomNetSnake.activatorPlayerId) : "";
   initialRoomEnemies.push(initialRoomSnake);
+
+  if (!initialRoomNetSuppressBroadcast && typeof shellipelagoNetBroadcastSnakeActivated === "function") {
+    shellipelagoNetBroadcastSnakeActivated({
+      room: initialRoomGetNetRoom(),
+      id: initialRoomSnake.id,
+      x: initialRoomSnake.x,
+      y: initialRoomSnake.y,
+      activatorPlayerId: typeof shellipelagoNetGetLocalPlayerId === "function" ? shellipelagoNetGetLocalPlayerId() : "",
+      facingDirection: initialRoomSnake.facingDirection
+    });
+  }
+}
+
+function initialRoomApplyNetSnakeActivated(initialRoomSnakeActivation) {
+  if (!initialRoomSnakeActivation || !initialRoomNetIsCurrentRoom(initialRoomSnakeActivation.room)) {
+    return false;
+  }
+
+  if (initialRoomFindNetEnemy(initialRoomSnakeActivation.id)) {
+    return false;
+  }
+
+  initialRoomNetSuppressBroadcast = true;
+  initialRoomSpawnSuddenlySnake(initialRoomSnakeActivation);
+  initialRoomNetSuppressBroadcast = false;
+  return true;
+}
+
+function initialRoomApplyNetSnakeAwakened(initialRoomSnakeActivation) {
+  var initialRoomEnemy = null;
+
+  if (!initialRoomSnakeActivation || !initialRoomNetIsCurrentRoom(initialRoomSnakeActivation.room)) {
+    return false;
+  }
+
+  initialRoomEnemy = initialRoomFindNetEnemy(initialRoomSnakeActivation.enemyKey);
+  if (!initialRoomEnemy || initialRoomEnemy.enemyType !== "snake") {
+    return false;
+  }
+
+  initialRoomEnemy.state = "chase";
+  initialRoomEnemy.netTargetPlayerId = initialRoomSnakeActivation.activatorPlayerId ? String(initialRoomSnakeActivation.activatorPlayerId) : "";
+  return true;
+}
+
+function initialRoomApplyNetGameOver(initialRoomGameOver) {
+  if (!initialRoomGameOver || !initialRoomGameOver.playerId) {
+    return false;
+  }
+
+  initialRoomRetargetSnakesForNetPlayer(initialRoomGameOver.playerId);
+  return true;
+}
+
+function initialRoomRetargetSnakesForNetPlayer(initialRoomPlayerId) {
+  initialRoomEnemies.forEach(function (initialRoomEnemy) {
+    if (initialRoomEnemy.enemyType === "snake" && initialRoomEnemy.netTargetPlayerId === initialRoomPlayerId) {
+      initialRoomEnemy.netTargetPlayerId = "";
+    }
+  });
+}
+
+function initialRoomNormalizeNetSnakeFacing(initialRoomFacingDirection) {
+  if (typeof initialRoomFacingDirection === "string") {
+    return initialRoomFacingDirection;
+  }
+
+  if (initialRoomFacingDirection && Math.abs(Number(initialRoomFacingDirection.x) || 0) > Math.abs(Number(initialRoomFacingDirection.y) || 0)) {
+    return Number(initialRoomFacingDirection.x) < 0 ? "left" : "right";
+  }
+
+  if (initialRoomFacingDirection && Number(initialRoomFacingDirection.y) < 0) {
+    return "up";
+  }
+
+  return "down";
 }
 
 function initialRoomApplyLooseReward(initialRoomRewardKey) {
@@ -11375,6 +12239,10 @@ function initialRoomMoveToRoom(initialRoomRoomX, initialRoomRoomY, initialRoomPl
       initialRoomDestroyTankVulnerableChecksAroundSpawn();
     }
   }
+  if (typeof shellipelagoNetSendCellSync === "function") {
+    shellipelagoNetSendCellSync();
+  }
+  initialRoomSendNetPositionAtActionCenter();
   return true;
 }
 
@@ -11603,6 +12471,10 @@ function initialRoomWarpToDoorRoom(initialRoomNextRoom, initialRoomPlayerX, init
       initialRoomDestroyTankVulnerableChecksAroundSpawn();
     }
   }
+  if (typeof shellipelagoNetSendCellSync === "function") {
+    shellipelagoNetSendCellSync();
+  }
+  initialRoomSendNetPositionAtActionCenter();
 }
 
 function initialRoomTryPlayerRoomEntranceTransition(initialRoomNextX, initialRoomNextY) {

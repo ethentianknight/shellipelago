@@ -1,0 +1,9 @@
+name = "shellipelago-net-signaling"
+main = "shellipelago-net-signaling-worker.js"
+compatibility_date = "2026-06-30"
+
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "NET_SIGNALING_KV"
+id = "replace-with-your-shellipelago-kv-namespace-id"

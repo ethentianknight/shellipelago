@@ -9,6 +9,7 @@ var registryModules = [
   "finalRunConfig.js",
   "archipelagoGeneratedData.js",
   "mapEditor.js",
+  "shellipelagoNet.js",
   "archipelagoClient.js",
   "introScreen.js",
   "initialRoom.js"

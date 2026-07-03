@@ -140,12 +140,16 @@ function archipelagoClientHasMissingLocation(archipelagoClientLocationId) {
 }
 
 function archipelagoClientSendChatMessage(archipelagoClientText) {
-  if (!archipelagoClientText || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
+  if (!archipelagoClientText) {
     return false;
   }
 
   if (archipelagoClientHandleLocalCommand(archipelagoClientText)) {
     return true;
+  }
+
+  if (!globalsState.archipelago.connected || !globalsState.archipelago.socket) {
+    return false;
   }
 
   if (globalsState.archipelago.socket.readyState !== WebSocket.OPEN) {
@@ -339,6 +343,10 @@ function archipelagoClientTryNo3dGoal() {
 function archipelagoClientHandleLocalCommand(archipelagoClientText) {
   var archipelagoClientCommand = archipelagoClientStripPlayerPrefix(archipelagoClientText).trim().toLowerCase();
   var archipelagoClientEfficiencyMatch = archipelagoClientCommand.match(/^!efficiency(?:\s+(.+))?$/);
+
+  if (typeof shellipelagoNetHandleCommand === "function" && shellipelagoNetHandleCommand(archipelagoClientText)) {
+    return true;
+  }
 
   if (archipelagoClientCommand === "!deathlink") {
     archipelagoClientToggleDeathLink();
@@ -1108,6 +1116,9 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
   globalsState.archipelago.checkedLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.checked_locations);
   globalsState.archipelago.missingLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.missing_locations);
   globalsState.archipelago.slotData = archipelagoClientPacket.slot_data || {};
+  if (typeof shellipelagoNetSetNameFromSlot === "function") {
+    shellipelagoNetSetNameFromSlot(archipelagoClientConnectionInfo.slot);
+  }
   archipelagoClientCheckWorldVersion();
   globalsState.archipelago.deathLinkEnabled = archipelagoClientIsSlotDeathLinkEnabled();
   globalsState.archipelago.trapLinkEnabled = archipelagoClientIsSlotTrapLinkEnabled();
