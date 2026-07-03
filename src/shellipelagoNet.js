@@ -204,14 +204,31 @@ function shellipelagoNetClose() {
   }
 
   if (shellipelagoNetState.host) {
-    shellipelagoNetSendPacket({
-      kind: "control",
-      action: "close"
-    });
-    shellipelagoNetDeleteLobby().catch(shellipelagoNetReportError);
+    shellipelagoNetCloseLobbyToNewPeers("Lobby closed to new players.");
+    return;
   }
 
-  shellipelagoNetLeaveLocal("Lobby closed.");
+  shellipelagoNetMessage("Only the host can close the lobby.");
+}
+
+function shellipelagoNetCloseLobbyToNewPeers(shellipelagoNetMessageText) {
+  if (shellipelagoNetState.lobbyClosedToNewPeers) {
+    if (shellipelagoNetMessageText) {
+      shellipelagoNetMessage(shellipelagoNetMessageText);
+    }
+
+    return;
+  }
+
+  shellipelagoNetState.roomVisibility = "private";
+  shellipelagoNetState.lobbyClosedToNewPeers = true;
+  shellipelagoNetStopLobbyRefresh();
+  shellipelagoNetStopSignalingPolling();
+  shellipelagoNetDeleteLobby().catch(shellipelagoNetReportError);
+
+  if (shellipelagoNetMessageText) {
+    shellipelagoNetMessage(shellipelagoNetMessageText);
+  }
 }
 
 function shellipelagoNetLeave() {
@@ -333,17 +350,11 @@ function shellipelagoNetAutoCloseLobby() {
     return;
   }
 
-  shellipelagoNetState.lobbyClosedToNewPeers = true;
-  shellipelagoNetStopLobbyRefresh();
-  shellipelagoNetStopSignalingPolling();
-  shellipelagoNetDeleteLobby().catch(shellipelagoNetReportError);
+  shellipelagoNetCloseLobbyToNewPeers("Lobby auto-closed after 5 minutes of accepting new players.");
 
   if (!shellipelagoNetHasOpenHostPeer()) {
-    shellipelagoNetLeaveLocal("Lobby auto-closed after 5 minutes with no peers connected. You can !host again later.");
-    return;
+    shellipelagoNetMessage("No peers are currently connected.");
   }
-
-  shellipelagoNetMessage("Lobby auto-closed after 5 minutes. Connected players remain in game; new joins are closed.");
 }
 
 function shellipelagoNetShouldPollSignals() {
