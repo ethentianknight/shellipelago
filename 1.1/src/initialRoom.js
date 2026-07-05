@@ -268,6 +268,10 @@ var initialRoomIsSfxMuted = false;
 var initialRoomCreditsLoadStarted = false;
 var initialRoomFontFamily = "Perfect DOS VGA 437";
 var initialRoomCurrentRoom = null;
+var initialRoomShopStepEnergyRoomKeys = {
+  "0,-2": true,
+  "0,-3": true
+};
 var initialRoomFinalRunState = {
   active: false,
   loading: false,
@@ -6941,12 +6945,45 @@ function initialRoomAdvanceTileMove(initialRoomMoveAmount) {
     initialRoomPlayer.x = initialRoomPlayer.targetX;
     initialRoomPlayer.y = initialRoomPlayer.targetY;
     initialRoomPlayer.moveDirection = null;
+    initialRoomGrantShopStepEnergy();
   }
+}
+
+function initialRoomGrantShopStepEnergy() {
+  var initialRoomTileX = Math.floor(initialRoomPlayer.x);
+  var initialRoomTileY = Math.floor(initialRoomPlayer.y);
+  var initialRoomTile = initialRoomGetTile(initialRoomTileX, initialRoomTileY);
+
+  if (!initialRoomIsShopStepEnergyRoom() && (!initialRoomIsShopTile(initialRoomTile) || initialRoomIsShopItemHidden(initialRoomTile))) {
+    return false;
+  }
+
+  initialRoomSyncPlayerResourceMaxes();
+  initialRoomPlayer.energy += 1;
+  initialRoomBroadcastLinkedPickup("potion", 1);
+  return true;
+}
+
+function initialRoomIsShopStepEnergyRoom() {
+  if (!initialRoomCurrentRoom) {
+    return false;
+  }
+
+  return Boolean(initialRoomShopStepEnergyRoomKeys[initialRoomCurrentRoom.x + "," + initialRoomCurrentRoom.y]);
+}
+
+function initialRoomGetShopStepEnergyTileKey() {
+  if (!initialRoomCurrentRoom) {
+    return "";
+  }
+
+  return initialRoomCurrentRoom.x + "," + initialRoomCurrentRoom.y + ":" + Math.floor(initialRoomPlayer.x) + "," + Math.floor(initialRoomPlayer.y);
 }
 
 function initialRoomUpdateFreeMovement(initialRoomDeltaSeconds) {
   var initialRoomInputDirection = initialRoomGetInputDirection();
   var initialRoomMoveAmount = (initialRoomPlayer.speed * initialRoomGetMovementSpeedMultiplier() * initialRoomGetFrameNormalizedDelta(initialRoomDeltaSeconds)) / initialRoomView.movementTileSize;
+  var initialRoomPreviousShopStepEnergyTileKey = "";
 
   if (initialRoomIsMeleeActive()) {
     return;
@@ -6958,12 +6995,16 @@ function initialRoomUpdateFreeMovement(initialRoomDeltaSeconds) {
   }
 
   if (initialRoomInputDirection) {
+    initialRoomPreviousShopStepEnergyTileKey = initialRoomGetShopStepEnergyTileKey();
     initialRoomSetFacingDirection(initialRoomInputDirection);
     if (initialRoomTryStartForcedJumpMove(initialRoomInputDirection, initialRoomMoveAmount)) {
       return;
     }
 
     initialRoomMoveBy(initialRoomInputDirection.x * initialRoomMoveAmount, initialRoomInputDirection.y * initialRoomMoveAmount);
+    if (initialRoomGetShopStepEnergyTileKey() !== initialRoomPreviousShopStepEnergyTileKey) {
+      initialRoomGrantShopStepEnergy();
+    }
   }
 }
 

@@ -7,6 +7,7 @@ var shellipelagoNetRtcConfig = {
 };
 var shellipelagoNetSignalingPollMs = 3000;
 var shellipelagoNetPositionLerpMs = 180;
+var shellipelagoNetPositionIntervalMs = 100;
 var shellipelagoNetHeartbeatIntervalMs = 5000;
 var shellipelagoNetLobbyRefreshMs = 45000;
 var shellipelagoNetLobbyAutoCloseMs = 300000;
@@ -285,6 +286,11 @@ function shellipelagoNetUpdate() {
   if (shellipelagoNetIsDataOpen() && shellipelagoNetNow - shellipelagoNetState.lastHeartbeatAt >= shellipelagoNetHeartbeatIntervalMs) {
     shellipelagoNetState.lastHeartbeatAt = shellipelagoNetNow;
     shellipelagoNetSendHeartbeat();
+  }
+
+  if (shellipelagoNetIsDataOpen() && shellipelagoNetNow - shellipelagoNetState.lastPositionAt >= shellipelagoNetPositionIntervalMs) {
+    shellipelagoNetState.lastPositionAt = shellipelagoNetNow;
+    shellipelagoNetSendPosition();
   }
 
   shellipelagoNetPruneRemotePlayers(shellipelagoNetNow);
@@ -718,6 +724,8 @@ function shellipelagoNetApplyEvent(shellipelagoNetEvent) {
     shellipelagoNetApplySnakeAwakened(shellipelagoNetEvent);
   } else if (shellipelagoNetEvent.type === "gameOver") {
     shellipelagoNetApplyGameOver(shellipelagoNetEvent);
+  } else if (shellipelagoNetEvent.type === "tankCollision") {
+    shellipelagoNetApplyTankCollision(shellipelagoNetEvent);
   } else if (shellipelagoNetEvent.type === "cellSync") {
     shellipelagoNetApplyCellSync(shellipelagoNetEvent);
   }
@@ -817,6 +825,16 @@ function shellipelagoNetApplyGameOver(shellipelagoNetEvent) {
   }
 }
 
+function shellipelagoNetApplyTankCollision(shellipelagoNetEvent) {
+  if (typeof initialRoomApplyNetTankCollision === "function") {
+    initialRoomApplyNetTankCollision({
+      playerId: shellipelagoNetEvent.playerId,
+      collidedPlayerId: shellipelagoNetEvent.collidedPlayerId,
+      room: shellipelagoNetEvent.room
+    });
+  }
+}
+
 function shellipelagoNetApplyCellSync(shellipelagoNetEvent) {
   var shellipelagoNetSnapshot = shellipelagoNetGetRuntimeSnapshot();
 
@@ -900,6 +918,13 @@ function shellipelagoNetBroadcastGameOver(shellipelagoNetGameOver) {
     type: "gameOver",
     playerId: shellipelagoNetState.playerId
   }, shellipelagoNetGameOver || {}));
+}
+
+function shellipelagoNetBroadcastTankCollision(shellipelagoNetTankCollision) {
+  shellipelagoNetBroadcastEvent(Object.assign({
+    type: "tankCollision",
+    playerId: shellipelagoNetState.playerId
+  }, shellipelagoNetTankCollision || {}));
 }
 
 function shellipelagoNetBroadcastEvent(shellipelagoNetEvent) {

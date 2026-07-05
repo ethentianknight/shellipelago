@@ -363,6 +363,7 @@ var initialRoomNetSuppressBroadcast = false;
 var initialRoomNetKilledEnemiesByRoom = {};
 var initialRoomNetDestroyedDestructiblesByRoom = {};
 var initialRoomNetRecoloredPlayerImages = {};
+var initialRoomNetTankCollisionCooldowns = {};
 var initialRoomView = {
   tileSize: 32,
   movementTileSize: 32,
@@ -4686,8 +4687,7 @@ function initialRoomDrawTankCannon(initialRoomTankY, initialRoomPixelUnit) {
   );
 }
 
-function initialRoomDrawTankTurret(initialRoomScreenX, initialRoomScreenY, initialRoomPixelUnit) {
-  var initialRoomTurretAngle = Math.atan2(initialRoomMouse.y - initialRoomScreenY, initialRoomMouse.x - initialRoomScreenX);
+function initialRoomDrawTankTurret(initialRoomScreenX, initialRoomScreenY, initialRoomPixelUnit, initialRoomTurretAngle) {
   var initialRoomTurretRadius = initialRoomView.tileSize * 0.34;
   var initialRoomBarrelLength = initialRoomView.tileSize * 1.05;
   var initialRoomBarrelWidth = initialRoomPixelUnit * 4;
@@ -4740,7 +4740,8 @@ function initialRoomDrawTankTurretOverlay() {
   initialRoomDrawTankTurret(
     initialRoomView.offsetX + (initialRoomPlayer.x * initialRoomView.tileSize),
     initialRoomView.offsetY + (initialRoomPlayer.y * initialRoomView.tileSize),
-    initialRoomGetPixelUnit()
+    initialRoomGetPixelUnit(),
+    initialRoomGetTankTurretAngle()
   );
 }
 
@@ -4828,6 +4829,8 @@ function initialRoomDrawNetPlayer(initialRoomRemotePlayer) {
   var initialRoomRenderColor = initialRoomGetNetRenderColor(initialRoomColor);
   var initialRoomGraphicsLevel = initialRoomGetGraphicsLevel();
   var initialRoomImage = initialRoomFrameInfo.image ? initialRoomGetNetRecoloredImage(initialRoomFrameInfo.image, initialRoomColor) : null;
+  var initialRoomTankAngle = initialRoomGetNetAngle(initialRoomSnapshot.tankAngle, Math.PI / 2);
+  var initialRoomTankTurretAngle = initialRoomGetNetAngle(initialRoomSnapshot.tankTurretAngle, initialRoomTankAngle);
 
   initialRoomContext.save();
   initialRoomContext.globalAlpha = 0.88;
@@ -4836,7 +4839,13 @@ function initialRoomDrawNetPlayer(initialRoomRemotePlayer) {
     if (initialRoomGraphicsLevel < 2) {
       initialRoomContext.filter = "grayscale(1)";
     }
-    initialRoomDrawNetTank(initialRoomScreenX, initialRoomScreenY, initialRoomRenderColor, Number(initialRoomSnapshot.tankAngle) || Math.PI / 2);
+    initialRoomDrawNetTank(
+      initialRoomScreenX,
+      initialRoomScreenY,
+      initialRoomRenderColor,
+      initialRoomTankAngle,
+      initialRoomTankTurretAngle
+    );
   } else if (initialRoomGraphicsLevel <= 0 || !initialRoomImage) {
     initialRoomDrawNetPlayerBasic(initialRoomScreenX, initialRoomScreenY, initialRoomRenderColor);
   } else {
@@ -4854,6 +4863,12 @@ function initialRoomDrawNetPlayer(initialRoomRemotePlayer) {
 
   initialRoomContext.restore();
   initialRoomDrawNetPlayerName(initialRoomRemotePlayer.name, initialRoomScreenX, initialRoomSpriteY, initialRoomRenderColor);
+}
+
+function initialRoomGetNetAngle(initialRoomValue, initialRoomFallback) {
+  var initialRoomAngle = Number(initialRoomValue);
+
+  return Number.isFinite(initialRoomAngle) ? initialRoomAngle : initialRoomFallback;
 }
 
 function initialRoomGetNetRenderColor(initialRoomColor) {
@@ -4906,7 +4921,7 @@ function initialRoomDrawNetPlayerPixelCircle(initialRoomScreenX, initialRoomScre
   }
 }
 
-function initialRoomDrawNetTank(initialRoomScreenX, initialRoomScreenY, initialRoomColor, initialRoomAngle) {
+function initialRoomDrawNetTank(initialRoomScreenX, initialRoomScreenY, initialRoomColor, initialRoomAngle, initialRoomTurretAngle) {
   var initialRoomPixelUnit = initialRoomGetPixelUnit();
   var initialRoomTankWidth = initialRoomView.tileSize * 1.45;
   var initialRoomTankLength = initialRoomView.tileSize * 2.2;
@@ -4918,8 +4933,29 @@ function initialRoomDrawNetTank(initialRoomScreenX, initialRoomScreenY, initialR
   initialRoomContext.fillRect(-initialRoomTankWidth / 2, -initialRoomTankLength / 2, initialRoomTankWidth, initialRoomTankLength);
   initialRoomContext.fillStyle = initialRoomColor;
   initialRoomContext.fillRect(-initialRoomTankWidth / 2 + initialRoomPixelUnit * 2, -initialRoomTankLength / 2 + initialRoomPixelUnit * 2, initialRoomTankWidth - initialRoomPixelUnit * 4, initialRoomTankLength - initialRoomPixelUnit * 4);
-  initialRoomContext.fillStyle = "#f7f7f1";
-  initialRoomContext.fillRect(-initialRoomPixelUnit, -initialRoomTankLength / 2 - initialRoomView.tileSize * 0.5, initialRoomPixelUnit * 2, initialRoomView.tileSize);
+  initialRoomContext.restore();
+
+  initialRoomDrawNetTankTurret(initialRoomScreenX, initialRoomScreenY, initialRoomColor, initialRoomTurretAngle);
+}
+
+function initialRoomDrawNetTankTurret(initialRoomScreenX, initialRoomScreenY, initialRoomColor, initialRoomTurretAngle) {
+  var initialRoomPixelUnit = initialRoomGetPixelUnit();
+  var initialRoomTurretRadius = initialRoomView.tileSize * 0.25;
+  var initialRoomBarrelLength = initialRoomView.tileSize * 0.95;
+  var initialRoomBarrelWidth = initialRoomPixelUnit * 3;
+
+  initialRoomContext.save();
+  initialRoomContext.translate(initialRoomScreenX, initialRoomScreenY);
+  initialRoomContext.rotate(initialRoomTurretAngle);
+  initialRoomContext.fillStyle = "#050505";
+  initialRoomContext.fillRect(0, Math.round(-initialRoomBarrelWidth / 2), Math.ceil(initialRoomBarrelLength), Math.ceil(initialRoomBarrelWidth));
+  initialRoomContext.fillStyle = initialRoomColor;
+  initialRoomContext.fillRect(
+    Math.round(-initialRoomTurretRadius),
+    Math.round(-initialRoomTurretRadius),
+    Math.ceil(initialRoomTurretRadius * 2),
+    Math.ceil(initialRoomTurretRadius * 2)
+  );
   initialRoomContext.restore();
 }
 
@@ -5043,7 +5079,8 @@ function initialRoomGetNetSnapshot() {
     },
     moving: initialRoomIsPlayerMoving(),
     tank: initialRoomHasTankForm(),
-    tankAngle: initialRoomPlayer.tankAngle
+    tankAngle: initialRoomPlayer.tankAngle,
+    tankTurretAngle: initialRoomGetTankTurretAngle()
   };
 }
 
@@ -5202,6 +5239,22 @@ function initialRoomApplyNetTankAttack(initialRoomAttack) {
   initialRoomDamageEnemiesInTankShot(initialRoomShot, initialRoomNow);
 }
 
+function initialRoomApplyNetTankCollision(initialRoomCollision) {
+  if (!initialRoomCollision || !initialRoomNetIsCurrentRoom(initialRoomCollision.room)) {
+    return false;
+  }
+
+  if (initialRoomCollision.collidedPlayerId !== initialRoomGetLocalNetPlayerId()) {
+    return false;
+  }
+
+  if (!initialRoomHasTankForm()) {
+    return false;
+  }
+
+  return initialRoomKillPlayer("netTankCollision");
+}
+
 function initialRoomApplyNetBombAttack(initialRoomAttack) {
   var initialRoomNow = Date.now();
   var initialRoomLevel = Math.max(1, Math.min(3, Number(initialRoomAttack.level) || 1));
@@ -5323,6 +5376,25 @@ function initialRoomBroadcastNetGameOver() {
   shellipelagoNetBroadcastGameOver({
     room: initialRoomGetNetRoom()
   });
+}
+
+function initialRoomBroadcastNetTankCollision(initialRoomRemotePlayerId) {
+  if (initialRoomNetSuppressBroadcast || !initialRoomRemotePlayerId || typeof shellipelagoNetBroadcastTankCollision !== "function") {
+    return;
+  }
+
+  shellipelagoNetBroadcastTankCollision({
+    room: initialRoomGetNetRoom(),
+    collidedPlayerId: initialRoomRemotePlayerId
+  });
+}
+
+function initialRoomGetLocalNetPlayerId() {
+  if (typeof shellipelagoNetGetLocalPlayerId !== "function") {
+    return "";
+  }
+
+  return shellipelagoNetGetLocalPlayerId();
 }
 
 function initialRoomGetNetEnemyKey(initialRoomEnemy) {
@@ -5833,6 +5905,9 @@ function initialRoomGetDeathLinkCause() {
   var initialRoomDeathMessages = {
     snake: " was bit by a venomous snake",
     tank: " ran out of metal on the bottom of their tank",
+    netTank: " was blasted by another player's tank",
+    netTankCollision: " crashed tanks with another player",
+    netTankRunOver: " was run over by another player's tank",
     redSlime: " stepped in red slime",
     negaSlime: " couldn't outrun the nega slime",
     wizardShot: " was shot by a wizard",
@@ -7803,6 +7878,133 @@ function initialRoomGetTankCollisionHalfLength() {
   return 1.48;
 }
 
+function initialRoomCheckNetTankContactCollisions() {
+  var initialRoomRemotePlayers = typeof shellipelagoNetGetRemotePlayers === "function" ? shellipelagoNetGetRemotePlayers() : [];
+  var initialRoomLocalSnapshot = initialRoomGetNetSnapshot();
+  var initialRoomNow = Date.now();
+
+  if (!initialRoomLocalSnapshot) {
+    return;
+  }
+
+  initialRoomRemotePlayers.some(function (initialRoomRemotePlayer) {
+    var initialRoomSnapshot = initialRoomRemotePlayer && initialRoomRemotePlayer.snapshot ? initialRoomRemotePlayer.snapshot : null;
+    var initialRoomRemoteId = initialRoomRemotePlayer ? initialRoomRemotePlayer.id : "";
+
+    if (!initialRoomRemoteId || !initialRoomSnapshot || !initialRoomSnapshot.tank || !initialRoomNetSameRoom(initialRoomSnapshot.room, initialRoomLocalSnapshot.room)) {
+      return false;
+    }
+
+    if (initialRoomHasTankForm()) {
+      return initialRoomCheckNetTankTankCollision(initialRoomRemoteId, initialRoomLocalSnapshot, initialRoomSnapshot, initialRoomNow);
+    }
+
+    return initialRoomCheckNetTankPlayerCollision(initialRoomSnapshot);
+  });
+}
+
+function initialRoomCheckNetTankTankCollision(initialRoomRemoteId, initialRoomLocalSnapshot, initialRoomSnapshot, initialRoomNow) {
+  if (initialRoomNetTankCollisionCooldowns[initialRoomRemoteId] && initialRoomNetTankCollisionCooldowns[initialRoomRemoteId] > initialRoomNow) {
+    return false;
+  }
+
+  if (!initialRoomDoTankSnapshotsOverlap(initialRoomLocalSnapshot, initialRoomSnapshot)) {
+    return false;
+  }
+
+  initialRoomNetTankCollisionCooldowns[initialRoomRemoteId] = initialRoomNow + 2000;
+  initialRoomBroadcastNetTankCollision(initialRoomRemoteId);
+  initialRoomKillPlayer("netTankCollision");
+  return true;
+}
+
+function initialRoomCheckNetTankPlayerCollision(initialRoomTankSnapshot) {
+  if (!initialRoomDoesTankSnapshotOverlapCircle(initialRoomTankSnapshot, initialRoomPlayer.x, initialRoomPlayer.y, initialRoomGetPlayerCollisionRadius())) {
+    return false;
+  }
+
+  initialRoomKillPlayer("netTankRunOver");
+  return true;
+}
+
+function initialRoomDoTankSnapshotsOverlap(initialRoomFirstSnapshot, initialRoomSecondSnapshot) {
+  var initialRoomFirstAxes = initialRoomGetTankCollisionAxesForAngle(initialRoomGetNetAngle(initialRoomFirstSnapshot.tankAngle, Math.PI / 2));
+  var initialRoomSecondAxes = initialRoomGetTankCollisionAxesForAngle(initialRoomGetNetAngle(initialRoomSecondSnapshot.tankAngle, Math.PI / 2));
+  var initialRoomFirstCenter = {
+    x: Number(initialRoomFirstSnapshot.x) || 0,
+    y: Number(initialRoomFirstSnapshot.y) || 0
+  };
+  var initialRoomSecondCenter = {
+    x: Number(initialRoomSecondSnapshot.x) || 0,
+    y: Number(initialRoomSecondSnapshot.y) || 0
+  };
+  var initialRoomAxes = [
+    initialRoomFirstAxes.forward,
+    initialRoomFirstAxes.side,
+    initialRoomSecondAxes.forward,
+    initialRoomSecondAxes.side
+  ];
+  var initialRoomAxisIndex = 0;
+
+  while (initialRoomAxisIndex < initialRoomAxes.length) {
+    if (!initialRoomDoTankProjectionsOverlap(initialRoomFirstCenter, initialRoomFirstAxes, initialRoomSecondCenter, initialRoomSecondAxes, initialRoomAxes[initialRoomAxisIndex])) {
+      return false;
+    }
+
+    initialRoomAxisIndex += 1;
+  }
+
+  return true;
+}
+
+function initialRoomDoesTankSnapshotOverlapCircle(initialRoomTankSnapshot, initialRoomCircleX, initialRoomCircleY, initialRoomCircleRadius) {
+  var initialRoomTankX = Number(initialRoomTankSnapshot.x) || 0;
+  var initialRoomTankY = Number(initialRoomTankSnapshot.y) || 0;
+  var initialRoomAxes = initialRoomGetTankCollisionAxesForAngle(initialRoomGetNetAngle(initialRoomTankSnapshot.tankAngle, Math.PI / 2));
+  var initialRoomDeltaX = initialRoomCircleX - initialRoomTankX;
+  var initialRoomDeltaY = initialRoomCircleY - initialRoomTankY;
+  var initialRoomSideDistance = (initialRoomDeltaX * initialRoomAxes.side.x) + (initialRoomDeltaY * initialRoomAxes.side.y);
+  var initialRoomForwardDistance = (initialRoomDeltaX * initialRoomAxes.forward.x) + (initialRoomDeltaY * initialRoomAxes.forward.y);
+  var initialRoomClosestSide = Math.max(-initialRoomGetTankCollisionHalfWidth(), Math.min(initialRoomGetTankCollisionHalfWidth(), initialRoomSideDistance));
+  var initialRoomClosestForward = Math.max(-initialRoomGetTankCollisionHalfLength(), Math.min(initialRoomGetTankCollisionHalfLength(), initialRoomForwardDistance));
+  var initialRoomSeparationSide = initialRoomSideDistance - initialRoomClosestSide;
+  var initialRoomSeparationForward = initialRoomForwardDistance - initialRoomClosestForward;
+
+  return (initialRoomSeparationSide * initialRoomSeparationSide) + (initialRoomSeparationForward * initialRoomSeparationForward) <= initialRoomCircleRadius * initialRoomCircleRadius;
+}
+
+function initialRoomDoTankProjectionsOverlap(initialRoomFirstCenter, initialRoomFirstAxes, initialRoomSecondCenter, initialRoomSecondAxes, initialRoomAxis) {
+  var initialRoomCenterDelta = {
+    x: initialRoomSecondCenter.x - initialRoomFirstCenter.x,
+    y: initialRoomSecondCenter.y - initialRoomFirstCenter.y
+  };
+  var initialRoomProjectedDistance = Math.abs((initialRoomCenterDelta.x * initialRoomAxis.x) + (initialRoomCenterDelta.y * initialRoomAxis.y));
+  var initialRoomFirstRadius = initialRoomGetTankProjectionRadius(initialRoomFirstAxes, initialRoomAxis);
+  var initialRoomSecondRadius = initialRoomGetTankProjectionRadius(initialRoomSecondAxes, initialRoomAxis);
+
+  return initialRoomProjectedDistance <= initialRoomFirstRadius + initialRoomSecondRadius;
+}
+
+function initialRoomGetTankProjectionRadius(initialRoomAxes, initialRoomAxis) {
+  return (initialRoomGetTankCollisionHalfLength() * Math.abs((initialRoomAxes.forward.x * initialRoomAxis.x) + (initialRoomAxes.forward.y * initialRoomAxis.y))) +
+    (initialRoomGetTankCollisionHalfWidth() * Math.abs((initialRoomAxes.side.x * initialRoomAxis.x) + (initialRoomAxes.side.y * initialRoomAxis.y)));
+}
+
+function initialRoomGetTankCollisionAxesForAngle(initialRoomAngle) {
+  var initialRoomForward = {
+    x: Math.cos(initialRoomAngle),
+    y: Math.sin(initialRoomAngle)
+  };
+
+  return {
+    forward: initialRoomForward,
+    side: {
+      x: -initialRoomForward.y,
+      y: initialRoomForward.x
+    }
+  };
+}
+
 function initialRoomMoveBySingleStep(initialRoomDeltaX, initialRoomDeltaY) {
   var initialRoomNextX = initialRoomPlayer.x + initialRoomDeltaX;
   var initialRoomNextY = initialRoomPlayer.y + initialRoomDeltaY;
@@ -7953,6 +8155,18 @@ function initialRoomGetTankInputDirection() {
     x: initialRoomInputX / initialRoomLength,
     y: initialRoomInputY / initialRoomLength
   };
+}
+
+function initialRoomGetTankTurretAngle() {
+  var initialRoomPlayerScreen = initialRoomWorldToScreen(initialRoomPlayer.x, initialRoomPlayer.y);
+  var initialRoomDeltaX = initialRoomMouse.x - initialRoomPlayerScreen.x;
+  var initialRoomDeltaY = initialRoomMouse.y - initialRoomPlayerScreen.y;
+
+  if (Math.abs(initialRoomDeltaX) < 0.001 && Math.abs(initialRoomDeltaY) < 0.001) {
+    return initialRoomPlayer.tankAngle;
+  }
+
+  return Math.atan2(initialRoomDeltaY, initialRoomDeltaX);
 }
 
 function initialRoomGetDirectionForKey(initialRoomKey) {
@@ -9863,6 +10077,7 @@ function initialRoomUpdate() {
   if (initialRoomIsStunTrapActive()) {
     initialRoomUpdateEnemies(initialRoomDeltaSeconds);
     initialRoomUpdateCombat(initialRoomDeltaSeconds);
+    initialRoomCheckNetTankContactCollisions();
     return;
   }
 
@@ -9870,6 +10085,7 @@ function initialRoomUpdate() {
     initialRoomUpdateTankMovement(initialRoomDeltaSeconds);
     initialRoomUpdateEnemies(initialRoomDeltaSeconds);
     initialRoomUpdateCombat(initialRoomDeltaSeconds);
+    initialRoomCheckNetTankContactCollisions();
     return;
   }
 
@@ -9877,12 +10093,14 @@ function initialRoomUpdate() {
     initialRoomUpdateFreeMovement(initialRoomDeltaSeconds);
     initialRoomUpdateEnemies(initialRoomDeltaSeconds);
     initialRoomUpdateCombat(initialRoomDeltaSeconds);
+    initialRoomCheckNetTankContactCollisions();
     return;
   }
 
   initialRoomUpdateTileLockedMovement(initialRoomDeltaSeconds);
   initialRoomUpdateEnemies(initialRoomDeltaSeconds);
   initialRoomUpdateCombat(initialRoomDeltaSeconds);
+  initialRoomCheckNetTankContactCollisions();
 }
 
 function initialRoomUpdateTrapState(initialRoomNow) {
