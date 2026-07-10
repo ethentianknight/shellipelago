@@ -1,5 +1,6 @@
 Build/
 build/
+shellipelago.zip
 node_modules/
 
 npm-debug.log*
