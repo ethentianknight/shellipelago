@@ -11281,6 +11281,28 @@ function initialRoomShouldHandleGlobalKeyInput() {
   return Boolean(initialRoomCanvas.parentNode || initialRoomFinalRunState.active);
 }
 
+function initialRoomFocusCanvasForInput(initialRoomEvent) {
+  if (!initialRoomCanvas.parentNode || initialRoomIsTextEntryActive) {
+    return;
+  }
+
+  if (initialRoomEvent && (initialRoomIsEditableKeyTarget(initialRoomEvent.target) ||
+    (initialRoomEvent.target && initialRoomEvent.target.closest && initialRoomEvent.target.closest(".screen-map-editor")))) {
+    return;
+  }
+
+  try {
+    initialRoomCanvas.focus({ preventScroll: true });
+  } catch (initialRoomFocusError) {
+    initialRoomCanvas.focus();
+  }
+}
+
+function initialRoomClearHeldInput() {
+  initialRoomKeys = {};
+  initialRoomInputOrder = [];
+}
+
 window.addEventListener("keydown", function (initialRoomEvent) {
   if (!initialRoomShouldHandleGlobalKeyInput()) {
     return;
@@ -11537,6 +11559,8 @@ window.addEventListener("keyup", function (initialRoomEvent) {
   initialRoomTrackKeyRelease(initialRoomEvent.key.toLowerCase());
 });
 
+window.addEventListener("pointerdown", initialRoomFocusCanvasForInput, true);
+
 window.addEventListener("mousemove", function (initialRoomEvent) {
   initialRoomMouse.x = initialRoomEvent.clientX;
   initialRoomMouse.y = initialRoomEvent.clientY;
@@ -11547,6 +11571,7 @@ window.addEventListener("mousemove", function (initialRoomEvent) {
 });
 
 window.addEventListener("mousedown", function (initialRoomEvent) {
+  initialRoomFocusCanvasForInput(initialRoomEvent);
   initialRoomMouse.x = initialRoomEvent.clientX;
   initialRoomMouse.y = initialRoomEvent.clientY;
   initialRoomFinalRunMouse.x = initialRoomEvent.clientX;
@@ -11620,7 +11645,20 @@ window.addEventListener("mouseup", function () {
 });
 
 window.addEventListener("blur", function () {
+  initialRoomClearHeldInput();
   initialRoomStopFinalRunAutofire();
+});
+
+window.addEventListener("focus", initialRoomFocusCanvasForInput);
+window.addEventListener("pageshow", initialRoomFocusCanvasForInput);
+document.addEventListener("fullscreenchange", initialRoomFocusCanvasForInput);
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden) {
+    initialRoomClearHeldInput();
+    initialRoomStopFinalRunAutofire();
+  } else {
+    initialRoomFocusCanvasForInput();
+  }
 });
 
 window.addEventListener("resize", initialRoomResizeCanvas);
