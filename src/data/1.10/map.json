@@ -33419,12 +33419,6 @@
               "from": "#144491",
               "to": "#f7e26b"
             }
-          ],
-          "requirements": [
-            [
-              "graphics:1",
-              "sword:1"
-            ]
           ]
         },
         {
@@ -43579,6 +43573,13 @@
             }
           ],
           "requirements": [
+            [
+              "tank",
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire"
+            ],
             [
               "graphics:1"
             ]
@@ -58182,36 +58183,6 @@
               "tankCannon"
             ]
           ]
-        },
-        {
-          "id": "check_19_12",
-          "x": 19,
-          "y": 12,
-          "width": 1,
-          "height": 1,
-          "type": "check",
-          "tileType": "DestructableCheck",
-          "typeOverride": "DestructableCheck",
-          "sprite": {
-            "source": "tileset",
-            "x": 4,
-            "y": 6
-          },
-          "expectedDrop": "itemPool1",
-          "vulnerable": [
-            "tankTreads",
-            "tankCannon"
-          ],
-          "backgroundTile": {
-            "type": "walkable",
-            "tileType": "Walkable",
-            "typeOverride": "Walkable",
-            "sprite": {
-              "source": "tileset",
-              "x": 10,
-              "y": 2
-            }
-          }
         }
       ],
       "defaultBorder": {
@@ -64120,13 +64091,7 @@
               "x": 10,
               "y": 2
             }
-          },
-          "requirements": [
-            [
-              "sword:1",
-              "fire"
-            ]
-          ]
+          }
         },
         {
           "id": "enemy_12_14",
@@ -250959,13 +250924,7 @@
               "x": 10,
               "y": 2
             }
-          },
-          "requirements": [
-            [
-              "sword:1",
-              "fire"
-            ]
-          ]
+          }
         },
         {
           "id": "check_1_2",
@@ -260350,13 +260309,7 @@
               "x": 10,
               "y": 2
             }
-          },
-          "requirements": [
-            [
-              "sword:1",
-              "fire"
-            ]
-          ]
+          }
         },
         {
           "id": "enemy_18_11",
@@ -296903,13 +296856,7 @@
               "x": 10,
               "y": 2
             }
-          },
-          "requirements": [
-            [
-              "sword:1",
-              "fire"
-            ]
-          ]
+          }
         }
       ],
       "defaultBorder": {

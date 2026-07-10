@@ -61,7 +61,7 @@ raw_item_table = [
     "key": "rounds",
     "id": 100006,
     "name": "Max Rounds",
-    "classification": "progression",
+    "classification": "filler",
     "trap": False,
     "count": 40
   },

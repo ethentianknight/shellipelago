@@ -852,18 +852,27 @@ function archipelagoClientQueueServerMessage(archipelagoClientText) {
   initialRoomQueueMessage(archipelagoClientFormatRawServerText(archipelagoClientText), { fromServer: true });
 }
 
-function archipelagoClientGetLocationById(archipelagoClientLocationId) {
-  var archipelagoClientFoundLocation = null;
+function archipelagoClientGetLocationEntryById(archipelagoClientLocationId) {
+  var archipelagoClientFoundEntry = null;
 
   Object.keys(globalsState.locations).forEach(function (archipelagoClientCheckKey) {
     var archipelagoClientLocation = globalsState.locations[archipelagoClientCheckKey];
 
-    if (archipelagoClientLocation.id === archipelagoClientLocationId) {
-      archipelagoClientFoundLocation = archipelagoClientLocation;
+    if (Number(archipelagoClientLocation.id) === Number(archipelagoClientLocationId)) {
+      archipelagoClientFoundEntry = {
+        key: archipelagoClientCheckKey,
+        location: archipelagoClientLocation
+      };
     }
   });
 
-  return archipelagoClientFoundLocation;
+  return archipelagoClientFoundEntry;
+}
+
+function archipelagoClientGetLocationById(archipelagoClientLocationId) {
+  var archipelagoClientEntry = archipelagoClientGetLocationEntryById(archipelagoClientLocationId);
+
+  return archipelagoClientEntry ? archipelagoClientEntry.location : null;
 }
 
 function archipelagoClientInvalidateMapStatusCache() {
@@ -874,15 +883,15 @@ function archipelagoClientInvalidateMapStatusCache() {
 
 function archipelagoClientMarkLocationChecked(archipelagoClientLocationId) {
   var archipelagoClientTargetId = Number(archipelagoClientLocationId);
-  var archipelagoClientLocation = null;
+  var archipelagoClientLocationEntry = null;
 
   if (Number.isNaN(archipelagoClientTargetId)) {
     return false;
   }
 
-  archipelagoClientLocation = archipelagoClientGetLocationById(archipelagoClientTargetId);
-  if (archipelagoClientLocation) {
-    archipelagoClientLocation.checked = true;
+  archipelagoClientLocationEntry = archipelagoClientGetLocationEntryById(archipelagoClientTargetId);
+  if (archipelagoClientLocationEntry && archipelagoClientLocationEntry.location) {
+    archipelagoClientLocationEntry.location.checked = true;
   }
 
   if (globalsState.archipelago.checkedLocations.indexOf(archipelagoClientTargetId) === -1) {
@@ -894,6 +903,9 @@ function archipelagoClientMarkLocationChecked(archipelagoClientLocationId) {
   });
 
   archipelagoClientInvalidateMapStatusCache();
+  if (typeof initialRoomApplyNetLocationChecked === "function") {
+    initialRoomApplyNetLocationChecked(archipelagoClientTargetId, archipelagoClientLocationEntry ? archipelagoClientLocationEntry.key : "");
+  }
   return true;
 }
 
@@ -901,6 +913,68 @@ function archipelagoClientMarkCheckedLocations(archipelagoClientLocationIds) {
   archipelagoClientLocationIds.forEach(function (archipelagoClientLocationId) {
     archipelagoClientMarkLocationChecked(archipelagoClientLocationId);
   });
+}
+
+function archipelagoClientIsSameNetSlot(archipelagoClientEvent) {
+  var archipelagoClientEventSlotId = archipelagoClientEvent ? archipelagoClientEvent.slotId : undefined;
+  var archipelagoClientEventSlotName = archipelagoClientEvent ? archipelagoClientEvent.slotName : "";
+
+  if (!globalsState.archipelago.connected) {
+    return false;
+  }
+
+  if (archipelagoClientEventSlotId !== undefined && archipelagoClientEventSlotId !== null && globalsState.archipelago.slotId !== undefined) {
+    return Number(archipelagoClientEventSlotId) === Number(globalsState.archipelago.slotId);
+  }
+
+  return Boolean(archipelagoClientEventSlotName && archipelagoClientEventSlotName === globalsState.archipelago.slot);
+}
+
+function archipelagoClientBroadcastNetLocationChecked(archipelagoClientLocationId, archipelagoClientLocationKey) {
+  if (typeof shellipelagoNetBroadcastArchipelagoLocationChecked === "function") {
+    shellipelagoNetBroadcastArchipelagoLocationChecked(archipelagoClientLocationId, archipelagoClientLocationKey || "");
+  }
+}
+
+function archipelagoClientBroadcastNetReceivedItem(archipelagoClientItem, archipelagoClientItemIndex) {
+  if (typeof shellipelagoNetBroadcastArchipelagoItemReceived === "function") {
+    shellipelagoNetBroadcastArchipelagoItemReceived(archipelagoClientItem, archipelagoClientItemIndex);
+  }
+}
+
+function archipelagoClientApplyNetLocationChecked(archipelagoClientEvent) {
+  if (!archipelagoClientIsSameNetSlot(archipelagoClientEvent)) {
+    return false;
+  }
+
+  return archipelagoClientMarkLocationChecked(archipelagoClientEvent.locationId);
+}
+
+function archipelagoClientApplyNetReceivedItem(archipelagoClientEvent) {
+  var archipelagoClientItemIndex = Number(archipelagoClientEvent && archipelagoClientEvent.itemIndex);
+  var archipelagoClientItem = archipelagoClientEvent ? archipelagoClientEvent.item : null;
+
+  if (!archipelagoClientIsSameNetSlot(archipelagoClientEvent) || !archipelagoClientItem || Number.isNaN(archipelagoClientItemIndex)) {
+    return false;
+  }
+
+  if (archipelagoClientItemIndex < globalsState.archipelago.nextItemIndex) {
+    return false;
+  }
+
+  if (archipelagoClientItemIndex > globalsState.archipelago.nextItemIndex) {
+    globalsState.archipelago.nextItemIndex = archipelagoClientItemIndex;
+    if (globalsState.archipelago.connected && globalsState.archipelago.socket) {
+      archipelagoClientSend(globalsState.archipelago.socket, { cmd: "Sync" });
+    }
+  }
+
+  globalsState.archipelago.receivedItems.push(archipelagoClientItem);
+  globalsState.archipelago.nextItemIndex = archipelagoClientItemIndex + 1;
+  archipelagoClientApplyItem(archipelagoClientItem, archipelagoClientItemIndex, {
+    replay: false
+  });
+  return true;
 }
 
 function archipelagoClientResetOnlineProgressionForSync() {
@@ -1079,6 +1153,9 @@ function archipelagoClientApplyReceivedItems(archipelagoClientPacket) {
     archipelagoClientApplyItem(archipelagoClientItem, archipelagoClientItemIndex, {
       replay: archipelagoClientIsReplayPacket
     });
+    if (!archipelagoClientIsReplayPacket) {
+      archipelagoClientBroadcastNetReceivedItem(archipelagoClientItem, archipelagoClientItemIndex);
+    }
   });
 }
 
@@ -1183,6 +1260,11 @@ function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClie
       return;
     }
 
+    if (archipelagoClientPacket.cmd === "RoomUpdate") {
+      archipelagoClientHandleRoomUpdate(archipelagoClientPacket);
+      return;
+    }
+
     if (archipelagoClientPacket.cmd === "ReceivedItems") {
       archipelagoClientApplyReceivedItems(archipelagoClientPacket);
       return;
@@ -1223,6 +1305,18 @@ function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClie
       }
     }
   });
+}
+
+function archipelagoClientHandleRoomUpdate(archipelagoClientPacket) {
+  if (Array.isArray(archipelagoClientPacket.checked_locations)) {
+    archipelagoClientMarkCheckedLocations(archipelagoClientNormalizeIdList(archipelagoClientPacket.checked_locations));
+  }
+
+  if (Array.isArray(archipelagoClientPacket.missing_locations)) {
+    globalsState.archipelago.missingLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.missing_locations);
+  }
+
+  archipelagoClientInvalidateMapStatusCache();
 }
 
 function archipelagoClientHandleRetrieved(archipelagoClientPacket) {
@@ -1340,6 +1434,7 @@ function archipelagoClientSendLocationCheck(archipelagoClientCheckKey) {
     cmd: "LocationChecks",
     locations: [archipelagoClientLocation.id]
   });
+  archipelagoClientBroadcastNetLocationChecked(archipelagoClientLocation.id, archipelagoClientCheckKey);
 
   if (isDebug) {
     console.log("Sent Archipelago check: " + archipelagoClientLocation.name);
@@ -1371,6 +1466,7 @@ function archipelagoClientSendGeneratedLocationCheck(archipelagoClientLocation) 
     cmd: "LocationChecks",
     locations: [archipelagoClientLocation.id]
   });
+  archipelagoClientBroadcastNetLocationChecked(archipelagoClientLocation.id, "");
 
   if (isDebug) {
     console.log("Sent Archipelago check: " + archipelagoClientLocation.name);

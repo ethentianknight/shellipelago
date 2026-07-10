@@ -8,7 +8,7 @@ The [player options page for this game](../player-options) contains all the opti
 
 Shellipelago shuffles the items needed to explore the map, fight enemies, and complete the final run.
 
-The main progression items are Graphics, Progressive Room, Bombs, Gun, Sword, Fire, Pickaxe, Water Walkers, Tank Treads, Tank Chassis, and Tank Cannon. Max HP, Max Rounds, SFX, and BGM can also be shuffled depending on options.
+The main progression items are Graphics, Progressive Room, Bombs, Gun, Sword, Fire, Pickaxe, Water Walkers, Tank Treads, Tank Chassis, and Tank Cannon. Max HP, Max Rounds, SFX, and BGM can also be shuffled depending on options, with Max Rounds treated as filler resource upgrades.
 
 ## What is the goal of Shellipelago?
 

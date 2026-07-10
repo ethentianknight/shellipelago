@@ -27352,11 +27352,7 @@
           },
           "requirements": [
             [
-              "tank",
-              "bomb:1",
-              "gun:1",
-              "sword:1",
-              "fire"
+              "graphics:1"
             ]
           ]
         },
@@ -31264,6 +31260,11 @@
               "from": "#144491",
               "to": "#f7e26b"
             }
+          ],
+          "requirements": [
+            [
+              "graphics:1"
+            ]
           ]
         },
         {
@@ -37712,15 +37713,6 @@
               "from": "#144491",
               "to": "#f7e26b"
             }
-          ],
-          "requirements": [
-            [
-              "tank",
-              "bomb:1",
-              "gun:1",
-              "sword:1",
-              "fire"
-            ]
           ]
         },
         {

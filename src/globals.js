@@ -1,6 +1,6 @@
 var globalsState = {
   loadedModules: [],
-  shellipelagoVersion: "1.10",
+  shellipelagoVersion: "1.11",
   startInFinalRun: false,
   progressiveRoomMaxRing: 5,
   showEssentialPickupHints: true,

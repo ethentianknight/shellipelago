@@ -51,7 +51,7 @@
     "key": "rounds",
     "id": 100006,
     "name": "Max Rounds",
-    "classification": "progression",
+    "classification": "filler",
     "trap": false,
     "count": 40
   },
