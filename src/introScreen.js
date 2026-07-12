@@ -1470,6 +1470,29 @@ function introScreenStartOffline(introScreenShouldLoadSave) {
   initialRoomStart();
 }
 
+function introScreenStartFinalRunTest() {
+  var introScreenParams = new URLSearchParams(window.location.search);
+
+  if (!introScreenParams.has("finalrun")) {
+    return false;
+  }
+
+  var introScreenGraphicsLevelValue = introScreenParams.get("finalrun");
+  var introScreenRequestedGraphicsLevel = introScreenGraphicsLevelValue === "" ? 2 : Number(introScreenGraphicsLevelValue);
+
+  if (!Number.isFinite(introScreenRequestedGraphicsLevel)) {
+    introScreenRequestedGraphicsLevel = 2;
+  }
+
+  globalsState.startInFinalRun = true;
+  globalsState.disableOfflineSave = true;
+  globalsState.progression.graphicsLevel = Math.max(0, Math.min(2, Math.floor(introScreenRequestedGraphicsLevel)));
+  globalsState.progression.graphics = globalsState.progression.graphicsLevel > 0;
+  globalsState.progression.hp = globalsState.progressiveCheckDefinitions.hp.count;
+  globalsState.pendingFinalRunTest = true;
+  return true;
+}
+
 function introScreenSubmitConnection(introScreenEvent) {
   var introScreenForm = introScreenEvent.currentTarget;
   var introScreenFields = introScreenForm.elements;
@@ -1509,4 +1532,6 @@ function introScreenSubmitConnection(introScreenEvent) {
 
 globalsState.loadedModules.push("introScreen");
 globalsState.deviceMode = "desktop";
-introScreenShowConnection();
+if (!introScreenStartFinalRunTest()) {
+  introScreenShowConnection();
+}

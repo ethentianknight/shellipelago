@@ -1,7 +1,9 @@
 var globalsState = {
   loadedModules: [],
-  shellipelagoVersion: "1.11",
+  shellipelagoVersion: "1.12",
   startInFinalRun: false,
+  pendingFinalRunTest: false,
+  disableOfflineSave: false,
   progressiveRoomMaxRing: 5,
   showEssentialPickupHints: true,
   musicTracks: [

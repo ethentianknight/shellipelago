@@ -297,6 +297,7 @@ var initialRoomFinalRunState = {
   tankMaterials: [],
   crosshair: null,
   crosshairMaterial: null,
+  crosshairRaycaster: null,
   crosshairElement: null,
   audioToggleElement: null,
   hpElement: null,
@@ -305,6 +306,7 @@ var initialRoomFinalRunState = {
   nozzleRecoilStartedAt: 0,
   blobTexture: null,
   blobGreyscaleTexture: null,
+  enemyDotTexture: null,
   snakeTexture: null,
   snakeGreyscaleTexture: null,
   blobs: [],
@@ -318,6 +320,7 @@ var initialRoomFinalRunState = {
   wizardSpawnIndex: 0,
   nextWizardSpawnAt: 0,
   fireballTexture: null,
+  fireballGreyscaleTexture: null,
   fireballs: [],
   boss: null,
   bossSpawned: false,
@@ -876,40 +879,10 @@ function initialRoomUpdateFinalRunLayerBounds() {
 }
 
 function initialRoomEnsureFinalRunCrosshairElement() {
-  var initialRoomCrosshair = null;
-  var initialRoomHorizontalLine = null;
-  var initialRoomVerticalLine = null;
-
   if (initialRoomFinalRunState.crosshairElement) {
-    return;
+    initialRoomFinalRunState.crosshairElement.remove();
+    initialRoomFinalRunState.crosshairElement = null;
   }
-
-  initialRoomCrosshair = document.createElement("div");
-  initialRoomHorizontalLine = document.createElement("div");
-  initialRoomVerticalLine = document.createElement("div");
-  initialRoomCrosshair.style.position = "fixed";
-  initialRoomCrosshair.style.left = "50%";
-  initialRoomCrosshair.style.top = "50%";
-  initialRoomCrosshair.style.width = "1px";
-  initialRoomCrosshair.style.height = "1px";
-  initialRoomCrosshair.style.pointerEvents = "none";
-  initialRoomCrosshair.style.zIndex = "21";
-  initialRoomHorizontalLine.style.position = "absolute";
-  initialRoomHorizontalLine.style.left = "-14px";
-  initialRoomHorizontalLine.style.top = "0";
-  initialRoomHorizontalLine.style.width = "28px";
-  initialRoomHorizontalLine.style.height = "1px";
-  initialRoomVerticalLine.style.position = "absolute";
-  initialRoomVerticalLine.style.left = "0";
-  initialRoomVerticalLine.style.top = "-14px";
-  initialRoomVerticalLine.style.width = "1px";
-  initialRoomVerticalLine.style.height = "28px";
-  initialRoomCrosshair.appendChild(initialRoomHorizontalLine);
-  initialRoomCrosshair.appendChild(initialRoomVerticalLine);
-  initialRoomFinalRunLayer.appendChild(initialRoomCrosshair);
-  initialRoomFinalRunState.crosshairElement = initialRoomCrosshair;
-  initialRoomUpdateFinalRunCrosshairColor();
-  initialRoomUpdateFinalRunScreenCrosshair();
 }
 
 function initialRoomEnsureFinalRunAudioToggles() {
@@ -1051,11 +1024,14 @@ function initialRoomEnsureFinalRunHpElement() {
 }
 
 function initialRoomUpdateFinalRunHpElement() {
+  var initialRoomGraphicsLevel = initialRoomGetGraphicsLevel();
+
   if (!initialRoomFinalRunState.hpElement) {
     return;
   }
 
   initialRoomFinalRunState.hpElement.style.display = initialRoomFinalRunState.active ? "flex" : "none";
+  initialRoomFinalRunState.hpElement.children[1].style.background = initialRoomGraphicsLevel < 2 ? "#050505" : "#f7f7f1";
   initialRoomFinalRunState.hpElement.children[1].children[0].style.background = initialRoomGetHudHpFillColor();
   initialRoomFinalRunState.hpElement.children[1].children[0].style.width = (Math.max(0, Math.min(1, initialRoomPlayer.hp / initialRoomGetEffectiveMaxHp())) * 100) + "%";
 }
@@ -1205,6 +1181,9 @@ function initialRoomExitFinalRun() {
   if (initialRoomFinalRunState.crosshairElement) {
     initialRoomFinalRunState.crosshairElement.style.display = "none";
   }
+  if (initialRoomFinalRunState.crosshair) {
+    initialRoomFinalRunState.crosshair.visible = false;
+  }
   if (initialRoomFinalRunState.audioToggleElement) {
     initialRoomFinalRunState.audioToggleElement.style.display = "none";
   }
@@ -1285,6 +1264,11 @@ function initialRoomFinishFinalRunScene(initialRoomThree, initialRoomRenderer, i
 
   initialRoomFinalRunState.statusElement = null;
   initialRoomFinalRunLayer.appendChild(initialRoomRenderer.domElement);
+  initialRoomRenderer.domElement.style.position = "absolute";
+  initialRoomRenderer.domElement.style.left = "0";
+  initialRoomRenderer.domElement.style.top = "0";
+  initialRoomRenderer.domElement.style.width = "100%";
+  initialRoomRenderer.domElement.style.height = "100%";
   initialRoomRenderer.domElement.style.display = "block";
   initialRoomDirectionalLight.position.set(7, 8, -6);
   initialRoomPointLight.position.set(6, 5.5, -10);
@@ -1307,6 +1291,7 @@ function initialRoomFinishFinalRunScene(initialRoomThree, initialRoomRenderer, i
   initialRoomFinalRunState.tankMaterials = [];
   initialRoomBuildFinalRunEnvironment();
   initialRoomBuildFinalRunTankViewModel();
+  initialRoomBuildFinalRunCrosshair();
   initialRoomLoadFinalRunBlobTexture();
   initialRoomLoadFinalRunSnakeTexture();
   initialRoomLoadFinalRunWizardTexture();
@@ -1448,6 +1433,50 @@ function initialRoomCreateFinalRunGreyscaleTexture(initialRoomSourceTexture) {
   return initialRoomTexture;
 }
 
+function initialRoomGetFinalRunEnemyDotTexture() {
+  var initialRoomThree = initialRoomFinalRunState.three;
+  var initialRoomCanvas = null;
+  var initialRoomContext = null;
+  var initialRoomRows = [
+    "00111100",
+    "01111110",
+    "11111111",
+    "11111111",
+    "11111111",
+    "11111111",
+    "01111110",
+    "00111100"
+  ];
+  var initialRoomY = 0;
+  var initialRoomX = 0;
+
+  if (initialRoomFinalRunState.enemyDotTexture) {
+    return initialRoomFinalRunState.enemyDotTexture;
+  }
+
+  initialRoomCanvas = document.createElement("canvas");
+  initialRoomCanvas.width = 8;
+  initialRoomCanvas.height = 8;
+  initialRoomContext = initialRoomCanvas.getContext("2d");
+  initialRoomContext.fillStyle = "#050505";
+
+  while (initialRoomY < initialRoomRows.length) {
+    initialRoomX = 0;
+    while (initialRoomX < initialRoomRows[initialRoomY].length) {
+      if (initialRoomRows[initialRoomY][initialRoomX] === "1") {
+        initialRoomContext.fillRect(initialRoomX, initialRoomY, 1, 1);
+      }
+      initialRoomX += 1;
+    }
+    initialRoomY += 1;
+  }
+
+  initialRoomFinalRunState.enemyDotTexture = new initialRoomThree.CanvasTexture(initialRoomCanvas);
+  initialRoomFinalRunState.enemyDotTexture.magFilter = initialRoomThree.NearestFilter;
+  initialRoomFinalRunState.enemyDotTexture.minFilter = initialRoomThree.NearestFilter;
+  return initialRoomFinalRunState.enemyDotTexture;
+}
+
 function initialRoomShouldUseFinalRunColor() {
   return initialRoomGetGraphicsLevel() >= 2;
 }
@@ -1467,6 +1496,10 @@ function initialRoomGetFinalRunParticleColors(initialRoomColors) {
 }
 
 function initialRoomGetFinalRunBlobTexture() {
+  if (initialRoomGetGraphicsLevel() === 0) {
+    return initialRoomGetFinalRunEnemyDotTexture();
+  }
+
   if (initialRoomShouldUseFinalRunColor()) {
     return initialRoomFinalRunState.blobTexture;
   }
@@ -1475,6 +1508,10 @@ function initialRoomGetFinalRunBlobTexture() {
 }
 
 function initialRoomGetFinalRunSnakeTexture() {
+  if (initialRoomGetGraphicsLevel() === 0) {
+    return initialRoomGetFinalRunEnemyDotTexture();
+  }
+
   if (initialRoomShouldUseFinalRunColor()) {
     return initialRoomFinalRunState.snakeTexture || initialRoomFinalRunState.blobTexture;
   }
@@ -1483,6 +1520,10 @@ function initialRoomGetFinalRunSnakeTexture() {
 }
 
 function initialRoomGetFinalRunWizardTexture() {
+  if (initialRoomGetGraphicsLevel() === 0) {
+    return initialRoomGetFinalRunEnemyDotTexture();
+  }
+
   if (initialRoomShouldUseFinalRunColor()) {
     return initialRoomFinalRunState.wizardTexture;
   }
@@ -1531,6 +1572,7 @@ function initialRoomLoadFinalRunFireballTexture() {
     initialRoomTexture.magFilter = initialRoomThree.NearestFilter;
     initialRoomTexture.minFilter = initialRoomThree.NearestFilter;
     initialRoomFinalRunState.fireballTexture = initialRoomTexture;
+    initialRoomFinalRunState.fireballGreyscaleTexture = initialRoomCreateFinalRunGreyscaleTexture(initialRoomTexture);
   });
 }
 
@@ -1592,24 +1634,44 @@ function initialRoomCreateFinalRunBox(initialRoomWidth, initialRoomHeight, initi
 
 function initialRoomBuildFinalRunCrosshair() {
   var initialRoomThree = initialRoomFinalRunState.three;
-  var initialRoomCrosshairGeometry = new initialRoomThree.BufferGeometry();
-  var initialRoomSize = finalRunConfig.tank.crosshair.size;
-  var initialRoomGap = finalRunConfig.tank.crosshair.gap;
-  var initialRoomVertices = new Float32Array([
-    -initialRoomSize, 0, 0,
-    -initialRoomGap, 0, 0,
-    initialRoomGap, 0, 0,
-    initialRoomSize, 0, 0,
-    0, -initialRoomSize, 0,
-    0, -initialRoomGap, 0,
-    0, initialRoomGap, 0,
-    0, initialRoomSize, 0
-  ]);
+  var initialRoomCrosshair = new initialRoomThree.Group();
+  var initialRoomBarGeometry = new initialRoomThree.PlaneGeometry(1, 1);
+  var initialRoomHorizontalLeft = null;
+  var initialRoomHorizontalRight = null;
+  var initialRoomVerticalTop = null;
+  var initialRoomVerticalBottom = null;
 
-  initialRoomFinalRunState.crosshairMaterial = new initialRoomThree.LineBasicMaterial({ color: "#ffffff" });
-  initialRoomCrosshairGeometry.setAttribute("position", new initialRoomThree.BufferAttribute(initialRoomVertices, 3));
-  initialRoomFinalRunState.crosshair = new initialRoomThree.LineSegments(initialRoomCrosshairGeometry, initialRoomFinalRunState.crosshairMaterial);
-  initialRoomFinalRunState.camera.add(initialRoomFinalRunState.crosshair);
+  initialRoomFinalRunState.crosshairMaterial = new initialRoomThree.MeshBasicMaterial({
+    color: "#ffffff",
+    depthTest: false,
+    depthWrite: false,
+    side: initialRoomThree.DoubleSide
+  });
+  initialRoomFinalRunState.crosshairRaycaster = new initialRoomThree.Raycaster();
+
+  function initialRoomCreateCrosshairBar(initialRoomX, initialRoomY, initialRoomWidth, initialRoomHeight) {
+    var initialRoomBar = new initialRoomThree.Mesh(initialRoomBarGeometry, initialRoomFinalRunState.crosshairMaterial);
+
+    initialRoomBar.position.set(initialRoomX, initialRoomY, 0);
+    initialRoomBar.scale.set(initialRoomWidth, initialRoomHeight, 1);
+    initialRoomBar.renderOrder = 20;
+    return initialRoomBar;
+  }
+
+  initialRoomHorizontalLeft = initialRoomCreateCrosshairBar(-0.36, 0, 0.38, 0.09);
+  initialRoomHorizontalRight = initialRoomCreateCrosshairBar(0.36, 0, 0.38, 0.09);
+  initialRoomVerticalTop = initialRoomCreateCrosshairBar(0, 0.36, 0.09, 0.38);
+  initialRoomVerticalBottom = initialRoomCreateCrosshairBar(0, -0.36, 0.09, 0.38);
+  initialRoomCrosshair.add(initialRoomHorizontalLeft);
+  initialRoomCrosshair.add(initialRoomHorizontalRight);
+  initialRoomCrosshair.add(initialRoomVerticalTop);
+  initialRoomCrosshair.add(initialRoomVerticalBottom);
+  initialRoomCrosshair.renderOrder = 20;
+  initialRoomCrosshair.traverse(function (initialRoomCrosshairObject) {
+    initialRoomCrosshairObject.frustumCulled = false;
+  });
+  initialRoomFinalRunState.crosshair = initialRoomCrosshair;
+  initialRoomFinalRunState.scene.add(initialRoomCrosshair);
   initialRoomUpdateFinalRunCrosshairColor();
 }
 
@@ -1636,12 +1698,6 @@ function initialRoomUpdateFinalRunCrosshairColor() {
   if (initialRoomFinalRunState.crosshairMaterial) {
     initialRoomFinalRunState.crosshairMaterial.color.set(initialRoomCrosshairColor);
   }
-
-  if (initialRoomFinalRunState.crosshairElement) {
-    Array.prototype.slice.call(initialRoomFinalRunState.crosshairElement.children).forEach(function (initialRoomLine) {
-      initialRoomLine.style.background = initialRoomCrosshairColor;
-    });
-  }
 }
 
 function initialRoomUpdateFinalRunEnemyTextureModes() {
@@ -1667,6 +1723,178 @@ function initialRoomUpdateFinalRunEnemyTextureModes() {
     initialRoomFinalRunState.boss.sprite.material.map = initialRoomBlobTexture;
     initialRoomFinalRunState.boss.sprite.material.needsUpdate = true;
   }
+
+  initialRoomFinalRunState.fireballs.forEach(function (initialRoomFireball) {
+    initialRoomApplyFinalRunFireballGraphics(initialRoomFireball.sprite.material);
+  });
+}
+
+function initialRoomApplyFinalRunFireballGraphics(initialRoomMaterial) {
+  var initialRoomGraphicsLevel = initialRoomGetGraphicsLevel();
+
+  if (initialRoomGraphicsLevel === 0) {
+    initialRoomMaterial.map = null;
+    initialRoomMaterial.color.set("#050505");
+    initialRoomMaterial.transparent = false;
+  } else {
+    initialRoomMaterial.map = initialRoomGraphicsLevel === 1 ? (initialRoomFinalRunState.fireballGreyscaleTexture || initialRoomFinalRunState.fireballTexture) : initialRoomFinalRunState.fireballTexture;
+    initialRoomMaterial.color.set("#ffffff");
+    initialRoomMaterial.transparent = true;
+  }
+
+  initialRoomMaterial.needsUpdate = true;
+}
+
+function initialRoomGetFinalRunViewportRect() {
+  var initialRoomCanvas = initialRoomFinalRunState.renderer && initialRoomFinalRunState.renderer.domElement;
+  var initialRoomRect = initialRoomCanvas && initialRoomCanvas.getBoundingClientRect ? initialRoomCanvas.getBoundingClientRect() : null;
+  var initialRoomLayerRect = null;
+
+  if (initialRoomRect && initialRoomRect.width > 0 && initialRoomRect.height > 0) {
+    return initialRoomRect;
+  }
+
+  initialRoomLayerRect = initialRoomFinalRunLayer && initialRoomFinalRunLayer.getBoundingClientRect ? initialRoomFinalRunLayer.getBoundingClientRect() : null;
+  if (initialRoomLayerRect && initialRoomLayerRect.width > 0 && initialRoomLayerRect.height > 0) {
+    return initialRoomLayerRect;
+  }
+
+  return {
+    left: 0,
+    top: 0,
+    width: Math.max(1, window.innerWidth),
+    height: Math.max(1, window.innerHeight)
+  };
+}
+
+function initialRoomGetFinalRunPointerNdc() {
+  var initialRoomRect = initialRoomGetFinalRunViewportRect();
+  var initialRoomScreenX = Math.max(initialRoomRect.left, Math.min(initialRoomRect.left + initialRoomRect.width, initialRoomFinalRunMouse.x));
+  var initialRoomScreenY = Math.max(initialRoomRect.top, Math.min(initialRoomRect.top + initialRoomRect.height, initialRoomFinalRunMouse.y));
+  var initialRoomLocalX = (initialRoomScreenX - initialRoomRect.left) / Math.max(1, initialRoomRect.width);
+  var initialRoomLocalY = (initialRoomScreenY - initialRoomRect.top) / Math.max(1, initialRoomRect.height);
+
+  return {
+    x: (initialRoomLocalX * 2) - 1,
+    y: 1 - (initialRoomLocalY * 2),
+    screenX: initialRoomScreenX,
+    screenY: initialRoomScreenY
+  };
+}
+
+function initialRoomFinalRunNdcToScreen(initialRoomNdcX, initialRoomNdcY) {
+  var initialRoomRect = initialRoomGetFinalRunViewportRect();
+
+  return {
+    x: initialRoomRect.left + (((initialRoomNdcX + 1) / 2) * initialRoomRect.width),
+    y: initialRoomRect.top + (((1 - initialRoomNdcY) / 2) * initialRoomRect.height)
+  };
+}
+
+function initialRoomGetFinalRunCameraPlanePosition(initialRoomNdcX, initialRoomNdcY, initialRoomCameraZ) {
+  var initialRoomThree = initialRoomFinalRunState.three;
+  var initialRoomCamera = initialRoomFinalRunState.camera;
+  var initialRoomDepth = Math.abs(initialRoomCameraZ || finalRunConfig.tank.crosshair.z);
+  var initialRoomHalfHeight = 0;
+  var initialRoomHalfWidth = 0;
+
+  if (!initialRoomThree || !initialRoomCamera) {
+    return { x: 0, y: 0, z: initialRoomCameraZ || 0 };
+  }
+
+  initialRoomHalfHeight = Math.tan(((initialRoomCamera.fov || 55) * Math.PI) / 360) * initialRoomDepth;
+  initialRoomHalfWidth = initialRoomHalfHeight * (initialRoomCamera.aspect || (window.innerWidth / Math.max(1, window.innerHeight)));
+
+  return new initialRoomThree.Vector3(
+    initialRoomNdcX * initialRoomHalfWidth,
+    initialRoomNdcY * initialRoomHalfHeight,
+    -initialRoomDepth
+  );
+}
+
+function initialRoomGetFinalRunAimObjects() {
+  var initialRoomObjects = [];
+
+  if (initialRoomFinalRunState.groundSphere) {
+    initialRoomObjects.push(initialRoomFinalRunState.groundSphere);
+  }
+
+  initialRoomFinalRunState.rocks.forEach(function (initialRoomRockState) {
+    if (initialRoomRockState.mesh) {
+      initialRoomObjects.push(initialRoomRockState.mesh);
+    }
+  });
+
+  initialRoomFinalRunState.blobs.forEach(function (initialRoomBlob) {
+    if (initialRoomBlob.sprite) {
+      initialRoomObjects.push(initialRoomBlob.sprite);
+    }
+  });
+
+  initialRoomFinalRunState.wizards.forEach(function (initialRoomWizard) {
+    if (initialRoomWizard.sprite) {
+      initialRoomObjects.push(initialRoomWizard.sprite);
+    }
+  });
+
+  if (initialRoomFinalRunState.boss && initialRoomFinalRunState.boss.sprite) {
+    initialRoomObjects.push(initialRoomFinalRunState.boss.sprite);
+  }
+
+  initialRoomFinalRunState.credits.forEach(function (initialRoomCredit) {
+    if (initialRoomCredit.sprite && !initialRoomCredit.shot) {
+      initialRoomObjects.push(initialRoomCredit.sprite);
+    }
+  });
+
+  return initialRoomObjects;
+}
+
+function initialRoomGetFinalRunAimRaycast() {
+  var initialRoomThree = initialRoomFinalRunState.three;
+  var initialRoomCamera = initialRoomFinalRunState.camera;
+  var initialRoomCrosshairConfig = finalRunConfig.tank.crosshair;
+  var initialRoomPointerPosition = initialRoomGetFinalRunPointerNdc();
+  var initialRoomPointer = null;
+  var initialRoomRaycaster = initialRoomFinalRunState.crosshairRaycaster;
+  var initialRoomAimObjects = null;
+  var initialRoomHits = null;
+  var initialRoomMaxDistance = initialRoomCrosshairConfig.maxDistance;
+  var initialRoomCameraPull = initialRoomCrosshairConfig.surfaceOffset;
+  var initialRoomPosition = null;
+
+  if (!initialRoomThree || !initialRoomCamera) {
+    return null;
+  }
+
+  if (!initialRoomRaycaster) {
+    initialRoomRaycaster = new initialRoomThree.Raycaster();
+    initialRoomFinalRunState.crosshairRaycaster = initialRoomRaycaster;
+  }
+
+  initialRoomPointer = new initialRoomThree.Vector2(initialRoomPointerPosition.x, initialRoomPointerPosition.y);
+  initialRoomFinalRunState.scene.updateMatrixWorld(true);
+  initialRoomRaycaster.setFromCamera(initialRoomPointer, initialRoomCamera);
+  initialRoomRaycaster.far = initialRoomMaxDistance;
+  initialRoomAimObjects = initialRoomGetFinalRunAimObjects();
+  initialRoomHits = initialRoomAimObjects.length ? initialRoomRaycaster.intersectObjects(initialRoomAimObjects, false) : [];
+
+  if (initialRoomHits.length) {
+    initialRoomPosition = initialRoomHits[0].point.clone();
+    initialRoomPosition.add(initialRoomCamera.position.clone().sub(initialRoomPosition).normalize().multiplyScalar(initialRoomCameraPull));
+
+    return {
+      position: initialRoomPosition,
+      hit: initialRoomHits[0],
+      ray: initialRoomRaycaster.ray
+    };
+  }
+
+  return {
+    position: initialRoomRaycaster.ray.origin.clone().add(initialRoomRaycaster.ray.direction.clone().multiplyScalar(initialRoomMaxDistance)),
+    hit: null,
+    ray: initialRoomRaycaster.ray
+  };
 }
 
 function initialRoomUpdateFinalRunTankAim() {
@@ -1674,14 +1902,16 @@ function initialRoomUpdateFinalRunTankAim() {
   var initialRoomPivot = initialRoomFinalRunState.tankNozzlePivot;
   var initialRoomViewModel = initialRoomFinalRunState.tankViewModel;
   var initialRoomNow = performance.now() / 1000;
-  var initialRoomTargetX = (0.5 - (initialRoomFinalRunMouse.x / Math.max(1, window.innerWidth))) * 5.6;
-  var initialRoomTargetZ = -initialRoomTankConfig.nozzle.targetDepth;
+  var initialRoomAim = initialRoomGetFinalRunAimRaycast();
+  var initialRoomCameraTargetPosition = initialRoomAim ? initialRoomFinalRunState.camera.worldToLocal(initialRoomAim.position.clone()) : initialRoomGetFinalRunCameraPlanePosition(0, 0, -Math.abs(initialRoomTankConfig.nozzle.targetDepth));
+  var initialRoomTargetX = -initialRoomCameraTargetPosition.x;
+  var initialRoomTargetZ = initialRoomCameraTargetPosition.z;
   var initialRoomDeltaX = initialRoomTargetX;
   var initialRoomDeltaZ = initialRoomTargetZ - initialRoomTankConfig.nozzle.pivotZ;
+  var initialRoomDeltaY = initialRoomCameraTargetPosition.y - initialRoomTankConfig.nozzle.pivotY;
   var initialRoomYaw = Math.atan2(initialRoomDeltaX, -initialRoomDeltaZ);
   var initialRoomMaxPitch = (initialRoomTankConfig.nozzle.maxPitchDegrees * Math.PI) / 180;
-  var initialRoomVerticalAim = 1 - (initialRoomFinalRunMouse.y / Math.max(1, window.innerHeight));
-  var initialRoomPitch = initialRoomVerticalAim * initialRoomMaxPitch * initialRoomTankConfig.nozzle.aimYScale;
+  var initialRoomPitch = Math.atan2(initialRoomDeltaY, -initialRoomDeltaZ) * initialRoomTankConfig.nozzle.aimYScale;
   var initialRoomBob = (Math.sin(initialRoomNow * 8.7) * 0.58) + (Math.sin(initialRoomNow * 13.9 + 1.7) * 0.32) + (Math.sin(initialRoomNow * 23.1 + 0.3) * 0.1);
 
   if (!initialRoomPivot) {
@@ -2165,9 +2395,9 @@ function initialRoomSpawnFinalRunWizardFireball(initialRoomWizard, initialRoomNo
   initialRoomWizard.sprite.getWorldPosition(initialRoomStartPosition);
   initialRoomDirection = initialRoomTargetPosition.clone().sub(initialRoomStartPosition).normalize();
   initialRoomFireballMaterial = new initialRoomThree.SpriteMaterial({
-    map: initialRoomFinalRunState.fireballTexture,
     transparent: true
   });
+  initialRoomApplyFinalRunFireballGraphics(initialRoomFireballMaterial);
   initialRoomFireballSprite = new initialRoomThree.Sprite(initialRoomFireballMaterial);
   initialRoomFireballSprite.position.copy(initialRoomStartPosition);
   initialRoomFireballSprite.scale.set(initialRoomFireballConfig.scale, initialRoomFireballConfig.scale, initialRoomFireballConfig.scale);
@@ -2321,8 +2551,7 @@ function initialRoomApplyFinalRunShotImpact() {
 function initialRoomTryFinalRunEnemyShotImpact() {
   var initialRoomThree = initialRoomFinalRunState.three;
   var initialRoomImpactConfig = finalRunConfig.tank.impactCloud;
-  var initialRoomMouseX = initialRoomFinalRunMouse.x;
-  var initialRoomMouseY = initialRoomFinalRunMouse.y;
+  var initialRoomPointer = initialRoomGetFinalRunPointerNdc();
   var initialRoomBestEnemy = null;
   var initialRoomBestDistance = Infinity;
 
@@ -2345,8 +2574,7 @@ function initialRoomTryFinalRunEnemyShotImpact() {
   function initialRoomFindFinalRunShotEnemyCandidate(initialRoomEnemy, initialRoomEnemyKind, initialRoomHitRadius) {
     var initialRoomWorldPosition = new initialRoomThree.Vector3();
     var initialRoomProjectedPosition = null;
-    var initialRoomScreenX = 0;
-    var initialRoomScreenY = 0;
+    var initialRoomScreenPosition = null;
     var initialRoomDistance = 0;
 
     initialRoomEnemy.sprite.getWorldPosition(initialRoomWorldPosition);
@@ -2356,11 +2584,10 @@ function initialRoomTryFinalRunEnemyShotImpact() {
       return;
     }
 
-    initialRoomScreenX = ((initialRoomProjectedPosition.x + 1) / 2) * window.innerWidth;
-    initialRoomScreenY = ((1 - initialRoomProjectedPosition.y) / 2) * window.innerHeight;
+    initialRoomScreenPosition = initialRoomFinalRunNdcToScreen(initialRoomProjectedPosition.x, initialRoomProjectedPosition.y);
     initialRoomDistance = Math.sqrt(
-      ((initialRoomScreenX - initialRoomMouseX) * (initialRoomScreenX - initialRoomMouseX)) +
-      ((initialRoomScreenY - initialRoomMouseY) * (initialRoomScreenY - initialRoomMouseY))
+      ((initialRoomScreenPosition.x - initialRoomPointer.screenX) * (initialRoomScreenPosition.x - initialRoomPointer.screenX)) +
+      ((initialRoomScreenPosition.y - initialRoomPointer.screenY) * (initialRoomScreenPosition.y - initialRoomPointer.screenY))
     );
 
     if (initialRoomDistance <= initialRoomHitRadius && initialRoomDistance < initialRoomBestDistance) {
@@ -2412,10 +2639,8 @@ function initialRoomMarkFinalRunCreditShot(initialRoomCredit) {
 function initialRoomTryFinalRunSurfaceShotImpact() {
   var initialRoomThree = initialRoomFinalRunState.three;
   var initialRoomRaycaster = new initialRoomThree.Raycaster();
-  var initialRoomPointer = new initialRoomThree.Vector2(
-    (initialRoomFinalRunMouse.x / Math.max(1, window.innerWidth)) * 2 - 1,
-    -((initialRoomFinalRunMouse.y / Math.max(1, window.innerHeight)) * 2 - 1)
-  );
+  var initialRoomPointerPosition = initialRoomGetFinalRunPointerNdc();
+  var initialRoomPointer = new initialRoomThree.Vector2(initialRoomPointerPosition.x, initialRoomPointerPosition.y);
   var initialRoomImpactObjects = [];
   var initialRoomHits = null;
 
@@ -2639,26 +2864,30 @@ function initialRoomUpdateFinalRunMuzzleParticles(initialRoomDeltaSeconds, initi
 function initialRoomUpdateFinalRunCrosshairPosition() {
   var initialRoomCrosshair = initialRoomFinalRunState.crosshair;
   var initialRoomCrosshairConfig = finalRunConfig.tank.crosshair;
+  var initialRoomAim = null;
+  var initialRoomDistance = 0;
+  var initialRoomWorldUnitsPerPixel = 0;
+  var initialRoomScale = 1;
 
   if (!initialRoomCrosshair) {
     return;
   }
 
-  initialRoomCrosshair.position.set(
-    ((initialRoomFinalRunMouse.x / Math.max(1, window.innerWidth)) - 0.5) * 5.6,
-    (0.5 - (initialRoomFinalRunMouse.y / Math.max(1, window.innerHeight))) * 3.2,
-    initialRoomCrosshairConfig.z
-  );
-}
-
-function initialRoomUpdateFinalRunScreenCrosshair() {
-  if (!initialRoomFinalRunState.crosshairElement) {
+  initialRoomAim = initialRoomGetFinalRunAimRaycast();
+  if (!initialRoomAim) {
     return;
   }
 
-  initialRoomFinalRunState.crosshairElement.style.display = initialRoomFinalRunState.active ? "block" : "none";
-  initialRoomFinalRunState.crosshairElement.style.left = initialRoomFinalRunMouse.x + "px";
-  initialRoomFinalRunState.crosshairElement.style.top = initialRoomFinalRunMouse.y + "px";
+  initialRoomDistance = initialRoomFinalRunState.camera.position.distanceTo(initialRoomAim.position);
+  initialRoomWorldUnitsPerPixel = (2 * Math.tan((initialRoomFinalRunState.camera.fov * Math.PI) / 360) * initialRoomDistance) / Math.max(1, initialRoomGetFinalRunViewportRect().height);
+  initialRoomScale = initialRoomWorldUnitsPerPixel * initialRoomCrosshairConfig.screenSize;
+  initialRoomCrosshair.visible = initialRoomFinalRunState.active;
+  initialRoomCrosshair.position.copy(initialRoomAim.position);
+  initialRoomCrosshair.lookAt(initialRoomFinalRunState.camera.position);
+  initialRoomCrosshair.scale.set(initialRoomScale, initialRoomScale, initialRoomScale);
+}
+
+function initialRoomUpdateFinalRunScreenCrosshair() {
 }
 
 function initialRoomBuildFinalRunEnvironment() {
@@ -2941,6 +3170,7 @@ function initialRoomRefreshFinalRunGraphicsMode() {
   initialRoomFinalRunState.sunMarker.visible = initialRoomGraphicsLevel > 0;
   initialRoomUpdateFinalRunTankColors();
   initialRoomUpdateFinalRunCrosshairColor();
+  initialRoomUpdateFinalRunHpElement();
   initialRoomUpdateFinalRunEnemyTextureModes();
   initialRoomFinalRunState.rocks.forEach(function (initialRoomRockState) {
     initialRoomRockState.mesh.material = initialRoomFinalRunState.materials.rock;
@@ -2953,9 +3183,10 @@ function initialRoomResizeFinalRunRenderer() {
   }
 
   initialRoomFinalRunState.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-  initialRoomFinalRunState.renderer.setSize(window.innerWidth, window.innerHeight, false);
-  initialRoomFinalRunState.camera.aspect = window.innerWidth / window.innerHeight;
+  initialRoomFinalRunState.renderer.setSize(Math.max(1, window.innerWidth), Math.max(1, window.innerHeight), true);
+  initialRoomFinalRunState.camera.aspect = Math.max(1, window.innerWidth) / Math.max(1, window.innerHeight);
   initialRoomFinalRunState.camera.updateProjectionMatrix();
+  initialRoomUpdateFinalRunScreenCrosshair();
 }
 
 function initialRoomStartFinalRunLoop() {
@@ -6127,7 +6358,7 @@ function initialRoomGetHudHpFillColor() {
     return "#4e8dff";
   }
 
-  return initialRoomGetGraphicsLevel() === 1 ? "#8f949d" : "#f7f7f1";
+  return "#f7f7f1";
 }
 
 function initialRoomSyncPlayerResourceMaxes() {
@@ -6651,6 +6882,7 @@ function initialRoomDrawBasicStatusProgressionSlot(initialRoomItem, initialRoomX
 
   if (initialRoomLabel) {
     initialRoomWrapStatusText(initialRoomLabel, initialRoomX + (initialRoomSize / 2), initialRoomY + (initialRoomSize / 2), initialRoomSize - (initialRoomPixelUnit * 2), initialRoomPixelUnit * 4);
+    initialRoomDrawStatusUseKey(initialRoomGetStatusUseKey(initialRoomItem.key), initialRoomX, initialRoomY, initialRoomSize, initialRoomPixelUnit);
   }
 }
 
@@ -9660,6 +9892,10 @@ function initialRoomResetFinalRunSceneForFreshEntry() {
     initialRoomFinalRunState.blobGreyscaleTexture.dispose();
   }
 
+  if (initialRoomFinalRunState.enemyDotTexture) {
+    initialRoomFinalRunState.enemyDotTexture.dispose();
+  }
+
   if (initialRoomFinalRunState.snakeTexture) {
     initialRoomFinalRunState.snakeTexture.dispose();
   }
@@ -9680,6 +9916,10 @@ function initialRoomResetFinalRunSceneForFreshEntry() {
     initialRoomFinalRunState.fireballTexture.dispose();
   }
 
+  if (initialRoomFinalRunState.fireballGreyscaleTexture) {
+    initialRoomFinalRunState.fireballGreyscaleTexture.dispose();
+  }
+
   initialRoomFinalRunState.loading = false;
   initialRoomFinalRunState.initialized = false;
   initialRoomFinalRunState.renderer = null;
@@ -9697,10 +9937,12 @@ function initialRoomResetFinalRunSceneForFreshEntry() {
   initialRoomFinalRunState.tankMaterials = [];
   initialRoomFinalRunState.crosshair = null;
   initialRoomFinalRunState.crosshairMaterial = null;
+  initialRoomFinalRunState.crosshairRaycaster = null;
   initialRoomFinalRunState.muzzleParticleGeometry = null;
   initialRoomFinalRunState.nozzleRecoilStartedAt = 0;
   initialRoomFinalRunState.blobTexture = null;
   initialRoomFinalRunState.blobGreyscaleTexture = null;
+  initialRoomFinalRunState.enemyDotTexture = null;
   initialRoomFinalRunState.blobSpawnIndex = 0;
   initialRoomFinalRunState.nextBlobSpawnAt = 0;
   initialRoomFinalRunState.snakeTexture = null;
@@ -9712,6 +9954,7 @@ function initialRoomResetFinalRunSceneForFreshEntry() {
   initialRoomFinalRunState.wizardSpawnIndex = 0;
   initialRoomFinalRunState.nextWizardSpawnAt = 0;
   initialRoomFinalRunState.fireballTexture = null;
+  initialRoomFinalRunState.fireballGreyscaleTexture = null;
   initialRoomFinalRunState.bossSpawned = false;
   initialRoomFinalRunState.bossDefeated = false;
   initialRoomFinalRunState.runStartedAt = 0;
@@ -9806,7 +10049,7 @@ function initialRoomSaveOfflineProgress() {
   var initialRoomSaveKey = globalsState.offlineSaveKey || "shellipelagoOfflineSave";
   var initialRoomSaveVersion = globalsState.offlineSaveVersion || "1.1";
 
-  if (globalsState.archipelago.connected) {
+  if (globalsState.archipelago.connected || globalsState.disableOfflineSave) {
     return;
   }
 
@@ -11809,6 +12052,11 @@ function initialRoomApplyNetLocationEnemyState(initialRoomEnemy, initialRoomRoom
 }
 
 globalsState.loadedModules.push("initialRoom");
+
+if (globalsState.pendingFinalRunTest) {
+  globalsState.pendingFinalRunTest = false;
+  introScreenStartOffline(false);
+}
 
 function initialRoomIsCheckTileCollected(initialRoomTile, initialRoomRoom) {
   if (!initialRoomTile) {

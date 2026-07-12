@@ -60,7 +60,10 @@ var finalRunConfig = {
       greyscaleColor: "#d8d8d8",
       size: 0.16,
       gap: 0.05,
-      z: -5
+      z: -5,
+      screenSize: 34,
+      maxDistance: 22,
+      surfaceOffset: 0.12
     },
     hp: {
       bottom: 18,

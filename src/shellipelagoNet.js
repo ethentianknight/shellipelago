@@ -1,5 +1,5 @@
 var shellipelagoNetVersion = 3;
-var shellipelagoNetSignalingEndpoint = "https://shellipelago-net-signaling.ethentianknight.workers.dev";
+var shellipelagoNetSignalingEndpoint = "https://shellipelago-net-signaling.mark-c49.workers.dev";
 var shellipelagoNetDefaultIceServers = [
   { urls: "stun:stun.l.google.com:19302" },
   { urls: "stun:stun1.l.google.com:19302" },
