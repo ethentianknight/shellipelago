@@ -381,6 +381,11 @@ var initialRoomPixelUnitDivisor = 16;
 var initialRoomTilesetTileSize = 16;
 var initialRoomTilesetDataPath = "src/data/tileset.json";
 var initialRoomBaseVisibleTiles = 8;
+var initialRoomZoomCycleEnabled = false;
+var initialRoomZoomLevelIndex = 0;
+var initialRoomZoomLevels = [1, 1.5, 2];
+var initialRoomCapsLockActive = false;
+var initialRoomCapsLockTilesSinceEnergyCost = 0;
 var initialRoomBaseMoveTilesPerSecond = 5.046434489901609;
 var initialRoomTankVisibleTileMultiplier = 1.5;
 var initialRoomTilesetPath = "src/img/tileset/PixelPackTOPDOWN8BIT.png";
@@ -1082,7 +1087,24 @@ function initialRoomGetVisibleTileCount() {
     return 3;
   }
 
-  return initialRoomBaseVisibleTiles * (initialRoomHasTankForm() ? initialRoomTankVisibleTileMultiplier : 1);
+  return initialRoomBaseVisibleTiles *
+    (initialRoomHasTankForm() ? initialRoomTankVisibleTileMultiplier : 1) *
+    initialRoomZoomLevels[initialRoomZoomLevelIndex];
+}
+
+function initialRoomEnableZoomCycling() {
+  initialRoomZoomCycleEnabled = true;
+  initialRoomZoomLevelIndex = 0;
+}
+
+function initialRoomCycleZoomLevel() {
+  if (!initialRoomZoomCycleEnabled || initialRoomIsZoomTrapActive()) {
+    return false;
+  }
+
+  initialRoomZoomLevelIndex = (initialRoomZoomLevelIndex + 1) % initialRoomZoomLevels.length;
+  initialRoomUpdateView();
+  return true;
 }
 
 function initialRoomIsFinalRunRoom(initialRoomRoom) {
@@ -6324,7 +6346,7 @@ function initialRoomDrawHud() {
     initialRoomBarHeight - (initialRoomPixelUnit * 2)
   );
 
-  initialRoomDrawOutlinedHudText("E " + initialRoomPlayer.energy, initialRoomReadoutX, initialRoomReadoutY);
+  initialRoomDrawOutlinedHudText("E " + initialRoomFormatEnergy(initialRoomPlayer.energy), initialRoomReadoutX, initialRoomReadoutY);
   initialRoomReadoutX += initialRoomReadoutGap;
 
   if (initialRoomPlayer.maxRounds > 0) {
@@ -6332,6 +6354,24 @@ function initialRoomDrawHud() {
   }
 
   initialRoomContext.restore();
+}
+
+function initialRoomFormatEnergy(initialRoomEnergy) {
+  var initialRoomValue = Math.max(0, Math.floor(Number(initialRoomEnergy) || 0));
+  var initialRoomExponent = 0;
+  var initialRoomLeadingDigit = 0;
+
+  if (initialRoomValue <= 999) {
+    return String(initialRoomValue);
+  }
+
+  if (initialRoomValue <= 999999) {
+    return Math.floor(initialRoomValue / 1000) + "k";
+  }
+
+  initialRoomExponent = Math.floor(Math.log10(initialRoomValue));
+  initialRoomLeadingDigit = Math.floor(initialRoomValue / Math.pow(10, initialRoomExponent));
+  return initialRoomLeadingDigit + "e" + initialRoomExponent;
 }
 
 function initialRoomGetHudHpBarWidth(initialRoomMaxBarWidth) {
@@ -6438,15 +6478,16 @@ function initialRoomDrawMapOverlay() {
   var initialRoomPixelUnit = initialRoomGetPixelUnit();
   var initialRoomUnlockedRing = globalsState.progression.progressiveRooms || 0;
   var initialRoomGridSize = (initialRoomUnlockedRing * 2) + 1;
+  var initialRoomTitleFontSize = Math.max(24, initialRoomPixelUnit * 8);
+  var initialRoomTitleBandHeight = initialRoomTitleFontSize + (initialRoomPixelUnit * 8);
   var initialRoomMaxOverlayWidth = initialRoomCanvas.width - (initialRoomPixelUnit * 16);
-  var initialRoomMaxOverlayHeight = initialRoomCanvas.height - (initialRoomPixelUnit * 16);
+  var initialRoomMaxOverlayHeight = initialRoomCanvas.height - (initialRoomPixelUnit * 16) - initialRoomTitleBandHeight;
   var initialRoomCellSize = Math.max(initialRoomPixelUnit * 6, Math.floor(Math.min(initialRoomMaxOverlayWidth, initialRoomMaxOverlayHeight) / initialRoomGridSize));
   var initialRoomMapSize = initialRoomCellSize * initialRoomGridSize;
   var initialRoomMapX = Math.floor((initialRoomCanvas.width - initialRoomMapSize) / 2);
-  var initialRoomMapY = Math.floor((initialRoomCanvas.height - initialRoomMapSize) / 2);
+  var initialRoomMapY = initialRoomTitleBandHeight + Math.floor((initialRoomCanvas.height - initialRoomTitleBandHeight - initialRoomMapSize) / 2);
   var initialRoomTitle = initialRoomGetCurrentRoomDisplayName();
-  var initialRoomTitleFontSize = Math.max(24, initialRoomPixelUnit * 8);
-  var initialRoomTitleY = Math.max(initialRoomPixelUnit * 4, initialRoomMapY - (initialRoomPixelUnit * 10));
+  var initialRoomTitleY = Math.max(initialRoomPixelUnit * 4, Math.floor((initialRoomTitleBandHeight - initialRoomTitleFontSize) / 2));
   var initialRoomRoomY = -initialRoomUnlockedRing;
   var initialRoomHoveredRoom = null;
 
@@ -7110,18 +7151,26 @@ function initialRoomGetTopRightMenuIcon(initialRoomIconKey) {
 
 function initialRoomDrawMapRoomCell(initialRoomRoomX, initialRoomRoomY, initialRoomX, initialRoomY, initialRoomCellSize, initialRoomPixelUnit) {
   var initialRoomBaseColor = initialRoomGetCachedMapRoomColor(initialRoomRoomX, initialRoomRoomY);
+  var initialRoomStatus = initialRoomGetCachedMapRoomStatus(initialRoomRoomX, initialRoomRoomY);
   var initialRoomIsCurrentRoom = initialRoomCurrentRoom && initialRoomCurrentRoom.x === initialRoomRoomX && initialRoomCurrentRoom.y === initialRoomRoomY;
   var initialRoomBlinkOn = Math.floor(Date.now() / 350) % 2 === 0;
   var initialRoomInset = Math.max(1, initialRoomPixelUnit);
+  var initialRoomUseColor = initialRoomGetGraphicsLevel() >= 2;
   var initialRoomCurrentColor = initialRoomGetGraphicsLevel() >= 2 ? "#2f7dff" : "#f7f7f1";
 
-  initialRoomContext.fillStyle = initialRoomIsCurrentRoom && initialRoomBlinkOn ? initialRoomCurrentColor : initialRoomBaseColor;
+  initialRoomContext.fillStyle = initialRoomIsCurrentRoom && initialRoomBlinkOn && initialRoomUseColor ? initialRoomCurrentColor : initialRoomBaseColor;
   initialRoomContext.fillRect(initialRoomX, initialRoomY, initialRoomCellSize, initialRoomCellSize);
+
+  if (initialRoomIsCurrentRoom && initialRoomBlinkOn && !initialRoomUseColor && initialRoomStatus.available > 0) {
+    initialRoomContext.fillStyle = "rgba(247, 247, 241, 0.22)";
+    initialRoomContext.fillRect(initialRoomX, initialRoomY, initialRoomCellSize, initialRoomCellSize);
+  }
+
   initialRoomContext.strokeStyle = "#050505";
   initialRoomContext.lineWidth = Math.max(1, initialRoomPixelUnit);
   initialRoomContext.strokeRect(initialRoomX, initialRoomY, initialRoomCellSize, initialRoomCellSize);
 
-  if (initialRoomIsCurrentRoom && !initialRoomBlinkOn) {
+  if (initialRoomIsCurrentRoom && (initialRoomUseColor ? !initialRoomBlinkOn : initialRoomBlinkOn)) {
     initialRoomContext.strokeStyle = initialRoomCurrentColor;
     initialRoomContext.lineWidth = Math.max(1, initialRoomPixelUnit * 2);
     initialRoomContext.strokeRect(
@@ -7163,7 +7212,7 @@ function initialRoomDrawMapRoomCellMarkers(initialRoomRoomX, initialRoomRoomY, i
     initialRoomDrawMapCellMarkerText(String(initialRoomStatus.destructibleRemaining), initialRoomX + initialRoomCellSize - initialRoomPadding, initialRoomY + initialRoomCellSize - initialRoomPadding, "right", "bottom");
   }
 
-  if (initialRoomStatus.optionalTotal > 0 && initialRoomStatus.optionalRemaining <= 0) {
+  if (initialRoomStatus.optionalChecksEnabled && initialRoomStatus.optionalRemaining <= 0) {
     initialRoomDrawMapCellMarkerText("✓", initialRoomX + Math.floor(initialRoomCellSize / 2), initialRoomY + Math.floor(initialRoomCellSize / 2), "center", "middle");
   }
 
@@ -7293,6 +7342,7 @@ function initialRoomGetMapRoomCheckStatus(initialRoomRoomX, initialRoomRoomY) {
     remaining: 0,
     destructibleRemaining: 0,
     enemyRemaining: 0,
+    optionalChecksEnabled: false,
     optionalRemaining: 0,
     optionalTotal: 0,
     visitedWarp: false
@@ -7303,6 +7353,11 @@ function initialRoomGetMapRoomCheckStatus(initialRoomRoomX, initialRoomRoomY) {
     return initialRoomStatus;
   }
 
+  initialRoomStatus.optionalChecksEnabled = Boolean(
+    globalsState.archipelago.connected &&
+    (initialRoomIsArchipelagoOptionEnabled("enemies_are_checks", "enemy") ||
+      initialRoomIsArchipelagoOptionEnabled("add_easy_destructible_checks", "easy_destructible"))
+  );
   initialRoomStatus.visitedWarp = initialRoomHasVisitedWarpRoom(initialRoomRoomX, initialRoomRoomY);
   initialRoomCanAccessRoom = initialRoomCanMeetRequirementGroups(initialRoomRoom.requirements || []);
 
@@ -8480,6 +8535,18 @@ function initialRoomStartTileMove(initialRoomDirection) {
     return;
   }
 
+  initialRoomPlayer.moveSpeedMultiplier = 1;
+  if (initialRoomCapsLockActive && initialRoomPlayer.energy >= 1) {
+    initialRoomPlayer.moveSpeedMultiplier = 2;
+    initialRoomCapsLockTilesSinceEnergyCost += 1;
+    if (initialRoomCapsLockTilesSinceEnergyCost >= 3) {
+      initialRoomCapsLockTilesSinceEnergyCost = 0;
+      initialRoomPlayer.energy -= 1;
+      if (initialRoomIsEnergyLinkEnabled() && typeof archipelagoClientSendEnergyLinkDeplete === "function") {
+        archipelagoClientSendEnergyLinkDeplete(1, "caps-lock-move:" + Date.now());
+      }
+    }
+  }
   initialRoomPlayer.moveDirection = initialRoomDirection;
   initialRoomPlayer.targetX = initialRoomNextX + 0.5;
   initialRoomPlayer.targetY = initialRoomNextY + 0.5;
@@ -8490,7 +8557,7 @@ function initialRoomGetMovementTilesForFrame(initialRoomDeltaSeconds, initialRoo
 }
 
 function initialRoomUpdateTileLockedMovement(initialRoomDeltaSeconds) {
-  var initialRoomMoveAmount = initialRoomGetMovementTilesForFrame(initialRoomDeltaSeconds, 1);
+  var initialRoomMoveAmount = initialRoomGetMovementTilesForFrame(initialRoomDeltaSeconds, initialRoomPlayer.moveSpeedMultiplier || 1);
 
   if (initialRoomIsMeleeActive()) {
     return;
@@ -8526,6 +8593,7 @@ function initialRoomAdvanceTileMove(initialRoomMoveAmount) {
     initialRoomPlayer.x = initialRoomPlayer.targetX;
     initialRoomPlayer.y = initialRoomPlayer.targetY;
     initialRoomPlayer.moveDirection = null;
+    initialRoomPlayer.moveSpeedMultiplier = 1;
     initialRoomSendNetPositionAtActionCenter();
   }
 }
@@ -11547,6 +11615,14 @@ function initialRoomClearHeldInput() {
 }
 
 window.addEventListener("keydown", function (initialRoomEvent) {
+  if (typeof initialRoomEvent.getModifierState === "function") {
+    var initialRoomCapsLockWasActive = initialRoomCapsLockActive;
+    initialRoomCapsLockActive = initialRoomEvent.getModifierState("CapsLock");
+    if (initialRoomCapsLockWasActive && !initialRoomCapsLockActive) {
+      initialRoomCapsLockTilesSinceEnergyCost = 0;
+    }
+  }
+
   if (!initialRoomShouldHandleGlobalKeyInput()) {
     return;
   }
@@ -11715,6 +11791,12 @@ window.addEventListener("keydown", function (initialRoomEvent) {
     return;
   }
 
+  if (initialRoomEvent.key.toLowerCase() === "z" && initialRoomZoomCycleEnabled && !initialRoomEvent.repeat) {
+    initialRoomCycleZoomLevel();
+    initialRoomEvent.preventDefault();
+    return;
+  }
+
   if (initialRoomEvent.key === "Enter" && initialRoomCanOpenMapOverlay()) {
     initialRoomOpenTextEntry();
     initialRoomEvent.preventDefault();
@@ -11782,6 +11864,14 @@ window.addEventListener("keydown", function (initialRoomEvent) {
 });
 
 window.addEventListener("keyup", function (initialRoomEvent) {
+  if (typeof initialRoomEvent.getModifierState === "function") {
+    var initialRoomCapsLockWasActive = initialRoomCapsLockActive;
+    initialRoomCapsLockActive = initialRoomEvent.getModifierState("CapsLock");
+    if (initialRoomCapsLockWasActive && !initialRoomCapsLockActive) {
+      initialRoomCapsLockTilesSinceEnergyCost = 0;
+    }
+  }
+
   if (!initialRoomShouldHandleGlobalKeyInput()) {
     return;
   }

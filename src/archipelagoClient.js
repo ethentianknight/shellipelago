@@ -363,6 +363,16 @@ function archipelagoClientHandleLocalCommand(archipelagoClientText) {
     return true;
   }
 
+  if (archipelagoClientCommand === "!letmeout") {
+    if (typeof initialRoomEnableZoomCycling === "function") {
+      initialRoomEnableZoomCycling();
+      archipelagoClientQueueServerMessage("Zoom cycling enabled. Press Z to cycle 1x, 1.5x, and 2x.");
+    } else {
+      archipelagoClientQueueServerMessage("Zoom cycling is not available yet.");
+    }
+    return true;
+  }
+
   if (archipelagoClientCommand === "!no3d") {
     archipelagoClientTryNo3dGoal();
     return true;
