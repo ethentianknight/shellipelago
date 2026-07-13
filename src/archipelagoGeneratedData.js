@@ -15,13 +15,13 @@ var archipelagoGeneratedItemIdToCheckKeys = {
     "sword"
   ],
   "100005": [
-    "hp"
+    "fire"
   ],
   "100006": [
-    "rounds"
+    "hp"
   ],
   "100007": [
-    "fire"
+    "rounds"
   ],
   "100008": [
     "sfx"
@@ -45,39 +45,54 @@ var archipelagoGeneratedItemIdToCheckKeys = {
     "tankCannon"
   ],
   "100015": [
-    "healthPotion"
+    "magnifyingGlass"
   ],
   "100016": [
-    "energyGem"
+    "orthopedicInserts"
   ],
   "100017": [
-    "roundPouch"
+    "teleportation"
+  ],
+  "100018": [
+    "steelToe"
   ],
   "100019": [
-    "trapStun"
+    "verminPouch"
   ],
   "100020": [
-    "trapInvisible"
+    "healthPotion"
   ],
   "100021": [
-    "trapFast"
+    "energyGem"
   ],
   "100022": [
-    "trapSlow"
-  ],
-  "100023": [
-    "trapReverse"
+    "roundPouch"
   ],
   "100024": [
-    "trapScreenFlip"
+    "trapStun"
   ],
   "100025": [
-    "trapZoom"
+    "trapInvisible"
   ],
   "100026": [
-    "trapDeath"
+    "trapFast"
   ],
   "100027": [
+    "trapSlow"
+  ],
+  "100028": [
+    "trapReverse"
+  ],
+  "100029": [
+    "trapScreenFlip"
+  ],
+  "100030": [
+    "trapZoom"
+  ],
+  "100031": [
+    "trapDeath"
+  ],
+  "100032": [
     "suddenlySnake"
   ]
 };
@@ -87,9 +102,9 @@ var archipelagoGeneratedItemIdToNames = {
   "100002": "Bombs",
   "100003": "Gun",
   "100004": "Sword",
-  "100005": "Max HP",
-  "100006": "Max Rounds",
-  "100007": "Fire",
+  "100005": "Fire",
+  "100006": "Max HP",
+  "100007": "Max Rounds",
   "100008": "SFX",
   "100009": "BGM",
   "100010": "Pickaxe",
@@ -97,19 +112,24 @@ var archipelagoGeneratedItemIdToNames = {
   "100012": "Tank Treads",
   "100013": "Tank Chassis",
   "100014": "Tank Cannon",
-  "100015": "Health Potion",
-  "100016": "Energy Gem",
-  "100017": "Round Pouch",
-  "100018": "Item Pool",
-  "100019": "Stun Trap",
-  "100020": "Invisible Trap",
-  "100021": "Fast Trap",
-  "100022": "Slow Trap",
-  "100023": "Reverse Trap",
-  "100024": "Screen Flip Trap",
-  "100025": "Zoom In Trap",
-  "100026": "Instant Death Trap",
-  "100027": "Snake Trap"
+  "100015": "Magnifying Glass",
+  "100016": "Orthopedic Inserts",
+  "100017": "Teleportation",
+  "100018": "Steel Toe",
+  "100019": "Vermin Pouch",
+  "100020": "Health Potion",
+  "100021": "Energy Gem",
+  "100022": "Round Pouch",
+  "100023": "Item Pool",
+  "100024": "Stun Trap",
+  "100025": "Invisible Trap",
+  "100026": "Fast Trap",
+  "100027": "Slow Trap",
+  "100028": "Reverse Trap",
+  "100029": "Screen Flip Trap",
+  "100030": "Zoom In Trap",
+  "100031": "Instant Death Trap",
+  "100032": "Snake Trap"
 };
 var archipelagoGeneratedLocationNameToId = {
   "The Start (0,0) Chest 16,14 #1": 200000,
@@ -1642,85 +1662,87 @@ var archipelagoGeneratedLocationNameToId = {
   "Three Mage Beach (1,4) Enemy 16,3 #1528": 201527,
   "Three Mage Beach (1,4) Enemy 4,15 #1529": 201528,
   "Three Mage Beach (1,4) Enemy 27,15 #1530": 201529,
-  "Adventurer's Bane (2,4) Chest 15,15 #1531": 201530,
-  "Adventurer's Bane (2,4) Chest 18,15 #1532": 201531,
-  "Adventurer's Bane (2,4) Enemy 16,15 #1533": 201532,
-  "Adventurer's Bane (2,4) Enemy 17,15 #1534": 201533,
-  "Adventurer's Bane (2,4) Enemy 14,15 #1535": 201534,
-  "Adventurer's Bane (2,4) Enemy 19,15 #1536": 201535,
-  "Adventurer's Bane (2,4) Enemy 16,14 #1537": 201536,
-  "Adventurer's Bane (2,4) Enemy 17,14 #1538": 201537,
-  "Adventurer's Bane (2,4) Enemy 17,16 #1539": 201538,
-  "Adventurer's Bane (2,4) Enemy 16,16 #1540": 201539,
-  "Adventurer's Bane (2,4) Enemy 12,8 #1541": 201540,
-  "Adventurer's Bane (2,4) Enemy 18,7 #1542": 201541,
-  "Adventurer's Bane (2,4) Enemy 23,4 #1543": 201542,
-  "Adventurer's Bane (2,4) Enemy 16,4 #1544": 201543,
-  "Adventurer's Bane (2,4) Enemy 3,4 #1545": 201544,
-  "Adventurer's Bane (2,4) Enemy 11,18 #1546": 201545,
-  "Adventurer's Bane (2,4) Enemy 18,23 #1547": 201546,
-  "Adventurer's Bane (2,4) Enemy 23,26 #1548": 201547,
-  "Adventurer's Bane (2,4) Enemy 23,17 #1549": 201548,
-  "Adventurer's Bane (2,4) Enemy 22,11 #1550": 201549,
-  "Adventurer's Bane (2,4) Enemy 26,10 #1551": 201550,
-  "Adventurer's Bane (2,4) Enemy 8,22 #1552": 201551,
-  "Adventurer's Bane (2,4) Enemy 3,14 #1553": 201552,
-  "Adventurer's Bane (2,4) Enemy 13,20 #1554": 201553,
-  "Adventurer's Bane (2,4) Enemy 7,13 #1555": 201554,
-  "Adventurer's Bane (2,4) Enemy 28,17 #1556": 201555,
-  "Adventurer's Bane (2,4) Enemy 22,21 #1557": 201556,
-  "Adventurer's Bane (2,4) Enemy 17,18 #1558": 201557,
-  "Adventurer's Bane (2,4) Enemy 16,12 #1559": 201558,
-  "Adventurer's Bane (2,4) Enemy 24,14 #1560": 201559,
-  "Adventurer's Bane (2,4) Enemy 8,5 #1561": 201560,
-  "Adventurer's Bane (2,4) Enemy 15,3 #1562": 201561,
-  "Cabal Chest (3,4) Chest 15,15 #1563": 201562,
-  "Cabal Chest (3,4) Enemy 13,12 #1564": 201563,
-  "Cabal Chest (3,4) Enemy 11,15 #1565": 201564,
-  "Cabal Chest (3,4) Enemy 16,19 #1566": 201565,
-  "Cabal Chest (3,4) Enemy 18,15 #1567": 201566,
-  "Cabal Chest (3,4) Enemy 13,19 #1568": 201567,
-  "Cabal Chest (3,4) Enemy 17,13 #1569": 201568,
-  "Cabal Chest (3,4) Enemy 19,17 #1570": 201569,
-  "Cabal Chest (3,4) Enemy 11,13 #1571": 201570,
-  "Cabal Chest (3,4) Enemy 13,15 #1572": 201571,
-  "Bunker (0,5) Chest 16,17 #1573": 201572,
-  "Bunker (0,5) Chest 15,17 #1574": 201573,
-  "Bunker (0,5) Chest 14,17 #1575": 201574,
-  "Bunker (0,5) Destructible 15,18 #1576": 201575,
-  "Bunker (0,5) Destructible 12,17 #1577": 201576,
-  "Bunker (0,5) Destructible 12,18 #1578": 201577,
-  "Bunker (0,5) Destructible 15,19 #1579": 201578,
-  "Bunker (0,5) Destructible 14,20 #1580": 201579,
-  "Bunker (0,5) Destructible 15,21 #1581": 201580,
-  "Bunker (0,5) Destructible 16,20 #1582": 201581,
-  "Bunker (0,5) Destructible 17,20 #1583": 201582,
-  "Bunker (0,5) Destructible 18,19 #1584": 201583,
-  "Bunker (0,5) Destructible 19,20 #1585": 201584,
-  "Bunker (0,5) Destructible 18,21 #1586": 201585,
-  "Bunker (0,5) Destructible 12,19 #1587": 201586,
-  "Bunker (0,5) Enemy 12,20 #1588": 201587,
-  "Bunker (0,5) Destructible 12,21 #1589": 201588,
-  "Bunker (0,5) Destructible 13,20 #1590": 201589,
-  "Bunker (0,5) Destructible 11,20 #1591": 201590,
-  "Bunker (0,5) Destructible 10,20 #1592": 201591,
-  "Bunker (0,5) Destructible 12,22 #1593": 201592,
-  "Bunker (0,5) Destructible 15,22 #1594": 201593,
-  "Bunker (0,5) Destructible 18,22 #1595": 201594,
-  "Bunker (0,5) Destructible 20,20 #1596": 201595,
-  "Bunker (0,5) Destructible 18,17 #1597": 201596,
-  "Bunker (0,5) Destructible 18,18 #1598": 201597,
-  "Bunker (0,5) Enemy 15,20 #1599": 201598,
-  "Bunker (0,5) Enemy 18,20 #1600": 201599,
-  "Mage's Better Shoppe (0,-3) Shop 9,12 #1601": 201600,
-  "Mage's Better Shoppe (0,-3) Shop 10,12 #1602": 201601,
-  "Mage's Better Shoppe (0,-3) Shop 11,12 #1603": 201602,
-  "Mage's Better Shoppe (0,-3) Destructible 10,10 #1604": 201603,
-  "Mage's Better Shoppe (0,-3) Enemy 10,11 #1605": 201604,
-  "Mage's Better Shoppe (0,-3) Enemy 22,11 #1606": 201605,
-  "Mage's Better Shoppe (0,-3) Enemy 17,16 #1607": 201606,
-  "Mage's Better Shoppe (0,-3) Enemy 23,24 #1608": 201607,
-  "Mage's Better Shoppe (0,-3) Enemy 9,22 #1609": 201608
+  "Three Mage Beach (1,4) Chest 17,16 #1531": 201530,
+  "Adventurer's Bane (2,4) Chest 15,15 #1532": 201531,
+  "Adventurer's Bane (2,4) Chest 18,15 #1533": 201532,
+  "Adventurer's Bane (2,4) Enemy 16,15 #1534": 201533,
+  "Adventurer's Bane (2,4) Enemy 17,15 #1535": 201534,
+  "Adventurer's Bane (2,4) Enemy 14,15 #1536": 201535,
+  "Adventurer's Bane (2,4) Enemy 19,15 #1537": 201536,
+  "Adventurer's Bane (2,4) Enemy 16,14 #1538": 201537,
+  "Adventurer's Bane (2,4) Enemy 17,14 #1539": 201538,
+  "Adventurer's Bane (2,4) Enemy 17,16 #1540": 201539,
+  "Adventurer's Bane (2,4) Enemy 16,16 #1541": 201540,
+  "Adventurer's Bane (2,4) Enemy 12,8 #1542": 201541,
+  "Adventurer's Bane (2,4) Enemy 18,7 #1543": 201542,
+  "Adventurer's Bane (2,4) Enemy 23,4 #1544": 201543,
+  "Adventurer's Bane (2,4) Enemy 16,4 #1545": 201544,
+  "Adventurer's Bane (2,4) Enemy 3,4 #1546": 201545,
+  "Adventurer's Bane (2,4) Enemy 11,18 #1547": 201546,
+  "Adventurer's Bane (2,4) Enemy 18,23 #1548": 201547,
+  "Adventurer's Bane (2,4) Enemy 23,26 #1549": 201548,
+  "Adventurer's Bane (2,4) Enemy 23,17 #1550": 201549,
+  "Adventurer's Bane (2,4) Enemy 22,11 #1551": 201550,
+  "Adventurer's Bane (2,4) Enemy 26,10 #1552": 201551,
+  "Adventurer's Bane (2,4) Enemy 8,22 #1553": 201552,
+  "Adventurer's Bane (2,4) Enemy 3,14 #1554": 201553,
+  "Adventurer's Bane (2,4) Enemy 13,20 #1555": 201554,
+  "Adventurer's Bane (2,4) Enemy 7,13 #1556": 201555,
+  "Adventurer's Bane (2,4) Enemy 28,17 #1557": 201556,
+  "Adventurer's Bane (2,4) Enemy 22,21 #1558": 201557,
+  "Adventurer's Bane (2,4) Enemy 17,18 #1559": 201558,
+  "Adventurer's Bane (2,4) Enemy 16,12 #1560": 201559,
+  "Adventurer's Bane (2,4) Enemy 24,14 #1561": 201560,
+  "Adventurer's Bane (2,4) Enemy 8,5 #1562": 201561,
+  "Adventurer's Bane (2,4) Enemy 15,3 #1563": 201562,
+  "Cabal Chest (3,4) Chest 15,15 #1564": 201563,
+  "Cabal Chest (3,4) Enemy 13,12 #1565": 201564,
+  "Cabal Chest (3,4) Enemy 11,15 #1566": 201565,
+  "Cabal Chest (3,4) Enemy 16,19 #1567": 201566,
+  "Cabal Chest (3,4) Enemy 18,15 #1568": 201567,
+  "Cabal Chest (3,4) Enemy 13,19 #1569": 201568,
+  "Cabal Chest (3,4) Enemy 17,13 #1570": 201569,
+  "Cabal Chest (3,4) Enemy 19,17 #1571": 201570,
+  "Cabal Chest (3,4) Enemy 11,13 #1572": 201571,
+  "Cabal Chest (3,4) Enemy 13,15 #1573": 201572,
+  "Cabal Chest (3,4) Chest 3,3 #1574": 201573,
+  "Bunker (0,5) Chest 16,17 #1575": 201574,
+  "Bunker (0,5) Chest 15,17 #1576": 201575,
+  "Bunker (0,5) Chest 14,17 #1577": 201576,
+  "Bunker (0,5) Destructible 15,18 #1578": 201577,
+  "Bunker (0,5) Destructible 12,17 #1579": 201578,
+  "Bunker (0,5) Destructible 12,18 #1580": 201579,
+  "Bunker (0,5) Destructible 15,19 #1581": 201580,
+  "Bunker (0,5) Destructible 14,20 #1582": 201581,
+  "Bunker (0,5) Destructible 15,21 #1583": 201582,
+  "Bunker (0,5) Destructible 16,20 #1584": 201583,
+  "Bunker (0,5) Destructible 17,20 #1585": 201584,
+  "Bunker (0,5) Destructible 18,19 #1586": 201585,
+  "Bunker (0,5) Destructible 19,20 #1587": 201586,
+  "Bunker (0,5) Destructible 18,21 #1588": 201587,
+  "Bunker (0,5) Destructible 12,19 #1589": 201588,
+  "Bunker (0,5) Enemy 12,20 #1590": 201589,
+  "Bunker (0,5) Destructible 12,21 #1591": 201590,
+  "Bunker (0,5) Destructible 13,20 #1592": 201591,
+  "Bunker (0,5) Destructible 11,20 #1593": 201592,
+  "Bunker (0,5) Destructible 10,20 #1594": 201593,
+  "Bunker (0,5) Destructible 12,22 #1595": 201594,
+  "Bunker (0,5) Destructible 15,22 #1596": 201595,
+  "Bunker (0,5) Destructible 18,22 #1597": 201596,
+  "Bunker (0,5) Destructible 20,20 #1598": 201597,
+  "Bunker (0,5) Destructible 18,17 #1599": 201598,
+  "Bunker (0,5) Destructible 18,18 #1600": 201599,
+  "Bunker (0,5) Enemy 15,20 #1601": 201600,
+  "Bunker (0,5) Enemy 18,20 #1602": 201601,
+  "Mage's Better Shoppe (0,-3) Shop 9,12 #1603": 201602,
+  "Mage's Better Shoppe (0,-3) Shop 10,12 #1604": 201603,
+  "Mage's Better Shoppe (0,-3) Shop 11,12 #1605": 201604,
+  "Mage's Better Shoppe (0,-3) Destructible 10,10 #1606": 201605,
+  "Mage's Better Shoppe (0,-3) Enemy 10,11 #1607": 201606,
+  "Mage's Better Shoppe (0,-3) Enemy 22,11 #1608": 201607,
+  "Mage's Better Shoppe (0,-3) Enemy 17,16 #1609": 201608,
+  "Mage's Better Shoppe (0,-3) Enemy 23,24 #1610": 201609,
+  "Mage's Better Shoppe (0,-3) Enemy 9,22 #1611": 201610
 };
 var archipelagoGeneratedLocationCoordToLocation = {
   "0,0:16,14": {
@@ -9373,399 +9395,409 @@ var archipelagoGeneratedLocationCoordToLocation = {
     "name": "Three Mage Beach (1,4) Enemy 27,15 #1530",
     "category": "enemy"
   },
-  "2,4:15,15": {
+  "1,4:17,16": {
     "id": 201530,
-    "name": "Adventurer's Bane (2,4) Chest 15,15 #1531",
+    "name": "Three Mage Beach (1,4) Chest 17,16 #1531",
+    "category": "chest"
+  },
+  "2,4:15,15": {
+    "id": 201531,
+    "name": "Adventurer's Bane (2,4) Chest 15,15 #1532",
     "category": "chest"
   },
   "2,4:18,15": {
-    "id": 201531,
-    "name": "Adventurer's Bane (2,4) Chest 18,15 #1532",
+    "id": 201532,
+    "name": "Adventurer's Bane (2,4) Chest 18,15 #1533",
     "category": "chest"
   },
   "2,4:16,15": {
-    "id": 201532,
-    "name": "Adventurer's Bane (2,4) Enemy 16,15 #1533",
+    "id": 201533,
+    "name": "Adventurer's Bane (2,4) Enemy 16,15 #1534",
     "category": "enemy"
   },
   "2,4:17,15": {
-    "id": 201533,
-    "name": "Adventurer's Bane (2,4) Enemy 17,15 #1534",
+    "id": 201534,
+    "name": "Adventurer's Bane (2,4) Enemy 17,15 #1535",
     "category": "enemy"
   },
   "2,4:14,15": {
-    "id": 201534,
-    "name": "Adventurer's Bane (2,4) Enemy 14,15 #1535",
+    "id": 201535,
+    "name": "Adventurer's Bane (2,4) Enemy 14,15 #1536",
     "category": "enemy"
   },
   "2,4:19,15": {
-    "id": 201535,
-    "name": "Adventurer's Bane (2,4) Enemy 19,15 #1536",
+    "id": 201536,
+    "name": "Adventurer's Bane (2,4) Enemy 19,15 #1537",
     "category": "enemy"
   },
   "2,4:16,14": {
-    "id": 201536,
-    "name": "Adventurer's Bane (2,4) Enemy 16,14 #1537",
+    "id": 201537,
+    "name": "Adventurer's Bane (2,4) Enemy 16,14 #1538",
     "category": "enemy"
   },
   "2,4:17,14": {
-    "id": 201537,
-    "name": "Adventurer's Bane (2,4) Enemy 17,14 #1538",
+    "id": 201538,
+    "name": "Adventurer's Bane (2,4) Enemy 17,14 #1539",
     "category": "enemy"
   },
   "2,4:17,16": {
-    "id": 201538,
-    "name": "Adventurer's Bane (2,4) Enemy 17,16 #1539",
+    "id": 201539,
+    "name": "Adventurer's Bane (2,4) Enemy 17,16 #1540",
     "category": "enemy"
   },
   "2,4:16,16": {
-    "id": 201539,
-    "name": "Adventurer's Bane (2,4) Enemy 16,16 #1540",
+    "id": 201540,
+    "name": "Adventurer's Bane (2,4) Enemy 16,16 #1541",
     "category": "enemy"
   },
   "2,4:12,8": {
-    "id": 201540,
-    "name": "Adventurer's Bane (2,4) Enemy 12,8 #1541",
+    "id": 201541,
+    "name": "Adventurer's Bane (2,4) Enemy 12,8 #1542",
     "category": "enemy"
   },
   "2,4:18,7": {
-    "id": 201541,
-    "name": "Adventurer's Bane (2,4) Enemy 18,7 #1542",
+    "id": 201542,
+    "name": "Adventurer's Bane (2,4) Enemy 18,7 #1543",
     "category": "enemy"
   },
   "2,4:23,4": {
-    "id": 201542,
-    "name": "Adventurer's Bane (2,4) Enemy 23,4 #1543",
+    "id": 201543,
+    "name": "Adventurer's Bane (2,4) Enemy 23,4 #1544",
     "category": "enemy"
   },
   "2,4:16,4": {
-    "id": 201543,
-    "name": "Adventurer's Bane (2,4) Enemy 16,4 #1544",
+    "id": 201544,
+    "name": "Adventurer's Bane (2,4) Enemy 16,4 #1545",
     "category": "enemy"
   },
   "2,4:3,4": {
-    "id": 201544,
-    "name": "Adventurer's Bane (2,4) Enemy 3,4 #1545",
+    "id": 201545,
+    "name": "Adventurer's Bane (2,4) Enemy 3,4 #1546",
     "category": "enemy"
   },
   "2,4:11,18": {
-    "id": 201545,
-    "name": "Adventurer's Bane (2,4) Enemy 11,18 #1546",
+    "id": 201546,
+    "name": "Adventurer's Bane (2,4) Enemy 11,18 #1547",
     "category": "enemy"
   },
   "2,4:18,23": {
-    "id": 201546,
-    "name": "Adventurer's Bane (2,4) Enemy 18,23 #1547",
+    "id": 201547,
+    "name": "Adventurer's Bane (2,4) Enemy 18,23 #1548",
     "category": "enemy"
   },
   "2,4:23,26": {
-    "id": 201547,
-    "name": "Adventurer's Bane (2,4) Enemy 23,26 #1548",
+    "id": 201548,
+    "name": "Adventurer's Bane (2,4) Enemy 23,26 #1549",
     "category": "enemy"
   },
   "2,4:23,17": {
-    "id": 201548,
-    "name": "Adventurer's Bane (2,4) Enemy 23,17 #1549",
+    "id": 201549,
+    "name": "Adventurer's Bane (2,4) Enemy 23,17 #1550",
     "category": "enemy"
   },
   "2,4:22,11": {
-    "id": 201549,
-    "name": "Adventurer's Bane (2,4) Enemy 22,11 #1550",
+    "id": 201550,
+    "name": "Adventurer's Bane (2,4) Enemy 22,11 #1551",
     "category": "enemy"
   },
   "2,4:26,10": {
-    "id": 201550,
-    "name": "Adventurer's Bane (2,4) Enemy 26,10 #1551",
+    "id": 201551,
+    "name": "Adventurer's Bane (2,4) Enemy 26,10 #1552",
     "category": "enemy"
   },
   "2,4:8,22": {
-    "id": 201551,
-    "name": "Adventurer's Bane (2,4) Enemy 8,22 #1552",
+    "id": 201552,
+    "name": "Adventurer's Bane (2,4) Enemy 8,22 #1553",
     "category": "enemy"
   },
   "2,4:3,14": {
-    "id": 201552,
-    "name": "Adventurer's Bane (2,4) Enemy 3,14 #1553",
+    "id": 201553,
+    "name": "Adventurer's Bane (2,4) Enemy 3,14 #1554",
     "category": "enemy"
   },
   "2,4:13,20": {
-    "id": 201553,
-    "name": "Adventurer's Bane (2,4) Enemy 13,20 #1554",
+    "id": 201554,
+    "name": "Adventurer's Bane (2,4) Enemy 13,20 #1555",
     "category": "enemy"
   },
   "2,4:7,13": {
-    "id": 201554,
-    "name": "Adventurer's Bane (2,4) Enemy 7,13 #1555",
+    "id": 201555,
+    "name": "Adventurer's Bane (2,4) Enemy 7,13 #1556",
     "category": "enemy"
   },
   "2,4:28,17": {
-    "id": 201555,
-    "name": "Adventurer's Bane (2,4) Enemy 28,17 #1556",
+    "id": 201556,
+    "name": "Adventurer's Bane (2,4) Enemy 28,17 #1557",
     "category": "enemy"
   },
   "2,4:22,21": {
-    "id": 201556,
-    "name": "Adventurer's Bane (2,4) Enemy 22,21 #1557",
+    "id": 201557,
+    "name": "Adventurer's Bane (2,4) Enemy 22,21 #1558",
     "category": "enemy"
   },
   "2,4:17,18": {
-    "id": 201557,
-    "name": "Adventurer's Bane (2,4) Enemy 17,18 #1558",
+    "id": 201558,
+    "name": "Adventurer's Bane (2,4) Enemy 17,18 #1559",
     "category": "enemy"
   },
   "2,4:16,12": {
-    "id": 201558,
-    "name": "Adventurer's Bane (2,4) Enemy 16,12 #1559",
+    "id": 201559,
+    "name": "Adventurer's Bane (2,4) Enemy 16,12 #1560",
     "category": "enemy"
   },
   "2,4:24,14": {
-    "id": 201559,
-    "name": "Adventurer's Bane (2,4) Enemy 24,14 #1560",
+    "id": 201560,
+    "name": "Adventurer's Bane (2,4) Enemy 24,14 #1561",
     "category": "enemy"
   },
   "2,4:8,5": {
-    "id": 201560,
-    "name": "Adventurer's Bane (2,4) Enemy 8,5 #1561",
+    "id": 201561,
+    "name": "Adventurer's Bane (2,4) Enemy 8,5 #1562",
     "category": "enemy"
   },
   "2,4:15,3": {
-    "id": 201561,
-    "name": "Adventurer's Bane (2,4) Enemy 15,3 #1562",
+    "id": 201562,
+    "name": "Adventurer's Bane (2,4) Enemy 15,3 #1563",
     "category": "enemy"
   },
   "3,4:15,15": {
-    "id": 201562,
-    "name": "Cabal Chest (3,4) Chest 15,15 #1563",
+    "id": 201563,
+    "name": "Cabal Chest (3,4) Chest 15,15 #1564",
     "category": "chest"
   },
   "3,4:13,12": {
-    "id": 201563,
-    "name": "Cabal Chest (3,4) Enemy 13,12 #1564",
+    "id": 201564,
+    "name": "Cabal Chest (3,4) Enemy 13,12 #1565",
     "category": "enemy"
   },
   "3,4:11,15": {
-    "id": 201564,
-    "name": "Cabal Chest (3,4) Enemy 11,15 #1565",
+    "id": 201565,
+    "name": "Cabal Chest (3,4) Enemy 11,15 #1566",
     "category": "enemy"
   },
   "3,4:16,19": {
-    "id": 201565,
-    "name": "Cabal Chest (3,4) Enemy 16,19 #1566",
+    "id": 201566,
+    "name": "Cabal Chest (3,4) Enemy 16,19 #1567",
     "category": "enemy"
   },
   "3,4:18,15": {
-    "id": 201566,
-    "name": "Cabal Chest (3,4) Enemy 18,15 #1567",
+    "id": 201567,
+    "name": "Cabal Chest (3,4) Enemy 18,15 #1568",
     "category": "enemy"
   },
   "3,4:13,19": {
-    "id": 201567,
-    "name": "Cabal Chest (3,4) Enemy 13,19 #1568",
+    "id": 201568,
+    "name": "Cabal Chest (3,4) Enemy 13,19 #1569",
     "category": "enemy"
   },
   "3,4:17,13": {
-    "id": 201568,
-    "name": "Cabal Chest (3,4) Enemy 17,13 #1569",
+    "id": 201569,
+    "name": "Cabal Chest (3,4) Enemy 17,13 #1570",
     "category": "enemy"
   },
   "3,4:19,17": {
-    "id": 201569,
-    "name": "Cabal Chest (3,4) Enemy 19,17 #1570",
+    "id": 201570,
+    "name": "Cabal Chest (3,4) Enemy 19,17 #1571",
     "category": "enemy"
   },
   "3,4:11,13": {
-    "id": 201570,
-    "name": "Cabal Chest (3,4) Enemy 11,13 #1571",
+    "id": 201571,
+    "name": "Cabal Chest (3,4) Enemy 11,13 #1572",
     "category": "enemy"
   },
   "3,4:13,15": {
-    "id": 201571,
-    "name": "Cabal Chest (3,4) Enemy 13,15 #1572",
+    "id": 201572,
+    "name": "Cabal Chest (3,4) Enemy 13,15 #1573",
     "category": "enemy"
   },
+  "3,4:3,3": {
+    "id": 201573,
+    "name": "Cabal Chest (3,4) Chest 3,3 #1574",
+    "category": "chest"
+  },
   "0,5:16,17": {
-    "id": 201572,
-    "name": "Bunker (0,5) Chest 16,17 #1573",
+    "id": 201574,
+    "name": "Bunker (0,5) Chest 16,17 #1575",
     "category": "chest"
   },
   "0,5:15,17": {
-    "id": 201573,
-    "name": "Bunker (0,5) Chest 15,17 #1574",
+    "id": 201575,
+    "name": "Bunker (0,5) Chest 15,17 #1576",
     "category": "chest"
   },
   "0,5:14,17": {
-    "id": 201574,
-    "name": "Bunker (0,5) Chest 14,17 #1575",
+    "id": 201576,
+    "name": "Bunker (0,5) Chest 14,17 #1577",
     "category": "chest"
   },
   "0,5:15,18": {
-    "id": 201575,
-    "name": "Bunker (0,5) Destructible 15,18 #1576",
+    "id": 201577,
+    "name": "Bunker (0,5) Destructible 15,18 #1578",
     "category": "easy_destructible"
   },
   "0,5:12,17": {
-    "id": 201576,
-    "name": "Bunker (0,5) Destructible 12,17 #1577",
+    "id": 201578,
+    "name": "Bunker (0,5) Destructible 12,17 #1579",
     "category": "easy_destructible"
   },
   "0,5:12,18": {
-    "id": 201577,
-    "name": "Bunker (0,5) Destructible 12,18 #1578",
+    "id": 201579,
+    "name": "Bunker (0,5) Destructible 12,18 #1580",
     "category": "easy_destructible"
   },
   "0,5:15,19": {
-    "id": 201578,
-    "name": "Bunker (0,5) Destructible 15,19 #1579",
+    "id": 201580,
+    "name": "Bunker (0,5) Destructible 15,19 #1581",
     "category": "easy_destructible"
   },
   "0,5:14,20": {
-    "id": 201579,
-    "name": "Bunker (0,5) Destructible 14,20 #1580",
+    "id": 201581,
+    "name": "Bunker (0,5) Destructible 14,20 #1582",
     "category": "easy_destructible"
   },
   "0,5:15,21": {
-    "id": 201580,
-    "name": "Bunker (0,5) Destructible 15,21 #1581",
+    "id": 201582,
+    "name": "Bunker (0,5) Destructible 15,21 #1583",
     "category": "easy_destructible"
   },
   "0,5:16,20": {
-    "id": 201581,
-    "name": "Bunker (0,5) Destructible 16,20 #1582",
+    "id": 201583,
+    "name": "Bunker (0,5) Destructible 16,20 #1584",
     "category": "easy_destructible"
   },
   "0,5:17,20": {
-    "id": 201582,
-    "name": "Bunker (0,5) Destructible 17,20 #1583",
+    "id": 201584,
+    "name": "Bunker (0,5) Destructible 17,20 #1585",
     "category": "easy_destructible"
   },
   "0,5:18,19": {
-    "id": 201583,
-    "name": "Bunker (0,5) Destructible 18,19 #1584",
+    "id": 201585,
+    "name": "Bunker (0,5) Destructible 18,19 #1586",
     "category": "easy_destructible"
   },
   "0,5:19,20": {
-    "id": 201584,
-    "name": "Bunker (0,5) Destructible 19,20 #1585",
+    "id": 201586,
+    "name": "Bunker (0,5) Destructible 19,20 #1587",
     "category": "easy_destructible"
   },
   "0,5:18,21": {
-    "id": 201585,
-    "name": "Bunker (0,5) Destructible 18,21 #1586",
+    "id": 201587,
+    "name": "Bunker (0,5) Destructible 18,21 #1588",
     "category": "easy_destructible"
   },
   "0,5:12,19": {
-    "id": 201586,
-    "name": "Bunker (0,5) Destructible 12,19 #1587",
+    "id": 201588,
+    "name": "Bunker (0,5) Destructible 12,19 #1589",
     "category": "easy_destructible"
   },
   "0,5:12,20": {
-    "id": 201587,
-    "name": "Bunker (0,5) Enemy 12,20 #1588",
+    "id": 201589,
+    "name": "Bunker (0,5) Enemy 12,20 #1590",
     "category": "enemy"
   },
   "0,5:12,21": {
-    "id": 201588,
-    "name": "Bunker (0,5) Destructible 12,21 #1589",
+    "id": 201590,
+    "name": "Bunker (0,5) Destructible 12,21 #1591",
     "category": "easy_destructible"
   },
   "0,5:13,20": {
-    "id": 201589,
-    "name": "Bunker (0,5) Destructible 13,20 #1590",
+    "id": 201591,
+    "name": "Bunker (0,5) Destructible 13,20 #1592",
     "category": "easy_destructible"
   },
   "0,5:11,20": {
-    "id": 201590,
-    "name": "Bunker (0,5) Destructible 11,20 #1591",
+    "id": 201592,
+    "name": "Bunker (0,5) Destructible 11,20 #1593",
     "category": "easy_destructible"
   },
   "0,5:10,20": {
-    "id": 201591,
-    "name": "Bunker (0,5) Destructible 10,20 #1592",
+    "id": 201593,
+    "name": "Bunker (0,5) Destructible 10,20 #1594",
     "category": "easy_destructible"
   },
   "0,5:12,22": {
-    "id": 201592,
-    "name": "Bunker (0,5) Destructible 12,22 #1593",
+    "id": 201594,
+    "name": "Bunker (0,5) Destructible 12,22 #1595",
     "category": "easy_destructible"
   },
   "0,5:15,22": {
-    "id": 201593,
-    "name": "Bunker (0,5) Destructible 15,22 #1594",
+    "id": 201595,
+    "name": "Bunker (0,5) Destructible 15,22 #1596",
     "category": "easy_destructible"
   },
   "0,5:18,22": {
-    "id": 201594,
-    "name": "Bunker (0,5) Destructible 18,22 #1595",
+    "id": 201596,
+    "name": "Bunker (0,5) Destructible 18,22 #1597",
     "category": "easy_destructible"
   },
   "0,5:20,20": {
-    "id": 201595,
-    "name": "Bunker (0,5) Destructible 20,20 #1596",
+    "id": 201597,
+    "name": "Bunker (0,5) Destructible 20,20 #1598",
     "category": "easy_destructible"
   },
   "0,5:18,17": {
-    "id": 201596,
-    "name": "Bunker (0,5) Destructible 18,17 #1597",
+    "id": 201598,
+    "name": "Bunker (0,5) Destructible 18,17 #1599",
     "category": "easy_destructible"
   },
   "0,5:18,18": {
-    "id": 201597,
-    "name": "Bunker (0,5) Destructible 18,18 #1598",
+    "id": 201599,
+    "name": "Bunker (0,5) Destructible 18,18 #1600",
     "category": "easy_destructible"
   },
   "0,5:15,20": {
-    "id": 201598,
-    "name": "Bunker (0,5) Enemy 15,20 #1599",
+    "id": 201600,
+    "name": "Bunker (0,5) Enemy 15,20 #1601",
     "category": "enemy"
   },
   "0,5:18,20": {
-    "id": 201599,
-    "name": "Bunker (0,5) Enemy 18,20 #1600",
+    "id": 201601,
+    "name": "Bunker (0,5) Enemy 18,20 #1602",
     "category": "enemy"
   },
   "0,-3:9,12": {
-    "id": 201600,
-    "name": "Mage's Better Shoppe (0,-3) Shop 9,12 #1601",
+    "id": 201602,
+    "name": "Mage's Better Shoppe (0,-3) Shop 9,12 #1603",
     "category": "shop"
   },
   "0,-3:10,12": {
-    "id": 201601,
-    "name": "Mage's Better Shoppe (0,-3) Shop 10,12 #1602",
+    "id": 201603,
+    "name": "Mage's Better Shoppe (0,-3) Shop 10,12 #1604",
     "category": "shop"
   },
   "0,-3:11,12": {
-    "id": 201602,
-    "name": "Mage's Better Shoppe (0,-3) Shop 11,12 #1603",
+    "id": 201604,
+    "name": "Mage's Better Shoppe (0,-3) Shop 11,12 #1605",
     "category": "shop"
   },
   "0,-3:10,10": {
-    "id": 201603,
-    "name": "Mage's Better Shoppe (0,-3) Destructible 10,10 #1604",
+    "id": 201605,
+    "name": "Mage's Better Shoppe (0,-3) Destructible 10,10 #1606",
     "category": "easy_destructible"
   },
   "0,-3:10,11": {
-    "id": 201604,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 10,11 #1605",
+    "id": 201606,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 10,11 #1607",
     "category": "enemy"
   },
   "0,-3:22,11": {
-    "id": 201605,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 22,11 #1606",
+    "id": 201607,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 22,11 #1608",
     "category": "enemy"
   },
   "0,-3:17,16": {
-    "id": 201606,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 17,16 #1607",
+    "id": 201608,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 17,16 #1609",
     "category": "enemy"
   },
   "0,-3:23,24": {
-    "id": 201607,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 23,24 #1608",
+    "id": 201609,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 23,24 #1610",
     "category": "enemy"
   },
   "0,-3:9,22": {
-    "id": 201608,
-    "name": "Mage's Better Shoppe (0,-3) Enemy 9,22 #1609",
+    "id": 201610,
+    "name": "Mage's Better Shoppe (0,-3) Enemy 9,22 #1611",
     "category": "enemy"
   }
 };

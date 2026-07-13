@@ -649,6 +649,9 @@ function shellipelagoNetAttachGuestChannel(shellipelagoNetChannel) {
     });
     shellipelagoNetLogConnectionStats("guest:channel-open", shellipelagoNetState.guestConnection, {});
     shellipelagoNetMessage("Network data channel open.");
+    if (typeof initialRoomGrantNetworkJoinInvulnerability === "function") {
+      initialRoomGrantNetworkJoinInvulnerability();
+    }
     shellipelagoNetSendCellSync();
     shellipelagoNetSendPosition();
   };
@@ -660,6 +663,7 @@ function shellipelagoNetAttachGuestChannel(shellipelagoNetChannel) {
       label: shellipelagoNetChannel.label,
       readyState: shellipelagoNetChannel.readyState
     });
+    shellipelagoNetState.remotePlayers = {};
     shellipelagoNetMessage("Network data channel closed.");
   };
   shellipelagoNetChannel.onerror = function (shellipelagoNetEvent) {
@@ -688,6 +692,9 @@ function shellipelagoNetAttachHostChannel(shellipelagoNetChannel, shellipelagoNe
       peerName: shellipelagoNetPeer.name
     });
     shellipelagoNetMessage(shellipelagoNetPeer.name + " connected.");
+    if (typeof initialRoomGrantNetworkJoinInvulnerability === "function") {
+      initialRoomGrantNetworkJoinInvulnerability();
+    }
     shellipelagoNetSendHostPeerPacket(shellipelagoNetPeer, {
       kind: "hello",
       from: shellipelagoNetState.playerId,
@@ -701,6 +708,11 @@ function shellipelagoNetAttachHostChannel(shellipelagoNetChannel, shellipelagoNe
   };
   shellipelagoNetChannel.onclose = function () {
     shellipelagoNetPeer.state = "closed";
+    delete shellipelagoNetState.remotePlayers[shellipelagoNetPeer.id];
+    shellipelagoNetBroadcastEvent({
+      type: "playerDisconnected",
+      disconnectedPlayerId: shellipelagoNetPeer.id
+    });
     shellipelagoNetDebug("host:channel-close", {
       peerId: shellipelagoNetPeer.id,
       peerName: shellipelagoNetPeer.name,
@@ -1367,12 +1379,22 @@ function shellipelagoNetApplyEvent(shellipelagoNetEvent) {
     return;
   }
 
+  if (shellipelagoNetEvent.targetPlayerId && shellipelagoNetEvent.targetPlayerId !== shellipelagoNetState.playerId) {
+    return;
+  }
+
   if (shellipelagoNetEvent.type === "position") {
     shellipelagoNetApplyPositionEvent(shellipelagoNetEvent);
   } else if (shellipelagoNetEvent.type === "heartbeat") {
     shellipelagoNetApplyHeartbeatEvent(shellipelagoNetEvent);
   } else if (shellipelagoNetEvent.type === "enemyKilled") {
     shellipelagoNetApplyEnemyKilled(shellipelagoNetEvent);
+  } else if (shellipelagoNetEvent.type === "enemyState") {
+    shellipelagoNetApplyEnemyState(shellipelagoNetEvent);
+  } else if (shellipelagoNetEvent.type === "roomState") {
+    shellipelagoNetApplyRoomState(shellipelagoNetEvent);
+  } else if (shellipelagoNetEvent.type === "playerDisconnected") {
+    delete shellipelagoNetState.remotePlayers[shellipelagoNetEvent.disconnectedPlayerId];
   } else if (shellipelagoNetEvent.type === "destructibleDestroyed") {
     shellipelagoNetApplyDestructibleDestroyed(shellipelagoNetEvent);
   } else if (shellipelagoNetEvent.type === "attack") {
@@ -1453,6 +1475,18 @@ function shellipelagoNetApplyEnemyKilled(shellipelagoNetEvent) {
   }
 }
 
+function shellipelagoNetApplyEnemyState(shellipelagoNetEvent) {
+  if (typeof initialRoomApplyNetEnemyState === "function") {
+    initialRoomApplyNetEnemyState(shellipelagoNetEvent);
+  }
+}
+
+function shellipelagoNetApplyRoomState(shellipelagoNetEvent) {
+  if (typeof initialRoomApplyNetRoomState === "function") {
+    initialRoomApplyNetRoomState(shellipelagoNetEvent);
+  }
+}
+
 function shellipelagoNetApplyDestructibleDestroyed(shellipelagoNetEvent) {
   if (typeof initialRoomApplyNetDestructibleDestroyed === "function") {
     initialRoomApplyNetDestructibleDestroyed(shellipelagoNetEvent.destructibleKey, shellipelagoNetEvent.room);
@@ -1478,7 +1512,14 @@ function shellipelagoNetApplySnakeAwakened(shellipelagoNetEvent) {
 }
 
 function shellipelagoNetApplyGameOver(shellipelagoNetEvent) {
-  delete shellipelagoNetState.remotePlayers[shellipelagoNetEvent.playerId];
+  var shellipelagoNetRemote = shellipelagoNetState.remotePlayers[shellipelagoNetEvent.playerId];
+
+  if (shellipelagoNetRemote && shellipelagoNetRemote.snapshot) {
+    shellipelagoNetRemote.snapshot.moving = false;
+    shellipelagoNetRemote.fromSnapshot = shellipelagoNetCloneSnapshot(shellipelagoNetRemote.snapshot);
+    shellipelagoNetRemote.targetSnapshot = shellipelagoNetCloneSnapshot(shellipelagoNetRemote.snapshot);
+    shellipelagoNetRemote.targetSnapshot.moving = false;
+  }
 
   if (typeof initialRoomApplyNetGameOver === "function") {
     initialRoomApplyNetGameOver({
@@ -1541,6 +1582,14 @@ function shellipelagoNetSendLocalRoomState(shellipelagoNetTargetPlayerId) {
     return;
   }
 
+  shellipelagoNetBroadcastEvent({
+    type: "roomState",
+    room: shellipelagoNetStatePayload.room,
+    enemyKeys: shellipelagoNetStatePayload.enemyKeys || [],
+    destructibleKeys: shellipelagoNetStatePayload.destructibleKeys || [],
+    targetPlayerId: shellipelagoNetTargetPlayerId || ""
+  });
+
   (shellipelagoNetStatePayload.enemyKeys || []).forEach(function (shellipelagoNetEnemyKey) {
     shellipelagoNetBroadcastEnemyKilled(shellipelagoNetEnemyKey, shellipelagoNetStatePayload.room, shellipelagoNetTargetPlayerId);
   });
@@ -1556,6 +1605,10 @@ function shellipelagoNetBroadcastEnemyKilled(shellipelagoNetEnemyKey, shellipela
     room: shellipelagoNetRoom,
     targetPlayerId: shellipelagoNetTargetPlayerId || ""
   });
+}
+
+function shellipelagoNetBroadcastEnemyState(shellipelagoNetState) {
+  shellipelagoNetBroadcastEvent(Object.assign({ type: "enemyState" }, shellipelagoNetState || {}));
 }
 
 function shellipelagoNetBroadcastDestructibleDestroyed(shellipelagoNetDestructibleKey, shellipelagoNetRoom, shellipelagoNetTargetPlayerId) {
@@ -1858,10 +1911,14 @@ function shellipelagoNetInterpolateRemotePlayer(shellipelagoNetRemote) {
   var shellipelagoNetDuration = Math.max(1, Number(shellipelagoNetRemote.lerpUntil || 0) - Number(shellipelagoNetRemote.lerpStartedAt || 0));
   var shellipelagoNetProgress = Math.min(1, Math.max(0, (shellipelagoNetNow - Number(shellipelagoNetRemote.lerpStartedAt || 0)) / shellipelagoNetDuration));
   var shellipelagoNetSnapshot = null;
+  var shellipelagoNetHasPositionChange = false;
 
   if (!shellipelagoNetFrom || !shellipelagoNetTarget) {
     return shellipelagoNetRemote;
   }
+
+  shellipelagoNetHasPositionChange = Math.abs((Number(shellipelagoNetTarget.x) || 0) - (Number(shellipelagoNetFrom.x) || 0)) > 0.001 ||
+    Math.abs((Number(shellipelagoNetTarget.y) || 0) - (Number(shellipelagoNetFrom.y) || 0)) > 0.001;
 
   if (shellipelagoNetProgress >= 1) {
     shellipelagoNetRemote.snapshot = shellipelagoNetCloneSnapshot(shellipelagoNetTarget);
@@ -1872,7 +1929,7 @@ function shellipelagoNetInterpolateRemotePlayer(shellipelagoNetRemote) {
   shellipelagoNetSnapshot = shellipelagoNetCloneSnapshot(shellipelagoNetTarget);
   shellipelagoNetSnapshot.x = shellipelagoNetLerp(Number(shellipelagoNetFrom.x) || 0, Number(shellipelagoNetTarget.x) || 0, shellipelagoNetProgress);
   shellipelagoNetSnapshot.y = shellipelagoNetLerp(Number(shellipelagoNetFrom.y) || 0, Number(shellipelagoNetTarget.y) || 0, shellipelagoNetProgress);
-  shellipelagoNetSnapshot.moving = true;
+  shellipelagoNetSnapshot.moving = shellipelagoNetHasPositionChange;
   shellipelagoNetRemote.snapshot = shellipelagoNetSnapshot;
   return shellipelagoNetRemote;
 }
@@ -1883,9 +1940,15 @@ function shellipelagoNetLerp(shellipelagoNetStart, shellipelagoNetEnd, shellipel
 
 function shellipelagoNetPruneRemotePlayers(shellipelagoNetNow) {
   Object.keys(shellipelagoNetState.remotePlayers).forEach(function (shellipelagoNetPlayerId) {
-    if (shellipelagoNetNow - shellipelagoNetState.remotePlayers[shellipelagoNetPlayerId].lastSeenAt > shellipelagoNetPlayerTtlMs) {
-      delete shellipelagoNetState.remotePlayers[shellipelagoNetPlayerId];
-    }
+    var shellipelagoNetRemote = shellipelagoNetState.remotePlayers[shellipelagoNetPlayerId];
+
+    if (shellipelagoNetNow - shellipelagoNetRemote.lastSeenAt <= shellipelagoNetPlayerTtlMs || !shellipelagoNetRemote.snapshot) return;
+    shellipelagoNetRemote.snapshot.moving = false;
+    shellipelagoNetRemote.fromSnapshot = shellipelagoNetCloneSnapshot(shellipelagoNetRemote.snapshot);
+    shellipelagoNetRemote.targetSnapshot = shellipelagoNetCloneSnapshot(shellipelagoNetRemote.snapshot);
+    shellipelagoNetRemote.targetSnapshot.moving = false;
+    shellipelagoNetRemote.lerpStartedAt = shellipelagoNetNow;
+    shellipelagoNetRemote.lerpUntil = shellipelagoNetNow;
   });
 }
 

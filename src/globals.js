@@ -1,8 +1,10 @@
 var globalsState = {
   loadedModules: [],
-  shellipelagoVersion: "1.12",
+  shellipelagoVersion: "1.13",
   startInFinalRun: false,
   pendingFinalRunTest: false,
+  pendingFullTest: false,
+  fullTestMode: false,
   disableOfflineSave: false,
   progressiveRoomMaxRing: 5,
   showEssentialPickupHints: true,
@@ -75,11 +77,15 @@ var globalsState = {
     },
     gun: {
       label: "Gun",
-      count: 2
+      count: 3
     },
     sword: {
       label: "Sword",
       count: 3
+    },
+    fire: {
+      label: "Fire",
+      count: 2
     },
     hp: {
       label: "Max HP",
@@ -99,7 +105,6 @@ var globalsState = {
     waterWalkers: false,
     hp: 0,
     rounds: 0,
-    freeGrid: false,
     progressiveRooms: 0
   },
   checkDefinitions: {
@@ -112,12 +117,6 @@ var globalsState = {
       id: "item_pool",
       label: "Item Pool",
       requires: []
-    },
-    freeGrid: {
-      id: "free_grid",
-      label: "Free Grid",
-      requires: [],
-      hiddenFromPools: true
     },
     trapStun: {
       id: "trap_stun",
@@ -177,7 +176,6 @@ var globalsState = {
   checks: {
     empty: false,
     itemPool: false,
-    freeGrid: false,
     trapStun: false,
     trapInvisible: false,
     trapFast: false,
@@ -197,11 +195,6 @@ var globalsState = {
     itemPool: {
       id: 100000,
       name: "Item Pool",
-      checked: false
-    },
-    freeGrid: {
-      id: 100001,
-      name: "Free Grid",
       checked: false
     },
     trapStun: {
@@ -326,14 +319,18 @@ function globalsRegisterProgressiveChecks() {
 function globalsRegisterBasicChecks() {
   var globalsBaseLocationId = 100050;
   var globalsChecks = [
-    ["fire", "Fire"],
     ["sfx", "SFX"],
     ["bgm", "BGM"],
     ["pickaxe", "Pickaxe"],
     ["waterWalkers", "Water Walkers"],
     ["tankTreads", "Tank Treads"],
     ["tankChassis", "Tank Chassis"],
-    ["tankCannon", "Tank Cannon"]
+    ["tankCannon", "Tank Cannon"],
+    ["magnifyingGlass", "Magnifying Glass"],
+    ["orthopedicInserts", "Orthopedic Inserts"],
+    ["teleportation", "Teleportation"],
+    ["steelToe", "Steel Toe"],
+    ["verminPouch", "Vermin Pouch"]
   ];
 
   globalsChecks.forEach(function (globalsCheck) {

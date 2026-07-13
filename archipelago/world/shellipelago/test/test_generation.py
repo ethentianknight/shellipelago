@@ -1,12 +1,27 @@
 from BaseClasses import ItemClassification
 from Fill import distribute_items_restrictive
+from dataclasses import fields
 
 from . import ShellipelagoTestBase
 from .. import ShellipelagoWorld
+from ..items import item_table
 from ..locations import location_table
 
 
 class TestDefaultGeneration(ShellipelagoTestBase):
+    def test_complete_item_catalog(self) -> None:
+        expected_items = {
+            "Graphics", "Progressive Room", "Bombs", "Gun", "Sword", "Fire",
+            "Max HP", "Max Rounds", "SFX", "BGM", "Pickaxe", "Water Walkers",
+            "Tank Treads", "Tank Chassis", "Tank Cannon", "Magnifying Glass",
+            "Orthopedic Inserts", "Teleportation", "Steel Toe", "Vermin Pouch",
+            "Health Potion", "Energy Gem", "Round Pouch", "Item Pool", "Stun Trap",
+            "Invisible Trap", "Fast Trap", "Slow Trap", "Reverse Trap",
+            "Screen Flip Trap", "Zoom In Trap", "Instant Death Trap", "Snake Trap",
+        }
+
+        self.assertEqual(set(item_table), expected_items)
+
     def test_default_location_count(self) -> None:
         self.assertEqual(len(self.multiworld.get_locations(self.player)), 107)
 
@@ -83,3 +98,31 @@ class TestEssentialShuffleOff(ShellipelagoTestBase):
         for location_data in location_table.values():
             if location_data.get("trap_location"):
                 self.assertRaises(KeyError, self.world.get_location, location_data["name"])
+
+
+class TestUniversalTracker(ShellipelagoTestBase):
+    def test_slot_data_has_all_yaml_options(self) -> None:
+        slot_data = self.world.fill_slot_data()
+        option_names = {option_field.name for option_field in fields(self.world.options)}
+
+        self.assertTrue(option_names.issubset(slot_data))
+
+    def test_passthrough_restores_options(self) -> None:
+        self.multiworld.re_gen_passthrough = {
+            self.world.game: {
+                "add_easy_destructible_checks": 1,
+                "trap_pool_spawn": ["Stun Trap"],
+                "trap_weights": {"Stun Trap": 7},
+            }
+        }
+
+        self.world.generate_early()
+
+        self.assertTrue(bool(self.world.options.add_easy_destructible_checks))
+        self.assertEqual(self.world.options.trap_pool_spawn.value, {"Stun Trap"})
+        self.assertEqual(self.world.options.trap_weights.value, {"Stun Trap": 7})
+
+    def test_slot_data_interpretation_is_passthrough(self) -> None:
+        slot_data = {"shuffle_essential_items": 0}
+
+        self.assertIs(ShellipelagoWorld.interpret_slot_data(slot_data), slot_data)

@@ -804,6 +804,11 @@ function introScreenApplyStandardLocalityOptions(introScreenOptions) {
       "Sword",
       "Pickaxe",
       "Water Walkers",
+      "Orthopedic Inserts",
+      "Steel Toe",
+      "Teleportation",
+      "Magnifying Glass",
+      "Vermin Pouch",
       "Tank Treads",
       "Tank Chassis",
       "Tank Cannon",
@@ -1402,6 +1407,11 @@ function introScreenGetYamlDropLabel(introScreenDropKey) {
     sword: "Sword",
     pickaxe: "Pickaxe",
     waterwalkers: "Water Walkers",
+    orthopedicinserts: "Orthopedic Inserts",
+    steeltoe: "Steel Toe",
+    teleportation: "Teleportation",
+    magnifyingglass: "Magnifying Glass",
+    verminpouch: "Vermin Pouch",
     tanktreads: "Tank Treads",
     tankchassis: "Tank Chassis",
     tankcannon: "Tank Cannon",
@@ -1437,6 +1447,11 @@ function introScreenIsYamlEssentialDrop(introScreenDropKey) {
     "sword",
     "pickaxe",
     "waterwalkers",
+    "orthopedicinserts",
+    "steeltoe",
+    "teleportation",
+    "magnifyingglass",
+    "verminpouch",
     "tanktreads",
     "tankchassis",
     "tankcannon",
@@ -1493,6 +1508,57 @@ function introScreenStartFinalRunTest() {
   return true;
 }
 
+function introScreenStartFullTest() {
+  var introScreenParams = new URLSearchParams(window.location.search);
+
+  if (!introScreenParams.has("fulltest")) {
+    return false;
+  }
+
+  introScreenApplyFullTestLoadout(2, false);
+  globalsState.pendingFullTest = true;
+  return true;
+}
+
+function introScreenStartTankTest() {
+  var introScreenParams = new URLSearchParams(window.location.search);
+  var introScreenGraphicsValue = introScreenParams.get("tank");
+
+  if (!introScreenParams.has("tank") || !/^[0-2]$/.test(introScreenGraphicsValue)) {
+    return false;
+  }
+
+  introScreenApplyFullTestLoadout(Number(introScreenGraphicsValue), true);
+  globalsState.pendingFullTest = true;
+  return true;
+}
+
+function introScreenApplyFullTestLoadout(introScreenGraphicsLevel, introScreenIncludeTank) {
+  globalsState.disableOfflineSave = true;
+  globalsState.fullTestMode = true;
+  globalsState.progression.graphicsLevel = introScreenGraphicsLevel;
+  globalsState.progression.graphics = introScreenGraphicsLevel > 0;
+  globalsState.progression.progressiveRooms = globalsState.progressiveCheckDefinitions.progressiveRoom.count;
+  globalsState.progression.bomb = globalsState.progressiveCheckDefinitions.bomb.count;
+  globalsState.progression.gun = globalsState.progressiveCheckDefinitions.gun.count;
+  globalsState.progression.sword = globalsState.progressiveCheckDefinitions.sword.count;
+  globalsState.progression.hp = globalsState.progressiveCheckDefinitions.hp.count;
+  globalsState.progression.rounds = globalsState.progressiveCheckDefinitions.rounds.count;
+  globalsState.progression.fire = globalsState.progressiveCheckDefinitions.fire.count;
+  globalsState.progression.sfx = true;
+  globalsState.progression.bgm = true;
+  globalsState.progression.pickaxe = true;
+  globalsState.progression.waterWalkers = true;
+  globalsState.progression.magnifyingGlass = true;
+  globalsState.progression.orthopedicInserts = true;
+  globalsState.progression.teleportation = true;
+  globalsState.progression.steelToe = true;
+  globalsState.progression.verminPouch = true;
+  globalsState.progression.tankTreads = introScreenIncludeTank;
+  globalsState.progression.tankChassis = introScreenIncludeTank;
+  globalsState.progression.tankCannon = introScreenIncludeTank;
+}
+
 function introScreenSubmitConnection(introScreenEvent) {
   var introScreenForm = introScreenEvent.currentTarget;
   var introScreenFields = introScreenForm.elements;
@@ -1532,6 +1598,6 @@ function introScreenSubmitConnection(introScreenEvent) {
 
 globalsState.loadedModules.push("introScreen");
 globalsState.deviceMode = "desktop";
-if (!introScreenStartFinalRunTest()) {
+if (!introScreenStartFinalRunTest() && !introScreenStartTankTest() && !introScreenStartFullTest()) {
   introScreenShowConnection();
 }

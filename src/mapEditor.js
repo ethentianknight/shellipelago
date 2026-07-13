@@ -1921,12 +1921,13 @@ function mapEditorRenderVulnerableTypesControl() {
 
 function mapEditorGetVulnerableAttributeOptions() {
   return mapEditorVulnerableAttributeOptions.map(function (mapEditorKey) {
-    var mapEditorDefinition = globalsState.checkDefinitions[mapEditorKey];
+    var mapEditorProgressiveDefinition = globalsState.progressiveCheckDefinitions[mapEditorKey];
+    var mapEditorDefinition = mapEditorProgressiveDefinition || globalsState.checkDefinitions[mapEditorKey];
 
     return {
       key: mapEditorKey,
       label: mapEditorDefinition ? mapEditorDefinition.label : mapEditorKey,
-      progressive: false
+      progressive: Boolean(mapEditorProgressiveDefinition)
     };
   });
 }

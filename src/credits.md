@@ -48,9 +48,17 @@ http://creativecommons.org/licenses/by/4.0/
 Licensed under Creative Commons: By Attribution 4.0 License
 http://creativecommons.org/licenses/by/4.0/
 
+Logic Testing
+Mark Davis
+Palex00
+
 Beta Testers
 Josh Keaton
 Jarrod Mccown
+
+Special Thanks
+Palex00
+Wanyay
 
 Shellipelago
 Dragonside Studios

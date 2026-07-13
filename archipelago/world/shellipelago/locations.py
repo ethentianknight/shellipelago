@@ -97,16 +97,6 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -136,7 +126,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -154,6 +144,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -185,7 +179,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -203,6 +197,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -234,7 +232,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -252,6 +250,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -283,7 +285,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -301,6 +303,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -332,7 +338,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -350,6 +356,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -381,7 +391,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -399,6 +409,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -430,7 +444,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -448,6 +462,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -479,7 +497,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -497,6 +515,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -528,7 +550,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -546,6 +568,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -577,7 +603,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -595,6 +621,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -626,7 +656,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -644,6 +674,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -675,7 +709,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -693,6 +727,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -724,7 +762,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -742,6 +780,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -773,7 +815,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -791,6 +833,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -822,7 +868,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -840,6 +886,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -871,7 +921,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -889,6 +939,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -920,7 +974,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -938,6 +992,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -969,7 +1027,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -987,6 +1045,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1018,7 +1080,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1036,6 +1098,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1067,7 +1133,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1085,6 +1151,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1116,7 +1186,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1134,6 +1204,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1165,7 +1239,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1183,6 +1257,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1214,7 +1292,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1232,6 +1310,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1263,7 +1345,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1281,6 +1363,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1312,7 +1398,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1330,6 +1416,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -1361,7 +1451,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -1379,6 +1469,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2037,7 +2131,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2055,6 +2149,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2086,7 +2184,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2104,6 +2202,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2160,7 +2262,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2178,6 +2280,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2209,7 +2315,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2227,6 +2333,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2258,7 +2368,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2276,6 +2386,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2307,7 +2421,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2325,6 +2439,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2356,7 +2474,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2374,6 +2492,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2405,7 +2527,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2423,6 +2545,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2454,7 +2580,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2472,6 +2598,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2503,7 +2633,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2521,6 +2651,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2552,7 +2686,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -2570,6 +2704,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -2595,12 +2733,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -2653,12 +2785,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -2701,12 +2827,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -2849,12 +2969,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -2897,12 +3011,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -2955,12 +3063,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -3003,12 +3105,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -3064,28 +3160,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -3115,28 +3189,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3170,28 +3222,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -3220,12 +3250,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -3243,6 +3267,12 @@ raw_location_table = [
         },
         {
           "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -3273,12 +3303,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -3296,6 +3320,12 @@ raw_location_table = [
         },
         {
           "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -3327,7 +3357,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3345,6 +3375,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3376,7 +3410,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3394,6 +3428,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3425,7 +3463,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3443,6 +3481,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3474,7 +3516,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3492,6 +3534,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3523,7 +3569,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3541,6 +3587,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3572,7 +3622,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3590,6 +3640,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3621,7 +3675,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3639,6 +3693,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3670,7 +3728,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3688,6 +3746,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3719,7 +3781,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3737,6 +3799,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3768,7 +3834,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3786,6 +3852,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3817,7 +3887,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3835,6 +3905,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3866,7 +3940,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3884,6 +3958,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3915,7 +3993,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3933,6 +4011,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -3964,7 +4046,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -3982,6 +4064,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4013,7 +4099,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4031,6 +4117,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4062,7 +4152,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4080,6 +4170,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4111,7 +4205,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4129,6 +4223,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4160,7 +4258,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4178,6 +4276,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4209,7 +4311,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4227,6 +4329,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4258,7 +4364,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4276,6 +4382,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4307,7 +4417,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4325,6 +4435,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4356,7 +4470,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4374,6 +4488,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4405,7 +4523,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4423,6 +4541,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4454,7 +4576,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4472,6 +4594,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4503,7 +4629,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4521,6 +4647,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4552,7 +4682,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4570,6 +4700,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4601,7 +4735,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4619,6 +4753,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4650,7 +4788,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4668,6 +4806,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4699,7 +4841,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4717,6 +4859,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4748,7 +4894,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4766,6 +4912,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4797,7 +4947,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4815,6 +4965,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4846,7 +5000,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4864,6 +5018,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4895,7 +5053,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4913,6 +5071,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4944,7 +5106,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -4962,6 +5124,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -4993,7 +5159,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5011,6 +5177,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5042,7 +5212,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5060,6 +5230,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5091,7 +5265,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5109,6 +5283,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5140,7 +5318,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5158,6 +5336,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5189,7 +5371,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5207,6 +5389,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5238,7 +5424,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5256,6 +5442,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5287,7 +5477,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5305,6 +5495,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5336,7 +5530,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5354,6 +5548,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5385,7 +5583,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5403,6 +5601,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5434,7 +5636,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5452,6 +5654,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5483,7 +5689,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5501,6 +5707,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5532,7 +5742,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5550,6 +5760,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5581,7 +5795,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5599,6 +5813,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5630,7 +5848,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5648,6 +5866,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5679,7 +5901,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5697,6 +5919,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5728,7 +5954,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5746,6 +5972,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5777,7 +6007,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5795,6 +6025,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5826,7 +6060,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5844,6 +6078,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5875,7 +6113,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -5893,6 +6131,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -5948,17 +6190,7 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         },
         {
@@ -5967,10 +6199,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -6001,17 +6229,7 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         },
         {
@@ -6020,10 +6238,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -6415,7 +6629,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -6433,6 +6647,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -7700,6 +7918,22 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -7729,7 +7963,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -7747,6 +7981,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -7778,7 +8016,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -7796,6 +8034,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -7827,7 +8069,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -7845,6 +8087,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -7876,7 +8122,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -7894,6 +8140,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -7925,7 +8175,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -7943,6 +8193,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -7974,7 +8228,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -7992,6 +8246,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8023,7 +8281,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8041,6 +8299,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8072,7 +8334,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8090,6 +8352,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8115,34 +8381,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8207,28 +8445,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -8258,28 +8474,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8313,28 +8507,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -8364,28 +8536,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8419,28 +8569,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -8470,28 +8598,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8525,28 +8631,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -8578,28 +8662,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -8629,7 +8691,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8647,6 +8709,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8678,7 +8744,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8696,6 +8762,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8727,7 +8797,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8745,6 +8815,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8776,7 +8850,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8794,6 +8868,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8825,7 +8903,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8843,6 +8921,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8874,7 +8956,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8892,6 +8974,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8923,7 +9009,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8941,6 +9027,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -8972,7 +9062,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -8990,6 +9080,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9021,7 +9115,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9039,6 +9133,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9070,7 +9168,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9088,6 +9186,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9119,7 +9221,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9137,6 +9239,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9168,7 +9274,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9186,6 +9292,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9217,7 +9327,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9235,6 +9345,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9266,7 +9380,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9284,6 +9398,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9315,7 +9433,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9333,6 +9451,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9364,7 +9486,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9382,6 +9504,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9413,7 +9539,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9431,6 +9557,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9462,7 +9592,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9480,6 +9610,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9511,7 +9645,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9529,6 +9663,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9560,7 +9698,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9578,6 +9716,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9609,7 +9751,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -9627,6 +9769,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -9856,28 +10002,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -10098,16 +10222,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10125,6 +10239,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10157,16 +10275,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10184,6 +10292,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10216,16 +10328,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10243,6 +10345,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10275,16 +10381,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10302,6 +10398,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10334,16 +10434,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10361,6 +10451,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10393,16 +10487,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10420,6 +10504,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10452,16 +10540,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10479,6 +10557,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10511,16 +10593,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10538,6 +10610,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10570,16 +10646,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10597,6 +10663,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10629,16 +10699,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10656,6 +10716,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10688,16 +10752,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10715,6 +10769,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10747,16 +10805,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10774,6 +10822,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10806,16 +10858,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10833,6 +10875,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10865,16 +10911,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10892,6 +10928,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10924,16 +10964,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -10951,6 +10981,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -10983,16 +11017,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11010,6 +11034,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11042,16 +11070,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11069,6 +11087,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11101,16 +11123,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11128,6 +11140,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11160,16 +11176,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11187,6 +11193,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11219,16 +11229,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11246,6 +11246,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11278,16 +11282,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11305,6 +11299,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11337,16 +11335,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11364,6 +11352,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11396,16 +11388,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11423,6 +11405,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11455,16 +11441,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11482,6 +11458,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11514,16 +11494,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11541,6 +11511,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11573,16 +11547,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11600,6 +11564,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11632,16 +11600,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11659,6 +11617,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11691,16 +11653,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11718,6 +11670,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11750,16 +11706,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11777,6 +11723,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11809,16 +11759,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
         }
       ],
       [
@@ -11836,6 +11776,10 @@ raw_location_table = [
         },
         {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -11879,12 +11823,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -11918,34 +11856,6 @@ raw_location_table = [
         },
         {
           "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -12449,34 +12359,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -12500,34 +12382,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -12555,34 +12409,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -12606,34 +12432,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -12661,34 +12459,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -12712,34 +12482,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -12767,34 +12509,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -12818,34 +12532,6 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -12929,28 +12615,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -12980,28 +12644,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13035,28 +12677,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13086,28 +12706,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13141,28 +12739,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13192,28 +12768,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13247,28 +12801,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13298,28 +12830,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13353,28 +12863,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13404,28 +12892,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13459,28 +12925,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13510,28 +12954,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13565,28 +12987,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13616,28 +13016,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13671,28 +13049,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13722,28 +13078,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13777,28 +13111,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13828,28 +13140,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13883,28 +13173,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -13934,28 +13202,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -13989,28 +13235,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14040,28 +13264,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14095,28 +13297,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14146,28 +13326,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14201,28 +13359,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14252,28 +13388,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14307,28 +13421,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14358,28 +13450,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14413,28 +13483,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14464,28 +13512,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14519,28 +13545,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14570,28 +13574,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14625,28 +13607,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14676,28 +13636,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14731,28 +13669,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14782,28 +13698,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14837,28 +13731,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14888,28 +13760,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -14943,28 +13793,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -14994,28 +13822,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15049,28 +13855,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -15100,28 +13884,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15155,28 +13917,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -15208,28 +13948,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -15259,28 +13977,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15359,12 +14055,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -15400,7 +14090,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15419,11 +14109,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15461,7 +14149,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15480,11 +14168,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15522,7 +14208,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15541,11 +14227,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15583,7 +14267,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15602,11 +14286,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15644,7 +14326,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15663,11 +14345,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15705,7 +14385,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15724,11 +14404,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15766,7 +14444,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15785,11 +14463,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15827,7 +14503,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15846,11 +14522,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15888,7 +14562,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15907,11 +14581,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -15949,7 +14621,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -15968,11 +14640,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16010,7 +14680,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16029,11 +14699,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16071,7 +14739,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16090,11 +14758,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16132,7 +14798,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16151,11 +14817,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16193,7 +14857,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16212,11 +14876,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16254,7 +14916,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16273,11 +14935,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16315,7 +14975,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16334,11 +14994,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16376,7 +15034,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16395,11 +15053,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16437,7 +15093,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16456,11 +15112,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16498,7 +15152,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16517,11 +15171,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16559,7 +15211,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16578,11 +15230,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16620,7 +15270,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16639,11 +15289,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16681,7 +15329,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16700,11 +15348,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16742,7 +15388,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16761,11 +15407,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16803,7 +15447,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16822,11 +15466,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16864,7 +15506,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16883,11 +15525,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16925,7 +15565,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -16944,11 +15584,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -16986,7 +15624,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17005,11 +15643,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17047,7 +15683,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17066,11 +15702,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17108,7 +15742,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17127,11 +15761,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17169,7 +15801,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17188,11 +15820,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17230,7 +15860,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17249,11 +15879,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17291,7 +15919,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17310,11 +15938,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17352,7 +15978,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17371,11 +15997,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17413,7 +16037,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17432,11 +16056,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17474,7 +16096,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17493,11 +16115,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17535,7 +16155,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17554,11 +16174,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17596,7 +16214,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17615,11 +16233,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17657,7 +16273,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17676,11 +16292,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17718,7 +16332,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17737,11 +16351,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17779,7 +16391,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17798,11 +16410,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17840,7 +16450,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17859,11 +16469,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17901,7 +16509,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17920,11 +16528,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -17962,7 +16568,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -17981,11 +16587,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18023,7 +16627,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18042,11 +16646,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18084,7 +16686,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18103,11 +16705,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18145,7 +16745,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18164,11 +16764,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18206,7 +16804,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18225,11 +16823,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18267,7 +16863,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18286,11 +16882,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18328,7 +16922,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18347,11 +16941,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18389,7 +16981,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18408,11 +17000,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18450,7 +17040,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18469,11 +17059,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18511,7 +17099,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18530,11 +17118,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18572,7 +17158,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18591,11 +17177,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18633,7 +17217,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -18652,11 +17236,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18696,28 +17278,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -18753,28 +17313,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18814,28 +17352,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -18871,28 +17387,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -18932,28 +17426,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -18989,28 +17461,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -19050,28 +17500,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19107,28 +17535,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -19168,28 +17574,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19225,28 +17609,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -19286,28 +17648,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19343,28 +17683,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -19406,12 +17724,6 @@ raw_location_table = [
         },
         {
           "item": "Water Walkers",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -19495,12 +17807,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19558,12 +17864,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -19625,12 +17925,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19688,12 +17982,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -19755,12 +18043,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19820,12 +18102,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19861,28 +18137,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -19922,28 +18176,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -19981,28 +18213,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -20038,28 +18248,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20111,7 +18299,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -20144,34 +18332,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -20202,34 +18362,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -20266,7 +18398,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20285,11 +18417,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20327,7 +18457,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20346,11 +18476,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20388,7 +18516,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20407,11 +18535,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20449,7 +18575,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20468,11 +18594,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20510,7 +18634,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20529,11 +18653,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20571,7 +18693,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20590,11 +18712,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20632,7 +18752,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20651,11 +18771,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20693,7 +18811,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20712,11 +18830,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20754,7 +18870,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20773,11 +18889,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20815,7 +18929,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20834,11 +18948,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20876,7 +18988,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20895,11 +19007,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20937,7 +19047,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -20956,11 +19066,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -20998,7 +19106,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21017,11 +19125,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21059,7 +19165,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21078,11 +19184,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21120,7 +19224,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21139,11 +19243,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21181,7 +19283,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21200,11 +19302,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21242,7 +19342,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21261,11 +19361,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21303,7 +19401,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21322,11 +19420,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21364,7 +19460,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21383,11 +19479,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21425,7 +19519,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21444,11 +19538,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21486,7 +19578,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21505,11 +19597,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21547,7 +19637,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21566,11 +19656,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21608,7 +19696,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21627,11 +19715,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21669,7 +19755,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21688,11 +19774,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21730,7 +19814,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21749,11 +19833,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21791,7 +19873,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21810,11 +19892,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21852,7 +19932,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21871,11 +19951,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21913,7 +19991,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -21932,11 +20010,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -21994,12 +20070,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22053,12 +20123,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -22116,12 +20180,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22175,12 +20233,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -22238,12 +20290,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22297,12 +20343,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -22360,12 +20400,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22419,12 +20453,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -22482,12 +20510,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22543,12 +20565,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22594,12 +20610,6 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22630,12 +20640,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -22668,34 +20672,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22726,34 +20702,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -22786,34 +20734,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22844,34 +20764,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -22904,34 +20796,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -22962,34 +20826,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -23022,34 +20858,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -23081,34 +20889,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -23139,34 +20919,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -23203,7 +20955,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23222,11 +20974,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23264,7 +21014,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23283,11 +21033,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23325,7 +21073,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23344,11 +21092,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23386,7 +21132,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23405,11 +21151,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23447,7 +21191,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23466,11 +21210,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23508,7 +21250,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23527,11 +21269,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23569,7 +21309,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23588,11 +21328,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23630,7 +21368,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23649,11 +21387,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23691,7 +21427,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23710,11 +21446,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23752,7 +21486,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23771,11 +21505,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23813,7 +21545,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23832,11 +21564,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23874,7 +21604,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23893,11 +21623,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -23935,7 +21663,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -23954,11 +21682,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -24034,12 +21760,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24070,12 +21790,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -24150,12 +21864,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24209,12 +21917,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -24272,12 +21974,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24331,12 +22027,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -24394,12 +22084,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24431,12 +22115,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24467,12 +22145,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -24527,12 +22199,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -24590,12 +22256,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24649,12 +22309,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -24712,12 +22366,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24771,12 +22419,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -24834,12 +22476,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -24893,12 +22529,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -24956,12 +22586,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25015,12 +22639,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25078,12 +22696,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25137,12 +22749,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25200,12 +22806,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25259,12 +22859,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25322,12 +22916,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25381,12 +22969,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25444,12 +23026,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25503,12 +23079,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25566,12 +23136,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25625,12 +23189,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25688,12 +23246,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25747,12 +23299,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25810,12 +23356,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25869,12 +23409,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -25932,12 +23466,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -25991,12 +23519,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26054,12 +23576,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26113,12 +23629,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26176,12 +23686,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26235,12 +23739,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26298,12 +23796,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26357,12 +23849,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26420,12 +23906,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26479,12 +23959,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26542,12 +24016,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26601,12 +24069,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26664,12 +24126,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26723,12 +24179,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26786,12 +24236,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26845,12 +24289,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26908,12 +24346,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -26967,12 +24399,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27030,12 +24456,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27089,12 +24509,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27152,12 +24566,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27211,12 +24619,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27274,12 +24676,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27333,12 +24729,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27396,12 +24786,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27455,12 +24839,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27518,12 +24896,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27577,12 +24949,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27640,12 +25006,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27699,12 +25059,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27762,12 +25116,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27821,12 +25169,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27884,12 +25226,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -27943,12 +25279,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28006,12 +25336,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28065,12 +25389,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28128,12 +25446,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28187,12 +25499,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28250,12 +25556,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28309,12 +25609,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28372,12 +25666,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28431,12 +25719,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28494,12 +25776,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28553,12 +25829,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28616,12 +25886,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28675,12 +25939,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28738,12 +25996,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28797,12 +26049,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28860,12 +26106,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -28919,12 +26159,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -28982,12 +26216,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29041,12 +26269,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -29104,12 +26326,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29163,12 +26379,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -29226,12 +26436,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29285,12 +26489,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -29348,12 +26546,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29384,34 +26576,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -29444,34 +26608,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29502,12 +26638,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -29540,34 +26670,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29598,34 +26700,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -29658,34 +26732,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29716,34 +26762,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -29776,34 +26794,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29834,34 +26824,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -29918,12 +26880,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -29967,30 +26923,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -30042,30 +26974,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -30143,12 +27051,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -30216,12 +27118,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -30293,12 +27189,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -30342,30 +27232,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -30423,30 +27289,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -30492,30 +27334,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -30569,34 +27387,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -30631,31 +27421,11 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
           "item": "Sword",
           "amount": 1
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -30703,34 +27473,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -30766,7 +27508,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -30785,11 +27527,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -30805,11 +27545,11 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 18,
     "category": "shop",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
+    "drop_key": "gun",
+    "drop_name": "Gun",
+    "item_pool": False,
     "trap_location": False,
-    "essential_location": False,
+    "essential_location": True,
     "resource_location": False,
     "requirements": [
       [
@@ -30827,12 +27567,6 @@ raw_location_table = [
       [
         {
           "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -30869,12 +27603,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -30907,11 +27635,11 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "shop",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
+    "drop_key": "teleportation",
+    "drop_name": "Teleportation",
+    "item_pool": False,
     "trap_location": False,
-    "essential_location": False,
+    "essential_location": True,
     "resource_location": False,
     "requirements": [
       [
@@ -30929,12 +27657,6 @@ raw_location_table = [
       [
         {
           "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -30974,12 +27696,6 @@ raw_location_table = [
           "item": "Sword",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -31015,7 +27731,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31034,11 +27750,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31076,7 +27790,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31095,11 +27809,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31137,7 +27849,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31156,11 +27868,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31198,7 +27908,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31217,11 +27927,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31259,7 +27967,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31278,11 +27986,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31320,7 +28026,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31339,11 +28045,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31381,7 +28085,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31400,11 +28104,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31442,7 +28144,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31461,11 +28163,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31503,7 +28203,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31522,11 +28222,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31564,7 +28262,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31583,11 +28281,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31625,7 +28321,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31644,11 +28340,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31686,7 +28380,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31705,11 +28399,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31747,7 +28439,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31766,11 +28458,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31808,7 +28498,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31827,11 +28517,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31869,7 +28557,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31888,11 +28576,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31930,7 +28616,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -31949,11 +28635,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -31991,7 +28675,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32010,11 +28694,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32052,7 +28734,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32071,11 +28753,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32113,7 +28793,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32132,11 +28812,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32174,7 +28852,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32193,11 +28871,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32235,7 +28911,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32254,11 +28930,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32296,7 +28970,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32315,11 +28989,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32357,7 +29029,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32376,11 +29048,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32418,7 +29088,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32437,11 +29107,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32479,7 +29147,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32498,11 +29166,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32540,7 +29206,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32559,11 +29225,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32601,7 +29265,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32620,11 +29284,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32662,7 +29324,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32681,11 +29343,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32723,7 +29383,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32742,11 +29402,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32784,7 +29442,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32803,11 +29461,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32845,7 +29501,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32864,11 +29520,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32906,7 +29560,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32925,11 +29579,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -32967,7 +29619,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -32986,11 +29638,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33028,7 +29678,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33047,11 +29697,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33089,7 +29737,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33108,11 +29756,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33150,7 +29796,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33169,11 +29815,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33211,7 +29855,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33230,11 +29874,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33272,7 +29914,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33291,11 +29933,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33333,7 +29973,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33352,11 +29992,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33394,7 +30032,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33413,11 +30051,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33455,7 +30091,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33474,11 +30110,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33516,7 +30150,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -33535,11 +30169,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33572,12 +30204,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -33614,28 +30240,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33675,28 +30279,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -33732,28 +30314,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33793,28 +30353,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -33850,28 +30388,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -33911,28 +30427,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -33968,28 +30462,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -34029,28 +30501,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34086,28 +30536,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -34147,28 +30575,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34206,28 +30612,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34258,12 +30642,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -34296,34 +30674,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34354,34 +30704,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -34414,34 +30736,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34472,34 +30766,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -34532,34 +30798,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34590,34 +30828,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -34650,34 +30860,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34708,34 +30890,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -34768,12 +30922,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34804,34 +30952,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -34864,34 +30984,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34923,34 +31015,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -34981,34 +31045,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -35050,38 +31086,6 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ],
       [
@@ -35105,12 +31109,6 @@ raw_location_table = [
         },
         {
           "item": "Water Walkers",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -35148,7 +31146,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35167,11 +31165,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35209,7 +31205,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35228,11 +31224,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35290,12 +31284,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -35331,7 +31319,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35350,11 +31338,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35392,7 +31378,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35411,11 +31397,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35453,7 +31437,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35472,11 +31456,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35514,7 +31496,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35533,11 +31515,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35575,7 +31555,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35594,11 +31574,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35636,7 +31614,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35655,11 +31633,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35697,7 +31673,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35716,11 +31692,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35758,7 +31732,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35777,11 +31751,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35819,7 +31791,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35838,11 +31810,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35880,7 +31850,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35899,11 +31869,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -35941,7 +31909,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -35960,11 +31928,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36002,7 +31968,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36021,11 +31987,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36063,7 +32027,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36082,11 +32046,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36124,7 +32086,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36143,11 +32105,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36185,7 +32145,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36204,11 +32164,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36246,7 +32204,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36265,11 +32223,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36307,7 +32263,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36326,11 +32282,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36368,7 +32322,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36387,11 +32341,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36429,7 +32381,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -36448,11 +32400,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -36490,42 +32440,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -36544,12 +32458,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -36587,42 +32495,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -36641,12 +32513,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -36684,42 +32550,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -36738,12 +32568,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -36781,42 +32605,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -36835,12 +32623,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -36878,42 +32660,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -36932,12 +32678,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -36975,42 +32715,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -37029,12 +32733,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -37072,42 +32770,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -37126,12 +32788,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -37165,12 +32821,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37201,34 +32851,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -37261,34 +32883,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37319,34 +32913,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -37379,34 +32945,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37437,12 +32975,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -37475,34 +33007,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37533,34 +33037,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -37593,34 +33069,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37651,34 +33099,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -37711,12 +33131,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37747,34 +33161,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -37807,34 +33193,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37865,34 +33223,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -37925,34 +33255,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -37984,34 +33286,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38042,12 +33316,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -38084,28 +33352,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -38145,28 +33391,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38202,28 +33426,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -38263,28 +33465,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38320,28 +33500,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -38381,28 +33539,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38438,28 +33574,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -38499,28 +33613,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38556,28 +33648,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -38617,28 +33687,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38669,12 +33717,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -38707,12 +33749,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38743,34 +33779,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -38803,12 +33811,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38839,34 +33841,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -38899,34 +33873,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -38957,12 +33903,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -38995,34 +33935,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39053,34 +33965,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -39113,34 +33997,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39171,34 +34027,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -39231,34 +34059,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39289,34 +34089,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -39349,34 +34121,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39407,34 +34151,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -39467,34 +34183,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39525,34 +34213,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -39585,34 +34245,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39643,34 +34275,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -39703,34 +34307,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39761,12 +34337,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -39799,12 +34369,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39836,12 +34400,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -39872,12 +34430,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -39914,28 +34466,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -39975,28 +34505,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40032,28 +34540,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40093,28 +34579,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40150,28 +34614,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40211,28 +34653,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40268,28 +34688,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40329,28 +34727,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40386,28 +34762,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40447,28 +34801,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40504,28 +34836,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40565,28 +34875,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40622,28 +34910,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40683,28 +34949,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40740,28 +34984,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -40801,28 +35023,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40860,28 +35060,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -40912,12 +35090,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -40950,34 +35122,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41008,34 +35152,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -41068,34 +35184,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41126,34 +35214,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -41186,34 +35246,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41244,34 +35276,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -41304,34 +35308,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41362,12 +35338,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -41403,31 +35373,11 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
           "item": "Sword",
           "amount": 1
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -41475,34 +35425,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41548,34 +35470,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41619,34 +35513,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -41697,17 +35563,15 @@ raw_location_table = [
       ],
       [
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -41773,34 +35637,6 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -41862,34 +35698,6 @@ raw_location_table = [
         },
         {
           "item": "Pickaxe",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -41955,34 +35763,6 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42044,34 +35824,6 @@ raw_location_table = [
         },
         {
           "item": "Pickaxe",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -42143,12 +35895,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42216,12 +35962,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -42293,12 +36033,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42366,12 +36100,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -42443,12 +36171,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42516,12 +36238,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -42593,12 +36309,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42666,12 +36376,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -42743,12 +36447,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42816,12 +36514,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -42893,12 +36585,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -42966,12 +36652,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43043,12 +36723,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -43116,12 +36790,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43193,12 +36861,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -43266,12 +36928,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43343,12 +36999,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -43416,12 +37066,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43493,12 +37137,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -43566,12 +37204,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43643,12 +37275,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -43716,12 +37342,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43793,12 +37413,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -43866,12 +37480,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -43943,12 +37551,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -44016,12 +37618,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -44093,12 +37689,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -44166,12 +37756,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -44243,12 +37827,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -44318,12 +37896,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -44367,30 +37939,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -44448,30 +37996,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -44517,30 +38041,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -44598,30 +38098,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -44667,30 +38143,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -44748,30 +38200,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -44817,30 +38245,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -44898,30 +38302,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -44967,30 +38347,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -45048,30 +38404,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -45117,30 +38449,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -45198,30 +38506,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -45267,30 +38551,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -45348,30 +38608,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -45423,30 +38659,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -45492,30 +38704,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -45593,12 +38781,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -45666,12 +38848,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -45743,12 +38919,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -45816,12 +38986,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -45893,12 +39057,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -45966,12 +39124,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46043,12 +39195,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -46116,12 +39262,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46193,12 +39333,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -46266,12 +39400,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46343,12 +39471,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -46416,12 +39538,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46493,12 +39609,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -46566,12 +39676,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46643,12 +39747,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -46716,12 +39814,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46793,12 +39885,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -46866,12 +39952,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -46943,12 +40023,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47012,34 +40086,6 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47070,34 +40116,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47130,34 +40148,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47188,34 +40178,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47248,34 +40210,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47306,34 +40240,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47366,34 +40272,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47424,34 +40302,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47484,34 +40334,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47542,34 +40364,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47602,34 +40396,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47660,34 +40426,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47720,34 +40458,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47778,34 +40488,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47838,34 +40520,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -47896,34 +40550,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -47956,34 +40582,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48014,34 +40612,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48074,34 +40644,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48132,34 +40674,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48192,34 +40706,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48250,34 +40736,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48310,34 +40768,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48368,34 +40798,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48428,34 +40830,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48486,34 +40860,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48546,34 +40892,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48604,34 +40922,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48664,34 +40954,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48722,34 +40984,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48782,34 +41016,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48840,34 +41046,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -48900,34 +41078,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -48959,34 +41109,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49017,34 +41139,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -49103,12 +41197,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -49170,12 +41258,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49235,12 +41317,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49254,11 +41330,11 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "chest",
-    "drop_key": "trapDeath",
-    "drop_name": "Instant Death Trap",
+    "drop_key": "steelToe",
+    "drop_name": "Steel Toe",
     "item_pool": False,
-    "trap_location": True,
-    "essential_location": False,
+    "trap_location": False,
+    "essential_location": True,
     "resource_location": False,
     "requirements": [
       [
@@ -49271,12 +41347,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -49313,28 +41383,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -49374,28 +41422,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49433,28 +41459,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49485,12 +41489,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -49523,12 +41521,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49559,12 +41551,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -49601,28 +41587,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -49662,28 +41626,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49719,28 +41661,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -49780,28 +41700,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49839,28 +41737,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -49891,34 +41767,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -49951,34 +41799,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50009,34 +41829,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -50069,34 +41861,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50127,34 +41891,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -50187,34 +41923,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50245,34 +41953,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -50305,34 +41985,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50363,34 +42015,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -50423,34 +42047,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50481,12 +42077,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -50523,28 +42113,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -50584,28 +42152,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50641,28 +42187,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -50702,28 +42226,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50759,28 +42261,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -50820,28 +42300,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50877,28 +42335,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -50938,28 +42374,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -50995,28 +42409,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -51056,28 +42448,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51108,12 +42478,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -51146,34 +42510,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51204,34 +42540,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -51268,28 +42576,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -51329,28 +42615,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51381,12 +42645,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -51431,34 +42689,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -51506,34 +42736,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51577,34 +42779,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -51652,34 +42826,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51723,34 +42869,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -51798,34 +42916,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51871,34 +42961,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -51933,31 +42995,11 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
           "item": "Sword",
           "amount": 1
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -51990,12 +43032,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -52032,28 +43068,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52093,28 +43107,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52150,28 +43142,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52211,28 +43181,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52268,28 +43216,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52329,28 +43255,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52386,28 +43290,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52447,28 +43329,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52504,28 +43364,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52565,28 +43403,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52622,28 +43438,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52683,28 +43477,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52740,28 +43512,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52801,28 +43551,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52858,28 +43586,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -52919,28 +43625,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -52978,28 +43662,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -53030,12 +43692,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -53072,7 +43728,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53091,11 +43747,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53133,7 +43787,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53152,11 +43806,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53194,7 +43846,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53213,11 +43865,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53255,7 +43905,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53274,11 +43924,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53316,7 +43964,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53335,11 +43983,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53377,7 +44023,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53396,11 +44042,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53438,7 +44082,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53457,11 +44101,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53499,7 +44141,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53518,11 +44160,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53560,7 +44200,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53579,11 +44219,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53621,7 +44259,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53640,11 +44278,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53682,7 +44318,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53701,11 +44337,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53743,7 +44377,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -53762,11 +44396,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -53800,12 +44432,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -53836,34 +44462,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -53896,34 +44494,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -53954,34 +44524,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54014,34 +44556,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54072,34 +44586,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54132,34 +44618,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54190,34 +44648,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54250,34 +44680,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54308,34 +44710,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54368,34 +44742,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54426,34 +44772,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54486,34 +44804,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54544,34 +44834,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54604,34 +44866,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54662,34 +44896,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54722,34 +44928,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54780,34 +44958,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54840,34 +44990,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -54898,34 +45020,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -54958,34 +45052,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55016,34 +45082,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -55076,34 +45114,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55134,34 +45144,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -55194,34 +45176,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55252,34 +45206,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -55312,34 +45238,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55370,34 +45268,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -55430,34 +45300,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55488,12 +45330,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -55526,34 +45362,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 5
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55584,12 +45392,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -55626,28 +45428,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -55687,28 +45467,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55744,28 +45502,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -55805,28 +45541,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55862,28 +45576,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -55923,28 +45615,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -55980,28 +45650,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56041,28 +45689,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56098,28 +45724,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56159,28 +45763,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56216,28 +45798,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56277,28 +45837,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56334,28 +45872,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56395,28 +45911,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56452,28 +45946,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56513,28 +45985,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56570,28 +46020,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56631,28 +46059,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56688,28 +46094,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56749,28 +46133,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56806,28 +46168,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56867,28 +46207,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -56924,28 +46242,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -56985,28 +46281,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57042,28 +46316,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57103,28 +46355,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57160,28 +46390,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57221,28 +46429,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57278,28 +46464,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57339,28 +46503,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57396,28 +46538,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57457,28 +46577,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57514,28 +46612,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57575,28 +46651,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57632,28 +46686,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57693,28 +46725,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57750,28 +46760,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57811,28 +46799,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57868,28 +46834,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -57929,28 +46873,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -57988,28 +46910,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58040,34 +46940,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58100,34 +46972,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58158,34 +47002,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58218,34 +47034,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58276,34 +47064,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58336,34 +47096,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58394,34 +47126,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58454,34 +47158,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58512,34 +47188,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58572,34 +47220,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58630,34 +47250,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58690,34 +47282,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58748,34 +47312,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58808,34 +47344,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58866,34 +47374,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -58926,34 +47406,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -58985,34 +47437,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -59043,34 +47467,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -59111,12 +47507,6 @@ raw_location_table = [
         },
         {
           "item": "Water Walkers",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -59185,12 +47575,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -59249,12 +47633,6 @@ raw_location_table = [
         },
         {
           "item": "Water Walkers",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -59323,12 +47701,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
           "item": "Tank",
           "amount": 1
         },
@@ -59387,12 +47759,6 @@ raw_location_table = [
         },
         {
           "item": "Water Walkers",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -59458,12 +47824,6 @@ raw_location_table = [
           "item": "Water Walkers",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -59494,34 +47854,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -59554,34 +47886,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -59612,34 +47916,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -59672,34 +47948,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -59731,34 +47979,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -59789,34 +48009,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -59861,34 +48053,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -59936,34 +48100,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -60007,34 +48143,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -60082,12 +48190,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -60131,30 +48233,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -60212,30 +48290,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -60281,30 +48335,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -60362,30 +48392,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -60431,30 +48437,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -60512,30 +48494,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -60581,30 +48539,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -60662,30 +48596,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -60731,30 +48641,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -60812,30 +48698,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -60887,30 +48749,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -60956,30 +48794,6 @@ raw_location_table = [
         },
         {
           "item": "Fire",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
           "amount": 1
         }
       ],
@@ -61039,12 +48853,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -61080,42 +48888,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61134,12 +48906,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61177,42 +48943,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61231,12 +48961,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61274,42 +48998,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61328,12 +49016,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61371,42 +49053,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61425,12 +49071,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61468,42 +49108,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61522,12 +49126,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61565,42 +49163,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61619,12 +49181,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61662,42 +49218,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61716,12 +49236,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61759,42 +49273,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61813,12 +49291,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61856,42 +49328,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -61910,12 +49346,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -61953,42 +49383,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62007,12 +49401,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62050,42 +49438,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62104,12 +49456,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62147,42 +49493,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62201,12 +49511,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62244,42 +49548,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62298,12 +49566,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62341,7 +49603,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -62360,11 +49622,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -62402,7 +49662,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -62421,11 +49681,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -62463,42 +49721,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62517,12 +49739,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62560,42 +49776,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62614,12 +49794,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62657,42 +49831,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62711,12 +49849,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62754,42 +49886,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62808,12 +49904,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62851,42 +49941,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -62905,12 +49959,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -62948,42 +49996,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63002,12 +50014,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63045,42 +50051,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63099,12 +50069,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63142,42 +50106,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63196,12 +50124,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63239,42 +50161,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63293,12 +50179,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63336,42 +50216,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63390,12 +50234,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63433,42 +50271,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63487,12 +50289,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63530,42 +50326,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63584,12 +50344,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63627,42 +50381,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63681,12 +50399,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63724,42 +50436,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63778,12 +50454,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63821,42 +50491,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63875,12 +50509,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -63918,42 +50546,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -63972,12 +50564,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64015,42 +50601,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64069,12 +50619,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64112,42 +50656,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64166,12 +50674,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64209,42 +50711,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64263,12 +50729,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64306,42 +50766,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64360,12 +50784,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64403,42 +50821,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64457,12 +50839,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64500,42 +50876,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64554,12 +50894,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64597,42 +50931,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64651,12 +50949,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64694,42 +50986,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64748,12 +51004,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64791,42 +51041,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64845,12 +51059,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64888,42 +51096,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -64942,12 +51114,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -64985,42 +51151,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65039,12 +51169,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65082,42 +51206,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65136,12 +51224,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65179,42 +51261,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65233,12 +51279,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65276,42 +51316,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65330,12 +51334,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65373,42 +51371,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65427,12 +51389,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65470,42 +51426,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65524,12 +51444,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65567,42 +51481,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65621,12 +51499,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65664,42 +51536,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65718,12 +51554,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65761,42 +51591,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65815,12 +51609,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65858,42 +51646,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -65912,12 +51664,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -65955,42 +51701,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -66009,12 +51719,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66052,42 +51756,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -66106,12 +51774,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66149,42 +51811,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -66203,12 +51829,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66246,42 +51866,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -66300,12 +51884,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66343,42 +51921,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -66397,12 +51939,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66440,42 +51976,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
           "amount": 1
         }
       ],
@@ -66494,12 +51994,6 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66533,12 +52027,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -66570,34 +52058,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -66628,12 +52088,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -66692,12 +52146,6 @@ raw_location_table = [
         },
         {
           "item": "Pickaxe",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66759,12 +52207,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -66822,12 +52264,6 @@ raw_location_table = [
         },
         {
           "item": "Pickaxe",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -66889,12 +52325,6 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -66930,7 +52360,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -66949,11 +52379,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -66991,7 +52419,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67010,11 +52438,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67052,7 +52478,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67071,11 +52497,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67113,7 +52537,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67132,11 +52556,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67174,7 +52596,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67193,11 +52615,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67235,7 +52655,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67254,11 +52674,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67296,7 +52714,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67315,11 +52733,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67357,7 +52773,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -67376,11 +52792,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -67438,12 +52852,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -67497,12 +52905,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -67560,12 +52962,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -67619,12 +53015,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -67682,12 +53072,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -67741,12 +53125,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -67804,12 +53182,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -67863,12 +53235,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -67926,12 +53292,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -67985,12 +53345,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68048,12 +53402,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68107,12 +53455,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68170,12 +53512,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68229,12 +53565,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68292,12 +53622,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68351,12 +53675,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68414,12 +53732,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68473,12 +53785,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68536,12 +53842,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68595,12 +53895,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68658,12 +53952,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68717,12 +54005,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68780,12 +54062,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68839,12 +54115,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -68902,12 +54172,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -68961,12 +54225,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69024,12 +54282,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69083,12 +54335,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69146,12 +54392,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69205,12 +54445,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69268,12 +54502,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69327,12 +54555,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69390,12 +54612,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69449,12 +54665,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69512,12 +54722,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69571,12 +54775,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69634,12 +54832,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69693,12 +54885,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69756,12 +54942,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69815,12 +54995,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -69878,12 +55052,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -69937,12 +55105,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70000,12 +55162,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70059,12 +55215,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70122,12 +55272,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70158,12 +55302,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -70196,34 +55334,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70254,34 +55364,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -70314,34 +55396,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70372,12 +55426,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -70426,12 +55474,6 @@ raw_location_table = [
         },
         {
           "item": "Pickaxe",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70489,12 +55531,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70548,12 +55584,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70611,12 +55641,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70670,12 +55694,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70733,12 +55751,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70792,12 +55804,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70855,12 +55861,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -70914,12 +55914,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -70977,12 +55971,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -71036,12 +56024,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -71099,12 +56081,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -71158,12 +56134,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -71221,12 +56191,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -71280,12 +56244,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -71343,12 +56301,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -71384,7 +56336,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71403,11 +56355,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71445,7 +56395,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71464,11 +56414,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71506,7 +56454,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71525,11 +56473,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71567,7 +56513,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71586,11 +56532,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71628,7 +56572,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71647,11 +56591,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71689,7 +56631,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71708,11 +56650,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71750,7 +56690,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71769,11 +56709,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71811,7 +56749,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71830,11 +56768,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71872,7 +56808,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71891,11 +56827,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71933,7 +56867,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -71952,11 +56886,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -71994,7 +56926,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72013,11 +56945,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72055,7 +56985,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72074,11 +57004,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72116,7 +57044,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72135,11 +57063,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72177,7 +57103,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72196,11 +57122,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72238,7 +57162,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72257,11 +57181,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72299,7 +57221,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72318,11 +57240,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72360,7 +57280,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72379,11 +57299,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72421,7 +57339,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72440,11 +57358,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72482,7 +57398,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72501,11 +57417,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72543,7 +57457,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72562,11 +57476,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72604,7 +57516,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72623,11 +57535,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72665,7 +57575,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72684,11 +57594,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72726,7 +57634,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72745,11 +57653,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72787,7 +57693,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72806,11 +57712,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72848,7 +57752,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72867,11 +57771,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72909,7 +57811,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72928,11 +57830,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -72970,7 +57870,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -72989,11 +57889,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73031,7 +57929,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73050,11 +57948,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73092,7 +57988,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73111,11 +58007,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73153,7 +58047,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73172,11 +58066,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73214,7 +58106,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73233,11 +58125,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73275,7 +58165,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73294,11 +58184,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73336,7 +58224,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73355,11 +58243,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73397,7 +58283,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73416,11 +58302,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73458,7 +58342,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73477,11 +58361,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73519,7 +58401,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73538,11 +58420,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73580,7 +58460,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73599,11 +58479,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73641,7 +58519,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73660,11 +58538,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73702,7 +58578,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73721,11 +58597,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73763,7 +58637,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73782,11 +58656,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73824,7 +58696,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73843,11 +58715,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73885,7 +58755,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73904,11 +58774,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -73946,7 +58814,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -73965,11 +58833,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74007,7 +58873,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74026,11 +58892,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74068,7 +58932,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74087,11 +58951,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74129,7 +58991,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74148,11 +59010,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74190,7 +59050,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74209,11 +59069,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74251,7 +59109,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74270,11 +59128,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74312,7 +59168,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74331,11 +59187,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74373,7 +59227,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74392,11 +59246,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74434,7 +59286,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74453,11 +59305,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74495,7 +59345,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74514,11 +59364,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74556,7 +59404,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74575,11 +59423,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74617,7 +59463,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74636,11 +59482,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74678,7 +59522,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74697,11 +59541,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74739,7 +59581,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74758,11 +59600,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74800,7 +59640,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74819,11 +59659,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74857,12 +59695,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -74893,12 +59725,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -74935,7 +59761,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -74954,11 +59780,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -74996,7 +59820,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75015,11 +59839,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75057,7 +59879,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75076,11 +59898,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75118,7 +59938,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75137,11 +59957,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75179,7 +59997,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75198,11 +60016,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75240,7 +60056,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75259,11 +60075,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75301,7 +60115,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75320,11 +60134,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75362,7 +60174,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75381,11 +60193,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75423,7 +60233,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75442,11 +60252,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75484,7 +60292,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75503,11 +60311,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75545,7 +60351,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75564,11 +60370,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75606,7 +60410,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75625,11 +60429,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75667,7 +60469,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75686,11 +60488,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75728,7 +60528,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75747,11 +60547,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75789,7 +60587,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75808,11 +60606,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75850,7 +60646,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75869,11 +60665,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75911,7 +60705,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75930,11 +60724,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -75972,7 +60764,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -75991,11 +60783,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76033,7 +60823,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -76052,11 +60842,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76094,7 +60882,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -76113,11 +60901,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76150,12 +60936,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -76192,28 +60972,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76253,28 +61011,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -76310,28 +61046,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76371,28 +61085,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -76428,28 +61120,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76489,28 +61159,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -76546,28 +61194,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76607,28 +61233,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -76664,28 +61268,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76725,28 +61307,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -76782,28 +61342,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76843,28 +61381,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -76900,28 +61416,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -76977,12 +61471,6 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77013,34 +61501,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -77073,34 +61533,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77131,34 +61563,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -77191,34 +61595,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77249,34 +61625,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -77309,34 +61657,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77367,12 +61687,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -77405,34 +61719,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77463,34 +61749,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -77523,34 +61781,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77581,34 +61811,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -77641,12 +61843,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77678,12 +61874,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77714,12 +61904,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -77756,28 +61940,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -77817,28 +61979,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77874,28 +62014,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -77935,28 +62053,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -77994,28 +62090,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78046,34 +62120,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78106,34 +62152,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78164,34 +62182,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78224,34 +62214,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78282,34 +62244,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78342,34 +62276,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78400,12 +62306,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -78438,34 +62338,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78496,34 +62368,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78556,34 +62400,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78614,34 +62430,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78674,34 +62462,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78732,34 +62492,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78792,34 +62524,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78850,34 +62554,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -78910,34 +62586,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -78968,34 +62616,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -79028,34 +62648,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79086,34 +62678,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -79146,34 +62710,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79204,12 +62740,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -79242,12 +62772,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79278,34 +62802,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -79357,12 +62853,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 2
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -79417,12 +62907,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -79480,12 +62964,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79539,12 +63017,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -79602,12 +63074,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79661,12 +63127,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -79724,12 +63184,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79783,12 +63237,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -79846,12 +63294,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -79905,12 +63347,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -79968,12 +63404,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80027,12 +63457,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80090,12 +63514,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80149,12 +63567,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80212,12 +63624,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80271,12 +63677,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80334,12 +63734,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80393,12 +63787,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80456,12 +63844,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80515,12 +63897,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80578,12 +63954,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80637,12 +64007,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80700,12 +64064,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80759,12 +64117,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80822,12 +64174,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -80881,12 +64227,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -80944,12 +64284,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81003,12 +64337,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81066,12 +64394,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81125,12 +64447,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81188,12 +64504,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81247,12 +64557,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81310,12 +64614,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81369,12 +64667,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81432,12 +64724,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81491,12 +64777,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81554,12 +64834,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81613,12 +64887,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81676,12 +64944,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81735,12 +64997,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81798,12 +65054,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81857,12 +65107,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -81920,12 +65164,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -81979,12 +65217,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -82042,12 +65274,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82101,12 +65327,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -82164,12 +65384,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82200,34 +65414,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -82260,34 +65446,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82318,34 +65476,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -82378,34 +65508,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82436,34 +65538,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -82518,12 +65592,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -82581,12 +65649,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82640,12 +65702,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -82703,12 +65759,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82762,12 +65812,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -82825,12 +65869,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -82884,12 +65922,6 @@ raw_location_table = [
         },
         {
           "item": "Tank",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -82947,12 +65979,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -83008,12 +66034,6 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -83044,12 +66064,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -83086,7 +66100,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83105,11 +66119,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83147,7 +66159,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83166,11 +66178,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83208,7 +66218,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83227,11 +66237,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83269,7 +66277,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83288,11 +66296,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83330,7 +66336,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83349,11 +66355,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83391,7 +66395,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83410,11 +66414,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83452,7 +66454,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83471,11 +66473,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83513,7 +66513,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83532,11 +66532,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83574,7 +66572,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83593,11 +66591,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83635,7 +66631,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83654,11 +66650,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83696,7 +66690,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83715,11 +66709,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83757,7 +66749,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83776,11 +66768,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83818,7 +66808,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83837,11 +66827,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83879,7 +66867,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83898,11 +66886,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -83940,7 +66926,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -83959,11 +66945,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84001,7 +66985,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84020,11 +67004,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84062,7 +67044,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84081,11 +67063,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84123,7 +67103,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84142,11 +67122,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84184,7 +67162,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84203,11 +67181,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84245,7 +67221,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84264,11 +67240,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84306,7 +67280,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84325,11 +67299,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84367,7 +67339,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84386,11 +67358,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84428,7 +67398,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84447,11 +67417,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84489,7 +67457,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84508,11 +67476,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84550,7 +67516,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84569,11 +67535,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84611,7 +67575,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -84630,11 +67594,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -84668,12 +67630,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -84704,34 +67660,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -84764,34 +67692,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -84822,34 +67722,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -84882,34 +67754,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -84940,34 +67784,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85000,12 +67816,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85036,34 +67846,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85096,34 +67878,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85154,34 +67908,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85214,34 +67940,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85272,34 +67970,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85332,34 +68002,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85390,34 +68032,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85450,34 +68064,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85508,34 +68094,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85568,34 +68126,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85626,34 +68156,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85686,34 +68188,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85744,34 +68218,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85804,34 +68250,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85862,34 +68280,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -85922,34 +68312,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -85980,34 +68342,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -86040,34 +68374,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -86098,34 +68404,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -86158,34 +68436,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -86217,34 +68467,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -86275,34 +68497,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -86339,7 +68533,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86358,11 +68552,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86400,7 +68592,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86419,11 +68611,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86461,7 +68651,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86480,11 +68670,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86522,7 +68710,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86541,11 +68729,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86583,7 +68769,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86602,11 +68788,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86644,7 +68828,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86663,11 +68847,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86705,7 +68887,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86724,11 +68906,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86766,7 +68946,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86785,11 +68965,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86827,7 +69005,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86846,11 +69024,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86888,7 +69064,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86907,11 +69083,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -86949,7 +69123,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -86968,11 +69142,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87010,7 +69182,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87029,11 +69201,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87071,7 +69241,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87090,11 +69260,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87132,7 +69300,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87151,11 +69319,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87193,7 +69359,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87212,11 +69378,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87254,7 +69418,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87273,11 +69437,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87315,7 +69477,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87334,11 +69496,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87376,7 +69536,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87395,11 +69555,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87437,7 +69595,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87456,11 +69614,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87498,7 +69654,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87517,11 +69673,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87559,7 +69713,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87578,11 +69732,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87620,7 +69772,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87639,11 +69791,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87676,12 +69826,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -87718,7 +69862,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87737,11 +69881,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87779,7 +69921,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87798,11 +69940,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87840,7 +69980,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87859,11 +69999,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87901,7 +70039,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87920,11 +70058,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -87962,7 +70098,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -87981,11 +70117,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88023,7 +70157,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88042,11 +70176,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88084,7 +70216,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88103,11 +70235,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88145,7 +70275,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88164,11 +70294,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88206,7 +70334,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88225,11 +70353,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88267,7 +70393,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88286,11 +70412,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88328,7 +70452,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88347,11 +70471,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88389,7 +70511,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88408,11 +70530,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88450,7 +70570,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88469,11 +70589,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88511,7 +70629,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88530,11 +70648,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88572,7 +70688,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88591,11 +70707,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88633,7 +70747,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88652,11 +70766,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88694,7 +70806,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88713,11 +70825,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88755,7 +70865,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88774,11 +70884,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88816,7 +70924,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88835,11 +70943,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88877,7 +70983,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88896,11 +71002,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88938,7 +71042,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -88957,11 +71061,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -88999,7 +71101,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89018,11 +71120,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89060,7 +71160,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89079,11 +71179,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89121,7 +71219,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89140,11 +71238,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89182,7 +71278,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89201,11 +71297,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89243,7 +71337,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89262,11 +71356,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89304,7 +71396,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89323,11 +71415,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89365,7 +71455,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89384,11 +71474,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89426,7 +71514,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89445,11 +71533,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89487,7 +71573,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89506,11 +71592,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89548,7 +71632,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -89567,11 +71651,9 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89587,12 +71669,12 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "chest",
-    "drop_key": "rounds",
-    "drop_name": "Max Rounds",
+    "drop_key": "verminPouch",
+    "drop_name": "Vermin Pouch",
     "item_pool": False,
     "trap_location": False,
     "essential_location": True,
-    "resource_location": True,
+    "resource_location": False,
     "requirements": [
       [
         {
@@ -89604,12 +71686,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -89646,28 +71722,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89707,28 +71761,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -89764,28 +71796,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -89825,28 +71835,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -89877,34 +71865,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -89937,34 +71897,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -89995,34 +71927,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90055,34 +71959,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90113,34 +71989,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90173,34 +72021,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90231,34 +72051,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90291,12 +72083,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90327,12 +72113,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -90365,12 +72145,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90401,34 +72175,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90461,34 +72207,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90519,34 +72237,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90579,34 +72269,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90637,34 +72299,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90697,34 +72331,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90755,34 +72361,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90815,34 +72393,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90873,34 +72423,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -90933,34 +72455,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -90991,34 +72485,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -91051,34 +72517,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91109,34 +72547,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -91169,34 +72579,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91228,34 +72610,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91286,12 +72640,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -91328,28 +72676,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -91389,28 +72715,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91446,28 +72750,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -91507,28 +72789,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91566,28 +72826,6 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91618,12 +72856,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ]
     ]
@@ -91656,34 +72888,6 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
@@ -91714,34 +72918,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]
@@ -91774,41 +72950,44 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
     "id": 201530,
     "key": "loc_201530",
-    "name": "Adventurer's Bane (2,4) Chest 15,15 #1531",
+    "name": "Three Mage Beach (1,4) Chest 17,16 #1531",
+    "room": "Three Mage Beach",
+    "room_x": 1,
+    "room_y": 4,
+    "tile_x": 17,
+    "tile_y": 16,
+    "category": "chest",
+    "drop_key": "rounds",
+    "drop_name": "Max Rounds",
+    "item_pool": False,
+    "trap_location": False,
+    "essential_location": True,
+    "resource_location": True,
+    "requirements": [
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 4
+        }
+      ]
+    ]
+  },
+  {
+    "id": 201531,
+    "key": "loc_201531",
+    "name": "Adventurer's Bane (2,4) Chest 15,15 #1532",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -91833,19 +73012,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201531,
-    "key": "loc_201531",
-    "name": "Adventurer's Bane (2,4) Chest 18,15 #1532",
+    "id": 201532,
+    "key": "loc_201532",
+    "name": "Adventurer's Bane (2,4) Chest 18,15 #1533",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -91870,19 +73043,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201532,
-    "key": "loc_201532",
-    "name": "Adventurer's Bane (2,4) Enemy 16,15 #1533",
+    "id": 201533,
+    "key": "loc_201533",
+    "name": "Adventurer's Bane (2,4) Enemy 16,15 #1534",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -91913,35 +73080,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201533,
-    "key": "loc_201533",
-    "name": "Adventurer's Bane (2,4) Enemy 17,15 #1534",
+    "id": 201534,
+    "key": "loc_201534",
+    "name": "Adventurer's Bane (2,4) Enemy 17,15 #1535",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -91972,35 +73117,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201534,
-    "key": "loc_201534",
-    "name": "Adventurer's Bane (2,4) Enemy 14,15 #1535",
+    "id": 201535,
+    "key": "loc_201535",
+    "name": "Adventurer's Bane (2,4) Enemy 14,15 #1536",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92031,35 +73154,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201535,
-    "key": "loc_201535",
-    "name": "Adventurer's Bane (2,4) Enemy 19,15 #1536",
+    "id": 201536,
+    "key": "loc_201536",
+    "name": "Adventurer's Bane (2,4) Enemy 19,15 #1537",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92090,35 +73191,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201536,
-    "key": "loc_201536",
-    "name": "Adventurer's Bane (2,4) Enemy 16,14 #1537",
+    "id": 201537,
+    "key": "loc_201537",
+    "name": "Adventurer's Bane (2,4) Enemy 16,14 #1538",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92147,87 +73226,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
-      ]
-    ]
-  },
-  {
-    "id": 201537,
-    "key": "loc_201537",
-    "name": "Adventurer's Bane (2,4) Enemy 17,14 #1538",
-    "room": "Adventurer's Bane",
-    "room_x": 2,
-    "room_y": 4,
-    "tile_x": 17,
-    "tile_y": 14,
-    "category": "enemy",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
-    "trap_location": False,
-    "essential_location": False,
-    "resource_location": False,
-    "requirements": [
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 4
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
           "amount": 1
         }
       ]
@@ -92236,7 +73234,44 @@ raw_location_table = [
   {
     "id": 201538,
     "key": "loc_201538",
-    "name": "Adventurer's Bane (2,4) Enemy 17,16 #1539",
+    "name": "Adventurer's Bane (2,4) Enemy 17,14 #1539",
+    "room": "Adventurer's Bane",
+    "room_x": 2,
+    "room_y": 4,
+    "tile_x": 17,
+    "tile_y": 14,
+    "category": "enemy",
+    "drop_key": "itemPool",
+    "drop_name": "Item Pool",
+    "item_pool": True,
+    "trap_location": False,
+    "essential_location": False,
+    "resource_location": False,
+    "requirements": [
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ]
+    ]
+  },
+  {
+    "id": 201539,
+    "key": "loc_201539",
+    "name": "Adventurer's Bane (2,4) Enemy 17,16 #1540",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92267,35 +73302,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201539,
-    "key": "loc_201539",
-    "name": "Adventurer's Bane (2,4) Enemy 16,16 #1540",
+    "id": 201540,
+    "key": "loc_201540",
+    "name": "Adventurer's Bane (2,4) Enemy 16,16 #1541",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92326,35 +73339,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201540,
-    "key": "loc_201540",
-    "name": "Adventurer's Bane (2,4) Enemy 12,8 #1541",
+    "id": 201541,
+    "key": "loc_201541",
+    "name": "Adventurer's Bane (2,4) Enemy 12,8 #1542",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92385,35 +73376,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201541,
-    "key": "loc_201541",
-    "name": "Adventurer's Bane (2,4) Enemy 18,7 #1542",
+    "id": 201542,
+    "key": "loc_201542",
+    "name": "Adventurer's Bane (2,4) Enemy 18,7 #1543",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92444,35 +73413,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201542,
-    "key": "loc_201542",
-    "name": "Adventurer's Bane (2,4) Enemy 23,4 #1543",
+    "id": 201543,
+    "key": "loc_201543",
+    "name": "Adventurer's Bane (2,4) Enemy 23,4 #1544",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92503,35 +73450,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201543,
-    "key": "loc_201543",
-    "name": "Adventurer's Bane (2,4) Enemy 16,4 #1544",
+    "id": 201544,
+    "key": "loc_201544",
+    "name": "Adventurer's Bane (2,4) Enemy 16,4 #1545",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92562,35 +73487,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201544,
-    "key": "loc_201544",
-    "name": "Adventurer's Bane (2,4) Enemy 3,4 #1545",
+    "id": 201545,
+    "key": "loc_201545",
+    "name": "Adventurer's Bane (2,4) Enemy 3,4 #1546",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92621,35 +73524,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201545,
-    "key": "loc_201545",
-    "name": "Adventurer's Bane (2,4) Enemy 11,18 #1546",
+    "id": 201546,
+    "key": "loc_201546",
+    "name": "Adventurer's Bane (2,4) Enemy 11,18 #1547",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92680,35 +73561,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201546,
-    "key": "loc_201546",
-    "name": "Adventurer's Bane (2,4) Enemy 18,23 #1547",
+    "id": 201547,
+    "key": "loc_201547",
+    "name": "Adventurer's Bane (2,4) Enemy 18,23 #1548",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92739,35 +73598,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201547,
-    "key": "loc_201547",
-    "name": "Adventurer's Bane (2,4) Enemy 23,26 #1548",
+    "id": 201548,
+    "key": "loc_201548",
+    "name": "Adventurer's Bane (2,4) Enemy 23,26 #1549",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92798,35 +73635,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201548,
-    "key": "loc_201548",
-    "name": "Adventurer's Bane (2,4) Enemy 23,17 #1549",
+    "id": 201549,
+    "key": "loc_201549",
+    "name": "Adventurer's Bane (2,4) Enemy 23,17 #1550",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92857,35 +73672,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201549,
-    "key": "loc_201549",
-    "name": "Adventurer's Bane (2,4) Enemy 22,11 #1550",
+    "id": 201550,
+    "key": "loc_201550",
+    "name": "Adventurer's Bane (2,4) Enemy 22,11 #1551",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92916,35 +73709,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201550,
-    "key": "loc_201550",
-    "name": "Adventurer's Bane (2,4) Enemy 26,10 #1551",
+    "id": 201551,
+    "key": "loc_201551",
+    "name": "Adventurer's Bane (2,4) Enemy 26,10 #1552",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -92975,35 +73746,13 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201551,
-    "key": "loc_201551",
-    "name": "Adventurer's Bane (2,4) Enemy 8,22 #1552",
+    "id": 201552,
+    "key": "loc_201552",
+    "name": "Adventurer's Bane (2,4) Enemy 8,22 #1553",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93028,41 +73777,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201552,
-    "key": "loc_201552",
-    "name": "Adventurer's Bane (2,4) Enemy 3,14 #1553",
+    "id": 201553,
+    "key": "loc_201553",
+    "name": "Adventurer's Bane (2,4) Enemy 3,14 #1554",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93087,41 +73808,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201553,
-    "key": "loc_201553",
-    "name": "Adventurer's Bane (2,4) Enemy 13,20 #1554",
+    "id": 201554,
+    "key": "loc_201554",
+    "name": "Adventurer's Bane (2,4) Enemy 13,20 #1555",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93146,41 +73839,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201554,
-    "key": "loc_201554",
-    "name": "Adventurer's Bane (2,4) Enemy 7,13 #1555",
+    "id": 201555,
+    "key": "loc_201555",
+    "name": "Adventurer's Bane (2,4) Enemy 7,13 #1556",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93205,41 +73870,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201555,
-    "key": "loc_201555",
-    "name": "Adventurer's Bane (2,4) Enemy 28,17 #1556",
+    "id": 201556,
+    "key": "loc_201556",
+    "name": "Adventurer's Bane (2,4) Enemy 28,17 #1557",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93264,41 +73901,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201556,
-    "key": "loc_201556",
-    "name": "Adventurer's Bane (2,4) Enemy 22,21 #1557",
+    "id": 201557,
+    "key": "loc_201557",
+    "name": "Adventurer's Bane (2,4) Enemy 22,21 #1558",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93323,41 +73932,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201557,
-    "key": "loc_201557",
-    "name": "Adventurer's Bane (2,4) Enemy 17,18 #1558",
+    "id": 201558,
+    "key": "loc_201558",
+    "name": "Adventurer's Bane (2,4) Enemy 17,18 #1559",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93382,41 +73963,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201558,
-    "key": "loc_201558",
-    "name": "Adventurer's Bane (2,4) Enemy 16,12 #1559",
+    "id": 201559,
+    "key": "loc_201559",
+    "name": "Adventurer's Bane (2,4) Enemy 16,12 #1560",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93441,41 +73994,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201559,
-    "key": "loc_201559",
-    "name": "Adventurer's Bane (2,4) Enemy 24,14 #1560",
+    "id": 201560,
+    "key": "loc_201560",
+    "name": "Adventurer's Bane (2,4) Enemy 24,14 #1561",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93500,41 +74025,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201560,
-    "key": "loc_201560",
-    "name": "Adventurer's Bane (2,4) Enemy 8,5 #1561",
+    "id": 201561,
+    "key": "loc_201561",
+    "name": "Adventurer's Bane (2,4) Enemy 8,5 #1562",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93559,41 +74056,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201561,
-    "key": "loc_201561",
-    "name": "Adventurer's Bane (2,4) Enemy 15,3 #1562",
+    "id": 201562,
+    "key": "loc_201562",
+    "name": "Adventurer's Bane (2,4) Enemy 15,3 #1563",
     "room": "Adventurer's Bane",
     "room_x": 2,
     "room_y": 4,
@@ -93618,41 +74087,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201562,
-    "key": "loc_201562",
-    "name": "Cabal Chest (3,4) Chest 15,15 #1563",
+    "id": 201563,
+    "key": "loc_201563",
+    "name": "Cabal Chest (3,4) Chest 15,15 #1564",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -93677,19 +74118,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201563,
-    "key": "loc_201563",
-    "name": "Cabal Chest (3,4) Enemy 13,12 #1564",
+    "id": 201564,
+    "key": "loc_201564",
+    "name": "Cabal Chest (3,4) Enemy 13,12 #1565",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -93714,41 +74149,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201564,
-    "key": "loc_201564",
-    "name": "Cabal Chest (3,4) Enemy 11,15 #1565",
+    "id": 201565,
+    "key": "loc_201565",
+    "name": "Cabal Chest (3,4) Enemy 11,15 #1566",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -93773,41 +74180,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201565,
-    "key": "loc_201565",
-    "name": "Cabal Chest (3,4) Enemy 16,19 #1566",
+    "id": 201566,
+    "key": "loc_201566",
+    "name": "Cabal Chest (3,4) Enemy 16,19 #1567",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -93832,41 +74211,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201566,
-    "key": "loc_201566",
-    "name": "Cabal Chest (3,4) Enemy 18,15 #1567",
+    "id": 201567,
+    "key": "loc_201567",
+    "name": "Cabal Chest (3,4) Enemy 18,15 #1568",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -93891,41 +74242,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201567,
-    "key": "loc_201567",
-    "name": "Cabal Chest (3,4) Enemy 13,19 #1568",
+    "id": 201568,
+    "key": "loc_201568",
+    "name": "Cabal Chest (3,4) Enemy 13,19 #1569",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -93950,41 +74273,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201568,
-    "key": "loc_201568",
-    "name": "Cabal Chest (3,4) Enemy 17,13 #1569",
+    "id": 201569,
+    "key": "loc_201569",
+    "name": "Cabal Chest (3,4) Enemy 17,13 #1570",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -94009,41 +74304,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201569,
-    "key": "loc_201569",
-    "name": "Cabal Chest (3,4) Enemy 19,17 #1570",
+    "id": 201570,
+    "key": "loc_201570",
+    "name": "Cabal Chest (3,4) Enemy 19,17 #1571",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -94068,41 +74335,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201570,
-    "key": "loc_201570",
-    "name": "Cabal Chest (3,4) Enemy 11,13 #1571",
+    "id": 201571,
+    "key": "loc_201571",
+    "name": "Cabal Chest (3,4) Enemy 11,13 #1572",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -94127,41 +74366,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201571,
-    "key": "loc_201571",
-    "name": "Cabal Chest (3,4) Enemy 13,15 #1572",
+    "id": 201572,
+    "key": "loc_201572",
+    "name": "Cabal Chest (3,4) Enemy 13,15 #1573",
     "room": "Cabal Chest",
     "room_x": 3,
     "room_y": 4,
@@ -94186,41 +74397,44 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
-      ],
+      ]
+    ]
+  },
+  {
+    "id": 201573,
+    "key": "loc_201573",
+    "name": "Cabal Chest (3,4) Chest 3,3 #1574",
+    "room": "Cabal Chest",
+    "room_x": 3,
+    "room_y": 4,
+    "tile_x": 3,
+    "tile_y": 3,
+    "category": "chest",
+    "drop_key": "rounds",
+    "drop_name": "Max Rounds",
+    "item_pool": False,
+    "trap_location": False,
+    "essential_location": True,
+    "resource_location": True,
+    "requirements": [
       [
         {
-          "item": "Graphics",
+          "item": "Progressive Room",
           "amount": 1
         }
       ],
       [
         {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
+          "item": "Progressive Room",
+          "amount": 4
         }
       ]
     ]
   },
   {
-    "id": 201572,
-    "key": "loc_201572",
-    "name": "Bunker (0,5) Chest 16,17 #1573",
+    "id": 201574,
+    "key": "loc_201574",
+    "name": "Bunker (0,5) Chest 16,17 #1575",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94245,31 +74459,25 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 5
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201573,
-    "key": "loc_201573",
-    "name": "Bunker (0,5) Chest 15,17 #1574",
+    "id": 201575,
+    "key": "loc_201575",
+    "name": "Bunker (0,5) Chest 15,17 #1576",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
     "tile_x": 15,
     "tile_y": 17,
     "category": "chest",
-    "drop_key": "rounds",
-    "drop_name": "Max Rounds",
+    "drop_key": "fire",
+    "drop_name": "Fire",
     "item_pool": False,
     "trap_location": False,
     "essential_location": True,
-    "resource_location": True,
+    "resource_location": False,
     "requirements": [
       [
         {
@@ -94282,19 +74490,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 5
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201574,
-    "key": "loc_201574",
-    "name": "Bunker (0,5) Chest 14,17 #1575",
+    "id": 201576,
+    "key": "loc_201576",
+    "name": "Bunker (0,5) Chest 14,17 #1577",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94319,19 +74521,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 5
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201575,
-    "key": "loc_201575",
-    "name": "Bunker (0,5) Destructible 15,18 #1576",
+    "id": 201577,
+    "key": "loc_201577",
+    "name": "Bunker (0,5) Destructible 15,18 #1578",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94380,19 +74576,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201576,
-    "key": "loc_201576",
-    "name": "Bunker (0,5) Destructible 12,17 #1577",
+    "id": 201578,
+    "key": "loc_201578",
+    "name": "Bunker (0,5) Destructible 12,17 #1579",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94441,19 +74631,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201577,
-    "key": "loc_201577",
-    "name": "Bunker (0,5) Destructible 12,18 #1578",
+    "id": 201579,
+    "key": "loc_201579",
+    "name": "Bunker (0,5) Destructible 12,18 #1580",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94502,19 +74686,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201578,
-    "key": "loc_201578",
-    "name": "Bunker (0,5) Destructible 15,19 #1579",
+    "id": 201580,
+    "key": "loc_201580",
+    "name": "Bunker (0,5) Destructible 15,19 #1581",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94563,19 +74741,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201579,
-    "key": "loc_201579",
-    "name": "Bunker (0,5) Destructible 14,20 #1580",
+    "id": 201581,
+    "key": "loc_201581",
+    "name": "Bunker (0,5) Destructible 14,20 #1582",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94624,19 +74796,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201580,
-    "key": "loc_201580",
-    "name": "Bunker (0,5) Destructible 15,21 #1581",
+    "id": 201582,
+    "key": "loc_201582",
+    "name": "Bunker (0,5) Destructible 15,21 #1583",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94685,19 +74851,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201581,
-    "key": "loc_201581",
-    "name": "Bunker (0,5) Destructible 16,20 #1582",
+    "id": 201583,
+    "key": "loc_201583",
+    "name": "Bunker (0,5) Destructible 16,20 #1584",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94764,19 +74924,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201582,
-    "key": "loc_201582",
-    "name": "Bunker (0,5) Destructible 17,20 #1583",
+    "id": 201584,
+    "key": "loc_201584",
+    "name": "Bunker (0,5) Destructible 17,20 #1585",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94843,19 +74997,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201583,
-    "key": "loc_201583",
-    "name": "Bunker (0,5) Destructible 18,19 #1584",
+    "id": 201585,
+    "key": "loc_201585",
+    "name": "Bunker (0,5) Destructible 18,19 #1586",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94904,19 +75052,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201584,
-    "key": "loc_201584",
-    "name": "Bunker (0,5) Destructible 19,20 #1585",
+    "id": 201586,
+    "key": "loc_201586",
+    "name": "Bunker (0,5) Destructible 19,20 #1587",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -94965,19 +75107,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201585,
-    "key": "loc_201585",
-    "name": "Bunker (0,5) Destructible 18,21 #1586",
+    "id": 201587,
+    "key": "loc_201587",
+    "name": "Bunker (0,5) Destructible 18,21 #1588",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95026,19 +75162,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201586,
-    "key": "loc_201586",
-    "name": "Bunker (0,5) Destructible 12,19 #1587",
+    "id": 201588,
+    "key": "loc_201588",
+    "name": "Bunker (0,5) Destructible 12,19 #1589",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95087,19 +75217,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201587,
-    "key": "loc_201587",
-    "name": "Bunker (0,5) Enemy 12,20 #1588",
+    "id": 201589,
+    "key": "loc_201589",
+    "name": "Bunker (0,5) Enemy 12,20 #1590",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95127,28 +75251,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
           "item": "Gun",
           "amount": 1
         }
@@ -95156,9 +75258,9 @@ raw_location_table = [
     ]
   },
   {
-    "id": 201588,
-    "key": "loc_201588",
-    "name": "Bunker (0,5) Destructible 12,21 #1589",
+    "id": 201590,
+    "key": "loc_201590",
+    "name": "Bunker (0,5) Destructible 12,21 #1591",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95207,19 +75309,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201589,
-    "key": "loc_201589",
-    "name": "Bunker (0,5) Destructible 13,20 #1590",
+    "id": 201591,
+    "key": "loc_201591",
+    "name": "Bunker (0,5) Destructible 13,20 #1592",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95268,19 +75364,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201590,
-    "key": "loc_201590",
-    "name": "Bunker (0,5) Destructible 11,20 #1591",
+    "id": 201592,
+    "key": "loc_201592",
+    "name": "Bunker (0,5) Destructible 11,20 #1593",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95329,19 +75419,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201591,
-    "key": "loc_201591",
-    "name": "Bunker (0,5) Destructible 10,20 #1592",
+    "id": 201593,
+    "key": "loc_201593",
+    "name": "Bunker (0,5) Destructible 10,20 #1594",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95390,19 +75474,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201592,
-    "key": "loc_201592",
-    "name": "Bunker (0,5) Destructible 12,22 #1593",
+    "id": 201594,
+    "key": "loc_201594",
+    "name": "Bunker (0,5) Destructible 12,22 #1595",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95451,19 +75529,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201593,
-    "key": "loc_201593",
-    "name": "Bunker (0,5) Destructible 15,22 #1594",
+    "id": 201595,
+    "key": "loc_201595",
+    "name": "Bunker (0,5) Destructible 15,22 #1596",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95512,19 +75584,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201594,
-    "key": "loc_201594",
-    "name": "Bunker (0,5) Destructible 18,22 #1595",
+    "id": 201596,
+    "key": "loc_201596",
+    "name": "Bunker (0,5) Destructible 18,22 #1597",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95573,19 +75639,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201595,
-    "key": "loc_201595",
-    "name": "Bunker (0,5) Destructible 20,20 #1596",
+    "id": 201597,
+    "key": "loc_201597",
+    "name": "Bunker (0,5) Destructible 20,20 #1598",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95634,19 +75694,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201596,
-    "key": "loc_201596",
-    "name": "Bunker (0,5) Destructible 18,17 #1597",
+    "id": 201598,
+    "key": "loc_201598",
+    "name": "Bunker (0,5) Destructible 18,17 #1599",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95695,19 +75749,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201597,
-    "key": "loc_201597",
-    "name": "Bunker (0,5) Destructible 18,18 #1598",
+    "id": 201599,
+    "key": "loc_201599",
+    "name": "Bunker (0,5) Destructible 18,18 #1600",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95756,19 +75804,13 @@ raw_location_table = [
           "item": "Tank",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201598,
-    "key": "loc_201598",
-    "name": "Bunker (0,5) Enemy 15,20 #1599",
+    "id": 201600,
+    "key": "loc_201600",
+    "name": "Bunker (0,5) Enemy 15,20 #1601",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95796,28 +75838,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
           "item": "Gun",
           "amount": 1
         }
@@ -95825,9 +75845,9 @@ raw_location_table = [
     ]
   },
   {
-    "id": 201599,
-    "key": "loc_201599",
-    "name": "Bunker (0,5) Enemy 18,20 #1600",
+    "id": 201601,
+    "key": "loc_201601",
+    "name": "Bunker (0,5) Enemy 18,20 #1602",
     "room": "Bunker",
     "room_x": 0,
     "room_y": 5,
@@ -95855,28 +75875,6 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
           "item": "Gun",
           "amount": 1
         }
@@ -95884,20 +75882,20 @@ raw_location_table = [
     ]
   },
   {
-    "id": 201600,
-    "key": "loc_201600",
-    "name": "Mage's Better Shoppe (0,-3) Shop 9,12 #1601",
+    "id": 201602,
+    "key": "loc_201602",
+    "name": "Mage's Better Shoppe (0,-3) Shop 9,12 #1603",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
     "tile_x": 9,
     "tile_y": 12,
     "category": "shop",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
+    "drop_key": "magnifyingGlass",
+    "drop_name": "Magnifying Glass",
+    "item_pool": False,
     "trap_location": False,
-    "essential_location": False,
+    "essential_location": True,
     "resource_location": False,
     "requirements": [
       [
@@ -95917,19 +75915,13 @@ raw_location_table = [
           "item": "Sword",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201601,
-    "key": "loc_201601",
-    "name": "Mage's Better Shoppe (0,-3) Shop 10,12 #1602",
+    "id": 201603,
+    "key": "loc_201603",
+    "name": "Mage's Better Shoppe (0,-3) Shop 10,12 #1604",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
@@ -95960,30 +75952,24 @@ raw_location_table = [
           "item": "Sword",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201602,
-    "key": "loc_201602",
-    "name": "Mage's Better Shoppe (0,-3) Shop 11,12 #1603",
+    "id": 201604,
+    "key": "loc_201604",
+    "name": "Mage's Better Shoppe (0,-3) Shop 11,12 #1605",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
     "tile_x": 11,
     "tile_y": 12,
     "category": "shop",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
+    "drop_key": "orthopedicInserts",
+    "drop_name": "Orthopedic Inserts",
+    "item_pool": False,
     "trap_location": False,
-    "essential_location": False,
+    "essential_location": True,
     "resource_location": False,
     "requirements": [
       [
@@ -96003,19 +75989,13 @@ raw_location_table = [
           "item": "Sword",
           "amount": 1
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201603,
-    "key": "loc_201603",
-    "name": "Mage's Better Shoppe (0,-3) Destructible 10,10 #1604",
+    "id": 201605,
+    "key": "loc_201605",
+    "name": "Mage's Better Shoppe (0,-3) Destructible 10,10 #1606",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
@@ -96044,7 +76024,7 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 2
+          "amount": 1
         }
       ],
       [
@@ -96063,20 +76043,18 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
-        }
-      ],
-      [
+        },
         {
-          "item": "Graphics",
+          "item": "Gun",
           "amount": 1
         }
       ]
     ]
   },
   {
-    "id": 201604,
-    "key": "loc_201604",
-    "name": "Mage's Better Shoppe (0,-3) Enemy 10,11 #1605",
+    "id": 201606,
+    "key": "loc_201606",
+    "name": "Mage's Better Shoppe (0,-3) Enemy 10,11 #1607",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
@@ -96100,130 +76078,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
-      ]
-    ]
-  },
-  {
-    "id": 201605,
-    "key": "loc_201605",
-    "name": "Mage's Better Shoppe (0,-3) Enemy 22,11 #1606",
-    "room": "Mage's Better Shoppe",
-    "room_x": 0,
-    "room_y": -3,
-    "tile_x": 22,
-    "tile_y": 11,
-    "category": "enemy",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
-    "trap_location": False,
-    "essential_location": False,
-    "resource_location": False,
-    "requirements": [
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
-      ]
-    ]
-  },
-  {
-    "id": 201606,
-    "key": "loc_201606",
-    "name": "Mage's Better Shoppe (0,-3) Enemy 17,16 #1607",
-    "room": "Mage's Better Shoppe",
-    "room_x": 0,
-    "room_y": -3,
-    "tile_x": 17,
-    "tile_y": 16,
-    "category": "enemy",
-    "drop_key": "itemPool",
-    "drop_name": "Item Pool",
-    "item_pool": True,
-    "trap_location": False,
-    "essential_location": False,
-    "resource_location": False,
-    "requirements": [
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
         }
       ],
       [
@@ -96253,7 +76107,69 @@ raw_location_table = [
   {
     "id": 201607,
     "key": "loc_201607",
-    "name": "Mage's Better Shoppe (0,-3) Enemy 23,24 #1608",
+    "name": "Mage's Better Shoppe (0,-3) Enemy 22,11 #1608",
+    "room": "Mage's Better Shoppe",
+    "room_x": 0,
+    "room_y": -3,
+    "tile_x": 22,
+    "tile_y": 11,
+    "category": "enemy",
+    "drop_key": "itemPool",
+    "drop_name": "Item Pool",
+    "item_pool": True,
+    "trap_location": False,
+    "essential_location": False,
+    "resource_location": False,
+    "requirements": [
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        }
+      ]
+    ]
+  },
+  {
+    "id": 201608,
+    "key": "loc_201608",
+    "name": "Mage's Better Shoppe (0,-3) Enemy 17,16 #1609",
+    "room": "Mage's Better Shoppe",
+    "room_x": 0,
+    "room_y": -3,
+    "tile_x": 17,
+    "tile_y": 16,
+    "category": "enemy",
+    "drop_key": "itemPool",
+    "drop_name": "Item Pool",
+    "item_pool": True,
+    "trap_location": False,
+    "essential_location": False,
+    "resource_location": False,
+    "requirements": [
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        }
+      ]
+    ]
+  },
+  {
+    "id": 201609,
+    "key": "loc_201609",
+    "name": "Mage's Better Shoppe (0,-3) Enemy 23,24 #1610",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
@@ -96278,41 +76194,13 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
-        }
       ]
     ]
   },
   {
-    "id": 201608,
-    "key": "loc_201608",
-    "name": "Mage's Better Shoppe (0,-3) Enemy 9,22 #1609",
+    "id": 201610,
+    "key": "loc_201610",
+    "name": "Mage's Better Shoppe (0,-3) Enemy 9,22 #1611",
     "room": "Mage's Better Shoppe",
     "room_x": 0,
     "room_y": -3,
@@ -96336,34 +76224,6 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
-        }
-      ],
-      [
-        {
-          "item": "Graphics",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Bombs",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
-          "amount": 1
-        },
-        {
-          "item": "Gun",
-          "amount": 1
         }
       ]
     ]

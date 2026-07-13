@@ -11,17 +11,17 @@ const itemBaseId = 100000;
 const locationBaseId = 200000;
 
 const progressiveItems = {
-  graphics: { name: "Graphics", count: 3, classification: "progression" },
+  graphics: { name: "Graphics", count: 2, classification: "progression" },
   progressiveRoom: { name: "Progressive Room", count: 5, classification: "progression" },
   bomb: { name: "Bombs", count: 3, classification: "progression" },
-  gun: { name: "Gun", count: 2, classification: "progression" },
+  gun: { name: "Gun", count: 3, classification: "progression" },
   sword: { name: "Sword", count: 3, classification: "progression" },
+  fire: { name: "Fire", count: 2, classification: "progression" },
   hp: { name: "Max HP", count: 30, classification: "filler" },
   rounds: { name: "Max Rounds", count: 40, classification: "filler" },
 };
 
 const basicItems = {
-  fire: { name: "Fire", classification: "progression" },
   sfx: { name: "SFX", classification: "progression" },
   bgm: { name: "BGM", classification: "progression" },
   pickaxe: { name: "Pickaxe", classification: "progression" },
@@ -29,6 +29,11 @@ const basicItems = {
   tankTreads: { name: "Tank Treads", classification: "progression" },
   tankChassis: { name: "Tank Chassis", classification: "progression" },
   tankCannon: { name: "Tank Cannon", classification: "progression" },
+  magnifyingGlass: { name: "Magnifying Glass", classification: "useful" },
+  orthopedicInserts: { name: "Orthopedic Inserts", classification: "useful" },
+  teleportation: { name: "Teleportation", classification: "useful" },
+  steelToe: { name: "Steel Toe", classification: "useful" },
+  verminPouch: { name: "Vermin Pouch", classification: "useful" },
 };
 
 const fillerItems = {
@@ -160,6 +165,10 @@ function isDestructible(tile) {
   return Boolean(tile && (tile.tileType === "DestructableCheck" || tile.typeOverride === "DestructableCheck"));
 }
 
+function isBurnableDestructible(tile) {
+  return isDestructible(tile) && (tile.vulnerable || []).some((vulnerability) => canonicalDrop(vulnerability) === "fire");
+}
+
 function isEnemy(tile) {
   return Boolean(tile && (tile.type === "enemy" || tile.tileType === "Enemy" || tile.typeOverride === "Enemy"));
 }
@@ -257,10 +266,20 @@ function addRequirementRow(rows, row) {
   }
 }
 
-function isEnemyDamageRequirementRow(row) {
-  const enemyDamageItems = new Set(["Tank", "Bombs", "Sword", "Fire", "Gun"]);
+function removeRedundantRequirementRows(rows) {
+  const reducedRows = rows.filter((row, rowIndex) => !rows.some((candidate, candidateIndex) => {
+    if (candidateIndex === rowIndex || candidate.length >= row.length) {
+      return false;
+    }
 
-  return row.length > 0 && row.every((requirement) => enemyDamageItems.has(requirement.item));
+    return candidate.every((candidateRequirement) => row.some((requirement) => (
+      requirement.item === candidateRequirement.item &&
+      requirement.amount === candidateRequirement.amount
+    )));
+  }));
+
+  rows.length = 0;
+  reducedRows.forEach((row) => rows.push(row));
 }
 
 function vulnerabilityRequirement(token) {
@@ -297,40 +316,10 @@ function addImpliedRequirementRows(rows) {
   const originalRows = rows.slice();
 
   originalRows.forEach((row) => {
-    if (row.some((requirement) => requirement.item === "Progressive Room" && requirement.amount >= 2)) {
-      addRequirementRow(rows, row.filter((requirement) => !(requirement.item === "Progressive Room" && requirement.amount >= 2)).concat([{ item: "Graphics", amount: 1 }]));
-    }
-
-    if (row.every((requirement) => requirement.item === "Gun")) {
-      addRequirementRow(rows, row.filter((requirement) => requirement.item !== "Gun").concat([{ item: "Sword", amount: 1 }]));
-    }
-
     if (row.every((requirement) => requirement.item === "Pickaxe" || requirement.item === "Bombs" || requirement.item === "Fire")) {
       addRequirementRow(rows, row.filter((requirement) => requirement.item !== "Pickaxe" && requirement.item !== "Bombs" && requirement.item !== "Fire").concat([{ item: "Graphics", amount: 2 }]));
     }
   });
-}
-
-function expandFireEnergyRequirementRows(rows) {
-  const expandedRows = [];
-  const fireSupportItems = ["Sword", "Bombs", "Gun"];
-
-  rows.forEach((row) => {
-    const requiresFire = row.some((requirement) => requirement.item === "Fire");
-    const hasFireSupport = row.some((requirement) => fireSupportItems.includes(requirement.item));
-
-    if (!requiresFire || hasFireSupport) {
-      expandedRows.push(row);
-      return;
-    }
-
-    fireSupportItems.forEach((item) => {
-      expandedRows.push(row.concat([{ item, amount: 1 }]));
-    });
-  });
-
-  rows.length = 0;
-  expandedRows.forEach((row) => addRequirementRow(rows, row));
 }
 
 function locationRequirements(room, tile) {
@@ -344,9 +333,13 @@ function locationRequirements(room, tile) {
   }
 
   normalizeRequirementRows(room.requirements).forEach((row) => addRequirementRow(rows, row));
-  normalizeRequirementRows(tile.requirements)
-    .filter((row) => !isEnemy(tile) || !isEnemyDamageRequirementRow(row))
-    .forEach((row) => addRequirementRow(rows, row));
+  normalizeRequirementRows(tile.requirements).forEach((row) => {
+    const locationRow = isEnemy(tile) && !isSnakeEnemy(tile) ?
+      row.filter((requirement) => requirement.item !== "Graphics") :
+      row;
+
+    addRequirementRow(rows, locationRow);
+  });
 
   if (isShop(tile)) {
     addRequirementRow(rows, [{ item: "Sword", amount: 1 }]);
@@ -355,25 +348,17 @@ function locationRequirements(room, tile) {
   if (isDestructible(tile)) {
     const vulnerabilityRow = (tile.vulnerable || []).map(vulnerabilityRequirement).filter(Boolean);
 
-    addRequirementRow(rows, [{ item: "Graphics", amount: 2 }]);
+    addRequirementRow(rows, [{ item: "Graphics", amount: isBurnableDestructible(tile) ? 1 : 2 }]);
     addRequirementRow(rows, vulnerabilityRow);
   }
 
-  expandFireEnergyRequirementRows(rows);
   addImpliedRequirementRows(rows);
 
-  if (isEnemy(tile)) {
+  if (isSnakeEnemy(tile)) {
     addRequirementRow(rows, [{ item: "Graphics", amount: 1 }]);
-
-    const nonGunEnemyDamage = [
-      { item: "Tank", amount: 1 },
-      { item: "Bombs", amount: 1 },
-      { item: "Sword", amount: 1 },
-      { item: "Fire", amount: 1 },
-    ];
-
-    addRequirementRow(rows, nonGunEnemyDamage.concat([{ item: "Gun", amount: 1 }]));
   }
+
+  removeRedundantRequirementRows(rows);
 
   return rows;
 }

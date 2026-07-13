@@ -11,8 +11,7 @@ var archipelagoClientEnergyLinkValue = 0;
 var archipelagoClientEnergyLinkEfficiency = 30;
 var archipelagoClientItemIdToCheckKeys = {
   100000: ["graphics"],
-  100001: ["freeGrid"],
-  100002: [
+  100001: [
     "progressiveRoom1",
     "progressiveRoom2",
     "progressiveRoom3",
@@ -360,16 +359,6 @@ function archipelagoClientHandleLocalCommand(archipelagoClientText) {
 
   if (archipelagoClientCommand === "!autofire") {
     archipelagoClientToggleFinalRunAutofire();
-    return true;
-  }
-
-  if (archipelagoClientCommand === "!letmeout") {
-    if (typeof initialRoomEnableZoomCycling === "function") {
-      initialRoomEnableZoomCycling();
-      archipelagoClientQueueServerMessage("Zoom cycling enabled. Press Z to cycle 1x, 1.5x, and 2x.");
-    } else {
-      archipelagoClientQueueServerMessage("Zoom cycling is not available yet.");
-    }
     return true;
   }
 
@@ -1018,7 +1007,6 @@ function archipelagoClientResetOnlineProgressionForSync() {
   globalsState.progression.waterWalkers = false;
   globalsState.progression.hp = 0;
   globalsState.progression.rounds = 0;
-  globalsState.progression.freeGrid = false;
   globalsState.progression.progressiveRooms = 0;
 
   if (typeof initialRoomSyncPlayerResourceMaxes === "function") {
