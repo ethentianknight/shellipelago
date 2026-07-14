@@ -76,8 +76,8 @@ const basicItems = {
   magnifyingGlass: { name: "Magnifying Glass", classification: "useful" },
   orthopedicInserts: { name: "Orthopedic Inserts", classification: "useful" },
   teleportation: { name: "Teleportation", classification: "useful" },
-  steelToe: { name: "Steel Toe", classification: "useful" },
-  verminPouch: { name: "Vermin Pouch", classification: "useful" },
+  steelToe: { name: "Steel Toe", classification: "progression" },
+  verminPouch: { name: "Vermin Pouch", classification: "progression" },
 };
 
 const fillerItems = {
