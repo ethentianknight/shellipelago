@@ -67,17 +67,26 @@
 - Allowed networked bombs to damage other players.
 - Classified Health, Rounds, and their consumables as filler items.
 - Added Gun 3, tracer ignition for Guns 2-3, and triple fire rate for Gun 3.
-- TODO: Manually test every room on the map before wrapping 1.13.
-- TODO: Keep remote player state fresh.
-- TODO: Add editor Dodge checks as a fourth color-only tile tier for weaponless precision-movement logic.
-- TODO: Add an `Expect Dodge` YAML option that grants Dodge at boot and places Dodge checks in logic.
 - Added YAML-less Universal Tracker regeneration through slot data.
 - Added all 1.13 upgrades to YAML essential-item locality controls.
 - Kept the complete item and trap catalog in the APWorld regardless of map placement.
+- Required Sword, Bombs, Fire, or Gun for every enemy check.
 - Disabled the `!letmeout` zoom cheat.
-- TODO: Revisit Max HP classification because Health remains a logic requirement.
+- Fixed: Networked Public Rooms are not public
+- Add map placements for Magnifying Glass, Orthopedic Inserts, Teleportation, and Steel Toe.
+- Ledges Require Graphics 1
+- TODO: Keep remote player state fresh.
 - TODO: Choose appropriate classifications for BGM and SFX.
 - TODO: Standardize deaths as `Game over: <reason>`, including enemy, trap, and received DeathLink reasons.
-- TODO: Add map placements for Magnifying Glass, Orthopedic Inserts, Teleportation, and Steel Toe.
-- TODO: Update the color scheme for burnable destructibles.
-- TODO: Networked Public Rooms are not public
+- TODO: Enemies guarded by snakes need graphics 1
+- TODO: Blob Falls Chest 1,9 - requires graphics 2 - check that bombable vulnerables require graphics 2
+  - Gaia's bow chest
+- Watchtower hills chest shows as out of logic despite having prog room 2.
+- Shop shows as in logic but ap shows not
+- sandy cottage door should be behind grass req
+- Sorcerer's oasis needs to have inner snakes require grass cut
+- Ring of Fire Ingame map incorrectly states we have an available check but is empty
+- Lowercase p in palex credits
+- Tank should shoot through some objects
+- Tank should drop bombs
+- Tank should boost if shooting in opposite direction

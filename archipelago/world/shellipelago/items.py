@@ -61,7 +61,7 @@ raw_item_table = [
     "key": "hp",
     "id": 100006,
     "name": "Max HP",
-    "classification": "filler",
+    "classification": "progression",
     "trap": False,
     "count": 30
   },
@@ -69,7 +69,7 @@ raw_item_table = [
     "key": "rounds",
     "id": 100007,
     "name": "Max Rounds",
-    "classification": "filler",
+    "classification": "progression",
     "trap": False,
     "count": 40
   },

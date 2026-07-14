@@ -103,6 +103,53 @@ button {
   touch-action: manipulation;
 }
 
+.server-offline-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 100000;
+}
+
+.server-offline-overlay[hidden] {
+  display: none;
+}
+
+.server-offline-panel {
+  color: #f7f7f1;
+  font-family: "Perfect DOS VGA 437", monospace;
+  text-align: center;
+}
+
+.server-offline-panel h1 {
+  font-size: clamp(54px, 10vw, 150px);
+  font-weight: 400;
+  line-height: 0.9;
+  margin: 0 0 32px;
+  text-transform: uppercase;
+}
+
+.server-offline-status {
+  min-height: 24px;
+}
+
+.server-offline-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.server-offline-actions button {
+  font-family: inherit;
+  font-size: 24px;
+  min-width: 190px;
+  padding: 14px 22px;
+  text-transform: uppercase;
+}
+
 .screen {
   align-items: center;
   display: flex;

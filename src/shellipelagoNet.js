@@ -21,6 +21,9 @@ var shellipelagoNetFailureMessageDelayMs = 15000;
 var shellipelagoNetIceGatheringWaitMs = 2500;
 var shellipelagoNetDebugEnabled = true;
 var shellipelagoNetJsonLogLimit = 1200;
+var shellipelagoNetChannelHighWaterBytes = 262144;
+var shellipelagoNetChannelMaxQueuedPackets = 512;
+var shellipelagoNetChannelRetryMs = 50;
 var shellipelagoNetJsonLog = [];
 var shellipelagoNetSignalSendQueue = Promise.resolve();
 var shellipelagoNetSignalHandleQueue = Promise.resolve();
@@ -512,9 +515,15 @@ function shellipelagoNetCreateGuestConnection() {
     shellipelagoNetDebug("guest:connection-state", shellipelagoNetGetConnectionDebugState(shellipelagoNetState.guestConnection));
     shellipelagoNetLogConnectionStats("guest:connection-state", shellipelagoNetState.guestConnection, {});
     if (shellipelagoNetState.guestConnection && shellipelagoNetState.guestConnection.connectionState === "failed") {
+      shellipelagoNetState.remotePlayers = {};
       shellipelagoNetScheduleGuestFailureMessage(shellipelagoNetState.guestConnection);
     } else if (shellipelagoNetState.guestConnection && shellipelagoNetState.guestConnection.connectionState === "connected") {
       shellipelagoNetCancelGuestFailureMessage("connection-connected");
+    } else if (shellipelagoNetState.guestConnection && (
+      shellipelagoNetState.guestConnection.connectionState === "disconnected" ||
+      shellipelagoNetState.guestConnection.connectionState === "closed"
+    )) {
+      shellipelagoNetState.remotePlayers = {};
     }
   };
   shellipelagoNetState.guestConnection.oniceconnectionstatechange = function () {
@@ -552,9 +561,11 @@ function shellipelagoNetCreateGuestConnection() {
 
 function shellipelagoNetCreateHostPeer(shellipelagoNetRemotePeerId, shellipelagoNetRemoteName) {
   var shellipelagoNetConnection = new RTCPeerConnection(shellipelagoNetRtcConfig);
+  var shellipelagoNetRequestedName = shellipelagoNetNormalizeName(shellipelagoNetRemoteName) || shellipelagoNetRemotePeerId.slice(0, 8);
   var shellipelagoNetPeer = {
     id: shellipelagoNetRemotePeerId,
-    name: shellipelagoNetRemoteName || shellipelagoNetRemotePeerId.slice(0, 8),
+    requestedName: shellipelagoNetRequestedName,
+    name: shellipelagoNetGetUniquePlayerName(shellipelagoNetRequestedName),
     connection: shellipelagoNetConnection,
     channel: null,
     signalSessionId: shellipelagoNetCreateId(),
@@ -582,9 +593,13 @@ function shellipelagoNetCreateHostPeer(shellipelagoNetRemotePeerId, shellipelago
       peerName: shellipelagoNetPeer.name
     });
     if (shellipelagoNetConnection.connectionState === "failed") {
+      shellipelagoNetRemoveHostPeerBody(shellipelagoNetPeer);
       shellipelagoNetScheduleHostFailureMessage(shellipelagoNetPeer, shellipelagoNetConnection);
     } else if (shellipelagoNetConnection.connectionState === "connected") {
+      shellipelagoNetPeer.bodyRemoved = false;
       shellipelagoNetCancelHostFailureMessage(shellipelagoNetPeer, "connection-connected");
+    } else if (shellipelagoNetConnection.connectionState === "disconnected" || shellipelagoNetConnection.connectionState === "closed") {
+      shellipelagoNetRemoveHostPeerBody(shellipelagoNetPeer);
     }
   };
   shellipelagoNetConnection.oniceconnectionstatechange = function () {
@@ -680,6 +695,7 @@ function shellipelagoNetAttachHostChannel(shellipelagoNetChannel, shellipelagoNe
   });
   shellipelagoNetChannel.onopen = function () {
     shellipelagoNetPeer.state = "connected";
+    shellipelagoNetPeer.bodyRemoved = false;
     shellipelagoNetCancelHostFailureMessage(shellipelagoNetPeer, "channel-open");
     shellipelagoNetDebug("host:channel-open", {
       peerId: shellipelagoNetPeer.id,
@@ -695,6 +711,13 @@ function shellipelagoNetAttachHostChannel(shellipelagoNetChannel, shellipelagoNe
     if (typeof initialRoomGrantNetworkJoinInvulnerability === "function") {
       initialRoomGrantNetworkJoinInvulnerability();
     }
+    if (shellipelagoNetPeer.name !== shellipelagoNetPeer.requestedName) {
+      shellipelagoNetSendHostPeerPacket(shellipelagoNetPeer, {
+        kind: "control",
+        action: "rename",
+        name: shellipelagoNetPeer.name
+      });
+    }
     shellipelagoNetSendHostPeerPacket(shellipelagoNetPeer, {
       kind: "hello",
       from: shellipelagoNetState.playerId,
@@ -708,11 +731,7 @@ function shellipelagoNetAttachHostChannel(shellipelagoNetChannel, shellipelagoNe
   };
   shellipelagoNetChannel.onclose = function () {
     shellipelagoNetPeer.state = "closed";
-    delete shellipelagoNetState.remotePlayers[shellipelagoNetPeer.id];
-    shellipelagoNetBroadcastEvent({
-      type: "playerDisconnected",
-      disconnectedPlayerId: shellipelagoNetPeer.id
-    });
+    shellipelagoNetRemoveHostPeerBody(shellipelagoNetPeer);
     shellipelagoNetDebug("host:channel-close", {
       peerId: shellipelagoNetPeer.id,
       peerName: shellipelagoNetPeer.name,
@@ -727,6 +746,40 @@ function shellipelagoNetAttachHostChannel(shellipelagoNetChannel, shellipelagoNe
       event: shellipelagoNetEvent
     });
   };
+}
+
+function shellipelagoNetRemoveHostPeerBody(shellipelagoNetPeer) {
+  if (!shellipelagoNetPeer || shellipelagoNetPeer.bodyRemoved) {
+    return;
+  }
+
+  shellipelagoNetPeer.bodyRemoved = true;
+  delete shellipelagoNetState.remotePlayers[shellipelagoNetPeer.id];
+  shellipelagoNetBroadcastEvent({
+    type: "playerDisconnected",
+    disconnectedPlayerId: shellipelagoNetPeer.id
+  });
+}
+
+function shellipelagoNetGetUniquePlayerName(shellipelagoNetRequestedName) {
+  var shellipelagoNetBaseName = shellipelagoNetNormalizeName(shellipelagoNetRequestedName) || "player";
+  var shellipelagoNetUsedNames = {};
+  var shellipelagoNetSuffixMatch = shellipelagoNetBaseName.match(/^(.*?)(\d+)$/);
+  var shellipelagoNetStem = shellipelagoNetSuffixMatch ? shellipelagoNetSuffixMatch[1] : shellipelagoNetBaseName;
+  var shellipelagoNetSuffix = shellipelagoNetSuffixMatch ? Number(shellipelagoNetSuffixMatch[2]) : 0;
+  var shellipelagoNetCandidate = shellipelagoNetBaseName;
+
+  shellipelagoNetUsedNames[shellipelagoNetNormalizeName(shellipelagoNetState.playerName)] = true;
+  Object.keys(shellipelagoNetState.hostConnections).forEach(function (shellipelagoNetPeerId) {
+    shellipelagoNetUsedNames[shellipelagoNetNormalizeName(shellipelagoNetState.hostConnections[shellipelagoNetPeerId].name)] = true;
+  });
+
+  while (shellipelagoNetUsedNames[shellipelagoNetCandidate]) {
+    shellipelagoNetSuffix += 1;
+    shellipelagoNetCandidate = shellipelagoNetStem + shellipelagoNetSuffix;
+  }
+
+  return shellipelagoNetCandidate;
 }
 
 function shellipelagoNetScheduleGuestFailureMessage(shellipelagoNetConnection) {
@@ -1331,6 +1384,16 @@ function shellipelagoNetHandlePacket(shellipelagoNetRawPacket, shellipelagoNetHo
     return;
   }
 
+  if (shellipelagoNetState.host && shellipelagoNetHostPeer) {
+    shellipelagoNetPacket.name = shellipelagoNetHostPeer.name;
+    if (shellipelagoNetPacket.player) {
+      shellipelagoNetPacket.player.name = shellipelagoNetHostPeer.name;
+    }
+    if (shellipelagoNetPacket.event && shellipelagoNetPacket.event.player) {
+      shellipelagoNetPacket.event.player.name = shellipelagoNetHostPeer.name;
+    }
+  }
+
   if (shellipelagoNetPacket.kind === "hello") {
     shellipelagoNetApplyPositionEvent({
       playerId: shellipelagoNetPacket.from || "",
@@ -1366,6 +1429,13 @@ function shellipelagoNetApplyControl(shellipelagoNetControl) {
 
   if (shellipelagoNetAction === "close") {
     shellipelagoNetLeaveLocal("Lobby closed.");
+    return;
+  }
+
+  if (shellipelagoNetAction === "rename" && !shellipelagoNetState.host) {
+    shellipelagoNetState.playerName = shellipelagoNetNormalizeName(shellipelagoNetControl.name);
+    localStorage.setItem("shellipelagoNetPlayerName", shellipelagoNetState.playerName);
+    shellipelagoNetMessage("Network name changed to " + shellipelagoNetState.playerName + ".");
     return;
   }
 
@@ -1699,8 +1769,7 @@ function shellipelagoNetSendPacket(shellipelagoNetPacket) {
   }
 
   if (shellipelagoNetState.guestChannel && shellipelagoNetState.guestChannel.readyState === "open") {
-    shellipelagoNetState.guestChannel.send(JSON.stringify(shellipelagoNetPacket));
-    return true;
+    return shellipelagoNetSendChannelPacket(shellipelagoNetState.guestChannel, shellipelagoNetPacket);
   }
 
   return false;
@@ -1733,8 +1802,111 @@ function shellipelagoNetSendHostPeerPacket(shellipelagoNetPeer, shellipelagoNetP
     return false;
   }
 
-  shellipelagoNetPeer.channel.send(JSON.stringify(shellipelagoNetPacket));
+  return shellipelagoNetSendChannelPacket(shellipelagoNetPeer.channel, shellipelagoNetPacket);
+}
+
+function shellipelagoNetPacketIsTransient(shellipelagoNetPacket) {
+  var shellipelagoNetEventType = shellipelagoNetPacket && shellipelagoNetPacket.event ? shellipelagoNetPacket.event.type : "";
+
+  return shellipelagoNetPacket && shellipelagoNetPacket.kind === "event" &&
+    ["position", "heartbeat", "enemyState"].indexOf(shellipelagoNetEventType) >= 0;
+}
+
+function shellipelagoNetSendChannelPacket(shellipelagoNetChannel, shellipelagoNetPacket) {
+  var shellipelagoNetSerializedPacket = "";
+  var shellipelagoNetQueue = null;
+
+  if (!shellipelagoNetChannel || shellipelagoNetChannel.readyState !== "open") {
+    return false;
+  }
+
+  shellipelagoNetSerializedPacket = JSON.stringify(shellipelagoNetPacket);
+  shellipelagoNetQueue = shellipelagoNetChannel.shellipelagoPendingPackets || [];
+  shellipelagoNetChannel.shellipelagoPendingPackets = shellipelagoNetQueue;
+
+  if (shellipelagoNetQueue.length || shellipelagoNetChannel.bufferedAmount >= shellipelagoNetChannelHighWaterBytes) {
+    if (shellipelagoNetPacketIsTransient(shellipelagoNetPacket)) {
+      return false;
+    }
+
+    return shellipelagoNetQueueChannelPacket(shellipelagoNetChannel, shellipelagoNetSerializedPacket);
+  }
+
+  try {
+    shellipelagoNetChannel.send(shellipelagoNetSerializedPacket);
+    return true;
+  } catch (shellipelagoNetError) {
+    shellipelagoNetReportChannelBackpressure(shellipelagoNetChannel, shellipelagoNetError);
+
+    if (shellipelagoNetPacketIsTransient(shellipelagoNetPacket)) {
+      return false;
+    }
+
+    return shellipelagoNetQueueChannelPacket(shellipelagoNetChannel, shellipelagoNetSerializedPacket);
+  }
+}
+
+function shellipelagoNetQueueChannelPacket(shellipelagoNetChannel, shellipelagoNetSerializedPacket) {
+  var shellipelagoNetQueue = shellipelagoNetChannel.shellipelagoPendingPackets || [];
+
+  shellipelagoNetChannel.shellipelagoPendingPackets = shellipelagoNetQueue;
+  if (shellipelagoNetQueue.length >= shellipelagoNetChannelMaxQueuedPackets) {
+    shellipelagoNetReportChannelBackpressure(shellipelagoNetChannel, new Error("Network packet retry queue is full."));
+    return false;
+  }
+
+  shellipelagoNetQueue.push(shellipelagoNetSerializedPacket);
+  shellipelagoNetScheduleChannelFlush(shellipelagoNetChannel);
   return true;
+}
+
+function shellipelagoNetScheduleChannelFlush(shellipelagoNetChannel) {
+  if (shellipelagoNetChannel.shellipelagoFlushTimer) {
+    return;
+  }
+
+  shellipelagoNetChannel.shellipelagoFlushTimer = window.setTimeout(function () {
+    shellipelagoNetChannel.shellipelagoFlushTimer = 0;
+    shellipelagoNetFlushChannelQueue(shellipelagoNetChannel);
+  }, shellipelagoNetChannelRetryMs);
+}
+
+function shellipelagoNetFlushChannelQueue(shellipelagoNetChannel) {
+  var shellipelagoNetQueue = shellipelagoNetChannel.shellipelagoPendingPackets || [];
+
+  if (shellipelagoNetChannel.readyState !== "open") {
+    shellipelagoNetQueue.length = 0;
+    return;
+  }
+
+  while (shellipelagoNetQueue.length && shellipelagoNetChannel.bufferedAmount < shellipelagoNetChannelHighWaterBytes) {
+    try {
+      shellipelagoNetChannel.send(shellipelagoNetQueue[0]);
+      shellipelagoNetQueue.shift();
+    } catch (shellipelagoNetError) {
+      shellipelagoNetReportChannelBackpressure(shellipelagoNetChannel, shellipelagoNetError);
+      break;
+    }
+  }
+
+  if (shellipelagoNetQueue.length) {
+    shellipelagoNetScheduleChannelFlush(shellipelagoNetChannel);
+  }
+}
+
+function shellipelagoNetReportChannelBackpressure(shellipelagoNetChannel, shellipelagoNetError) {
+  var shellipelagoNetNow = Date.now();
+
+  if (shellipelagoNetNow - Number(shellipelagoNetChannel.shellipelagoLastBackpressureLogAt || 0) < 1000) {
+    return;
+  }
+
+  shellipelagoNetChannel.shellipelagoLastBackpressureLogAt = shellipelagoNetNow;
+  shellipelagoNetDebug("channel:backpressure", {
+    bufferedAmount: Number(shellipelagoNetChannel.bufferedAmount || 0),
+    queuedPackets: (shellipelagoNetChannel.shellipelagoPendingPackets || []).length,
+    error: shellipelagoNetError && shellipelagoNetError.message ? shellipelagoNetError.message : String(shellipelagoNetError || "")
+  });
 }
 
 function shellipelagoNetIsDataOpen() {
@@ -1899,8 +2071,18 @@ function shellipelagoNetGetLocalPlayerId() {
 }
 
 function shellipelagoNetGetRemotePlayers() {
+  var shellipelagoNetLocalSnapshot = shellipelagoNetGetRuntimeSnapshot();
+
+  if (!shellipelagoNetLocalSnapshot || !shellipelagoNetLocalSnapshot.room) {
+    return [];
+  }
+
   return Object.keys(shellipelagoNetState.remotePlayers).map(function (shellipelagoNetPlayerId) {
     return shellipelagoNetInterpolateRemotePlayer(shellipelagoNetState.remotePlayers[shellipelagoNetPlayerId]);
+  }).filter(function (shellipelagoNetRemotePlayer) {
+    var shellipelagoNetRemoteSnapshot = shellipelagoNetRemotePlayer.snapshot || shellipelagoNetRemotePlayer.targetSnapshot;
+
+    return shellipelagoNetRemoteSnapshot && shellipelagoNetIsSameRoom(shellipelagoNetRemoteSnapshot.room, shellipelagoNetLocalSnapshot.room);
   });
 }
 

@@ -51,7 +51,7 @@
     "key": "hp",
     "id": 100006,
     "name": "Max HP",
-    "classification": "filler",
+    "classification": "progression",
     "trap": false,
     "count": 30
   },
@@ -59,7 +59,7 @@
     "key": "rounds",
     "id": 100007,
     "name": "Max Rounds",
-    "classification": "filler",
+    "classification": "progression",
     "trap": false,
     "count": 40
   },

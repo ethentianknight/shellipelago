@@ -132,7 +132,7 @@ function progressionManagerApplyProgressiveResourceGain(progressionManagerProgre
     return;
   }
 
-  if (progressionManagerProgressiveKey === "bomb" || progressionManagerProgressiveKey === "gun") {
+  if (progressionManagerProgressiveKey === "bomb" || progressionManagerProgressiveKey === "gun" || progressionManagerProgressiveKey === "fire") {
     progressionManagerApplyWeaponRoundCapacityGain(progressionManagerProgressiveKey, progressionManagerIncrease);
     return;
   }

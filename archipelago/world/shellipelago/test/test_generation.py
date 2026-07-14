@@ -22,6 +22,56 @@ class TestDefaultGeneration(ShellipelagoTestBase):
 
         self.assertEqual(set(item_table), expected_items)
 
+    def test_enemies_require_weapon(self) -> None:
+        enemy_locations = [
+            location_data for location_data in location_table.values()
+            if location_data["category"] == "enemy"
+        ]
+
+        self.assertTrue(enemy_locations)
+        for location_data in enemy_locations:
+            weapon_names = {"Sword", "Bombs", "Fire"}
+            if location_data.get("enemy_type") != "negaBlob":
+                weapon_names.add("Gun")
+            self.assertTrue(any(
+                {requirement["item"] for requirement in requirement_row} == weapon_names
+                for requirement_row in location_data["requirements"]
+            ), location_data["name"])
+
+    def test_enemy_rounds_requirements(self) -> None:
+        rounds_items = {"Bombs", "Fire", "Gun"}
+
+        for location_data in location_table.values():
+            if location_data["category"] != "enemy":
+                continue
+
+            requirement_sets = [
+                {(requirement["item"], requirement.get("amount", 1)) for requirement in requirement_row}
+                for requirement_row in location_data["requirements"]
+            ]
+            for requirement_set in requirement_sets:
+                if not any(item in rounds_items for item, _ in requirement_set):
+                    continue
+
+                expected_rounds_set = {
+                    requirement for requirement in requirement_set
+                    if requirement[0] not in rounds_items
+                } | {("Max Rounds", 2)}
+                self.assertIn(expected_rounds_set, requirement_sets, location_data["name"])
+
+    def test_logic_items_are_progression(self) -> None:
+        for location_data in location_table.values():
+            for requirement_row in location_data["requirements"]:
+                for requirement in requirement_row:
+                    if requirement["item"] == "Tank":
+                        continue
+
+                    self.assertEqual(
+                        item_table[requirement["item"]]["classification_name"],
+                        "progression",
+                        location_data["name"],
+                    )
+
     def test_default_location_count(self) -> None:
         self.assertEqual(len(self.multiworld.get_locations(self.player)), 107)
 

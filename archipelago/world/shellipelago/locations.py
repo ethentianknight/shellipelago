@@ -11,6 +11,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "sfx",
     "drop_name": "SFX",
     "item_pool": False,
@@ -36,6 +37,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 2,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "progressiveRoom",
     "drop_name": "Progressive Room",
     "item_pool": False,
@@ -61,6 +63,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 2,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -97,6 +100,12 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -110,6 +119,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -148,7 +158,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -163,6 +173,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -201,7 +212,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -216,6 +227,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -254,7 +266,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -269,6 +281,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -307,7 +320,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -322,6 +335,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -360,7 +374,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -375,6 +389,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -413,7 +428,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -428,6 +443,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -466,7 +482,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -481,6 +497,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -519,7 +536,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -534,6 +551,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -572,7 +590,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -587,6 +605,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -625,7 +644,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -640,6 +659,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -678,7 +698,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -693,6 +713,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -731,7 +752,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -746,6 +767,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -784,7 +806,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -799,6 +821,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -837,7 +860,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -852,6 +875,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -890,7 +914,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -905,6 +929,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -943,7 +968,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -958,6 +983,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -996,7 +1022,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1011,6 +1037,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1049,7 +1076,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1064,6 +1091,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1102,7 +1130,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1117,6 +1145,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1155,7 +1184,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1170,6 +1199,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1208,7 +1238,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1223,6 +1253,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1261,7 +1292,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1276,6 +1307,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1314,7 +1346,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1329,6 +1361,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1367,7 +1400,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1382,6 +1415,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1420,7 +1454,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1435,6 +1469,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1473,7 +1508,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -1488,6 +1523,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 26,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -1503,15 +1539,7 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Tank",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
+          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -1527,6 +1555,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1576,6 +1605,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1625,6 +1655,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1674,6 +1705,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1723,6 +1755,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1772,6 +1805,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1821,6 +1855,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1870,6 +1905,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1919,6 +1955,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -1968,6 +2005,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2017,6 +2055,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2066,6 +2105,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2115,6 +2155,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2153,7 +2194,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2168,6 +2209,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2206,7 +2248,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2221,6 +2263,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 25,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "graphics",
     "drop_name": "Graphics",
     "item_pool": False,
@@ -2246,6 +2289,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2284,7 +2328,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2299,6 +2343,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2337,7 +2382,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2352,6 +2397,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2390,7 +2436,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2405,6 +2451,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2443,7 +2490,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2458,6 +2505,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2496,7 +2544,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2511,6 +2559,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2549,7 +2598,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2564,6 +2613,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2602,7 +2652,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2617,6 +2667,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2655,7 +2706,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2670,6 +2721,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2708,7 +2760,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -2723,6 +2775,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2756,6 +2809,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -2770,6 +2865,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2803,6 +2899,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -2817,6 +2955,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 2,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2851,6 +2990,48 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -2864,6 +3045,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 5,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -2886,6 +3068,12 @@ raw_location_table = [
           "item": "Water Walkers",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -2899,6 +3087,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 8,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -2930,16 +3119,22 @@ raw_location_table = [
           "amount": 1
         },
         {
-          "item": "Max HP",
-          "amount": 2
-        },
-        {
           "item": "Fire",
           "amount": 1
         },
         {
+          "item": "Max HP",
+          "amount": 2
+        },
+        {
           "item": "Water Walkers",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ]
     ]
@@ -2954,6 +3149,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -2987,6 +3183,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3001,6 +3239,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3034,6 +3273,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3048,6 +3329,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3081,6 +3363,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3095,6 +3419,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3128,6 +3453,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3142,6 +3509,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3159,6 +3527,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3173,6 +3569,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3190,6 +3587,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3204,6 +3629,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3221,6 +3647,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3235,6 +3689,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3274,6 +3729,48 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -3288,6 +3785,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3328,6 +3826,48 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -3341,6 +3881,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3379,7 +3920,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3394,6 +3935,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3432,7 +3974,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3447,6 +3989,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3485,7 +4028,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3500,6 +4043,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3538,7 +4082,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3553,6 +4097,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3591,7 +4136,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3606,6 +4151,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3644,7 +4190,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3659,6 +4205,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3697,7 +4244,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3712,6 +4259,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3750,7 +4298,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3765,6 +4313,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3803,7 +4352,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3818,6 +4367,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3856,7 +4406,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3871,6 +4421,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3909,7 +4460,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3924,6 +4475,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -3962,7 +4514,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -3977,6 +4529,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4015,7 +4568,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4030,6 +4583,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4068,7 +4622,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4083,6 +4637,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4121,7 +4676,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4136,6 +4691,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4174,7 +4730,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4189,6 +4745,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4227,7 +4784,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4242,6 +4799,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4280,7 +4838,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4295,6 +4853,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4333,7 +4892,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4348,6 +4907,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4386,7 +4946,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4401,6 +4961,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4439,7 +5000,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4454,6 +5015,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4492,7 +5054,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4507,6 +5069,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4545,7 +5108,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4560,6 +5123,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4598,7 +5162,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4613,6 +5177,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4651,7 +5216,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4666,6 +5231,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4704,7 +5270,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4719,6 +5285,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4757,7 +5324,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4772,6 +5339,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4810,7 +5378,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4825,6 +5393,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4863,7 +5432,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4878,6 +5447,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4916,7 +5486,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4931,6 +5501,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -4969,7 +5540,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -4984,6 +5555,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5022,7 +5594,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5037,6 +5609,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5075,7 +5648,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5090,6 +5663,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5128,7 +5702,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5143,6 +5717,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5181,7 +5756,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5196,6 +5771,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5234,7 +5810,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5249,6 +5825,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5287,7 +5864,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5302,6 +5879,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5340,7 +5918,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5355,6 +5933,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5393,7 +5972,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5408,6 +5987,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5446,7 +6026,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5461,6 +6041,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5499,7 +6080,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5514,6 +6095,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 1,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5552,7 +6134,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5567,6 +6149,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5605,7 +6188,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5620,6 +6203,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5658,7 +6242,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5673,6 +6257,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5711,7 +6296,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5726,6 +6311,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5764,7 +6350,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5779,6 +6365,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5817,7 +6404,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5832,6 +6419,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5870,7 +6458,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5885,6 +6473,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5923,7 +6512,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5938,6 +6527,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -5976,7 +6566,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -5991,6 +6581,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6029,7 +6620,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -6044,6 +6635,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6082,7 +6674,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -6097,6 +6689,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6135,7 +6728,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -6150,6 +6743,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 8,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "sword",
     "drop_name": "Sword",
     "item_pool": False,
@@ -6175,6 +6769,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6200,6 +6795,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -6214,6 +6857,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6240,6 +6884,54 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -6253,6 +6945,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6298,6 +6991,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6343,6 +7037,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6388,6 +7083,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6433,6 +7129,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6478,6 +7175,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6523,6 +7221,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6568,6 +7267,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6613,6 +7313,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6651,7 +7352,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -6666,6 +7367,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 10,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "bgm",
     "drop_name": "BGM",
     "item_pool": False,
@@ -6692,6 +7394,12 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -6705,6 +7413,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6772,6 +7481,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6839,6 +7549,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -6906,6 +7617,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 25,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -6961,6 +7673,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7010,6 +7723,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7059,6 +7773,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7108,6 +7823,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7157,6 +7873,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7206,6 +7923,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7255,6 +7973,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7304,6 +8023,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7353,6 +8073,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7402,6 +8123,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7451,6 +8173,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7500,6 +8223,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7549,6 +8273,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7598,6 +8323,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7647,6 +8373,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7696,6 +8423,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7745,6 +8473,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7794,6 +8523,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7843,6 +8573,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7892,6 +8623,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -7947,6 +8679,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -7985,7 +8718,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8000,6 +8733,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8038,7 +8772,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8053,6 +8787,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8091,7 +8826,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8106,6 +8841,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8144,7 +8880,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8159,6 +8895,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8197,7 +8934,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8212,6 +8949,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8250,7 +8988,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8265,6 +9003,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8303,7 +9042,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8318,6 +9057,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8356,7 +9096,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8371,6 +9111,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8382,6 +9123,72 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8396,6 +9203,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -8427,6 +9235,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8444,6 +9253,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8458,6 +9295,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8475,6 +9313,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8489,6 +9355,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8506,6 +9373,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8520,6 +9415,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8537,6 +9433,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8551,6 +9475,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8568,6 +9493,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8582,6 +9535,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8599,6 +9553,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8613,6 +9595,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8630,6 +9613,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8644,6 +9655,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8661,6 +9673,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -8675,6 +9715,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8713,7 +9754,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8728,6 +9769,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8766,7 +9808,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8781,6 +9823,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8819,7 +9862,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8834,6 +9877,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8872,7 +9916,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8887,6 +9931,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8925,7 +9970,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8940,6 +9985,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -8978,7 +10024,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -8993,6 +10039,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9031,7 +10078,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9046,6 +10093,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9084,7 +10132,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9099,6 +10147,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9137,7 +10186,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9152,6 +10201,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9190,7 +10240,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9205,6 +10255,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9243,7 +10294,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9258,6 +10309,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9296,7 +10348,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9311,6 +10363,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9349,7 +10402,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9364,6 +10417,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9402,7 +10456,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9417,6 +10471,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9455,7 +10510,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9470,6 +10525,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9508,7 +10564,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9523,6 +10579,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9561,7 +10618,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9576,6 +10633,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9614,7 +10672,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9629,6 +10687,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9667,7 +10726,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9682,6 +10741,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9720,7 +10780,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9735,6 +10795,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9773,7 +10834,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -9788,6 +10849,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9798,6 +10860,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -9837,6 +10905,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9847,6 +10916,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -9886,6 +10961,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9896,6 +10972,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -9935,6 +11017,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -9945,6 +11028,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -9984,6 +11073,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10002,6 +11092,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -10015,6 +11133,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 5,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -10046,6 +11165,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10056,6 +11176,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -10099,6 +11225,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10109,6 +11236,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -10152,6 +11285,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10162,6 +11296,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ],
@@ -10205,6 +11345,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10243,7 +11384,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10258,6 +11399,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10296,7 +11438,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10311,6 +11453,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10349,7 +11492,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10364,6 +11507,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10402,7 +11546,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10417,6 +11561,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10455,7 +11600,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10470,6 +11615,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10508,7 +11654,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10523,6 +11669,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10561,7 +11708,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10576,6 +11723,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10614,7 +11762,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10629,6 +11777,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10667,7 +11816,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10682,6 +11831,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10720,7 +11870,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10735,6 +11885,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10773,7 +11924,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10788,6 +11939,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10826,7 +11978,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10841,6 +11993,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10879,7 +12032,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10894,6 +12047,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10932,7 +12086,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -10947,6 +12101,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -10985,7 +12140,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11000,6 +12155,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11038,7 +12194,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11053,6 +12209,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11091,7 +12248,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11106,6 +12263,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11144,7 +12302,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11159,6 +12317,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11197,7 +12356,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11212,6 +12371,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11250,7 +12410,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11265,6 +12425,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11303,7 +12464,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11318,6 +12479,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11356,7 +12518,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11371,6 +12533,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11409,7 +12572,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11424,6 +12587,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11462,7 +12626,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11477,6 +12641,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11515,7 +12680,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11530,6 +12695,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11568,7 +12734,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11583,6 +12749,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11621,7 +12788,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11636,6 +12803,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11674,7 +12842,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11689,6 +12857,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11727,7 +12896,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11742,6 +12911,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11780,7 +12950,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -11795,6 +12965,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -11812,16 +12983,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        }
-      ],
-      [
-        {
-          "item": "Progressive Room",
-          "amount": 2
         }
       ]
     ]
@@ -11836,6 +12997,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11853,10 +13015,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
+        }
+      ],
+      [
         {
           "item": "Sword",
           "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -11871,6 +13057,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11887,10 +13074,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -11934,6 +13117,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -11950,10 +13134,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -11997,6 +13177,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12013,10 +13194,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -12060,6 +13237,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12076,10 +13254,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -12123,6 +13297,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12139,10 +13314,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -12186,6 +13357,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12202,10 +13374,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -12249,6 +13417,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12265,10 +13434,6 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
-          "amount": 1
-        },
-        {
-          "item": "Sword",
           "amount": 1
         }
       ],
@@ -12312,6 +13477,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 6,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "progressiveRoom",
     "drop_name": "Progressive Room",
     "item_pool": False,
@@ -12329,10 +13495,6 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
-        },
-        {
-          "item": "Sword",
-          "amount": 1
         }
       ]
     ]
@@ -12347,6 +13509,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12358,6 +13521,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12372,6 +13559,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12383,6 +13571,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12397,6 +13613,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12408,6 +13625,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12422,6 +13667,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12433,6 +13679,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12447,6 +13721,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12458,6 +13733,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12472,6 +13775,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12483,6 +13787,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12497,6 +13829,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12508,6 +13841,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12522,6 +13883,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12533,6 +13895,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12547,6 +13937,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -12558,6 +13949,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ]
     ]
@@ -12572,6 +13991,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 13,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -12583,6 +14003,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ]
     ]
@@ -12597,6 +14045,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12614,6 +14063,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12628,6 +14105,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12645,6 +14123,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12659,6 +14165,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12676,6 +14183,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12690,6 +14225,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12707,6 +14243,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12721,6 +14285,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12738,6 +14303,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12752,6 +14345,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12769,6 +14363,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12783,6 +14405,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12800,6 +14423,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12814,6 +14465,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12831,6 +14483,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12845,6 +14525,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12862,6 +14543,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12876,6 +14585,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12893,6 +14603,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12907,6 +14645,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12924,6 +14663,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12938,6 +14705,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12955,6 +14723,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -12969,6 +14765,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -12986,6 +14783,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13000,6 +14825,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13017,6 +14843,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13031,6 +14885,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13048,6 +14903,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13062,6 +14945,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13079,6 +14963,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13093,6 +15005,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13110,6 +15023,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13124,6 +15065,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13141,6 +15083,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13155,6 +15125,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13172,6 +15143,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13186,6 +15185,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13203,6 +15203,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13217,6 +15245,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13234,6 +15263,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13248,6 +15305,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13265,6 +15323,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13279,6 +15365,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13296,6 +15383,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13310,6 +15425,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13327,6 +15443,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13341,6 +15485,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13358,6 +15503,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13372,6 +15545,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13389,6 +15563,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13403,6 +15605,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13420,6 +15623,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13434,6 +15665,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13451,6 +15683,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13465,6 +15725,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13482,6 +15743,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13496,6 +15785,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13513,6 +15803,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13527,6 +15845,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13544,6 +15863,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13558,6 +15905,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 2,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13575,6 +15923,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13589,6 +15965,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 1,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13606,6 +15983,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13620,6 +16025,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13637,6 +16043,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13651,6 +16085,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13668,6 +16103,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13682,6 +16145,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13699,6 +16163,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13713,6 +16205,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13730,6 +16223,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13744,6 +16265,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13761,6 +16283,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13775,6 +16325,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13792,6 +16343,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13806,6 +16385,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13823,6 +16403,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13837,6 +16445,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13854,6 +16463,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13868,6 +16505,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13885,6 +16523,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13899,6 +16565,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13916,6 +16583,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13930,6 +16625,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13947,6 +16643,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -13961,6 +16685,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -13979,6 +16704,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -13992,6 +16745,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -14023,6 +16777,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 7,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "sword",
     "drop_name": "Sword",
     "item_pool": False,
@@ -14040,6 +16795,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -14068,6 +16829,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14112,7 +16874,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14127,6 +16889,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14171,7 +16934,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14186,6 +16949,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14230,7 +16994,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14245,6 +17009,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14289,7 +17054,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14304,6 +17069,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14348,7 +17114,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14363,6 +17129,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14407,7 +17174,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14422,6 +17189,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14466,7 +17234,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14481,6 +17249,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14525,7 +17294,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14540,6 +17309,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14584,7 +17354,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14599,6 +17369,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14643,7 +17414,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14658,6 +17429,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14702,7 +17474,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14717,6 +17489,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14761,7 +17534,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14776,6 +17549,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14820,7 +17594,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14835,6 +17609,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14879,7 +17654,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14894,6 +17669,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14938,7 +17714,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -14953,6 +17729,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -14997,7 +17774,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15012,6 +17789,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15056,7 +17834,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15071,6 +17849,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15115,7 +17894,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15130,6 +17909,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15174,7 +17954,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15189,6 +17969,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15233,7 +18014,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15248,6 +18029,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15292,7 +18074,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15307,6 +18089,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15351,7 +18134,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15366,6 +18149,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15410,7 +18194,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15425,6 +18209,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15469,7 +18254,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15484,6 +18269,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15528,7 +18314,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15543,6 +18329,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15587,7 +18374,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15602,6 +18389,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15646,7 +18434,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15661,6 +18449,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15705,7 +18494,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15720,6 +18509,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15764,7 +18554,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15779,6 +18569,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15823,7 +18614,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15838,6 +18629,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15882,7 +18674,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15897,6 +18689,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -15941,7 +18734,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -15956,6 +18749,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16000,7 +18794,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16015,6 +18809,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16059,7 +18854,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16074,6 +18869,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16118,7 +18914,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16133,6 +18929,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16177,7 +18974,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16192,6 +18989,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16236,7 +19034,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16251,6 +19049,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16295,7 +19094,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16310,6 +19109,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16354,7 +19154,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16369,6 +19169,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16413,7 +19214,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16428,6 +19229,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16472,7 +19274,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16487,6 +19289,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16531,7 +19334,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16546,6 +19349,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16590,7 +19394,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16605,6 +19409,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16649,7 +19454,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16664,6 +19469,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16708,7 +19514,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16723,6 +19529,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16767,7 +19574,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16782,6 +19589,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16826,7 +19634,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16841,6 +19649,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16885,7 +19694,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16900,6 +19709,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -16944,7 +19754,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -16959,6 +19769,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17003,7 +19814,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -17018,6 +19829,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17062,7 +19874,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -17077,6 +19889,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17121,7 +19934,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -17136,6 +19949,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17180,7 +19994,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -17195,6 +20009,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17239,7 +20054,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -17254,6 +20069,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17277,6 +20093,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17291,6 +20135,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17314,6 +20159,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17328,6 +20201,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17351,6 +20225,84 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 2
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17365,6 +20317,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17388,6 +20341,84 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 2
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17402,6 +20433,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17425,6 +20457,84 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17439,6 +20549,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17462,6 +20573,84 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17476,6 +20665,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17499,6 +20689,84 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 2
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17513,6 +20781,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17536,6 +20805,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17550,6 +20847,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17573,6 +20871,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17587,6 +20913,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17610,6 +20937,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17624,6 +20979,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17647,6 +21003,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -17661,6 +21045,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17685,6 +21070,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -17698,6 +21111,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17719,7 +21133,17 @@ raw_location_table = [
       ],
       [
         {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
           "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
           "amount": 1
         },
         {
@@ -17748,6 +21172,62 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Water Walkers",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -17761,6 +21241,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17778,6 +21259,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -17820,6 +21307,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17837,6 +21325,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -17879,6 +21373,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17896,6 +21391,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -17938,6 +21439,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -17955,6 +21457,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -17997,6 +21505,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18014,6 +21523,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -18056,6 +21571,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18073,6 +21589,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -18115,6 +21637,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18138,6 +21661,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -18152,6 +21703,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18175,6 +21727,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -18189,6 +21769,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 2,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18212,6 +21793,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -18226,6 +21835,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18250,6 +21860,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -18263,6 +21901,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 7,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -18280,6 +21919,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -18314,6 +21959,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18330,6 +21976,36 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -18345,6 +22021,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18361,6 +22038,36 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -18376,6 +22083,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18420,7 +22128,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18435,6 +22143,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18479,7 +22188,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18494,6 +22203,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18538,7 +22248,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18553,6 +22263,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18597,7 +22308,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18612,6 +22323,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18656,7 +22368,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18671,6 +22383,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18715,7 +22428,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18730,6 +22443,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18774,7 +22488,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18789,6 +22503,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18833,7 +22548,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18848,6 +22563,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18892,7 +22608,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18907,6 +22623,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -18951,7 +22668,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -18966,6 +22683,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19010,7 +22728,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19025,6 +22743,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19069,7 +22788,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19084,6 +22803,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19128,7 +22848,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19143,6 +22863,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19187,7 +22908,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19202,6 +22923,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19246,7 +22968,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19261,6 +22983,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19305,7 +23028,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19320,6 +23043,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19364,7 +23088,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19379,6 +23103,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19423,7 +23148,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19438,6 +23163,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19482,7 +23208,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19497,6 +23223,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19541,7 +23268,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19556,6 +23283,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19600,7 +23328,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19615,6 +23343,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19659,7 +23388,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19674,6 +23403,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19718,7 +23448,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19733,6 +23463,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19777,7 +23508,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19792,6 +23523,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19836,7 +23568,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19851,6 +23583,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19895,7 +23628,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19910,6 +23643,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -19954,7 +23688,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -19969,6 +23703,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20013,7 +23748,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -20028,6 +23763,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 1,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20045,6 +23781,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20083,6 +23825,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20100,6 +23843,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20138,6 +23887,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20155,6 +23905,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20193,6 +23949,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20210,6 +23967,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20248,6 +24011,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20265,6 +24029,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20303,6 +24073,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20320,6 +24091,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20358,6 +24135,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20375,6 +24153,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20413,6 +24197,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 1,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20430,6 +24215,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20468,6 +24259,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20485,6 +24277,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20523,6 +24321,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20540,6 +24339,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -20578,6 +24383,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 9,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -20599,6 +24405,12 @@ raw_location_table = [
       ],
       [
         {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
           "item": "Tank",
           "amount": 1
         },
@@ -20609,6 +24421,12 @@ raw_location_table = [
         {
           "item": "Pickaxe",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ]
     ]
@@ -20623,6 +24441,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 1,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -20641,6 +24460,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -20654,6 +24479,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20670,6 +24496,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20685,6 +24545,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20701,6 +24562,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20716,6 +24611,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20732,6 +24628,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20747,6 +24677,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20763,6 +24694,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20778,6 +24743,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20794,6 +24760,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20809,6 +24809,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20825,6 +24826,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20840,6 +24875,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20856,6 +24892,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20871,6 +24941,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20887,6 +24958,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20902,6 +25007,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20918,6 +25024,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -20933,6 +25073,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -20977,7 +25118,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -20992,6 +25133,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21036,7 +25178,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21051,6 +25193,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21095,7 +25238,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21110,6 +25253,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21154,7 +25298,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21169,6 +25313,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21213,7 +25358,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21228,6 +25373,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21272,7 +25418,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21287,6 +25433,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21331,7 +25478,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21346,6 +25493,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21390,7 +25538,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21405,6 +25553,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21449,7 +25598,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21464,6 +25613,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21508,7 +25658,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21523,6 +25673,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21567,7 +25718,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21582,6 +25733,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21626,7 +25778,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21641,6 +25793,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21685,7 +25838,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -21700,6 +25853,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21717,6 +25871,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -21773,6 +25933,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 19,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "progressiveRoom",
     "drop_name": "Progressive Room",
     "item_pool": False,
@@ -21791,6 +25952,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -21804,6 +25971,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21821,6 +25989,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -21877,6 +26051,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21932,6 +26107,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -21987,6 +26163,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22042,6 +26219,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22097,6 +26275,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 30,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -22128,6 +26307,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 27,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "bomb",
     "drop_name": "Bombs",
     "item_pool": False,
@@ -22159,6 +26339,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22214,6 +26395,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22269,6 +26451,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22324,6 +26507,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22379,6 +26563,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22434,6 +26619,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22489,6 +26675,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22544,6 +26731,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22599,6 +26787,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22654,6 +26843,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22709,6 +26899,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22764,6 +26955,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22819,6 +27011,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22874,6 +27067,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22929,6 +27123,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -22984,6 +27179,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23039,6 +27235,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23094,6 +27291,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23149,6 +27347,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23204,6 +27403,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23259,6 +27459,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23314,6 +27515,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23369,6 +27571,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23424,6 +27627,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23479,6 +27683,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23534,6 +27739,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23589,6 +27795,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23644,6 +27851,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23699,6 +27907,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23754,6 +27963,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23809,6 +28019,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23864,6 +28075,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23919,6 +28131,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -23974,6 +28187,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24029,6 +28243,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24084,6 +28299,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24139,6 +28355,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24194,6 +28411,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24249,6 +28467,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24304,6 +28523,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24359,6 +28579,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24414,6 +28635,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24469,6 +28691,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24524,6 +28747,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24579,6 +28803,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24634,6 +28859,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24689,6 +28915,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24744,6 +28971,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24799,6 +29027,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24854,6 +29083,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24909,6 +29139,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -24964,6 +29195,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25019,6 +29251,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25074,6 +29307,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25129,6 +29363,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25184,6 +29419,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25239,6 +29475,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25294,6 +29531,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25349,6 +29587,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25404,6 +29643,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25459,6 +29699,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25514,6 +29755,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25569,6 +29811,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25624,6 +29867,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25679,6 +29923,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25734,6 +29979,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25789,6 +30035,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25844,6 +30091,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25899,6 +30147,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -25954,6 +30203,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26009,6 +30259,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26064,6 +30315,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26119,6 +30371,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26174,6 +30427,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26229,6 +30483,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26284,6 +30539,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26339,6 +30595,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26394,6 +30651,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26449,6 +30707,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26504,6 +30763,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26559,6 +30819,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 1,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26576,6 +30837,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -26590,6 +30879,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 2,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26608,6 +30898,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -26621,6 +30939,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 3,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -26652,6 +30971,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26669,6 +30989,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -26683,6 +31031,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26700,6 +31049,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -26714,6 +31091,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26731,6 +31109,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -26745,6 +31151,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26762,6 +31169,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -26776,6 +31211,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26793,6 +31229,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -26807,6 +31271,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26825,6 +31290,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -26838,6 +31331,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26893,6 +31387,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26924,6 +31419,12 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -26944,6 +31445,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -26980,6 +31482,12 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -26995,6 +31503,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27064,6 +31573,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27133,6 +31643,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27202,6 +31713,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27233,6 +31745,12 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -27253,6 +31771,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27284,6 +31803,12 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -27304,6 +31829,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27340,6 +31866,12 @@ raw_location_table = [
       [
         {
           "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -27355,6 +31887,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27387,6 +31920,54 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -27400,6 +31981,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -27416,6 +31998,12 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
           "amount": 2
         }
       ],
@@ -27441,6 +32029,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27473,6 +32062,54 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -27486,6 +32123,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27530,7 +32168,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -27545,6 +32183,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 18,
     "category": "shop",
+    "enemy_type": "",
     "drop_key": "gun",
     "drop_name": "Gun",
     "item_pool": False,
@@ -27582,6 +32221,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27622,6 +32262,48 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -27635,6 +32317,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "shop",
+    "enemy_type": "",
     "drop_key": "teleportation",
     "drop_name": "Teleportation",
     "item_pool": False,
@@ -27672,6 +32355,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 18,
     "category": "shop",
+    "enemy_type": "",
     "drop_key": "graphics",
     "drop_name": "Graphics",
     "item_pool": False,
@@ -27709,6 +32393,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27753,7 +32438,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -27768,6 +32453,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27812,7 +32498,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -27827,6 +32513,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27871,7 +32558,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -27886,6 +32573,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27930,7 +32618,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -27945,6 +32633,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -27989,7 +32678,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28004,6 +32693,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28048,7 +32738,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28063,6 +32753,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28107,7 +32798,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28122,6 +32813,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28166,7 +32858,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28181,6 +32873,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28225,7 +32918,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28240,6 +32933,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28284,7 +32978,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28299,6 +32993,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28343,7 +33038,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28358,6 +33053,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28402,7 +33098,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28417,6 +33113,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28461,7 +33158,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28476,6 +33173,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28520,7 +33218,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28535,6 +33233,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28579,7 +33278,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28594,6 +33293,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28638,7 +33338,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28653,6 +33353,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28697,7 +33398,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28712,6 +33413,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28756,7 +33458,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28771,6 +33473,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28815,7 +33518,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28830,6 +33533,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28874,7 +33578,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28889,6 +33593,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28933,7 +33638,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -28948,6 +33653,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -28992,7 +33698,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29007,6 +33713,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29051,7 +33758,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29066,6 +33773,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29110,7 +33818,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29125,6 +33833,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29169,7 +33878,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29184,6 +33893,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29228,7 +33938,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29243,6 +33953,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29287,7 +33998,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29302,6 +34013,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29346,7 +34058,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29361,6 +34073,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29405,7 +34118,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29420,6 +34133,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29464,7 +34178,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29479,6 +34193,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29523,7 +34238,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29538,6 +34253,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29582,7 +34298,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29597,6 +34313,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29641,7 +34358,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29656,6 +34373,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29700,7 +34418,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29715,6 +34433,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29759,7 +34478,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29774,6 +34493,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29818,7 +34538,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29833,6 +34553,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29877,7 +34598,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29892,6 +34613,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29936,7 +34658,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -29951,6 +34673,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -29995,7 +34718,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -30010,6 +34733,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30054,7 +34778,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -30069,6 +34793,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30113,7 +34838,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -30128,6 +34853,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30172,7 +34898,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -30187,6 +34913,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -30205,6 +34932,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -30218,6 +34951,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30241,6 +34975,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30255,6 +35017,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30278,6 +35041,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30292,6 +35083,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30315,6 +35107,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30329,6 +35149,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30352,6 +35173,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30366,6 +35215,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30389,6 +35239,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30403,6 +35281,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30426,6 +35305,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30440,6 +35347,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30463,6 +35371,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30477,6 +35413,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30500,6 +35437,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30514,6 +35479,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30537,6 +35503,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30551,6 +35545,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30574,6 +35569,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30588,6 +35611,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30612,6 +35636,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -30625,6 +35677,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -30656,6 +35709,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30673,6 +35727,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30687,6 +35769,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30704,6 +35787,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30718,6 +35829,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30735,6 +35847,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30749,6 +35889,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30766,6 +35907,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30780,6 +35949,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30797,6 +35967,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30811,6 +36009,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30828,6 +36027,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30842,6 +36069,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30859,6 +36087,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30873,6 +36129,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30891,6 +36148,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -30904,6 +36189,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -30935,6 +36221,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30952,6 +36239,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30966,6 +36277,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -30983,6 +36295,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -30997,6 +36333,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31014,6 +36351,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -31028,6 +36389,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31046,6 +36408,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -31059,6 +36445,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "tankCannon",
     "drop_name": "Tank Cannon",
     "item_pool": False,
@@ -31111,6 +36498,12 @@ raw_location_table = [
           "item": "Water Walkers",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -31124,6 +36517,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31168,7 +36562,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31183,6 +36577,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31227,7 +36622,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31242,6 +36637,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31297,6 +36693,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31341,7 +36738,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31356,6 +36753,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31400,7 +36798,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31415,6 +36813,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31459,7 +36858,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31474,6 +36873,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31518,7 +36918,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31533,6 +36933,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31577,7 +36978,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31592,6 +36993,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31636,7 +37038,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31651,6 +37053,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31695,7 +37098,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31710,6 +37113,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31754,7 +37158,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31769,6 +37173,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31813,7 +37218,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31828,6 +37233,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31872,7 +37278,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31887,6 +37293,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31931,7 +37338,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -31946,6 +37353,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -31990,7 +37398,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32005,6 +37413,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32049,7 +37458,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32064,6 +37473,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32108,7 +37518,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32123,6 +37533,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32167,7 +37578,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32182,6 +37593,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32226,7 +37638,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32241,6 +37653,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32285,7 +37698,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32300,6 +37713,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32344,7 +37758,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32359,6 +37773,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32403,7 +37818,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32418,6 +37833,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32458,7 +37874,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32473,6 +37889,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32513,7 +37930,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32528,6 +37945,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32568,7 +37986,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32583,6 +38001,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32623,7 +38042,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32638,6 +38057,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32678,7 +38098,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32693,6 +38113,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32733,7 +38154,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32748,6 +38169,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32788,7 +38210,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -32803,6 +38225,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -32834,6 +38257,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32851,6 +38275,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -32865,6 +38313,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32882,6 +38331,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -32896,6 +38369,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32913,6 +38387,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -32927,6 +38425,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -32945,6 +38444,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -32958,6 +38481,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -32989,6 +38513,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33006,6 +38531,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33020,6 +38573,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33037,6 +38591,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33051,6 +38633,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33068,6 +38651,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33082,6 +38693,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33100,6 +38712,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -33113,6 +38749,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -33144,6 +38781,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33161,6 +38799,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33175,6 +38841,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33192,6 +38859,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33206,6 +38901,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33223,6 +38919,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33237,6 +38961,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33254,6 +38979,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33268,6 +39021,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33286,6 +39040,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -33299,6 +39081,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -33317,6 +39100,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -33330,6 +39119,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33353,6 +39143,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33367,6 +39185,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33390,6 +39209,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33404,6 +39251,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33427,6 +39275,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33441,6 +39317,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33464,6 +39341,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33478,6 +39383,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33501,6 +39407,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33515,6 +39449,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33538,6 +39473,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33552,6 +39515,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33575,6 +39539,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33589,6 +39581,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33612,6 +39605,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33626,6 +39647,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33649,6 +39671,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33663,6 +39713,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33687,6 +39738,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -33700,6 +39779,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -33731,6 +39811,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "suddenlySnake",
     "drop_name": "Snake Trap",
     "item_pool": False,
@@ -33762,6 +39843,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33780,6 +39862,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -33793,6 +39903,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -33824,6 +39935,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33841,6 +39953,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33855,6 +39995,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33873,6 +40014,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -33886,6 +40055,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -33904,6 +40074,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -33917,6 +40093,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33934,6 +40111,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33948,6 +40153,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33965,6 +40171,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -33979,6 +40213,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -33996,6 +40231,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34010,6 +40273,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34027,6 +40291,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34041,6 +40333,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34058,6 +40351,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34072,6 +40393,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34089,6 +40411,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34103,6 +40453,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34120,6 +40471,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34134,6 +40513,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34151,6 +40531,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34165,6 +40569,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34182,6 +40587,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34196,6 +40625,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34213,6 +40643,72 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34227,6 +40723,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34244,6 +40741,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34258,6 +40783,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34275,6 +40801,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34289,6 +40843,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34307,6 +40862,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -34320,6 +40903,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapZoom",
     "drop_name": "Zoom In Trap",
     "item_pool": False,
@@ -34351,6 +40935,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "bomb",
     "drop_name": "Bombs",
     "item_pool": False,
@@ -34382,6 +40967,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -34413,6 +40999,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -34431,6 +41018,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -34444,6 +41037,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34467,6 +41061,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34481,6 +41103,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34504,6 +41127,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34518,6 +41169,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 3,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34541,6 +41193,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34555,6 +41235,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34578,6 +41259,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34592,6 +41301,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34615,6 +41325,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34629,6 +41367,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34652,6 +41391,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34666,6 +41433,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34689,6 +41457,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34703,6 +41499,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34726,6 +41523,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34740,6 +41565,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34763,6 +41589,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34777,6 +41631,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34800,6 +41655,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34814,6 +41697,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34837,6 +41721,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34851,6 +41763,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34874,6 +41787,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34888,6 +41829,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34911,6 +41853,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34925,6 +41895,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34948,6 +41919,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34962,6 +41961,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -34985,6 +41985,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -34999,6 +42027,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35022,6 +42051,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35036,6 +42093,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35060,6 +42118,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -35073,6 +42159,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "progressiveRoom",
     "drop_name": "Progressive Room",
     "item_pool": False,
@@ -35104,6 +42191,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35121,6 +42209,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35135,6 +42247,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35152,6 +42265,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35166,6 +42303,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35183,6 +42321,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35197,6 +42359,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35214,6 +42377,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35228,6 +42415,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35246,6 +42434,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -35259,6 +42471,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35276,6 +42489,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35290,6 +42531,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35308,6 +42550,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -35321,6 +42591,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -35352,6 +42623,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 4,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -35369,6 +42641,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -35393,6 +42671,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 30,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35424,6 +42703,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35438,6 +42765,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 30,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35469,6 +42797,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35483,6 +42859,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 1,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35515,6 +42892,54 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -35528,6 +42953,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "gun",
     "drop_name": "Gun",
     "item_pool": False,
@@ -35549,8 +42975,8 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Tank",
-          "amount": 1
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35563,15 +42989,7 @@ raw_location_table = [
       ],
       [
         {
-          "item": "Progressive Room",
-          "amount": 3
-        },
-        {
-          "item": "Sword",
-          "amount": 1
-        },
-        {
-          "item": "Fire",
+          "item": "Graphics",
           "amount": 1
         }
       ]
@@ -35587,6 +43005,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35610,6 +43029,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35636,6 +43059,102 @@ raw_location_table = [
         {
           "item": "Pickaxe",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Pickaxe",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35650,6 +43169,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35673,6 +43193,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35699,6 +43223,102 @@ raw_location_table = [
         {
           "item": "Pickaxe",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Pickaxe",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35713,6 +43333,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35736,6 +43357,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35762,6 +43387,102 @@ raw_location_table = [
         {
           "item": "Pickaxe",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Pickaxe",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -35776,6 +43497,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35799,6 +43521,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35826,6 +43552,102 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Pickaxe",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -35839,6 +43661,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35862,6 +43685,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35908,6 +43735,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -35931,6 +43759,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -35977,6 +43809,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36000,6 +43833,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36046,6 +43883,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36069,6 +43907,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36115,6 +43957,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36138,6 +43981,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36184,6 +44031,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36207,6 +44055,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36253,6 +44105,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36276,6 +44129,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36322,6 +44179,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36345,6 +44203,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36391,6 +44253,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36414,6 +44277,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36460,6 +44327,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36483,6 +44351,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36529,6 +44401,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36552,6 +44425,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36598,6 +44475,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36621,6 +44499,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36667,6 +44549,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36690,6 +44573,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36736,6 +44623,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36759,6 +44647,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36805,6 +44697,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36828,6 +44721,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36874,6 +44771,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36897,6 +44795,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -36943,6 +44845,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -36966,6 +44869,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37012,6 +44919,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37035,6 +44943,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37081,6 +44993,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37104,6 +45017,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37150,6 +45067,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37173,6 +45091,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37219,6 +45141,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37242,6 +45165,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37288,6 +45215,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37311,6 +45239,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37357,6 +45289,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37380,6 +45313,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37426,6 +45363,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37449,6 +45387,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37495,6 +45437,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37518,6 +45461,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37564,6 +45511,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37587,6 +45535,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37633,6 +45585,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37656,6 +45609,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37702,6 +45659,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37725,6 +45683,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37771,6 +45733,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37794,6 +45757,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37840,6 +45807,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37863,6 +45831,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -37909,6 +45881,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37934,6 +45907,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -37946,6 +45923,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -37960,6 +45959,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -37985,6 +45985,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -37997,6 +46001,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38011,6 +46037,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38036,6 +46063,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38048,6 +46079,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38062,6 +46115,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38087,6 +46141,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38099,6 +46157,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38113,6 +46193,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38138,6 +46219,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38150,6 +46235,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38164,6 +46271,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38189,6 +46297,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38201,6 +46313,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38215,6 +46349,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38240,6 +46375,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38252,6 +46391,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38266,6 +46427,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38291,6 +46453,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38303,6 +46469,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38317,6 +46505,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38342,6 +46531,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38354,6 +46547,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38368,6 +46583,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38393,6 +46609,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38405,6 +46625,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38419,6 +46661,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38444,6 +46687,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38456,6 +46703,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38470,6 +46739,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38495,6 +46765,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38507,6 +46781,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38521,6 +46817,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38546,6 +46843,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38558,6 +46859,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38572,6 +46895,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38597,6 +46921,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38609,6 +46937,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38623,6 +46973,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38648,6 +46999,10 @@ raw_location_table = [
           "amount": 1
         },
         {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
           "item": "Sword",
           "amount": 1
         },
@@ -38660,6 +47015,28 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
         }
       ]
     ]
@@ -38674,6 +47051,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38697,6 +47075,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -38712,6 +47094,28 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -38725,6 +47129,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38748,6 +47153,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -38794,6 +47203,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38817,6 +47227,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -38863,6 +47277,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38886,6 +47301,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -38932,6 +47351,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -38955,6 +47375,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39001,6 +47425,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39024,6 +47449,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39070,6 +47499,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39093,6 +47523,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39139,6 +47573,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39162,6 +47597,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39208,6 +47647,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39231,6 +47671,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39277,6 +47721,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39300,6 +47745,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39346,6 +47795,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39369,6 +47819,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39415,6 +47869,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39438,6 +47893,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39484,6 +47943,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39507,6 +47967,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39553,6 +48017,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39576,6 +48041,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39622,6 +48091,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39645,6 +48115,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39691,6 +48165,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39714,6 +48189,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39760,6 +48239,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39783,6 +48263,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39829,6 +48313,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39852,6 +48337,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39898,6 +48387,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39921,6 +48411,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -39967,6 +48461,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -39990,6 +48485,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -40036,6 +48535,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40059,6 +48559,10 @@ raw_location_table = [
         {
           "item": "Tank",
           "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
         },
         {
           "item": "Sword",
@@ -40086,6 +48590,102 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Progressive Room",
+          "amount": 3
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Pickaxe",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -40099,6 +48699,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40115,6 +48716,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40130,6 +48759,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40146,6 +48776,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40161,6 +48819,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40177,6 +48836,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40192,6 +48879,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40208,6 +48896,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40223,6 +48939,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40239,6 +48956,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40254,6 +48999,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40270,6 +49016,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40285,6 +49059,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40301,6 +49076,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40316,6 +49119,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40332,6 +49136,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40347,6 +49179,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40363,6 +49196,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40378,6 +49239,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40394,6 +49256,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40409,6 +49299,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40425,6 +49316,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40440,6 +49359,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40456,6 +49376,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40471,6 +49419,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40487,6 +49436,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40502,6 +49479,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40518,6 +49496,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40533,6 +49539,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40549,6 +49556,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40564,6 +49599,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40580,6 +49616,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40595,6 +49659,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40611,6 +49676,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40626,6 +49719,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40642,6 +49736,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40657,6 +49779,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40673,6 +49796,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40688,6 +49839,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40704,6 +49856,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40719,6 +49899,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40735,6 +49916,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40750,6 +49959,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40766,6 +49976,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40781,6 +50019,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40797,6 +50036,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40812,6 +50079,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40828,6 +50096,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40843,6 +50139,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40859,6 +50156,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40874,6 +50199,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40890,6 +50216,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40905,6 +50259,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40921,6 +50276,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40936,6 +50319,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40952,6 +50336,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40967,6 +50379,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -40983,6 +50396,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -40998,6 +50439,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41014,6 +50456,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -41029,6 +50499,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41045,6 +50516,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -41060,6 +50559,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41076,6 +50576,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -41091,6 +50619,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41107,6 +50636,34 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -41122,6 +50679,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41140,6 +50698,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -41153,6 +50739,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41212,6 +50799,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41271,6 +50859,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41330,6 +50919,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "steelToe",
     "drop_name": "Steel Toe",
     "item_pool": False,
@@ -41361,6 +50951,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41384,6 +50975,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41398,6 +51017,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41421,6 +51041,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41435,6 +51083,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41459,6 +51108,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -41472,6 +51149,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 13,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapFast",
     "drop_name": "Fast Trap",
     "item_pool": False,
@@ -41503,6 +51181,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 25,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapScreenFlip",
     "drop_name": "Screen Flip Trap",
     "item_pool": False,
@@ -41521,6 +51200,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -41534,6 +51219,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -41552,6 +51238,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -41565,6 +51257,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41588,6 +51281,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41602,6 +51323,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41625,6 +51347,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41639,6 +51389,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41662,6 +51413,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41676,6 +51455,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41699,6 +51479,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41713,6 +51521,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 30,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41737,6 +51546,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -41750,6 +51587,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41767,6 +51605,36 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41781,6 +51649,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41798,6 +51667,36 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41812,6 +51711,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41829,6 +51729,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41843,6 +51777,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41860,6 +51795,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41874,6 +51843,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41891,6 +51861,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41905,6 +51909,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41922,6 +51927,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41936,6 +51975,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41953,6 +51993,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41967,6 +52041,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -41984,6 +52059,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -41998,6 +52107,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42015,6 +52125,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42029,6 +52173,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42047,6 +52192,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -42060,6 +52239,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -42078,6 +52258,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -42091,6 +52277,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42114,6 +52301,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42128,6 +52343,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42151,6 +52367,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42165,6 +52409,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42188,6 +52433,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42202,6 +52475,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42225,6 +52499,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42239,6 +52541,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42262,6 +52565,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42276,6 +52607,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42299,6 +52631,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42313,6 +52673,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42336,6 +52697,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42350,6 +52739,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42373,6 +52763,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42387,6 +52805,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42410,6 +52829,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42424,6 +52871,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42448,6 +52896,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -42461,6 +52937,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -42492,6 +52969,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42509,6 +52987,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42523,6 +53029,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42541,6 +53048,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -42554,6 +53089,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42577,6 +53113,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42591,6 +53155,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42615,6 +53180,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -42628,6 +53221,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -42646,6 +53240,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -42659,6 +53259,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42690,6 +53291,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42704,6 +53353,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42735,6 +53385,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42749,6 +53447,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42780,6 +53479,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42794,6 +53541,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42825,6 +53573,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42839,6 +53635,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42870,6 +53667,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42884,6 +53729,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42915,6 +53761,54 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -42929,6 +53823,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -42961,6 +53856,54 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -42974,6 +53917,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 30,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapReverse",
     "drop_name": "Reverse Trap",
     "item_pool": False,
@@ -42991,6 +53935,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -43015,6 +53965,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 24,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapInvisible",
     "drop_name": "Invisible Trap",
     "item_pool": False,
@@ -43033,6 +53984,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -43046,6 +54003,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43069,6 +54027,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43083,6 +54069,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43106,6 +54093,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43120,6 +54135,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43143,6 +54159,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43157,6 +54201,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43180,6 +54225,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43194,6 +54267,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43217,6 +54291,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43231,6 +54333,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43254,6 +54357,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43268,6 +54399,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43291,6 +54423,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43305,6 +54465,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43328,6 +54489,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43342,6 +54531,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43365,6 +54555,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43379,6 +54597,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43402,6 +54621,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43416,6 +54663,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43439,6 +54687,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43453,6 +54729,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43476,6 +54753,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43490,6 +54795,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43513,6 +54819,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43527,6 +54861,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43550,6 +54885,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43564,6 +54927,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43587,6 +54951,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43601,6 +54993,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43624,6 +55017,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -43638,6 +55059,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43662,6 +55084,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -43675,6 +55125,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -43706,6 +55157,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43750,7 +55202,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -43765,6 +55217,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43809,7 +55262,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -43824,6 +55277,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43868,7 +55322,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -43883,6 +55337,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43927,7 +55382,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -43942,6 +55397,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -43986,7 +55442,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44001,6 +55457,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44045,7 +55502,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44060,6 +55517,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44104,7 +55562,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44119,6 +55577,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44163,7 +55622,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44178,6 +55637,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44222,7 +55682,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44237,6 +55697,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44281,7 +55742,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44296,6 +55757,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44340,7 +55802,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44355,6 +55817,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44399,7 +55862,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -44414,6 +55877,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -44432,6 +55896,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -44445,6 +55933,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44462,6 +55951,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44476,6 +55993,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44493,6 +56011,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44507,6 +56053,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44524,6 +56071,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44538,6 +56113,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44555,6 +56131,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44569,6 +56173,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44586,6 +56191,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44600,6 +56233,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44617,6 +56251,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44631,6 +56293,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44648,6 +56311,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44662,6 +56353,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44679,6 +56371,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44693,6 +56413,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44710,6 +56431,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44724,6 +56473,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44741,6 +56491,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44755,6 +56533,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44772,6 +56551,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44786,6 +56593,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44803,6 +56611,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44817,6 +56653,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44834,6 +56671,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44848,6 +56713,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44865,6 +56731,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44879,6 +56773,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44896,6 +56791,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44910,6 +56829,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44927,6 +56847,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44941,6 +56885,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44958,6 +56903,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -44972,6 +56941,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -44989,6 +56959,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45003,6 +56997,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45020,6 +57015,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45034,6 +57053,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45051,6 +57071,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45065,6 +57109,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45082,6 +57127,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45096,6 +57165,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45113,6 +57183,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45127,6 +57221,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45144,6 +57239,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45158,6 +57277,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45175,6 +57295,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45189,6 +57333,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45206,6 +57351,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45220,6 +57389,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45237,6 +57407,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45251,6 +57445,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45268,6 +57463,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45282,6 +57501,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45300,6 +57520,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -45313,6 +57557,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "waterWalkers",
     "drop_name": "Water Walkers",
     "item_pool": False,
@@ -45331,6 +57576,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 5
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -45344,6 +57595,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45362,6 +57614,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 5
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -45375,6 +57661,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -45393,6 +57680,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -45406,6 +57699,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45429,6 +57723,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45443,6 +57765,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45466,6 +57789,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45480,6 +57831,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45503,6 +57855,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45517,6 +57897,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45540,6 +57921,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45554,6 +57963,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45577,6 +57987,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45591,6 +58029,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45614,6 +58053,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45628,6 +58095,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45651,6 +58119,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45665,6 +58161,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45688,6 +58185,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45702,6 +58227,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45725,6 +58251,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45739,6 +58293,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45762,6 +58317,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45776,6 +58359,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45799,6 +58383,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45813,6 +58425,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45836,6 +58449,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45850,6 +58491,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45873,6 +58515,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45887,6 +58557,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45910,6 +58581,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45924,6 +58623,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45947,6 +58647,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45961,6 +58689,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -45984,6 +58713,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -45998,6 +58755,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46021,6 +58779,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46035,6 +58821,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46058,6 +58845,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46072,6 +58887,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46095,6 +58911,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46109,6 +58953,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46132,6 +58977,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46146,6 +59019,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46169,6 +59043,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46183,6 +59085,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46206,6 +59109,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46220,6 +59151,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46243,6 +59175,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46257,6 +59217,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 3,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46280,6 +59241,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46294,6 +59283,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 2,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46317,6 +59307,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46331,6 +59349,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46354,6 +59373,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46368,6 +59415,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46391,6 +59439,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46405,6 +59481,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46428,6 +59505,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46442,6 +59547,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46465,6 +59571,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46479,6 +59613,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46502,6 +59637,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46516,6 +59679,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46539,6 +59703,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46553,6 +59745,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46576,6 +59769,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46590,6 +59811,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46613,6 +59835,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46627,6 +59877,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46650,6 +59901,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46664,6 +59943,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46687,6 +59967,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46701,6 +60009,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46724,6 +60033,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46738,6 +60075,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46761,6 +60099,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46775,6 +60141,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46798,6 +60165,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46812,6 +60207,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46835,6 +60231,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46849,6 +60273,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46872,6 +60297,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46886,6 +60339,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46910,6 +60364,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -46923,6 +60405,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46940,6 +60423,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46954,6 +60471,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -46971,6 +60489,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -46985,6 +60537,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47002,6 +60555,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47016,6 +60603,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47033,6 +60621,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47047,6 +60669,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47064,6 +60687,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47078,6 +60735,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47095,6 +60753,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47109,6 +60801,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47126,6 +60819,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47140,6 +60867,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47157,6 +60885,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47171,6 +60933,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47188,6 +60951,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47202,6 +60999,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47219,6 +61017,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47233,6 +61065,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47250,6 +61083,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47264,6 +61131,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47281,6 +61149,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47295,6 +61197,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47312,6 +61215,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47326,6 +61263,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47343,6 +61281,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47357,6 +61329,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47374,6 +61347,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47388,6 +61395,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47405,6 +61413,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47419,6 +61461,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47436,6 +61479,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47450,6 +61527,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47468,6 +61546,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -47481,6 +61593,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47530,6 +61643,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47544,6 +61699,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47593,6 +61749,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47607,6 +61805,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47656,6 +61855,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47670,6 +61911,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47719,6 +61961,48 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47733,6 +62017,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47783,6 +62068,48 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -47796,6 +62123,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 3,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -47824,6 +62152,12 @@ raw_location_table = [
           "item": "Water Walkers",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -47837,6 +62171,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47854,6 +62189,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47868,6 +62231,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47885,6 +62249,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47899,6 +62291,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 29,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47916,6 +62309,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47930,6 +62351,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47947,6 +62369,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47961,6 +62411,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -47978,6 +62429,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -47992,6 +62471,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48010,6 +62490,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -48023,6 +62531,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48054,6 +62563,50 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -48068,6 +62621,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48099,6 +62653,50 @@ raw_location_table = [
         {
           "item": "Fire",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -48113,6 +62711,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48145,6 +62744,54 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -48158,6 +62805,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 10,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapStun",
     "drop_name": "Stun Trap",
     "item_pool": False,
@@ -48190,6 +62838,12 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -48203,6 +62857,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48254,6 +62909,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48305,6 +62961,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48356,6 +63013,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48407,6 +63065,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48458,6 +63117,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48509,6 +63169,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48560,6 +63221,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48611,6 +63273,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48662,6 +63325,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48713,6 +63377,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48764,6 +63429,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48815,6 +63481,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "fire",
     "drop_name": "Fire",
     "item_pool": False,
@@ -48866,6 +63533,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48906,7 +63574,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -48921,6 +63589,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -48961,7 +63630,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -48976,6 +63645,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49016,7 +63686,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49031,6 +63701,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49071,7 +63742,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49086,6 +63757,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49126,7 +63798,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49141,6 +63813,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49181,7 +63854,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49196,6 +63869,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49236,7 +63910,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49251,6 +63925,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49291,7 +63966,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49306,6 +63981,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49346,7 +64022,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49361,6 +64037,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49401,7 +64078,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49416,6 +64093,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49456,7 +64134,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49471,6 +64149,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49511,7 +64190,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49526,6 +64205,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49566,7 +64246,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49581,6 +64261,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49625,7 +64306,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49640,6 +64321,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49684,7 +64366,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49699,6 +64381,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49739,7 +64422,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49754,6 +64437,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49794,7 +64478,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49809,6 +64493,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49849,7 +64534,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49864,6 +64549,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49904,7 +64590,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49919,6 +64605,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -49959,7 +64646,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -49974,6 +64661,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50014,7 +64702,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50029,6 +64717,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50069,7 +64758,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50084,6 +64773,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50124,7 +64814,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50139,6 +64829,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50179,7 +64870,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50194,6 +64885,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50234,7 +64926,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50249,6 +64941,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50289,7 +64982,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50304,6 +64997,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50344,7 +65038,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50359,6 +65053,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50399,7 +65094,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50414,6 +65109,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50454,7 +65150,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50469,6 +65165,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50509,7 +65206,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50524,6 +65221,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50564,7 +65262,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50579,6 +65277,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50619,7 +65318,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50634,6 +65333,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50674,7 +65374,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50689,6 +65389,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50729,7 +65430,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50744,6 +65445,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50784,7 +65486,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50799,6 +65501,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50839,7 +65542,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50854,6 +65557,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50894,7 +65598,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50909,6 +65613,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -50949,7 +65654,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -50964,6 +65669,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51004,7 +65710,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51019,6 +65725,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51059,7 +65766,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51074,6 +65781,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51114,7 +65822,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51129,6 +65837,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51169,7 +65878,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51184,6 +65893,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51224,7 +65934,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51239,6 +65949,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51279,7 +65990,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51294,6 +66005,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51334,7 +66046,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51349,6 +66061,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51389,7 +66102,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51404,6 +66117,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51444,7 +66158,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51459,6 +66173,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51499,7 +66214,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51514,6 +66229,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51554,7 +66270,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51569,6 +66285,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51609,7 +66326,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51624,6 +66341,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51664,7 +66382,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51679,6 +66397,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51719,7 +66438,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51734,6 +66453,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51774,7 +66494,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51789,6 +66509,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51829,7 +66550,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51844,6 +66565,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51884,7 +66606,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51899,6 +66621,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51939,7 +66662,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -51954,6 +66677,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -51994,7 +66718,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52009,6 +66733,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -52040,6 +66765,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52058,6 +66784,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -52071,6 +66825,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -52102,6 +66857,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -52119,6 +66875,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52161,6 +66923,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -52178,6 +66941,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52220,6 +66989,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -52237,6 +67007,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52279,6 +67055,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -52296,6 +67073,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52338,6 +67121,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52355,6 +67139,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52382,7 +67172,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52397,6 +67187,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52414,6 +67205,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52441,7 +67238,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52456,6 +67253,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52473,6 +67271,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52500,7 +67304,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52515,6 +67319,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52532,6 +67337,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52559,7 +67370,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52574,6 +67385,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52591,6 +67403,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52618,7 +67436,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52633,6 +67451,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52650,6 +67469,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52677,7 +67502,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52692,6 +67517,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52709,6 +67535,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52736,7 +67568,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52751,6 +67583,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52768,6 +67601,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 5
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
         }
       ],
       [
@@ -52795,7 +67634,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -52810,6 +67649,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52865,6 +67705,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52920,6 +67761,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -52975,6 +67817,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53030,6 +67873,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53085,6 +67929,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53140,6 +67985,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53195,6 +68041,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53250,6 +68097,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53305,6 +68153,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53360,6 +68209,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53415,6 +68265,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53470,6 +68321,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53525,6 +68377,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53580,6 +68433,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53635,6 +68489,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53690,6 +68545,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53745,6 +68601,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53800,6 +68657,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53855,6 +68713,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53910,6 +68769,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -53965,6 +68825,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54020,6 +68881,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54075,6 +68937,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54130,6 +68993,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54185,6 +69049,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54240,6 +69105,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54295,6 +69161,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54350,6 +69217,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54405,6 +69273,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54460,6 +69329,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54515,6 +69385,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54570,6 +69441,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54625,6 +69497,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54680,6 +69553,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54735,6 +69609,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54790,6 +69665,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54845,6 +69721,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54900,6 +69777,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -54955,6 +69833,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55010,6 +69889,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55065,6 +69945,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55120,6 +70001,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55175,6 +70057,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55230,6 +70113,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55285,6 +70169,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -55316,6 +70201,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55333,6 +70219,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -55347,6 +70257,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55364,6 +70275,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -55378,6 +70313,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55396,6 +70332,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -55409,6 +70369,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -55440,6 +70401,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -55476,6 +70438,12 @@ raw_location_table = [
           "item": "Pickaxe",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -55489,6 +70457,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55544,6 +70513,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55599,6 +70569,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55654,6 +70625,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55709,6 +70681,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55764,6 +70737,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55819,6 +70793,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55874,6 +70849,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55929,6 +70905,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -55984,6 +70961,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56039,6 +71017,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56094,6 +71073,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56149,6 +71129,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56204,6 +71185,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56259,6 +71241,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56314,6 +71297,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56358,7 +71342,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56373,6 +71357,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56417,7 +71402,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56432,6 +71417,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56476,7 +71462,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56491,6 +71477,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56535,7 +71522,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56550,6 +71537,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56594,7 +71582,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56609,6 +71597,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56653,7 +71642,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56668,6 +71657,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56712,7 +71702,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56727,6 +71717,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56771,7 +71762,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56786,6 +71777,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56830,7 +71822,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56845,6 +71837,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56889,7 +71882,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56904,6 +71897,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -56948,7 +71942,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -56963,6 +71957,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57007,7 +72002,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57022,6 +72017,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57066,7 +72062,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57081,6 +72077,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57125,7 +72122,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57140,6 +72137,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57184,7 +72182,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57199,6 +72197,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57243,7 +72242,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57258,6 +72257,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57302,7 +72302,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57317,6 +72317,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57361,7 +72362,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57376,6 +72377,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57420,7 +72422,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57435,6 +72437,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57479,7 +72482,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57494,6 +72497,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57538,7 +72542,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57553,6 +72557,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57597,7 +72602,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57612,6 +72617,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57656,7 +72662,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57671,6 +72677,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57715,7 +72722,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57730,6 +72737,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57774,7 +72782,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57789,6 +72797,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57833,7 +72842,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57848,6 +72857,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57892,7 +72902,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57907,6 +72917,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 2,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -57951,7 +72962,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -57966,6 +72977,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58010,7 +73022,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58025,6 +73037,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 3,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58069,7 +73082,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58084,6 +73097,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58128,7 +73142,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58143,6 +73157,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 9,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58187,7 +73202,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58202,6 +73217,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58246,7 +73262,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58261,6 +73277,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58305,7 +73322,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58320,6 +73337,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58364,7 +73382,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58379,6 +73397,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58423,7 +73442,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58438,6 +73457,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58482,7 +73502,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58497,6 +73517,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 30,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58541,7 +73562,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58556,6 +73577,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58600,7 +73622,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58615,6 +73637,7 @@ raw_location_table = [
     "tile_x": 30,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58659,7 +73682,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58674,6 +73697,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58718,7 +73742,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58733,6 +73757,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58777,7 +73802,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58792,6 +73817,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58836,7 +73862,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58851,6 +73877,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58895,7 +73922,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58910,6 +73937,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -58954,7 +73982,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -58969,6 +73997,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59013,7 +74042,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59028,6 +74057,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59072,7 +74102,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59087,6 +74117,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59131,7 +74162,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59146,6 +74177,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59190,7 +74222,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59205,6 +74237,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59249,7 +74282,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59264,6 +74297,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59308,7 +74342,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59323,6 +74357,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59367,7 +74402,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59382,6 +74417,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59426,7 +74462,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59441,6 +74477,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59485,7 +74522,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59500,6 +74537,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59544,7 +74582,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59559,6 +74597,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59603,7 +74642,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59618,6 +74657,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59662,7 +74702,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59677,6 +74717,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -59708,6 +74749,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -59739,6 +74781,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59783,7 +74826,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59798,6 +74841,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59842,7 +74886,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59857,6 +74901,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59901,7 +74946,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59916,6 +74961,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -59960,7 +75006,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -59975,6 +75021,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60019,7 +75066,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60034,6 +75081,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60078,7 +75126,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60093,6 +75141,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60137,7 +75186,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60152,6 +75201,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60196,7 +75246,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60211,6 +75261,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60255,7 +75306,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60270,6 +75321,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60314,7 +75366,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60329,6 +75381,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60373,7 +75426,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60388,6 +75441,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60432,7 +75486,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60447,6 +75501,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60491,7 +75546,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60506,6 +75561,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60550,7 +75606,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60565,6 +75621,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60609,7 +75666,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60624,6 +75681,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60668,7 +75726,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60683,6 +75741,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60727,7 +75786,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60742,6 +75801,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60786,7 +75846,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60801,6 +75861,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60845,7 +75906,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60860,6 +75921,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60904,7 +75966,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -60919,6 +75981,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -60937,6 +76000,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -60950,6 +76019,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 6,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -60973,6 +76043,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -60987,6 +76085,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61010,6 +76109,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61024,6 +76151,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61047,6 +76175,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61061,6 +76217,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61084,6 +76241,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61098,6 +76283,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61121,6 +76307,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61135,6 +76349,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61158,6 +76373,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61172,6 +76415,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61195,6 +76439,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61209,6 +76481,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61232,6 +76505,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61246,6 +76547,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61269,6 +76571,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61283,6 +76613,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61306,6 +76637,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61320,6 +76679,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61343,6 +76703,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61357,6 +76745,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61380,6 +76769,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61394,6 +76811,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61418,6 +76836,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -61431,6 +76877,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "gun",
     "drop_name": "Gun",
     "item_pool": False,
@@ -61448,6 +76895,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ],
       [
@@ -61471,6 +76924,12 @@ raw_location_table = [
           "item": "Fire",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -61484,6 +76943,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61500,6 +76960,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -61515,6 +77009,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61531,6 +77026,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -61546,6 +77075,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61562,6 +77092,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -61577,6 +77141,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61593,6 +77158,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -61608,6 +77207,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61624,6 +77224,40 @@ raw_location_table = [
       [
         {
           "item": "Progressive Room",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
           "amount": 2
         }
       ]
@@ -61639,6 +77273,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61657,6 +77292,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 2
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -61670,6 +77339,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -61701,6 +77371,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61718,6 +77389,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61732,6 +77431,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61749,6 +77449,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61763,6 +77491,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61780,6 +77509,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61794,6 +77551,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61812,6 +77570,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -61825,6 +77611,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -61856,6 +77643,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -61887,6 +77675,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -61905,6 +77694,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -61918,6 +77713,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61941,6 +77737,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61955,6 +77779,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -61978,6 +77803,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -61992,6 +77845,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62015,6 +77869,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62029,6 +77911,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62052,6 +77935,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62066,6 +77977,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62090,6 +78002,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -62103,6 +78043,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62120,6 +78061,36 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62134,6 +78105,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62151,6 +78123,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62165,6 +78171,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62182,6 +78189,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62196,6 +78237,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62213,6 +78255,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62227,6 +78303,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62244,6 +78321,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62258,6 +78369,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62276,6 +78388,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -62289,6 +78435,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -62320,6 +78467,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62337,6 +78485,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62351,6 +78527,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62368,6 +78545,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62382,6 +78587,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62399,6 +78605,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62413,6 +78647,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62430,6 +78665,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62444,6 +78707,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62461,6 +78725,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62475,6 +78767,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62492,6 +78785,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62506,6 +78827,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62523,6 +78845,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62537,6 +78887,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62554,6 +78905,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62568,6 +78947,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62585,6 +78965,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62599,6 +79007,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62616,6 +79025,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62630,6 +79067,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62647,6 +79085,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62661,6 +79127,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62678,6 +79145,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -62692,6 +79187,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62710,6 +79206,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -62723,6 +79247,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "pickaxe",
     "drop_name": "Pickaxe",
     "item_pool": False,
@@ -62754,6 +79279,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -62785,6 +79311,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62803,6 +79330,30 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -62816,6 +79367,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -62867,6 +79419,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62922,6 +79475,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -62977,6 +79531,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63032,6 +79587,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63087,6 +79643,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63142,6 +79699,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63197,6 +79755,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63252,6 +79811,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63307,6 +79867,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63362,6 +79923,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63417,6 +79979,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63472,6 +80035,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63527,6 +80091,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63582,6 +80147,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63637,6 +80203,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63692,6 +80259,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63747,6 +80315,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63802,6 +80371,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63857,6 +80427,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63912,6 +80483,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -63967,6 +80539,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64022,6 +80595,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64077,6 +80651,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64132,6 +80707,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64187,6 +80763,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64242,6 +80819,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64297,6 +80875,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64352,6 +80931,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64407,6 +80987,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64462,6 +81043,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64517,6 +81099,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64572,6 +81155,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64627,6 +81211,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64682,6 +81267,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64737,6 +81323,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64792,6 +81379,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64847,6 +81435,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64902,6 +81491,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -64957,6 +81547,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65012,6 +81603,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65067,6 +81659,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65122,6 +81715,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65177,6 +81771,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65232,6 +81827,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65287,6 +81883,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65342,6 +81939,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65397,6 +81995,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65414,6 +82013,52 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -65428,6 +82073,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65445,6 +82091,52 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -65459,6 +82151,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65476,6 +82169,52 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Bombs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -65490,6 +82229,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65507,6 +82247,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -65521,6 +82289,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65539,6 +82308,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -65552,6 +82349,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65607,6 +82405,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65662,6 +82461,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65717,6 +82517,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65772,6 +82573,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65827,6 +82629,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65882,6 +82685,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65937,6 +82741,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -65992,6 +82797,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66047,6 +82853,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -66078,6 +82885,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66122,7 +82930,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66137,6 +82945,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66181,7 +82990,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66196,6 +83005,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66240,7 +83050,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66255,6 +83065,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66299,7 +83110,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66314,6 +83125,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66358,7 +83170,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66373,6 +83185,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66417,7 +83230,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66432,6 +83245,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 13,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66476,7 +83290,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66491,6 +83305,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66535,7 +83350,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66550,6 +83365,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66594,7 +83410,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66609,6 +83425,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66653,7 +83470,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66668,6 +83485,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66712,7 +83530,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66727,6 +83545,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66771,7 +83590,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66786,6 +83605,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66830,7 +83650,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66845,6 +83665,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66889,7 +83710,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66904,6 +83725,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -66948,7 +83770,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -66963,6 +83785,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67007,7 +83830,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67022,6 +83845,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67066,7 +83890,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67081,6 +83905,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67125,7 +83950,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67140,6 +83965,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67184,7 +84010,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67199,6 +84025,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67243,7 +84070,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67258,6 +84085,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67302,7 +84130,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67317,6 +84145,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67361,7 +84190,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67376,6 +84205,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67420,7 +84250,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67435,6 +84265,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67479,7 +84310,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67494,6 +84325,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67538,7 +84370,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67553,6 +84385,7 @@ raw_location_table = [
     "tile_x": 29,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67597,7 +84430,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -67612,6 +84445,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "progressiveRoom",
     "drop_name": "Progressive Room",
     "item_pool": False,
@@ -67643,6 +84477,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67660,6 +84495,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67674,6 +84537,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67691,6 +84555,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67705,6 +84597,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67722,6 +84615,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67736,6 +84657,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67753,6 +84675,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67767,6 +84717,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67785,6 +84736,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 3
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -67798,6 +84777,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -67829,6 +84809,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67846,6 +84827,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67860,6 +84869,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67877,6 +84887,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67891,6 +84929,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67908,6 +84947,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67922,6 +84989,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67939,6 +85007,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67953,6 +85049,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -67970,6 +85067,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -67984,6 +85109,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68001,6 +85127,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68015,6 +85169,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68032,6 +85187,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68046,6 +85229,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68063,6 +85247,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68077,6 +85289,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68094,6 +85307,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68108,6 +85349,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 28,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68125,6 +85367,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68139,6 +85409,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68156,6 +85427,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68170,6 +85469,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 27,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68187,6 +85487,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68201,6 +85529,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68218,6 +85547,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68232,6 +85589,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68249,6 +85607,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68263,6 +85649,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68280,6 +85667,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68294,6 +85709,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68311,6 +85727,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68325,6 +85769,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68342,6 +85787,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68356,6 +85829,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68373,6 +85847,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68387,6 +85885,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68404,6 +85903,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68418,6 +85941,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68435,6 +85959,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68449,6 +85997,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68466,6 +86015,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68480,6 +86053,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68497,6 +86071,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -68511,6 +86109,7 @@ raw_location_table = [
     "tile_x": 2,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68555,7 +86154,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68570,6 +86169,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68614,7 +86214,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68629,6 +86229,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68673,7 +86274,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68688,6 +86289,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68732,7 +86334,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68747,6 +86349,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 29,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68791,7 +86394,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68806,6 +86409,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 23,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68850,7 +86454,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68865,6 +86469,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68909,7 +86514,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68924,6 +86529,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -68968,7 +86574,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -68983,6 +86589,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69027,7 +86634,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69042,6 +86649,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69086,7 +86694,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69101,6 +86709,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69145,7 +86754,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69160,6 +86769,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69204,7 +86814,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69219,6 +86829,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69263,7 +86874,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69278,6 +86889,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69322,7 +86934,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69337,6 +86949,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69381,7 +86994,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69396,6 +87009,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69440,7 +87054,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69455,6 +87069,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 24,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69499,7 +87114,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69514,6 +87129,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69558,7 +87174,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69573,6 +87189,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69617,7 +87234,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69632,6 +87249,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 28,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69676,7 +87294,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69691,6 +87309,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69735,7 +87354,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69750,6 +87369,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69794,7 +87414,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69809,6 +87429,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "tankTreads",
     "drop_name": "Tank Treads",
     "item_pool": False,
@@ -69840,6 +87461,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69884,7 +87506,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69899,6 +87521,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 14,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -69943,7 +87566,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -69958,6 +87581,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 15,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70002,7 +87626,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70017,6 +87641,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70061,7 +87686,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70076,6 +87701,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70120,7 +87746,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70135,6 +87761,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70179,7 +87806,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70194,6 +87821,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 27,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70238,7 +87866,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70253,6 +87881,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70297,7 +87926,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70312,6 +87941,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70356,7 +87986,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70371,6 +88001,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70415,7 +88046,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70430,6 +88061,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 11,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70474,7 +88106,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70489,6 +88121,7 @@ raw_location_table = [
     "tile_x": 1,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70533,7 +88166,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70548,6 +88181,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 8,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70592,7 +88226,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70607,6 +88241,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 5,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70651,7 +88286,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70666,6 +88301,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 4,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70710,7 +88346,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70725,6 +88361,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70769,7 +88406,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70784,6 +88421,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70828,7 +88466,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70843,6 +88481,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70887,7 +88526,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70902,6 +88541,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -70946,7 +88586,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -70961,6 +88601,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 7,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71005,7 +88646,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71020,6 +88661,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71064,7 +88706,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71079,6 +88721,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71123,7 +88766,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71138,6 +88781,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 6,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71182,7 +88826,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71197,6 +88841,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 12,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71241,7 +88886,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71256,6 +88901,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71300,7 +88946,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71315,6 +88961,7 @@ raw_location_table = [
     "tile_x": 25,
     "tile_y": 16,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71359,7 +89006,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71374,6 +89021,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 25,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71418,7 +89066,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71433,6 +89081,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 26,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71477,7 +89126,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71492,6 +89141,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71536,7 +89186,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71551,6 +89201,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71595,7 +89246,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71610,6 +89261,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71654,7 +89306,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -71669,6 +89321,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "verminPouch",
     "drop_name": "Vermin Pouch",
     "item_pool": False,
@@ -71687,6 +89340,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -71700,6 +89359,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71723,6 +89383,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71737,6 +89425,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71760,6 +89449,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71774,6 +89491,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71797,6 +89515,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71811,6 +89557,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71835,6 +89582,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -71848,6 +89623,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71865,6 +89641,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71879,6 +89689,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71896,6 +89707,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71910,6 +89755,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71927,6 +89773,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71941,6 +89821,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71958,6 +89839,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -71972,6 +89887,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -71989,6 +89905,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72003,6 +89953,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72020,6 +89971,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72034,6 +90019,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72052,6 +90038,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -72065,6 +90085,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -72096,6 +90117,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 14,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "sword",
     "drop_name": "Sword",
     "item_pool": False,
@@ -72127,6 +90149,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -72158,6 +90181,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72175,6 +90199,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72189,6 +90241,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72206,6 +90259,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72220,6 +90301,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72237,6 +90319,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72251,6 +90361,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72268,6 +90379,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72282,6 +90421,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72299,6 +90439,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72313,6 +90481,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72330,6 +90499,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72344,6 +90541,7 @@ raw_location_table = [
     "tile_x": 5,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72361,6 +90559,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72375,6 +90601,7 @@ raw_location_table = [
     "tile_x": 6,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72392,6 +90619,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72406,6 +90661,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72423,6 +90679,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72437,6 +90721,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 25,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72454,6 +90739,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72468,6 +90781,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72485,6 +90799,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72499,6 +90841,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72516,6 +90859,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72530,6 +90897,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72547,6 +90915,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72561,6 +90953,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72578,6 +90971,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72592,6 +91009,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 9,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72609,6 +91027,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72623,6 +91065,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -72640,6 +91083,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
         }
       ]
     ]
@@ -72654,6 +91103,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72677,6 +91127,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72691,6 +91169,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72714,6 +91193,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72728,6 +91235,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72751,6 +91259,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72765,6 +91301,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72788,6 +91325,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72802,6 +91367,7 @@ raw_location_table = [
     "tile_x": 21,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72826,6 +91392,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -72839,6 +91433,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 13,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -72856,6 +91451,12 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Max HP",
+          "amount": 6
         }
       ]
     ]
@@ -72870,6 +91471,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 3,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72887,6 +91489,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Max HP",
+          "amount": 6
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72901,6 +91537,7 @@ raw_location_table = [
     "tile_x": 4,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72918,6 +91555,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Max HP",
+          "amount": 6
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -72932,6 +91603,7 @@ raw_location_table = [
     "tile_x": 27,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -72950,6 +91622,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Max HP",
+          "amount": 6
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -72963,6 +91669,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -72981,6 +91688,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Max HP",
+          "amount": 6
+        }
       ]
     ]
   },
@@ -72994,6 +91707,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "bomb",
     "drop_name": "Bombs",
     "item_pool": False,
@@ -73012,6 +91726,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -73025,6 +91745,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -73043,6 +91764,12 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
       ]
     ]
   },
@@ -73056,6 +91783,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73079,6 +91807,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73093,6 +91849,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73116,6 +91873,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73130,6 +91915,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73153,6 +91939,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73167,6 +91981,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73190,6 +92005,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73204,6 +92047,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73227,6 +92071,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73241,6 +92113,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73264,6 +92137,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73278,6 +92179,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73301,6 +92203,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73315,6 +92245,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73338,6 +92269,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73352,6 +92311,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 8,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73375,6 +92335,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73389,6 +92377,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 7,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73412,6 +92401,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73426,6 +92443,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73449,6 +92467,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73463,6 +92509,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73486,6 +92533,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73500,6 +92575,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 4,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73523,6 +92599,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73537,6 +92641,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73560,6 +92665,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73574,6 +92707,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 23,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73597,6 +92731,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73611,6 +92773,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 26,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73634,6 +92797,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73648,6 +92839,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73671,6 +92863,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73685,6 +92905,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73708,6 +92929,34 @@ raw_location_table = [
         {
           "item": "Graphics",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73722,6 +92971,7 @@ raw_location_table = [
     "tile_x": 26,
     "tile_y": 10,
     "category": "enemy",
+    "enemy_type": "snake",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73746,6 +92996,34 @@ raw_location_table = [
           "item": "Graphics",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -73759,6 +93037,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73776,6 +93055,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73790,6 +93103,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73807,6 +93121,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73821,6 +93169,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73838,6 +93187,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73852,6 +93235,7 @@ raw_location_table = [
     "tile_x": 7,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73869,6 +93253,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73883,6 +93301,7 @@ raw_location_table = [
     "tile_x": 28,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73900,6 +93319,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73914,6 +93367,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 21,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73931,6 +93385,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73945,6 +93433,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 18,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73962,6 +93451,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -73976,6 +93499,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -73993,6 +93517,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74007,6 +93565,7 @@ raw_location_table = [
     "tile_x": 24,
     "tile_y": 14,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74024,6 +93583,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74038,6 +93631,7 @@ raw_location_table = [
     "tile_x": 8,
     "tile_y": 5,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74055,6 +93649,40 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74069,6 +93697,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 3,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74087,6 +93716,40 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -74100,6 +93763,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 15,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -74131,6 +93795,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 12,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74148,6 +93813,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74162,6 +93855,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74179,6 +93873,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74193,6 +93915,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74210,6 +93933,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74224,6 +93975,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "blob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74241,6 +93993,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74255,6 +94035,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 19,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74272,6 +94053,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74286,6 +94091,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74303,6 +94109,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74317,6 +94147,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 17,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74334,6 +94165,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74348,6 +94203,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 13,
     "category": "enemy",
+    "enemy_type": "negaBlob",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74365,6 +94221,30 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 4
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -74379,6 +94259,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 15,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74397,6 +94278,34 @@ raw_location_table = [
           "item": "Progressive Room",
           "amount": 4
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -74410,6 +94319,7 @@ raw_location_table = [
     "tile_x": 3,
     "tile_y": 3,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "rounds",
     "drop_name": "Max Rounds",
     "item_pool": False,
@@ -74441,6 +94351,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "hp",
     "drop_name": "Max HP",
     "item_pool": False,
@@ -74472,6 +94383,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "fire",
     "drop_name": "Fire",
     "item_pool": False,
@@ -74503,6 +94415,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 17,
     "category": "chest",
+    "enemy_type": "",
     "drop_key": "trapSlow",
     "drop_name": "Slow Trap",
     "item_pool": False,
@@ -74534,6 +94447,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74589,6 +94503,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74644,6 +94559,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74699,6 +94615,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74754,6 +94671,7 @@ raw_location_table = [
     "tile_x": 14,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74809,6 +94727,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74864,6 +94783,7 @@ raw_location_table = [
     "tile_x": 16,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -74937,6 +94857,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75010,6 +94931,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75065,6 +94987,7 @@ raw_location_table = [
     "tile_x": 19,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75120,6 +95043,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75175,6 +95099,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 19,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75230,6 +95155,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75254,6 +95180,46 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -75267,6 +95233,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 21,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75322,6 +95289,7 @@ raw_location_table = [
     "tile_x": 13,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75377,6 +95345,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75432,6 +95401,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75487,6 +95457,7 @@ raw_location_table = [
     "tile_x": 12,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75542,6 +95513,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75597,6 +95569,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 22,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75652,6 +95625,7 @@ raw_location_table = [
     "tile_x": 20,
     "tile_y": 20,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75707,6 +95681,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 17,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75762,6 +95737,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 18,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75817,6 +95793,7 @@ raw_location_table = [
     "tile_x": 15,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75840,6 +95817,46 @@ raw_location_table = [
         {
           "item": "Gun",
           "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -75854,6 +95871,7 @@ raw_location_table = [
     "tile_x": 18,
     "tile_y": 20,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -75878,6 +95896,46 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Graphics",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -75891,6 +95949,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 12,
     "category": "shop",
+    "enemy_type": "",
     "drop_key": "magnifyingGlass",
     "drop_name": "Magnifying Glass",
     "item_pool": False,
@@ -75928,6 +95987,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 12,
     "category": "shop",
+    "enemy_type": "",
     "drop_key": "tankChassis",
     "drop_name": "Tank Chassis",
     "item_pool": False,
@@ -75965,6 +96025,7 @@ raw_location_table = [
     "tile_x": 11,
     "tile_y": 12,
     "category": "shop",
+    "enemy_type": "",
     "drop_key": "orthopedicInserts",
     "drop_name": "Orthopedic Inserts",
     "item_pool": False,
@@ -76002,6 +96063,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 10,
     "category": "easy_destructible",
+    "enemy_type": "",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -76046,7 +96108,7 @@ raw_location_table = [
         },
         {
           "item": "Gun",
-          "amount": 1
+          "amount": 2
         }
       ]
     ]
@@ -76061,6 +96123,7 @@ raw_location_table = [
     "tile_x": 10,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -76101,6 +96164,48 @@ raw_location_table = [
           "item": "Gun",
           "amount": 1
         }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Tank",
+          "amount": 1
+        },
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
+        }
       ]
     ]
   },
@@ -76114,6 +96219,7 @@ raw_location_table = [
     "tile_x": 22,
     "tile_y": 11,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -76131,6 +96237,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -76145,6 +96279,7 @@ raw_location_table = [
     "tile_x": 17,
     "tile_y": 16,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -76162,6 +96297,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -76176,6 +96339,7 @@ raw_location_table = [
     "tile_x": 23,
     "tile_y": 24,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -76193,6 +96357,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]
@@ -76207,6 +96399,7 @@ raw_location_table = [
     "tile_x": 9,
     "tile_y": 22,
     "category": "enemy",
+    "enemy_type": "sorcerer",
     "drop_key": "itemPool",
     "drop_name": "Item Pool",
     "item_pool": True,
@@ -76224,6 +96417,34 @@ raw_location_table = [
         {
           "item": "Progressive Room",
           "amount": 3
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Bombs",
+          "amount": 1
+        },
+        {
+          "item": "Fire",
+          "amount": 1
+        },
+        {
+          "item": "Gun",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item": "Sword",
+          "amount": 1
+        },
+        {
+          "item": "Max Rounds",
+          "amount": 2
         }
       ]
     ]

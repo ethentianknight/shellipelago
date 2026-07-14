@@ -1,0 +1,21 @@
+# Shellipelago 1.14
+
+- Restored Max HP as progression because health gates require it.
+- Required Max Rounds 2 for rounds-consuming enemy vulnerabilities.
+- Removed Gun-only vulnerability from Nega Slimes.
+- Loaded the five rounds granted by the first Fire pickup.
+- Reduced Fire placement to one round and restored its graphics-level-0 sprite.
+- Rendered graphics-level-0 Fire as a simple pixel X.
+- Updated map category markers to show checks currently in logic.
+- Kept map tracker status markers grayscale below graphics level 2.
+- Preserved weapon levels from destructible vulnerability data in AP logic.
+- Added AP container version 7 metadata to packaged APWorld manifests.
+- Added a chest weapon-to-graphics logic audit.
+- Corrected chest graphics requirements in map data.
+- Required graphics level 1 for Water Walkers chest routes.
+- Added an online server disconnect screen with reconnect and main menu actions.
+- Corrected palex00 credit casing.
+- Preserved explicit enemy graphics requirements in AP logic.
+- Removed disconnected network player bodies immediately.
+- Added unique numbered names for duplicate network joins.
+- Hid network players outside the local room from first sync onward.

@@ -503,7 +503,7 @@ var initialRoomBombLevelThreeShakeDuration = 280;
 var initialRoomBombLevelThreeShakeMagnitude = 0.16;
 var initialRoomFireDuration = 1800;
 var initialRoomFireSpreadDelay = 250;
-var initialRoomFireRoundCost = 5;
+var initialRoomFireRoundCost = 1;
 var initialRoomEnemyHurtDuration = 350;
 var initialRoomEnemyDeathDuration = 650;
 var initialRoomEnemySwordStunDuration = 500;
@@ -4764,13 +4764,12 @@ function initialRoomDrawTankShotImpactParticles(initialRoomShot, initialRoomX, i
 function initialRoomSyncExplosionEffects(initialRoomNow) {
   var initialRoomActiveEffectKeys = {};
 
-  if (initialRoomGetGraphicsLevel() === 0) {
-    initialRoomEffectLayer.innerHTML = "";
-    return;
-  }
-
   initialRoomBombs.forEach(function (initialRoomBomb) {
     if (initialRoomBomb.kind !== "fire") {
+      return;
+    }
+
+    if (initialRoomGetGraphicsLevel() === 0) {
       return;
     }
 
@@ -4828,6 +4827,11 @@ function initialRoomDrawBomb(initialRoomBomb) {
 
 function initialRoomDrawExplosion(initialRoomBomb) {
   if (initialRoomBomb.kind === "fire") {
+    if (initialRoomGetGraphicsLevel() === 0) {
+      initialRoomGetBombExplosionTiles(initialRoomBomb).forEach(function (initialRoomExplosionTile) {
+        initialRoomDrawExplosionBasic(initialRoomTileToScreen(initialRoomExplosionTile.x, initialRoomExplosionTile.y));
+      });
+    }
     return;
   }
 
@@ -4903,6 +4907,23 @@ function initialRoomDrawBombBasic(initialRoomPosition) {
   initialRoomContext.fillRect(initialRoomCenterX - (initialRoomPixelUnit / 2), initialRoomCenterY - initialRoomArm, initialRoomPixelUnit, initialRoomArm * 2);
   initialRoomContext.fillRect(initialRoomCenterX - initialRoomArm, initialRoomCenterY - (initialRoomPixelUnit / 2), initialRoomArm * 2, initialRoomPixelUnit);
   initialRoomContext.fillRect(initialRoomCenterX - initialRoomPixelUnit, initialRoomCenterY - initialRoomPixelUnit, initialRoomPixelUnit * 2, initialRoomPixelUnit * 2);
+}
+
+function initialRoomDrawExplosionBasic(initialRoomPosition) {
+  var initialRoomPixelUnit = initialRoomGetPixelUnit();
+  var initialRoomInset = initialRoomPixelUnit * 4;
+  var initialRoomStep = initialRoomPixelUnit * 2;
+  var initialRoomStartX = initialRoomPosition.x + initialRoomInset;
+  var initialRoomEndX = initialRoomPosition.x + initialRoomView.tileSize - initialRoomInset;
+  var initialRoomStartY = initialRoomPosition.y + initialRoomInset;
+  var initialRoomOffset = 0;
+
+  initialRoomContext.fillStyle = "#f7f7f1";
+  while (initialRoomOffset <= initialRoomEndX - initialRoomStartX) {
+    initialRoomContext.fillRect(initialRoomStartX + initialRoomOffset, initialRoomStartY + initialRoomOffset, initialRoomPixelUnit, initialRoomPixelUnit);
+    initialRoomContext.fillRect(initialRoomEndX - initialRoomOffset, initialRoomStartY + initialRoomOffset, initialRoomPixelUnit, initialRoomPixelUnit);
+    initialRoomOffset += initialRoomStep;
+  }
 }
 
 function initialRoomGetExplosionDuration(initialRoomBomb) {
@@ -7448,19 +7469,30 @@ function initialRoomDrawMapRoomCellMarkers(initialRoomRoomX, initialRoomRoomY, i
     initialRoomDrawMapCellMarkerText("W", initialRoomX + initialRoomCellSize - initialRoomPadding, initialRoomY + initialRoomPadding, "right", "top");
   }
 
-  if (initialRoomStatus.enemyRemaining > 0) {
-    initialRoomDrawMapCellMarkerText(String(initialRoomStatus.enemyRemaining), initialRoomX + initialRoomPadding, initialRoomY + initialRoomCellSize - initialRoomPadding, "left", "bottom");
-  }
-
-  if (initialRoomStatus.destructibleRemaining > 0) {
-    initialRoomDrawMapCellMarkerText(String(initialRoomStatus.destructibleRemaining), initialRoomX + initialRoomCellSize - initialRoomPadding, initialRoomY + initialRoomCellSize - initialRoomPadding, "right", "bottom");
-  }
-
-  if (initialRoomStatus.optionalChecksEnabled && initialRoomStatus.optionalRemaining <= 0) {
-    initialRoomDrawMapCellMarkerText("✓", initialRoomX + Math.floor(initialRoomCellSize / 2), initialRoomY + Math.floor(initialRoomCellSize / 2), "center", "middle");
-  }
+  initialRoomDrawMapCategoryMarker(initialRoomStatus.chestTotal, initialRoomStatus.chestRemaining, initialRoomStatus.chestAvailable, initialRoomX + initialRoomPadding, initialRoomY + initialRoomPadding, "left", "top");
+  initialRoomDrawMapCategoryMarker(initialRoomStatus.enemyTotal, initialRoomStatus.enemyRemaining, initialRoomStatus.enemyAvailable, initialRoomX + initialRoomPadding, initialRoomY + initialRoomCellSize - initialRoomPadding, "left", "bottom");
+  initialRoomDrawMapCategoryMarker(initialRoomStatus.destructibleTotal, initialRoomStatus.destructibleRemaining, initialRoomStatus.destructibleAvailable, initialRoomX + initialRoomCellSize - initialRoomPadding, initialRoomY + initialRoomCellSize - initialRoomPadding, "right", "bottom");
 
   initialRoomContext.restore();
+}
+
+function initialRoomDrawMapCategoryMarker(initialRoomTotal, initialRoomRemaining, initialRoomAvailable, initialRoomX, initialRoomY, initialRoomAlign, initialRoomBaseline) {
+  var initialRoomUseColor = initialRoomGetGraphicsLevel() >= 2;
+
+  if (initialRoomTotal <= 0) {
+    return;
+  }
+
+  if (initialRoomRemaining <= 0) {
+    initialRoomContext.fillStyle = initialRoomUseColor ? "#8f949d" : "#4a4f58";
+    initialRoomDrawMapCellMarkerText("✓", initialRoomX, initialRoomY, initialRoomAlign, initialRoomBaseline);
+    return;
+  }
+
+  initialRoomContext.fillStyle = initialRoomAvailable > 0 ?
+    (initialRoomUseColor ? "#41b95f" : "#f7f7f1") :
+    (initialRoomUseColor ? "#d94141" : "#8f949d");
+  initialRoomDrawMapCellMarkerText(String(initialRoomAvailable), initialRoomX, initialRoomY, initialRoomAlign, initialRoomBaseline);
 }
 
 function initialRoomDrawMapCellMarkerText(initialRoomText, initialRoomX, initialRoomY, initialRoomAlign, initialRoomBaseline) {
@@ -7584,8 +7616,15 @@ function initialRoomGetMapRoomCheckStatus(initialRoomRoomX, initialRoomRoomY) {
     available: 0,
     blocked: 0,
     remaining: 0,
+    chestTotal: 0,
+    chestRemaining: 0,
+    chestAvailable: 0,
+    destructibleTotal: 0,
     destructibleRemaining: 0,
+    destructibleAvailable: 0,
+    enemyTotal: 0,
     enemyRemaining: 0,
+    enemyAvailable: 0,
     optionalChecksEnabled: false,
     optionalRemaining: 0,
     optionalTotal: 0,
@@ -7606,18 +7645,39 @@ function initialRoomGetMapRoomCheckStatus(initialRoomRoomX, initialRoomRoomY) {
   initialRoomCanAccessRoom = initialRoomCanMeetRequirementGroups(initialRoomRoom.requirements || []);
 
   initialRoomRoom.tiles.forEach(function (initialRoomTile) {
+    var initialRoomGeneratedLocation = initialRoomGetGeneratedArchipelagoLocation(initialRoomTile, initialRoomRoom);
+    var initialRoomCategory = initialRoomGeneratedLocation ? initialRoomGeneratedLocation.category : "";
+    var initialRoomIsChestLocation = initialRoomCategory === "chest" || (!initialRoomGeneratedLocation && initialRoomIsChestCheckTile(initialRoomTile));
+    var initialRoomIsCollected = false;
+
     if (initialRoomAddOptionalMapLocationStatus(initialRoomStatus, initialRoomRoom, initialRoomTile, initialRoomCanAccessRoom)) {
       return;
     }
 
-    if (!initialRoomIsMapCheckTile(initialRoomTile) || !initialRoomIsMapMeaningfulCheckTile(initialRoomTile) || initialRoomIsMapCheckCollected(initialRoomTile, initialRoomRoom)) {
+    if (!initialRoomIsMapCheckTile(initialRoomTile) || !initialRoomIsMapMeaningfulCheckTile(initialRoomTile)) {
+      return;
+    }
+
+    if (initialRoomIsChestLocation) {
+      initialRoomStatus.chestTotal += 1;
+    }
+
+    initialRoomIsCollected = initialRoomIsMapCheckCollected(initialRoomTile, initialRoomRoom);
+    if (initialRoomIsCollected) {
       return;
     }
 
     initialRoomStatus.remaining += 1;
 
+    if (initialRoomIsChestLocation) {
+      initialRoomStatus.chestRemaining += 1;
+    }
+
     if (initialRoomCanAccessRoom && initialRoomCanOpenMapCheckTile(initialRoomTile)) {
       initialRoomStatus.available += 1;
+      if (initialRoomIsChestLocation) {
+        initialRoomStatus.chestAvailable += 1;
+      }
     } else {
       initialRoomStatus.blocked += 1;
     }
@@ -7650,6 +7710,12 @@ function initialRoomAddOptionalMapLocationStatus(initialRoomStatus, initialRoomR
   }
 
   initialRoomStatus.optionalTotal += 1;
+  if (initialRoomIsDestructibleLocation) {
+    initialRoomStatus.destructibleTotal += 1;
+  }
+  if (initialRoomIsEnemyLocation) {
+    initialRoomStatus.enemyTotal += 1;
+  }
   initialRoomLocationIsMissing = archipelagoClientHasMissingLocation(initialRoomGeneratedLocation.id);
 
   if (!initialRoomLocationIsMissing) {
@@ -7661,6 +7727,12 @@ function initialRoomAddOptionalMapLocationStatus(initialRoomStatus, initialRoomR
 
   if (initialRoomCanAccessRoom && initialRoomCanOpenMapCheckTile(initialRoomTile)) {
     initialRoomStatus.available += 1;
+    if (initialRoomIsDestructibleLocation) {
+      initialRoomStatus.destructibleAvailable += 1;
+    }
+    if (initialRoomIsEnemyLocation) {
+      initialRoomStatus.enemyAvailable += 1;
+    }
   } else {
     initialRoomStatus.blocked += 1;
   }
@@ -7791,7 +7863,7 @@ function initialRoomCanOpenMapCheckTile(initialRoomTile) {
       return false;
     }
 
-    return initialRoomCanCollectTileRequirements(initialRoomTile);
+    return initialRoomCanDefeatMapEnemy(initialRoomTile) && initialRoomCanMeetEnemyRequirementGroups(initialRoomTile.requirements || []);
   }
 
   if (initialRoomIsDestructableCheckTile(initialRoomTile)) {
@@ -7803,6 +7875,45 @@ function initialRoomCanOpenMapCheckTile(initialRoomTile) {
   }
 
   return initialRoomCanCollectTileRequirements(initialRoomTile);
+}
+
+function initialRoomCanDefeatMapEnemy(initialRoomTile) {
+  var initialRoomHasRounds = progressionManagerGetProgressiveValue("rounds") >= 2;
+  var initialRoomEnemyType = String(initialRoomTile.enemyType || (initialRoomTile.enemy && initialRoomTile.enemy.name) || "").toLowerCase();
+
+  if (progressionManagerGetProgressiveValue("sword") > 0) {
+    return true;
+  }
+
+  if (!initialRoomHasRounds) {
+    return false;
+  }
+
+  return progressionManagerGetProgressiveValue("bomb") > 0 ||
+    progressionManagerGetProgressiveValue("fire") > 0 ||
+    (initialRoomEnemyType !== "negablob" && progressionManagerGetProgressiveValue("gun") > 0);
+}
+
+function initialRoomCanMeetEnemyRequirementGroups(initialRoomRequirements) {
+  var initialRoomHasRounds = progressionManagerGetProgressiveValue("rounds") >= 2;
+
+  return initialRoomNormalizeRequirementGroups(initialRoomRequirements).every(function (initialRoomRequirementGroup) {
+    var initialRoomMetRequirement = initialRoomRequirementGroup.some(function (initialRoomRequirement) {
+      return progressionManagerHasRequirement(initialRoomRequirement);
+    });
+    var initialRoomHasRoundsRequirement = initialRoomRequirementGroup.some(initialRoomIsRoundsConsumingRequirement);
+    var initialRoomMetNonRoundsRequirement = initialRoomRequirementGroup.some(function (initialRoomRequirement) {
+      return !initialRoomIsRoundsConsumingRequirement(initialRoomRequirement) && progressionManagerHasRequirement(initialRoomRequirement);
+    });
+
+    return initialRoomMetRequirement && (!initialRoomHasRoundsRequirement || initialRoomHasRounds || initialRoomMetNonRoundsRequirement);
+  });
+}
+
+function initialRoomIsRoundsConsumingRequirement(initialRoomRequirement) {
+  var initialRoomRequirementKey = String(initialRoomRequirement || "").split(":")[0].replace(/[^a-z0-9]+/gi, "").toLowerCase();
+
+  return ["bomb", "bombs", "fire", "gun"].indexOf(initialRoomRequirementKey) >= 0;
 }
 
 function initialRoomCanDestroyMapCheckTile(initialRoomTile) {

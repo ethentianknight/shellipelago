@@ -17,8 +17,8 @@ const progressiveItems = {
   gun: { name: "Gun", count: 3, classification: "progression" },
   sword: { name: "Sword", count: 3, classification: "progression" },
   fire: { name: "Fire", count: 2, classification: "progression" },
-  hp: { name: "Max HP", count: 30, classification: "filler" },
-  rounds: { name: "Max Rounds", count: 40, classification: "filler" },
+  hp: { name: "Max HP", count: 30, classification: "progression" },
+  rounds: { name: "Max Rounds", count: 40, classification: "progression" },
 };
 
 const basicItems = {
@@ -282,27 +282,44 @@ function removeRedundantRequirementRows(rows) {
   reducedRows.forEach((row) => rows.push(row));
 }
 
+function addEnemyRoundsRequirementRows(rows) {
+  const roundsItems = new Set(["Bombs", "Fire", "Gun"]);
+  const originalRows = rows.slice();
+
+  originalRows.forEach((row) => {
+    if (!row.some((requirement) => roundsItems.has(requirement.item))) {
+      return;
+    }
+
+    addRequirementRow(rows, row.filter((requirement) => !roundsItems.has(requirement.item)).concat([
+      { item: "Max Rounds", amount: 2 },
+    ]));
+  });
+}
+
 function vulnerabilityRequirement(token) {
+  const parts = String(token || "").split(":");
   const key = canonicalDrop(token);
+  const requestedAmount = Math.max(1, Number(parts[1]) || 1);
 
   if (key === "tankTreads" || key === "tankCannon" || key === "tank") {
     return { item: "Tank", amount: 1 };
   }
 
   if (key === "bomb") {
-    return { item: "Bombs", amount: 1 };
+    return { item: "Bombs", amount: requestedAmount };
   }
 
   if (key === "gun") {
-    return { item: "Gun", amount: 1 };
+    return { item: "Gun", amount: requestedAmount };
   }
 
   if (key === "sword") {
-    return { item: "Sword", amount: 1 };
+    return { item: "Sword", amount: requestedAmount };
   }
 
   if (key === "fire") {
-    return { item: "Fire", amount: 1 };
+    return { item: "Fire", amount: requestedAmount };
   }
 
   if (key === "pickaxe") {
@@ -310,16 +327,6 @@ function vulnerabilityRequirement(token) {
   }
 
   return null;
-}
-
-function addImpliedRequirementRows(rows) {
-  const originalRows = rows.slice();
-
-  originalRows.forEach((row) => {
-    if (row.every((requirement) => requirement.item === "Pickaxe" || requirement.item === "Bombs" || requirement.item === "Fire")) {
-      addRequirementRow(rows, row.filter((requirement) => requirement.item !== "Pickaxe" && requirement.item !== "Bombs" && requirement.item !== "Fire").concat([{ item: "Graphics", amount: 2 }]));
-    }
-  });
 }
 
 function locationRequirements(room, tile) {
@@ -333,13 +340,7 @@ function locationRequirements(room, tile) {
   }
 
   normalizeRequirementRows(room.requirements).forEach((row) => addRequirementRow(rows, row));
-  normalizeRequirementRows(tile.requirements).forEach((row) => {
-    const locationRow = isEnemy(tile) && !isSnakeEnemy(tile) ?
-      row.filter((requirement) => requirement.item !== "Graphics") :
-      row;
-
-    addRequirementRow(rows, locationRow);
-  });
+  normalizeRequirementRows(tile.requirements).forEach((row) => addRequirementRow(rows, row));
 
   if (isShop(tile)) {
     addRequirementRow(rows, [{ item: "Sword", amount: 1 }]);
@@ -352,13 +353,26 @@ function locationRequirements(room, tile) {
     addRequirementRow(rows, vulnerabilityRow);
   }
 
-  addImpliedRequirementRows(rows);
-
   if (isSnakeEnemy(tile)) {
     addRequirementRow(rows, [{ item: "Graphics", amount: 1 }]);
   }
 
   removeRedundantRequirementRows(rows);
+
+  if (isEnemy(tile)) {
+    const baseEnemyVulnerabilities = [
+      { item: "Sword", amount: 1 },
+      { item: "Bombs", amount: 1 },
+      { item: "Fire", amount: 1 },
+    ];
+
+    if (canonicalDrop(tile.enemyType || (tile.enemy && tile.enemy.name)) !== "negaBlob") {
+      baseEnemyVulnerabilities.push({ item: "Gun", amount: 1 });
+    }
+
+    addRequirementRow(rows, baseEnemyVulnerabilities);
+    addEnemyRoundsRequirementRows(rows);
+  }
 
   return rows;
 }
@@ -431,6 +445,7 @@ function buildLocations(mapData) {
         tile_x: tile.x,
         tile_y: tile.y,
         category,
+        enemy_type: isEnemy(tile) ? canonicalDrop(tile.enemyType || (tile.enemy && tile.enemy.name)) : "",
         drop_key: canonicalDrop(drop),
         drop_name: itemNameForDrop(drop),
         item_pool: isItemPoolDrop(drop),

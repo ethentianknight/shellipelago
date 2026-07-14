@@ -9,7 +9,7 @@ from .locations import location_table
 from .options import ESSENTIAL_ITEMS, MAX_RESOURCE_UPGRADES, ShellipelagoOptions
 
 
-__version__ = "1.13"
+__version__ = "1.14"
 
 
 class ShellipelagoItem(Item):

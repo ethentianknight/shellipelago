@@ -50,14 +50,14 @@ http://creativecommons.org/licenses/by/4.0/
 
 Logic Testing
 Mark Davis
-Palex00
+palex00
 
 Beta Testers
 Josh Keaton
 Jarrod Mccown
 
 Special Thanks
-Palex00
+palex00
 Wanyay
 
 Shellipelago

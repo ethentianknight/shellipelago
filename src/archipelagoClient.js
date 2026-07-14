@@ -9,6 +9,7 @@ var archipelagoClientSessionId = "shellipelago-session-" + Date.now() + "-" + Ma
 var archipelagoClientConnectionId = Date.now() + Math.floor(Math.random() * 1000000);
 var archipelagoClientEnergyLinkValue = 0;
 var archipelagoClientEnergyLinkEfficiency = 30;
+var archipelagoClientOfflineOverlay = null;
 var archipelagoClientItemIdToCheckKeys = {
   100000: ["graphics"],
   100001: [
@@ -19,6 +20,72 @@ var archipelagoClientItemIdToCheckKeys = {
     "progressiveRoom5"
   ]
 };
+
+function archipelagoClientEnsureOfflineOverlay() {
+  if (archipelagoClientOfflineOverlay) {
+    return archipelagoClientOfflineOverlay;
+  }
+
+  archipelagoClientOfflineOverlay = document.createElement("div");
+  archipelagoClientOfflineOverlay.className = "server-offline-overlay";
+  archipelagoClientOfflineOverlay.hidden = true;
+  archipelagoClientOfflineOverlay.innerHTML = [
+    '<div class="server-offline-panel" role="alertdialog" aria-modal="true" aria-labelledby="server-offline-title">',
+    '<h1 id="server-offline-title">Server Offline</h1>',
+    '<p class="server-offline-status" aria-live="polite"></p>',
+    '<div class="server-offline-actions">',
+    '<button class="primary-button" type="button" data-server-offline-reconnect>Reconnect</button>',
+    '<button class="secondary-button" type="button" data-server-offline-menu>Main Menu</button>',
+    '</div>',
+    '</div>'
+  ].join("");
+  archipelagoClientOfflineOverlay.querySelector("[data-server-offline-reconnect]").addEventListener("click", archipelagoClientReconnect);
+  archipelagoClientOfflineOverlay.querySelector("[data-server-offline-menu]").addEventListener("click", function () {
+    globalsState.archipelago.connected = false;
+    globalsState.archipelago.socket = null;
+    window.location.reload();
+  });
+  document.body.appendChild(archipelagoClientOfflineOverlay);
+  return archipelagoClientOfflineOverlay;
+}
+
+function archipelagoClientShowOfflineOverlay() {
+  var archipelagoClientOverlay = archipelagoClientEnsureOfflineOverlay();
+  var archipelagoClientStatus = archipelagoClientOverlay.querySelector(".server-offline-status");
+  var archipelagoClientReconnectButton = archipelagoClientOverlay.querySelector("[data-server-offline-reconnect]");
+
+  archipelagoClientStatus.textContent = "";
+  archipelagoClientReconnectButton.disabled = false;
+  archipelagoClientOverlay.hidden = false;
+  archipelagoClientReconnectButton.focus();
+}
+
+function archipelagoClientHideOfflineOverlay() {
+  if (archipelagoClientOfflineOverlay) {
+    archipelagoClientOfflineOverlay.hidden = true;
+  }
+}
+
+function archipelagoClientReconnect() {
+  var archipelagoClientOverlay = archipelagoClientEnsureOfflineOverlay();
+  var archipelagoClientStatus = archipelagoClientOverlay.querySelector(".server-offline-status");
+  var archipelagoClientReconnectButton = archipelagoClientOverlay.querySelector("[data-server-offline-reconnect]");
+  var archipelagoClientConnectionInfo = {
+    host: globalsState.archipelago.host,
+    port: globalsState.archipelago.port,
+    slot: globalsState.archipelago.slot,
+    password: globalsState.archipelago.password
+  };
+
+  archipelagoClientStatus.textContent = "Reconnecting...";
+  archipelagoClientReconnectButton.disabled = true;
+  archipelagoClientConnect(archipelagoClientConnectionInfo).catch(function (archipelagoClientError) {
+    console.error(archipelagoClientError);
+    archipelagoClientStatus.textContent = archipelagoClientError.message;
+    archipelagoClientReconnectButton.disabled = false;
+    archipelagoClientReconnectButton.focus();
+  });
+}
 
 if (typeof archipelagoGeneratedItemIdToCheckKeys !== "undefined") {
   archipelagoClientItemIdToCheckKeys = archipelagoGeneratedItemIdToCheckKeys;
@@ -1175,6 +1242,7 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
   var archipelagoClientEnergyKey = "";
 
   globalsState.archipelago.connected = true;
+  archipelagoClientHideOfflineOverlay();
   globalsState.archipelago.host = archipelagoClientConnectionInfo.host;
   globalsState.archipelago.port = archipelagoClientConnectionInfo.port;
   globalsState.archipelago.slot = archipelagoClientConnectionInfo.slot;
@@ -1565,6 +1633,13 @@ function archipelagoClientConnectSingleUrl(archipelagoClientConnectionInfo, arch
     archipelagoClientSocket.addEventListener("close", function () {
       if (!archipelagoClientHasResolved) {
         archipelagoClientFail(new Error("Archipelago connection closed before login completed at " + archipelagoClientUrl + "."));
+        return;
+      }
+
+      if (globalsState.archipelago.socket === archipelagoClientSocket && globalsState.archipelago.connected) {
+        globalsState.archipelago.connected = false;
+        globalsState.archipelago.socket = null;
+        archipelagoClientShowOfflineOverlay();
       }
     });
   });

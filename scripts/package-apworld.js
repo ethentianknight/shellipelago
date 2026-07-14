@@ -10,6 +10,7 @@ const worldPath = path.join(rootPath, "archipelago", "world", worldName);
 const sourceApworldPath = path.join(rootPath, "src", "shellipelago.apworld");
 const outputPath = path.join(rootPath, "build", buildPaths.archipelagoFolderName);
 const outputFilePath = path.join(outputPath, worldName + ".apworld");
+const apworldContainerVersion = 7;
 
 function getCrcTable() {
   const table = [];
@@ -48,9 +49,19 @@ function getFiles(directoryPath, prefix = worldName) {
       return getFiles(entryPath, archivePath);
     }
 
+    let content = fs.readFileSync(entryPath);
+
+    if (entry.name === "archipelago.json" && path.resolve(directoryPath) === path.resolve(worldPath)) {
+      const manifest = JSON.parse(content.toString("utf8"));
+
+      manifest.version = apworldContainerVersion;
+      manifest.compatible_version = apworldContainerVersion;
+      content = Buffer.from(JSON.stringify(manifest, null, 2) + "\n", "utf8");
+    }
+
     return [{
       archivePath,
-      content: fs.readFileSync(entryPath),
+      content,
     }];
   });
 }
