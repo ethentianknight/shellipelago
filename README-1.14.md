@@ -19,3 +19,9 @@
 - Removed disconnected network player bodies immediately.
 - Added unique numbered names for duplicate network joins.
 - Hid network players outside the local room from first sync onward.
+- Renamed AP enemy, destructible, and shop locations for clearer tracking.
+- Mapped destructible location names to their exact tile sprites.
+- Scouted randomized shop contents for accurate item icons and walk-over messages.
+- Matched in-game map availability counts to generated AP location requirements.
+- Required guarded gun-route chests to have two Max Rounds unless reached by Sword or Steel Toe.
+- Kept tracer rounds black in grayscale graphics modes.

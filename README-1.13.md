@@ -79,7 +79,7 @@
 - TODO: Choose appropriate classifications for BGM and SFX.
 - TODO: Standardize deaths as `Game over: <reason>`, including enemy, trap, and received DeathLink reasons.
 - TODO: Enemies guarded by snakes need graphics 1
-- TODO: Blob Falls Chest 1,9 - requires graphics 2 - check that bombable vulnerables require graphics 2
+- TODO: Blob Falls: Chest #1 - requires graphics 2 - check that bombable vulnerables require graphics 2
   - Gaia's bow chest
 - Watchtower hills chest shows as out of logic despite having prog room 2.
 - Shop shows as in logic but ap shows not

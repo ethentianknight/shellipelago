@@ -260,6 +260,7 @@ var globalsState = {
     },
     checkedLocations: [],
     missingLocations: [],
+    scoutedLocations: {},
     slotData: {},
     worldVersion: "",
     deathLinkEnabled: null,

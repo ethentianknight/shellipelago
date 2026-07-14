@@ -712,6 +712,69 @@ function archipelagoClientGetItemNameById(archipelagoClientItemId, archipelagoCl
   return archipelagoClientGetDataPackageNameByAnyGame("item", archipelagoClientItemId);
 }
 
+function archipelagoClientGetScoutedLocation(archipelagoClientLocationId) {
+  return globalsState.archipelago.scoutedLocations[String(archipelagoClientLocationId)] || null;
+}
+
+function archipelagoClientGetScoutedLocationItemName(archipelagoClientLocationId) {
+  var archipelagoClientScoutedLocation = archipelagoClientGetScoutedLocation(archipelagoClientLocationId);
+
+  if (!archipelagoClientScoutedLocation) {
+    return "";
+  }
+
+  return archipelagoClientGetItemNameById(archipelagoClientScoutedLocation.item, archipelagoClientScoutedLocation.player);
+}
+
+function archipelagoClientGetScoutedLocationItemKey(archipelagoClientLocationId) {
+  var archipelagoClientScoutedLocation = archipelagoClientGetScoutedLocation(archipelagoClientLocationId);
+  var archipelagoClientRecipientGame = "";
+  var archipelagoClientCheckKeys = null;
+
+  if (!archipelagoClientScoutedLocation) {
+    return "";
+  }
+
+  archipelagoClientRecipientGame = globalsState.archipelago.playerGames[String(archipelagoClientScoutedLocation.player)] || "";
+  if (archipelagoClientRecipientGame && archipelagoClientRecipientGame !== archipelagoClientGame) {
+    return "energy";
+  }
+
+  archipelagoClientCheckKeys = archipelagoClientItemIdToCheckKeys[String(archipelagoClientScoutedLocation.item)] ||
+    archipelagoClientItemIdToCheckKeys[Number(archipelagoClientScoutedLocation.item)];
+  return archipelagoClientCheckKeys && archipelagoClientCheckKeys[0] ? archipelagoClientCheckKeys[0] : "itemPool";
+}
+
+function archipelagoClientRequestShopLocationScouts(archipelagoClientSocket) {
+  var archipelagoClientShopLocationIds = [];
+
+  if (typeof archipelagoGeneratedLocationCoordToLocation === "undefined") {
+    return;
+  }
+
+  Object.keys(archipelagoGeneratedLocationCoordToLocation).forEach(function (archipelagoClientLocationKey) {
+    var archipelagoClientLocation = archipelagoGeneratedLocationCoordToLocation[archipelagoClientLocationKey];
+
+    if (archipelagoClientLocation && archipelagoClientLocation.category === "shop" && !archipelagoClientShopLocationIds.includes(Number(archipelagoClientLocation.id))) {
+      archipelagoClientShopLocationIds.push(Number(archipelagoClientLocation.id));
+    }
+  });
+
+  if (archipelagoClientShopLocationIds.length) {
+    archipelagoClientSend(archipelagoClientSocket, {
+      cmd: "LocationScouts",
+      locations: archipelagoClientShopLocationIds,
+      create_as_hint: 0
+    });
+  }
+}
+
+function archipelagoClientHandleLocationInfo(archipelagoClientPacket) {
+  (archipelagoClientPacket.locations || []).forEach(function (archipelagoClientLocationInfo) {
+    globalsState.archipelago.scoutedLocations[String(archipelagoClientLocationInfo.location)] = archipelagoClientLocationInfo;
+  });
+}
+
 function archipelagoClientGetLocationNameById(archipelagoClientLocationId, archipelagoClientPlayerId) {
   var archipelagoClientDataPackageLocationName = archipelagoClientGetDataPackageNameByPlayerId(
     "location",
@@ -1258,6 +1321,7 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
   };
   globalsState.archipelago.checkedLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.checked_locations);
   globalsState.archipelago.missingLocations = archipelagoClientNormalizeIdList(archipelagoClientPacket.missing_locations);
+  globalsState.archipelago.scoutedLocations = {};
   globalsState.archipelago.slotData = archipelagoClientPacket.slot_data || {};
   if (typeof shellipelagoNetSetNameFromSlot === "function") {
     shellipelagoNetSetNameFromSlot(archipelagoClientConnectionInfo.slot);
@@ -1287,6 +1351,7 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
   }
 
   archipelagoClientRequestDataPackage(archipelagoClientSocket);
+  archipelagoClientRequestShopLocationScouts(archipelagoClientSocket);
   archipelagoClientSend(archipelagoClientSocket, { cmd: "Sync" });
 
   if (isDebug) {
@@ -1338,6 +1403,11 @@ function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClie
 
     if (archipelagoClientPacket.cmd === "DataPackage") {
       archipelagoClientHandleDataPackage(archipelagoClientPacket);
+      return;
+    }
+
+    if (archipelagoClientPacket.cmd === "LocationInfo") {
+      archipelagoClientHandleLocationInfo(archipelagoClientPacket);
       return;
     }
 

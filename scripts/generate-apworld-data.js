@@ -10,6 +10,50 @@ const srcGeneratedPath = path.join(rootPath, "src", "archipelagoGeneratedData.js
 const itemBaseId = 100000;
 const locationBaseId = 200000;
 
+const destructibleTypeBySprite = {
+  "4,4": "Rock",
+  "4,5": "Rock",
+  "4,6": "Rock",
+  "9,2": "Grass",
+  "9,3": "Grass",
+  "10,3": "Grass",
+  "3,10": "Door",
+  "13,16": "Door",
+  "11,13": "Jar",
+  "2,26": "Stop Sign",
+  "2,27": "Stop Sign",
+  "3,26": "Stop Sign",
+  "3,27": "Stop Sign",
+  "4,7": "House",
+  "5,7": "House",
+  "6,7": "House",
+  "4,8": "House",
+  "5,8": "House",
+  "6,8": "House",
+  "7,7": "House",
+  "8,7": "House",
+  "9,7": "House",
+  "7,8": "House",
+  "8,8": "House",
+  "9,8": "House",
+  "4,9": "House",
+  "5,9": "House",
+  "6,9": "House",
+  "4,10": "House",
+  "5,10": "House",
+  "6,10": "House",
+  "4,11": "House",
+  "5,11": "House",
+  "6,11": "House",
+};
+
+const enemyTypeNames = {
+  blob: "Slime",
+  negaBlob: "Nega Slime",
+  snake: "Snake",
+  sorcerer: "Mage",
+};
+
 const progressiveItems = {
   graphics: { name: "Graphics", count: 2, classification: "progression" },
   progressiveRoom: { name: "Progressive Room", count: 5, classification: "progression" },
@@ -177,6 +221,22 @@ function isSnakeEnemy(tile) {
   return isEnemy(tile) && canonicalDrop(tile.enemyType || (tile.enemy && tile.enemy.name)) === "snake";
 }
 
+function enemyTypeName(tile) {
+  if (tile && tile.isShopkeep) {
+    return "Shopkeep";
+  }
+
+  const key = canonicalDrop(tile && (tile.enemyType || (tile.enemy && tile.enemy.name)));
+
+  return enemyTypeNames[key] || String(key || "Enemy");
+}
+
+function destructibleTypeName(tile) {
+  const sprite = tile && tile.sprite || {};
+
+  return destructibleTypeBySprite[`${sprite.x},${sprite.y}`] || "Unknown";
+}
+
 function isShop(tile) {
   return Boolean(tile && tile.type === "shop");
 }
@@ -297,6 +357,21 @@ function addEnemyRoundsRequirementRows(rows) {
   });
 }
 
+function addGuardedChestRoundsRequirementRow(rows) {
+  const hasGunRequirement = rows.some((row) => row.some((requirement) => requirement.item === "Gun"));
+  const hasSteelToeRequirement = rows.some((row) => row.some((requirement) => requirement.item === "Steel Toe"));
+
+  if (!hasGunRequirement) {
+    return;
+  }
+
+  addRequirementRow(rows, [
+    { item: "Max Rounds", amount: 2 },
+    { item: "Sword", amount: 1 },
+    hasSteelToeRequirement ? { item: "Steel Toe", amount: 1 } : null,
+  ]);
+}
+
 function vulnerabilityRequirement(token) {
   const parts = String(token || "").split(":");
   const key = canonicalDrop(token);
@@ -359,6 +434,10 @@ function locationRequirements(room, tile) {
 
   removeRedundantRequirementRows(rows);
 
+  if (isChest(tile)) {
+    addGuardedChestRoundsRequirementRow(rows);
+  }
+
   if (isEnemy(tile)) {
     const baseEnemyVulnerabilities = [
       { item: "Sword", amount: 1 },
@@ -377,16 +456,51 @@ function locationRequirements(room, tile) {
   return rows;
 }
 
-function locationName(room, tile, index) {
+function locationName(room, tile, roomLocationOrder) {
   const roomName = room.name || room.id || `${room.x},${room.y}`;
-  const typeName = {
-    chest: "Chest",
-    easy_destructible: "Destructible",
-    enemy: "Enemy",
-    shop: "Shop",
-  }[locationCategory(tile)] || "Check";
+  const category = locationCategory(tile);
 
-  return `${roomName} (${room.x},${room.y}) ${typeName} ${tile.x},${tile.y} #${index}`;
+  if (category === "enemy") {
+    const enemyNumber = roomLocationOrder.enemy.size > 1 ? ` #${roomLocationOrder.enemy.get(tile)}` : "";
+
+    return `${roomName}: ${enemyTypeName(tile)}${enemyNumber}`;
+  }
+
+  if (category === "easy_destructible") {
+    return `${roomName}: ${destructibleTypeName(tile)} ([${tile.x},${tile.y}])`;
+  }
+
+  if (category === "shop") {
+    return `${roomName}: Shop #${roomLocationOrder.shop.get(tile)} (${itemNameForDrop(tileDrop(tile))})`;
+  }
+
+  const chestNumber = roomLocationOrder.chest.size > 1 ? ` #${roomLocationOrder.chest.get(tile)}` : "";
+
+  return `${roomName}: Chest${chestNumber}`;
+}
+
+function buildRoomLocationOrder(room) {
+  const order = {
+    chest: new Map(),
+    enemy: new Map(),
+    shop: new Map(),
+  };
+
+  (room.tiles || []).filter((tile) => isChest(tile) && !isEmptyDrop(tileDrop(tile))).forEach((tile, index) => {
+    order.chest.set(tile, index + 1);
+  });
+
+  (room.tiles || []).filter(isEnemy).forEach((tile, index) => {
+    order.enemy.set(tile, index + 1);
+  });
+
+  (room.tiles || []).filter(isShop).sort((first, second) => (
+    (Number(first.x) - Number(second.x)) || (Number(first.y) - Number(second.y))
+  )).forEach((tile, index) => {
+    order.shop.set(tile, index + 1);
+  });
+
+  return order;
 }
 
 function buildItems() {
@@ -415,9 +529,10 @@ function buildItems() {
 function buildLocations(mapData) {
   const locations = [];
   let id = locationBaseId;
-  let index = 1;
 
   mapData.rooms.forEach((room) => {
+    const roomLocationOrder = buildRoomLocationOrder(room);
+
     (room.tiles || []).forEach((tile) => {
       if (!isChest(tile) && !isDestructible(tile) && !isEnemy(tile) && !isShop(tile)) {
         return;
@@ -438,14 +553,15 @@ function buildLocations(mapData) {
       locations.push({
         id,
         key: `loc_${id}`,
-        name: locationName(room, tile, index),
+        name: locationName(room, tile, roomLocationOrder),
         room: room.name || room.id || `${room.x},${room.y}`,
         room_x: room.x,
         room_y: room.y,
         tile_x: tile.x,
         tile_y: tile.y,
         category,
-        enemy_type: isEnemy(tile) ? canonicalDrop(tile.enemyType || (tile.enemy && tile.enemy.name)) : "",
+        enemy_type: isEnemy(tile) ? enemyTypeName(tile) : "",
+        destructible_type: isDestructible(tile) ? destructibleTypeName(tile) : "",
         drop_key: canonicalDrop(drop),
         drop_name: itemNameForDrop(drop),
         item_pool: isItemPoolDrop(drop),
@@ -456,7 +572,6 @@ function buildLocations(mapData) {
       });
 
       id += 1;
-      index += 1;
     });
   });
 
@@ -526,6 +641,7 @@ function writeLocationsPy(locations) {
 function writeGeneratedClientData(items, locations) {
   const itemIdToKeys = {};
   const itemIdToNames = {};
+  const itemNameToKey = Object.fromEntries(items.map((item) => [item.name, item.key]));
 
   items.forEach((item) => {
     itemIdToNames[item.id] = item.name;
@@ -553,7 +669,15 @@ function writeGeneratedClientData(items, locations) {
     "var archipelagoGeneratedLocationCoordToLocation = ",
     JSON.stringify(Object.fromEntries(locations.map((location) => [
       `${location.room_x},${location.room_y}:${location.tile_x},${location.tile_y}`,
-      { id: location.id, name: location.name, category: location.category },
+      {
+        id: location.id,
+        name: location.name,
+        category: location.category,
+        requirements: (location.requirements || []).map((group) => group.map((requirement) => ({
+          key: itemNameToKey[requirement.item] || (requirement.item === "Tank" ? "tank" : ""),
+          amount: requirement.amount,
+        }))),
+      },
     ])), null, 2),
     ";\n",
     "globalsState.loadedModules.push(\"archipelagoGeneratedData\");\n",

@@ -52,6 +52,7 @@ var initialRoomHiddenShopItems = {};
 var initialRoomRemovedShopItems = {};
 var initialRoomFreeShopItems = {};
 var initialRoomShopItemPoolOffers = {};
+var initialRoomLastInspectedShopKey = "";
 var initialRoomVisitedRoomEdges = {};
 var initialRoomVisitedWarpRooms = {};
 var initialRoomTileRenderCache = {};
@@ -3817,7 +3818,10 @@ function initialRoomIsShopItemHidden(initialRoomTile) {
 
 function initialRoomGetRenderableShopTile(initialRoomTile) {
   var initialRoomOffer = initialRoomGetShopOffer(initialRoomTile);
-  var initialRoomIconKey = initialRoomGetPickupIconKey(initialRoomOffer.drop);
+  var initialRoomGeneratedLocation = globalsState.archipelago.connected ? initialRoomGetGeneratedArchipelagoLocation(initialRoomTile) : null;
+  var initialRoomScoutedItemKey = initialRoomGeneratedLocation && typeof archipelagoClientGetScoutedLocationItemKey === "function" ?
+    archipelagoClientGetScoutedLocationItemKey(initialRoomGeneratedLocation.id) : "";
+  var initialRoomIconKey = initialRoomGetPickupIconKey(initialRoomScoutedItemKey || initialRoomOffer.drop);
   var initialRoomRenderableTile = Object.assign({}, initialRoomTile);
 
   initialRoomRenderableTile.sprite = {
@@ -3826,6 +3830,42 @@ function initialRoomGetRenderableShopTile(initialRoomTile) {
   };
 
   return initialRoomRenderableTile;
+}
+
+function initialRoomUpdateShopInspection() {
+  var initialRoomTile = null;
+  var initialRoomShopKey = "";
+  var initialRoomGeneratedLocation = null;
+  var initialRoomItemName = "";
+
+  if (!globalsState.archipelago.connected || !initialRoomCurrentRoom) {
+    initialRoomLastInspectedShopKey = "";
+    return;
+  }
+
+  initialRoomTile = initialRoomGetTile(Math.floor(initialRoomPlayer.x), Math.floor(initialRoomPlayer.y));
+  if (!initialRoomIsShopTile(initialRoomTile) || initialRoomIsShopItemHidden(initialRoomTile)) {
+    initialRoomLastInspectedShopKey = "";
+    return;
+  }
+
+  initialRoomShopKey = initialRoomGetShopRuntimeKey(initialRoomTile);
+  if (initialRoomShopKey === initialRoomLastInspectedShopKey) {
+    return;
+  }
+
+  initialRoomGeneratedLocation = initialRoomGetGeneratedArchipelagoLocation(initialRoomTile);
+  if (!initialRoomGeneratedLocation || typeof archipelagoClientGetScoutedLocationItemName !== "function") {
+    return;
+  }
+
+  initialRoomItemName = archipelagoClientGetScoutedLocationItemName(initialRoomGeneratedLocation.id);
+  if (!initialRoomItemName) {
+    return;
+  }
+
+  initialRoomLastInspectedShopKey = initialRoomShopKey;
+  initialRoomQueueMessage("For sale: " + initialRoomItemName, { allowOnlineLocal: true });
 }
 
 function initialRoomDrawShopCostOverlay(initialRoomTile, initialRoomPosition) {
@@ -4085,7 +4125,12 @@ function initialRoomDrawProjectiles() {
     var initialRoomPixelUnit = initialRoomGetPixelUnit();
 
     if (initialRoomProjectile.level >= 2) {
-      initialRoomDrawLargeProjectile(initialRoomScreenX, initialRoomScreenY, initialRoomPixelUnit, "#d94141");
+      initialRoomDrawLargeProjectile(
+        initialRoomScreenX,
+        initialRoomScreenY,
+        initialRoomPixelUnit,
+        initialRoomGetGraphicsLevel() >= 2 ? "#d94141" : "#050505"
+      );
     } else {
       initialRoomDrawSmallProjectile(initialRoomScreenX, initialRoomScreenY, initialRoomPixelUnit);
     }
@@ -7673,7 +7718,7 @@ function initialRoomGetMapRoomCheckStatus(initialRoomRoomX, initialRoomRoomY) {
       initialRoomStatus.chestRemaining += 1;
     }
 
-    if (initialRoomCanAccessRoom && initialRoomCanOpenMapCheckTile(initialRoomTile)) {
+    if (initialRoomCanAccessRoom && initialRoomCanOpenMapCheckTile(initialRoomTile, initialRoomRoom)) {
       initialRoomStatus.available += 1;
       if (initialRoomIsChestLocation) {
         initialRoomStatus.chestAvailable += 1;
@@ -7725,7 +7770,7 @@ function initialRoomAddOptionalMapLocationStatus(initialRoomStatus, initialRoomR
   initialRoomStatus.optionalRemaining += 1;
   initialRoomStatus.remaining += 1;
 
-  if (initialRoomCanAccessRoom && initialRoomCanOpenMapCheckTile(initialRoomTile)) {
+  if (initialRoomCanAccessRoom && initialRoomCanOpenMapCheckTile(initialRoomTile, initialRoomRoom)) {
     initialRoomStatus.available += 1;
     if (initialRoomIsDestructibleLocation) {
       initialRoomStatus.destructibleAvailable += 1;
@@ -7857,7 +7902,13 @@ function initialRoomIsMapCheckCollected(initialRoomTile, initialRoomRoom) {
   return initialRoomIsCheckTileCollected(initialRoomTile, initialRoomRoom);
 }
 
-function initialRoomCanOpenMapCheckTile(initialRoomTile) {
+function initialRoomCanOpenMapCheckTile(initialRoomTile, initialRoomRoom) {
+  var initialRoomGeneratedLocation = initialRoomGetGeneratedArchipelagoLocation(initialRoomTile, initialRoomRoom);
+
+  if (initialRoomGeneratedLocation && Array.isArray(initialRoomGeneratedLocation.requirements)) {
+    return initialRoomCanMeetGeneratedLocationRequirements(initialRoomGeneratedLocation.requirements);
+  }
+
   if (initialRoomIsEnemyTile(initialRoomTile)) {
     if (String(initialRoomTile.enemyType || (initialRoomTile.enemy && initialRoomTile.enemy.name) || "").toLowerCase() === "snake" && initialRoomGetGraphicsLevel() < 1) {
       return false;
@@ -7875,6 +7926,24 @@ function initialRoomCanOpenMapCheckTile(initialRoomTile) {
   }
 
   return initialRoomCanCollectTileRequirements(initialRoomTile);
+}
+
+function initialRoomCanMeetGeneratedLocationRequirements(initialRoomRequirements) {
+  return initialRoomRequirements.every(function (initialRoomRequirementGroup) {
+    return initialRoomRequirementGroup.some(function (initialRoomRequirement) {
+      if (!initialRoomRequirement || !initialRoomRequirement.key) {
+        return false;
+      }
+
+      if (initialRoomRequirement.key === "tank") {
+        return progressionManagerHasRequirement("tank");
+      }
+
+      return progressionManagerHasRequirement(
+        initialRoomRequirement.key + ":" + (Math.max(1, Number(initialRoomRequirement.amount) || 1))
+      );
+    });
+  });
 }
 
 function initialRoomCanDefeatMapEnemy(initialRoomTile) {
@@ -11193,6 +11262,7 @@ function initialRoomUpdate() {
   }
 
   initialRoomUpdateTileLockedMovement(initialRoomDeltaSeconds);
+  initialRoomUpdateShopInspection();
   initialRoomUpdateEnemies(initialRoomDeltaSeconds);
   initialRoomUpdateCombat(initialRoomDeltaSeconds);
   initialRoomCheckNetTankContactCollisions();

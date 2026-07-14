@@ -3474,7 +3474,7 @@
           "requirements": [
             [
               "tank",
-              "graphics:1",
+              "gun:2",
               "sword:1",
               "fire:1"
             ],
@@ -15191,9 +15191,6 @@
               "fire:1",
               "hp:2",
               "waterWalkers"
-            ],
-            [
-              "graphics:2"
             ]
           ]
         },
@@ -19203,11 +19200,11 @@
           },
           "expectedDrop": "itemPool1",
           "vulnerable": [
-            "bomb",
-            "fire",
+            "bomb:1",
+            "gun:2",
+            "fire:1",
             "tankTreads",
-            "tankCannon",
-            "gun:2"
+            "tankCannon"
           ],
           "backgroundTile": {
             "type": "walkable",
@@ -19218,7 +19215,24 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "tank",
+              "sword:1",
+              "fire:1"
+            ],
+            [
+              "bomb:1",
+              "gun:2",
+              "fire:1",
+              "tankTreads",
+              "tankCannon"
+            ],
+            [
+              "graphics:1"
+            ]
+          ]
         },
         {
           "id": "check_5_10",
@@ -27496,6 +27510,12 @@
           "requirements": [
             [
               "graphics:1"
+            ],
+            [
+              "bomb:1",
+              "sword:1",
+              "steelToe",
+              "verminPouch"
             ]
           ]
         },
@@ -32978,8 +32998,10 @@
           },
           "requirements": [
             [
-              "graphics:1",
               "progressiveRoom:2"
+            ],
+            [
+              "graphics:1"
             ]
           ]
         },
@@ -37927,9 +37949,6 @@
               "gun:1",
               "sword:1",
               "fire:1"
-            ],
-            [
-              "graphics:2"
             ]
           ]
         },
@@ -42470,9 +42489,6 @@
               "gun:1",
               "sword:1",
               "fire:1"
-            ],
-            [
-              "graphics:2"
             ]
           ]
         },
@@ -62345,6 +62361,15 @@
               "from": "#928fb8",
               "to": "#d94141"
             }
+          ],
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1",
+              "verminPouch"
+            ]
           ]
         },
         {
@@ -64543,7 +64568,12 @@
           "requirements": [
             [
               "sword:1",
-              "fire"
+              "fire:1"
+            ],
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1"
             ]
           ]
         },
@@ -78810,8 +78840,11 @@
           },
           "requirements": [
             [
-              "bomb:1",
-              "sword:1"
+              "sword:1",
+              "fire:1"
+            ],
+            [
+              "graphics:1"
             ]
           ]
         },
@@ -78893,8 +78926,11 @@
           },
           "requirements": [
             [
-              "bomb:1",
-              "sword:1"
+              "sword:1",
+              "fire:1"
+            ],
+            [
+              "graphics:1"
             ]
           ]
         },
@@ -78925,8 +78961,11 @@
           },
           "requirements": [
             [
-              "bomb:1",
-              "sword:1"
+              "sword:1",
+              "fire:1"
+            ],
+            [
+              "graphics:1"
             ]
           ]
         },
@@ -88013,7 +88052,15 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1"
+            ]
+          ]
         },
         {
           "id": "blocker_0_15",
@@ -116326,7 +116373,15 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1"
+            ]
+          ]
         },
         {
           "id": "blocker_31_15",
@@ -264729,7 +264784,15 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1"
+            ]
+          ]
         }
       ],
       "defaultBorder": {
@@ -272905,7 +272968,15 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "sword:1",
+              "fire:1",
+              "verminPouch"
+            ]
+          ]
         },
         {
           "id": "enemy_15_16",
@@ -311667,7 +311738,15 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1"
+            ]
+          ]
         },
         {
           "id": "blocker_15_0",
@@ -387743,7 +387822,8 @@
               "bomb:1",
               "gun:1",
               "sword:1",
-              "fire:1"
+              "fire:1",
+              "verminPouch"
             ],
             [
               "graphics:2"
@@ -389320,7 +389400,15 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1"
+            ]
+          ]
         },
         {
           "id": "blocker_1_14",
@@ -410584,7 +410672,17 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1",
+              "steelToe",
+              "verminPouch"
+            ]
+          ]
         },
         {
           "id": "blocker_31_15",
@@ -431798,6 +431896,14 @@
             ],
             [
               "graphics:2"
+            ],
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1",
+              "steelToe",
+              "verminPouch"
             ]
           ]
         },
@@ -447300,7 +447406,16 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "gun:1",
+              "sword:1",
+              "fire:1",
+              "steelToe",
+              "verminPouch"
+            ]
+          ]
         },
         {
           "id": "check_1_18",
@@ -468021,7 +468136,17 @@
               "x": 10,
               "y": 2
             }
-          }
+          },
+          "requirements": [
+            [
+              "bomb:1",
+              "gun:1",
+              "sword:1",
+              "fire:1",
+              "steelToe",
+              "verminPouch"
+            ]
+          ]
         },
         {
           "id": "blocker_31_15",
@@ -478854,6 +478979,8 @@
           },
           "requirements": [
             [
+              "graphics:1",
+              "gun:1",
               "sword:1"
             ]
           ]
@@ -478885,7 +479012,11 @@
           },
           "requirements": [
             [
+              "gun:1",
               "sword:1"
+            ],
+            [
+              "graphics:1"
             ]
           ]
         },
@@ -478916,7 +479047,11 @@
           },
           "requirements": [
             [
+              "gun:1",
               "sword:1"
+            ],
+            [
+              "graphics:1"
             ]
           ]
         },
