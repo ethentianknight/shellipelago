@@ -163,6 +163,68 @@
               </div>
             </section>
 
+            <section class="yaml-section yaml-start-inventory-section">
+              <h2>Starting Items</h2>
+              <p class="yaml-rule-note">Choose how many copies of each item to receive at the start. Zero leaves the item in the randomized pool.</p>
+              <div class="yaml-start-inventory-grid" id="yaml-start-inventory"></div>
+            </section>
+
+            <section class="yaml-section">
+              <h2>Item &amp; Location Options</h2>
+              <div class="yaml-selection-columns" id="yaml-selection-columns">
+                <section class="yaml-selection-column" data-selection-key="startHints" data-selection-kind="item">
+                  <h3>Start Hints</h3>
+                  <div class="yaml-selection-controls">
+                    <input class="yaml-selection-input" type="text" list="yaml-item-options" placeholder="Type here to select an item" autocomplete="off">
+                    <div class="yaml-selection-actions">
+                      <button class="secondary-button" type="button" data-selection-action="all">All</button>
+                      <button class="secondary-button" type="button" data-selection-action="clear">Clear</button>
+                    </div>
+                  </div>
+                  <div class="yaml-selection-list" data-selection-list="startHints"></div>
+                </section>
+                <section class="yaml-selection-column" data-selection-key="startLocationHints" data-selection-kind="location">
+                  <h3>Start Location Hints</h3>
+                  <div class="yaml-selection-controls">
+                    <input class="yaml-selection-input" type="text" list="yaml-location-options" placeholder="Type here to select a location" autocomplete="off">
+                    <div class="yaml-selection-actions">
+                      <button class="secondary-button" type="button" data-selection-action="all">All</button>
+                      <button class="secondary-button" type="button" data-selection-action="chests">All Chests</button>
+                      <button class="secondary-button" type="button" data-selection-action="clear">Clear</button>
+                    </div>
+                  </div>
+                  <div class="yaml-selection-list" data-selection-list="startLocationHints"></div>
+                </section>
+                <section class="yaml-selection-column" data-selection-key="excludeLocations" data-selection-kind="location">
+                  <h3>Exclude Locations</h3>
+                  <div class="yaml-selection-controls">
+                    <input class="yaml-selection-input" type="text" list="yaml-location-options" placeholder="Type here to select a location" autocomplete="off">
+                    <div class="yaml-selection-actions">
+                      <button class="secondary-button" type="button" data-selection-action="all">All</button>
+                      <button class="secondary-button" type="button" data-selection-action="chests">All Chests</button>
+                      <button class="secondary-button" type="button" data-selection-action="notChests">All But Chests</button>
+                      <button class="secondary-button" type="button" data-selection-action="clear">Clear</button>
+                    </div>
+                  </div>
+                  <div class="yaml-selection-list" data-selection-list="excludeLocations"></div>
+                </section>
+                <section class="yaml-selection-column" data-selection-key="priorityLocations" data-selection-kind="location">
+                  <h3>Priority Locations</h3>
+                  <div class="yaml-selection-controls">
+                    <input class="yaml-selection-input" type="text" list="yaml-location-options" placeholder="Type here to select a location" autocomplete="off">
+                    <div class="yaml-selection-actions">
+                      <button class="secondary-button" type="button" data-selection-action="all">All</button>
+                      <button class="secondary-button" type="button" data-selection-action="chests">All Chests</button>
+                      <button class="secondary-button" type="button" data-selection-action="clear">Clear</button>
+                    </div>
+                  </div>
+                  <div class="yaml-selection-list" data-selection-list="priorityLocations"></div>
+                </section>
+              </div>
+              <datalist id="yaml-item-options"></datalist>
+              <datalist id="yaml-location-options"></datalist>
+            </section>
+
           </div>
 
           <aside class="yaml-right-column">

@@ -620,6 +620,118 @@ button {
   margin: 0;
 }
 
+.yaml-start-inventory-grid {
+  display: grid;
+  gap: 0.45rem 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.yaml-start-inventory-row {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.yaml-start-inventory-row select {
+  min-width: 5rem;
+}
+
+.yaml-selection-columns {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.yaml-selection-column {
+  border: 2px solid #f7f7f1;
+  display: grid;
+  gap: 8px;
+  grid-template-rows: auto 44px minmax(120px, 280px);
+  min-width: 0;
+  padding: 10px;
+}
+
+.yaml-selection-column h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.yaml-selection-controls {
+  align-items: stretch;
+  display: flex;
+  gap: 6px;
+  height: 44px;
+  min-width: 0;
+}
+
+.yaml-selection-input {
+  box-sizing: border-box;
+  flex: 0 0 320px;
+  height: 44px;
+  min-width: 320px;
+  width: 320px;
+}
+
+.yaml-selection-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  gap: 5px;
+  height: 44px;
+}
+
+.yaml-selection-actions button {
+  font-size: 10px;
+  height: 44px;
+  min-width: 0;
+  padding: 4px 6px;
+  white-space: nowrap;
+}
+
+.yaml-selection-list {
+  align-content: start;
+  display: grid;
+  gap: 5px;
+  min-height: 120px;
+  overflow-y: auto;
+}
+
+.yaml-selection-tile {
+  align-items: center;
+  border: 1px solid #f7f7f1;
+  display: grid;
+  font-size: 13px;
+  gap: 5px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 5px 6px;
+}
+
+.yaml-selection-tile span {
+  overflow-wrap: anywhere;
+}
+
+.yaml-selection-remove {
+  min-width: 24px;
+  padding: 1px 5px;
+}
+
+@media (max-width: 720px) {
+  .yaml-start-inventory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yaml-selection-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .yaml-selection-input {
+    flex-basis: 220px;
+    min-width: 220px;
+    width: 220px;
+  }
+}
+
 .yaml-trap-columns {
   display: grid;
   gap: 10px;

@@ -72,6 +72,9 @@ var initialRoomFinalRunMouse = {
   y: window.innerHeight / 2
 };
 var initialRoomLastUpdateTime = 0;
+var initialRoomGameSpeedFactor = 1;
+var initialRoomGameSpeedCheatEnabled = false;
+var initialRoomGameTime = Date.now();
 var initialRoomLastMessageTime = 0;
 var initialRoomCurrentMessageStartTime = 0;
 var initialRoomMessageDuration = 2500;
@@ -1220,6 +1223,7 @@ function initialRoomEnterFinalRun() {
   }
 
   initialRoomFinalRunState.active = true;
+  initialRoomClearTrapEffects();
   initialRoomIsMapOpen = false;
   initialRoomIsStatusOpen = false;
   initialRoomKeys = {};
@@ -3286,7 +3290,7 @@ function initialRoomStartFinalRunLoop() {
 }
 
 function initialRoomRenderFinalRun(initialRoomNow) {
-  var initialRoomDeltaSeconds = Math.min(0.05, (initialRoomNow - initialRoomFinalRunState.lastFrameTime) / 1000);
+  var initialRoomDeltaSeconds = Math.min(0.05, (initialRoomNow - initialRoomFinalRunState.lastFrameTime) / 1000) * initialRoomGameSpeedFactor;
   var initialRoomWallNow = Date.now();
 
   if (!initialRoomFinalRunState.active) {
@@ -4152,7 +4156,7 @@ function initialRoomDrawWizardFireballs() {
 }
 
 function initialRoomDrawMeleeAttacks(initialRoomLayer) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomMeleeAttacks.forEach(function (initialRoomAttack) {
     var initialRoomIsOverPlayerAttack = initialRoomAttack.direction.y > 0;
@@ -4687,7 +4691,7 @@ function initialRoomDrawRoom() {
 }
 
 function initialRoomDrawBombs() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomBombs.forEach(function (initialRoomBomb) {
     if (initialRoomNow >= initialRoomBomb.explodedAt) {
@@ -4702,7 +4706,7 @@ function initialRoomDrawBombs() {
 }
 
 function initialRoomDrawTankShots() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomTankShots = initialRoomTankShots.filter(function (initialRoomShot) {
     return initialRoomNow < initialRoomShot.expiresAt;
@@ -4714,7 +4718,7 @@ function initialRoomDrawTankShots() {
 }
 
 function initialRoomDrawDestructibleBursts() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomDestructibleBursts = initialRoomDestructibleBursts.filter(function (initialRoomBurst) {
     return initialRoomNow < initialRoomBurst.expiresAt;
@@ -4886,7 +4890,7 @@ function initialRoomDrawExplosion(initialRoomBomb) {
 }
 
 function initialRoomDrawBombExplosionParticles(initialRoomBomb, initialRoomExplosionTile) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomDuration = initialRoomGetExplosionDuration(initialRoomBomb);
   var initialRoomAge = Math.max(0, Math.min(1, (initialRoomNow - initialRoomBomb.explodedAt) / initialRoomDuration));
   var initialRoomPosition = initialRoomTileToScreen(initialRoomExplosionTile.x, initialRoomExplosionTile.y);
@@ -6374,7 +6378,13 @@ function initialRoomBroadcastTrapLink(initialRoomTrapKey, initialRoomEventId) {
   var initialRoomTrapName = initialRoomGetTrapLinkName(initialRoomTrapKey);
   var initialRoomPayload = { trap_name: initialRoomTrapName };
 
-  if (!initialRoomTrapName || initialRoomSuppressLinkBroadcast || !initialRoomIsOnlineModeActive() || !initialRoomIsTrapLinkEnabled()) {
+  if (
+    !initialRoomTrapName ||
+    (initialRoomFinalRunState.active && initialRoomTrapKey !== "trapDeath") ||
+    initialRoomSuppressLinkBroadcast ||
+    !initialRoomIsOnlineModeActive() ||
+    !initialRoomIsTrapLinkEnabled()
+  ) {
     return;
   }
 
@@ -9373,7 +9383,7 @@ function initialRoomCanTankSpawnDestroyDestructibleCheck(initialRoomTileX, initi
 }
 
 function initialRoomUpdateEnemies(initialRoomDeltaSeconds) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomEnemies.forEach(function (initialRoomEnemy) {
     if (initialRoomEnemy.state === "dying") {
@@ -9759,7 +9769,7 @@ function initialRoomGetDistance(initialRoomFirstX, initialRoomFirstY, initialRoo
 }
 
 function initialRoomUpdateBombs() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomBombs.forEach(function (initialRoomBomb) {
     initialRoomUpdateBombKickMove(initialRoomBomb, initialRoomNow);
@@ -9801,7 +9811,7 @@ function initialRoomUpdateCombat(initialRoomDeltaSeconds) {
 }
 
 function initialRoomUpdateWizardFireballs(initialRoomDeltaSeconds) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomWizardFireballs = initialRoomWizardFireballs.filter(function (initialRoomFireball) {
     return initialRoomUpdateWizardFireball(initialRoomFireball, initialRoomDeltaSeconds, initialRoomNow);
@@ -9863,7 +9873,7 @@ function initialRoomIsEnemyTargetable(initialRoomEnemy) {
 }
 
 function initialRoomUpdateMeleeAttacks(initialRoomDeltaSeconds) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomMeleeAttacks = initialRoomMeleeAttacks.filter(function (initialRoomAttack) {
     if (initialRoomAttack.travelling) {
@@ -9909,7 +9919,7 @@ function initialRoomDamageTravellingSwordPoint(initialRoomAttack, initialRoomPoi
 }
 
 function initialRoomIsMeleeActive() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   return initialRoomNow < initialRoomKickUntil || Boolean(initialRoomPlayerKickMove) || initialRoomMeleeAttacks.some(function (initialRoomAttack) {
     return initialRoomNow < initialRoomAttack.movementLockUntil;
@@ -9927,7 +9937,7 @@ function initialRoomCanStartMeleeAttack(initialRoomNow) {
 }
 
 function initialRoomUpdateEnemyDeaths() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomEnemies = initialRoomEnemies.filter(function (initialRoomEnemy) {
     return initialRoomEnemy.state !== "dying" || initialRoomNow < initialRoomEnemy.deathUntil;
@@ -9935,7 +9945,7 @@ function initialRoomUpdateEnemyDeaths() {
 }
 
 function initialRoomUpdateProjectiles(initialRoomDeltaSeconds) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomProjectiles = initialRoomProjectiles.filter(function (initialRoomProjectile) {
     return initialRoomUpdateProjectile(initialRoomProjectile, initialRoomDeltaSeconds, initialRoomNow);
@@ -10074,7 +10084,7 @@ function initialRoomTryProjectileHitEnemy(initialRoomProjectile, initialRoomNow)
 }
 
 function initialRoomApplyEnemyContactDamage() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   initialRoomEnemies.forEach(function (initialRoomEnemy) {
     if (initialRoomEnemy.isVerminPet && initialRoomEnemy.verminOwnerId === (initialRoomGetLocalNetPlayerId() || "local")) {
@@ -10161,7 +10171,7 @@ function initialRoomApplyExplosionDamageToPlayer(initialRoomExplosion) {
 }
 
 function initialRoomApplyExplosionDamageToEnemies(initialRoomExplosion) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   if (initialRoomExplosion.tileOnly) {
     return;
@@ -10501,7 +10511,7 @@ function initialRoomIsRewardAlreadyGained(initialRoomRewardKey) {
 
 function initialRoomCreateDestructibleBurst(initialRoomTile) {
   var initialRoomGraphicsLevel = initialRoomGetGraphicsLevel();
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   if (!initialRoomTile) {
     return;
@@ -10564,7 +10574,7 @@ function initialRoomGetImagePixelColor(initialRoomImage, initialRoomX, initialRo
 }
 
 function initialRoomApplyExplosionChainToBombs(initialRoomExplosion) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   if (initialRoomExplosion.tileOnly) {
     return;
@@ -10578,7 +10588,7 @@ function initialRoomApplyExplosionChainToBombs(initialRoomExplosion) {
 }
 
 function initialRoomDamagePlayer(initialRoomDamage, initialRoomDeathReason) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomIsTank = initialRoomHasTankForm();
   var initialRoomAppliedDamage = initialRoomIsTank ? 1 : initialRoomDamage;
 
@@ -10607,7 +10617,7 @@ function initialRoomKillPlayer(initialRoomDeathReason) {
 
   initialRoomLastDeathReason = initialRoomHasTankForm() && initialRoomDeathReason !== "finalRunFace" ? "tank" : (initialRoomDeathReason || "");
   initialRoomPlayer.hp = 0;
-  initialRoomStartGameOver(Date.now());
+  initialRoomStartGameOver(initialRoomGetGameTime());
   return true;
 }
 
@@ -11201,10 +11211,15 @@ function initialRoomApplySavedPlayerResources(initialRoomPlayerResources) {
 }
 
 function initialRoomUpdate() {
-  var initialRoomNow = Date.now();
-  var initialRoomDeltaSeconds = initialRoomLastUpdateTime ? Math.min(0.05, (initialRoomNow - initialRoomLastUpdateTime) / 1000) : 0;
+  var initialRoomRealNow = Date.now();
+  var initialRoomRealDeltaSeconds = initialRoomLastUpdateTime ? Math.min(0.05, (initialRoomRealNow - initialRoomLastUpdateTime) / 1000) : 0;
+  var initialRoomDeltaSeconds = initialRoomRealDeltaSeconds * initialRoomGameSpeedFactor;
+  var initialRoomNow = initialRoomGameSpeedFactor === 1 ?
+    initialRoomRealNow :
+    initialRoomGameTime + (initialRoomRealDeltaSeconds * initialRoomGameSpeedFactor * 1000);
 
-  initialRoomLastUpdateTime = initialRoomNow;
+  initialRoomLastUpdateTime = initialRoomRealNow;
+  initialRoomGameTime = initialRoomNow;
   initialRoomUpdateBgm(initialRoomNow);
   initialRoomUpdateTrapState(initialRoomNow);
   if (typeof shellipelagoNetUpdate === "function") {
@@ -11267,6 +11282,43 @@ function initialRoomUpdate() {
   initialRoomUpdateCombat(initialRoomDeltaSeconds);
   initialRoomCheckNetTankContactCollisions();
   initialRoomUpdateRightMoveMeasurement(initialRoomNow);
+}
+
+function initialRoomGetGameSpeedFactor() {
+  return initialRoomGameSpeedFactor;
+}
+
+function initialRoomToggleGameSpeedCheat() {
+  initialRoomGameSpeedCheatEnabled = !initialRoomGameSpeedCheatEnabled;
+  if (!initialRoomGameSpeedCheatEnabled) {
+    initialRoomSetGameSpeedFactor(1);
+  }
+  return initialRoomGameSpeedCheatEnabled;
+}
+
+function initialRoomHandleGameSpeedKey(initialRoomEvent) {
+  if (!initialRoomGameSpeedCheatEnabled || initialRoomEvent.repeat || !/^[0-9]$/.test(initialRoomEvent.key)) {
+    return false;
+  }
+
+  initialRoomSetGameSpeedFactor(initialRoomEvent.key === "0" ? 10 : Number(initialRoomEvent.key));
+  initialRoomQueueMessage("Game speed: " + initialRoomGameSpeedFactor + "x");
+  initialRoomEvent.preventDefault();
+  return true;
+}
+
+function initialRoomSetGameSpeedFactor(initialRoomFactor) {
+  var initialRoomNormalizedFactor = Math.max(1, Math.min(10, Math.floor(Number(initialRoomFactor) || 1)));
+
+  initialRoomGameSpeedFactor = initialRoomNormalizedFactor;
+  if (initialRoomGameSpeedFactor === 1) {
+    initialRoomGameTime = Date.now();
+  }
+  return initialRoomGameSpeedFactor;
+}
+
+function initialRoomGetGameTime() {
+  return initialRoomGameSpeedFactor === 1 ? Date.now() : initialRoomGameTime;
 }
 
 function initialRoomRelinquishEnemyLocations() {
@@ -11341,7 +11393,7 @@ function initialRoomIsZoomTrapActive() {
 }
 
 function initialRoomGetMovementSpeedMultiplier() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomMultiplier = 1;
 
   if (initialRoomTrapState.fastUntil > initialRoomNow) {
@@ -11375,7 +11427,7 @@ function initialRoomPlaceBomb() {
   var initialRoomBombCost = initialRoomBombLevel;
   var initialRoomTileX = Math.floor(initialRoomPlayer.x);
   var initialRoomTileY = Math.floor(initialRoomPlayer.y);
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomExistingBomb = initialRoomBombs.some(function (initialRoomBomb) {
     return initialRoomBomb.x === initialRoomTileX && initialRoomBomb.y === initialRoomTileY && initialRoomNow < initialRoomBomb.explodedAt;
   });
@@ -11429,7 +11481,7 @@ function initialRoomPlaceFire() {
 }
 
 function initialRoomSpawnFire(initialRoomTileX, initialRoomTileY, initialRoomCostsRounds, initialRoomSourceNet) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomFire = null;
 
   if (initialRoomTileX < 0 || initialRoomTileY < 0 || initialRoomTileX >= mapManagerData.roomWidth || initialRoomTileY >= mapManagerData.roomHeight) {
@@ -11472,7 +11524,7 @@ function initialRoomShoot(initialRoomRequestedDirection) {
   var initialRoomGunLevel = Math.min(3, progressionManagerGetProgressiveValue("gun"));
   var initialRoomProjectileLevel = initialRoomGunLevel;
   var initialRoomDirection = initialRoomNormalizeShotDirection(initialRoomRequestedDirection || initialRoomPlayer.facingDirection || { x: 0, y: 1 });
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
 
   if (initialRoomHasTankForm() || initialRoomNow < initialRoomNextProjectileShotAllowedAt) {
     return;
@@ -11545,7 +11597,7 @@ function initialRoomShootTowardMouse() {
 }
 
 function initialRoomFireTankCannon() {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomPlayerScreen = initialRoomWorldToScreen(initialRoomPlayer.x, initialRoomPlayer.y);
   var initialRoomDeltaX = initialRoomMouse.x - initialRoomPlayerScreen.x;
   var initialRoomDeltaY = initialRoomMouse.y - initialRoomPlayerScreen.y;
@@ -11724,7 +11776,7 @@ function initialRoomSteelToeKick() {
     return false;
   }
 
-  initialRoomKickUntil = Date.now() + initialRoomMeleeDuration;
+  initialRoomKickUntil = initialRoomGetGameTime() + initialRoomMeleeDuration;
   initialRoomPlaySfx("bullet");
   initialRoomApplySteelToeKick({
     x: initialRoomPlayer.x,
@@ -12058,7 +12110,7 @@ function initialRoomPushPlayer(initialRoomDirection, initialRoomDistance) {
 }
 
 function initialRoomCreateKickMove(initialRoomStartX, initialRoomStartY, initialRoomEndX, initialRoomEndY) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   return {
     startX: initialRoomStartX,
     startY: initialRoomStartY,
@@ -12129,7 +12181,7 @@ function initialRoomUpdatePlayerKickMove(initialRoomNow) {
 function initialRoomMeleeAttack() {
   var initialRoomSwordLevel = Math.min(3, progressionManagerGetProgressiveValue("sword"));
   var initialRoomDirection = initialRoomPlayer.facingDirection || { x: 0, y: 1 };
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomPoints = [];
 
   if (initialRoomHasTankForm()) {
@@ -12877,6 +12929,10 @@ window.addEventListener("keydown", function (initialRoomEvent) {
     return;
   }
 
+  if (initialRoomHandleGameSpeedKey(initialRoomEvent)) {
+    return;
+  }
+
   if (initialRoomFinalRunState.active) {
     if (initialRoomIsMessageLogOpen) {
       if (initialRoomEvent.key.toLowerCase() === "l" && !initialRoomIsTextEntryActive && !initialRoomEvent.repeat) {
@@ -13583,8 +13639,12 @@ function initialRoomHandleOpenedCheck(initialRoomCheckKey) {
 }
 
 function initialRoomApplyTrap(initialRoomTrapKey) {
-  var initialRoomNow = Date.now();
+  var initialRoomNow = initialRoomGetGameTime();
   var initialRoomTrapName = globalsState.checkDefinitions[initialRoomTrapKey] ? globalsState.checkDefinitions[initialRoomTrapKey].label : "Trap";
+
+  if (initialRoomFinalRunState.active && initialRoomTrapKey !== "trapDeath") {
+    return false;
+  }
 
   initialRoomQueueMessage(initialRoomTrapName + "!");
 
@@ -13637,6 +13697,18 @@ function initialRoomApplyTrap(initialRoomTrapKey) {
   if (initialRoomTrapKey === "suddenlySnake") {
     initialRoomSpawnSuddenlySnake();
   }
+
+  return true;
+}
+
+function initialRoomClearTrapEffects() {
+  initialRoomTrapState.stunUntil = 0;
+  initialRoomTrapState.invisibleUntil = 0;
+  initialRoomTrapState.fastUntil = 0;
+  initialRoomTrapState.slowUntil = 0;
+  initialRoomTrapState.reverseUntil = 0;
+  initialRoomTrapState.flipMessagesRemaining = 0;
+  initialRoomTrapState.zoomRoomId = "";
 }
 
 function initialRoomSpawnSuddenlySnake(initialRoomNetSnake) {

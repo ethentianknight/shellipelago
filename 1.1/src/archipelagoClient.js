@@ -137,7 +137,15 @@ function archipelagoClientHasMissingLocation(archipelagoClientLocationId) {
 }
 
 function archipelagoClientSendChatMessage(archipelagoClientText) {
-  if (!archipelagoClientText || !globalsState.archipelago.connected || !globalsState.archipelago.socket) {
+  if (!archipelagoClientText) {
+    return false;
+  }
+
+  if (archipelagoClientHandleLocalCommand(archipelagoClientText)) {
+    return true;
+  }
+
+  if (!globalsState.archipelago.connected || !globalsState.archipelago.socket) {
     return false;
   }
 
@@ -151,6 +159,63 @@ function archipelagoClientSendChatMessage(archipelagoClientText) {
   });
 
   return true;
+}
+
+function archipelagoClientTryNo3dGoal() {
+  var archipelagoClientMissingParts = [];
+
+  if (!globalsState.archipelago.connected) {
+    archipelagoClientQueueServerMessage("!no3d requires an Archipelago connection.");
+    return false;
+  }
+
+  if (!globalsState.progression.tankTreads) {
+    archipelagoClientMissingParts.push("Tank Treads");
+  }
+
+  if (!globalsState.progression.tankChassis) {
+    archipelagoClientMissingParts.push("Tank Chassis");
+  }
+
+  if (!globalsState.progression.tankCannon) {
+    archipelagoClientMissingParts.push("Tank Cannon");
+  }
+
+  if (
+    typeof progressionManagerGetProgressiveValue !== "function" ||
+    progressionManagerGetProgressiveValue("progressiveRoom") < globalsState.progressiveRoomMaxRing
+  ) {
+    archipelagoClientMissingParts.push("Progressive Room " + globalsState.progressiveRoomMaxRing);
+  }
+
+  if (archipelagoClientMissingParts.length > 0) {
+    archipelagoClientQueueServerMessage("!no3d requires the full tank and all progressive rooms. Missing: " + archipelagoClientMissingParts.join(", ") + ".");
+    return false;
+  }
+
+  if (globalsState.archipelago.goalSent) {
+    archipelagoClientQueueServerMessage("Goal was already sent.");
+    return true;
+  }
+
+  if (!archipelagoClientSendGoal()) {
+    archipelagoClientQueueServerMessage("Unable to send goal right now.");
+    return false;
+  }
+
+  archipelagoClientQueueServerMessage("Final run bypass accepted. Goal sent.");
+  return true;
+}
+
+function archipelagoClientHandleLocalCommand(archipelagoClientText) {
+  var archipelagoClientCommand = archipelagoClientStripPlayerPrefix(archipelagoClientText).trim().toLowerCase();
+
+  if (archipelagoClientCommand === "!no3d") {
+    archipelagoClientTryNo3dGoal();
+    return true;
+  }
+
+  return false;
 }
 
 function archipelagoClientSendGoal() {

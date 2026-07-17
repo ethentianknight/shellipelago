@@ -103,8 +103,22 @@ function downloadManagerYamlList(downloadManagerItems) {
   }
 
   return "\n" + downloadManagerItems.map(function (downloadManagerItem) {
-    return "    - " + downloadManagerItem;
+    return "    - " + downloadManagerYamlScalar(downloadManagerItem);
   }).join("\n");
+}
+
+function downloadManagerYamlScalar(downloadManagerValue) {
+  var downloadManagerText = String(downloadManagerValue || "");
+
+  if (
+    !downloadManagerText ||
+    /^\s|\s$/.test(downloadManagerText) ||
+    /[:#\[\]{},&*!|>'"%@`]/.test(downloadManagerText)
+  ) {
+    return JSON.stringify(downloadManagerText);
+  }
+
+  return downloadManagerText;
 }
 
 function downloadManagerYamlMapping(downloadManagerItems) {
@@ -179,6 +193,11 @@ function downloadManagerBuildYaml(downloadManagerOptions) {
     "  accessibility: full",
     "  local_items:" + downloadManagerYamlList(downloadManagerLocalityItems.localItems),
     "  non_local_items:" + downloadManagerYamlList(downloadManagerLocalityItems.nonLocalItems),
+    "  start_inventory:" + downloadManagerYamlMapping(downloadManagerOptions.startInventory),
+    "  start_hints:" + downloadManagerYamlList(downloadManagerOptions.startHints),
+    "  start_location_hints:" + downloadManagerYamlList(downloadManagerOptions.startLocationHints),
+    "  exclude_locations:" + downloadManagerYamlList(downloadManagerOptions.excludeLocations),
+    "  priority_locations:" + downloadManagerYamlList(downloadManagerOptions.priorityLocations),
     "  shuffle_essential_items: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleEssentialItems),
     "  shuffle_max_resource_upgrades: " + downloadManagerYamlBoolean(downloadManagerOptions.shuffleMaxResourceUpgrades),
     "  # Adds many locations and can significantly slow down a playthrough.",

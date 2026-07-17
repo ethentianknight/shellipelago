@@ -434,6 +434,18 @@ function archipelagoClientHandleLocalCommand(archipelagoClientText) {
     return true;
   }
 
+  if (archipelagoClientCommand === "!tooslow") {
+    if (typeof initialRoomToggleGameSpeedCheat !== "function") {
+      archipelagoClientQueueServerMessage("Game speed control is not available yet.");
+      return true;
+    }
+
+    archipelagoClientQueueServerMessage(
+      "Game speed keys " + (initialRoomToggleGameSpeedCheat() ? "enabled. Press 1-9 for 1x-9x or 0 for 10x." : "disabled. Game speed reset to 1x.")
+    );
+    return true;
+  }
+
   if (archipelagoClientEfficiencyMatch) {
     archipelagoClientSetEnergyLinkEfficiency(archipelagoClientEfficiencyMatch[1]);
     return true;
