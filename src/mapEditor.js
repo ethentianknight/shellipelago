@@ -84,6 +84,9 @@ var mapEditorEnemyDamageRequirementValues = ["tank", "bomb:1", "sword:1", "fire"
 function mapEditorLoadImage(mapEditorImagePath) {
   return new Promise(function (mapEditorResolve, mapEditorReject) {
     var mapEditorImage = new Image();
+    var mapEditorResolvedImagePath = window.shellipelagoImageData && window.shellipelagoImageData[mapEditorImagePath] ?
+      window.shellipelagoImageData[mapEditorImagePath] :
+      mapEditorImagePath;
 
     mapEditorImage.onload = function () {
       mapEditorResolve(mapEditorImage);
@@ -91,7 +94,7 @@ function mapEditorLoadImage(mapEditorImagePath) {
     mapEditorImage.onerror = function () {
       mapEditorReject(new Error("Unable to load image: " + mapEditorImagePath));
     };
-    mapEditorImage.src = mapEditorImagePath;
+    mapEditorImage.src = mapEditorResolvedImagePath;
   });
 }
 

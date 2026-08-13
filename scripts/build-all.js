@@ -34,5 +34,6 @@ console.log("Shellipelago version " + version + (incrementVersion ? " (increment
 runBuildStep(process.execPath, ["scripts/snapshot-version-map.js"]);
 runBuildStep(process.execPath, ["scripts/clean-build.js"]);
 runBuildStep(process.execPath, ["scripts/package-apworld.js"]);
+runBuildStep(process.execPath, ["scripts/build-hosted.js"]);
 runBuildStep(process.execPath, ["scripts/build.js"]);
 runBuildStep(process.execPath, ["scripts/package-electron.js"]);

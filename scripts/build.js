@@ -5,7 +5,6 @@ const buildPaths = require("./build-paths");
 const rootPath = path.resolve(__dirname, "..");
 const sourcePath = path.join(rootPath, "src");
 const archipelagoPath = path.join(rootPath, "archipelago");
-const legacyAsyncPath = path.join(rootPath, "1.1");
 const templatesPath = path.join(sourcePath, "templates");
 const imagePath = path.join(sourcePath, "img");
 const dataPath = path.join(sourcePath, "data");
@@ -171,6 +170,62 @@ function getCreditsScript() {
   return "<script>\nwindow.shellipelagoCredits = " + JSON.stringify(credits) + ";\n</script>";
 }
 
+function getImageDataScript() {
+  const imageData = {};
+  const mimeTypes = {
+    ".gif": "image/gif",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".png": "image/png",
+    ".svg": "image/svg+xml",
+    ".webp": "image/webp"
+  };
+
+  function addImages(directoryPath) {
+    fs.readdirSync(directoryPath, { withFileTypes: true }).forEach((entry) => {
+      const entryPath = path.join(directoryPath, entry.name);
+
+      if (entry.isDirectory()) {
+        addImages(entryPath);
+        return;
+      }
+
+      const mimeType = mimeTypes[path.extname(entry.name).toLowerCase()];
+
+      if (!mimeType) {
+        return;
+      }
+
+      const relativePath = path.relative(rootPath, entryPath).split(path.sep).join("/");
+      imageData[relativePath] = "data:" + mimeType + ";base64," + fs.readFileSync(entryPath).toString("base64");
+    });
+  }
+
+  if (fs.existsSync(imagePath)) {
+    addImages(imagePath);
+  }
+
+  return "<script>\nwindow.shellipelagoImageData = " + JSON.stringify(imageData) + ";\n</script>";
+}
+
+function getFinalRunDataScript() {
+  const threePath = path.join(vendorPath, "three", "three.module.js");
+  const rapierPath = path.join(vendorPath, "rapier3d", "rapier.es.js");
+  const rapierWasmPath = path.join(vendorPath, "rapier3d", "rapier_wasm3d_bg.wasm");
+
+  if (!fs.existsSync(threePath) || !fs.existsSync(rapierPath) || !fs.existsSync(rapierWasmPath)) {
+    return "<script>\nwindow.shellipelagoFinalRunData = null;\n</script>";
+  }
+
+  const finalRunData = {
+    threeModuleUrl: "data:text/javascript;base64," + fs.readFileSync(threePath).toString("base64"),
+    rapierModuleUrl: "data:text/javascript;base64," + fs.readFileSync(rapierPath).toString("base64"),
+    rapierWasmBase64: fs.readFileSync(rapierWasmPath).toString("base64")
+  };
+
+  return "<script>\nwindow.shellipelagoFinalRunData = " + JSON.stringify(finalRunData) + ";\n</script>";
+}
+
 const indexSource = readText(indexPath);
 const registrySource = readText(registryPath);
 const cssSource = readText(cssPath);
@@ -181,6 +236,8 @@ const mapScript = getMapScript();
 const versionedMapScript = getVersionedMapScript();
 const tilesetDataScript = getTilesetDataScript();
 const creditsScript = getCreditsScript();
+const imageDataScript = getImageDataScript();
+const finalRunDataScript = getFinalRunDataScript();
 const registryModules = getRegistryModules(registrySource);
 const scriptSources = [wrapScript("registry.js", registrySource)];
 
@@ -193,7 +250,7 @@ const bundledStyle = "<style>\n" + cssSource.trim() + "\n</style>";
 const bundledScript = "<script>\n" + scriptSources.join("\n") + "\n</script>";
 const outputWithStyle = indexSource.replace(/<link\s+rel=["']stylesheet["']\s+href=["']src\/main\.css["']>/, bundledStyle);
 const outputWithTemplates = outputWithStyle.replace(/<body>/, "<body>\n" + templateHtml);
-const outputIndex = outputWithTemplates.replace(/<script\s+src=["']src\/main\.js["']><\/script>/, templateScript + "\n" + apworldScript + "\n" + mapScript + "\n" + versionedMapScript + "\n" + tilesetDataScript + "\n" + creditsScript + "\n" + bundledScript);
+const outputIndex = outputWithTemplates.replace(/<script\s+src=["']src\/main\.js["']><\/script>/, templateScript + "\n" + apworldScript + "\n" + mapScript + "\n" + versionedMapScript + "\n" + tilesetDataScript + "\n" + creditsScript + "\n" + imageDataScript + "\n" + finalRunDataScript + "\n" + bundledScript);
 
 if (outputWithStyle === indexSource) {
   throw new Error("Could not find src/main.css link in index.html");
@@ -211,7 +268,6 @@ copyDirectory(dataPath, path.join(outputWebPath, "src", "data"));
 copyDirectory(fontPath, path.join(outputWebPath, "src", "font"));
 copyDirectory(soundPath, path.join(outputWebPath, "src", "sound"));
 copyDirectory(vendorPath, path.join(outputWebPath, "src", "vendor"));
-copyDirectory(legacyAsyncPath, path.join(outputWebPath, "1.1"));
 
 if (fs.existsSync(sourceApworldPath)) {
   fs.copyFileSync(sourceApworldPath, path.join(outputWebPath, "src", "shellipelago.apworld"));

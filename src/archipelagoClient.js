@@ -1374,19 +1374,6 @@ function archipelagoClientHandleConnected(archipelagoClientSocket, archipelagoCl
 function archipelagoClientHandlePackets(archipelagoClientSocket, archipelagoClientPackets, archipelagoClientConnectionInfo, archipelagoClientResolveReady, archipelagoClientReject) {
   archipelagoClientPackets.forEach(function (archipelagoClientPacket) {
     if (archipelagoClientPacket.cmd === "RoomInfo") {
-      if (
-        archipelagoClientConnectionInfo.legacyAsyncSeedName &&
-        String(archipelagoClientPacket.seed_name || "") === String(archipelagoClientConnectionInfo.legacyAsyncSeedName)
-      ) {
-        console.log("Shellipelago legacy async seed detected:", archipelagoClientPacket.seed_name);
-        archipelagoClientResolveReady({
-          cmd: "LegacyAsyncRedirect",
-          roomInfo: archipelagoClientPacket
-        });
-        archipelagoClientSocket.close();
-        return;
-      }
-
       archipelagoClientSendConnect(archipelagoClientSocket, archipelagoClientConnectionInfo);
       return;
     }

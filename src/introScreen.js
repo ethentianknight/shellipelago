@@ -6,7 +6,6 @@ var introScreenDefaultPort = "38281";
 var introScreenOfflineSaveKey = "shellipelagoOfflineSave";
 var introScreenOfflineSaveVersion = "1.1";
 var introScreenYamlMapLoadPromise = null;
-var introScreenLegacyAsyncSeedName = "37554294161459039255";
 var introScreenTrapNames = [
   "Stun Trap",
   "Invisible Trap",
@@ -50,10 +49,6 @@ function introScreenLoadSavedConnection() {
 
 function introScreenSaveConnection(introScreenConnectionInfo) {
   localStorage.setItem(introScreenStorageKey, JSON.stringify(introScreenConnectionInfo));
-}
-
-function introScreenLoadLegacyAsync() {
-  window.location.href = "1.1/index.html?jam_async=1";
 }
 
 function introScreenShowConnection() {
@@ -1933,8 +1928,7 @@ function introScreenSubmitConnection(introScreenEvent) {
     host: introScreenFields.host.value.trim() || introScreenDefaultHost,
     port: introScreenFields.port.value.trim() || introScreenDefaultPort,
     slot: introScreenFields.slot.value.trim(),
-    password: introScreenFields.password.value,
-    legacyAsyncSeedName: introScreenLegacyAsyncSeedName
+    password: introScreenFields.password.value
   };
 
   introScreenEvent.preventDefault();
@@ -1944,13 +1938,7 @@ function introScreenSubmitConnection(introScreenEvent) {
   introScreenSubmitButton.disabled = true;
 
   archipelagoClientConnect(introScreenConnectionInfo)
-    .then(function (introScreenPacket) {
-      if (introScreenPacket && introScreenPacket.cmd === "LegacyAsyncRedirect") {
-        introScreenStatus.textContent = "Jam Async connection detected, loading v 1.1...";
-        introScreenLoadLegacyAsync();
-        return;
-      }
-
+    .then(function () {
       introScreenRoot.remove();
       initialRoomStart();
     })

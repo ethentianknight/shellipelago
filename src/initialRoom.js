@@ -550,6 +550,7 @@ var initialRoomTankTurretPath = "src/img/player/Tank_Turret.png";
 function initialRoomLoadImage(initialRoomImagePath) {
   return new Promise(function (initialRoomResolve, initialRoomReject) {
     var initialRoomImage = new Image();
+    var initialRoomResolvedImagePath = initialRoomResolveImagePath(initialRoomImagePath);
 
     initialRoomImage.onload = function () {
       initialRoomResolve(initialRoomImage);
@@ -557,8 +558,14 @@ function initialRoomLoadImage(initialRoomImagePath) {
     initialRoomImage.onerror = function () {
       initialRoomReject(new Error("Unable to load image: " + initialRoomImagePath));
     };
-    initialRoomImage.src = initialRoomImagePath;
+    initialRoomImage.src = initialRoomResolvedImagePath;
   });
+}
+
+function initialRoomResolveImagePath(initialRoomImagePath) {
+  return window.shellipelagoImageData && window.shellipelagoImageData[initialRoomImagePath] ?
+    window.shellipelagoImageData[initialRoomImagePath] :
+    initialRoomImagePath;
 }
 
 function initialRoomLoadPlayerImages() {
@@ -1311,8 +1318,13 @@ function initialRoomLoadFinalRunScene() {
 
   initialRoomFinalRunState.loading = true;
 
-  var initialRoomThreeUrl = new URL("src/vendor/three/three.module.js", document.baseURI).href;
-  var initialRoomRapierUrl = new URL("src/vendor/rapier3d/rapier.es.js", document.baseURI).href;
+  var initialRoomEmbeddedFinalRunData = window.shellipelagoFinalRunData || null;
+  var initialRoomThreeUrl = initialRoomEmbeddedFinalRunData ?
+    initialRoomEmbeddedFinalRunData.threeModuleUrl :
+    new URL("src/vendor/three/three.module.js", document.baseURI).href;
+  var initialRoomRapierUrl = initialRoomEmbeddedFinalRunData ?
+    initialRoomEmbeddedFinalRunData.rapierModuleUrl :
+    new URL("src/vendor/rapier3d/rapier.es.js", document.baseURI).href;
 
   Promise.all([
     import(initialRoomThreeUrl),
@@ -1334,14 +1346,29 @@ function initialRoomInitializeFinalRunScene(initialRoomThree, initialRoomRapier)
 
   initialRoomFinalRunState.rapier = initialRoomRapier;
   if (initialRoomRapier && initialRoomRapier.init) {
-    var initialRoomRapierWasmUrl = new URL("src/vendor/rapier3d/rapier_wasm3d_bg.wasm", document.baseURI).href;
-    return initialRoomRapier.init(initialRoomRapierWasmUrl).then(function () {
+    var initialRoomRapierWasmSource = window.shellipelagoFinalRunData && window.shellipelagoFinalRunData.rapierWasmBase64 ?
+      initialRoomDecodeBase64Bytes(window.shellipelagoFinalRunData.rapierWasmBase64) :
+      new URL("src/vendor/rapier3d/rapier_wasm3d_bg.wasm", document.baseURI).href;
+    return initialRoomRapier.init(initialRoomRapierWasmSource).then(function () {
       initialRoomFinishFinalRunScene(initialRoomThree, initialRoomRenderer, initialRoomScene, initialRoomCamera, initialRoomRapier);
     });
   }
 
   initialRoomFinishFinalRunScene(initialRoomThree, initialRoomRenderer, initialRoomScene, initialRoomCamera, initialRoomRapier);
   return Promise.resolve();
+}
+
+function initialRoomDecodeBase64Bytes(initialRoomBase64) {
+  var initialRoomBinary = atob(initialRoomBase64);
+  var initialRoomBytes = new Uint8Array(initialRoomBinary.length);
+  var initialRoomIndex = 0;
+
+  while (initialRoomIndex < initialRoomBinary.length) {
+    initialRoomBytes[initialRoomIndex] = initialRoomBinary.charCodeAt(initialRoomIndex);
+    initialRoomIndex += 1;
+  }
+
+  return initialRoomBytes;
 }
 
 function initialRoomFinishFinalRunScene(initialRoomThree, initialRoomRenderer, initialRoomScene, initialRoomCamera, initialRoomRapier) {
@@ -1438,7 +1465,7 @@ function initialRoomLoadFinalRunBlobTexture() {
     return;
   }
 
-  new initialRoomThree.TextureLoader().load(globalsState.enemyDefinitions.blob.image, function (initialRoomTexture) {
+  new initialRoomThree.TextureLoader().load(initialRoomResolveImagePath(globalsState.enemyDefinitions.blob.image), function (initialRoomTexture) {
     initialRoomTexture.colorSpace = initialRoomThree.SRGBColorSpace;
     initialRoomTexture.magFilter = initialRoomThree.NearestFilter;
     initialRoomTexture.minFilter = initialRoomThree.NearestFilter;
@@ -1456,7 +1483,7 @@ function initialRoomLoadFinalRunSnakeTexture() {
     return;
   }
 
-  new initialRoomThree.TextureLoader().load(initialRoomSnakeImage, function (initialRoomTexture) {
+  new initialRoomThree.TextureLoader().load(initialRoomResolveImagePath(initialRoomSnakeImage), function (initialRoomTexture) {
     initialRoomTexture.colorSpace = initialRoomThree.SRGBColorSpace;
     initialRoomTexture.magFilter = initialRoomThree.NearestFilter;
     initialRoomTexture.minFilter = initialRoomThree.NearestFilter;
@@ -1642,7 +1669,7 @@ function initialRoomLoadFinalRunWizardTexture() {
     return;
   }
 
-  new initialRoomThree.TextureLoader().load(globalsState.enemyDefinitions.sorcerer.image, function (initialRoomTexture) {
+  new initialRoomThree.TextureLoader().load(initialRoomResolveImagePath(globalsState.enemyDefinitions.sorcerer.image), function (initialRoomTexture) {
     initialRoomTexture.colorSpace = initialRoomThree.SRGBColorSpace;
     initialRoomTexture.magFilter = initialRoomThree.NearestFilter;
     initialRoomTexture.minFilter = initialRoomThree.NearestFilter;
@@ -1658,7 +1685,7 @@ function initialRoomLoadFinalRunFireballTexture() {
     return;
   }
 
-  new initialRoomThree.TextureLoader().load("src/img/item/LargeFlame.gif", function (initialRoomTexture) {
+  new initialRoomThree.TextureLoader().load(initialRoomResolveImagePath("src/img/item/LargeFlame.gif"), function (initialRoomTexture) {
     initialRoomTexture.colorSpace = initialRoomThree.SRGBColorSpace;
     initialRoomTexture.magFilter = initialRoomThree.NearestFilter;
     initialRoomTexture.minFilter = initialRoomThree.NearestFilter;
@@ -3769,6 +3796,13 @@ function initialRoomDrawSpecialTile(initialRoomTile) {
     return;
   }
 
+  if (initialRoomGetGraphicsLevel() === 0 && initialRoomIsDoorTile(initialRoomTile)) {
+    if (initialRoomIsDoorUnlocked(initialRoomTile)) {
+      initialRoomDrawMonochromeStairs(initialRoomPosition);
+      return;
+    }
+  }
+
   if (initialRoomIsShopTile(initialRoomTile)) {
     initialRoomContext.fillStyle = "#202020";
     initialRoomContext.strokeStyle = "#ffcf7a";
@@ -3793,6 +3827,34 @@ function initialRoomDrawSpecialTile(initialRoomTile) {
   if (initialRoomIsShopTile(initialRoomTile)) {
     initialRoomDrawShopCostOverlay(initialRoomTile, initialRoomPosition);
   }
+}
+
+function initialRoomDrawMonochromeStairs(initialRoomPosition) {
+  var initialRoomHalfSize = initialRoomView.tileSize / 2;
+  var initialRoomRightWidth = initialRoomView.tileSize - initialRoomHalfSize;
+  var initialRoomBottomHeight = initialRoomView.tileSize - initialRoomHalfSize;
+
+  initialRoomContext.fillStyle = "#f7f7f1";
+  initialRoomContext.fillRect(initialRoomPosition.x, initialRoomPosition.y, initialRoomHalfSize, initialRoomHalfSize);
+  initialRoomContext.fillRect(
+    initialRoomPosition.x + initialRoomHalfSize,
+    initialRoomPosition.y + initialRoomHalfSize,
+    initialRoomRightWidth,
+    initialRoomBottomHeight
+  );
+  initialRoomContext.fillStyle = "#050505";
+  initialRoomContext.fillRect(
+    initialRoomPosition.x + initialRoomHalfSize,
+    initialRoomPosition.y,
+    initialRoomRightWidth,
+    initialRoomHalfSize
+  );
+  initialRoomContext.fillRect(
+    initialRoomPosition.x,
+    initialRoomPosition.y + initialRoomHalfSize,
+    initialRoomHalfSize,
+    initialRoomBottomHeight
+  );
 }
 
 function initialRoomIsDestructableCheckTile(initialRoomTile) {
