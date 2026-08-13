@@ -19,6 +19,12 @@ function shouldIncrementVersion(args) {
   });
 }
 
+function shouldBuildAndroid(args) {
+  const normalizedArgs = args.map((arg) => String(arg || "").toLowerCase());
+  return String(process.env.npm_config_android || "").toLowerCase() === "true" ||
+    normalizedArgs.some((arg) => arg === "--android" || arg === "android=true" || arg === "--android=true");
+}
+
 function runBuildStep(command, args) {
   childProcess.execFileSync(command, args, {
     cwd: rootPath,
@@ -26,7 +32,9 @@ function runBuildStep(command, args) {
   });
 }
 
-const incrementVersion = shouldIncrementVersion(process.argv.slice(2));
+const buildArgs = process.argv.slice(2);
+const incrementVersion = shouldIncrementVersion(buildArgs);
+const buildAndroid = shouldBuildAndroid(buildArgs);
 const version = incrementVersion ? versionManager.incrementVersion() : versionManager.syncVersion();
 
 console.log("Shellipelago version " + version + (incrementVersion ? " (incremented)" : " (unchanged)"));
@@ -37,3 +45,6 @@ runBuildStep(process.execPath, ["scripts/package-apworld.js"]);
 runBuildStep(process.execPath, ["scripts/build-hosted.js"]);
 runBuildStep(process.execPath, ["scripts/build.js"]);
 runBuildStep(process.execPath, ["scripts/package-electron.js"]);
+if (buildAndroid) {
+  runBuildStep(process.execPath, ["scripts/package-android.js"]);
+}

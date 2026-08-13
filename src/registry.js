@@ -2,6 +2,7 @@ var registryModules = [
   "globals.js",
   "version.js",
   "checkMobile.js",
+  "mobileControls.js",
   "shardManager.js",
   "downloadManager.js",
   "progressionManager.js",

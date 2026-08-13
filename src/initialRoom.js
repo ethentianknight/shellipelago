@@ -59,7 +59,6 @@ var initialRoomTileRenderCache = {};
 var initialRoomDoorChannelIndex = null;
 var initialRoomKeys = {};
 var initialRoomInputOrder = [];
-var initialRoomRightMoveMeasurement = null;
 var initialRoomHasStarted = false;
 var initialRoomWasTankForm = false;
 var initialRoomDoorWarpCooldownUntil = 0;
@@ -400,6 +399,7 @@ var initialRoomZoomLevelIndex = 0;
 var initialRoomZoomLevels = [1, 1.5, 2];
 var initialRoomCapsLockActive = false;
 var initialRoomCapsLockTilesSinceEnergyCost = 0;
+var initialRoomShiftSprintHeld = false;
 var initialRoomBaseMoveTilesPerSecond = 5.046434489901609;
 var initialRoomTankVisibleTileMultiplier = 1.5;
 var initialRoomTilesetPath = "src/img/tileset/PixelPackTOPDOWN8BIT.png";
@@ -873,12 +873,15 @@ function initialRoomSetTilesetData(initialRoomLoadedTilesetData) {
 }
 
 function initialRoomResizeCanvas() {
-  initialRoomCanvas.width = window.innerWidth;
-  initialRoomCanvas.height = window.innerHeight;
-  initialRoomHudCanvas.width = window.innerWidth;
-  initialRoomHudCanvas.height = window.innerHeight;
-  initialRoomMessageCanvas.width = window.innerWidth;
-  initialRoomMessageCanvas.height = window.innerHeight;
+  var initialRoomViewportWidth = initialRoomGetViewportWidth();
+  var initialRoomViewportHeight = initialRoomGetViewportHeight();
+
+  initialRoomCanvas.width = initialRoomViewportWidth;
+  initialRoomCanvas.height = initialRoomViewportHeight;
+  initialRoomHudCanvas.width = initialRoomViewportWidth;
+  initialRoomHudCanvas.height = initialRoomViewportHeight;
+  initialRoomMessageCanvas.width = initialRoomViewportWidth;
+  initialRoomMessageCanvas.height = initialRoomViewportHeight;
   initialRoomUpdateView();
   initialRoomUpdateEffectLayerBounds();
   initialRoomUpdateEnemyLayerBounds();
@@ -892,12 +895,20 @@ function initialRoomResizeCanvas() {
   initialRoomTileRenderCache = {};
 }
 
+function initialRoomGetViewportWidth() {
+  return typeof mobileControlsGetGameWidth === "function" ? mobileControlsGetGameWidth() : window.innerWidth;
+}
+
+function initialRoomGetViewportHeight() {
+  return typeof mobileControlsGetGameHeight === "function" ? mobileControlsGetGameHeight() : window.innerHeight;
+}
+
 function initialRoomUpdateEnemyLayerBounds() {
   initialRoomEnemyLayer.style.position = "fixed";
   initialRoomEnemyLayer.style.left = "0";
   initialRoomEnemyLayer.style.top = "0";
-  initialRoomEnemyLayer.style.width = "100vw";
-  initialRoomEnemyLayer.style.height = "100vh";
+  initialRoomEnemyLayer.style.width = initialRoomGetViewportWidth() + "px";
+  initialRoomEnemyLayer.style.height = initialRoomGetViewportHeight() + "px";
   initialRoomEnemyLayer.style.pointerEvents = "none";
   initialRoomEnemyLayer.style.zIndex = "4";
   initialRoomEnemyLayer.style.overflow = "hidden";
@@ -907,8 +918,8 @@ function initialRoomUpdateEffectLayerBounds() {
   initialRoomEffectLayer.style.position = "fixed";
   initialRoomEffectLayer.style.left = "0";
   initialRoomEffectLayer.style.top = "0";
-  initialRoomEffectLayer.style.width = "100vw";
-  initialRoomEffectLayer.style.height = "100vh";
+  initialRoomEffectLayer.style.width = initialRoomGetViewportWidth() + "px";
+  initialRoomEffectLayer.style.height = initialRoomGetViewportHeight() + "px";
   initialRoomEffectLayer.style.pointerEvents = "none";
   initialRoomEffectLayer.style.zIndex = "5";
   initialRoomEffectLayer.style.overflow = "hidden";
@@ -918,8 +929,8 @@ function initialRoomUpdateHudCanvasBounds() {
   initialRoomHudCanvas.style.position = "fixed";
   initialRoomHudCanvas.style.left = "0";
   initialRoomHudCanvas.style.top = "0";
-  initialRoomHudCanvas.style.width = "100vw";
-  initialRoomHudCanvas.style.height = "100vh";
+  initialRoomHudCanvas.style.width = initialRoomGetViewportWidth() + "px";
+  initialRoomHudCanvas.style.height = initialRoomGetViewportHeight() + "px";
   initialRoomHudCanvas.style.pointerEvents = "none";
   initialRoomHudCanvas.style.zIndex = "6";
   initialRoomHudCanvas.style.background = "transparent";
@@ -937,8 +948,8 @@ function initialRoomUpdateMessageCanvasBounds() {
   initialRoomMessageCanvas.style.position = "fixed";
   initialRoomMessageCanvas.style.left = "0";
   initialRoomMessageCanvas.style.top = "0";
-  initialRoomMessageCanvas.style.width = "100vw";
-  initialRoomMessageCanvas.style.height = "100vh";
+  initialRoomMessageCanvas.style.width = initialRoomGetViewportWidth() + "px";
+  initialRoomMessageCanvas.style.height = initialRoomGetViewportHeight() + "px";
   initialRoomMessageCanvas.style.pointerEvents = "none";
   initialRoomMessageCanvas.style.zIndex = "24";
   initialRoomMessageCanvas.style.background = "transparent";
@@ -949,8 +960,8 @@ function initialRoomUpdateFinalRunLayerBounds() {
   initialRoomFinalRunLayer.style.position = "fixed";
   initialRoomFinalRunLayer.style.left = "0";
   initialRoomFinalRunLayer.style.top = "0";
-  initialRoomFinalRunLayer.style.width = "100vw";
-  initialRoomFinalRunLayer.style.height = "100vh";
+  initialRoomFinalRunLayer.style.width = initialRoomGetViewportWidth() + "px";
+  initialRoomFinalRunLayer.style.height = initialRoomGetViewportHeight() + "px";
   initialRoomFinalRunLayer.style.pointerEvents = "auto";
   initialRoomFinalRunLayer.style.zIndex = "20";
   initialRoomFinalRunLayer.style.overflow = "hidden";
@@ -1342,7 +1353,7 @@ function initialRoomLoadFinalRunScene() {
 function initialRoomInitializeFinalRunScene(initialRoomThree, initialRoomRapier) {
   var initialRoomRenderer = new initialRoomThree.WebGLRenderer({ antialias: false });
   var initialRoomScene = new initialRoomThree.Scene();
-  var initialRoomCamera = new initialRoomThree.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 140);
+  var initialRoomCamera = new initialRoomThree.PerspectiveCamera(55, initialRoomGetViewportWidth() / initialRoomGetViewportHeight(), 0.1, 140);
 
   initialRoomFinalRunState.rapier = initialRoomRapier;
   if (initialRoomRapier && initialRoomRapier.init) {
@@ -1880,8 +1891,8 @@ function initialRoomGetFinalRunViewportRect() {
   return {
     left: 0,
     top: 0,
-    width: Math.max(1, window.innerWidth),
-    height: Math.max(1, window.innerHeight)
+    width: Math.max(1, initialRoomGetViewportWidth()),
+    height: Math.max(1, initialRoomGetViewportHeight())
   };
 }
 
@@ -1921,7 +1932,7 @@ function initialRoomGetFinalRunCameraPlanePosition(initialRoomNdcX, initialRoomN
   }
 
   initialRoomHalfHeight = Math.tan(((initialRoomCamera.fov || 55) * Math.PI) / 360) * initialRoomDepth;
-  initialRoomHalfWidth = initialRoomHalfHeight * (initialRoomCamera.aspect || (window.innerWidth / Math.max(1, window.innerHeight)));
+  initialRoomHalfWidth = initialRoomHalfHeight * (initialRoomCamera.aspect || (initialRoomGetViewportWidth() / Math.max(1, initialRoomGetViewportHeight())));
 
   return new initialRoomThree.Vector3(
     initialRoomNdcX * initialRoomHalfWidth,
@@ -2873,6 +2884,25 @@ function initialRoomStopFinalRunAutofire() {
   initialRoomFinalRunAutofireIntervalId = 0;
 }
 
+function initialRoomHandleMobileFinalRunPointer(initialRoomPointerType, initialRoomPointerX, initialRoomPointerY) {
+  if (!initialRoomFinalRunState.active) return false;
+
+  initialRoomMouse.x = initialRoomPointerX;
+  initialRoomMouse.y = initialRoomPointerY;
+  initialRoomFinalRunMouse.x = initialRoomPointerX;
+  initialRoomFinalRunMouse.y = initialRoomPointerY;
+  initialRoomUpdateFinalRunScreenCrosshair();
+
+  if (initialRoomPointerType === "down") {
+    initialRoomSetFinalRunAutofireEnabled(false);
+    if (!initialRoomIsTextEntryActive && !initialRoomIsMessageLogOpen && !initialRoomIsGameOver) initialRoomStartFinalRunAutofire();
+  } else if (initialRoomPointerType === "up") {
+    initialRoomStopFinalRunAutofire();
+  }
+
+  return true;
+}
+
 function initialRoomUpdateFinalRunNozzleRecoil(initialRoomNow) {
   var initialRoomTankConfig = finalRunConfig.tank;
   var initialRoomElapsed = initialRoomNow - initialRoomFinalRunState.nozzleRecoilStartedAt;
@@ -3301,8 +3331,8 @@ function initialRoomResizeFinalRunRenderer() {
   }
 
   initialRoomFinalRunState.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-  initialRoomFinalRunState.renderer.setSize(Math.max(1, window.innerWidth), Math.max(1, window.innerHeight), true);
-  initialRoomFinalRunState.camera.aspect = Math.max(1, window.innerWidth) / Math.max(1, window.innerHeight);
+  initialRoomFinalRunState.renderer.setSize(Math.max(1, initialRoomGetViewportWidth()), Math.max(1, initialRoomGetViewportHeight()), true);
+  initialRoomFinalRunState.camera.aspect = Math.max(1, initialRoomGetViewportWidth()) / Math.max(1, initialRoomGetViewportHeight());
   initialRoomFinalRunState.camera.updateProjectionMatrix();
   initialRoomUpdateFinalRunScreenCrosshair();
 }
@@ -9189,7 +9219,7 @@ function initialRoomStartTileMove(initialRoomDirection) {
 
   initialRoomPlayer.moveSpeedMultiplier = 1;
   initialRoomPlayer.sprintFireTile = null;
-  if (initialRoomCapsLockActive && initialRoomPlayer.energy >= 1) {
+  if (initialRoomIsSprintActive() && initialRoomPlayer.energy >= 1) {
     initialRoomPlayer.moveSpeedMultiplier = 2;
     if (progressionManagerGetProgressiveValue("fire") >= 2) {
       initialRoomPlayer.sprintFireTile = {
@@ -9211,6 +9241,16 @@ function initialRoomStartTileMove(initialRoomDirection) {
   initialRoomPlayer.moveDirection = initialRoomDirection;
   initialRoomPlayer.targetX = initialRoomNextX + 0.5;
   initialRoomPlayer.targetY = initialRoomNextY + 0.5;
+}
+
+function initialRoomIsSprintActive() {
+  return Boolean(initialRoomCapsLockActive) !== Boolean(initialRoomShiftSprintHeld);
+}
+
+function initialRoomToggleSprint() {
+  initialRoomCapsLockActive = !initialRoomCapsLockActive;
+  initialRoomCapsLockTilesSinceEnergyCost = 0;
+  return initialRoomCapsLockActive;
 }
 
 function initialRoomGetMovementTilesForFrame(initialRoomDeltaSeconds, initialRoomSpeedMultiplier) {
@@ -9296,62 +9336,6 @@ function initialRoomUpdateTankMovement(initialRoomDeltaSeconds) {
 
 function initialRoomGetAngleForDirection(initialRoomDirection) {
   return Math.atan2(initialRoomDirection.y, initialRoomDirection.x);
-}
-
-function initialRoomIsRightMoveMeasurementInputActive() {
-  return Boolean(
-    (initialRoomKeys.d || initialRoomKeys.arrowright) &&
-    !initialRoomKeys.a &&
-    !initialRoomKeys.arrowleft &&
-    !initialRoomKeys.w &&
-    !initialRoomKeys.arrowup &&
-    !initialRoomKeys.s &&
-    !initialRoomKeys.arrowdown
-  );
-}
-
-function initialRoomGetRightMoveMeasurementTileX() {
-  var initialRoomRoomX = initialRoomCurrentRoom ? Number(initialRoomCurrentRoom.x) || 0 : 0;
-
-  return (initialRoomRoomX * mapManagerData.roomWidth) + initialRoomPlayer.x;
-}
-
-function initialRoomUpdateRightMoveMeasurement(initialRoomNow) {
-  var initialRoomIsActive = initialRoomIsRightMoveMeasurementInputActive();
-  var initialRoomCurrentTileX = initialRoomGetRightMoveMeasurementTileX();
-  var initialRoomElapsedSeconds = 0;
-  var initialRoomTilesMoved = 0;
-
-  if (initialRoomIsActive && !initialRoomRightMoveMeasurement) {
-    initialRoomRightMoveMeasurement = {
-      startedAt: initialRoomNow,
-      startTileX: initialRoomCurrentTileX
-    };
-    return;
-  }
-
-  if (!initialRoomRightMoveMeasurement || initialRoomIsActive) {
-    return;
-  }
-
-  initialRoomElapsedSeconds = (initialRoomNow - initialRoomRightMoveMeasurement.startedAt) / 1000;
-  initialRoomTilesMoved = initialRoomCurrentTileX - initialRoomRightMoveMeasurement.startTileX;
-  console.log("[ShellipelagoMoveMeasure]", {
-    tiles: Number(initialRoomTilesMoved.toFixed(4)),
-    seconds: Number(initialRoomElapsedSeconds.toFixed(4))
-  });
-  initialRoomRightMoveMeasurement = null;
-}
-
-function initialRoomStartRightMoveMeasurementIfNeeded(initialRoomNow) {
-  if (!initialRoomIsRightMoveMeasurementInputActive() || initialRoomRightMoveMeasurement) {
-    return;
-  }
-
-  initialRoomRightMoveMeasurement = {
-    startedAt: initialRoomNow,
-    startTileX: initialRoomGetRightMoveMeasurementTileX()
-  };
 }
 
 function initialRoomTurnTankTowardTarget(initialRoomDeltaSeconds) {
@@ -11325,7 +11309,6 @@ function initialRoomUpdate() {
     initialRoomUpdateEnemies(initialRoomDeltaSeconds);
     initialRoomUpdateCombat(initialRoomDeltaSeconds);
     initialRoomCheckNetTankContactCollisions();
-    initialRoomUpdateRightMoveMeasurement(initialRoomNow);
     return;
   }
 
@@ -11334,7 +11317,6 @@ function initialRoomUpdate() {
     initialRoomUpdateEnemies(initialRoomDeltaSeconds);
     initialRoomUpdateCombat(initialRoomDeltaSeconds);
     initialRoomCheckNetTankContactCollisions();
-    initialRoomUpdateRightMoveMeasurement(initialRoomNow);
     return;
   }
 
@@ -11343,7 +11325,6 @@ function initialRoomUpdate() {
   initialRoomUpdateEnemies(initialRoomDeltaSeconds);
   initialRoomUpdateCombat(initialRoomDeltaSeconds);
   initialRoomCheckNetTankContactCollisions();
-  initialRoomUpdateRightMoveMeasurement(initialRoomNow);
 }
 
 function initialRoomGetGameSpeedFactor() {
@@ -12960,10 +12941,11 @@ function initialRoomFocusCanvasForInput(initialRoomEvent) {
 function initialRoomClearHeldInput() {
   initialRoomKeys = {};
   initialRoomInputOrder = [];
+  initialRoomShiftSprintHeld = false;
 }
 
 window.addEventListener("keydown", function (initialRoomEvent) {
-  if (typeof initialRoomEvent.getModifierState === "function") {
+  if (initialRoomEvent.isTrusted !== false && typeof initialRoomEvent.getModifierState === "function") {
     var initialRoomCapsLockWasActive = initialRoomCapsLockActive;
     initialRoomCapsLockActive = initialRoomEvent.getModifierState("CapsLock");
     if (initialRoomCapsLockWasActive && !initialRoomCapsLockActive) {
@@ -12973,6 +12955,10 @@ window.addEventListener("keydown", function (initialRoomEvent) {
 
   if (!initialRoomShouldHandleGlobalKeyInput()) {
     return;
+  }
+
+  if (initialRoomEvent.key === "Shift") {
+    initialRoomShiftSprintHeld = true;
   }
 
   if (initialRoomIsEditableKeyTarget(initialRoomEvent.target)) {
@@ -13235,11 +13221,10 @@ window.addEventListener("keydown", function (initialRoomEvent) {
 
   initialRoomKeys[initialRoomEvent.key.toLowerCase()] = true;
   initialRoomTrackKeyPress(initialRoomEvent.key.toLowerCase());
-  initialRoomStartRightMoveMeasurementIfNeeded(Date.now());
 });
 
 window.addEventListener("keyup", function (initialRoomEvent) {
-  if (typeof initialRoomEvent.getModifierState === "function") {
+  if (initialRoomEvent.isTrusted !== false && typeof initialRoomEvent.getModifierState === "function") {
     var initialRoomCapsLockWasActive = initialRoomCapsLockActive;
     initialRoomCapsLockActive = initialRoomEvent.getModifierState("CapsLock");
     if (initialRoomCapsLockWasActive && !initialRoomCapsLockActive) {
@@ -13249,6 +13234,10 @@ window.addEventListener("keyup", function (initialRoomEvent) {
 
   if (!initialRoomShouldHandleGlobalKeyInput()) {
     return;
+  }
+
+  if (initialRoomEvent.key === "Shift") {
+    initialRoomShiftSprintHeld = false;
   }
 
   if (initialRoomIsEditableKeyTarget(initialRoomEvent.target)) {
@@ -14863,6 +14852,9 @@ function initialRoomStart() {
       initialRoomLoadRoomEnemies();
     }
     initialRoomHasStarted = true;
+    if (typeof mobileControlsSetGameActive === "function") {
+      mobileControlsSetGameActive(true);
+    }
     initialRoomLoadFont();
     initialRoomLastMessageTime = Date.now();
     initialRoomCurrentMessageStartTime = 0;

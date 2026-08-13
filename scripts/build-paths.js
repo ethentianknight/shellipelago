@@ -13,6 +13,8 @@ module.exports = {
   versionTag,
   archipelagoFolderName: "archipelago_" + versionTag,
   electronFolderName: "Shellipelago-win32-x64_" + versionTag,
+  androidApkName: "Shellipelago-android_" + versionTag + ".apk",
+  androidStagingFolderName: "android-app_" + versionTag,
   hostedFolderName: "shellipelago_hosted_" + versionTag,
   webFolderName: "shellipelago_web_" + versionTag,
   outFolderName: "out_" + versionTag,

@@ -19,11 +19,13 @@ var introScreenTrapNames = [
 ];
 var introScreenTrapColumns = ["anywhere", "local", "nonLocal", "never"];
 
+introScreenRoot.className = "intro-screen-root";
 document.body.appendChild(introScreenRoot);
 
 function introScreenSetContent(introScreenHtml) {
   document.body.classList.remove("is-map-editor");
   introScreenRoot.innerHTML = introScreenHtml;
+  document.body.classList.toggle("is-home-screen", Boolean(introScreenRoot.querySelector(".connection-form.is-home")));
   introScreenApplyVersionText();
 }
 
@@ -1841,6 +1843,7 @@ function introScreenStartOffline(introScreenShouldLoadSave) {
   globalsState.offlineSaveVersion = introScreenOfflineSaveVersion;
   globalsState.shouldLoadOfflineSave = Boolean(introScreenShouldLoadSave);
   document.body.classList.remove("is-map-editor");
+  document.body.classList.remove("is-home-screen");
   introScreenRoot.remove();
   initialRoomStart();
 }
@@ -1939,6 +1942,7 @@ function introScreenSubmitConnection(introScreenEvent) {
 
   archipelagoClientConnect(introScreenConnectionInfo)
     .then(function () {
+      document.body.classList.remove("is-home-screen");
       introScreenRoot.remove();
       initialRoomStart();
     })

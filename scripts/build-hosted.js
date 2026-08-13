@@ -30,8 +30,7 @@ function copyDirectory(sourceDirectory, targetDirectory) {
 function addPwaMarkup(indexSource) {
   const headMarkup = [
     '  <meta name="theme-color" content="#15181f">',
-    '  <link rel="manifest" href="manifest.webmanifest">',
-    '  <link rel="icon" href="src/pwa-icon.svg" type="image/svg+xml">'
+    '  <link rel="manifest" href="manifest.webmanifest">'
   ].join("\n");
   const registration = [
     "  <script>",
@@ -109,9 +108,15 @@ function writeManifest() {
     theme_color: "#15181f",
     icons: [
       {
-        src: "src/pwa-icon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
+        src: "src/app-icon-192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "any maskable"
+      },
+      {
+        src: "src/app-icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
         purpose: "any maskable"
       }
     ]
