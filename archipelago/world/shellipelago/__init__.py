@@ -9,7 +9,7 @@ from .locations import location_table
 from .options import ESSENTIAL_ITEMS, MAX_RESOURCE_UPGRADES, ShellipelagoOptions
 
 
-__version__ = "1.14"
+__version__ = "1.15"
 
 
 class ShellipelagoItem(Item):
@@ -96,7 +96,7 @@ class ShellipelagoWorld(World):
 
         for option_field in fields(self.options):
             option_name = option_field.name
-            if option_name not in passthrough or not hasattr(self.options, option_name):
+            if option_name == "plando_items" or option_name not in passthrough or not hasattr(self.options, option_name):
                 continue
 
             option = getattr(self.options, option_name)
@@ -112,6 +112,8 @@ class ShellipelagoWorld(World):
 
         for option_field in fields(self.options):
             option_name = option_field.name
+            if option_name == "plando_items":
+                continue
             value = getattr(self.options, option_name).value
             if isinstance(value, (set, frozenset)):
                 value = sorted(value)

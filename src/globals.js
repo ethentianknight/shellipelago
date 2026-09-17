@@ -1,6 +1,6 @@
 var globalsState = {
   loadedModules: [],
-  shellipelagoVersion: "1.14",
+  shellipelagoVersion: "1.15",
   startInFinalRun: false,
   pendingFinalRunTest: false,
   pendingFullTest: false,

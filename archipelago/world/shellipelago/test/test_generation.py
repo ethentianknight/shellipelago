@@ -1,6 +1,8 @@
 from BaseClasses import ItemClassification
 from Fill import distribute_items_restrictive
 from dataclasses import fields
+from NetUtils import convert_to_base_types
+from Options import PlandoItem
 
 from . import ShellipelagoTestBase
 from .. import ShellipelagoWorld
@@ -151,11 +153,26 @@ class TestEssentialShuffleOff(ShellipelagoTestBase):
 
 
 class TestUniversalTracker(ShellipelagoTestBase):
-    def test_slot_data_has_all_yaml_options(self) -> None:
+    def test_slot_data_has_tracker_options(self) -> None:
         slot_data = self.world.fill_slot_data()
-        option_names = {option_field.name for option_field in fields(self.world.options)}
+        option_names = {option_field.name for option_field in fields(self.world.options)} - {"plando_items"}
 
         self.assertTrue(option_names.issubset(slot_data))
+
+    def test_slot_data_serializes_with_plando(self) -> None:
+        self.world.options.plando_items.value = [PlandoItem(items={"Sword": 1}, locations=[], world=["Player1"], force=True)]
+        slot_data = self.world.fill_slot_data()
+
+        self.assertNotIn("plando_items", slot_data)
+        convert_to_base_types(slot_data)
+
+    def test_passthrough_does_not_restore_plando(self) -> None:
+        original = self.world.options.plando_items.value
+        self.multiworld.re_gen_passthrough = {self.world.game: {"plando_items": [{"items": {"Sword": 1}}]}}
+
+        self.world.generate_early()
+
+        self.assertIs(self.world.options.plando_items.value, original)
 
     def test_passthrough_restores_options(self) -> None:
         self.multiworld.re_gen_passthrough = {
